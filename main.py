@@ -66,8 +66,13 @@ def main():
     metrics_csv = f'output//metrics_{timestamp}.csv'
 
     df_input = load_data(input_csv)
+    # Create a mapping from 'Result code' to 'Impact Area checked'
+    result_code_to_impact_areas = df_input.groupby('Result code')['Impact Area checked'].apply(list).to_dict()
+    # Deduplicate input data based on 'Result code' and relevant text fields
+    df_unique_input = df_input.drop_duplicates(subset=['Result code', 'Title', 'Description', 'Evidence_Abstract_Text', 'Evidence_Parsed_Text'])
+
     existing_results = load_existing_results(output_csv)
-    tasks = generate_task_list(df_input, prompts, models)
+    tasks = generate_task_list(df_unique_input, prompts, models)
 
     # Filter out completed tasks for resumability
     tasks_to_run = [task for task in tasks if (
@@ -91,7 +96,7 @@ def main():
     results_df.to_csv(output_csv, index=False)
 
     # Stage 3: Evaluation and Metrics Calculation
-    evaluate_results(output_csv, input_csv, metrics_csv)
+    evaluate_results(output_csv, input_csv, metrics_csv, result_code_to_impact_areas)
 
     # Stage 4: Automated Prompt Improvement
     improved_prompts = improve_prompts(config.PROMPTS, prompt_techniques.PROMPT_TECHNIQUES)

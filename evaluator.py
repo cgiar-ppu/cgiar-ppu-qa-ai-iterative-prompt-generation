@@ -2,7 +2,7 @@
 
 import pandas as pd
 
-def evaluate_results(output_csv, input_csv, metrics_csv):
+def evaluate_results(output_csv, input_csv, metrics_csv, result_code_to_impact_areas):
     """
     Compare model outputs to expected values and calculate metrics.
     """
@@ -11,23 +11,31 @@ def evaluate_results(output_csv, input_csv, metrics_csv):
     results_df = pd.read_csv(output_csv)
     input_df = pd.read_csv(input_csv)
 
+    # Map 'result_code' to 'Impact Area checked' in the results DataFrame
+    results_df['Impact Area checked'] = results_df['result_code'].map(result_code_to_impact_areas)
+
+    # Explode the 'Impact Area checked' list into separate rows
+    results_df = results_df.explode('Impact Area checked')
+
     # Ensure the 'score' column exists in results_df
     if 'score' not in results_df.columns:
         raise ValueError("The 'score' column is missing in the results CSV. Please run response_extractor.py first.")
 
     # Preprocess columns for matching
     results_df['result_code'] = results_df['result_code'].astype(str).str.strip()
-    results_df['impact_area'] = results_df['impact_area'].astype(str).str.strip().str.lower()
+    results_df['Impact Area checked'] = results_df['Impact Area checked'].str.lower().str.strip()
     results_df['prompt_id'] = results_df['prompt_id'].astype(str).str.strip()
+    # No need to process 'impact_area' here since we're not using it for merging
 
     input_df['Result code'] = input_df['Result code'].astype(str).str.strip()
     input_df['Impact Area checked'] = input_df['Impact Area checked'].astype(str).str.strip().str.lower()
+
 
     # Merge on 'result_code' and 'Impact Area'
     merged_df = pd.merge(
         results_df,
         input_df,
-        left_on=['result_code', 'impact_area'],
+        left_on=['result_code', 'Impact Area checked'],
         right_on=['Result code', 'Impact Area checked'],
         how='inner'
     )
@@ -52,9 +60,9 @@ def evaluate_results(output_csv, input_csv, metrics_csv):
     metrics = []
 
     # Group by model_name and Impact Area
-    grouped = merged_df.groupby(['model_name', 'impact_area', 'prompt_id'])
+    grouped = merged_df.groupby(['model_name', 'Impact Area checked', 'prompt_id'])
 
-    for (model_name, impact_area, prompt_id), group in grouped:
+    for (model_name, impact_area_checked, prompt_id), group in grouped:
         total = len(group)
         correct = group['correct'].sum()
         incorrect = total - correct
@@ -76,7 +84,7 @@ def evaluate_results(output_csv, input_csv, metrics_csv):
 
         metrics.append({
             'model_name': model_name,
-            'Impact Area': impact_area,
+            'Impact Area': impact_area_checked,
             'prompt_id': prompt_id,
             'total': total,
             'correct': correct,
