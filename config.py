@@ -306,15 +306,6 @@ Please provide your answer in the following format:
 [INPUT_TEXT]''',
         'perspective': 'Poverty Reduction, Livelihoods, and Jobs',
         'impact_area': 'Poverty'
-    },
-    'TEST_PROMPT_V1': {
-        'id': 'V1',
-        'text': ''' ### ### **Now, analyze the following research result and assign a poverty reduction, livelihoods, and jobs tag (0, 1, or 2)**Structured Output Format:**
-Please provide your answer in the following format:
-{ "score": <0|1|2>, "explanation": "<Your explanation here>" }
-[INPUT_TEXT]''',
-        'perspective': 'Poverty Reduction, Livelihoods, and Jobs',
-        'impact_area': 'Poverty'
     }
 }
 
@@ -323,7 +314,7 @@ MODELS = [
     'gpt-4o',
     'gpt-4o-mini',
     'o1-preview',
-    'o1-mini'
+    'o1-mini',
 ]
 
 # OpenAI API Configuration
