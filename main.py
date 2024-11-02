@@ -17,9 +17,9 @@ timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 def main():
     # Stage 1: Task List Creation
     input_csv = 'input//Joined_Processed_Evidence_PRMS_ExpertsScore.csv'
-    task_list_csv = f'task_list_{timestamp}.csv'
-    output_csv = f'results_{timestamp}.csv'
-    metrics_csv = f'metrics_{timestamp}.csv'
+    task_list_csv = f'output//task_list_{timestamp}.csv'
+    output_csv = f'output//results_{timestamp}.csv'
+    metrics_csv = f'output//metrics_{timestamp}.csv'
 
     df_input = load_data(input_csv)
     existing_results = load_existing_results(output_csv)
