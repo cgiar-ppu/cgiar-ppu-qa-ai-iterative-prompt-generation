@@ -60,6 +60,7 @@ def execute_task(task):
             'prompt_id': task['prompt_id'],
             'model_name': task['model_name'],
             'perspective': task['perspective'],
+            'impact_area': task['impact_area'],
             'model_output': output,
             'token_count': task['token_count'],
             'timestamp': pd.Timestamp.now()

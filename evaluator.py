@@ -15,40 +15,19 @@ def evaluate_results(output_csv, input_csv, metrics_csv):
     if 'score' not in results_df.columns:
         raise ValueError("The 'score' column is missing in the results CSV. Please run response_extractor.py first.")
 
-    # Define mapping from 'prompt_id' to 'Impact Area checked'
-    prompt_id_to_impact_area = {
-        'GENDER_EQUALITY_PROMPT': 'Gender',
-        'CLIMATE_CHANGE_PROMPT': 'Climate',
-        'NUTRITION_PROMPT': 'Nutrition',
-        'POVERTY_REDUCTION_PROMPT': 'Poverty',
-        'ENVIRONMENTAL_HEALTH_PROMPT': 'Environment'
-        # Add other mappings as needed
-    }
-
-    # Map 'prompt_id' to 'Impact Area' in results_df
-    results_df['Impact Area'] = results_df['prompt_id'].map(prompt_id_to_impact_area)
-
-    # Preprocess 'result_code' and 'Impact Area'
+    # Preprocess columns for matching
     results_df['result_code'] = results_df['result_code'].astype(str).str.strip()
-    results_df['Impact Area'] = results_df['Impact Area'].astype(str).str.strip()
+    results_df['impact_area'] = results_df['impact_area'].astype(str).str.strip().str.lower()
     results_df['prompt_id'] = results_df['prompt_id'].astype(str).str.strip()
 
     input_df['Result code'] = input_df['Result code'].astype(str).str.strip()
-    input_df['Impact Area checked'] = input_df['Impact Area checked'].astype(str).str.strip()
-
-    # Standardize Impact Area values to lower case for matching
-    results_df['Impact Area'] = results_df['Impact Area'].str.lower()
-    input_df['Impact Area checked'] = input_df['Impact Area checked'].str.lower()
-
-    # Debugging: Print unique values to check for matching
-    print("Unique Impact Areas in results_df:", results_df['Impact Area'].unique())
-    print("Unique Impact Areas in input_df:", input_df['Impact Area checked'].unique())
+    input_df['Impact Area checked'] = input_df['Impact Area checked'].astype(str).str.strip().str.lower()
 
     # Merge on 'result_code' and 'Impact Area'
     merged_df = pd.merge(
         results_df,
         input_df,
-        left_on=['result_code', 'Impact Area'],
+        left_on=['result_code', 'impact_area'],
         right_on=['Result code', 'Impact Area checked'],
         how='inner'
     )
@@ -73,7 +52,7 @@ def evaluate_results(output_csv, input_csv, metrics_csv):
     metrics = []
 
     # Group by model_name and Impact Area
-    grouped = merged_df.groupby(['model_name', 'Impact Area', 'prompt_id'])
+    grouped = merged_df.groupby(['model_name', 'impact_area', 'prompt_id'])
 
     for (model_name, impact_area, prompt_id), group in grouped:
         total = len(group)

@@ -12,7 +12,7 @@ class ResultLogger:
             pd.read_csv(self.output_csv)
         except FileNotFoundError:
             pd.DataFrame(columns=[
-                'result_code', 'prompt_id', 'model_name', 'perspective',
+                'result_code', 'prompt_id', 'model_name', 'perspective', 'impact_area',
                 'model_output', 'token_count', 'timestamp'
             ]).to_csv(self.output_csv, index=False)
     

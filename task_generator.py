@@ -10,27 +10,36 @@ def estimate_token_count(prompt_text, input_text, model_name):
     tokens = encoding.encode(total_text)
     return len(tokens)
 
-def generate_task_list(df, prompts, models, max_token_limit=8000):
+# task_generator.py
+
+def generate_task_list(df_input, prompts, models, max_token_limit=4000):
     tasks = []
-    for _, row in df.iterrows():
-        for prompt_key, prompt_value in prompts.items():
+    for _, row in df_input.iterrows():
+        input_text = row['input_text']
+        result_code = row['Result code']
+        for prompt_id, prompt in prompts.items():
+            prompt_text = prompt['text']
+            perspective = prompt.get('perspective', '')
+            impact_area = prompt.get('impact_area', '')
             for model_name in models:
                 # Estimate token count
-                token_count = estimate_token_count(prompt_value['text'], row['input_text'], model_name)
+                token_count = estimate_token_count(prompt['text'], row['input_text'], model_name)
                 if token_count > max_token_limit:
-                    print(f"Skipping task due to token limit: {row['Result code']}, {prompt_key}, {model_name}")
-                    continue  # Skip tasks exceeding token limits
+                    print(f"Skipping task due to token limit: {prompt_id} on {model_name} for result code {result_code}")
+                    continue
                 task = {
-                    'result_code': row['Result code'],
-                    'prompt_id': prompt_value['id'],
-                    'prompt_text': prompt_value['text'],
+                    'result_code': result_code,
+                    'prompt_id': prompt_id,
+                    'prompt_text': prompt_text,
                     'model_name': model_name,
-                    'perspective': prompt_value['perspective'],
-                    'input_text': row['input_text'],
+                    'perspective': perspective,
+                    'impact_area': impact_area,
+                    'input_text': input_text,
                     'token_count': token_count
                 }
                 tasks.append(task)
     return tasks
+
 
 def save_task_list(tasks, task_list_csv):
     df_tasks = pd.DataFrame(tasks)
