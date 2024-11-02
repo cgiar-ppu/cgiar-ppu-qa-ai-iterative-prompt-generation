@@ -1,0 +1,789 @@
+﻿Result code,Type,Year,Title,Description,Expert score,Impact Area checked,Evidence_Abstract_Text,Evidence_Parsed_Text
+37,Innovation development,2023,"Bean breeding networks in Africa accelerate genetic gains for drought- and heat-resilient, biofortified varieties including bush and climbing beans, meeting farmer and seed company demands in diverse markets","Common beans are an important staple food for more than 200 million Africans, providing an affordable source of proteins, complex carbohydrates and valuable micronutrients. They improve soil fertility and are a significant source of income. In collaboration with the Pan Africa Bean Research Alliance (PABRA) and farmers, CIAT and national bean breeding efforts seek to develop improved and marketable bush and climbing bean varieties, including biofortified varieties and niche market varieties. Past progress in resistance to bean diseases and tolerance to drought is being extended to edaphic constraints and adaptation to high temperatures.  Breeding is a cyclical process that adjusts to feedback from farmers, seed companies and end-users. Breeding cycle time at CIAT is between 12 and 24 months. During 2023, partners in 16 African countries tested 272 lines from local breeding programs and CIAT. Seventeen Tanzanian varieties were tested with 1682 farmers.",0,Gender,,"                                                                                                                                                                                                                                                                                                  Worksheet Descriptions  Unnamed: 1               Unnamed: 2                                                                                                                                                                    Unnamed: 3                                                                                                                                                                                Unnamed: 4
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                             PRMS Results and IA  coding         NaN   Evidence for IA coding                                                                                                                                                    Starting Rows 1, describes Method used to systematically link Breeding Pipelines employed, Target Product Profiles pursued, and Variety Releases achieved by ALL Genetic Innovation Breeding Efforts to Impact Areas
+                                                                                                                                                                                                                                                                                                                     NaN         NaN   Evidence for IA coding                                                                                                                                                   Starting Rows 11, describes                                                                                          Standardized matrix of traits, value propositions and Impact Area tagging for genetic innovation
+                                                                                                                                                                                                                                                                                                                     NaN         NaN   Evidence for IA coding                                                                                                                                                   Starting Rows 45, describes                                                            Standardized Impact Area tagging for Genetic Innovation Breeding Pipelines and Variety Releases and their link to PRMS results
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                           IRL Standardization Germplasm         NaN  Evidence for IRL coding                                  Links Germplasm Stages, used in CGIAR Genetic Innovation, to Levels of CGIAR Innovation Readiness and Use, across all CGIAR Breeding Efforts                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                    Breeding Cycle times         NaN Evidence for cycle times                                                   Lists cycle times of breeding pipelines, based on a breeders' survey. This information is used in PRMS Results descriptions                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                     BPs >> PRMS Results         NaN    Part of the analytics                                                                                                                       Lists Breeding Pipelines and their link to PRMS Results                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                Value Propositions in BP         NaN    Part of the analytics                                                                                                         Lists Value propositions  and Trait requirement per Breeding Pipeline                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                           BP - TPP - MS         NaN    Part of the analytics  Links between Breeding Pipelines (BP), Target Product Profiles (TPP) and Market Segments (MS), across all of CGAIR breeding, downloaded from Breeding Portal 14 January 2024                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                         TPPs and Traits         NaN    Part of the analytics Links between Trait, Value Proposition, Breeding Pipelines (BP), Target Product Profiles (TPP) , across all of CGAIR breeding, downloaded from Breeding Portal 8 January 2024                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                              Variety 2023 releases > BP         NaN    Part of the analytics                                                                  Known variety releases in 2023, linked to Breeding Pipeline, downloaded from Breeding Portal 14 January 2023                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+    In collaboration with Market Intelligence, Impact Area and IRL coding are standardized across ALL CGIAR breeding efforts, with  improvements from year to year. The file provides methods and analysis. IA Worksheet ""PRMS Results and IA coding"", Rows 93-96 lists Impact Area codes, resulting from the analysis.          NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+Worksheet ""PRMS Results & IA Coding"" explains the method, developed with Market Intelligence, for standardized Impact Area tagging of CGIAR Breeding Pipelines. The proportion of Breeding Pipelines with Impact Area Tag 2 are shown in Row 33.  The analysis allows to conclude on the overall portfolio orientation.          NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN"
+1006,Innovation development,2023,The Women's Empowerment in Livestock Index(WELI) for measuring women's empowerment in systems where livestock is important for livelihood,"The WELI facilitates assessments of the impact of livestock interventions on the empowerment of women involved in the sector. By getting better at understanding what interventions work best at providing empowering opportunities, we can refine these interventions and in the long term, provide better empowering opportunities for women involved in livestock. Providing women farmers with opportunities for empowerment through livestock is important to both enhance household livelihoods and nutrition while also promoting progress on gender equity. In 2015, the International Livestock Research Institute (ILRI), in collaboration with Emory University developed the WELI tool based on the Women’s Empowerment in Agriculture Index (WEAI) developed earlier by IFPRI. The WELI measures women’s empowerment in livestock and crop agriculture and focuses specifically on key areas of livestock production, such as animal health, breeding and feeding; and on use of livestock products, such as animal-source-food processing and marketing.",0,Nutrition,,
+1020,Innovation development,2023,Aclimatar - Understanding climate change impacts and adaptation practices for cocoa management in West Africa,"Aclimatar: Empowering Smallholder Producers for Perennials in West Africa for Climate Resilience. The innovation highlights the platform's core purpose of supporting climate adaptation for smallholder cocoa producers in Ghana and Côte d'Ivoire. By offering site-specific climate change risk assessments and tailored adaptation practices, Aclimatar serves as a vital tool in combating the effects of climate change. Its intuitive map interface allows users to select locations, providing them with essential climate data, impacts on specific crops, and prioritized adaptation strategies. This innovation is designed to enhance local projects, technicians, and organizations' understanding and response to climate variability, ensuring sustainable agricultural practices and resilience among smallholder communities.",0,Poverty,"Opportunities for digital agro-climatic services in the cocoa sector Skip to main content Dear CGSpace users, we have performed some minor upgrades to the user interface. If it does not look right you should refresh the page while holding the Shift key. Communities & Collections Browse Navigate CGIAR Centers Statistics English Català Čeština Deutsch Español Français Gàidhlig Italiano Latviešu Magyar Nederlands Polski Português Português do Brasil Srpski (lat) Suomi Svenska Türkçe Tiếng Việt Қазақ বাংলা हिंदी Ελληνικά Српски Yкраї́нська Log In Note: CGIAR users should log in with their Active Directory username and password. For example, if your email is j.smith@cgiar.org, you would use jsmith here. Log in New user? Click here to register. Have you forgotten your password? Home CGIAR research centers Alliance of Bioversity International and CIAT Alliance Bioversity CIAT Reports Opportunities for digital agro-climatic services in the cocoa sector Opportunities for digital agro-climatic services in the cocoa sector Loading... Files Report_Ghana.pdf (6.33 MB) Authors Giraldo, Diana Zapata Caldas, Emmanuel Llanos, Lizeth Rahn, Eric Date Issued 2023-12-29 Date Online Language en Type Report Review Status Access Rights Open Access Usage Rights Metadata Full item page Share Citation Giraldo, D.; Zapata Caldas, E.; Llanos, L.; Rahn, E. (2023) Opportunities for digital agro-climatic services in the cocoa sector. Excellence in Agronomy Initiative. 13 p. Permanent link to cite or share this item https://hdl.handle.net/10568/138653 External link to download this item DOI Abstract/Description The Alliance Bioversity-CIAT and the Rainforest Alliance (RA) collaborating to explore the value of seasonal climate forecasts for decision-making in cocoa farming. The Alliance Bioversity International-CIAT has extensive experience in using seasonal climate forecasts to improve the management of annual crops (e.g., variety selection, planting time, etc.), but there is limited experience with perennial cropping systems such as cocoa. To this end, we aim to understand which management decisions can benefit from seasonal climate forecasts, which climate variables would require good forecasting skills, and how forecasts need to be translated and communicated to end- users. To achieve this goal, the Alliance Bioversity-CIAT is applying human-centered design (HCD), a creative and participatory approach to problem-solving that allows for a deep understanding of the people for whom we design and the environments in which they live. Stakeholders are considered co-designers in the process of creating solutions or tools, whether digital or non-digital. Author ORCID identifiers Diana Carolina Giraldo Mendez https://orcid.org/0000-0002-9200-3916 Emmanuel Zapata-Caldas https://orcid.org/0000-0002-7795-9426 Lizeth Llanos-Herrera https://orcid.org/0000-0003-3540-7348 Eric Rahn https://orcid.org/0000-0001-6280-7430 Contributes to SDGs AGROVOC Keywords information services ; theobroma cacao-cocoa (plant) ; climate services ; extension systems Subjects CACAO ; PARTICIPATORY RESEARCH ; RESILIENCE Countries Ghana Regions Africa ; Western Africa ; Sub-Saharan Africa Organizations Affiliated to the Authors International Center for Tropical Agriculture CGIAR Action Areas Resilient Agrifood Systems CGIAR Impact Areas Climate adaptation and mitigation CGIAR Initiatives Climate Resilience ; Excellence in Agronomy Collections Alliance Bioversity CIAT Reports Alliance Research Lever 3: Climate Action CGIAR Initiative on Climate Resilience CGIAR Initiative on Excellence in Agronomy DSpace software copyright © 2002-2024 LYRASIS About Cookie settings Privacy policy Send Feedback",
+1020,Innovation development,2023,Aclimatar - Understanding climate change impacts and adaptation practices for cocoa management in West Africa,"Aclimatar: Empowering Smallholder Producers for Perennials in West Africa for Climate Resilience. The innovation highlights the platform's core purpose of supporting climate adaptation for smallholder cocoa producers in Ghana and Côte d'Ivoire. By offering site-specific climate change risk assessments and tailored adaptation practices, Aclimatar serves as a vital tool in combating the effects of climate change. Its intuitive map interface allows users to select locations, providing them with essential climate data, impacts on specific crops, and prioritized adaptation strategies. This innovation is designed to enhance local projects, technicians, and organizations' understanding and response to climate variability, ensuring sustainable agricultural practices and resilience among smallholder communities.",2,Climate,"Opportunities for digital agro-climatic services in the cocoa sector Skip to main content Dear CGSpace users, we have performed some minor upgrades to the user interface. If it does not look right you should refresh the page while holding the Shift key. Communities & Collections Browse Navigate CGIAR Centers Statistics English Català Čeština Deutsch Español Français Gàidhlig Italiano Latviešu Magyar Nederlands Polski Português Português do Brasil Srpski (lat) Suomi Svenska Türkçe Tiếng Việt Қазақ বাংলা हिंदी Ελληνικά Српски Yкраї́нська Log In Note: CGIAR users should log in with their Active Directory username and password. For example, if your email is j.smith@cgiar.org, you would use jsmith here. Log in New user? Click here to register. Have you forgotten your password? Home CGIAR research centers Alliance of Bioversity International and CIAT Alliance Bioversity CIAT Reports Opportunities for digital agro-climatic services in the cocoa sector Opportunities for digital agro-climatic services in the cocoa sector Loading... Files Report_Ghana.pdf (6.33 MB) Authors Giraldo, Diana Zapata Caldas, Emmanuel Llanos, Lizeth Rahn, Eric Date Issued 2023-12-29 Date Online Language en Type Report Review Status Access Rights Open Access Usage Rights Metadata Full item page Share Citation Giraldo, D.; Zapata Caldas, E.; Llanos, L.; Rahn, E. (2023) Opportunities for digital agro-climatic services in the cocoa sector. Excellence in Agronomy Initiative. 13 p. Permanent link to cite or share this item https://hdl.handle.net/10568/138653 External link to download this item DOI Abstract/Description The Alliance Bioversity-CIAT and the Rainforest Alliance (RA) collaborating to explore the value of seasonal climate forecasts for decision-making in cocoa farming. The Alliance Bioversity International-CIAT has extensive experience in using seasonal climate forecasts to improve the management of annual crops (e.g., variety selection, planting time, etc.), but there is limited experience with perennial cropping systems such as cocoa. To this end, we aim to understand which management decisions can benefit from seasonal climate forecasts, which climate variables would require good forecasting skills, and how forecasts need to be translated and communicated to end- users. To achieve this goal, the Alliance Bioversity-CIAT is applying human-centered design (HCD), a creative and participatory approach to problem-solving that allows for a deep understanding of the people for whom we design and the environments in which they live. Stakeholders are considered co-designers in the process of creating solutions or tools, whether digital or non-digital. Author ORCID identifiers Diana Carolina Giraldo Mendez https://orcid.org/0000-0002-9200-3916 Emmanuel Zapata-Caldas https://orcid.org/0000-0002-7795-9426 Lizeth Llanos-Herrera https://orcid.org/0000-0003-3540-7348 Eric Rahn https://orcid.org/0000-0001-6280-7430 Contributes to SDGs AGROVOC Keywords information services ; theobroma cacao-cocoa (plant) ; climate services ; extension systems Subjects CACAO ; PARTICIPATORY RESEARCH ; RESILIENCE Countries Ghana Regions Africa ; Western Africa ; Sub-Saharan Africa Organizations Affiliated to the Authors International Center for Tropical Agriculture CGIAR Action Areas Resilient Agrifood Systems CGIAR Impact Areas Climate adaptation and mitigation CGIAR Initiatives Climate Resilience ; Excellence in Agronomy Collections Alliance Bioversity CIAT Reports Alliance Research Lever 3: Climate Action CGIAR Initiative on Climate Resilience CGIAR Initiative on Excellence in Agronomy DSpace software copyright © 2002-2024 LYRASIS About Cookie settings Privacy policy Send Feedback",
+3416,Innovation development,2023,AgIncentives policy indicators of Agri-Food Market and Policy Analysis Models (AMPAM) to assess potential trade-offs associated with scaling interventions and innovations along food value chains.,"An integrated framework of global and country Agri-Food Market and Policy Analysis Models (AMPAM) is implemented to assess the potential for and trade-offs associated with scaling interventions and innovations that create jobs, boost incomes, and reduce environmental footprints along food value chains. A key component of AMPAM is the consistent and comparable set of indicators of degrees of policy support to agriculture and food sectors by type of support, food commodities, and countries. This set of policy indicators has been prepared in collaboration with the AgIncentives Consortium (FAO-IFPRI-IDB-OECD-World Bank). Together with the agrifood market database and the AMPAM modeling framework, the policy indicator dataset will be a critical ingredient for the scenario analysis the Initiative will undertake to support decision-makers in assessing the full potential, scalability, market opportunities, priorities for, and trade-offs associated with incentive schemes, and investments and innovations.",2,Poverty,,
+4731,Innovation development,2023,"Resilient and drought adapted forage cultivars and hybrids to improve productivity, income and livelihoods of households keeping small ruminants in Mali","This innovation will promote up to 10 resilient and drought adapted forage cultivars and hybrids to farmers, technicians and forage seed producers who will be trained on forage (seed) production, processing and utilisation. Nine resilient and drought-adapted cultivars and hybrids of Urochloa (Brachiaria) and Megathyrsus (Panicum) grasses together with one forage legume (Crotalaria) are evaluated along with local forages (as control) at multiple locations in Mali to identify the best options for different regions and livestock systems in the country. Researchers and farmers visiting the experimental plots at different growth stages assess agronomic performance, the impact on animal productivity and environment, and profitability. The Tropical Forages Selection Tool https://www.tropicalforages.info/text/intro/index.html may be used for selection of cultivars and hyrids.",0,Poverty,"Validation of resilient and drought adapted forage options in three agroecological regions of Mali Skip to main content Dear CGSpace users, we have performed some minor upgrades to the user interface. If it does not look right you should refresh the page while holding the Shift key. Communities & Collections Browse Navigate CGIAR Centers Statistics English Català Čeština Deutsch Español Français Gàidhlig Italiano Latviešu Magyar Nederlands Polski Português Português do Brasil Srpski (lat) Suomi Svenska Türkçe Tiếng Việt Қазақ বাংলা हिंदी Ελληνικά Српски Yкраї́нська Log In Note: CGIAR users should log in with their Active Directory username and password. For example, if your email is j.smith@cgiar.org, you would use jsmith here. Log in New user? Click here to register. Have you forgotten your password? Home CGIAR research centers Alliance of Bioversity International and CIAT Alliance Bioversity CIAT Reports Validation of resilient and drought adapted forage options in three agroecological regions of Mali Validation of resilient and drought adapted forage options in three agroecological regions of Mali Loading... Files SAPLING Mali - Validation of resilient and drought adapted forage cultivars and hybrids - progress report 2023.pdf (1.74 MB) Authors Ba, Alassane Coulibaly, Doubangolo Hoek, Rein van der Date Issued 2023-12 Date Online Language en Type Report Review Status Access Rights Open Access Usage Rights Metadata Full item page Share Citation Ba, A.; Coulibaly, D.; Van der Hoek, R. (2023) Validation of resilient and drought adapted forage options in three agroecological regions of Mali. Progress Report 2023. Bamako (Mali): CGIAR Initiative on Sustainable Animal Productivity. 11 p. Permanent link to cite or share this item https://hdl.handle.net/10568/138140 External link to download this item DOI Abstract/Description Author ORCID identifiers Rein van der Hoek https://orcid.org/0000-0003-4528-7669 Contributes to SDGs AGROVOC Keywords forage ; agroecology ; drought resistance Subjects LIVESTOCK ; TROPICAL FORAGES Countries Mali Regions Africa ; Western Africa Organizations Affiliated to the Authors International Center for Tropical Agriculture CGIAR Action Areas Resilient Agrifood Systems CGIAR Impact Areas Poverty reduction, livelihoods and jobs CGIAR Initiatives Sustainable Animal Productivity Collections Alliance Bioversity CIAT Reports Alliance Research Lever 6: Crops for Nutrition and Health CGIAR Initiative on Sustainable Animal Productivity DSpace software copyright © 2002-2024 LYRASIS About Cookie settings Privacy policy Send Feedback","File: download
+Page 1:
+ 
+ 
+ 
+ 
+Validation of resilient and drought adapted forage 
+options in three agroecological regions of Mali  
+ 
+Progress Report  2023  
+ 
+Alassane Ba, Doubangolo Coulibaly, Rein van der Hoek  
+ 
+  
+ 
+ 
+December 2023  
+ 
+Page 2:
+i 
+ Table of contents  
+ 
+1. Introduction  ................................ ................................ ................................ ................................ ........  1 
+2. Methodology  ................................ ................................ ................................ ................................ .......  2 
+Treatments and  experimental design  ................................ ................................ ................................ . 2 
+Management  ................................ ................................ ................................ ................................ .......  3 
+Data collection  ................................ ................................ ................................ ................................ .... 3 
+3. Results  ................................ ................................ ................................ ................................ .................  4 
+4. Conclusions and  next steps  ................................ ................................ ................................ .................  8 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Page 3:
+1 
+ 1. Introduction  
+ 
+Brachiaria ( Urochloa  spp.) and Panicum grasses ( Megathyrsus  spp.) are two important 
+tropical forage species indigenous to Africa that are widely cultivated in Africa, South America, 
+Australia and East Asia and have demonstrated success in transforming beef and dairy 
+industries. They are perennial, fast growing wit h high biomass production potential, palatable 
+and nutritious to livestock. They possess large root systems, fix carbon in soils, and are 
+adapted to drought and a wide variety of soils, tolerant to shade, waterlogging and to pests 
+and diseases. Brachiaria and Panicum grasses are extensively used for grazing, cut -and-carry, 
+and silage and hay production. Improved cultivars are high yielding, responsive to fertilizer 
+applications, persistent and can remain green long into the dry season.   
+ 
+Multi-locational a gronomic and farmer participatory evaluation of the performance of 
+resilient and drought adapted forage cultivars and hybrids will identify best options for the 
+different regions and livestock systems in the country. Validation at farmers’ fields (e.g., as  
+part of Farmer Field Schools) will increase awareness and provide information of the impact 
+on animal productivity and environmental indicators. Seed availability will be increased by 
+seed multiplication by government institutions (such as IER), private s ector and farmers. This 
+will lead to an increased adoption of these materials and improve productivity and income of 
+households keeping small ruminants.  
+This report presents the preliminary results of the forage trials in Mali  implemented by 
+l’Instititut d’Economie Rurale (IER ) as part of the CGIAR Research Initiative on Sustainable 
+Animal Productivity for Livelihoods, Nutrition and Gender inclusion (SAPLING) . 
+ 
+Key elements:  
+• Resilient and drought adapted forage cultivars and hy brids  (Urochloa , Megathyrsus , 
+Crotalaria, etc) for their scaling up.  
+• Evidence of improved forages and food -feed varieties and ‘food rations generated”.  
+• Training for forage seed producers  
+ 
+  
+Page 4:
+2 
+ 2. Methodology  
+ 
+Treatments and experimental design  
+ 
+The initial evaluations of forage cultivars are carried out at three sites:  
+1. Barouéli (Ségou region) , rainfall 500 mm. from June to September  
+2. Farakala (Sikasso region) , rainfall 1000 mm, from May to September  
+3. The IER Research Station (Sotuba , Bamako ), rainfall 750 mm, from May to September  
+ 
+The performance of forage species/cultivars is also  assessed by the farmers and other 
+stakeholders visiting the experimental plots at different stages (e.g., at establishment, full 
+vegetative stage and maturity), and  the preferred technology will be identified for on -farm 
+evaluation as outreach research activities.  
+ 
+Number of treatments : 11 improved forage cultivars and hybrids, and 2 local forages.  
+  
+Species/Accession  Scientific name  
+1. Brachiaria Mestizo  Urochloa  hybrid  Mestizo  
+2. Brachiaria  hybrid  ""Camello""  Urochloa  hybrid GP3025 ""Camello""  
+3. Brachiaria hybrid  GP0423  Urochloa  hybrid  GP0423  
+4. Brachiaria hybrid  GP1794 ""Cobra""  Urochloa  hybrid  GP1794 ""Cobra""  
+5. Brachiaria hybrid  ""Talisman""  Urochloa  hybrid  CIATGP1005BR ""Talisman""  
+6. Brachiaria Marandu  Urochloa brizantha   cv “Marandu”  
+7. Panicum Mombasa  Megathyrsus maximus  cv ""Mombasa""  
+8. Panicum Mun River  Megathyrsus maximus  cv ""Mun River""  
+9. Crotalaria juncea  Crotalaria juncea  
+10. Andropogon gayanus  Andropogon gayanus  
+11. Brachiaria ruziziensis  Urochloa ruziziensis  
+12. Brachiaria Basilisk  Urochloa decumbens  cv ""Basilisk""  
+13. Panicum Maasai  Megathyrsus maximus  cv ""Maasai""  
+ 
+Design:  Randomized Complete Block Design (RCBD) with 4 replications.  
+Plot size:  5 m x 4 m = 20 m2 (10 rows per plot). The space between replication s is 1 m. 
+ 
+ 
+ 
+  
+Page 5:
+3 
+ Management  
+ 
+• Sowing: At onset of rains (direct seeding ), July 2023  
+• Basal F ertilizer :  Fertilizer was applied at the rate of 100:60:30 kg N: P 2O5: K2O / ha.  
+• Top dressing fertilizer: After 12 weeks after the establishment, nitrogenous fertilizer  was 
+applied  at a rate of 100 kg N/ha in two equal split doses.  
+• The weeds were removed manually from the plots.  
+• No control of p ests and diseases  takes place . 
+ 
+Data collection  
+ 
+The following data are collected:  
+• Rainfall, temperature (mean maximum and minimum) and relative humidity data in 
+monthly basis from the nearest meteorological station for entire experimental period.  
+• To maintain uniformity on the initial growth among forage species/ cultivars tested 
+perform standardization cut at six weeks of germination by cutting 5 cm above the ground 
+level.  
+• Plant population : Plants are counted  within a 1m x 1m frame, randomly place d over the 2 
+central rows at 4 weeks interval during establishment phase and at 8 weeks interval during 
+the production phase.  
+• Plant height : Similarly measure the height of 4 plants within the 1 x 1 m frame at the same 
+interval as tiller numbers above.  
+• Pest s and diseases : Assess pests and diseases incidences and record data every month 
+throughout the experimental period. It is advisable to take the digital photographs of pest 
+and diseases in each forage species /cultivars.  
+• Dry matter yield : The first dry mat ter yield is taken at maturity from 2 x 2 m2 net harvest 
+area per plot, harvested fresh material  is weighed  and sub-samples are collected and dr ied 
+at 105oC for 48 hours for dry weight determination. Subsequent harvests are conducted 
+after every 8 weeks.  
+• Analysis of nutritive values : Each forage species/cultivar evaluated are subjected to 
+nutritive value analysis including Crude Protein (CP), Neutral Detergent Fiber (NDF), Acid 
+Detergent Fiber (ADF), Acid Detergent Lignin (ADL), Metabolizable Energy (ME), A sh, 
+Calcium (Ca), Phosphorus (P) and others. For this purpose, herbage collected from 8 weeks 
+harvest in wet and dry season of a year is used.  
+  
+ 
+  
+Page 6:
+4 
+ 3. Results  
+ 
+The following table s show pictures of the three different research sites taken in the same 
+week of 18 December 2023 and five months after planting.  Differences between the different 
+sites are considerable, especially but not surprisingly between the Barouéli site on the one 
+hand and the Farakala en Sotuba sites on the other.   
+ 
+Barouéli  Farakala  Sotuba  
+   
+Andropogon gayanus  
+Performing well in both Farakala (ranked 6th by farmers) and S otuba, regular in Barouéli  
+ 
+  
+  
+ 
+Crotalaria juncea  
+Not performing well at any of the sites , ranked last in Farakala . We saw the same at the Ghana 
+sites whereas at the Senegal sites the C. juncea performed very well. At the Sotuba site a local 
+Crotalaria  showed good performance. According to literature, soil type and Ph should not be a 
+constraint, but low soil fertility (P) might be a main cause for the poor performance in Mali and 
+Ghana, Senegal  site probably having higher soil fertility because of residual nutrients from former 
+crops.  
+ 
+  
+Page 7:
+5 
+ Barouéli  Farakala  Sotuba  
+   
+Megathyrsus maximus  cv ""Maasai""  
+Performing quite well at all sites, ranked highest by farmers in Farakala , and ranked 4th in 
+Barouéli  
+   
+Megathyrsus maximus  cv ""Mombasa""  
+Poor performance in Barouéli, good performance in Farakala  (ranked 8th by farmers)  
+   
+Megathyrsus maximus  cv ""Mun River""  
+Poor performance in Barouéli, good performance in Farakala  (ranked 3rd) and Sotuba. Well 
+appreciated by farmers.  
+   
+Urochloa  hybrid  GP0423  
+Regular performance in Barouéli, good performance in Farakala (although only ranked 10th) and 
+Sotuba  
+ 
+  
+Page 8:
+6 
+ Barouéli  Farakala  Sotuba  
+   
+Urochloa decumbens  cv ""Basilisk""  
+Regular performance in Barouéli, good performance in Farakala (ranked 5th) and Sotuba  
+   
+Urochloa  hybrid GP3025 ""Camello""  
+Regular performance in Barouéli, good performance in Farakala (ranked 2nd) and Sotuba  
+   
+Urochloa  hybrid  GP1794 ""Cobra""  
+Good performance at all three sites.  
+In Barouéli r anked highest by farmers  because of  high biomass production, density, erect growth 
+habit and adapted to dry season, dry season availability of green forage. In Farakala ranked 9th. 
+Proposed use: dairy cattle, fattening (cattle, small ruminants)  
+   
+Urochloa brizantha   cv “Marandu”  
+Good performance at all three sites.  
+In Barouéli ranked 3rd by farmers, because of biomass production and adaptation to drought, in 
+Farakala ranked 7th. 
+ 
+ 
+ 
+ 
+Page 9:
+7 
+ Barouéli  Farakala  Sotuba  
+   
+Urochloa  hybrid  Mestizo  
+Regular performance in Barouéli, good performance in Farakala (but only ranked 12th) and Sotuba . 
+   
+Urochloa ruziziensis  
+Poor  performance in Barouéli, good performance in Farakala (ranked 4th) and Sotuba . Many 
+farmers in Farakala grow U. ruziziensis , producing forage as well as seeds.  
+   
+Urochloa  hybrid  CIATGP1005BR ""Talisman""  
+Good performance at all three sites.  
+In Barouéli ranked second by farmers, because of (green) biomass production and adaptation to 
+drought, in Farakala ranked 11th.  
+ 
+  
+Page 10:
+8 
+ The table below  summarizes  the ranking by the farmers.  
+ 
+Barouéli  Farakala  
+1. Brachiaria hybrid Cobra  1. Panicum “Maasai”  
+2. Brachiaria hybrid Talisman  2. Brachiaria hybrid “Camello”  
+3. Brachiaria cv Marandú  3. Panicum “Mun River”  
+4. Panicum Maasai  4. Brachiaria ruziziensis  
+ 5. Brachiaria “Basilisk”  
+ 6. Andropogon gayanus  
+ 7. Brachiaria “Marandú”  
+ 8. Panicum “Mombasa”  
+ 9. Brachiaria hybrid “Cobra”  
+ 10. Brachiaria hybrid “0423”  
+ 11. Brachiaria hybrid “Talisman”  
+ 12. Brachiaria hybrid “Mestizo”  
+ 13. Crotalaria juncea  
+ 
+4. Conclusions and next steps  
+ 
+• This report  is entirely based on visual observations and farmers  evaluations. A second 
+report with the  analysis of the  agronomic data will be made available early 2024.  
+• The observations and farmer evaluations were conducted  at five months after planting 
+and approximately two months into the dry season.  They will be repeated in approx. 
+three (mid dry season) and six months (end dry season).  
+• In the drier region (Barouéli) the Bracharia/Urochloa gras ses are preferred over  the 
+Panicum / Megathyrsus materials , whereas the more humid region (Farakala ) shows the 
+opposite . This might change as the dry season progresses  and the Panicum grasses are 
+likely to also suffer more in the more humid zone.  
+• There see m to be good p erspectives for some of the hybrids ( especially Cobra, Talisman, 
+Camello ). Farmers like their adaptation to drought and, in particular for Cobra, their 
+suitability for use as a cut -and-carry feed.  
+ 
+ 
+ 
+ 
+  
+Page 11:
+9 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The CGIAR Research Initiative on Sustainable Animal Productivity for Livelihoods, Nutrition and Gender inclusion 
+(SAPLING) is working in seven countries focusing on livestock value chains to package and scale out tried -and-
+tested, as well as new, innovations in live stock health, genetics, feed and market systems. SAPLING aims to 
+demonstrate that improvements in livestock productivity can offer a triple win: generating improved livelihoods 
+and nutritional outcomes; contributing to women’s empowerment; reducing impacts  on climate and the 
+environment. Its seven focus countries are Ethiopia, Kenya, Mali, Nepal, Tanzania, Uganda and Vietnam.  
+ 
+It forms part of CGIAR’s new Research Portfolio, delivering science and innovation to transform food, land, and 
+water systems in a c limate crisis."
+4771,Innovation development,2023,"Strengthened agribusinesses through agri-preneur incubation package, including components on gender responsiveness, bundled inputs and services and use of “one network ecosystem” in Tanzania","Agribusinesses provide important linkages within value chains – linking farmers to product buyers and suppliers of productivity enhancing technologies, inputs, and services. Improving their performance, especially with respect to services they offer to farmers, therefore present significant opportunities. This is more so in a country like Tanzania where the private sector involvement in key commodity value chains remains weak despite the enormous potential of the value chains to improve smallholder access to inputs and services, incomes, food and nutrition security and create jobs. Some of the major current limitations to private sector growth include lack of knowledge and coordination among actors. Successful business training and coordination among actors have been shown to significantly increase the probability of success for both start-ups and established businesses. The “one network ecosystem"" proposed here enables both.",0,Gender,"Maziwa Zaidi: Selection of agripreneurs and linked households for testing delivery of bundled technology packages in Tanzania Skip to main content Dear CGSpace users, we have performed some minor upgrades to the user interface. If it does not look right you should refresh the page while holding the Shift key. Communities & Collections Browse Navigate CGIAR Centers Statistics English Català Čeština Deutsch Español Français Gàidhlig Italiano Latviešu Magyar Nederlands Polski Português Português do Brasil Srpski (lat) Suomi Svenska Türkçe Tiếng Việt Қазақ বাংলা हिंदी Ελληνικά Српски Yкраї́нська Log In Note: CGIAR users should log in with their Active Directory username and password. For example, if your email is j.smith@cgiar.org, you would use jsmith here. Log in New user? Click here to register. Have you forgotten your password? Home CGIAR research centers International Livestock Research Institute (ILRI) ILRI Programs ILRI policies, institutions and livelihoods program ILRI policies, institutions and livelihoods program outputs Maziwa Zaidi: Selection of agripreneurs and linked households for testing delivery of bundled technology packages in Tanzania Maziwa Zaidi: Selection of agripreneurs and linked households for testing delivery of bundled technology packages in Tanzania Loading... Files Brief (1.79 MB, pdf) Authors Rao, E.J.O. Omondi, Immaculate A. Poole, Elizabeth J. Omore, Amos O. Date Issued 2022-06-15 Date Online Language en Type Brief Review Status Access Rights Open Access Usage Rights Metadata Full item page Share Citation Rao, J.E., Omondi, I.A., Poole, J. and Omore, A.O. 2022. Maziwa Zaidi: Selection of agripreneurs and linked households for testing delivery of bundled technology packages in Tanzania. ILRI Research Brief 112. Nairobi, Kenya: ILRI. Permanent link to cite or share this item https://hdl.handle.net/10568/117233 External link to download this item DOI Abstract/Description Author ORCID identifiers Immaculate Omondi https://orcid.org/0000-0002-0967-1252 Amos Omore https://orcid.org/0000-0001-9213-9891 Elizabeth Jane Poole https://orcid.org/0000-0002-8570-794X AGROVOC Keywords dairying ; livestock ; livelihoods ; agro-industrial sector Subjects DAIRYING ; LIVELIHOODS ; LIVESTOCK ; POLICY ; RESEARCH Countries Tanzania Regions Africa ; Eastern Africa ; Southern Africa Organizations Affiliated to the Authors International Livestock Research Institute Collections ILRI policies, institutions and livelihoods program outputs ILRI policy and research briefs ILRI Research Methods Group: Team-wide outputs DSpace software copyright © 2002-2024 LYRASIS About Cookie settings Privacy policy Send Feedback","File: download
+Page 1:
+June 2022 ILRI RESEARCH BRIEF 112
+ 
+Maziwa Zaidi: Selection of agripreneurs 
+and linked households for testing 
+delivery of bundled technology packages 
+in Tanzania  
+James Rao, Immaculate Omondi, Jane Poole and Amos Omore
+Key messages
+• Designing and conducting the selection of 
+agripreneurs and households to test delivery of 
+bundled technology packages is complex given the 
+many factors that need to be considered.
+• Statistical matching technique was used to select 
+agripreneurs (APs) and consequently leading to the 
+identification of households that were likely to be 
+linked to the APs and to producer organizations 
+where the APs operated.
+• The complexities of the selection of APs and 
+households should be factored into the analysis 
+as much as possible following an endline survey 
+to include measuring the effect of Business 
+Development Services (BDS) vs. the effect of a 
+technology package or a combination because 
+different agripreneurs take up different baskets of 
+interventions in different areas.Introduction
+Maziwa Zaidi partners identified a set of integrated 
+intervention packages (Omore et al. 2019) to be 
+tested and delivered as part of the implementation 
+of the project on ‘Agri-entrepreneurship, technology 
+uptake and inclusive dairy development in T anzania.’ 
+The testing and delivery were through empowered 
+and appropriately skilled agripreneurs (APs) who were 
+expected to also profit from promoting the uptake of the 
+prioritized technology packages by smallholder dairy 
+farmers linked to them. 
+To achieve this aim, the capacity of the APs would be 
+strengthened in selected agribusiness knowledge 
+areas and skills by incubation service providers. This 
+intervention included gender-responsive incubation, 
+acceleration, training and mentoring of APs engaged 
+in the provision of inputs and services in project sites. 
+Page 2:
+2
+|       Maziwa Zaidi: Selection of agripreneurs and linked households for testing delivery of bundled technology packages in TanzaniaFollowing the capacity building, changes in behaviour 
+among APs in relation to the delivery of services would 
+be monitored in both intervention and control districts 
+and wards qualitatively and quantitatively . Qualitative 
+monitoring of outcomes would be conducted through 
+knowledge, attitude and practice (KAP) analysis 
+guided by a theory of change developed at the onset. 
+Quantitative monitoring would be done through 
+baseline and endline surveys of APs and households  
+to capture changes in the use of inputs and services by 
+HHs linked to the capacitated APs.
+This research brief summarizes 1) the methodology 
+including the process of selecting APs and HHs and 
+2) the results of the selection process. The selection 
+process is summarized based on the baseline data 
+available at this portal: Maziwa Zaidi/More Milk in 
+T anzania (phase II) - Datasets - ILRI Datasets Portal .
+ 
+This intervention included gender-responsive 
+incubation, acceleration, training and mentoring of 
+the agripreneurs engaged in the provision of inputs 
+and services in project sites. The project sites were 
+selected based on the need to align with ongoing 
+development projects that could facilitate the 
+uptake of technology packages  in Kilimanjaro and 
+T anga regions of T anzania .
+Methodology
+Two regions, namely Kilimanjaro and T anga and 
+four districts within them (Hai, Siha, Korogwe and 
+Muheza) were selected based on the need to align 
+with ongoing development projects that could 
+facilitate the uptake of technology packages. Within 
+each intervention, districts are wards with cattle 
+keepers linked to the APs. The selected wards 
+are geographically clustered around producer 
+organizations (POs) also linked to the APs. Two 
+control districts (Moshi Rural and Rombo) with similar 
+production and market systems were also identified, 
+both in the Kilimanjaro region. Project wards were 
+identified by the overlap between the geographical 
+catchment of cooperatives/POs and the geographical 
+areas from where the project selected APs to draw 
+their clients. From these overlapping areas, a random 
+selection of wards was made. These are the project 
+implementation areas. The selection of APs and HHs 
+was carried out in three stages: scoping, selection of 
+APs and identification of target HHs (Figure 1).Figure 1: Sampling of agripreneurs and households in treatment and 
+control districts.
+Stage 1: Scoping  
+A scoping exercise was done in October and November 
+2020 across the six districts to generate an initial long list 
+of all APs in project sites and their networks, including 
+the POs/cooperatives that they work with. Sampling 
+was informed by the need to have enough to cover 
+the diversity of APs and have a sufficiently long list from 
+which to select about 50 APs across certain criteria in 
+both intervention and control areas. The scoping relied 
+on key informant interviews and a snowballing approach 
+to generate the long list. 
+A total of 57 key informants (mainly ward extension 
+officers) and 51 respondents from POs were interviewed, 
+through partners in the project implementation area. An 
+expanded list of APs was generated from the interviews 
+and further snowballed to identify all the APs in the project 
+implementation site. This was done by first interviewing 
+the identified informants and respondents, to generate 
+information on APs in the area, then interviewing all the 
+identified APs from the snowball sampling interviews.
+ 
+From the 57 key informants and 51 respondents from 
+POs, names of APs operating in the study sites were 
+obtained and further names were generated from 
+interviewing each of the identified APs from the list. This 
+snowball sampling process generated a list of 427 APs. 
+Out of this list, the goal was to interview all the listed APs 
+who operated within the project implementation areas. 
+Since the broader list contained some APs who operated 
+outside the area and some who were unavailable due 
+to changing their area of operation or other reasons, in 
+total, 291 APs were interviewed.
+The survey , using a structured survey tool, collected 
+minimum data for characterizing these agripreneurs. Data 
+on type of enterprises, gender of the entrepreneur, area 
+of operation, products and services offered and training 
+needs, was obtained. The data generated from the 
+scoping survey was used to inform the second stage of 
+the selection of those who would be invited to participate 
+in the intervention or be part of the control group.
+Page 3:
+3
+Maziwa Zaidi: Selection of agripreneurs and linked households for testing delivery of bundled technology packages in Tanzania           |Stage 2: Selection of agripreneurs  
+Initial data from the scoping study was used for the 
+selection of intervention APs. The 291 APs were first 
+scored based on the criteria listed below, including 
+abbreviations in the data portal.
+1. Type of business and level of bundling (breeding, 
+animal health, agro-dealer, feed supplier, etc.)
+2. Linkages that APs have with POs/cooperatives or 
+overlap between the PO and AP at the ward level 
+(AP_PO_overlap)
+3. Scale of operation – clientele and the geographical 
+location of most of their clients: 
+• Number of wards covered by the AP ( ward 
+rate )
+• Service x product bundling 
+(serv_prod_bundle )
+• Total number of services ( prod_rate )
+• Total number of products ( serv_rate )
+4. Other characteristics:
+• Gender ( AP_gender ),
+• Age ( AP_youth )
+These variables (highlighted above as they appear in 
+the data portal) were used to score all APs and then 
+in selection of the APs from the intervention districts 
+that would be invited to participate in the incubation 
+program. The baseline for APs was, however, 
+conducted with all 291 APs in both intervention and 
+control districts.
+T able 1: Summary of scores and overlap per criteria
+AP-PO overlapLow (-1) Medium (0) High (1)
+No overlap – Overlap
+Scale of operation
+Number of wards 
+covered1–5 6–12 >13
+Number of services 
+offered0 1–2 3–4
+Number of products 
+traded0 1–3 4–6
+Service (i.e. product 
+bundling)No 
+bundling– Bundling
+Each AP was scored on each criterion as summarized 
+in T able 1, with a summation of scores across criteria 
+yielding the AP selection score. This resulted in scores 
+ranging from -4 to 5 with a score of 5 indicating high/
+advanced level of business operation. T able 2 below 
+shows how the APs were distributed across scores.T able 2: Distribution of APs by selection scores and intervention 
+areas
+AP selection score No. in control 
+districtsNo.  in intervention 
+districts
+-4 17 0
+-3 3 0
+-2 10 56
+-1 18 34
+0 7 16
+1 18 49
+2 12 15
+3 12 15
+4 0 4
+5 0 4
+Total 97 193
+About 50 out of the 193 APs in intervention districts 
+were targeted for selection into the incubation program 
+(a longer list of 60 per group was initially generated to 
+allow for non-responses following a consent process). To 
+ensure that APs of different business levels were selected 
+while also targeting youth and women entrepreneurs, 
+the targeted 60 APs were distributed across the different 
+scores as shown in T able 3. The allocation per score is 
+proportionate (approximately 30%)   to each score’ s 
+representation in the distribution of the 193 APs in the 
+intervention districts.
+T able 3: Distribution of targeted APs by selection scores
+AP selection 
+scoreNo. in intervention 
+districtsNo. to be 
+selected
+-2 56 17
+-1 34 11
+0 16 5
+1 49 15
+2 15 5
+3 15 5
+4 4 1
+5 4 1
+Total 193 60
+Given the foregoing, in March 2021, the CGIAR Research 
+Program on Livestock (CRP Livestock) technology flagships 
+comprising inputs/services groups (Animal Health, Feeds 
+& Forages, and Genetics) were guided to use the data to 
+select APs in the intervention  group who they thought 
+would benefit from the incubation program and achieve 
+improved inputs/services and project goals based on a 
+given criterion developed from analysis of the scoping 
+data. This was done mainly to ensure that selected APs 
+cut across different business levels and avoided deliberate 
+bias towards including women and youth.
+Page 4:
+4
+|       Maziwa Zaidi: Selection of agripreneurs and linked households for testing delivery of bundled technology packages in TanzaniaDuring the visit to the wards, a list of non-cooperative 
+HHs keeping dairy cattle was also compiled and 
+combined with the list of cooperative members to 
+generate a comprehensive list of dairy HHs in the wards. 
+Finally , dairy HHs in the selected wards were selected 
+(including non-cooperative members where possible) 
+and surveyed. These dairy HHs represent the target HH-
+level population for the project.
+Results 
+T able 4 shows how APs offered for selection are 
+distributed across the scores. The aim was to ensure 
+that selected APs as per the Livestock CRP flagships cut 
+across different business levels, adhering to the women 
+and youth representation as indicated. We targeted 
+having about 50 APs for incubation, with an additional 10 
+APs to start with in case of dropouts or lack of willingness 
+to participate. 
+T able 5 summarizes the selection of APs by district, 
+including additional APs in case of dropouts or 
+unwillingness to participate in incubation. It shows the 
+distribution of the 60 APs across the different scores of 
+levels of the business scale. The 60 APs were invited to 
+participate. Finally , 50 participated in the incubation 
+process including visioning, boot camp, mentoring and 
+coaching.  
+T able 5: Summary of selection APs by intervention district
+DistrictSelected by FPsAdditional Total
+Female Male
+Hai 14 9 2 25
+Siha 3 7 2 12
+Muheza 2 5 4 11
+Korogwe 3 6 3 12
+Total 22 27 11 60T able 4: Selection of agripreneurs in intervention districts by inputs/services groups
+AP selection scoreNo. in intervention 
+districts% youth % women No. to select# Selected by inputs/services groups
+Health Feeds and forages Breeding
+-2 56 36% 38% 17 6 5 2
+-1 34 44% 24% 11 4 3 3
+0 16 38% 6% 5 2 1 3
+1 49 41% 53% 15 5 4 4
+2 15 33% 40% 5 2 11
+3 15 67% 40% 5 2 12
+4 4 75% 0% 1 0 00
+5 4 50% 75% 1 0 00
+Total 193 48% 34% 60 20 17 15
+Additional* 4 4 3
+*to cover potential dropouts
+The HH survey interviewed 713 HHs from 24 wards 
+(12 intervention and 12 control) where there were 
+cooperative and non-cooperative HHs (in some cases 
+we could not get the non-cooperative or the cooperative 
+members). The distribution of HHs by ward and district is 
+shown in T able 6.
+T able 6: Distribution of HHs by selected wards and districts
+Treatment DistrictNo. of 
+WardsNo. of  
+households
+Intervention Hai 4 105
+Siha 2 52
+Muheza 4 120
+Korogwe 2 58
+Control Moshi Rural 9 292
+Rombo 3 86
+Total 24 713Stage 3. Selection of households  
+After identification of matched APs in both intervention 
+and control areas, the POs/cooperatives linked to them 
+were listed. If not already obtained, data on cooperative 
+members and their wards was collected. Wards were 
+identified around the POs/cooperatives that represent 
+common areas of both APs’ coverage and POs/
+cooperative members. It is useful to note that not all APs 
+were expected to be linked to these POs/cooperatives, 
+but the majority are expected to be linked. Those not 
+linked are likely working in the same geographical areas. 
+These wards of overlap between PO membership and 
+AP operation formed the longer list of wards, from 
+which a random selection of survey wards was drawn. 
+The wards had to have at least eight APs who indicated 
+they work in them or at least one PO operating in the 
+area (three wards in Rombo were excluded because 
+there were no reported POs covering the areas). These 
+became project implementation areas. The number of 
+wards was balanced according to the HH-level sample 
+size calculations during analysis (see below). 
+Page 5:
+Authors  
+James Rao, Immaculate Omondi, Jane Poole 
+and Amos Omore work for the International 
+Livestock Research Institute (ILRI).Photo credit  
+Page 1, picture - A cow is milked in 
+a dairy farm belonging to Faustina 
+Akyoo in T anga, T anzania (photo 
+credit: ILRI/Paul Karaimu).  
+ 
+Contact  
+Amos Omore  
+ILRI, T anzania  
+A.OMORE@CGIAR.ORGAcknowledgment  
+ILRI thanks all donors and organizations which 
+globally support its work through their contributions 
+to the CGIAR Trust Fund . 
+The International Livestock Research Institute (ILRI) is a non-profit institution helping people in low- and middle-income 
+countries to improve their lives, livelihoods and lands through the animals that remain the backbone of small-scale agricul -
+ture and enterprise across the developing world. ILRI belongs to CGIAR, a global research-for-development partnership 
+working for a food-secure future. ILRI’s funders, through the CGIAR Trust Fund , and its many partners make ILRI’s work 
+possible and its mission a reality. Australian animal scientist and Nobel Laureate Peter Doherty serves as ILRI’s patron.
+You are free to use and share this material under the Creative Commons Attribution 4.0 International Licence .better lives 
+through 
+livestock
+ilri.orgDiscussion and next steps
+Designing and conducting a social experiment like this 
+one presented here is complex given the many factors 
+that need to be considered. The complexities will need 
+to be factored into the analysis as much as possible 
+following an end-line survey . At a basic level, the analysis 
+would include measuring the effect of the Business 
+Development Services (BDS) vs. the effect of technology 
+package or a combination given the expectation that 
+different APs will take up different baskets of interventions 
+and that in control areas, APs may have single or 
+combination of interventions which may or may not be 
+the same. Similarly , there are APs in the intervention areas 
+(but not with the project) who may have the same or 
+other single or combination interventions and through 
+the project may also receive information from their fellow 
+project agripreneurs. 
+The analysis will also need to consider the likelihood that 
+we likely will be unable to evaluate effectively different 
+baskets (or individual) technologies and their effects 
+but expect to see quite a lot of variation which may be 
+explored to look for trends and comparisons. There 
+may also be different technologies in control areas than 
+in intervention areas because of the actions of partners 
+and/or government extension services. Further, we would need to factor observations of 
+non-project agripreneurs in intervention districts to 
+evaluate the effect of BDS without the confounding of 
+technology . Another potential complication is measuring 
+and isolating effects on farmers in intervention areas 
+who are reached by other non-project APs that are not 
+supported with BDS. It is very likely that we will have HHs 
+in the project who indicate in the baseline that they are 
+working with APs, but who are not part of the project. 
+We will explore these issues while analysing the baseline 
+and end-line data to deliberately extract these APs. The 
+evaluation will also incorporate the parallel qualitative 
+assessment of outcomes being conducted separately .
+References
+1. Blackwell, M., Lacus, S., King, G. and Porro, G. 2009. cem: 
+Coarsened exact matching in Stata. The Stata Journal 9(4): 
+524–546.
+2. Lacus, S. M., G. King and G. Porro. 2008. Matching for causal 
+inference without balance checking. (Available from: http://
+gking.harvard.edu/files/cem.pdf ). 
+3. ILRI dataset portal. nd. Maziwa Zaidi /More Milk in T anzania 
+(phase II). (Available from: https://data.ilri.org/portal/dataset/
+maziwa-zaidi-more-milk-in-tanzania-phase2_  
+4. Omore, A., Rao, E.J.O. and Ballantyne, P . 2019. Identifying 
+profitable dairy innovation packages for T anzania agri-
+entrepreneurs: Report from an agribusiness forum, Moshi, 
+T anzania, 16–18 October 2019. Nairobi, Kenya: ILRI. https://hdl.
+handle.net/10568/105706"
+5365,Knowledge product,2023,Webinar insights: Pathways to more jobs and better incomes in agrifood systems,Building inclusive and sustainable agrifood systems can play a key role in achieving sustainable development goals. Agrifood systems account for more than 70% of employment in low-income countries and employs more than 1 billion people worldwide. Yet achieving equitable and inclusive livelihoods and employment is at risk.,2,Poverty,"Webinar insights: Pathways to more jobs and better incomes in agrifood systems Skip to main content Dear CGSpace users, we have performed some minor upgrades to the user interface. If it does not look right you should refresh the page while holding the Shift key. Communities & Collections Browse Navigate CGIAR Centers Statistics English Català Čeština Deutsch Español Français Gàidhlig Italiano Latviešu Magyar Nederlands Polski Português Português do Brasil Srpski (lat) Suomi Svenska Türkçe Tiếng Việt Қазақ বাংলা हिंदी Ελληνικά Српски Yкраї́нська Log In Note: CGIAR users should log in with their Active Directory username and password. For example, if your email is j.smith@cgiar.org, you would use jsmith here. Log in New user? Click here to register. Have you forgotten your password? Home CGIAR 2030 portfolio CGIAR 2030 research initiatives (2022–2024) CGIAR Initiative on Rethinking Food Markets Webinar insights: Pathways to more jobs and better incomes in agrifood systems Webinar insights: Pathways to more jobs and better incomes in agrifood systems No Thumbnail Available Authors Nguyen, Vi Date Issued 2023-08-14 Date Online 2023-08-14 Language en Type Blog Post Review Status Internal Review Access Rights Open Access Usage Rights Other Metadata Full item page Share Citation Nguyen, Vi. 2023. Webinar insights: Pathways to more jobs and better incomes in agrifood systems. https://www.kismfoodmarkets.org/node/2496 Permanent link to cite or share this item https://hdl.handle.net/10568/132771 External link to download this item https://www.kismfoodmarkets.org/node/2496 DOI Abstract/Description Building inclusive and sustainable agrifood systems can play a key role in achieving sustainable development goals. Agrifood systems account for more than 70% of employment in low-income countries and employs more than 1 billion people worldwide. Yet achieving equitable and inclusive livelihoods and employment is at risk. AGROVOC Keywords employment ; income ; agrifood systems ; inclusion ; sustainability ; supply chains ; innovation ; women ; gender ; youth Subjects Organizations Affiliated to the Authors ISEAN Alliance CGIAR Action Areas Systems Transformation CGIAR Impact Areas Poverty reduction, livelihoods and jobs CGIAR Initiatives Rethinking Food Markets Collections CGIAR Initiative on Rethinking Food Markets DSpace software copyright © 2002-2024 LYRASIS About Cookie settings Privacy policy Send Feedback",
+5569,Capacity sharing for development,2023,Maize Target Product Profiles workshop in Zambia organized for the Agriculture Research Institute breeding program,The Maize Product Design team of the Zambia breeding program engaged in reviewing the maize market segments identified by OneCGIAR Market Intelligence and CIMMYT. The workshop focused on refining market segments for Zambia national needs and defining target product profiles for each market segment in support of collaborative efforts to shape the future of Maize breeding in the East and Southern Africa region.,1,Gender,,"                                                                                                                                                                                                                                                                                                  Worksheet Descriptions  Unnamed: 1               Unnamed: 2                                                                                                                                                                    Unnamed: 3                                                                                                                                                                                Unnamed: 4
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                             PRMS Results and IA  coding         NaN   Evidence for IA coding                                                                                                                                                    Starting Rows 1, describes Method used to systematically link Breeding Pipelines employed, Target Product Profiles pursued, and Variety Releases achieved by ALL Genetic Innovation Breeding Efforts to Impact Areas
+                                                                                                                                                                                                                                                                                                                     NaN         NaN   Evidence for IA coding                                                                                                                                                   Starting Rows 11, describes                                                                                          Standardized matrix of traits, value propositions and Impact Area tagging for genetic innovation
+                                                                                                                                                                                                                                                                                                                     NaN         NaN   Evidence for IA coding                                                                                                                                                   Starting Rows 45, describes                                                            Standardized Impact Area tagging for Genetic Innovation Breeding Pipelines and Variety Releases and their link to PRMS results
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                           IRL Standardization Germplasm         NaN  Evidence for IRL coding                                  Links Germplasm Stages, used in CGIAR Genetic Innovation, to Levels of CGIAR Innovation Readiness and Use, across all CGIAR Breeding Efforts                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                    Breeding Cycle times         NaN Evidence for cycle times                                                   Lists cycle times of breeding pipelines, based on a breeders' survey. This information is used in PRMS Results descriptions                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                     BPs >> PRMS Results         NaN    Part of the analytics                                                                                                                       Lists Breeding Pipelines and their link to PRMS Results                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                Value Propositions in BP         NaN    Part of the analytics                                                                                                         Lists Value propositions  and Trait requirement per Breeding Pipeline                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                           BP - TPP - MS         NaN    Part of the analytics  Links between Breeding Pipelines (BP), Target Product Profiles (TPP) and Market Segments (MS), across all of CGAIR breeding, downloaded from Breeding Portal 14 January 2024                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                         TPPs and Traits         NaN    Part of the analytics Links between Trait, Value Proposition, Breeding Pipelines (BP), Target Product Profiles (TPP) , across all of CGAIR breeding, downloaded from Breeding Portal 8 January 2024                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                              Variety 2023 releases > BP         NaN    Part of the analytics                                                                  Known variety releases in 2023, linked to Breeding Pipeline, downloaded from Breeding Portal 14 January 2023                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+    In collaboration with Market Intelligence, Impact Area and IRL coding are standardized across ALL CGIAR breeding efforts, with  improvements from year to year. The file provides methods and analysis. IA Worksheet ""PRMS Results and IA coding"", Rows 93-96 lists Impact Area codes, resulting from the analysis.          NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+Worksheet ""PRMS Results & IA Coding"" explains the method, developed with Market Intelligence, for standardized Impact Area tagging of CGIAR Breeding Pipelines. The proportion of Breeding Pipelines with Impact Area Tag 2 are shown in Row 33.  The analysis allows to conclude on the overall portfolio orientation.          NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN"
+5569,Capacity sharing for development,2023,Maize Target Product Profiles workshop in Zambia organized for the Agriculture Research Institute breeding program,The Maize Product Design team of the Zambia breeding program engaged in reviewing the maize market segments identified by OneCGIAR Market Intelligence and CIMMYT. The workshop focused on refining market segments for Zambia national needs and defining target product profiles for each market segment in support of collaborative efforts to shape the future of Maize breeding in the East and Southern Africa region.,2,Climate,,"                                                                                                                                                                                                                                                                                                  Worksheet Descriptions  Unnamed: 1               Unnamed: 2                                                                                                                                                                    Unnamed: 3                                                                                                                                                                                Unnamed: 4
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                             PRMS Results and IA  coding         NaN   Evidence for IA coding                                                                                                                                                    Starting Rows 1, describes Method used to systematically link Breeding Pipelines employed, Target Product Profiles pursued, and Variety Releases achieved by ALL Genetic Innovation Breeding Efforts to Impact Areas
+                                                                                                                                                                                                                                                                                                                     NaN         NaN   Evidence for IA coding                                                                                                                                                   Starting Rows 11, describes                                                                                          Standardized matrix of traits, value propositions and Impact Area tagging for genetic innovation
+                                                                                                                                                                                                                                                                                                                     NaN         NaN   Evidence for IA coding                                                                                                                                                   Starting Rows 45, describes                                                            Standardized Impact Area tagging for Genetic Innovation Breeding Pipelines and Variety Releases and their link to PRMS results
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                           IRL Standardization Germplasm         NaN  Evidence for IRL coding                                  Links Germplasm Stages, used in CGIAR Genetic Innovation, to Levels of CGIAR Innovation Readiness and Use, across all CGIAR Breeding Efforts                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                    Breeding Cycle times         NaN Evidence for cycle times                                                   Lists cycle times of breeding pipelines, based on a breeders' survey. This information is used in PRMS Results descriptions                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                     BPs >> PRMS Results         NaN    Part of the analytics                                                                                                                       Lists Breeding Pipelines and their link to PRMS Results                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                Value Propositions in BP         NaN    Part of the analytics                                                                                                         Lists Value propositions  and Trait requirement per Breeding Pipeline                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                           BP - TPP - MS         NaN    Part of the analytics  Links between Breeding Pipelines (BP), Target Product Profiles (TPP) and Market Segments (MS), across all of CGAIR breeding, downloaded from Breeding Portal 14 January 2024                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                         TPPs and Traits         NaN    Part of the analytics Links between Trait, Value Proposition, Breeding Pipelines (BP), Target Product Profiles (TPP) , across all of CGAIR breeding, downloaded from Breeding Portal 8 January 2024                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                              Variety 2023 releases > BP         NaN    Part of the analytics                                                                  Known variety releases in 2023, linked to Breeding Pipeline, downloaded from Breeding Portal 14 January 2023                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+    In collaboration with Market Intelligence, Impact Area and IRL coding are standardized across ALL CGIAR breeding efforts, with  improvements from year to year. The file provides methods and analysis. IA Worksheet ""PRMS Results and IA coding"", Rows 93-96 lists Impact Area codes, resulting from the analysis.          NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+Worksheet ""PRMS Results & IA Coding"" explains the method, developed with Market Intelligence, for standardized Impact Area tagging of CGIAR Breeding Pipelines. The proportion of Breeding Pipelines with Impact Area Tag 2 are shown in Row 33.  The analysis allows to conclude on the overall portfolio orientation.          NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN"
