@@ -7,8 +7,6 @@ def evaluate_results(output_csv, input_csv, metrics_csv):
     Compare model outputs to expected values and calculate metrics.
     """
 
-    input_csv = 'input//Joined_Processed_Evidence_PRMS_ExpertsScore.csv'
-    output_csv = f'output//results.csv'
     # Load the results and input data
     results_df = pd.read_csv(output_csv)
     input_df = pd.read_csv(input_csv)
@@ -17,17 +15,51 @@ def evaluate_results(output_csv, input_csv, metrics_csv):
     if 'score' not in results_df.columns:
         raise ValueError("The 'score' column is missing in the results CSV. Please run response_extractor.py first.")
 
-    # Preprocess columns for matching
+    # Define mapping from 'prompt_id' to 'Impact Area checked'
+    prompt_id_to_impact_area = {
+        'GENDER_EQUALITY_PROMPT': 'Gender',
+        'CLIMATE_CHANGE_PROMPT': 'Climate',
+        'NUTRITION_PROMPT': 'Nutrition',
+        'POVERTY_REDUCTION_PROMPT': 'Poverty',
+        'ENVIRONMENTAL_HEALTH_PROMPT': 'Environment'
+        # Add other mappings as needed
+    }
+
+    # Map 'prompt_id' to 'Impact Area' in results_df
+    results_df['Impact Area'] = results_df['prompt_id'].map(prompt_id_to_impact_area)
+
+    # Preprocess 'result_code' and 'Impact Area'
     results_df['result_code'] = results_df['result_code'].astype(str).str.strip()
-    results_df['prompt_prefix'] = results_df['prompt_id'].astype(str).str.strip().str[:5]
+    results_df['Impact Area'] = results_df['Impact Area'].astype(str).str.strip()
+    results_df['prompt_id'] = results_df['prompt_id'].astype(str).str.strip()
 
     input_df['Result code'] = input_df['Result code'].astype(str).str.strip()
-    input_df['Impact Area prefix'] = input_df['Impact Area checked'].astype(str).str.strip().str[:5]
+    input_df['Impact Area checked'] = input_df['Impact Area checked'].astype(str).str.strip()
 
-    # Merge results and input data on 'result_code' and prefix of perspective
-    merged_df = pd.merge(results_df, input_df, left_on=['result_code', 'prompt_prefix'], right_on=['Result code', 'Impact Area prefix'], how='inner')
+    # Standardize Impact Area values to lower case for matching
+    results_df['Impact Area'] = results_df['Impact Area'].str.lower()
+    input_df['Impact Area checked'] = input_df['Impact Area checked'].str.lower()
 
-    # Ensure 'Expert score' is numeric
+    # Debugging: Print unique values to check for matching
+    print("Unique Impact Areas in results_df:", results_df['Impact Area'].unique())
+    print("Unique Impact Areas in input_df:", input_df['Impact Area checked'].unique())
+
+    # Merge on 'result_code' and 'Impact Area'
+    merged_df = pd.merge(
+        results_df,
+        input_df,
+        left_on=['result_code', 'Impact Area'],
+        right_on=['Result code', 'Impact Area checked'],
+        how='inner'
+    )
+
+    print(f"Merged DataFrame shape: {merged_df.shape}")
+
+    if merged_df.empty:
+        print("Warning: The merged DataFrame is empty. Check if 'result_code' and 'Impact Area' values match between the results and input data.")
+        return  # Exit the function early
+
+    # Ensure 'Expert score' and 'score' are numeric
     merged_df['Expert score'] = pd.to_numeric(merged_df['Expert score'], errors='coerce')
     merged_df['score'] = pd.to_numeric(merged_df['score'], errors='coerce')
 
@@ -40,9 +72,10 @@ def evaluate_results(output_csv, input_csv, metrics_csv):
     # Calculate metrics
     metrics = []
 
-    grouped = merged_df.groupby(['model_name', 'prompt_prefix'])
+    # Group by model_name and Impact Area
+    grouped = merged_df.groupby(['model_name', 'Impact Area', 'prompt_id'])
 
-    for (model_name, prompt_prefix), group in grouped:
+    for (model_name, impact_area, prompt_id), group in grouped:
         total = len(group)
         correct = group['correct'].sum()
         incorrect = total - correct
@@ -64,7 +97,8 @@ def evaluate_results(output_csv, input_csv, metrics_csv):
 
         metrics.append({
             'model_name': model_name,
-            'prompt_prefix': prompt_prefix,
+            'Impact Area': impact_area,
+            'prompt_id': prompt_id,
             'total': total,
             'correct': correct,
             'incorrect': incorrect,
@@ -78,7 +112,8 @@ def evaluate_results(output_csv, input_csv, metrics_csv):
         for score_metric in item['score_metrics']:
             metrics_list.append({
                 'model_name': item['model_name'],
-                'prompt_prefix': item['prompt_prefix'],
+                'Impact Area': item['Impact Area'],
+                'prompt_id': item['prompt_id'],
                 'total': item['total'],
                 'correct': item['correct'],
                 'incorrect': item['incorrect'],

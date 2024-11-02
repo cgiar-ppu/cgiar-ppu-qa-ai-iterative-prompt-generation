@@ -1,0 +1,9 @@
+model_name,Impact Area,prompt_id,total,correct,incorrect,accuracy,expert_score,score_total,score_correct,score_accuracy
+gpt-4o,gender,GENDER_EQUALITY_PROMPT,1,1,0,1,0,1,1,1
+gpt-4o,nutrition,NUTRITION_PROMPT,1,0,1,0,0,1,0,0
+gpt-4o-mini,gender,GENDER_EQUALITY_PROMPT,1,1,0,1,0,1,1,1
+gpt-4o-mini,nutrition,NUTRITION_PROMPT,1,0,1,0,0,1,0,0
+o1-mini,gender,GENDER_EQUALITY_PROMPT,1,1,0,1,0,1,1,1
+o1-mini,nutrition,NUTRITION_PROMPT,1,0,1,0,0,1,0,0
+o1-preview,gender,GENDER_EQUALITY_PROMPT,1,1,0,1,0,1,1,1
+o1-preview,nutrition,NUTRITION_PROMPT,1,0,1,0,0,1,0,0

@@ -1,0 +1,9 @@
+model_name,Impact Area,total,correct,incorrect,accuracy,expert_score,score_total,score_correct,score_accuracy
+gpt-4o,gender,1,1,0,1.0,0,1,1,1.0
+gpt-4o,nutrition,1,0,1,0.0,0,1,0,0.0
+gpt-4o-mini,gender,1,1,0,1.0,0,1,1,1.0
+gpt-4o-mini,nutrition,1,0,1,0.0,0,1,0,0.0
+o1-mini,gender,1,1,0,1.0,0,1,1,1.0
+o1-mini,nutrition,1,0,1,0.0,0,1,0,0.0
+o1-preview,gender,1,1,0,1.0,0,1,1,1.0
+o1-preview,nutrition,1,0,1,0.0,0,1,0,0.0

@@ -86,7 +86,7 @@ def worker(task_queue, results_list, lock):
             # Optionally, implement retry logic here
             pass
 
-def execute_tasks_concurrently(tasks, num_threads=5):
+def execute_tasks_concurrently(tasks, num_threads=8):
     """
     Execute tasks concurrently using threading.
     """
