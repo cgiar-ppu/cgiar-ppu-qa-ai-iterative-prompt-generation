@@ -12,7 +12,7 @@ def estimate_token_count(prompt_text, input_text, model_name):
 
 # task_generator.py
 
-def generate_task_list(df_input, prompts, models, max_token_limit=4000):
+def generate_task_list(df_input, prompts, models, max_token_limit=80000):
     tasks = []
     for _, row in df_input.iterrows():
         input_text = row['input_text']

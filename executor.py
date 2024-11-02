@@ -45,9 +45,9 @@ def execute_task(task):
             response = client.chat.completions.create(
                 model=task['model_name'],
                 messages=messages,
-                temperature=0.5,  # Adjust as needed
-                max_tokens=1500,
-                top_p=1,
+                temperature=0,  # Adjust as needed
+                max_tokens=500,
+                top_p=0,
                 frequency_penalty=0,
                 presence_penalty=0,
                 response_format={
