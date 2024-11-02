@@ -96,7 +96,7 @@ def main():
     results_df.to_csv(output_csv, index=False)
 
     # Stage 3: Evaluation and Metrics Calculation
-    evaluate_results(output_csv, input_csv, metrics_csv, result_code_to_impact_areas)
+    evaluate_results(output_csv, input_csv, metrics_csv)
 
     # Stage 4: Automated Prompt Improvement
     improved_prompts = improve_prompts(config.PROMPTS, prompt_techniques.PROMPT_TECHNIQUES)
