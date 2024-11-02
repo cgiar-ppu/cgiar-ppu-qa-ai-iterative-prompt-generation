@@ -61,6 +61,7 @@ def main():
     # Stage 1: Task List Creation
     input_csv = 'input//Joined_Processed_Evidence_PRMS_ExpertsScore.csv'
     task_list_csv = f'output//task_list_{timestamp}.csv'
+    task_list_excel = f'output//task_list_{timestamp}.xlsx'
     output_csv = f'output//results_{timestamp}.csv'
     metrics_csv = f'output//metrics_{timestamp}.csv'
 
@@ -74,7 +75,7 @@ def main():
     ) not in existing_results]
 
     # Save task list
-    save_task_list(tasks_to_run, task_list_csv)
+    save_task_list(tasks_to_run, task_list_excel, task_list_csv)
 
     # Stage 2: Execution of Tasks
     logger = ResultLogger(output_csv)

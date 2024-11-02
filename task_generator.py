@@ -3,6 +3,7 @@
 import itertools
 from tiktoken import encoding_for_model
 import pandas as pd
+import csv
 
 def estimate_token_count(prompt_text, input_text, model_name):
     encoding = encoding_for_model(model_name)
@@ -41,6 +42,7 @@ def generate_task_list(df_input, prompts, models, max_token_limit=80000):
     return tasks
 
 
-def save_task_list(tasks, task_list_csv):
+def save_task_list(tasks, task_list_excel, task_list_csv):
     df_tasks = pd.DataFrame(tasks)
-    df_tasks.to_csv(task_list_csv, index=False)
+    df_tasks.to_excel(task_list_excel, index=False)
+    df_tasks.to_csv(task_list_csv, index=False, quoting=csv.QUOTE_ALL, escapechar='\\')
