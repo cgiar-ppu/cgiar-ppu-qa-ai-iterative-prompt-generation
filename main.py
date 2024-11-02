@@ -12,14 +12,16 @@ import prompt_techniques
 import pandas as pd
 from datetime import datetime
 from response_extractor import add_score_explanation_columns
+import time
 
+start_time = time.time()
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 
 def main():
     # Stage 1: Task List Creation
     input_csv = 'input//Joined_Processed_Evidence_PRMS_ExpertsScore.csv'
-    task_list_csv = f'output//task_list_{timestamp}.csv'
-    output_csv = f'output//results_{timestamp}.csv'
+    task_list_csv = f'output//task_list.csv'
+    output_csv = f'output//results.csv'
     metrics_csv = f'output//metrics_{timestamp}.csv'
 
     df_input = load_data(input_csv)
@@ -48,9 +50,7 @@ def main():
     results_df.to_csv(output_csv, index=False)
 
     # Stage 3: Evaluation and Metrics Calculation
-    results_df = pd.read_csv(output_csv)
-    metrics_df = evaluate_results(results_df, df_input)
-    metrics_df.to_csv(metrics_csv, index=False)
+    evaluate_results(output_csv, input_csv, metrics_csv)
 
     # Stage 4: Automated Prompt Improvement
     improved_prompts = improve_prompts(config.PROMPTS, prompt_techniques.PROMPT_TECHNIQUES)
@@ -59,6 +59,10 @@ def main():
     config.PROMPTS.update(improved_prompts)
 
     # Repeat stages as needed...
+
+    end_time = time.time()
+    total_time = end_time - start_time
+    print(f"Total execution time: {total_time:.2f} seconds")
 
 if __name__ == '__main__':
     main()

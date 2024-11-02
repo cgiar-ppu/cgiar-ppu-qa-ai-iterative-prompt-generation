@@ -1,57 +1,94 @@
 # evaluator.py
 
 import pandas as pd
-import json
-import re
 
-def parse_model_output(model_output):
-    """
-    Parse the model output to extract the score and explanation.
-    """
-    try:
-        # Try parsing as JSON
-        parsed_output = json.loads(model_output)
-        score = parsed_output.get('score')
-        explanation = parsed_output.get('explanation')
-    except json.JSONDecodeError:
-        # Fallback to regex parsing
-        score_match = re.search(r'"score":\s*(\d)', model_output)
-        explanation_match = re.search(r'"explanation":\s*"([^"]+)"', model_output)
-        score = int(score_match.group(1)) if score_match else None
-        explanation = explanation_match.group(1) if explanation_match else None
-    return score, explanation
-
-def evaluate_results(results_df, input_df):
+def evaluate_results(output_csv, input_csv, metrics_csv):
     """
     Compare model outputs to expected values and calculate metrics.
     """
-    metrics = []
-    for _, row in results_df.iterrows():
-        score, explanation = parse_model_output(row['model_output'])
-        expected_column = perspective_to_column(row['prompt_id'])
-        if expected_column and expected_column in input_df.columns:
-            expected_value = input_df.loc[input_df['Result code'] == row['result_code'], expected_column].values[0]
-            correct = int(score) == int(expected_value)
-            metrics.append({
-                'result_code': row['result_code'],
-                'prompt_id': row['prompt_id'],
-                'model_name': row['model_name'],
-                'correct': correct
-            })
-    metrics_df = pd.DataFrame(metrics)
-    return metrics_df
 
-def perspective_to_column(prompt_id):
-    """
-    Map prompt IDs to the corresponding performance column.
-    """
-    mapping = {
-        'GENDER_EQUALITY_PROMPT': 'Gender level',
-        'CLIMATE_CHANGE_PROMPT': 'Climate change level',
-        'NUTRITION_PROMPT': 'Nutrition tag level',
-        'ENVIRONMENTAL_HEALTH_PROMPT': 'Environmental biodiversity tag level',
-        'POVERTY_REDUCTION_PROMPT': 'Poverty reduction tag level',
-        'INNOVATION_READINESS_PROMPT': 'IPSR LEVEL',
-        # GEOSCOPE_TAG_PROMPT and ACTOR_VERIFICATION_PROMPT have no evaluation
-    }
-    return mapping.get(prompt_id, None)
+    input_csv = 'input//Joined_Processed_Evidence_PRMS_ExpertsScore.csv'
+    output_csv = f'output//results.csv'
+    # Load the results and input data
+    results_df = pd.read_csv(output_csv)
+    input_df = pd.read_csv(input_csv)
+
+    # Ensure the 'score' column exists in results_df
+    if 'score' not in results_df.columns:
+        raise ValueError("The 'score' column is missing in the results CSV. Please run response_extractor.py first.")
+
+    # Preprocess columns for matching
+    results_df['result_code'] = results_df['result_code'].astype(str).str.strip()
+    results_df['prompt_prefix'] = results_df['prompt_id'].astype(str).str.strip().str[:5]
+
+    input_df['Result code'] = input_df['Result code'].astype(str).str.strip()
+    input_df['Impact Area prefix'] = input_df['Impact Area checked'].astype(str).str.strip().str[:5]
+
+    # Merge results and input data on 'result_code' and prefix of perspective
+    merged_df = pd.merge(results_df, input_df, left_on=['result_code', 'prompt_prefix'], right_on=['Result code', 'Impact Area prefix'], how='inner')
+
+    # Ensure 'Expert score' is numeric
+    merged_df['Expert score'] = pd.to_numeric(merged_df['Expert score'], errors='coerce')
+    merged_df['score'] = pd.to_numeric(merged_df['score'], errors='coerce')
+
+    # Drop rows with NaN scores
+    merged_df = merged_df.dropna(subset=['score', 'Expert score'])
+
+    # Create a column to indicate if the model's score matches the expert score
+    merged_df['correct'] = merged_df['score'] == merged_df['Expert score']
+
+    # Calculate metrics
+    metrics = []
+
+    grouped = merged_df.groupby(['model_name', 'prompt_prefix'])
+
+    for (model_name, prompt_prefix), group in grouped:
+        total = len(group)
+        correct = group['correct'].sum()
+        incorrect = total - correct
+        accuracy = correct / total if total > 0 else 0
+
+        # Breakdown by score value
+        score_breakdown = group.groupby('Expert score')['correct'].agg(['sum', 'count'])
+        score_metrics = []
+        for expert_score, row in score_breakdown.iterrows():
+            score_total = row['count']
+            score_correct = row['sum']
+            score_accuracy = score_correct / score_total if score_total > 0 else 0
+            score_metrics.append({
+                'expert_score': expert_score,
+                'total': score_total,
+                'correct': score_correct,
+                'accuracy': score_accuracy
+            })
+
+        metrics.append({
+            'model_name': model_name,
+            'prompt_prefix': prompt_prefix,
+            'total': total,
+            'correct': correct,
+            'incorrect': incorrect,
+            'accuracy': accuracy,
+            'score_metrics': score_metrics
+        })
+
+    # Save metrics to a CSV file
+    metrics_list = []
+    for item in metrics:
+        for score_metric in item['score_metrics']:
+            metrics_list.append({
+                'model_name': item['model_name'],
+                'prompt_prefix': item['prompt_prefix'],
+                'total': item['total'],
+                'correct': item['correct'],
+                'incorrect': item['incorrect'],
+                'accuracy': item['accuracy'],
+                'expert_score': score_metric['expert_score'],
+                'score_total': score_metric['total'],
+                'score_correct': score_metric['correct'],
+                'score_accuracy': score_metric['accuracy']
+            })
+
+    metrics_df = pd.DataFrame(metrics_list)
+    metrics_df.to_csv(metrics_csv, index=False)
+    print(f"Metrics saved to {metrics_csv}")
