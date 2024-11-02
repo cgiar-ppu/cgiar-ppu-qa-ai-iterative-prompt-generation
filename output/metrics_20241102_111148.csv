@@ -1,0 +1,5 @@
+model_name,Impact Area,prompt_id,total,correct,incorrect,accuracy,expert_score,score_total,score_correct,score_accuracy
+gpt-4o,poverty,TEST_PROMPT_V1,9,2,7,0.2222222222222222,0,7,0,0.0
+gpt-4o,poverty,TEST_PROMPT_V1,9,2,7,0.2222222222222222,2,2,2,1.0
+gpt-4o-mini,poverty,TEST_PROMPT_V1,9,2,7,0.2222222222222222,0,7,0,0.0
+gpt-4o-mini,poverty,TEST_PROMPT_V1,9,2,7,0.2222222222222222,2,2,2,1.0

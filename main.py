@@ -23,6 +23,7 @@ def main():
     parser.add_argument('--prompts', nargs='*', help='List of prompt IDs to include. If omitted, all active prompts will be used.')
     parser.add_argument('--models', nargs='*', help='List of model names to include. If omitted, all models in config.MODELS will be used.')
     parser.add_argument('--verbose', action='store_true', help='Enable verbose output.')
+    parser.add_argument('--list', action='store_true', help='List all available prompts and models.')
     args = parser.parse_args()
 
     # Load configurations
@@ -48,6 +49,15 @@ def main():
         for model in models:
             print(f" - {model}")
 
+    if args.list:
+        print("Available Prompts:")
+        for pid in config.PROMPTS.keys():
+            print(f" - {pid}")
+        print("\nAvailable Models:")
+        for model in config.MODELS:
+            print(f" - {model}")
+        return
+    
     # Stage 1: Task List Creation
     input_csv = 'input//Joined_Processed_Evidence_PRMS_ExpertsScore.csv'
     task_list_csv = f'output//task_list_{timestamp}.csv'

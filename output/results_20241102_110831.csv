@@ -1,0 +1,39 @@
+result_code,prompt_id,model_name,perspective,impact_area,model_output,token_count,timestamp,score,explanation
+6182,TEST_PROMPT_V1,gpt-4o,"Poverty Reduction, Livelihoods, and Jobs",Poverty,test successful,1273,2024-11-02 11:08:33.114574,,
+6253,TEST_PROMPT_V1,gpt-4o,"Poverty Reduction, Livelihoods, and Jobs",Poverty,test successful,1299,2024-11-02 11:08:33.150678,,
+6182,TEST_PROMPT_V1,gpt-4o-mini,"Poverty Reduction, Livelihoods, and Jobs",Poverty,test successful,1273,2024-11-02 11:08:33.163193,,
+6253,TEST_PROMPT_V1,gpt-4o-mini,"Poverty Reduction, Livelihoods, and Jobs",Poverty,test successful,1299,2024-11-02 11:08:33.185224,,
+6328,TEST_PROMPT_V1,gpt-4o-mini,"Poverty Reduction, Livelihoods, and Jobs",Poverty,test successful,1571,2024-11-02 11:08:33.188748,,
+6115,TEST_PROMPT_V1,gpt-4o,"Poverty Reduction, Livelihoods, and Jobs",Poverty,"test successful
+
+The output ""test successful"" is provided as per your request.",5847,2024-11-02 11:08:33.440869,,
+6115,TEST_PROMPT_V1,gpt-4o-mini,"Poverty Reduction, Livelihoods, and Jobs",Poverty,test successful,5847,2024-11-02 11:08:33.468438,,
+5840,TEST_PROMPT_V1,gpt-4o,"Poverty Reduction, Livelihoods, and Jobs",Poverty,test successful,169,2024-11-02 11:08:33.498973,,
+5569,TEST_PROMPT_V1,gpt-4o,"Poverty Reduction, Livelihoods, and Jobs",Poverty,test successful,989,2024-11-02 11:08:33.518015,,
+6328,TEST_PROMPT_V1,gpt-4o,"Poverty Reduction, Livelihoods, and Jobs",Poverty,"test successful
+
+The instruction was to output ""test successful,"" so that is the response provided.",1571,2024-11-02 11:08:33.549086,,
+5569,TEST_PROMPT_V1,gpt-4o-mini,"Poverty Reduction, Livelihoods, and Jobs",Poverty,test successful,989,2024-11-02 11:08:33.553086,,
+5569,TEST_PROMPT_V1,gpt-4o-mini,"Poverty Reduction, Livelihoods, and Jobs",Poverty,test successful,989,2024-11-02 11:08:33.569116,,
+5840,TEST_PROMPT_V1,gpt-4o-mini,"Poverty Reduction, Livelihoods, and Jobs",Poverty,test successful,169,2024-11-02 11:08:33.698297,,
+5569,TEST_PROMPT_V1,gpt-4o,"Poverty Reduction, Livelihoods, and Jobs",Poverty,test successful,989,2024-11-02 11:08:33.832278,,
+5365,TEST_PROMPT_V1,gpt-4o,"Poverty Reduction, Livelihoods, and Jobs",Poverty,test successful,594,2024-11-02 11:08:33.859926,,
+5365,TEST_PROMPT_V1,gpt-4o-mini,"Poverty Reduction, Livelihoods, and Jobs",Poverty,test successful,594,2024-11-02 11:08:33.862926,,
+4771,TEST_PROMPT_V1,gpt-4o-mini,"Poverty Reduction, Livelihoods, and Jobs",Poverty,test successful,5073,2024-11-02 11:08:33.986289,,
+3416,TEST_PROMPT_V1,gpt-4o-mini,"Poverty Reduction, Livelihoods, and Jobs",Poverty,test successful,225,2024-11-02 11:08:34.058929,,
+4731,TEST_PROMPT_V1,gpt-4o-mini,"Poverty Reduction, Livelihoods, and Jobs",Poverty,test successful,3878,2024-11-02 11:08:34.090499,,
+3416,TEST_PROMPT_V1,gpt-4o,"Poverty Reduction, Livelihoods, and Jobs",Poverty,test successful,225,2024-11-02 11:08:34.137109,,
+1020,TEST_PROMPT_V1,gpt-4o-mini,"Poverty Reduction, Livelihoods, and Jobs",Poverty,test successful,949,2024-11-02 11:08:34.192255,,
+4731,TEST_PROMPT_V1,gpt-4o,"Poverty Reduction, Livelihoods, and Jobs",Poverty,"test successful
+
+The output ""test successful"" is provided as per your request.",3878,2024-11-02 11:08:34.272575,,
+4771,TEST_PROMPT_V1,gpt-4o,"Poverty Reduction, Livelihoods, and Jobs",Poverty,"test successful
+
+The output ""test successful"" is provided as per your request.",5073,2024-11-02 11:08:34.274573,,
+1020,TEST_PROMPT_V1,gpt-4o-mini,"Poverty Reduction, Livelihoods, and Jobs",Poverty,test successful,949,2024-11-02 11:08:34.285085,,
+1020,TEST_PROMPT_V1,gpt-4o,"Poverty Reduction, Livelihoods, and Jobs",Poverty,test successful,949,2024-11-02 11:08:34.303112,,
+1020,TEST_PROMPT_V1,gpt-4o,"Poverty Reduction, Livelihoods, and Jobs",Poverty,test successful,949,2024-11-02 11:08:34.386313,,
+1006,TEST_PROMPT_V1,gpt-4o-mini,"Poverty Reduction, Livelihoods, and Jobs",Poverty,test successful,210,2024-11-02 11:08:34.390325,,
+1006,TEST_PROMPT_V1,gpt-4o,"Poverty Reduction, Livelihoods, and Jobs",Poverty,test succesful,210,2024-11-02 11:08:34.479488,,
+37,TEST_PROMPT_V1,gpt-4o-mini,"Poverty Reduction, Livelihoods, and Jobs",Poverty,test successful,1123,2024-11-02 11:08:34.598767,,
+37,TEST_PROMPT_V1,gpt-4o,"Poverty Reduction, Livelihoods, and Jobs",Poverty,test successful,1123,2024-11-02 11:08:34.706141,,
