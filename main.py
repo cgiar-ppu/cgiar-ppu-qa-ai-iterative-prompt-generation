@@ -11,6 +11,7 @@ import config
 import prompt_techniques
 import pandas as pd
 from datetime import datetime
+from response_extractor import add_score_explanation_columns
 
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 
@@ -40,6 +41,11 @@ def main():
     # Log results
     for result in results:
         logger.log_result(result)
+
+    # Response_extractor
+    results_df = pd.read_csv(output_csv)
+    results_df = add_score_explanation_columns(results_df, 'model_output')
+    results_df.to_csv(output_csv, index=False)
 
     # Stage 3: Evaluation and Metrics Calculation
     results_df = pd.read_csv(output_csv)
