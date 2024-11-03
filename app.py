@@ -123,16 +123,18 @@ if dataset_option == 'Upload Your Own':
 else:
     input_csv = 'input/Joined_Processed_Evidence_PRMS_ExpertsScore.csv'
     input_df = load_data(input_csv)
-    st.write("Columns in DataFrame:", input_df.columns.tolist())
-    st.write("Available Result Codes in DataFrame:")
-    st.write(input_df['Result code'].unique())
+    #with st.expander("Show Debug Logs"):    
+       # st.write("Columns in DataFrame:", input_df.columns.tolist())
+       # st.write("Available Result Codes in DataFrame:")
+       # st.write(input_df['Result code'].unique())
 
 if input_df is None:
     st.warning("Please upload a CSV file to proceed.")
 else:
-    st.write("Columns in DataFrame after processing:", input_df.columns.tolist())
-    st.write("Sample data:")
-    st.write(input_df.head())
+    with st.expander("Show sample of input data for confirmation:"):
+        st.write("Columns in DataFrame after processing:", input_df.columns.tolist())
+        st.write("Sample data:")
+        st.write(input_df.head())
 # Result Selection Method
 result_selection_method = st.sidebar.radio(
     "Select Results by",
@@ -157,8 +159,9 @@ if input_df is not None:
         )
         if result_codes:
             result_code_list = [code.strip() for code in result_codes.split(',')]
-            st.write("Result codes entered by user:")
-            st.write(result_code_list)
+            with st.expander("Show confirmation of result codes entered by user:"):
+                st.write("Result codes entered by user:")
+                st.write(result_code_list)
 
             # Ensure 'Result code' column is of type string and strip whitespace
             input_df['Result code'] = input_df['Result code'].astype(str).str.strip()
@@ -167,21 +170,23 @@ if input_df is not None:
             input_df['Result code'] = input_df['Result code'].str.upper()
             result_code_list = [code.upper() for code in result_code_list]
 
-            st.write("Available Result Codes in DataFrame after processing:")
-            st.write(input_df['Result code'].unique())
+            #with st.expander("Show Debug Logs"):
+                #st.write("Available Result Codes in DataFrame after processing:")
+                #st.write(input_df['Result code'].unique())
 
             # Perform the filtering
             selected_df = input_df[input_df['Result code'].isin(result_code_list)]
 
-            st.write("Number of rows in selected_df after filtering:", len(selected_df))
+            #with st.expander("Show Debug Logs"):
+                #st.write("Number of rows in selected_df after filtering:", len(selected_df))
             if selected_df.empty:
                 st.warning("No matching result codes found. Please check your input.")
 
                 # Identify unmatched codes
                 unmatched_codes = set(result_code_list) - set(input_df['Result code'].unique())
-                if unmatched_codes:
-                    st.write("The following result codes were not found in the DataFrame:")
-                    st.write(unmatched_codes)
+                #if unmatched_codes:
+                    #st.write("The following result codes were not found in the DataFrame:")
+                    #st.write(unmatched_codes)
         else:
             selected_df = pd.DataFrame()  # Empty DataFrame if no codes are provided
 else:
