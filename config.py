@@ -318,4 +318,5 @@ MODELS = [
 ]
 
 # OpenAI API Configuration
-OPENAI_API_KEY = 'sk-OwIfHlbOIes9PqMF-mip_JTSzJ4qkYx-g8YjjoIKXXT3BlbkFJyd1dpfID6zsTfjMNZzE98xEZEdFU_ppS_LvceWDPcA'  # Alternatively, set this as an environment variable
+import os
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')

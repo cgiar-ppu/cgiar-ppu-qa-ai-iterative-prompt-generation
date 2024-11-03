@@ -1,0 +1,8 @@
+result_code,prompt_id,model_name,perspective,impact_area,model_output,token_count,timestamp,score,explanation
+37,GENDER_EQUALITY_PROMPT,gpt-4o-mini,Gender Equality,Gender,"{ ""score"": 0, ""explanation"": ""The research primarily focuses on bean breeding for drought and heat resilience, without addressing gender equality or its implications. It does not mention gender roles, women's access to resources, or any related gender dynamics, thus not contributing to CGIAR's gender equality objectives."" }",2068,2024-11-03 06:49:49.864369,0,"The research primarily focuses on bean breeding for drought and heat resilience, without addressing gender equality or its implications. It does not mention gender roles, women's access to resources, or any related gender dynamics, thus not contributing to CGIAR's gender equality objectives."
+37,GENDER_EQUALITY_PROMPT,gpt-4o,Gender Equality,Gender,"```json
+{
+  ""score"": 0,
+  ""explanation"": ""The research focuses on bean breeding for drought and heat resilience, biofortification, and market demands, without addressing gender equality objectives. There is no mention of gender roles, disparities, or specific contributions to gender equality, aligning it with a tag of 0 (Not Targeted).""
+}
+```",2068,2024-11-03 06:49:50.366104,0,"The research focuses on bean breeding for drought and heat resilience, biofortification, and market demands, without addressing gender equality objectives. There is no mention of gender roles, disparities, or specific contributions to gender equality, aligning it with a tag of 0 (Not Targeted)."

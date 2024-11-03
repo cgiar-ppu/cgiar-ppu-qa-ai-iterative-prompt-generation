@@ -7,7 +7,10 @@ import json
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-client = OpenAI(api_key="sk-OwIfHlbOIes9PqMF-mip_JTSzJ4qkYx-g8YjjoIKXXT3BlbkFJyd1dpfID6zsTfjMNZzE98xEZEdFU_ppS_LvceWDPcA")
+import os
+#api_key = os.getenv('OPENAI_API_KEY')
+
+client = OpenAI()
 
 # List of models that require the simplified API call
 simplified_models = ['o1-preview', 'o1-mini']
