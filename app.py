@@ -155,7 +155,7 @@ if start_button:
     # Load metrics
     try:
         metrics_df = pd.read_csv(metrics_csv)
-    except FileNotFoundError:
+    except (FileNotFoundError, pd.errors.EmptyDataError):
         st.write("No Metrics possible based on dataset provided")
         metrics_df = pd.DataFrame()
 
