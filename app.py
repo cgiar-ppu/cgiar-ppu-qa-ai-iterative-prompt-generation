@@ -40,13 +40,13 @@ st.sidebar.subheader("Add New Prompt")
 with st.sidebar.expander("Add a New Prompt"):
     new_prompt_id = st.text_input("Prompt ID")
     new_prompt_text = st.text_area("Prompt Text")
-    new_prompt_impact_area = st.text_input("Impact Area")
+    new_prompt_impact_area = st.selectbox("Impact Area", ["Gender", "Nutrition", "Climate", "Environment", "Poverty", "IPSR", "None"])
     add_prompt_button = st.button("Add Prompt")
     if add_prompt_button:
         if new_prompt_id and new_prompt_text:
             prompts[new_prompt_id] = {
                 'id': new_prompt_id,
-                'text': new_prompt_text,
+                'text': new_prompt_text + " **Text to Analyze:** [INPUT_TEXT]",
                 'impact_area': new_prompt_impact_area,
                 'active': True
             }
