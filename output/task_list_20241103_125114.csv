@@ -1,0 +1,1325 @@
+"result_code","prompt_id","prompt_text","model_name","impact_area","input_text","token_count"
+"37","POVERTY_REDUCTION_PROMPT","# **You are an AI assistant tasked with evaluating research results from CGIAR (Consultative Group on International Agricultural Research) to determine whether they align with and contribute to CGIAR's objectives in poverty reduction, livelihoods, and job creation. Your goal is to accurately assign an impact area tag that reflects the relevance and impact of the research on these specific objectives.**
+
+### **Context:**
+CGIAR is a global partnership that unites international organizations focused on research for food security. CGIAR has set specific objectives to address global challenges, including poverty reduction, improving livelihoods, and job creation in developing countries. The research results you will analyze originate from various CGIAR initiatives and projects, particularly in the fields of agriculture, forestry, fisheries, climate, and nutrition.
+
+### **Research Result Components:**
+Each research result includes the following details:
+- **Title:** A brief title summarizing the research result.
+- **Description:** A detailed description of the research result, including methods and findings.
+- **Research Abstract:** A summary of key findings and implications (optional).
+- **Research Parsed Text:** The parsed text of the research result (optional).
+
+### **Tagging Criteria:**
+Assign a poverty reduction, livelihoods, and jobs impact tag using the following criteria:
+
+- **0 = Not Targeted:** 
+  - The research does not address or contribute to CGIAR's objectives in poverty reduction, livelihoods, or job creation.
+  - The research is unrelated to these areas, focusing instead on different topics with no significant implications for poverty or livelihoods.
+  - Example: A study focused solely on agricultural productivity without considering its impact on poverty, livelihoods, or job creation.
+
+- **1 = Significant:** 
+  - The research makes a meaningful contribution to CGIAR’s objectives in poverty reduction, livelihoods, or job creation, but these are not the primary focus.
+  - The research is relevant and provides insights into these areas, but they are secondary to other goals.
+  - Example: A study that explores the impact of agricultural practices on income generation, indirectly supporting poverty reduction and improving livelihoods.
+
+- **2 = Principal:** 
+  - The primary objective of the research is to address and directly impact CGIAR's goals in poverty reduction, livelihoods, or job creation.
+  - The research would not have been conducted without the intention to contribute to these specific objectives.
+  - Example: A study specifically designed to develop strategies for improving rural livelihoods and lifting communities out of extreme poverty.
+
+### **Key Objectives Set by CGIAR:**
+- **Poverty Alleviation:** Lifting at least 500 million people living in rural areas above the extreme poverty line of US $1.90 per day (2011 PPP).
+- **Reducing Poverty:** Reducing by at least half the proportion of men, women, and children of all ages living in poverty in all its dimensions, according to national definitions.
+
+### **Instructions:**
+1. **Analyze the Title and Abstract:** Determine whether the research is related to CGIAR's objectives in poverty reduction, livelihoods, or job creation by looking for relevant keywords or phrases, such as “income generation,” “employment,” or “poverty alleviation.”
+2. **Review the Description and Parsed Text:** Assess whether the research directly contributes to CGIAR’s objectives in these areas, and how integral these objectives are to the overall study.
+3. **Assign the Tag:** Based on the criteria provided, assign the most appropriate tag (0, 1, or 2) that reflects whether the research is related to and impacts CGIAR’s objectives in poverty reduction, livelihoods, and job creation.
+4. **Provide a Brief Justification:** Explain why you assigned this tag, referencing specific aspects of the research that influenced your decision. Make sure to clarify how the research aligns (or does not align) with CGIAR’s objectives.
+
+### **Important Notes:**
+- If the research does not relate to CGIAR's objectives in poverty reduction, livelihoods, or job creation, assign a tag of **0** (Not Targeted).
+- If the research mentions these areas as important considerations but not the primary focus, assign a tag of **1** (Significant).
+- If poverty reduction, livelihoods, or job creation are the primary objectives of the research, assign a tag of **2** (Principal).
+- When assigning a tag of **2**, ensure that the evidence clearly demonstrates that these objectives were the main goals of the research and fundamental to its design.
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+{ ""score"": <0|1|2>, ""explanation"": ""<Your explanation here>"" }
+
+
+### **Now, analyze the following research result and assign a poverty reduction, livelihoods, and jobs tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in these areas.**
+
+**Text to Analyze:**
+[INPUT_TEXT]","gpt-4o-mini","Poverty","Bean breeding networks in Africa accelerate genetic gains for drought- and heat-resilient, biofortified varieties including bush and climbing beans, meeting farmer and seed company demands in diverse markets Common beans are an important staple food for more than 200 million Africans, providing an affordable source of proteins, complex carbohydrates and valuable micronutrients. They improve soil fertility and are a significant source of income. In collaboration with the Pan Africa Bean Research Alliance (PABRA) and farmers, CIAT and national bean breeding efforts seek to develop improved and marketable bush and climbing bean varieties, including biofortified varieties and niche market varieties. Past progress in resistance to bean diseases and tolerance to drought is being extended to edaphic constraints and adaptation to high temperatures.  Breeding is a cyclical process that adjusts to feedback from farmers, seed companies and end-users. Breeding cycle time at CIAT is between 12 and 24 months. During 2023, partners in 16 African countries tested 272 lines from local breeding programs and CIAT. Seventeen Tanzanian varieties were tested with 1682 farmers.                                                                                                                                                                                                                                                                                                    Worksheet Descriptions  Unnamed: 1               Unnamed: 2                                                                                                                                                                    Unnamed: 3                                                                                                                                                                                Unnamed: 4
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                             PRMS Results and IA  coding         NaN   Evidence for IA coding                                                                                                                                                    Starting Rows 1, describes Method used to systematically link Breeding Pipelines employed, Target Product Profiles pursued, and Variety Releases achieved by ALL Genetic Innovation Breeding Efforts to Impact Areas
+                                                                                                                                                                                                                                                                                                                     NaN         NaN   Evidence for IA coding                                                                                                                                                   Starting Rows 11, describes                                                                                          Standardized matrix of traits, value propositions and Impact Area tagging for genetic innovation
+                                                                                                                                                                                                                                                                                                                     NaN         NaN   Evidence for IA coding                                                                                                                                                   Starting Rows 45, describes                                                            Standardized Impact Area tagging for Genetic Innovation Breeding Pipelines and Variety Releases and their link to PRMS results
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                           IRL Standardization Germplasm         NaN  Evidence for IRL coding                                  Links Germplasm Stages, used in CGIAR Genetic Innovation, to Levels of CGIAR Innovation Readiness and Use, across all CGIAR Breeding Efforts                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                    Breeding Cycle times         NaN Evidence for cycle times                                                   Lists cycle times of breeding pipelines, based on a breeders' survey. This information is used in PRMS Results descriptions                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                     BPs >> PRMS Results         NaN    Part of the analytics                                                                                                                       Lists Breeding Pipelines and their link to PRMS Results                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                Value Propositions in BP         NaN    Part of the analytics                                                                                                         Lists Value propositions  and Trait requirement per Breeding Pipeline                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                           BP - TPP - MS         NaN    Part of the analytics  Links between Breeding Pipelines (BP), Target Product Profiles (TPP) and Market Segments (MS), across all of CGAIR breeding, downloaded from Breeding Portal 14 January 2024                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                         TPPs and Traits         NaN    Part of the analytics Links between Trait, Value Proposition, Breeding Pipelines (BP), Target Product Profiles (TPP) , across all of CGAIR breeding, downloaded from Breeding Portal 8 January 2024                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                              Variety 2023 releases > BP         NaN    Part of the analytics                                                                  Known variety releases in 2023, linked to Breeding Pipeline, downloaded from Breeding Portal 14 January 2023                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+    In collaboration with Market Intelligence, Impact Area and IRL coding are standardized across ALL CGIAR breeding efforts, with  improvements from year to year. The file provides methods and analysis. IA Worksheet ""PRMS Results and IA coding"", Rows 93-96 lists Impact Area codes, resulting from the analysis.          NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+Worksheet ""PRMS Results & IA Coding"" explains the method, developed with Market Intelligence, for standardized Impact Area tagging of CGIAR Breeding Pipelines. The proportion of Breeding Pipelines with Impact Area Tag 2 are shown in Row 33.  The analysis allows to conclude on the overall portfolio orientation.          NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN","2125"
+"10711","POVERTY_REDUCTION_PROMPT","# **You are an AI assistant tasked with evaluating research results from CGIAR (Consultative Group on International Agricultural Research) to determine whether they align with and contribute to CGIAR's objectives in poverty reduction, livelihoods, and job creation. Your goal is to accurately assign an impact area tag that reflects the relevance and impact of the research on these specific objectives.**
+
+### **Context:**
+CGIAR is a global partnership that unites international organizations focused on research for food security. CGIAR has set specific objectives to address global challenges, including poverty reduction, improving livelihoods, and job creation in developing countries. The research results you will analyze originate from various CGIAR initiatives and projects, particularly in the fields of agriculture, forestry, fisheries, climate, and nutrition.
+
+### **Research Result Components:**
+Each research result includes the following details:
+- **Title:** A brief title summarizing the research result.
+- **Description:** A detailed description of the research result, including methods and findings.
+- **Research Abstract:** A summary of key findings and implications (optional).
+- **Research Parsed Text:** The parsed text of the research result (optional).
+
+### **Tagging Criteria:**
+Assign a poverty reduction, livelihoods, and jobs impact tag using the following criteria:
+
+- **0 = Not Targeted:** 
+  - The research does not address or contribute to CGIAR's objectives in poverty reduction, livelihoods, or job creation.
+  - The research is unrelated to these areas, focusing instead on different topics with no significant implications for poverty or livelihoods.
+  - Example: A study focused solely on agricultural productivity without considering its impact on poverty, livelihoods, or job creation.
+
+- **1 = Significant:** 
+  - The research makes a meaningful contribution to CGIAR’s objectives in poverty reduction, livelihoods, or job creation, but these are not the primary focus.
+  - The research is relevant and provides insights into these areas, but they are secondary to other goals.
+  - Example: A study that explores the impact of agricultural practices on income generation, indirectly supporting poverty reduction and improving livelihoods.
+
+- **2 = Principal:** 
+  - The primary objective of the research is to address and directly impact CGIAR's goals in poverty reduction, livelihoods, or job creation.
+  - The research would not have been conducted without the intention to contribute to these specific objectives.
+  - Example: A study specifically designed to develop strategies for improving rural livelihoods and lifting communities out of extreme poverty.
+
+### **Key Objectives Set by CGIAR:**
+- **Poverty Alleviation:** Lifting at least 500 million people living in rural areas above the extreme poverty line of US $1.90 per day (2011 PPP).
+- **Reducing Poverty:** Reducing by at least half the proportion of men, women, and children of all ages living in poverty in all its dimensions, according to national definitions.
+
+### **Instructions:**
+1. **Analyze the Title and Abstract:** Determine whether the research is related to CGIAR's objectives in poverty reduction, livelihoods, or job creation by looking for relevant keywords or phrases, such as “income generation,” “employment,” or “poverty alleviation.”
+2. **Review the Description and Parsed Text:** Assess whether the research directly contributes to CGIAR’s objectives in these areas, and how integral these objectives are to the overall study.
+3. **Assign the Tag:** Based on the criteria provided, assign the most appropriate tag (0, 1, or 2) that reflects whether the research is related to and impacts CGIAR’s objectives in poverty reduction, livelihoods, and job creation.
+4. **Provide a Brief Justification:** Explain why you assigned this tag, referencing specific aspects of the research that influenced your decision. Make sure to clarify how the research aligns (or does not align) with CGIAR’s objectives.
+
+### **Important Notes:**
+- If the research does not relate to CGIAR's objectives in poverty reduction, livelihoods, or job creation, assign a tag of **0** (Not Targeted).
+- If the research mentions these areas as important considerations but not the primary focus, assign a tag of **1** (Significant).
+- If poverty reduction, livelihoods, or job creation are the primary objectives of the research, assign a tag of **2** (Principal).
+- When assigning a tag of **2**, ensure that the evidence clearly demonstrates that these objectives were the main goals of the research and fundamental to its design.
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+{ ""score"": <0|1|2>, ""explanation"": ""<Your explanation here>"" }
+
+
+### **Now, analyze the following research result and assign a poverty reduction, livelihoods, and jobs tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in these areas.**
+
+**Text to Analyze:**
+[INPUT_TEXT]","gpt-4o-mini","Poverty","Aplicación del diseño centrado en el humano para la generación y difusión de servicios agroclimáticos en Honduras Este informe presenta los resultados obtenidos durante el primer año de la aplicación del enfoque de Diseño Centrado en el Humano (DCH) —con su componente intrínseco de perspectiva de género— en relación con la generación de servicios agroclimáticos en Honduras. En él, se describe el proceso de investigación de usuario que alimentó las primeras dos fases del ciclo de diseño —i.e., alcance y explorar— y los insumos que obtenidos de agricultores/as y técnicos/as del departamento de El Paraíso e instituciones como InfoAgro y la Dirección de Ciencia y Tecnología Agropecuaria (DICTA) de la Secretaría de Agricultura y Ganadería (SAG) de Honduras. A la fecha, la información generada permitió crear una tipología de usuario, o persona —como se conoce en el marco del DCH— para agricultores. Los siguientes pasos serán la generación de personas para técnicos/as y tomadores/as de decisiones, así como los primeros prototipos de boletines (para agricultores/as y técnicos/as) y reportes agroclimáticos (para tomadores/as de decisiones). Estos serán refinados a partir de un ejercicio piloto a implementarse durante el primer semestre de 2024. Aplicación del diseño centrado en el humano para la generación y difusión de servicios agroclimáticos en Honduras Skip to main content Dear CGSpace users, we have performed some minor upgrades to the user interface. If it does not look right you should refresh the page while holding the Shift key. Communities & Collections Browse Navigate CGIAR Centers Statistics English Català Čeština Deutsch Español Français Gàidhlig Italiano Latviešu Magyar Nederlands Polski Português Português do Brasil Srpski (lat) Suomi Svenska Türkçe Tiếng Việt Қазақ বাংলা हिंदी Ελληνικά Српски Yкраї́нська Log In Note: CGIAR users should log in with their Active Directory username and password. For example, if your email is j.smith@cgiar.org, you would use jsmith here. Log in New user? Click here to register. Have you forgotten your password? Home CGIAR research centers Alliance of Bioversity International and CIAT Alliance Bioversity CIAT Reports Aplicación del diseño centrado en el humano para la generación y difusión de servicios agroclimáticos en Honduras Aplicación del diseño centrado en el humano para la generación y difusión de servicios agroclimáticos en Honduras Loading... Files Reporte_AgriLAC_Honduras_2023_entrega_v1.pdf (1.14 MB) Authors Zapata Caldas, Emmanuel Ayes, Irma Obando, Diego Bonilla, Melissa Lopez, Sebastian Howland, Fanny C. Date Issued 2023-12-18 Date Online Language es Type Report Review Status Access Rights Open Access Usage Rights Metadata Full item page Share Citation Zapata Caldas, E.; Ayes, I.; Obando, D.; Bonilla, M.; Lopez, S.; Howland, F. (2023) Aplicación del diseño centrado en el humano para la generación y difusión de servicios agroclimáticos en Honduras.  15 p. Permanent link to cite or share this item https://hdl.handle.net/10568/136889 External link to download this item DOI Abstract/Description Este informe presenta los resultados obtenidos durante el primer año de la aplicación del enfoque de Diseño Centrado en el Humano (DCH) —con su componente intrínseco de perspectiva de género— en relación con la generación de servicios agroclimáticos en Honduras. En él, se describe el proceso de investigación de usuario que alimentó las primeras dos fases del ciclo de diseño —i.e., alcance y explorar— y los insumos que obtenidos de agricultores/as y técnicos/as del departamento de El Paraíso e instituciones como InfoAgro y la Dirección de Ciencia y Tecnología Agropecuaria (DICTA) de la Secretaría de Agricultura y Ganadería (SAG) de Honduras. A la fecha, la información generada permitió crear una tipología de usuario, o persona —como se conoce en el marco del DCH— para agricultores. Los siguientes pasos serán la generación de personas para técnicos/as y tomadores/as de decisiones, así como los primeros prototipos de boletines (para agricultores/as y técnicos/as) y reportes agroclimáticos (para tomadores/as de decisiones). Estos serán refinados a partir de un ejercicio piloto a implementarse durante el primer semestre de 2024. Author ORCID identifiers Irma Ayes Rivera https://orcid.org/0000-0003-4376-8709 Diego Obando https://orcid.org/0000-0002-5159-7391 Fanny Howland https://orcid.org/0000-0002-0778-2741 Contributes to SDGs AGROVOC Keywords smallholders ; pequeños agricultores ; participatory approaches ; climate services ; servicios climáticos ; design ; diseño ; participación de agricultores Subjects AGRICULTURE ; CLIMATE CHANGE ; GENDER AND EQUITY ; PARTICIPATORY RESEARCH Countries Honduras Regions Americas ; Central America ; Latin America and the Caribbean Organizations Affiliated to the Authors International Center for Tropical Agriculture CGIAR Action Areas Resilient Agrifood Systems CGIAR Impact Areas Climate adaptation and mitigation ; Gender equality, youth and social inclusion ; Nutrition, health and food security CGIAR Initiatives AgriLAC Resiliente ; Digital Innovation Collections Alliance Bioversity CIAT Reports Alliance Research Lever 3: Climate Action Alliance Research Lever 5: Digital Inclusion CGIAR Initiative on AgriLAC Resiliente CGIAR Initiative on Digital Innovation DSpace software copyright © 2002-2024 LYRASIS About Cookie settings Privacy policy Send Feedback File: download
+Page 1:
+Aplicación del Diseño 
+Centrado en el Humano 
+para la generación y 
+difusión de servicios agro climáticos en 
+Honduras  
+Diciembre  de 2023  
+ 
+   
+ AgriLAC Resiliente  Reporte de actividades  
+Page 2:
+Aplicación del Diseño Centrado en el Humano para la generación y difusión de servicios agroclimáticos en 
+Honduras  1 
+ Conten ido 
+Introducción  ................................ ................................ ..........................  3 
+Fases de alcance y exploración  ................................ ............................  4 
+Fase 1: Alcance  ................................ ................................ ...............................  4 
+Fase 2: Explorar  ................................ ................................ ..............................  5 
+Reflexiones finales  ................................ ................................ ................  8 
+Anexo 1. Entrevistas aplicadas a agricultores/as, técnicos/as y 
+tomadores/as de decisiones  ................................ ................................ . 9 
+ 
+Page 3:
+Aplicación del Diseño Centrado en el Humano para la generación y difusión de servicios agroclimáticos en 
+Honduras  2 
+ Aplicación del Diseño Centrado en el 
+Humano para la generación y difusión 
+de servicios agro climáticos en 
+Honduras  
+Emmanuel Zapata -Caldas, Irma Ayes,  Diego Obando, Melissa Bonilla, Sebastián López, 
+Fanny Howland  
+Diciembre de 2023  
+Resumen  
+Este informe presenta los resultados obtenidos durante el primer año de la aplicación del enfoque de Diseño 
+Centrado en el Humano (DCH) —con su componente intrínseco de perspectiva de género — en relación con la 
+generación de servicios agroclimáticos en Honduras . En él, se describe el proceso de investigación de usuario que 
+alimentó las primeras dos fases del ciclo de diseño —i.e., alcance  y explorar — y los insumos que obtenidos de 
+agricultores/as y técnicos/as de l departamento de El  Paraíso  e instituciones como InfoAgro y la Dirección de Ciencia 
+y Tecnología Agropecuaria (DICTA) de la Secretaría de Agricultura y Ganadería (SAG) de H onduras . A la fecha, l a 
+información generada permitió crear  una tipología  de usuario, o persona  —como se conoce en el  marco del  DCH — 
+para agricultores. Los siguientes pasos serán  la generación de personas  para técnicos /as y tomadores /as de 
+decisiones , así como  los primeros prototipos  de boletines  (para agricultores /as y técnicos /as) y reportes 
+agroclimáticos (para tomadores /as de decisiones) . Estos serán refinados a partir de un ejercicio piloto a  
+implementarse  durante el primer semestre de 2024 . 
+ 
+Abstract  
+This report presents the results of the first year of applying the Human Centered Design (HCD) approach —with its 
+inherent gender perspective —to the generation of agro -climatic services generation in Honduras . It describes the 
+user research process that fed the first two phases of the design cycle —scope and explore —and the input received 
+from farmers and technicians in the department of El Paraíso and institutions such as InfoAgro and the Dirección de 
+Ciencia y Tecnología Agropecuaria  (DICTA) of the Honduran  Secretaría de Agricultura y Ganadería  (SAG). So far, the 
+information generated has made it possible to create a  user typology , or persona , for farmers. The next steps will be 
+the generation of personas  for technicians and decision -makers, as well as the first prototypes of agroclimatic 
+bulletins (for farmers and technicians) and reports (for decision -makers). These will be refined through a pilot 
+exercise to be implemented in the first half of 2024.    
+ AgriLAC Resiliente  Reporte de actividades  
+Page 4:
+Aplicación del Diseño Centrado en el Humano para la generación y difusión de servicios agroclimáticos en 
+Honduras  3 
+ Introducción  
+Adopción e inclusión. ¿ Cómo alcanzarlas cuando se trata de herramientas y soluciones para los actores del sistema 
+agroalimentario centroamericano? El enfoque —o metodología como también se conoce — de Diseño Centrado en 
+el Humano (DCH) ha demostrado ser eficaz no solo en áreas rel acionadas con la generación y consumo de 
+productos digitales, sino también para generar soluciones que mejoran las condiciones de vida de las personas 
+más vulnerables de la sociedad. IDEO.org , por ejemplo, ha sido demostrado tener impacto positivo mediante la 
+aplicación del enfoque DCH para producir soluciones que impactan la vida de personas en diferentes lugares del 
+planeta.  
+En ese sentido, La Alianza Bioversity -CIAT ha decidido adoptar el enfoque de DCH para garantizar que el desarrollo 
+de nuevas herramientas —y la revisión y ajuste de las existentes — sea guiado por principios más cercanos a las 
+necesidades y condiciones habi litantes de las personas para las que se hace investigación. De ahí que se haya 
+defini do este enfoque como un proceso de cinco fases, que se basan en la i) identificación de un problema o desafío 
+de diseño ( scope  o alcance), ii) la colección de información  de los usuarios ( explore  o exploración), iii) el diseño de 
+prototipos ( create  o creación), iv) la evaluación de los prototipos en pilotos con usuarios y grupos de interés ( validate  
+o validación) y, finalmente, v) la reanudación el ciclo de diseño a partir de una evaluación constante que tienen lugar 
+durante la fase de escalamiento de la herramienta ( scale  o escalamiento) ( Figura 1). Como se puede observar, en 
+cada una de las fases hay momentos divergencia (generación de ideas de manera profusa) y convergencia 
+(concreción de esas ideas en temas y oportunidades de diseño) ( Figura 1). Esta dinámica es propia del ciclo de 
+diseño, el cual es iterativo y siempre susceptible a mejorar.  
+ 
+Figura 1. Ciclo de diseño  del DCH. Fuente : Equipo Investigación de Usuario e Inclusión Digita l. 
+Los resultados obtenidos hasta el momento son alentadores, en parte, por la unidad de visión que comparten 
+nuestros socios con la Alianza , pues se reconoc e que el DCH ha permitido  —y permitirá a futuro — identificar con 
+mayor claridad las necesidades de los usuarios.  
+A continuación, se presenta el reporte  compuesto por tres secciones que describen cada una de las fases del ciclo 
+de diseño  abarcadas a  la fecha (i.e., alcance  y exploración) ( Figura 1), y otra sección dedicada a las  reflexiones  
+finales . 
+Page 5:
+Aplicación del Diseño Centrado en el Humano para la generación y difusión de servicios agroclimáticos en 
+Honduras  4 
+ Fases de alcance y exploración  
+Fase 1: Alcance  
+A partir de las consultas  sostenidas en mayo de 2023 con el equipo de la Alianza en Honduras y 
+algunos de sus socios como InfoAgro , de la Secretaría de Agricultura y Ganadería (SAG) , y el Centro 
+de Estudios Atmosféricos, Oceanográficos y S ísmicos (CENAOS)  de la Secretaría de Gestión de 
+Riesgo y Contingencias Nacionales  s se identificó el desafío de diseño —o problemática a afrontar —
+: Producir boletines y reportes agroclimáticos mejor adaptados a las necesidades de  
+diferentes tipos de usuarios, e.g.,  agricultores/as, técnicos/as y tomadores de decisiones  de 
+los socios de la  Alianza .  
+ 
+Como parte de las actividades de la fase “Alcance”, en mayo también se realizó el taller denominado 
+«Diseño centrado en el humano y perspectiva de género» cuyo objetivo fue sensibilizar a los profesionales de la 
+Alianza que participan en proyectos de AgriLAC en Honduras , con el enfoque y su relación con la perspectiva de 
+Género e Inclusión Social  (GIS) ; dos abordajes estrechamente relacionados. Los objetivos de esta actividad eran i) 
+ayudar a entender el marco conceptual del enfoque de DCH —y relación intrínseca con GIS — para visualizar su 
+potencial en el aumento de la adopción e inclusión de las herram ientas desarrolladas y, con base en esto, ii) alentar 
+la aplicación del enfoque en los diferentes proyectos que se están desarrollando en el marco de AgriLAC.  En el 
+taller s e presentaron elementos conceptuales sobre DCH y GIS , y se realizaron ejercicios sobre cómo identificar un 
+desafío de diseño, transformar desafíos en oportunidades  y analizar el uso de herramientas a partir de un mapa de 
+experiencia.  
+ 
+Figura 2. Equipo AgriLAC de Honduras. Taller facilitado por Emmanuel Zapata -Caldas (Acción Climática e Inclusión Digital) y 
+Fanny Howland (Género e Inclusión Social) . Fuente: Equipo AgriLAC  
+Se contó con la participación  de 11 personas provenientes de Honduras, México y Colombia , y co n distintas 
+formaciones académicas: agronomía, antropología, biología y estadística  (Figura 2). En las reflexiones  finales  del 
+taller se mencionó que,  para desarrollar herramientas con  mayor adopción e inclusión , es necesario entender que 
+la perspectiva de GIS va más allá de un número  específico de  mujeres y hombre s participando en talleres; más bien, 
+se trata de la posibilidad de ser  lo suficientemente  incluyentes para entender mejor las diferentes perspectivas que 
+tienen mujeres y hombres sobre la activid ad agropecuaria y las dinámicas del clima de los lugares donde viven y 
+desarrollan sus actividades económicas . También se resaltó que , dada la experiencia  que se está generando en la 
+Page 6:
+Aplicación del Diseño Centrado en el Humano para la generación y difusión de servicios agroclimáticos en 
+Honduras  5 
+ Alianza alrede dor del enfoque de DCH , la institución  se encuentra en una posición única para orientar a donantes, 
+otros centros de investigación  y socios  sobre las posibilidades que abre el DCH para aumentar l a adopción de los 
+servicios climáticos existentes y lo s que se producirán en el futuro . 
+El taller dio un impulso importante a los profesionales de la Alianza  en Honduras  para que adoptaran el enfoque  
+DCH y lo implementaran en dos acciones específic as; i) la generación de un boletín agroclimático para agricultores 
+y ii) un reporte agroclimático para técnicos y tomadores/as de decisiones de I NFOAGRO  y CENAOS. Esto se logró 
+hacer de manera sistemática  gracias al desarrollo de un documento denominado plan de investigación de 
+usuario ; hoja de ruta para hacer frente al desafío de diseño . En él se consignaron objetivos  y fases de investigación  
+(Tabla 1). 
+ 
+Tabla 1. Descripción de las fases de investigación descritas en el plan de investigación de usuario  
+Fase  Método  Actividad  
+Alcance y  explora ción  
+(junio de 2023)  Escucha, observación  Conversación con técnicos de 
+CENAOS e INFOAGRO  y 
+profesionales de la Alianza 
+Bioversity -CIAT sobre necesidad 
+de refinar los boletines climáticos 
+según la tipología de usuario  
+Investigación de usuario  
+(21 – 26 agosto)  Entrevistas a profundidad  Entrevistas semiestructuradas a 
+agricultores/as , técnicos /as y 
+profesionales, y tomadores /as de 
+decisiones  que son usuarios de los 
+boletines climáticos generados 
+por CENAOS , INFOAGRO  y las MTA  
+              Fuente: Elaboración propia  
+ 
+Los objetivos de la investigación de usuario  fueron: i) conocer las percepciones de agricultores/as, técnicos/as y 
+tomadores /as de decisiones frente a los boletines climáticos y agroclimáticos producidos por CENAOS, I NFOAGRO  
+y las Mesas Técnicas Agroclimáticas (MTA); ii) generar tipologías de usuarios que acceden a la información 
+agroclimática (creación de personas ); y iii) definir los canales de difusión de información agroclimática más 
+adecuada según tipología de usuario.  A la fecha , se ha avanzado  en los dos primeros objetivo s. 
+Fase 2: Explorar  
+Para entender mejor a las personas con las que se co -diseña, es necesario conocer su contexto , y 
+entrevistarlos para entender  sus necesidades, objetivos, capacidades, etc . Se realizaron 15 
+entrevistas ; cinco a agricultores; cinco a técnicos y cinco a tomadores  de decisiones  (Figura 3). En 
+el Anexo  1 se pueden consultar el instrumento (entrevista) aplicado . Adicionalmente, l a Figura 4 
+describe  las actividades desarrolladas en fase “Explorar” ; i) actividades  exploración  para definir el 
+desafío de diseño , ii) investigación de usuario (trabajo de campo), iii) sistematización de entrevistas , 
+y iv) creación de personas. Todos ellas, insumos necesario s para crear las tipologías de usuario, o 
+personas , en el departamento de El Paraíso. De momento,  la primera persona  generada es un 
+agricultor del valle de Jamastrán  (Figura 5) al que  le dimos el nombre “Augusto” .  
+ 
+Con el concepto personas  se hace referencia a un perfil de usuario idealizado que representa los deseos y 
+necesidades de un subgrupo de una población objetivo . En ese sentido, l as personas  son el resultado de un análisis 
+en profundidad de los actuales o futuros usuarios potenciales de su servicio  o herramienta, en este caso, de un 
+boletín agroclimático . Además, r epresentan  objetivos, actitudes y patrones de comportamiento más que 
+identificadores demográficos como la edad  o el género —que pueden formar parte de  la persona , pero no  son 
+considerados como factores diferenciadores para crearl as—. 
+ 
+Page 7:
+Aplicación del Diseño Centrado en el Humano para la generación y difusión de servicios agroclimáticos en 
+Honduras  6 
+  
+Figura 3. Entrevistas y participación en el departamento  El Paraíso . A. Mesa Agroclimática Participativa del departamento El 
+Paraíso; B . Entrevista agricultor y ganadero del valle de Jamastrán; C . Conversación con director asociación de productores de 
+café  (Danlí) ; D. Entrevista con profesional de la DICTA  (Tegucigalpa) ; E. Entrevista con profesional de  INFOAGRO  (Danlí) ; F. 
+Entrevista con profesional de asociación de productores de café  (El Paraíso ). Fuente: Elaboración propia . 
+ 
+Figura 4. Descripción del paso a paso en la fase ""Explorar"". Fuente: Elaboración propia.  
+En ese sentido, “Augusto” será uno de los referentes a tener en cuenta para el desarrollo de boletines agroclimáticos 
+y otros servicios climáticos que atiendan a las necesidades de los agricultores en  el departamento de El Paraíso . En 
+términos técnicos, la imagen de Augusto fue generad a por la una herramienta de inteligencia artificial conocida 
+como Midjourney , mientras que las descripciones de la biografía, objetivos, obstáculos, necesidades , capacidades, 
+condiciones habilitantes y canales de información fueron obtenid as de la matriz de Excel con la sistematización de 
+las entrevistas a agricultores realizadas durante la investigación  de usuario.  •Conversaciones iniciales con equipo de la Alianza 
+y Socios (e.g., Infoagro, CENAOS) Exploración
+•Entrevistas a 15 personas; 5 agricultores, 5 
+técnicos, 5 tomadores de decisionesInvestigación de 
+usuario
+•Generación de matriz usando categorías de 
+análisis (e.g., capacidades, necesidades, 
+condiciones habilitantes, etc.)Sistematización de 
+entrevistas
+•Agricultor de valle de Jamstrán, por el momento. Creación de 
+personas
+E A D 
+B C 
+F 
+Page 8:
+Aplicación del Diseño Centrado en el Humano para la generación y difusión de servicios agroclimáticos en 
+Honduras  7 
+   
+Figura 5. Persona representativa de un agricultor del valle de Jamastrán  
+Page 9:
+Aplicación del Diseño Centrado en el Humano para la generación y difusión de servicios agroclimáticos en 
+Honduras  8 
+ Reflexiones finales  
+El enfoque de DCH es una apuesta interesante para llevar a cabo investigación interdisciplinaria entre modeladores 
+de clima, agrónomos, científicos sociales (e.  g., geógrafos, antropólogos, etc.), diseñadores industriales, ingenieros 
+de sistemas y, por supuesto, agricultoras, agricultores, técnicas , técnicos  y socios . La experiencia generada hasta el 
+momento indica que existe un gran interés en mejorar la forma en que se genera, comparte e interpreta la 
+información agroclimática.  En este sentido, v ale la pena resaltar la importancia de avanzar paralelamente  en dos 
+dimensiones; i) el diseño de herramientas intuitivas y de amplia d ifusión —camino en el que se está  avanzando de 
+manera rápida — y ii) la generación de información agroclimática localizada y cada vez más precisa —entendiendo 
+las dificultades que implica la generación de pronósticos climáticos —.  
+Tras esta primera experiencia, que se basa principalmente en el desarrollo de las dos primeras fases del enfoque 
+DCH (i.e., alcance  y exploración) (Figura 1), durante el 2024 se espera  continuar con la generación de personas  para 
+técnicos/cas y tomadores/as de decisiones  y, posteriormente , con la preparación de prototipos  de boletines  y 
+reportes agroclimáticos . Cuando se definan las versiones finales de los boletines y reportes, se harán pilotajes  para  
+evaluar el nivel de adopción en los grupos poblacionales  que lo s implementen. En 2024 también se espera reportar 
+los hallazgos de este proceso . 
+ 
+  
+Page 10:
+Aplicación del Diseño Centrado en el Humano para la generación y difusión de servicios agroclimáticos en 
+Honduras  9 
+ Anexo 1. Entrevistas aplicadas a agricultores/as, técnicos/as y 
+tomadores/as de decisiones  
+ Entrevista para agricultores/as : Sección 1 de la entrevista en profundidad: Datos demográficos  
+ID Pregunta  Opciones de respuesta  Obligatorio  Categoría de análisis  
+1 Nombres y apellidos  Abierta  Sí 
+Contexto  2 Rango de edad  21-30; 31 -40; 41 -50; 51 -60 Sí 
+3 Genero  Hombre, mujer, prefiero 
+no decirlo, otro  Sí 
+4 Número celular  Abierta  No 
+5 Pertenencia a comunidad indígena o 
+colectividad campesina  Abierto  Sí 
+6 Departamento y municipio de residencia  Abierta  Sí 
+7 Aldea de residencia  Abierta  Sí 
+ 
+Entrevista para agricultores/as : Sección 2: de la entrevista en profundidad: Aspectos relacionados la actividad agropecuaria  
+ID Pregunta  Opciones de respuesta  Obligatorio  Categoría de análisis  
+1 ¿Cuál es su nivel de escolaridad?  Primaria, bachillerato, 
+tecnológico, universitario, 
+otro  Sí Capacidades  
+2 ¿Qué idiomas que habla?  Abierta  Sí Capacidades  
+3 ¿A qué línea productiva se dedica?  Pecuaria, agrícola, 
+agropecuaria, forestal, 
+otra (indicar cuál)  Sí Contexto  
+4 ¿Qué uso le da a la producción?  Subsistencia, 
+comercialización, 
+transformación  Sí Objetivos  
+5 ¿Cuál es el área aproximada de la parcela?  Abierta  Sí Contexto  
+6 ¿Qué tipo de posesión tiene de la parcela?  Propia, arrendada, 
+apoderado/a, otro  Sí Contexto  
+7 ¿Recibe algún tipo de asistencia técnica?  Abierta  Sí Condiciones habilitantes  
+8 ¿Pertenece a alguna organización de 
+agricultores o cooperativa?  Abierta  Sí Condiciones habilitantes  
+9 ¿Qué tipo de información usa para tomar 
+decisiones sobre la siembra y cosecha de sus 
+cultivos?  Abierta  Sí Necesidades  
+10 ¿Qué institución o instituciones le 
+proporcionan la información?  Abierta  Sí Condiciones habilitantes  
+11 ¿A través de qué tipo de dispositivo o canal 
+de comunicación accede a la información?  Abierta  Sí Herramientas tecnológicas  
+12 ¿Qué tan cómodo/a se siente usando un 
+computador?  Escala de 0 a 5  
+(donde 5 es más cómodo)  Sí Herramientas tecnológicas  
+13 ¿Qué tan cómodo/a se siente usando un 
+teléfono móvil corriente? (llamadas y 
+mensajes de texto)  Escala de 0 a 5  
+(donde 5 es más cómodo)  Sí Herramientas tecnológicas  
+14 ¿Qué tan cómodo/a se siente usando un 
+teléfono inteligente?  Escala de 0 a 5  
+(donde 5 es más cómodo)  Sí Herramientas tecnológicas  
+15 De las actividades que realiza como 
+agricultor/a, ¿cuál es su preferida?  Abierta  Sí Capacidades  
+Page 11:
+Aplicación del Diseño Centrado en el Humano para la generación y difusión de servicios agroclimáticos en 
+Honduras  10 
+ 16 De las actividades que realiza como 
+agricultor/a, ¿cuál es la que menos le gusta?  Abierta  Sí Obstáculos  
+17 ¿Cuáles son las dificultades que enfrenta para 
+realizar su trabajo como agricultor/a?  Abierta  Sí Obstáculos  
+18 Por favor, comparta comentarios o 
+sugerencias que tenga en mente  Abierta  No Contexto  
+En caso de que el/la entrevistado/a mencione que recibe información agroclimática a través de un boletín, tener en 
+cuenta las siguientes preguntas  
+ 
+Entrevista para agricultores/as : Preguntas relacionadas con boletín agroclimático  
+ID Pregunta  Opciones de respuesta  Obligatorio  Categoría de análisis  
+1 ¿Qué es lo que más le gusta del boletín 
+agroclimático?  Abierta  Sí Necesidades  
+2 ¿Qué elementos cambiaría del boletín 
+agroclimático?  Abierta  Sí Necesidades, obstáculos  
+3 Por favor, describa el boletín agroclimático ideal 
+para usted (siéntase libre hacer un dibujo)  Abierta  Sí Necesidades  
+ 
+ 
+ 
+ 
+Entrevista para técnicos /as y profesionales : Sección 1 de la entrevista en profundidad  - datos demográficos  
+ID Pregunta  Opciones de respuesta  Obligatorio  Categoría de 
+análisis  
+1 Nombres y apellidos  Abierta  Sí 
+Contexto  2 Rango de edad  21-30; 31 -40; 41 -50; 51 -60 Sí 
+3 Número celular  Abierta  Sí 
+4 Origen étnico  Indígena, afrodescendiente, caucásico, 
+mestizo, otro  No 
+5 Género  Hombre, mujer, prefiero no decirlo, otro  Sí 
+6 Municipio de residencia / área urbana o rural 
+/ nombre de la aldea  Abierta  Sí 
+7 Formación académica  Abierta  Sí 
+ 
+Entrevista para técnicos /as y profesionales : Sección 2 de la entrevista en profundidad  - aspectos relacionados con los boletines 
+climáticos de CENAOS -COPECO , INFOAGRO y MTA  
+ID Pregunta  Opciones de 
+respuesta  Obligatorio  Categoría de 
+análisis  
+1 Por favor, ¿puede indicar el nombre de la 
+institución/organización en la que trabaja?     
+2 ¿Cuántos años ha trabajado en su 
+institución/organización?  2 o menos; entre 2  
+3 y 5; entre 6 y 10; entre 11 y 
+15; más de 16  Sí Contexto  
+3 ¿Cuáles son las funciones que desempeña en su 
+institución/organización?  Abierta  Sí Capacidades  
+4 ¿Cuáles es su objetivo a largo plazo en el trabajo que 
+realiza en la institución/organización? Si son varios, ¿cuál 
+priorizaría?  Abierta  Sí Objetivos  
+Page 12:
+Aplicación del Diseño Centrado en el Humano para la generación y difusión de servicios agroclimáticos en 
+Honduras  11 
+ 5 De las funciones que desempeña, ¿cuál es su preferida?  Abierta  Sí Capacidades  
+6 De las funciones que desempeña, ¿cuál es la que menos 
+le gusta?  Abierta  Sí Obstáculos  
+7 Si es técnico en una comunidad:  ¿Conoce los boletines 
+de CENAOS -COPECO -INFOAGRO y la Mesa Técnica 
+Agroclimática (MTA)?  
+ 
+Si es técnico generador de información en INFOAGRO : 
+¿Conoce los boletines de CENAOS -COPECO?  
+ 
+Si es técnico generador de información en CENAOS -
+COPECO : ¿Conoce los reportes de INFOAGRO?  Sí, No  Sí Contexto  
+8 ¿En qué tipo de dispositivo/s consulta los 
+boletines/reportes?  Teléfono inteligente, 
+computador, Tablet, otro  Sí Herramientas 
+tecnológicas  
+9 ¿Cuáles son las principales variables climatológicas y 
+agropecuarias que le interesan de los 
+boletines/reportes?  Abierta  Sí Necesidades  
+10 ¿Cuáles son los principales elementos (e.g., tablas, 
+gráficos, texto, mapas) que le interesan de los 
+boletines/reportes?  Abierta  Sí Necesidades  
+11 ¿Qué decisiones toma usted con base en la información 
+de los boletines/reportes?  Abierta  Sí Capacidades  
+12 ¿De qué manera inciden los boletines/reportes en la 
+toma de decisiones de los técnicos y productores?  Escala de 0 a 5  
+(donde 5 es más relevante)  Sí Necesidades, 
+capacidades  
+13 ¿Le resulta insatisfactorio algún aspecto de los 
+boletines/reportes?  Abierta  Sí Obstáculos  
+14 Si es técnico de CENAOS o de una comunidad : Describa 
+el boletín climático de CENAOS -COPECO o boletín 
+agroclimático de la MTA que usted haría (el ideal en 
+cuanto a contenido, estructura, colores, etc.)  
+ 
+Si es técnico de INFOAGRO : Describa el reporte 
+agroclimático que usted haría (el ideal en cuanto a 
+contenido, estructura, colores, etc.)  Abierta  Sí Necesidades  
+15 Durante la semana, ¿con cuánta frecuencia consulta 
+información sobre clima y temas agropecuarios en 
+páginas web y redes sociales?  Escala de 0 a 5  
+(donde 5 es más frecuente)  Sí Herramientas 
+tecnológicas  
+16 ¿Qué tan cómodo/a se siente trabajando en un 
+computador?  Escala de 0 a 5  
+(donde 5 es más cómodo)  Sí Herramientas 
+tecnológicas  
+17 ¿Qué tan cómodo/a se siente usando un teléfono 
+inteligente?  Escala de 0 a 5  
+(donde 5 es más cómodo)  Sí Herramientas 
+tecnológicas  
+18 Por favor, comparta otros comentarios o sugerencias 
+que tenga en mente  Abierta  No Contexto  
+ 
+Entrevista para tomadores /as de decisiones / asesores : Sección 1 de la entrevista en profundidad  - datos demográficos  
+ID Pregunta  Opciones de respuesta  Obligatorio  Categoría de 
+análisis  
+1 Nombres y apellidos  Abierta  Sí 
+Contexto  2 Rango de edad  21-30; 31 -40; 41 -50; 51 -60 Sí 
+3 Número celular  Abierta  Sí 
+4 Origen étnico  Indígena, afrodescendiente, caucásico, 
+mestizo, otro  No 
+5 Género  Hombre, mujer, prefiero no decirlo, otro  Sí 
+Page 13:
+Aplicación del Diseño Centrado en el Humano para la generación y difusión de servicios agroclimáticos en 
+Honduras  12 
+ 6 Municipio de residencia / área urbana o rural 
+/ nombre de la aldea  Abierta  Sí 
+7 Formación académica  Abierta  Sí 
+ 
+Entrevista para tomadores /as de decisiones / asesores : Sección 2 de la entrevista en profundidad  - aspectos relacionados con 
+los boletines climáticos de CENAOS -COPECO e InfoAgro  
+ID Pregunta  Opciones de 
+respuesta  Obligatorio  Categoría de 
+análisis  
+1 Por favor, ¿puede indicar el nombre de la 
+institución/organización en la que trabaja?  Abierta  Sí Contexto  
+2 ¿Cuántos años ha trabajado en su 
+institución/organización?  2 o menos; entre 2  
+3 y 5; entre 6 y 10; entre 11 y 
+15; más de 16  Sí Contexto  
+3 ¿Cuáles son las funciones que desempeña en su 
+institución/organización?  Abierta  Sí Capacidades  
+4 ¿Cuáles es su objetivo a largo plazo en el trabajo que 
+realiza en la institución/organización? Si son varios, ¿cuál 
+priorizaría?  Abierta  Sí Objetivos  
+5 De las funciones que desempeña, ¿cuál es su preferida?  Abierta  Sí Capacidades  
+6 De las funciones que desempeña, ¿cuál es la que menos 
+le gusta?  Abierta  Sí Obstáculos  
+7 Si es tomador/a de decisiones o asesor/a en InfoAgro : 
+¿Conoce los boletines de CENAOS -COPECO?  
+ 
+Si es tomador/a de decisiones o asesor/a en CENAOS -
+COPECO : ¿Conoce los reportes de InfoAgro ? Sí, No  Sí Contexto  
+8 ¿En qué tipo de dispositivo/s consulta los 
+boletines/reportes?  Teléfono inteligente, 
+computador, Tablet, otro  Sí Herramientas 
+tecnológicas  
+9 ¿Cuáles son las principales variables climatológicas y 
+agropecuarias que le interesan de los 
+boletines/reportes?  Abierta  Sí Necesidades  
+10 ¿Cuáles son los principales elementos (e.g., tablas, 
+gráficos, texto, mapas) que le interesan de los 
+boletines/reportes?  Abierta  Sí Necesidades  
+11 ¿Qué decisiones toma usted con base en la información 
+de los boletines/reportes?  Abierta  Sí Capacidades  
+12 ¿De qué manera inciden los boletines/reportes en la 
+toma de decisiones de los técnicos y productores?  Escala de 0 a 5  
+(donde 5 es más relevante)  Sí Necesidades, 
+capacidades  
+13 ¿Le resulta insatisfactorio algún aspecto de los 
+boletines/reportes?  Abierta  Sí Obstáculos  
+14 Si es tomador/a de decisiones o asesor/a de CENAOS -
+COPECO : Describa el boletín climático de CENAOS -
+COPECO o boletín agroclimático de la MTA que usted 
+haría (el ideal en cuanto a contenido, estructura, 
+colores, etc.)  
+ 
+Si es tomador/a de decisiones o asesor/a de InfoAgro : 
+Describa el reporte agroclimático que usted haría (el 
+ideal en cuanto a contenido, estructura, colores, etc.)  Abierta  Sí Necesidades  
+15 Durante la semana, ¿con cuánta frecuencia consulta 
+información sobre clima y temas agropecuarios en 
+páginas web y redes sociales?  Escala de 0 a 5  
+(donde 5 es más frecuente)  Sí Herramientas 
+tecnológicas  
+Page 14:
+Aplicación del Diseño Centrado en el Humano para la generación y difusión de servicios agroclimáticos en 
+Honduras  13 
+ 16 ¿Qué tan cómodo/a se siente trabajando en un 
+computador?  Escala de 0 a 5  
+(donde 5 es más cómodo)  Sí Herramientas 
+tecnológicas  
+17 ¿Qué tan cómodo/a se siente usando un teléfono 
+inteligente?  Escala de 0 a 5  
+(donde 5 es más cómodo)  Sí Herramientas 
+tecnológicas  
+18 Por favor, comparta otros comentarios o sugerencias 
+que tenga en mente  Abierta  No Contexto  
+Fuente: Elaboración propia  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Page 15:
+Aplicación del Diseño Centrado en el Humano para la generación y difusión de servicios agroclimáticos en 
+Honduras  14 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Emmanuel Zapata -Caldas, Especialista en Investigación,  e.zapata@cgiar.org   
+Irma Ayes, Asociado de Investigación,  i.ayes@cgiar.org   
+Diego Obando, Especialista en Investigación, d.obando@cgiar.org  
+Melissa Bonilla, Consultora, melissa.bonilla@futop.org   
+Sebastián López, Analista, sebastian.lopez@cgiar.org  
+Fanny Howland, Especialista en Investigación, f.c.howland@cgiar.org  
+ 
+CGIAR is a global research partnership for a food -secure future. CGIAR science is 
+dedicated to transforming food, land, and water systems in a climate crisis. Its research is 
+carried out by 13 CGIAR Centers/Alliances in close collaboration with hundreds of  
+partners, including national and regional research institutes, civil society organizations, 
+academia, development organizations and the private sector. www.cgiar.org  
+We would like to thank all funders who support this research through their contributions 
+to the CGIAR Trust Fund: www.cgiar.org/funders . 
+To learn more about this Initiative, please visit this webpage .  
+To learn more about this and other Initiatives in the CGIAR Research Portfolio, please visit 
+www.cgiar.org/cgiar -portfolio   
+© 2023 Alliance of Bioversity International and CIAT . Some rights reserved.  
+This work is licensed under a Creative Commons Attribution -Noncommercial 4.0 
+International Licence (CC BYNC 4.0).  
+ 
+ |  |  |","9762"
+"10856","POVERTY_REDUCTION_PROMPT","# **You are an AI assistant tasked with evaluating research results from CGIAR (Consultative Group on International Agricultural Research) to determine whether they align with and contribute to CGIAR's objectives in poverty reduction, livelihoods, and job creation. Your goal is to accurately assign an impact area tag that reflects the relevance and impact of the research on these specific objectives.**
+
+### **Context:**
+CGIAR is a global partnership that unites international organizations focused on research for food security. CGIAR has set specific objectives to address global challenges, including poverty reduction, improving livelihoods, and job creation in developing countries. The research results you will analyze originate from various CGIAR initiatives and projects, particularly in the fields of agriculture, forestry, fisheries, climate, and nutrition.
+
+### **Research Result Components:**
+Each research result includes the following details:
+- **Title:** A brief title summarizing the research result.
+- **Description:** A detailed description of the research result, including methods and findings.
+- **Research Abstract:** A summary of key findings and implications (optional).
+- **Research Parsed Text:** The parsed text of the research result (optional).
+
+### **Tagging Criteria:**
+Assign a poverty reduction, livelihoods, and jobs impact tag using the following criteria:
+
+- **0 = Not Targeted:** 
+  - The research does not address or contribute to CGIAR's objectives in poverty reduction, livelihoods, or job creation.
+  - The research is unrelated to these areas, focusing instead on different topics with no significant implications for poverty or livelihoods.
+  - Example: A study focused solely on agricultural productivity without considering its impact on poverty, livelihoods, or job creation.
+
+- **1 = Significant:** 
+  - The research makes a meaningful contribution to CGIAR’s objectives in poverty reduction, livelihoods, or job creation, but these are not the primary focus.
+  - The research is relevant and provides insights into these areas, but they are secondary to other goals.
+  - Example: A study that explores the impact of agricultural practices on income generation, indirectly supporting poverty reduction and improving livelihoods.
+
+- **2 = Principal:** 
+  - The primary objective of the research is to address and directly impact CGIAR's goals in poverty reduction, livelihoods, or job creation.
+  - The research would not have been conducted without the intention to contribute to these specific objectives.
+  - Example: A study specifically designed to develop strategies for improving rural livelihoods and lifting communities out of extreme poverty.
+
+### **Key Objectives Set by CGIAR:**
+- **Poverty Alleviation:** Lifting at least 500 million people living in rural areas above the extreme poverty line of US $1.90 per day (2011 PPP).
+- **Reducing Poverty:** Reducing by at least half the proportion of men, women, and children of all ages living in poverty in all its dimensions, according to national definitions.
+
+### **Instructions:**
+1. **Analyze the Title and Abstract:** Determine whether the research is related to CGIAR's objectives in poverty reduction, livelihoods, or job creation by looking for relevant keywords or phrases, such as “income generation,” “employment,” or “poverty alleviation.”
+2. **Review the Description and Parsed Text:** Assess whether the research directly contributes to CGIAR’s objectives in these areas, and how integral these objectives are to the overall study.
+3. **Assign the Tag:** Based on the criteria provided, assign the most appropriate tag (0, 1, or 2) that reflects whether the research is related to and impacts CGIAR’s objectives in poverty reduction, livelihoods, and job creation.
+4. **Provide a Brief Justification:** Explain why you assigned this tag, referencing specific aspects of the research that influenced your decision. Make sure to clarify how the research aligns (or does not align) with CGIAR’s objectives.
+
+### **Important Notes:**
+- If the research does not relate to CGIAR's objectives in poverty reduction, livelihoods, or job creation, assign a tag of **0** (Not Targeted).
+- If the research mentions these areas as important considerations but not the primary focus, assign a tag of **1** (Significant).
+- If poverty reduction, livelihoods, or job creation are the primary objectives of the research, assign a tag of **2** (Principal).
+- When assigning a tag of **2**, ensure that the evidence clearly demonstrates that these objectives were the main goals of the research and fundamental to its design.
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+{ ""score"": <0|1|2>, ""explanation"": ""<Your explanation here>"" }
+
+
+### **Now, analyze the following research result and assign a poverty reduction, livelihoods, and jobs tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in these areas.**
+
+**Text to Analyze:**
+[INPUT_TEXT]","gpt-4o-mini","Poverty","Developing farming systems towards sustainability and diversification and value chain development. Vietnam Baseline report. Conducted a baseline of farming households that are members of 07 Diet Health Clubs and 02 Vegetable Value Chain Groups. The household survey assessed the current situation at farm level including crop diversity and practices related to production, soil, water and pest management, and food consumption. Furthermore, a qualitative study was conducted with the management boards of the value chain groups to establish current group activities, production practices, products, and revenue. Developing farming systems towards sustainability and diversification and value chain development. Vietnam Baseline Report. Skip to main content Dear CGSpace users, we have performed some minor upgrades to the user interface. If it does not look right you should refresh the page while holding the Shift key. Communities & Collections Browse Navigate CGIAR Centers Statistics English Català Čeština Deutsch Español Français Gàidhlig Italiano Latviešu Magyar Nederlands Polski Português Português do Brasil Srpski (lat) Suomi Svenska Türkçe Tiếng Việt Қазақ বাংলা हिंदी Ελληνικά Српски Yкраї́нська Log In Note: CGIAR users should log in with their Active Directory username and password. For example, if your email is j.smith@cgiar.org, you would use jsmith here. Log in New user? Click here to register. Have you forgotten your password? Home CGIAR research centers Alliance of Bioversity International and CIAT Alliance Bioversity CIAT Research conducted by Partners Developing farming systems towards sustainability and diversification and value chain development. Vietnam Baseline Report. Developing farming systems towards sustainability and diversification and value chain development. Vietnam Baseline Report. Loading... Files Nature+ WP2_Vietnam baseline survey report 2023_20 Dec_ (1).pdf (1.25 MB) Authors Nguyen, Thi Tan Loc Ngo, Thi Hanh Nguyen, Thi Lien Huong Hoang, Minh Chau Le, Nhu Thinh Nguyen, Thi Sau Nguyen, Van Diep Nguyen, Manh Dat Date Issued 2023-12 Date Online Language en Type Report Review Status Access Rights Open Access Usage Rights Metadata Full item page Share Citation Nguyen, T.T.L.; Ngo, T.H.; Nguyen, T.L.H.; Hoang, M.C.; Le, N.T.; Nguyen, T.S.; Nguyen, V.D.; Nguyen, M.D. (2023) Developing farming systems towards sustainability and diversification and value chain development. Vietnam Baseline Report. 35 p. Permanent link to cite or share this item https://hdl.handle.net/10568/138709 External link to download this item DOI Abstract/Description Conducted a baseline of farming households that are members of 07 Diet Health Clubs and 02 Vegetable Value Chain Groups. The household survey assessed the current situation at farm level including crop diversity and practices related to production, soil, water and pest management, and food consumption. Furthermore, a qualitative study was conducted with the management boards of the value chain groups to establish current group activities, production practices, products, and revenue. Contributes to SDGs AGROVOC Keywords farmers ; production ; seed systems ; value chains ; vegetable crops Subjects AGRICULTURE ; FARMING SYSTEMS ; NUTRITION ; SMALLHOLDER FARMERS ; VALUE CHAINS Countries Vietnam Regions Asia ; South-eastern Asia Organizations Affiliated to the Authors Fruit and Vegetable Research Institute (FAVRI) CGIAR Action Areas Resilient Agrifood Systems ; Systems Transformation CGIAR Impact Areas Nutrition, health and food security CGIAR Initiatives Nature-Positive Solutions Collections Alliance Bioversity CIAT Research conducted by Partners Alliance Research Lever 1: Food Environment and Consumer Behavior Alliance Research Lever 4: Biodiversity for Food and Agriculture CGIAR Initiative on Nature-Positive Solutions DSpace software copyright © 2002-2024 LYRASIS About Cookie settings Privacy policy Send Feedback File: download
+Page 1:
+ 
+  
+ 
+WP2 Vietnam  Baseline report  
+ 
+Develop ing farming systems towards sustainability and 
+diversification and v alue chain development  
+ 
+ 
+ 
+ 
+Aug 2023  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Page 2:
+ 
+ 
+ii 
+  
+ 
+Author s:  
+Nguyen Thi Tan Loc, Ngo Thi Hanh, Nguyen Thi Lien Huong, Hoang Minh Chau, Le Nhu Thinh, 
+Nguyen Thi Sau, Nguyen Van Diep and Nguyen Manh Dat  
+Fruit and Vegetable Research Institute (FAVRI)  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Backstopping : 
+Kees  Swaans, Deborah Nabuuma, Hoang The Ky 
+Alliance of Bioversity International a nd CIAT  
+ 
+ 
+  
+Page 3:
+ 
+ 
+iii 
+ Table of contents  
+ 
+Table of contents  ................................ ................................ ................................ ................................ ..........  iii 
+List of tables  ................................ ................................ ................................ ................................ .................  iv 
+List of figures  ................................ ................................ ................................ ................................ ................  iv 
+List of abbreviations  ................................ ................................ ................................ ................................ ...... v 
+Executive summary  ................................ ................................ ................................ ................................ ...... vi 
+1. Introduction  ................................ ................................ ................................ ................................ ........... 1 
+2. Survey objectives  ................................ ................................ ................................ ................................ ...1 
+3. Methodology  ................................ ................................ ................................ ................................ ......... 1 
+4. Survey Findings  ................................ ................................ ................................ ................................ ......3 
+4.1. Household survey results  ................................ ................................ ................................ ................... 4 
+4.1.1.  General characteristics  ................................ ................................ ................................ ............ 4 
+4.1.2.  Land use  ................................ ................................ ................................ .............................. 6 
+4.1.3.  Crop production  ................................ ................................ ................................ ....................... 8 
+4.1.4.  Vegetable production  ................................ ................................ ................................ ............. 8 
+4.1.5.  Vegetable seed  ................................ ................................ ................................ .....................  11 
+4.1.6.  Nature -Positive Solutions  ................................ ................................ ................................ ..... 12 
+4.1.7.  Household food consumption  ................................ ................................ ..............................  13 
+4.1.8.  Gender Equity  ................................ ................................ ................................ .......................  17 
+4.2. Value Chain Groups qualitative interviews  ................................ ................................ .....................  17 
+4.2.1.  Membership  ................................ ................................ ................................ .........................  17 
+4.2.2.  Crop production and marketing  ................................ ................................ ...........................  18 
+4.2.3.  Seeds  ................................ ................................ ................................ ................................ ..... 21 
+4.2.4.  Production and marketing plans  ................................ ................................ ..........................  22 
+5. Discussion and Conclusion  ................................ ................................ ................................ .................  22 
+5.1. Crop production  ................................ ................................ ................................ ........................  22 
+5.2. Vegetable production  ................................ ................................ ................................ ...............  23 
+5.3. Nature -Positive Solutions  ................................ ................................ ................................ .........  24 
+5.4. Household food consumption  ................................ ................................ ................................ .. 24 
+6. Recommendations  ................................ ................................ ................................ .............................  25 
+6.1 Diet Health Clubs  ................................ ................................ ................................ .............................  25 
+6.2. Value Chain Groups  ................................ ................................ ................................ .........................  25 
+Annex  ................................ ................................ ................................ ................................ ..........................  26 
+Annex 1. List of Diet Health Clubs and Value Chain Groups  ................................ ................................ .. 26 
+Annex 2. Quantitative NPS baseline survey tool  ................................ ................................ ....................  26 
+Annex 3. Qualitative guideline on VCG interview  ................................ ................................ ..................  26 
+Annex 4. Proportion of households growing the different crops (excluded vegetables and pulses)  .... 27 
+Annex 5. Proportion of households growing the different pulses and vegetables  ................................  28 
+ 
+ 
+  
+Page 4:
+ 
+ 
+iv 
+ List of tables  
+Table 3.1.  Sample size and research sites  ................................ ................................ ................................ .....2 
+Table 4.1. Household characteristics of respondents by district and ethnicity  ................................ ............ 4 
+Table 4.2. Participation in DHCs and expectation among member households by district and ethnicity  ....5 
+Table 4.3. Number of plots and area of household’s land in the last season  ................................ ............... 6 
+Table 4.4. Soil erosion and quality of member households by district, ethnicity and group  ....................... 7 
+Table 4.5. Food crop diversity in production of member households by district, ethnicity and group ........ 8 
+Table 4.6. Purpose of vegetable production of member households by district, ethnicity and group  ........ 9 
+Table 4.7. Vegetable production practices in the last season  ................................ ................................ ....... 9 
+Table 4.8. Fruit and vegetable diversity in production of member households by district, ethnicity and group
+ ................................ ................................ ................................ ................................ ................................ .... 10 
+Table 4. 9. Vegetable seed by district, ethnicity and group  ................................ ................................ ...........  11 
+Table 4.10. Nature positive solutions of member households by district, ethnicity and group  ................  12 
+Table 4. 11. Food diversity of food consumed by member households by district, ethnicity and group 
+over 24 hours  ................................ ................................ ................................ ................................ .............  13 
+Table 4. 12. Food consumption of member households by district, ethnicity and group over 24 hours  ... 14 
+Table 4.13 . Which months households had a shortage vegetables for consumption  ...............................  16 
+Table 4.14. Gender equity of member households by district, ethnicity and group  ................................ . 17 
+Table 4.15. Summary of vegetables produced and marketed as a group in the last cropping season  ..... 18 
+Table 4.16. Summary of vegetables individually produced by members but marketed as a group in Van 
+Phuc cooperative (n =15 households)  ................................ ................................ ................................ ........  19 
+  
+List of figures  
+Figure 4.1. Participation of local groups of respondent (n=117)  ................................ ................................ ..5 
+Figure 4.2. Participation in VCGs and expectation among member households by district  ......................... 6 
+Figure 4.3 . Average area (m²) of vegetable production in the last season by household  ............................ 8 
+Figure 4.4 . Average food consumed days among member households by food groups over 7 days  .......  15 
+Figure 4.5 . % household have a shortage of vegetables to eat at any time in the past 1 year  .................  15 
+Figure 4.6 . Food sourcing of households by food groups  ................................ ................................ ..........  16 
+Figure 4.7 . Number of members from each VCG  ................................ ................................ .......................  17 
+Figure 4.8. Major costs that the group incurred in the last season during collective production and/or 
+marketing  ................................ ................................ ................................ ................................ ...................  19 
+Figure 4.9. Seed used in the last season from each VCG  ................................ ................................ ...........  21 
+ 
+  
+Page 5:
+ 
+ 
+v 
+ List of abbreviations  
+CIAT  International Center for Tropical Agriculture  
+DHC  Diet health club  
+CGIAR  Consultative Group on International Agricultural Research  
+MS Microsoft  
+NCD  Non -communicable diseases  
+NPS Nature positive solution  
+NWO  Dutch Research Council  
+VCG  Value chain group  
+WP Work package  
+  
+Page 6:
+ 
+ 
+vi 
+ Executive summary  
+Sustainable resource management and biodiversity conservation have become a priority in agricultural 
+production. A cross -sectional survey was conducted on 174 households  who were members  of Diet Health 
+Clubs ( DHCs) and Value Chain Groups ( VCGs ) using both quantitative and qualitative methods. 
+Quantitative data w as collected using the Kobo Toolbox application and analyzed using Stata v15.2 
+software, while qualitative info was  recorded in MS Word and analyzed using MS Excel.  
+The results showed that the majority of the participants in DHCs and VCGs were female (86%) and former 
+members of the NWO project (76.4%). Most of them (over 80%) had attended at least three training 
+sessions in the previous time . Over 50% of households experienced land erosion, and the percentage of 
+households with good soil quality was very low (upland: 14.5%, lowland: 27.9%, and home garden: 32%). 
+On average, each household cultivated approximately 17 different  staple crops  and 10 vegetable ones 
+and H'mo ng grew the fewest (14  and 10 respectively ). Households in Mai S on, H'mong, and DHCs grew 
+vegetables for sale and applied nature positive solutions ( NPS) fewer than  those in Sa Pa, Dao/Th ai, and 
+VCGs.  
+Regarding production over the past three months, Mai Son, Thai, and VCG exhibited larger vegetable 
+production areas compared to other groups. The majority of households cultivate vegetables in their 
+home gardens (86%) and predominantly utilize indigenous vegetable v arieties (almost 78%). While the 
+primary focus for farmers is self -consumption, 44% of households still engage in vegetable sales, with a 
+concentration in the Dao and VCG groups. On average, each household cultivates nearly 10 types of 
+vegetables, includin g three types of DGLV and four other types of vegetables. The Thai group tends to 
+cultivate a higher number of DGLV types (4), and the Dao group cultivates more diverse types of other 
+vegetables (5) compared to other groups. A majority of households (76%) rely on self -saved vegetable 
+seeds for cultivation, but nearly 30% of households face challenges with seed germination. Approximately 
+77% of vegetables are used similarly in the last season for sowing purposes in the upcoming plan (82.6%).  
+On Nature Positive Solutions  (NPS), many households adopt practices such as nutritional arrangement, 
+intercropping, and reducing/eliminating the use of chemical pesticides and disease prevention spraying 
+(67.8%, 67.7%, 67.2%, 61.5%), particularly in Sa Pa (92.7%, 89%, 87.8%, 85.4%) a nd the Dao group (90.8%, 
+90.8%, 90.8%, 90.8%). Meanwhile, Mai Son (96.7%) and the Thai group (94.8%) have the highest 
+percentage of farmers using fertilizers.  
+In terms of food consumption, the average diversity food group  score  among  ethnic households was 5, 
+the NCD -Protect score was 3, and the NCD -Risk score was 2. Households in Sa Pa and among the H’mo ng 
+and Dao ethnic groups had lower diversity and NCD -Protect scores than those of  other groups. 
+Additionally, very few households (17%) consumed all five recommended food groups, with this 
+percentage being particularly low in the Sa Pa, H'mong, and Dao groups. On the other hand, households 
+in Mai S on, Thai , and DH Cs consumed vegetables  fewer  than the community average (73%), but these 
+groups had a higher consumption of salty or fried snacks. Conversely, households in Sa Pa and the Dao 
+group consumed more sweet foods.  Men played a central role in  decision on  agricultural production, 
+purchasing asset, economic development loans, or income utilization.  
+In-depth interviews with VCGs revealed that the Van Phuc cooperative had a larger scale and higher 
+production costs for commercial vegetable cultivation compared to the Can Ho group, which primarily 
+focused on seed production. Both groups faced challenges related to accessing high -quality seeds, harsh 
+weather conditions, low prices, land degradation, seed wastage, weak marketing activities, and  limited 
+management capacity.  Regarding seed us e, the Van Phuc cooperative relied on sources from companies 
+Page 7:
+ 
+ 
+vii 
+ and markets, while the Can Ho group could produce their own seeds for future seasons. Both groups had 
+production and marketing plans for their crops but encountered difficulties related to weather, prices, 
+and access to input materials, leading to deviatio ns from their plans. Therefore, there is a need to enhance 
+the capacity of DHC and VCG members in applying NPSs in production and consuming healthy food groups 
+(vegetables, fruits, legumes). In addition, gender equality education for DHC members, expanding  nursery 
+production scale, developing local vegetable brands, and strengthening the capacity of VCG management 
+should also be prioritized.
+Page 8:
+ 
+ 
+1 
+ 1. Introductio n 
+The OneCGIAR  initiative on Nature -positive Solutions for Shifting Agrifood Systems to More Resilient and 
+Sustainable Pathways (Nature+) aims to re -imagine, co -create, and implement nature -positive solutions -
+based agrifood systems that equitably support food and liveli hoods on the ground, while simultaneously 
+ensuring that agriculture is a net positive contributor to nature. Working with stakeholders across 
+agriculture, economic, environment, and natural resource management sectors at farm - and community -
+level, the init iative will work to meet food demands of growing populations by stewarding biodiversity 
+and improving soil and water management with integrated nature -positive solutions. This will include  to 
+i) Boost critical ecosystem services and enhance social and economic benefits, including equality. ii) Tackle 
+the root economic and political causes of environmental degradation from agricultural production. iii) 
+Harness the power of nature -based solution s and ecosystem services alongside advances in digital 
+agricultur e and agronomy to reverse negative trends around natural assets, including climate, 
+biodiversity, land, and water.  
+WP2  will contribute to working with smallholder communities to ensure the sustainable, nature -positive 
+management of biodiversity and other natural resources and improve production systems through 
+nature -positive innovations, learning, and technologies. This w ill mainly be achieved through i) 
+Participatory evaluation of the production and agrobiodiversity and capacity building of farmer groups in 
+order to develop the farming systems towards sustainability and diversification and ii) Strengthen ing 
+sustainable ve getable value chains to improve quality of produce and farmer household income . 
+Understanding the use and potential of nature positive solution s is a possible  entry point for improving 
+diversity, sustainability in both pro duction and consumption patterns.  The activities of WP2 in Vietnam 
+build on the work by the NWO vegetable seed systems project  with seed/vegetable value chains  groups  
+and the diet health clubs, which  align with Nature+. The strong focus on nutrition, market access, and 
+women inclusion in the NWO project can be further strengthened, while paying more attention to 
+(agro)biodiversity and environmentally friendly principles and practices .  
+2. Survey objective s 
+The baseline survey was a part of WP2  of Nature+ initiative in Vietnam . Specific objectives of the baseline 
+were: 
+- Identify  nature positive practice s among ethnic minority households  
+- Examine crop diversity in production and dietary diversity in consumption  
+3. Methodology  
+3.1.  Study design  
+This was a cross -sectional descriptive study, combined with qualitative research methods. The qualitative 
+research component was conducted simultaneously with the quantitative component, to supplement 
+information regarding the advantages and challenges rel ated to the organi zation  and marketing in the 
+value chain groups . 
+3.2.  Survey respondents and sites  
+Quantit ative survey : All p articipants were ethnic household who are members of Diet Health Clubs ( DHCs ) 
+and Value Chain Groups ( VCGs ) in Co Noi and Chieng Chan communes (Mai Son district, Son La province) 
+and Ngu Chi Son commune (Sa Pa township, Lao Cai province).  
+Page 9:
+ 
+ 
+2 
+ Qualitative s urvey : Management board of  directors of the 02 VCGs:  Van Phuc cooperative  in Co Noi 
+commune (Mai Son district, Son La province) and Can Ho seed production group  in Ngu Chi Son commune 
+(Sa Pa township, Lao Cai province).  
+DHCs were  instituted  and centered around the core of the village women's union —a socio -political 
+organization that represents the women's class. These entities play a constructive role in advancing the 
+agricultural development process and the establishment of new rural areas. The objective of the DHCs 
+was to provide a  platform for capacity building and knowledge and skill exchange on seeds, production, 
+and nutrition to enhance utilization and demand  for groups of women at village level. On the other hand, 
+VCG s comprise both female  and male farmers engaged in the cultivation and marketing of vegetables and 
+vegetable seeds. In the context of the NWO project, VCG aims to augment business revenue derived from 
+agricultural products.  
+3.3. Survey sample size  
+In terms of sample, the baseline survey was conducted with 174 members  from 3 ethnic groups: Thai , 
+H’mong , and Dao . The sampled groups were  pre-selected for Nature+ WP2 activities. The detailed sample 
+size collected is shown in the table 3.1 below   
+Table 3. 1. Sample size  and research sites  
+District  Commune  Group  Ethnicity  Sample size  
+Mai Son  (95) Co Noi  (55) Nong Quynh DHC  Thai  21 
+Nong Mon DHC  H’mong  17 
+Van Phuc cooperative  Thai  17 
+Chieng Chan  (40) Na Hun DHC  Thai  19 
+Tong Tai  B DHC H’mong  21 
+Sa Pa  (86) Ngu Chi Son  (86) Phin Ho DHC  Dao 19 
+Xin Chai DHC  Dao 21 
+Sin Chai DHC  H’mong  19 
+Can Ho seed production group  Dao 27 
+Total  181 
+3.4. Data collection  
+Data was collected in July 2023. For recruitment into the survey , FAVRI staff communicated with DHC s 
+and VCG s leaders to inform them  about the purpose and interview plan in each village. A list of eligible 
+respondents was developed based on the result of group identification (task 1 in WP2). The list included 
+group member’s names, their gender, household’s headers, village,  and phone numbers.  
+Enumerators  in two study sites were identified  and involved in a 1 day -training course including theory 
+and pr actice, on how to administer  the quantitative and qualitative tools . ""The survey tools  were  tested 
+in Lech village, C o Noi commune (Mai S on district), and Ta Van Mong village, M uong Hoa commune (Sa 
+Pa town), two locations with similar settings to the target ones but not within the survey sites . After the 
+pre-test, the questionnaire was linguistically adjusted for appropriateness and logical consistency across  
+the questions.  
+Page 10:
+ 
+ 
+3 
+ Enumerators reached  out to  the participants for interviews based on the prepared  list. They introduced 
+the objectives and content of the survey and  obtained informed  consent before conducting the 
+interviews . All quantitative data was collected through the Kobo Toolbox application that was installed on 
+the tablets .  
+Meanwhile, key-informant -interviews  with the management board of directors of the VCGs were 
+conducted by two enumerators  using a semi -structured questionnaire on paper.  
+3.5. Data analysis  
+For quantitative data , once all data collection was completed , quantitative data  is converted to a Stata  
+file for analysis. The analysis was conducted by a researcher of FAVRI  using Stata v15.2 software. T he data 
+was fully analyzed to address the research questions/baseline survey objectives. Descriptive statistical 
+results are presented in terms of frequencies, proportions, mean values, and standard deviations.  
+For qualitative  data , information from the qualitative portion was transcribed and stored as Word files. 
+The content of the KIIs was coded and  group ed based on themes, using Excel 201 9. Several important 
+details of the subject were extracted to demonstrate the results of the s urvey . 
+3.6.  Ethnical approval s/ permission  
+The s urvey  obtained approval from the Institutional Review Board of the Alliance of Bioversity 
+International and CIAT  dated July 4, 202 3. Informed consent was obtained from each participant. All 
+analyses and reported results were  aggregate d to prevent individual disclosure.  
+4. Survey  Findings  
+The quantitative survey was conducted on 174 members of DHCs (130) and VCGs (44) in three communes 
+located in Mai Son district (92) and Sa Pa town (82). The number of members in each ethnic group was 
+relatively similar across the three minority ethnic grou ps: Thai (58), H'mong (51), and Dao (65). In addition, 
+two in -depth interviews were conducted with members of the management board of Van Phuc 
+cooperative  (Mai Son district) and the Can Ho seed production group (Sa Pa town).  
+  
+  
+Page 11:
+ 
+ 
+4 
+ 4.1. Household survey  results   
+4.1.1.  General characteristics  
+Table 4. 1. Household characteristics of respondents by district and ethnicity  
+Indicator  District  Ethnicity  Overall  
+(n=174)  Mai Son  
+(n-92) Sa Pa  
+(n=82)  Thai  
+(n=58)  Hmong  
+(n=51)  Dao 
+(n=65)  
+Age of respondent (mean ± SD)  36.9 ± 10.0  
+(18-61) 36.3 ± 10.6  
+(19 - 67) 37.3 ± 10.1  
+(18 - 61) 34.1 ± 9.2  
+(19 - 58) 37.9 ± 11.0  
+(21 - 61) 36.6 ± 10.2  
+(18 - 67) 
+Gender of respondent (%)        
+Male  15.2  14.6  20.7  7.8 15.4  14.9  
+Female  84.8  85.4  79.3  92.2  84.6  86.1  
+Educational level of respondent (%)        
+No qualification  38.0  50.0  19.0  68.6  46.2  43.7  
+Primary school  22.8  15.9  31.0  7.8 18.5  19.5  
+Lower secondary school  26.1  24.4  32.8  19.6  23.1  25.3  
+Higher secondary school and above  13.0  9.8 17.2  3.9 12.3  11.5  
+Number of household member 
+(mean ± SD)  5.0 ± 1.5  
+(2-10) 5.7 ± 2.1  
+(2-11) 5.1 ± 1.5  
+(2 - 8) 5.3 ± 1.7  
+(3 - 11) 5.6 ± 2.1  
+(2 - 12) 5.4 ± 1.8  
+(2 - 12) 
+Number of household member under 
+5  0.5 ± 0.8  
+(0-3) 0.7 ± 0.9  
+(0 - 4) 0.4 ± 0.7  
+(0 - 3) 0.8 ± 0.9  
+(0 - 3) 0.6 ± 0.9  
+(0-4) 0.6 ± 0.8  
+(0 - 4) 
+Number of household member under 
+6-12 years old  0.8 ± 0.8  
+(0 - 3) 0.8 ± 0.9  
+(0 - 4) 0.8 ± 0.8 
+(0 - 3) 1.0 ± 0.9  
+(0 - 4) 0.6 ± 0.8  
+(0 - 3) 0.8 ± 0.9  
+(0 - 4) 
+Number of household member under 
+13-18 years old  0.7 ± 0.8  
+(0 - 3) 0.7 ± 0.9  
+(0 - 3) 0.6 ± 0.7  
+(0 - 2) 0.8 ± 0.9  
+(0 - 3) 0.6 ± 0.9  
+(0 - 2) 0.7 ± 0.9  
+(0 - 3) 
+Number of household member under 
+19-60 years old  2.8 ± 1.1  
+(2 - 6) 3.1 ± 1.5  
+(1 - 8) 3.0 ± 1.2  
+(2 - 6) 2.5 ± 0.8  
+(2 - 5) 3.3 ± 1.6  
+(1 - 8) 3.0 ± 1.3  
+(1 - 8) 
+Number of household member under 
+above 60 years old  0.3 ± 0.6  
+(0 - 2) 0.4 ± 0.7  
+(0 - 2) 0.3 ± 0.6  
+(0 - 2) 0.2 ± 0.6  
+(0 - 2) 0.4 ± 0.7  
+(0 - 2) 0.3 ± 0.6  
+(0 - 2) 
+Head of the household (%)  21.7  17.1  24.1  15.7  18.5  19.5  
+Educational level of household head 
+(%)       
+No qualification  28.3  48.8  13.8  58.8  43.1  37.9  
+Primary school  28.3  12.2  34.5  11.8  15.4  20.7  
+Lower secondary school  17.4  24.4  25.9  11.8  23.1  20.7  
+Higher secondary school and above  26.1  14.6  25.9  17.7  18.5  20.7  
+Household is an old members NWO 
+DHC or VCG  (%) 82.6  69.5  77.6  60.8  87.7  76.4  
+The study respondents  were predominantly females (86.1%), with an average age of approximately 37 
+(±10)  years , and the Dao ethnic group had the highest average age at 38 (±11). Nearly 44% of them did 
+not have formal qualification , with the highest proportion observed in the H'mong group (68.6%) and in 
+Sa Pa (50%). On average, a household consisted of a total of 5 members, with 3 members in the working 
+age group  (19-60 years old) , and this pattern was consistent across districts and ethnicities. Approximately 
+20% of the respondents identified as household heads, with the highest proportion found in the Thai 
+group (24.1%).  
+Page 12:
+ 
+ 
+5 
+ Approximately 38% of household heads did not have qualification , with the highest proportion observed 
+among the H'mong group (nearly 59%) and in Sa Pa (almost 49%). The proportion  of households 
+participating in local group  was 67.2%, with the highest rate in Mai Son (94.6%) and among the Thai ethnic 
+group (98.3%).  
+The proportion of former members from the NWO project who continue to participate in the groups is 
+76.4%. This rate is higher in Mai Son compared to Sa Pa (82.6% vs. 69.5%). Among the ethnic groups, the 
+Dao group has a higher rate than the Thai and H'mong groups (87.7% vs. 77.6%, 60.8%), and the DHCs 
+have a higher rate than the VCGs (83.3% vs. 73.8%).  
+ 
+Figure 4. 1. Participation of l ocal groups of respondent (n=117)  
+Households were often members of women's associations (82.1%) and farmer associations (45.3%).  
+Table 4. 2. Participation in DHCs and expectation  among  member households by district and ethnicity  
+Indicator  District  Ethnicity  Overall  
+(n=93) Mai Son  
+(n=59)  Sa Pa  
+(n=34)  Thai  
+(n=28)  Hmong  
+(n=31)  Dao 
+(n=34)  
+Role in the DHC        
+Facilitate and support club  11.9  5.9 10.7  12.9  5.9 9.7 
+Only as a participant  88.1  94.1  89.3  87.1  94.1  90.3  
+Activities involve d in during the 
+club        
+3 training sessions or less  17.0  14.7  21.4  12.9  14.7  16.1  
+More than 3 training sessions  83.1  79.4  78.6  87.1  79.4  81.7  
+Practical cooking sessions  49.2  14.7  46.4  51.6  14.7  36.6  
+Seed provision  17.0  0.0 21.4  12.9  0.0 10.8  
+Nutrition contest  3.4 0.0 3.6 3.2 0.0 2.2 82.1
+45.3
+31.6
+14.4
+7.7 7.73.4 4.3
+020406080100%
+Page 13:
+ 
+ 
+6 
+ The majority of  members participated in DHCs as attendees (90.3%), with a slightly higher percentage 
+observed in Sa Pa and the Dao group (both 94.1%). Most group members attended at least three training 
+sessions (81.7%) during their recent involvement with DHCs.  
+ 
+Figure 4. 2. Participation in VCGs and expectation among member households by district  
+For the VCGs, all members have roles in vegetable production and participate in study tours in Hanoi and 
+Dien Bien. Similarly, about 80% of them have participated in at least 3 training sessions, and 70% have 
+established nursery gardens during their involvement with the VCGs in the recent period.  
+4.1.2.  Land use  
+Table 4. 3. Number of plots and area of household’s land in the last season  
+Indicator  District  Ethnicity  Group  Overall  
+(n=174)  Mai Son  
+(n-92) Sa Pa  
+(n=82)  Thai  
+(n=57)  Hmong  
+(n=51)  Dao 
+(n=65)  DHC  
+(n=130)  VC 
+(n=44)  
+# of land plots household 
+owned (mean)  3.4 4.6 3.9 2.7 5.0 4.0 4.0 4.0 
+# of land plots household 
+own and cultivate (mean)  3.3 4.5 3.9 2.4 5.0 3.8 4.0 3.9 
+# of land plots household 
+own and but not cultivate 
+(mean)  0.1 0.1 0.0 0.3 0.0 0.1 0.0 0.1 
+# of land plots household 
+cultivated but not owned 
+(mean)  0.2 0.0 0.1 0.3 0.0 0.1 0.0 0.1 
+Area of cultivated land 
+plots (ha)  1.1 0.4 1.0 0.8 0.4 0.8 0.6 0.7 
+In the last 3 months, each household owned and cultivated around 4 parcels of land, with total area of 
+0.7 ha on average . The number of parcels owned by farmers in Sa Pa exceeds that of Mai Son by about 1. 
+Among the various ethnic groups, the Dao community holds the highest number of parcels, totaling 5, 
+while the Hmong community possesses the least, with nearly 3 parcels p er household. Nevertheless, the 0255075100
+Part of the leadership (director,
+vice, logistic manager,…
+Invited and mobilized group
+members to the training
+Conducted or suported the
+facilitators during training…
+Supported group members after
+the training
+Finance and/or Book keeper
+Responsible for vegetable
+production
+Contacted or made connections
+with (potential) buyers
+Training sessions (3 sessions or
+less)
+Training sessions (more than 3
+sessions)
+Learning visits/ study tours
+Meetings with (potential) buyers
+Building and/or managing the
+nursery house
+Experiments on seed production
+and storage
+Developing/using seasonal
+calendars as plans for the seasons
+Role in the VCG Activities involve during the club%
+Mai Son (n=17) Sa Pa (n=23) Overall (n=40)
+Page 14:
+ 
+ 
+7 
+ agricultural land area of households in Mai Son (1.1 h a) and the Thai community (1.0 ha) is larger 
+compared to the other ethnic groups . In the fact that they generally are cultivating all the plots they own 
+and hardly any they don't own . 
+Table 4. 4. Soil erosion and quality of member households by district, ethnicity and group  
+Indicator  District  Ethnicity  Group  
+Overall  
+(n=174)  Mai Son  
+(n=92) Sa Pa  
+(n=82)  Thai  
+(n=57)  Hmong  
+(n=51)  Dao 
+(n=65)  DHC  
+(n=126)  VCG 
+(n=48)  
+Soil erosion  70.7 40.2  67.2  56.9 46.2 57.1  54.2 56.3  
+The quality of the soil in 
+the upland  Mai Son  
+(n=91) Sa Pa  
+(n=82)  Thai  
+(n=58)  Hmong  
+(n=51)  Dao 
+(n=65)  DHC  
+(n=125)  VCG 
+(n=48)  Overall  
+(n=173)  
+Poor  34.1  23.2  36.8  29.4  21.5  29.6  27.1  28.9  
+Medium  57.1  56.1  52.6  58.8  58.5  59.2  50.0  56.7  
+Good  8.8 20.7  10.5  11.8  20.0  11.2  22.9  14.5  
+The quality of the soil in 
+the lowland  Mai Son  
+(n=84) Sa Pa  
+(n=81)  Thai  
+(n=57)  Hmong  
+(n=44)  Dao 
+(n=64)  DHC  
+(n=119)  VCG 
+(n=46)  Overall  
+(n=165)  
+Poor  1.2 4.9 1.8 2.3 4.7 4.2 0.0 3.0 
+Medium  75.0  63.0  71.9  75.0  62.5  72.3  60.9  69.1  
+Good  23.8  32.1  26.3  22.7  32.8  23.5  39.1  27.9  
+The quality of the soil in 
+the home garden  Mai Son  
+(n-91) Sa Pa  
+(n=80)  Thai  
+(n=58)  Hmong  
+(n=51)  Dao 
+(n=63)  DHC  
+(n=125)  VCG 
+(n=48)  Overall  
+(n=172)  
+Poor  5.4 2.5 5.2 3.9 3.2 5.6 0.0 4.1 
+Medium  68.5  58.8  65.5  66.7  60.3  64.0  63.8  64.0  
+Good  26.1  38.8  29.3  29.4  36.5  30.4  36.2  32.0  
+Over 56% of households reported to have  experienced soil erosion in their cultivated land in the past year, 
+with the highest rate observed in Mai Son (nearly 71%) and among the Thai ethnic group (67.2%).  
+Regarding soil quality in upland areas, only about 15% of households considered it to be good, with higher 
+proportions in Sa Pa (20.7%), the Dao group (20%), and VCGs (almost 23%).  Approximately 28% of 
+households believed that the quality of lowland soil was good, with even higher percentages in Sa Pa 
+(32.1%), the Dao group (32.8%), and VCGs (39.1%).  Around 32% of households rated the quality of soil in 
+their home gardens as good, with higher percentages in Sa Pa (nearly 39%), the Dao group (36.5%), and 
+VCGs (over 36%).  
+  
+Page 15:
+ 
+ 
+8","10034"

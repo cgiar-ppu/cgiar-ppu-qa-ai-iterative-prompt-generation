@@ -1,0 +1,29 @@
+result_code,prompt_id,model_name,impact_area,model_output,token_count,timestamp,score,explanation
+35,Test 1,gpt-4o-mini,,"The text discusses maize breeding initiatives in Southern Africa aimed at developing climate-resilient and nutritious maize varieties through advanced breeding techniques and farmer feedback.
+
+It highlights efforts to improve maize yield, resilience, and nutrition while collaborating with local farmers and partners across several countries.",273,2024-11-03 12:45:21.506223,,
+34,Test 1,gpt-4o-mini,,"The text discusses maize breeding initiatives in Eastern Africa aimed at developing climate-resilient and disease-resistant maize varieties to improve food security and farmer incomes. It highlights collaboration among various partners and the use of advanced breeding technologies to create high-yielding maize varieties suitable for different growing conditions.
+
+This initiative focuses on enhancing agricultural resilience and productivity in the region through innovative breeding practices and farmer engagement.",275,2024-11-03 12:45:21.738998,,
+32,Test 1,gpt-4o-mini,,"The text discusses a maize breeding initiative in West and Central Africa aimed at developing climate-resilient and nutrient-enriched maize varieties to meet food and feed demands. 
+
+It highlights collaboration among various stakeholders to improve maize traits like yield and pest resistance, and mentions the implementation of advanced breeding techniques to speed up genetic improvements.",241,2024-11-03 12:45:21.846587,,
+17,Test 1,gpt-4o-mini,,"The text discusses a collaborative effort in Africa to improve yam breeding, focusing on developing new varieties of White and Water Yam that are more productive and resistant to pests and diseases. It highlights the challenges faced in yam breeding and the progress made in 2023, including the release of three new yam varieties in Nigeria.
+
+This initiative aims to meet consumer demands and enhance yam production in West Africa through improved breeding techniques and collaboration among several countries.",225,2024-11-03 12:45:21.966102,,
+31,Test 1,gpt-4o-mini,,"The text discusses a durum wheat breeding initiative aimed at developing more productive and resilient wheat varieties for farmers in Africa, the Middle East, and Asia. It highlights the challenges of climate, pests, and diseases, and outlines breeding efforts targeting various dryland regions to meet the growing demand for pasta and semolina products. The program utilizes advanced techniques like speed breeding and genomic selection, resulting in the release of new varieties, including drought-tolerant options.",271,2024-11-03 12:45:22.105884,,
+30,Test 1,gpt-4o-mini,,"The text discusses a bread wheat breeding program aimed at developing high-yielding, climate-resilient wheat varieties for semi-arid and arid regions in Africa and parts of Asia. It highlights ICARDA's efforts to address increasing wheat demand and climatic challenges through collaborative breeding strategies, resulting in new varieties that are resilient to environmental stresses.
+
+**Explanation:** The focus is on improving wheat production in response to climate change and growing demand, with specific mention of Ethiopia's release of a new dryland variety.",229,2024-11-03 12:45:22.208652,,
+33,Test 1,gpt-4o-mini,,"The text discusses maize breeding initiatives in Latin America aimed at developing resilient and nutritious maize varieties for smallholder farmers. 
+
+It highlights collaboration among over 30 organizations to create high-yielding, stress-tolerant hybrids using advanced breeding techniques, addressing local agricultural needs and improving nutritional quality.",224,2024-11-03 12:45:22.332250,,
+36,Test 1,gpt-4o-mini,,"The text discusses maize breeding initiatives in South Asia aimed at developing climate-resilient hybrids for smallholder farmers facing environmental stressors like drought and excessive moisture. 
+
+It highlights collaboration among over 60 organizations to improve maize varieties using advanced breeding techniques, with successful outcomes including the registration of drought-tolerant hybrids in India.",274,2024-11-03 12:45:22.382821,,
+28,Test 1,gpt-4o-mini,,"The text discusses the efforts of international wheat breeding networks, particularly the CIMMYT Global Wheat Program, to develop and distribute climate-resilient, nutritious, and disease-resistant wheat varieties for smallholder farmers in developing regions. It highlights collaboration with local institutions and advancements in breeding techniques that have led to the registration of new wheat varieties in various countries.
+
+**Explanation:** The focus is on improving wheat varieties to enhance food security and resilience against climate change, benefiting smallholder farmers across Asia, Africa, and Latin America.",246,2024-11-03 12:45:22.701126,,
+37,Test 1,gpt-4o-mini,,"The text discusses bean breeding initiatives in Africa aimed at developing drought- and heat-resilient, biofortified bean varieties to meet the needs of farmers and seed companies. 
+
+It highlights the importance of common beans as a staple food, their benefits for soil fertility, and the collaborative efforts of organizations like CIAT and PABRA in improving bean varieties through a responsive breeding process.",233,2024-11-03 12:45:22.769858,,

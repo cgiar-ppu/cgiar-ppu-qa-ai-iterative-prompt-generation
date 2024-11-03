@@ -1,0 +1,4 @@
+result_code,prompt_id,model_name,impact_area,model_output,token_count,timestamp,score,explanation
+37,test,gpt-4o-mini,Gender,"**Summary:** The text discusses the efforts of bean breeding networks in Africa to develop drought- and heat-resilient bean varieties, collaborating with farmers and organizations like PABRA. It highlights the importance of common beans as a staple food and the cyclical nature of breeding processes, which adapt based on feedback from stakeholders. 
+
+**Explanation:** The breeding programs aim to enhance bean varieties to meet market demands and improve food security, with ongoing testing and collaboration across multiple African countries.",1122,2024-11-03 12:44:03.629494,,

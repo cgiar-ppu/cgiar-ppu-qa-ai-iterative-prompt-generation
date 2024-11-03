@@ -1,0 +1,7 @@
+result_code,prompt_id,model_name,impact_area,model_output,token_count,timestamp,score,explanation
+1006,test,gpt-4o-mini,Gender,"**Answer:** The Women's Empowerment in Livestock Index (WELI) measures women's empowerment in livestock-related livelihoods.
+
+**Explanation:** Developed by ILRI and Emory University, WELI assesses the impact of livestock interventions on women's empowerment, aiming to enhance livelihoods and promote gender equity in agriculture.",209,2024-11-03 12:43:56.088250,,
+37,test,gpt-4o-mini,Gender,"**Summary:** The text discusses the efforts of bean breeding networks in Africa to develop drought- and heat-resilient bean varieties, collaborating with farmers and organizations like PABRA. It highlights the importance of common beans as a staple food and the cyclical nature of breeding processes, which adapt based on feedback from stakeholders. 
+
+**Explanation:** The breeding programs aim to enhance bean varieties to meet market demands and improve food security, while the accompanying worksheets provide structured data on breeding pipelines and their impact.",1122,2024-11-03 12:43:56.298539,,

@@ -14,7 +14,7 @@ import config
 import prompt_techniques
 from datetime import datetime
 import base64
-
+import re
 # app.py
 #Test Comment to refresh
 
@@ -154,11 +154,12 @@ if input_df is not None:
         selected_df = input_df.head(int(result_limit))
     elif result_selection_method == 'Result Codes':
         result_codes = st.sidebar.text_area(
-            "Paste Result Codes (comma-separated)",
-            placeholder="e.g., RC001, RC002, RC003"
+            "Paste Result Codes (separated by comma, space, tab, or newline)",
+            placeholder="e.g., RC001, RC002, RC003 or RC001 RC002 RC003"
         )
         if result_codes:
-            result_code_list = [code.strip() for code in result_codes.split(',')]
+            # Split by any whitespace or comma
+            result_code_list = [code.strip() for code in re.split(r'[,\s]+', result_codes) if code.strip()]
             with st.expander("Show confirmation of result codes entered by user:"):
                 st.write("Result codes entered by user:")
                 st.write(result_code_list)

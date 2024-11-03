@@ -1,0 +1,8 @@
+result_code,prompt_id,model_name,impact_area,model_output,token_count,timestamp,score,explanation
+6532,Test 1,gpt-4o-mini,,The text is about enhancing the resilience of farmers by promoting sustainable interactions between crop and livestock farming. It likely discusses methods and practices that integrate these two agricultural sectors to improve productivity and sustainability.,27,2024-11-03 12:45:03.625112,,
+37,Test 1,gpt-4o-mini,,"The text discusses bean breeding initiatives in Africa aimed at developing drought- and heat-resilient, biofortified bean varieties to meet the needs of farmers and seed companies. 
+
+It highlights the importance of common beans as a staple food, their benefits for soil fertility, and the collaborative efforts of organizations like CIAT and PABRA in improving bean varieties through a responsive breeding process.",233,2024-11-03 12:45:03.677634,,
+9500,Test 1,gpt-4o-mini,,"The text is about a situational analysis of gender and inclusion in legume seed systems in Odisha, India. 
+
+It focuses on assessing the status of pulse seed production, availability, and quality, while examining both formal and informal seed systems across various districts to identify specific challenges and opportunities in the region.",187,2024-11-03 12:45:04.245250,,
