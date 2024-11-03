@@ -308,7 +308,7 @@ Please provide your answer in the following format:
 MODELS = [
     'gpt-4o',
     'gpt-4o-mini',
-    'o1-preview',
+#    'o1-preview',
     'o1-mini',
 ]
 

@@ -146,17 +146,33 @@ if start_button:
     evaluate_results(results_csv, input_csv, metrics_csv)
     
     # Load metrics
-    metrics_df = pd.read_csv(metrics_csv)
+    try:
+        metrics_df = pd.read_csv(metrics_csv)
+    except FileNotFoundError:
+        st.write("No Metrics possible based on dataset provided")
+        metrics_df = pd.DataFrame()
+
+    input_df = pd.read_csv(input_csv)
+
+    tasks_df = pd.read_excel(task_list_excel)
+
+    # Provide download links
+    st.subheader("Download Files")
+ 
+    st.markdown(get_table_download_link(metrics_df, 'Download Metrics CSV'), unsafe_allow_html=True)
+    st.markdown(get_table_download_link(results_df, 'Download Results CSV'), unsafe_allow_html=True)
+
+
     
     # Display metrics
     st.subheader("Metrics")
     st.dataframe(metrics_df)
     
-    # Provide download links
-    st.subheader("Download Files")
-    st.markdown(get_table_download_link(results_df, 'Download Results CSV'), unsafe_allow_html=True)
-    st.markdown(get_table_download_link(metrics_df, 'Download Metrics CSV'), unsafe_allow_html=True)
+    st.subheader("Outputs")
+    st.dataframe(results_df)
 
+    st.subheader("Full details sent to LLM")
+    st.dataframe(tasks_df)
 
-
-
+    st.subheader("Input used")
+    st.dataframe(input_df)
