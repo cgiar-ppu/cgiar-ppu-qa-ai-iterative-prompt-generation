@@ -118,24 +118,77 @@ if dataset_option == 'Upload Your Own':
     uploaded_file = st.sidebar.file_uploader("Upload CSV", type=["csv"])
     input_df = None
     if uploaded_file:
-        input_df = pd.read_csv(uploaded_file)
+        # Use load_data function to process the uploaded file
+        input_df = load_data(uploaded_file)
 else:
     input_csv = 'input/Joined_Processed_Evidence_PRMS_ExpertsScore.csv'
     input_df = load_data(input_csv)
+    st.write("Columns in DataFrame:", input_df.columns.tolist())
+    st.write("Available Result Codes in DataFrame:")
+    st.write(input_df['Result code'].unique())
 
 if input_df is None:
     st.warning("Please upload a CSV file to proceed.")
+else:
+    st.write("Columns in DataFrame after processing:", input_df.columns.tolist())
+    st.write("Sample data:")
+    st.write(input_df.head())
+# Result Selection Method
+result_selection_method = st.sidebar.radio(
+    "Select Results by",
+    ('Number of Results', 'Result Codes')
+)
 
-# Result Limit
+selected_df = pd.DataFrame()  # Initialize selected_df
+
 if input_df is not None:
-    result_limit = st.sidebar.number_input(
-        "Number of Results to Process",
-        min_value=1,
-        max_value=len(input_df),
-        value=min(100, len(input_df))
-    )
+    if result_selection_method == 'Number of Results':
+        result_limit = st.sidebar.number_input(
+            "Number of Results to Process",
+            min_value=1,
+            max_value=len(input_df),
+            value=min(100, len(input_df))
+        )
+        selected_df = input_df.head(int(result_limit))
+    elif result_selection_method == 'Result Codes':
+        result_codes = st.sidebar.text_area(
+            "Paste Result Codes (comma-separated)",
+            placeholder="e.g., RC001, RC002, RC003"
+        )
+        if result_codes:
+            result_code_list = [code.strip() for code in result_codes.split(',')]
+            st.write("Result codes entered by user:")
+            st.write(result_code_list)
+
+            # Ensure 'Result code' column is of type string and strip whitespace
+            input_df['Result code'] = input_df['Result code'].astype(str).str.strip()
+
+            # Convert both to uppercase for case-insensitive matching
+            input_df['Result code'] = input_df['Result code'].str.upper()
+            result_code_list = [code.upper() for code in result_code_list]
+
+            st.write("Available Result Codes in DataFrame after processing:")
+            st.write(input_df['Result code'].unique())
+
+            # Perform the filtering
+            selected_df = input_df[input_df['Result code'].isin(result_code_list)]
+
+            st.write("Number of rows in selected_df after filtering:", len(selected_df))
+            if selected_df.empty:
+                st.warning("No matching result codes found. Please check your input.")
+
+                # Identify unmatched codes
+                unmatched_codes = set(result_code_list) - set(input_df['Result code'].unique())
+                if unmatched_codes:
+                    st.write("The following result codes were not found in the DataFrame:")
+                    st.write(unmatched_codes)
+        else:
+            selected_df = pd.DataFrame()  # Empty DataFrame if no codes are provided
 else:
     st.sidebar.warning("Please upload a CSV file to set the number of results to process.")
+
+if selected_df.empty:
+    st.warning("No results selected. Please adjust your selection criteria.")
 
 # Start Processing Button
 start_button = st.sidebar.button("Start Processing")
@@ -155,83 +208,108 @@ def update_progress(n):
     status_text.text(f"Processing task {n} of {total_tasks}")
 
 if start_button:
-    # Filter prompts
-    selected_prompts_dict = {pid: prompts[pid] for pid in selected_prompts}
-    
-    # Deduplicate input data based on 'Result code' and relevant text fields
-    df_unique_input = input_df.drop_duplicates(
-        subset=['Result code', 'Title', 'Description', 'Evidence_Abstract_Text', 'Evidence_Parsed_Text']
-    )
-    
-    # Limit the number of results
-    df_unique_input = df_unique_input.head(int(result_limit))
-    
-    # Generate tasks
-    tasks = generate_task_list(df_unique_input, selected_prompts_dict, selected_models)
-    
-    # Save task list
-    task_list_csv = f'output//task_list_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv'
-    task_list_excel = f'output//task_list_{datetime.now().strftime('%Y%m%d_%H%M%S')}.xlsx'
-    save_task_list(tasks, task_list_excel, task_list_csv)
+    # Check for empty selections
+    if selected_df.empty:
+        st.warning("No results selected. Please adjust your selection criteria.")
+    elif not selected_models:
+        st.warning("No models selected. Please select at least one model.")
+    elif not selected_prompts:
+        st.warning("No prompts selected. Please select at least one prompt.")
+    else:
+        # Filter prompts
+        selected_prompts_dict = {pid: prompts[pid] for pid in selected_prompts}
 
-    # Display number of tasks
-    st.write(f"Total tasks to process: {len(tasks)}")
-    
-    # Initialize progress bar
-    progress_bar = st.progress(0)
-    status_text = st.empty()
-    
-    # Execute tasks with progress update
-    logger = ResultLogger(f"output/results_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv")
-    
+        # Deduplicate input data based on 'Result code' and relevant text fields
+        df_unique_input = selected_df.drop_duplicates(
+            subset=['Result code', 'Title', 'Description', 'Evidence_Abstract_Text', 'Evidence_Parsed_Text']
+        )
 
-    
-# Execute tasks concurrently with progress update
-    results = execute_tasks_concurrently(tasks, max_workers=8, progress_callback=update_progress)
-    
-    progress_bar.empty()
-    status_text.text("Processing completed.")
-    
-    # Extract responses
-    results_df = pd.DataFrame(results)
-    results_df = add_score_explanation_columns(results_df, 'model_output')
-    
-    # Save results
-    results_csv = f"output/results_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
-    results_df.to_csv(results_csv, index=False)
-    
-    # Evaluate results
-    metrics_csv = f"output/metrics_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
-    evaluate_results(results_csv, input_csv, metrics_csv)
-    
-    # Load metrics
-    try:
-        metrics_df = pd.read_csv(metrics_csv)
-    except (FileNotFoundError, pd.errors.EmptyDataError):
-        st.write("No Metrics possible based on dataset provided")
-        metrics_df = pd.DataFrame()
+        # Limit the number of results if using 'Number of Results' method
+        if result_selection_method == 'Number of Results':
+            df_unique_input = df_unique_input.head(int(result_limit))
 
-    input_df = pd.read_csv(input_csv)
+        # Check if df_unique_input is empty
+        if df_unique_input.empty:
+            st.warning("No unique input data to process after deduplication.")
+        else:
+            # Generate tasks
+            tasks = generate_task_list(df_unique_input, selected_prompts_dict, selected_models)
 
-    tasks_df = pd.read_excel(task_list_excel)
+            # Check if tasks list is empty
+            if not tasks:
+                st.warning("No tasks generated. Please check your inputs.")
+            else:
+                # Save task list
+                timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+                task_list_csv = f'output//task_list_{timestamp}.csv'
+                task_list_excel = f'output//task_list_{timestamp}.xlsx'
+                save_task_list(tasks, task_list_excel, task_list_csv)
 
-    # Provide download links
-    st.subheader("Download Files")
- 
-    st.markdown(get_table_download_link(metrics_df, 'Download Metrics CSV'), unsafe_allow_html=True)
-    st.markdown(get_table_download_link(results_df, 'Download Results CSV'), unsafe_allow_html=True)
+                # Display number of tasks
+                st.write(f"Total tasks to process: {len(tasks)}")
 
+                # Initialize progress bar
+                progress_bar = st.progress(0)
+                status_text = st.empty()
 
-    
-    # Display metrics
-    st.subheader("Metrics")
-    st.dataframe(metrics_df)
-    
-    st.subheader("Outputs")
-    st.dataframe(results_df)
+                # Execute tasks with progress update
+                logger = ResultLogger(f"output/results_{timestamp}.csv")
 
-    st.subheader("Full details sent to LLM")
-    st.dataframe(tasks_df)
+                # Execute tasks concurrently with progress update
+                results = execute_tasks_concurrently(tasks, max_workers=8, progress_callback=update_progress)
 
-    st.subheader("Input used")
-    st.dataframe(input_df)
+                progress_bar.empty()
+                status_text.text("Processing completed.")
+
+                # Extract responses
+                results_df = pd.DataFrame(results)
+
+                if results_df.empty:
+                    st.warning("No results were returned from processing.")
+                else:
+                    results_df = add_score_explanation_columns(results_df, 'model_output')
+
+                    # Save results
+                    results_csv = f"output/results_{timestamp}.csv"
+                    results_df.to_csv(results_csv, index=False)
+
+                    # Define input_csv for evaluate_results
+                    if dataset_option == 'Upload Your Own':
+                        input_csv = f"output/uploaded_input_{timestamp}.csv"
+                        input_df.to_csv(input_csv, index=False)
+                    else:
+                        # input_csv is already defined when using default dataset
+                        pass
+
+                    # Evaluate results
+                    metrics_csv = f"output/metrics_{timestamp}.csv"
+                    evaluate_results(results_csv, input_csv, metrics_csv)
+
+                    # Load metrics
+                    try:
+                        metrics_df = pd.read_csv(metrics_csv)
+                    except (FileNotFoundError, pd.errors.EmptyDataError):
+                        st.write("No Metrics possible based on dataset provided")
+                        metrics_df = pd.DataFrame()
+
+                    
+                    tasks_df = pd.read_excel(task_list_excel)
+
+                    # Provide download links
+                    st.subheader("Download Files")
+
+                    st.markdown(get_table_download_link(metrics_df, 'Download Metrics CSV'), unsafe_allow_html=True)
+                    st.markdown(get_table_download_link(results_df, 'Download Results CSV'), unsafe_allow_html=True)
+
+                    # Display metrics
+                    st.subheader("Metrics")
+                    st.dataframe(metrics_df)
+
+                    st.subheader("Outputs")
+                    st.dataframe(results_df)
+
+                    st.subheader("Full details sent to LLM")
+                    st.dataframe(tasks_df)
+
+                    st.subheader("Input used")
+                    st.dataframe(input_df)
