@@ -309,7 +309,7 @@ MODELS = [
     'gpt-4o',
     'gpt-4o-mini',
 #    'o1-preview',
-    'o1-mini',
+#    'o1-mini',
 ]
 
 # OpenAI API Configuration
