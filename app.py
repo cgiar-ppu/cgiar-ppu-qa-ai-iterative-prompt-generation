@@ -79,7 +79,33 @@ with st.sidebar.expander("Add a New Prompt"):
         else:
             st.error("Please provide both Prompt ID and Prompt Text.")
 
-
+# Upload Prompts from Excel
+st.sidebar.subheader("Upload Prompts from Excel")
+uploaded_prompt_file = st.sidebar.file_uploader("Upload Excel", type=["xlsx"])
+if uploaded_prompt_file:
+    try:
+        prompt_df = pd.read_excel(uploaded_prompt_file)
+        if all(col in prompt_df.columns for col in ["Prompt ID", "Prompt Text", "Impact Area"]):
+            for _, row in prompt_df.iterrows():
+                prompt_id = row["Prompt ID"]
+                prompt_text = row["Prompt Text"]
+                impact_area = row["Impact Area"]
+                if prompt_id and prompt_text and impact_area:
+                    prompts[prompt_id] = {
+                        'id': prompt_id,
+                        'text': prompt_text + " **Text to Analyze:** [INPUT_TEXT]",
+                        'impact_area': impact_area,
+                        'active': True
+                    }
+                    if prompt_id not in available_prompts:
+                        available_prompts.append(prompt_id)
+                    if prompt_id not in st.session_state.selected_prompts:
+                        st.session_state.selected_prompts.append(prompt_id)
+            st.success("Prompts from Excel file added successfully.")
+        else:
+            st.error("Excel file must contain 'Prompt ID', 'Prompt Text', and 'Impact Area' columns.")
+    except Exception as e:
+        st.error(f"Error processing the uploaded file: {e}")
 
 # Dataset Selection
 st.sidebar.subheader("Dataset")
