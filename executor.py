@@ -36,25 +36,22 @@ def execute_task(task):
     try:
         if task['model_name'] in simplified_models:
             # Use simplified API call for specific models
-            response = client.chat.completions.create(
+            response = openai.ChatCompletion.create(
                 model=task['model_name'],
                 messages=messages
             )
         else:
             # Use the standard API call with additional parameters
-            response = client.chat.completions.create(
+            response = openai.ChatCompletion.create(
                 model=task['model_name'],
                 messages=messages,
                 temperature=0,  # Adjust as needed
                 max_tokens=500,
                 top_p=0,
                 frequency_penalty=0,
-                presence_penalty=0,
-                response_format={
-                    "type": "text"
-                }
+                presence_penalty=0
             )
-        output = response.choices[0].message.content.strip()
+        output = response.choices[0].message['content'].strip()
         result = {
             'result_code': task['result_code'],
             'prompt_id': task['prompt_id'],
@@ -70,35 +67,28 @@ def execute_task(task):
         print(f"Error querying OpenAI for task {task['result_code']}, {task['prompt_id']}, {task['model_name']}: {e}")
         return None
 
-def worker(task_queue, results_list, lock):
+def execute_tasks_concurrently(tasks, max_workers=8, progress_callback=None):
     """
-    Worker function for threading.
+    Execute tasks concurrently using ThreadPoolExecutor, updating progress after each task.
     """
-    while True:
-        with lock:
-            if not task_queue:
-                break  # No more tasks
-            task = task_queue.pop()
-        result = execute_task(task)
-        if result:
-            with lock:
-                results_list.append(result)
-        else:
-            # Optionally, implement retry logic here
-            pass
+    results = []
+    total_tasks = len(tasks)
+    completed_tasks = 0
 
-def execute_tasks_concurrently(tasks, num_threads=8):
-    """
-    Execute tasks concurrently using threading.
-    """
-    task_queue = tasks.copy()
-    results_list = []
-    lock = threading.Lock()
-    threads = []
-    for _ in range(num_threads):
-        t = threading.Thread(target=worker, args=(task_queue, results_list, lock))
-        t.start()
-        threads.append(t)
-    for t in threads:
-        t.join()
-    return results_list
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        future_to_task = {executor.submit(execute_task, task): task for task in tasks}
+        
+        for future in as_completed(future_to_task):
+            task = future_to_task[future]
+            try:
+                result = future.result()
+                if result:
+                    results.append(result)
+            except Exception as e:
+                print(f"Task {task} generated an exception: {e}")
+            finally:
+                completed_tasks += 1
+                if progress_callback:
+                    progress_callback(completed_tasks)
+    
+    return results
