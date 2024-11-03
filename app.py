@@ -64,19 +64,26 @@ dataset_option = st.sidebar.radio(
 
 if dataset_option == 'Upload Your Own':
     uploaded_file = st.sidebar.file_uploader("Upload CSV", type=["csv"])
+    input_df = None
     if uploaded_file:
         input_df = pd.read_csv(uploaded_file)
 else:
     input_csv = 'input/Joined_Processed_Evidence_PRMS_ExpertsScore.csv'
     input_df = load_data(input_csv)
 
+if input_df is None:
+    st.warning("Please upload a CSV file to proceed.")
+
 # Result Limit
-result_limit = st.sidebar.number_input(
-    "Number of Results to Process",
-    min_value=1,
-    max_value=len(input_df),
-    value=min(100, len(input_df))
-)
+if input_df is not None:
+    result_limit = st.sidebar.number_input(
+        "Number of Results to Process",
+        min_value=1,
+        max_value=len(input_df),
+        value=min(100, len(input_df))
+    )
+else:
+    st.sidebar.warning("Please upload a CSV file to set the number of results to process.")
 
 # Start Processing Button
 start_button = st.sidebar.button("Start Processing")
