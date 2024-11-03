@@ -40,7 +40,6 @@ st.sidebar.subheader("Add New Prompt")
 with st.sidebar.expander("Add a New Prompt"):
     new_prompt_id = st.text_input("Prompt ID")
     new_prompt_text = st.text_area("Prompt Text")
-    new_prompt_perspective = st.text_input("Perspective")
     new_prompt_impact_area = st.text_input("Impact Area")
     add_prompt_button = st.button("Add Prompt")
     if add_prompt_button:
@@ -48,7 +47,6 @@ with st.sidebar.expander("Add a New Prompt"):
             prompts[new_prompt_id] = {
                 'id': new_prompt_id,
                 'text': new_prompt_text,
-                'perspective': new_prompt_perspective,
                 'impact_area': new_prompt_impact_area,
                 'active': True
             }

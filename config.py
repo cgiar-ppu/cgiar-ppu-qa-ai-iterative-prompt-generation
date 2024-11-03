@@ -59,7 +59,6 @@ Please provide your answer in the following format:
 
 **Text to Analyze:**
 [INPUT_TEXT]''',
-        'perspective': 'Gender Equality',
         'impact_area': 'Gender'
     },
     'CLIMATE_CHANGE_PROMPT': {
@@ -120,7 +119,6 @@ Please provide your answer in the following format:
 
 **Text to Analyze:**
 [INPUT_TEXT]''',
-        'perspective': 'Climate Change',
         'impact_area': 'Climate'
     },
     'NUTRITION_PROMPT': {
@@ -180,7 +178,6 @@ Please provide your answer in the following format:
 
 **Text to Analyze:**
 [INPUT_TEXT]''',
-        'perspective': 'Nutrition, Health, and Food Security',
         'impact_area': 'Nutrition'
     },
     'ENVIRONMENTAL_HEALTH_PROMPT': {
@@ -244,7 +241,6 @@ Please provide your answer in the following format:
 
 **Text to Analyze:**
 [INPUT_TEXT]''',
-        'perspective': 'Environmental Health and Biodiversity',
         'impact_area': 'Environment'
     },
     'POVERTY_REDUCTION_PROMPT': {
@@ -304,7 +300,6 @@ Please provide your answer in the following format:
 
 **Text to Analyze:**
 [INPUT_TEXT]''',
-        'perspective': 'Poverty Reduction, Livelihoods, and Jobs',
         'impact_area': 'Poverty'
     }
 }

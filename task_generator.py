@@ -20,7 +20,6 @@ def generate_task_list(df_input, prompts, models, max_token_limit=80000):
         result_code = row['Result code']
         for prompt_id, prompt in prompts.items():
             prompt_text = prompt['text']
-            perspective = prompt.get('perspective', '')
             impact_area = prompt.get('impact_area', '')
             for model_name in models:
                 # Estimate token count
@@ -33,7 +32,6 @@ def generate_task_list(df_input, prompts, models, max_token_limit=80000):
                     'prompt_id': prompt_id,
                     'prompt_text': prompt_text,
                     'model_name': model_name,
-                    'perspective': perspective,
                     'impact_area': impact_area,
                     'input_text': input_text,
                     'token_count': token_count

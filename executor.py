@@ -21,7 +21,6 @@ def execute_task(task):
     """
     # Replace placeholders in the prompt text
     prompt_text = task['prompt_text'].replace('[INPUT_TEXT]', task['input_text'])
-    prompt_text = prompt_text.replace('[PERSPECTIVE]', task['perspective'])
     
     # Prepare messages
     if task['model_name'] in simplified_models:
@@ -63,7 +62,6 @@ def execute_task(task):
             'result_code': task['result_code'],
             'prompt_id': task['prompt_id'],
             'model_name': task['model_name'],
-            'perspective': task['perspective'],
             'impact_area': task['impact_area'],
             'model_output': output,
             'token_count': task['token_count'],
