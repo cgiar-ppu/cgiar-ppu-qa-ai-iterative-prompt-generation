@@ -27,23 +27,41 @@ selected_models = st.sidebar.multiselect("Select Models", models, default=models
 # Prompt Selection
 prompts = config.PROMPTS
 
-# Display existing prompts
+# Initialize available prompts
+available_prompts = list(prompts.keys())
+
+# Ensure selected prompts in session_state are valid
+if 'selected_prompts' in st.session_state:
+    # Remove any prompts that are no longer available
+    st.session_state.selected_prompts = [p for p in st.session_state.selected_prompts if p in available_prompts]
+else:
+    # Initialize selected_prompts with all available prompts
+    st.session_state.selected_prompts = available_prompts.copy()
+
+# Display existing prompts with a fixed key to manage state
 st.sidebar.subheader("Existing Prompts")
 selected_prompts = st.sidebar.multiselect(
     "Select Prompts to Use",
-    list(prompts.keys()),
-    default=list(prompts.keys())
+    options=available_prompts,
+    default=None,  # Default is None because we're using session_state
+    key='selected_prompts'  # Use a fixed key to manage state
 )
+
+# Update session state with the current selection
+# This happens automatically because of the key parameter
 
 # Add New Prompts
 st.sidebar.subheader("Add New Prompt")
 with st.sidebar.expander("Add a New Prompt"):
     new_prompt_id = st.text_input("Prompt ID")
     new_prompt_text = st.text_area("Prompt Text")
-    new_prompt_impact_area = st.selectbox("Impact Area", ["Gender", "Nutrition", "Climate", "Environment", "Poverty", "IPSR", "None"])
+    new_prompt_impact_area = st.selectbox(
+        "Impact Area", ["Gender", "Nutrition", "Climate", "Environment", "Poverty", "IPSR", "None"]
+    )
     add_prompt_button = st.button("Add Prompt")
     if add_prompt_button:
         if new_prompt_id and new_prompt_text:
+            # Add the new prompt to the prompts dictionary
             prompts[new_prompt_id] = {
                 'id': new_prompt_id,
                 'text': new_prompt_text + " **Text to Analyze:** [INPUT_TEXT]",
@@ -51,9 +69,16 @@ with st.sidebar.expander("Add a New Prompt"):
                 'active': True
             }
             st.success(f"Prompt '{new_prompt_id}' added.")
-            selected_prompts.append(new_prompt_id)
+
+            # Update available prompts
+            available_prompts.append(new_prompt_id)
+
+            # Add new prompt to the session state's selected_prompts
+            st.session_state.selected_prompts.append(new_prompt_id)
         else:
             st.error("Please provide both Prompt ID and Prompt Text.")
+
+
 
 # Dataset Selection
 st.sidebar.subheader("Dataset")
