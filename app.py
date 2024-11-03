@@ -83,11 +83,17 @@ result_limit = st.sidebar.number_input(
 # Start Processing Button
 start_button = st.sidebar.button("Start Processing")
 
+def get_table_download_link(df, link_text):
+    csv = df.to_csv(index=False)
+    b64 = base64.b64encode(csv.encode()).decode()  # some strings <-> bytes conversions necessary here
+    href = f'<a href="data:file/csv;base64,{b64}" download="data.csv">{link_text}</a>'
+    return href
 
 # app.py
 
 # Function to update progress
 def update_progress(n):
+    total_tasks = len(tasks)
     progress_bar.progress(n / total_tasks)
     status_text.text(f"Processing task {n} of {total_tasks}")
 
@@ -106,6 +112,11 @@ if start_button:
     # Generate tasks
     tasks = generate_task_list(df_unique_input, selected_prompts_dict, selected_models)
     
+    # Save task list
+    task_list_csv = f'output//task_list_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv'
+    task_list_excel = f'output//task_list_{datetime.now().strftime('%Y%m%d_%H%M%S')}.xlsx'
+    save_task_list(tasks, task_list_excel, task_list_csv)
+
     # Display number of tasks
     st.write(f"Total tasks to process: {len(tasks)}")
     
@@ -115,9 +126,6 @@ if start_button:
     
     # Execute tasks with progress update
     logger = ResultLogger(f"output/results_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv")
-    
-    total_tasks = len(tasks)
-    results = []
     
 
     
@@ -153,8 +161,4 @@ if start_button:
 
 
 
-def get_table_download_link(df, link_text):
-    csv = df.to_csv(index=False)
-    b64 = base64.b64encode(csv.encode()).decode()  # some strings <-> bytes conversions necessary here
-    href = f'<a href="data:file/csv;base64,{b64}" download="data.csv">{link_text}</a>'
-    return href
+

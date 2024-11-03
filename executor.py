@@ -5,6 +5,7 @@ import threading
 import pandas as pd
 import json
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 client = OpenAI(api_key="sk-OwIfHlbOIes9PqMF-mip_JTSzJ4qkYx-g8YjjoIKXXT3BlbkFJyd1dpfID6zsTfjMNZzE98xEZEdFU_ppS_LvceWDPcA")
 
@@ -36,22 +37,25 @@ def execute_task(task):
     try:
         if task['model_name'] in simplified_models:
             # Use simplified API call for specific models
-            response = openai.ChatCompletion.create(
+            response = client.chat.completions.create(
                 model=task['model_name'],
                 messages=messages
             )
         else:
             # Use the standard API call with additional parameters
-            response = openai.ChatCompletion.create(
+            response = client.chat.completions.create(
                 model=task['model_name'],
                 messages=messages,
                 temperature=0,  # Adjust as needed
                 max_tokens=500,
                 top_p=0,
                 frequency_penalty=0,
-                presence_penalty=0
+                presence_penalty=0,
+                response_format={
+                    "type": "text"
+                }
             )
-        output = response.choices[0].message['content'].strip()
+        output = response.choices[0].message.content.strip()
         result = {
             'result_code': task['result_code'],
             'prompt_id': task['prompt_id'],
