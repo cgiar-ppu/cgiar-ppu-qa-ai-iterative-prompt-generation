@@ -115,14 +115,14 @@ dataset_option = st.sidebar.radio(
 )
 
 if dataset_option == 'Upload Your Own':
-    uploaded_file = st.sidebar.file_uploader("Upload CSV", type=["csv"])
+    uploaded_file = st.sidebar.file_uploader("Upload CSV or Excel", type=["csv", "xls", "xlsx"])
     input_df = None
     if uploaded_file:
         # Use load_data function to process the uploaded file
         input_df = load_data(uploaded_file)
 else:
-    input_csv = 'input/Joined_Processed_Evidence_PRMS_ExpertsScore.csv'
-    input_df = load_data(input_csv)
+    input_file = 'input/Joined_Processed_Evidence_PRMS_ExpertsScore.csv'
+    input_df = load_data(input_file)
     #with st.expander("Show Debug Logs"):    
        # st.write("Columns in DataFrame:", input_df.columns.tolist())
        # st.write("Available Result Codes in DataFrame:")
@@ -225,9 +225,9 @@ if start_button:
         selected_prompts_dict = {pid: prompts[pid] for pid in selected_prompts}
 
         # Deduplicate input data based on 'Result code' and relevant text fields
-        df_unique_input = selected_df.drop_duplicates(
-            subset=['Result code', 'Title', 'Description', 'Evidence_Abstract_Text', 'Evidence_Parsed_Text']
-        )
+        optional_columns = ['Title', 'Description', 'Evidence_Abstract_Text', 'Evidence_Parsed_Text']
+        existing_columns = [col for col in optional_columns if col in selected_df.columns]
+        df_unique_input = selected_df.drop_duplicates(subset=['Result code'] + existing_columns)
 
         # Limit the number of results if using 'Number of Results' method
         if result_selection_method == 'Number of Results':
@@ -283,7 +283,7 @@ if start_button:
                         input_csv = f"output/uploaded_input_{timestamp}.csv"
                         input_df.to_csv(input_csv, index=False)
                     else:
-                        # input_csv is already defined when using default dataset
+                        input_csv = input_file
                         pass
 
                     # Evaluate results

@@ -1,0 +1,10 @@
+result_code,prompt_id,model_name,impact_area,model_output,token_count,timestamp,score,explanation
+1020,Test_V1,gpt-4o-mini,Gender,"**Direct Answer:** Aclimatar is a platform designed to support climate adaptation for smallholder cocoa producers in West Africa by providing tailored climate risk assessments and adaptation strategies.
+
+**Brief Explanation:** It enhances resilience against climate change impacts through an intuitive interface that offers essential climate data and prioritizes adaptation practices for cocoa management in Ghana and Côte d'Ivoire.",949,2024-11-03 12:16:19.862925,,
+1006,Test_V1,gpt-4o-mini,Gender,"**Direct Answer:** The Women's Empowerment in Livestock Index (WELI) measures women's empowerment in livestock-related livelihoods.
+
+**Brief Explanation:** Developed by ILRI and Emory University in 2015, WELI assesses the impact of livestock interventions on women's empowerment, aiming to enhance livelihoods, nutrition, and gender equity in agricultural systems.",209,2024-11-03 12:16:20.116139,,
+37,Test_V1,gpt-4o-mini,Gender,"**Summary:** The text discusses the efforts of bean breeding networks in Africa to develop drought- and heat-resilient, biofortified bean varieties. It highlights the collaboration between CIAT, PABRA, and farmers to meet market demands and improve food security for over 200 million Africans. The breeding process is adaptive, with a cycle time of 12 to 24 months, and involves testing various lines across multiple countries.
+
+**Explanation:** The focus is on enhancing common beans' resilience and nutritional value through collaborative breeding efforts, addressing both farmer needs and market opportunities.",1122,2024-11-03 12:16:20.515781,,

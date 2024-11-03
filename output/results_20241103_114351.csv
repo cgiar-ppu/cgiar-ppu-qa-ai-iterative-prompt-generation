@@ -1,0 +1,15 @@
+result_code,prompt_id,model_name,impact_area,model_output,token_count,timestamp,score,explanation
+9500,Test_V1,gpt-4o-mini,Gender,"**Answer:** The report analyzes the gender and inclusion aspects of legume seed systems in Odisha, India, focusing on seed production, availability, and quality across various districts.
+
+**Explanation:** It involves a comprehensive study of both formal and informal seed systems, gathering insights from diverse stakeholders to identify challenges and opportunities in pulse seed development.",182,2024-11-03 11:43:52.769959,,
+1006,Test_V1,gpt-4o-mini,Gender,"**Direct Answer:** The Women's Empowerment in Livestock Index (WELI) measures women's empowerment in livestock-related livelihoods.
+
+**Brief Explanation:** Developed by ILRI and Emory University in 2015, WELI assesses the impact of livestock interventions on women's empowerment, focusing on areas like animal health and product marketing to enhance livelihoods and promote gender equity.",208,2024-11-03 11:43:52.906551,,
+37,Test_V1,gpt-4o-mini,Gender,"**Key Points:**
+1. **Bean Breeding Networks**: Accelerate development of drought- and heat-resilient bean varieties in Africa.
+2. **Importance**: Common beans are vital for over 200 million Africans, providing nutrition and income.
+3. **Collaboration**: CIAT and PABRA work with farmers to create improved bean varieties.
+4. **Breeding Process**: Involves feedback from stakeholders; cycle lasts 12-24 months.
+5. **Testing**: In 2023, 272 lines were tested across 16 countries, including 17 Tanzanian varieties with 1682 farmers.
+
+**Explanation**: The text highlights the significance of bean breeding in Africa, focusing on improving varieties to meet nutritional needs and market demands while adapting to environmental challenges.",228,2024-11-03 11:43:53.801982,,

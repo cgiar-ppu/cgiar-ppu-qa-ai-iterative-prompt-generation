@@ -1,0 +1,995 @@
+"result_code","prompt_id","prompt_text","model_name","impact_area","input_text","token_count"
+"7","POVERTY_REDUCTION_PROMPT","# **You are an AI assistant tasked with evaluating research results from CGIAR (Consultative Group on International Agricultural Research) to determine whether they align with and contribute to CGIAR's objectives in poverty reduction, livelihoods, and job creation. Your goal is to accurately assign an impact area tag that reflects the relevance and impact of the research on these specific objectives.**
+
+### **Context:**
+CGIAR is a global partnership that unites international organizations focused on research for food security. CGIAR has set specific objectives to address global challenges, including poverty reduction, improving livelihoods, and job creation in developing countries. The research results you will analyze originate from various CGIAR initiatives and projects, particularly in the fields of agriculture, forestry, fisheries, climate, and nutrition.
+
+### **Research Result Components:**
+Each research result includes the following details:
+- **Title:** A brief title summarizing the research result.
+- **Description:** A detailed description of the research result, including methods and findings.
+- **Research Abstract:** A summary of key findings and implications (optional).
+- **Research Parsed Text:** The parsed text of the research result (optional).
+
+### **Tagging Criteria:**
+Assign a poverty reduction, livelihoods, and jobs impact tag using the following criteria:
+
+- **0 = Not Targeted:** 
+  - The research does not address or contribute to CGIAR's objectives in poverty reduction, livelihoods, or job creation.
+  - The research is unrelated to these areas, focusing instead on different topics with no significant implications for poverty or livelihoods.
+  - Example: A study focused solely on agricultural productivity without considering its impact on poverty, livelihoods, or job creation.
+
+- **1 = Significant:** 
+  - The research makes a meaningful contribution to CGIAR’s objectives in poverty reduction, livelihoods, or job creation, but these are not the primary focus.
+  - The research is relevant and provides insights into these areas, but they are secondary to other goals.
+  - Example: A study that explores the impact of agricultural practices on income generation, indirectly supporting poverty reduction and improving livelihoods.
+
+- **2 = Principal:** 
+  - The primary objective of the research is to address and directly impact CGIAR's goals in poverty reduction, livelihoods, or job creation.
+  - The research would not have been conducted without the intention to contribute to these specific objectives.
+  - Example: A study specifically designed to develop strategies for improving rural livelihoods and lifting communities out of extreme poverty.
+
+### **Key Objectives Set by CGIAR:**
+- **Poverty Alleviation:** Lifting at least 500 million people living in rural areas above the extreme poverty line of US $1.90 per day (2011 PPP).
+- **Reducing Poverty:** Reducing by at least half the proportion of men, women, and children of all ages living in poverty in all its dimensions, according to national definitions.
+
+### **Instructions:**
+1. **Analyze the Title and Abstract:** Determine whether the research is related to CGIAR's objectives in poverty reduction, livelihoods, or job creation by looking for relevant keywords or phrases, such as “income generation,” “employment,” or “poverty alleviation.”
+2. **Review the Description and Parsed Text:** Assess whether the research directly contributes to CGIAR’s objectives in these areas, and how integral these objectives are to the overall study.
+3. **Assign the Tag:** Based on the criteria provided, assign the most appropriate tag (0, 1, or 2) that reflects whether the research is related to and impacts CGIAR’s objectives in poverty reduction, livelihoods, and job creation.
+4. **Provide a Brief Justification:** Explain why you assigned this tag, referencing specific aspects of the research that influenced your decision. Make sure to clarify how the research aligns (or does not align) with CGIAR’s objectives.
+
+### **Important Notes:**
+- If the research does not relate to CGIAR's objectives in poverty reduction, livelihoods, or job creation, assign a tag of **0** (Not Targeted).
+- If the research mentions these areas as important considerations but not the primary focus, assign a tag of **1** (Significant).
+- If poverty reduction, livelihoods, or job creation are the primary objectives of the research, assign a tag of **2** (Principal).
+- When assigning a tag of **2**, ensure that the evidence clearly demonstrates that these objectives were the main goals of the research and fundamental to its design.
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+{ ""score"": <0|1|2>, ""explanation"": ""<Your explanation here>"" }
+
+
+### **Now, analyze the following research result and assign a poverty reduction, livelihoods, and jobs tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in these areas.**
+
+**Text to Analyze:**
+[INPUT_TEXT]","gpt-4o-mini","Poverty","The role of animal welfare in improving the future of farming Context: Animal production plays a critical role in many global challenges around sustainability, including climate change and resilience, One Health and food security. With this role comes pressures on livestock welfare._x000d_
+_x000d_
+Aims: This paper demonstrates key contributions animal welfare makes to global sustainability challenges._x000d_
+_x000d_
+Methods: This paper highlights ‘win–win’ improvements for both animal welfare and other aspects of sustainability by using the following four case studies: tail docking Australian sheep, agroforestry systems in Ethiopia, the Australian dairy-beef industry, and strategic feeding of goats in Pakistan._x000d_
+_x000d_
+Key results: These case studies show how animal welfare can be improved alongside livelihoods. However, even in these win–win situations, the adoption of improved practices is not guaranteed._x000d_
+_x000d_
+Conclusions: Long-term, sustained change in animal welfare can simultaneously make in roads to other challenges around sustainability. To do this, we must have a broader understanding of the system in which the animals are raised, so that barriers to change can be identified._x000d_
+_x000d_
+Implications: Lessons from these case studies can be applied to other production contexts and challenges, highlighting the universal value of understanding and addressing animal welfare. The role of animal welfare in improving the future of farming Skip to main content Dear CGSpace users, we have performed some minor upgrades to the user interface. If it does not look right you should refresh the page while holding the Shift key. Communities & Collections Browse Navigate CGIAR Centers Statistics English Català Čeština Deutsch Español Français Gàidhlig Italiano Latviešu Magyar Nederlands Polski Português Português do Brasil Srpski (lat) Suomi Svenska Türkçe Tiếng Việt Қазақ বাংলা हिंदी Ελληνικά Српски Yкраї́нська Log In Note: CGIAR users should log in with their Active Directory username and password. For example, if your email is j.smith@cgiar.org, you would use jsmith here. Log in New user? Click here to register. Have you forgotten your password? Home CGIAR research centers International Livestock Research Institute (ILRI) ILRI articles in journals The role of animal welfare in improving the future of farming The role of animal welfare in improving the future of farming Loading... Authors Doyle, Rebecca Campbell, A.J.D. Dione, Michel M. Woodruff, M. Muñoz, Camila Alemayehu, Gezahegn Berhe, Tsega Knight-Jones, Theodore J.D. Date Issued 2022-05-26 Date Online 2022-05-26 Language en Type Journal Article Review Status Peer Review Access Rights Open Access Usage Rights Other Metadata Full item page Share Citation Doyle, R.E., Campbell, A.J.D., Dione, M., Woodruff, M., Munoz, C., Alemayehu, G., Berhe, T. and Knight-Jones, T. 2022. The role of animal welfare in improving the future of farming. Animal Production Science 62(11): 937–943. Permanent link to cite or share this item https://hdl.handle.net/10568/119792 External link to download this item https://www.research.ed.ac.uk/en/publications/the-role-of-animal-welfare-in-improving-the-future-of-farming DOI https://doi.org/10.1071/an21562 Abstract/Description Context: Animal production plays a critical role in many global challenges around sustainability, including climate change and resilience, One Health and food security. With this role comes pressures on livestock welfare. Aims: This paper demonstrates key contributions animal welfare makes to global sustainability challenges. Methods: This paper highlights ‘win–win’ improvements for both animal welfare and other aspects of sustainability by using the following four case studies: tail docking Australian sheep, agroforestry systems in Ethiopia, the Australian dairy-beef industry, and strategic feeding of goats in Pakistan. Key results: These case studies show how animal welfare can be improved alongside livelihoods. However, even in these win–win situations, the adoption of improved practices is not guaranteed. Conclusions: Long-term, sustained change in animal welfare can simultaneously make in roads to other challenges around sustainability. To do this, we must have a broader understanding of the system in which the animals are raised, so that barriers to change can be identified. Implications: Lessons from these case studies can be applied to other production contexts and challenges, highlighting the universal value of understanding and addressing animal welfare. Author ORCID identifiers Rebecca Doyle https://orcid.org/0000-0001-6229-4700 Michel Dione https://orcid.org/0000-0001-7812-5776 THEODORE KNIGHT-JONES https://orcid.org/0000-0003-4342-6055 Contributes to SDGs AGROVOC Keywords animal welfare ; animal production ; sustainability ; agroforestry ; dairying ; sheep ; goats ; small ruminants ; beef Subjects AGROFORESTRY ; ANIMAL PRODUCTION ; ANIMAL WELFARE ; DAIRYING ; GOATS ; SHEEP ; SMALL RUMINANTS Countries Australia ; Ethiopia ; Pakistan Regions Africa ; Asia ; Eastern Africa ; Oceania ; Southern Asia ; Australia and New Zealand Organizations Affiliated to the Authors University of Edinburgh ; International Livestock Research Institute ; University of Melbourne Investors/sponsors Meat and Livestock Australia ; CGIAR Trust Fund ; Biovision Foundation ; Australian Centre for International Agricultural Research CGIAR Action Areas Resilient Agrifood Systems CGIAR Impact Areas Poverty reduction, livelihoods and jobs CGIAR Initiatives Sustainable Animal Productivity Collections ILRI articles in journals CGIAR Initiative on Sustainable Animal Productivity ILRI animal and human health program outputs Synergies of animal welfare and agroforestry to benefit farming systems in Ethiopia DSpace software copyright © 2002-2024 LYRASIS About Cookie settings Privacy policy Send Feedback ","2232"
+"8","POVERTY_REDUCTION_PROMPT","# **You are an AI assistant tasked with evaluating research results from CGIAR (Consultative Group on International Agricultural Research) to determine whether they align with and contribute to CGIAR's objectives in poverty reduction, livelihoods, and job creation. Your goal is to accurately assign an impact area tag that reflects the relevance and impact of the research on these specific objectives.**
+
+### **Context:**
+CGIAR is a global partnership that unites international organizations focused on research for food security. CGIAR has set specific objectives to address global challenges, including poverty reduction, improving livelihoods, and job creation in developing countries. The research results you will analyze originate from various CGIAR initiatives and projects, particularly in the fields of agriculture, forestry, fisheries, climate, and nutrition.
+
+### **Research Result Components:**
+Each research result includes the following details:
+- **Title:** A brief title summarizing the research result.
+- **Description:** A detailed description of the research result, including methods and findings.
+- **Research Abstract:** A summary of key findings and implications (optional).
+- **Research Parsed Text:** The parsed text of the research result (optional).
+
+### **Tagging Criteria:**
+Assign a poverty reduction, livelihoods, and jobs impact tag using the following criteria:
+
+- **0 = Not Targeted:** 
+  - The research does not address or contribute to CGIAR's objectives in poverty reduction, livelihoods, or job creation.
+  - The research is unrelated to these areas, focusing instead on different topics with no significant implications for poverty or livelihoods.
+  - Example: A study focused solely on agricultural productivity without considering its impact on poverty, livelihoods, or job creation.
+
+- **1 = Significant:** 
+  - The research makes a meaningful contribution to CGIAR’s objectives in poverty reduction, livelihoods, or job creation, but these are not the primary focus.
+  - The research is relevant and provides insights into these areas, but they are secondary to other goals.
+  - Example: A study that explores the impact of agricultural practices on income generation, indirectly supporting poverty reduction and improving livelihoods.
+
+- **2 = Principal:** 
+  - The primary objective of the research is to address and directly impact CGIAR's goals in poverty reduction, livelihoods, or job creation.
+  - The research would not have been conducted without the intention to contribute to these specific objectives.
+  - Example: A study specifically designed to develop strategies for improving rural livelihoods and lifting communities out of extreme poverty.
+
+### **Key Objectives Set by CGIAR:**
+- **Poverty Alleviation:** Lifting at least 500 million people living in rural areas above the extreme poverty line of US $1.90 per day (2011 PPP).
+- **Reducing Poverty:** Reducing by at least half the proportion of men, women, and children of all ages living in poverty in all its dimensions, according to national definitions.
+
+### **Instructions:**
+1. **Analyze the Title and Abstract:** Determine whether the research is related to CGIAR's objectives in poverty reduction, livelihoods, or job creation by looking for relevant keywords or phrases, such as “income generation,” “employment,” or “poverty alleviation.”
+2. **Review the Description and Parsed Text:** Assess whether the research directly contributes to CGIAR’s objectives in these areas, and how integral these objectives are to the overall study.
+3. **Assign the Tag:** Based on the criteria provided, assign the most appropriate tag (0, 1, or 2) that reflects whether the research is related to and impacts CGIAR’s objectives in poverty reduction, livelihoods, and job creation.
+4. **Provide a Brief Justification:** Explain why you assigned this tag, referencing specific aspects of the research that influenced your decision. Make sure to clarify how the research aligns (or does not align) with CGIAR’s objectives.
+
+### **Important Notes:**
+- If the research does not relate to CGIAR's objectives in poverty reduction, livelihoods, or job creation, assign a tag of **0** (Not Targeted).
+- If the research mentions these areas as important considerations but not the primary focus, assign a tag of **1** (Significant).
+- If poverty reduction, livelihoods, or job creation are the primary objectives of the research, assign a tag of **2** (Principal).
+- When assigning a tag of **2**, ensure that the evidence clearly demonstrates that these objectives were the main goals of the research and fundamental to its design.
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+{ ""score"": <0|1|2>, ""explanation"": ""<Your explanation here>"" }
+
+
+### **Now, analyze the following research result and assign a poverty reduction, livelihoods, and jobs tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in these areas.**
+
+**Text to Analyze:**
+[INPUT_TEXT]","gpt-4o-mini","Poverty","Local/Ugandese breed of pig: Pig breed factsheet for Uganda  Local/Ugandese breed of pig: Pig breed factsheet for Uganda Skip to main content Dear CGSpace users, we have performed some minor upgrades to the user interface. If it does not look right you should refresh the page while holding the Shift key. Communities & Collections Browse Navigate CGIAR Centers Statistics English Català Čeština Deutsch Español Français Gàidhlig Italiano Latviešu Magyar Nederlands Polski Português Português do Brasil Srpski (lat) Suomi Svenska Türkçe Tiếng Việt Қазақ বাংলা हिंदी Ελληνικά Српски Yкраї́нська Log In Note: CGIAR users should log in with their Active Directory username and password. For example, if your email is j.smith@cgiar.org, you would use jsmith here. Log in New user? Click here to register. Have you forgotten your password? Home CGIAR research centers International Livestock Research Institute (ILRI) ILRI Programs ILRI livestock genetics program ILRI livestock genetics program outputs Local/Ugandese breed of pig: Pig breed factsheet for Uganda Local/Ugandese breed of pig: Pig breed factsheet for Uganda Loading... Files English Version (369.19 KB, pdf) Luganda Version (374.25 KB, pdf) Lusoga Version (368.76 KB, pdf) Runyakitara Version (368.15 KB, pdf) Authors Marshall, Karen Date Issued 2022-06-08 Date Online Language en ; lg Type Extension Material Review Status Access Rights Open Access Usage Rights Metadata Full item page Share Citation Marshall, K. 2022. Local/Ugandese breed of pig: Pig breed factsheet for Uganda.Nairobi, Kenya: ILRI. Permanent link to cite or share this item https://hdl.handle.net/10568/118238 External link to download this item DOI Abstract/Description Author ORCID identifiers Karen Marshall https://orcid.org/0000-0003-4197-1455 AGROVOC Keywords animal breeding ; breeds ; swine ; sows Subjects BREEDS ; PIGS Countries Uganda Regions Africa ; Eastern Africa Organizations Affiliated to the Authors International Livestock Research Institute Investors/sponsors CGIAR Trust Fund CGIAR Action Areas Resilient Agrifood Systems CGIAR Initiatives Sustainable Animal Productivity Collections ILRI livestock genetics program outputs CGIAR Initiative on Sustainable Animal Productivity DSpace software copyright © 2002-2024 LYRASIS About Cookie settings Privacy policy Send Feedback File: download
+Page 1:
+This document is licensed for use under 
+the Creative Commons Attribution 4.0 
+International Licence. June 2022
+Contact: Karen Marshall
+International Livestock Research Institute
+P.O Box 24384, Kampala, Uganda
+k.marshall@cgiar.org
+We would like to thank all funders who 
+support this research through their 
+contributions to the CGIAR Trust Fund: 
+https://www.cgiar.org/funders/Ekika kya“Ugandese ” 
+(Endya -buhatiro )
+Obumanyiso bwaayo
+▪Eina omubiri ogukwiragura kyonka obundi
+egira amabara agakweera .
+▪Eringaniire omuburaira .
+▪Eina omutwe mukooto , ensaya ndaira
+n’enyindo ey’omuhunda .
+▪Eina amatu garinganiire obundi makooto
+▪Eina omukira muraira .
+Ebirungi byayo
+▪Enkazi zimanyire kwoorora ebyaana byaazo kurungi , zizaara baingi
+kandi ziina amata maingi .
+▪Zizaara omubaro gw’ebyaana guringaniire . kyonka yarebererwa
+kurungi , nebaasa kuzaara ebyaana 15.
+▪Ebyaana byaazo nibikyerererwa kukura .
+▪N’egumira obukyene kandi nizihangaana ebyokulya bibi, negumira
+n’endwara namuno enkukuni hamu n’enjoka z’omu mara.
+▪Enyama yaazo eina ebisaju bingi muno .
+▪Ebuguma enkuru neremeera ahagati yakiro nshanju [70] nekikumi
+nabiri [120] kandi empaya yoneremeera kiro kikumi [100] 
+okuhikya halikikuminataano [150].
+Emigasho yekika eki
+▪Ebuguma eziina esagama y’ebika by’enduga mahanga nka“Large White”, “Landrace” 
+nari “Camborough” nizehanganira abaliisa abataina mutindo gw’ahaiguru
+gw’oburaaro bwazo , endagurira hamwe n’ebyokurya byazo .
+▪Ebuguma ezinizibaasa kwemebwa empaya z’ebika by’enduga mahanga kandi
+Omuliisa nayehanangirizibwa kureeba ngu empaaya egyo etaba nkooto muno
+ekahenda ebuguma yekwemya .
+▪Ebuguma eziine eshagama y’entabure ey’ekika ekya “Ugandese ” n’ebika eby’enduga
+mahanga butoosa nizemibwa empaya z’ebika by’enduga mahanga obwe
+kigyendereirwe ngu izaare ebyaana birungi ho.
+Pig breed factsheet for Uganda: Local  ( Ugandese ) breed of pig, Runyakitara /  June 2022
+(photo credits: ILRI/Karen Marshall)
+File: download
+Page 1:
+This document is licensed for use under 
+the Creative Commons Attribution 4.0 
+International Licence. June 2022
+Contact: Karen Marshall
+International Livestock Research Institute
+P.O Box 24384, Kampala, Uganda
+k.marshall@cgiar.org
+We would like to thank all funders who 
+support this research through their 
+contributions to the CGIAR Trust Fund: 
+https://www.cgiar.org/funders/Olulyo lwa‘’local / Ugandese ’’ 
+Enfaanana yaayo
+▪Dhiba ndirugavu , edindi dhibaamu
+obutoonheze .
+▪Tidhiba mpanvu inho ate era tidhiba
+n’nhimpi inho . 
+▪Omutwe munene , amaiso makukunavu
+n’enhindo ensongovu .
+▪Amatu gaba manenemu okutuuka
+kumanene einho .
+▪Emikira giba mighanvu .
+Enkola yaayo
+▪Enkazi dhisobola okulabirira bulungi abaana baadho era dhiba
+n’amata agamala .
+▪Dhizaala obwana bwakigero , ayenga edho enkazi
+edhirabirirwa obulungi dhizaala obwana bungi , katukobe nga
+obwana 15.
+▪Obwana bukula mpola .
+▪Dhigumira embeera enkalubirivu ;  okukulira ku m’mere etali
+yamutindo inho , dhigumira obulwaire ngaolukuku n’endhoka .
+▪Embidhi enkazi enkulu ezitowa ghagati ghakiro 70 nhikiro
+120 ate ensaadha enkulu ezitowa ghagati ghakiro 100 nhikiro
+150.
+Enkozesa yaayo
+▪Embidhi edhiva mu kughakisa olulyo lwaUganda n’ekika eky’olulyo olulungi nga
+“Large White” oba “Landrace” dhiba n’nhungi okwayira ku malundiro agatasobola
+kuba namutindo gwaghigulu mu; eby’enhumba , obwidhandabi ghalala n’endiisa . 
+▪Embiidhi enkazi enzalirwana dhitera kughasibwa ensaadha enzalirwana oba ensaadha
+edh’omutindo (endheru ). Nga oghasikiza embiidhi enzalirwana ku yo’omutindo
+(endheru ), mu ngeri ey’obutonde , ensaadha tesainhe kuba nhenhe (nzito ) inho
+kusinga enkazi .
+▪Embiidhi enkazi edhizaalibwa ngadhaghakisibwa ghagati gh’enzaliranwa
+n’edhomutindo (endheru ), dhitera okughakisibwa ensandha edh’omutindo (endheru ).
+Pig breed factsheet for Uganda: Local  ( Ugandese ) breed of pig, Lusoga /  June 2022
+(photo credits: ILRI/Karen Marshall)
+File: download
+Page 1:
+This document is licensed for use under 
+the Creative Commons Attribution 4.0 
+International Licence. June 2022
+Contact: Karen Marshall
+International Livestock Research Institute
+P.O Box 24384, Kampala, Uganda
+k.marshall@cgiar.org
+We would like to thank all funders who 
+support this research through their 
+contributions to the CGIAR Trust Fund: 
+https://www.cgiar.org/funders/Local / Ugandese breed of pig
+Characteristics
+▪Black in colour , some are spotted.
+▪Medium length.
+▪Big head, prominent face and 
+tapering snout.
+▪Ears are medium to large sized.
+▪Long tails.
+Performance
+▪Sows have good mothering ability, with fairly high 
+milk production.
+▪Average litter sizes but intensively managed sows 
+have big litters e.g. 15 piglets.
+▪Piglets are slow growing.
+▪Hardy, can cope with low quality feed, disease 
+especially mange and worms.
+▪Tend to give very fatty carcasses.
+▪A mature sow weighs between 70 kg and 120 kg and 
+a mature boar weighs between 100 kg and 150 kg.
+Use
+▪Sows produced as a cross between the local breed and an exotic (“white”) 
+breed, such as the Large White or Landrace are suitable for farms that are not 
+able to provide high standards of housing, health -care, and feed. 
+▪Local sows are usually crossed to local or exotic (“white”) boars.  If crossing to 
+an exotic boar by natural mating, be sure the boar is not too big for the sow.
+▪Sows produced as a cross between local and exotic (“white”) breeds are usually 
+crossed to exotic (“white”) boars.
+Pig breed factsheet for Uganda: Local  ( Ugandese ) breed of pig, English / June 2022
+(photo credits: ILRI/Karen Marshall)
+File: download
+Page 1:
+This document is licensed for use under 
+the Creative Commons Attribution 4.0 
+International Licence. June 2022
+Contact: Karen Marshall
+International Livestock Research Institute
+P.O Box 24384, Kampala, Uganda
+k.marshall@cgiar.org
+We would like to thank all funders who 
+support this research through their 
+contributions to the CGIAR Trust Fund: 
+https://www.cgiar.org/funders/Olulyo : Ennansi oba enzaliranwa
+“local / Ugandese ”
+Ekikulaky’olulyo luno
+▪Nzirugavu, ezimu za bitanga .
+▪Obuwanvu bwakigero . 
+▪Omutwe munene , ekyenyi n’omumwa
+biwanvu .
+▪Amatu gakigero .
+▪Omukira muwanvu .
+Ebirungieby’enkizo kumbizzi
+ez’olulyo luno
+▪Enkazi nzadde nnungi , zivaamu amata mangi era 
+zirabirira bulungi abaana .
+▪Bwezirabirirwa obulungi zizalira ddala abaana bangi .
+▪Ento tezikula mangu nnyo .
+▪Zigumira embeera , nemmere nebwetaba nnungi nnyo .  
+▪Zigumira endwadde naddala olukuku n’ensiri ηanyi
+ez’omulubuto . 
+▪Enyama yaazo eba n’amasavu mangi nnyo .
+▪Bwezikula enkazi zizitowa wakati wakilo 70 ne 120 ate 
+zo ennume wakati wakilo 100 ne 150.
+Emigaso
+▪Enkazi ngazizaliddwa wakati waennansi nenzungu ngaLarge White oba Landrace, 
+nnungi okulunda naddala endabirira ngatennatuuka kumutindo ogusobola ziri
+enzungu . 
+▪Ennansi enkazi ziyinza okuwakisibwa ennume ennansi zinaazo oba enzungu .  
+Emirundi egimu ennume enzungu ziba nnene nnyo okulinyira enkazi ennansi . 
+▪Enkazi ezaaliddwa wakati wennansi nenzungu zitera okuwakisibwa ennume nga
+nzungu .
+Pig breed factsheet for Uganda: Local  ( Ugandese ) breed of pig, Luganda /  June 2022(photo credits: ILRI/Karen Marshall)
+","3751"
+"10","POVERTY_REDUCTION_PROMPT","# **You are an AI assistant tasked with evaluating research results from CGIAR (Consultative Group on International Agricultural Research) to determine whether they align with and contribute to CGIAR's objectives in poverty reduction, livelihoods, and job creation. Your goal is to accurately assign an impact area tag that reflects the relevance and impact of the research on these specific objectives.**
+
+### **Context:**
+CGIAR is a global partnership that unites international organizations focused on research for food security. CGIAR has set specific objectives to address global challenges, including poverty reduction, improving livelihoods, and job creation in developing countries. The research results you will analyze originate from various CGIAR initiatives and projects, particularly in the fields of agriculture, forestry, fisheries, climate, and nutrition.
+
+### **Research Result Components:**
+Each research result includes the following details:
+- **Title:** A brief title summarizing the research result.
+- **Description:** A detailed description of the research result, including methods and findings.
+- **Research Abstract:** A summary of key findings and implications (optional).
+- **Research Parsed Text:** The parsed text of the research result (optional).
+
+### **Tagging Criteria:**
+Assign a poverty reduction, livelihoods, and jobs impact tag using the following criteria:
+
+- **0 = Not Targeted:** 
+  - The research does not address or contribute to CGIAR's objectives in poverty reduction, livelihoods, or job creation.
+  - The research is unrelated to these areas, focusing instead on different topics with no significant implications for poverty or livelihoods.
+  - Example: A study focused solely on agricultural productivity without considering its impact on poverty, livelihoods, or job creation.
+
+- **1 = Significant:** 
+  - The research makes a meaningful contribution to CGIAR’s objectives in poverty reduction, livelihoods, or job creation, but these are not the primary focus.
+  - The research is relevant and provides insights into these areas, but they are secondary to other goals.
+  - Example: A study that explores the impact of agricultural practices on income generation, indirectly supporting poverty reduction and improving livelihoods.
+
+- **2 = Principal:** 
+  - The primary objective of the research is to address and directly impact CGIAR's goals in poverty reduction, livelihoods, or job creation.
+  - The research would not have been conducted without the intention to contribute to these specific objectives.
+  - Example: A study specifically designed to develop strategies for improving rural livelihoods and lifting communities out of extreme poverty.
+
+### **Key Objectives Set by CGIAR:**
+- **Poverty Alleviation:** Lifting at least 500 million people living in rural areas above the extreme poverty line of US $1.90 per day (2011 PPP).
+- **Reducing Poverty:** Reducing by at least half the proportion of men, women, and children of all ages living in poverty in all its dimensions, according to national definitions.
+
+### **Instructions:**
+1. **Analyze the Title and Abstract:** Determine whether the research is related to CGIAR's objectives in poverty reduction, livelihoods, or job creation by looking for relevant keywords or phrases, such as “income generation,” “employment,” or “poverty alleviation.”
+2. **Review the Description and Parsed Text:** Assess whether the research directly contributes to CGIAR’s objectives in these areas, and how integral these objectives are to the overall study.
+3. **Assign the Tag:** Based on the criteria provided, assign the most appropriate tag (0, 1, or 2) that reflects whether the research is related to and impacts CGIAR’s objectives in poverty reduction, livelihoods, and job creation.
+4. **Provide a Brief Justification:** Explain why you assigned this tag, referencing specific aspects of the research that influenced your decision. Make sure to clarify how the research aligns (or does not align) with CGIAR’s objectives.
+
+### **Important Notes:**
+- If the research does not relate to CGIAR's objectives in poverty reduction, livelihoods, or job creation, assign a tag of **0** (Not Targeted).
+- If the research mentions these areas as important considerations but not the primary focus, assign a tag of **1** (Significant).
+- If poverty reduction, livelihoods, or job creation are the primary objectives of the research, assign a tag of **2** (Principal).
+- When assigning a tag of **2**, ensure that the evidence clearly demonstrates that these objectives were the main goals of the research and fundamental to its design.
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+{ ""score"": <0|1|2>, ""explanation"": ""<Your explanation here>"" }
+
+
+### **Now, analyze the following research result and assign a poverty reduction, livelihoods, and jobs tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in these areas.**
+
+**Text to Analyze:**
+[INPUT_TEXT]","gpt-4o-mini","Poverty","Landrace breed of pig: Pig breed factsheet for Uganda  Landrace breed of pig: Pig breed factsheet for Uganda Skip to main content Dear CGSpace users, we have performed some minor upgrades to the user interface. If it does not look right you should refresh the page while holding the Shift key. Communities & Collections Browse Navigate CGIAR Centers Statistics English Català Čeština Deutsch Español Français Gàidhlig Italiano Latviešu Magyar Nederlands Polski Português Português do Brasil Srpski (lat) Suomi Svenska Türkçe Tiếng Việt Қазақ বাংলা हिंदी Ελληνικά Српски Yкраї́нська Log In Note: CGIAR users should log in with their Active Directory username and password. For example, if your email is j.smith@cgiar.org, you would use jsmith here. Log in New user? Click here to register. Have you forgotten your password? Home CGIAR research centers International Livestock Research Institute (ILRI) ILRI Programs ILRI livestock genetics program ILRI livestock genetics program outputs Landrace breed of pig: Pig breed factsheet for Uganda Landrace breed of pig: Pig breed factsheet for Uganda Loading... Files English Version (382.25 KB, pdf) Luganda Version (388.76 KB, pdf) Lusoga Version (391.34 KB, pdf) Runyakitara Version (392.34 KB, pdf) Authors Marshall, Karen Date Issued 2022-06-08 Date Online Language en ; lg Type Extension Material Review Status Access Rights Open Access Usage Rights Metadata Full item page Share Citation Marshall, K. 2022. Landrace breed of pig: Pig breed factsheet for Uganda. Nairobi, Kenya: ILRI. Permanent link to cite or share this item https://hdl.handle.net/10568/118239 External link to download this item DOI Abstract/Description Author ORCID identifiers Karen Marshall https://orcid.org/0000-0003-4197-1455 AGROVOC Keywords animal breeding ; breeds ; swine ; sows Subjects BREEDS ; PIGS Countries Uganda Regions Africa ; Eastern Africa Organizations Affiliated to the Authors International Livestock Research Institute Investors/sponsors CGIAR Trust Fund CGIAR Action Areas Resilient Agrifood Systems CGIAR Initiatives Sustainable Animal Productivity Collections ILRI livestock genetics program outputs CGIAR Initiative on Sustainable Animal Productivity DSpace software copyright © 2002-2024 LYRASIS About Cookie settings Privacy policy Send Feedback File: download
+Page 1:
+Contact: Karen Marshall
+International Livestock Research Institute
+P.O Box 24384, Kampala, Uganda
+k.marshall@cgiar.org
+This document is licensed for use under 
+the Creative Commons Attribution 4.0 
+International Licence. June 2022
+We would like to thank all funders who 
+support this research through their 
+contributions to the CGIAR Trust Fund: 
+https://www.cgiar.org/funders/Olulyo“Landrace”
+Ekikulaky’olulyo luno
+▪Ziba za langi njeru kuddiba , naye ezimu
+ziba za bitanga . 
+▪Ziba mpanvu nennyama yamasavu
+agekigero .
+▪Omumwa muwanvu , nomutwe
+musongovu . 
+▪Amatu magazi ngagagwa ne gabikka ku
+maaso .
+▪Eba nnene ngayonna eggumidde .
+Ebirungieby’enkizo ku
+mbizziez’olulyo luno
+▪Nzadde nnungi , zizaala abaana bangi ate 
+zivaamu amata mangi . 
+▪Amagulu n’ebigere biba bigumu era mpangaazi . 
+▪Obubizzi obuto bukula mangu . 
+▪Bweziba zirisiddwa bulungi , zikozesa emmere
+ntono neziteekako ennyama nyingi .
+▪Ennyama eba nnungi ngerina amasavu
+gakigero .
+▪Bweba ekuze enkazi ezitowa wakati wakilo 
+200 ne 300 ate ennume ezitowa wakati wakilo 
+250 ne 350.
+Emigaso
+▪Enkaziez’olulyo luno nnungi nnyo okulunda bweziba zirabiriddwa
+n’okulisibwa obulungi .
+▪Enkaziez’olulyo lwaLandrace zitera okuzazisibwamu ennume eza
+Landrace  oba Large White.
+▪Kiba kirungi okukozesa ennumeey’olulyo olwa Duroc kunkaziez’omusayi
+gwa Landrace ne Large White.
+Pig breed factsheet for Uganda: Landrace breed of pig, Luganda /  June 2022
+(Photo credit: Silar , https://bit.ly/3H9mV5i)
+(photo credits: MU/Donald Kugonza )
+File: download
+Page 1:
+Contact: Karen Marshall
+International Livestock Research Institute
+P.O Box 24384, Kampala, Uganda
+k.marshall@cgiar.org
+This document is licensed for use under 
+the Creative Commons Attribution 4.0 
+International Licence. June 2022
+We would like to thank all funders who 
+support this research through their 
+contributions to the CGIAR Trust Fund: 
+https://www.cgiar.org/funders/Ekika kyaMpwengyeeza
+“Landrace”
+Obumanyiso bwaayo
+▪Eina omubiri ogukwéra , kyonka obundi zigiramu
+amabara agakwiragura (njeru yébihuuga ).
+▪Egira omugongo muraira kandi n’enyama yaayo
+teina ebisaju bingi .
+▪Eina enyindo ndaira n’omutwe gw’omuhunda .
+▪Eina amatu génjojo haihi kusheeka amaiso
+gaayo (mpwengyeeza ).
+▪Eina enda ehookire kandi etaina mifunyarara
+n’ebisaju bingi ahamubiri gwayo .
+Ebirungi byayo
+▪Ebuguma zimanyire kwoorora ebyaana byaazo
+kurungi , zizaara baingi kandi ziina amata maingi .
+▪Ziina oruteerero rurungi ahabw’amaguru gagumire
+n’ebigere birungi kandi nizihangaara . 
+▪Ebyaana byaazo birahuka kukura (nibijunjumuka ).
+▪Obwoziriisa kurungi , zirahuka kunyeeta .
+▪Enyama yaazo ezooka kurungi kandi teina bishaju
+bingi .
+▪Ebuguma enkuru niziremeera ahagati yakiro
+Bikumi bibiri [200] nakiro bikumi bisatu [300] kandi
+empaya zo ziremeera kiro bikumi bibiri nataanu
+[250] okuhikya kiro bikumi bisatu nataanu [350].
+Emigaso yekika eki
+▪Ebuguma z’ekika kinu nungi muno aha mutungi yaaba nasobora kuziroleera kurungi
+omubikukwata n’oburaaro bwazo , enjanjaba hamu n’endya yaazo empaya .
+▪Ebuguma zekika ekinizikira kwemebwa empaya z’ekika kya“Landrace” oba “Large White”.
+▪Ebuguma eziina esagama entabule y’ebika bya“Large White” na“Landrace” zisemereire
+kwemibwa empaya z’ekika kya“Duroc”.
+Pig breed factsheet for Uganda: Landrace breed of pig, Runyakitara / June 2022
+(Photo credit: Silar , https://bit.ly/3H9mV5i)
+(photo credits: MU/Donald Kugonza )
+File: download
+Page 1:
+Contact: Karen Marshall
+International Livestock Research Institute
+P.O Box 24384, Kampala, Uganda
+k.marshall@cgiar.org
+This document is licensed for use under 
+the Creative Commons Attribution 4.0 
+International Licence. June 2022
+We would like to thank all funders who 
+support this research through their 
+contributions to the CGIAR Trust Fund: 
+https://www.cgiar.org/funders/Landrace breed of pig
+Characteristics
+▪Have white skin and white hair but can 
+have black spots.
+▪Long body and lean carcasses.
+▪Snout is long, and the head tapers 
+towards the snout.
+▪Large ears droop forwards almost 
+covering the eyes.
+▪Has deep flanks and lacks the wrinkles 
+and excess fat found in some other 
+breeds.
+Performance
+▪Sows are good mothers and have large litter 
+sizes and high milk production.
+▪The pigs usually have sound legs and feet and 
+live long lives.
+▪Piglets are fast growing.
+▪They are an efficient feed utilizer but must be 
+fed well.
+▪Carcass quality is good, carcasses are lean.
+▪A mature sow weighs between 200 kg and 300 
+kg and a mature boar weighs between 250 kg 
+and 350 kg.
+Use
+▪This is a good breed to keep as a sow if they are properly managed with 
+good housing, health -care and feeding.  
+▪Landrace sows are usually crossed to Landrace or Large White boars. 
+▪Sows that are already a cross of Landrace and Large White can be crossed 
+to Duroc boars.
+Pig breed factsheet for Uganda: Landrace breed of pig, English /  June 2022(Photo credit: Silar , https://bit.ly/3H9mV5i)
+(photo credits: MU/Donald Kugonza )
+File: download
+Page 1:
+Contact: Karen Marshall
+International Livestock Research Institute
+P.O Box 24384, Kampala, Uganda
+k.marshall@cgiar.org
+This document is licensed for use under 
+the Creative Commons Attribution 4.0 
+International Licence. June 2022
+We would like to thank all funders who 
+support this research through their 
+contributions to the CGIAR Trust Fund: 
+https://www.cgiar.org/funders/Olulyo lwa“Landrace ”
+Enfaanana yaayo
+▪Eba n’olususu olweru era obuviiri buba bweru , 
+aye esobola okuba no’butonheze obwirugavu .
+▪Eba mpanvuyirivu ate ngaeba namasavu ga 
+kigero .
+▪Eba n’enhindo mpanvuyirivu era n’omutwe . 
+gutonhighwa okumpi ne nhindo . 
+▪Amatu gaba manene , gabundukira mu maiso
+kumpi okubwiika amaiso gona gona .
+▪Erina oludaada olugwamu era teba nanfunhiro
+n’amasavu amangi agatera okuba mu ndyo
+edhindi .
+Enkola yaayo
+▪Enkazzi nnungi mukuzaala ; dhizaala obubidhi bungi era, 
+kuba dhiba n’amata mangi .
+▪Embiidhi dhiba n’amagulu amagumu , nebigere biba
+bigumu era dhighaangala . 
+▪Obubiidhi obuto bukula mangu (dhiba
+dhamuvudhumuko ).
+▪Emibiri gyadho gikozesa bulungi e’mere embiidhi
+gyedhiriire aye dhiteekwa okulisibwa obulungi .
+▪Emmamba yaadho eba n’nhungi inho kuba eba
+n’amasavu gaakigero . 
+▪Embiidhi enkazi enkulu ezitowa ghagati ghakiro 150 ne 
+kiro 200 ate ensadha enkulu ezitowa ghagati ghakiro 200 
+ne kiro 250.
+Enkozesa yaayo
+▪Enkazi edho’lulyo luno n’nhungi okwaya singa dhirabirirwa bulungi , ngaenhumba
+enhungi , obwidhandhabi obulungi era n’endiisa enungi .
+▪Enkazi edho lulyo luno (Landrace) dhighasibwa ensaadha edho’lulyo lwa“Landrace” oba
+olulyo lwa“Large White”. 
+▪Embiidhi enkazi edhaava mukughasibwa kwa “Landrace” ne “Large White” dhisobola
+okughasibwa ensaadha yolulyo lwa“Duroc boars”.
+Pig breed factsheet for Uganda: Landrace breed of pig, Lusoga /  June 2022
+(Photo credit: Silar , https://bit.ly/3H9mV5i)
+(photo credits: MU/Donald Kugonza )
+","3672"
+"11","POVERTY_REDUCTION_PROMPT","# **You are an AI assistant tasked with evaluating research results from CGIAR (Consultative Group on International Agricultural Research) to determine whether they align with and contribute to CGIAR's objectives in poverty reduction, livelihoods, and job creation. Your goal is to accurately assign an impact area tag that reflects the relevance and impact of the research on these specific objectives.**
+
+### **Context:**
+CGIAR is a global partnership that unites international organizations focused on research for food security. CGIAR has set specific objectives to address global challenges, including poverty reduction, improving livelihoods, and job creation in developing countries. The research results you will analyze originate from various CGIAR initiatives and projects, particularly in the fields of agriculture, forestry, fisheries, climate, and nutrition.
+
+### **Research Result Components:**
+Each research result includes the following details:
+- **Title:** A brief title summarizing the research result.
+- **Description:** A detailed description of the research result, including methods and findings.
+- **Research Abstract:** A summary of key findings and implications (optional).
+- **Research Parsed Text:** The parsed text of the research result (optional).
+
+### **Tagging Criteria:**
+Assign a poverty reduction, livelihoods, and jobs impact tag using the following criteria:
+
+- **0 = Not Targeted:** 
+  - The research does not address or contribute to CGIAR's objectives in poverty reduction, livelihoods, or job creation.
+  - The research is unrelated to these areas, focusing instead on different topics with no significant implications for poverty or livelihoods.
+  - Example: A study focused solely on agricultural productivity without considering its impact on poverty, livelihoods, or job creation.
+
+- **1 = Significant:** 
+  - The research makes a meaningful contribution to CGIAR’s objectives in poverty reduction, livelihoods, or job creation, but these are not the primary focus.
+  - The research is relevant and provides insights into these areas, but they are secondary to other goals.
+  - Example: A study that explores the impact of agricultural practices on income generation, indirectly supporting poverty reduction and improving livelihoods.
+
+- **2 = Principal:** 
+  - The primary objective of the research is to address and directly impact CGIAR's goals in poverty reduction, livelihoods, or job creation.
+  - The research would not have been conducted without the intention to contribute to these specific objectives.
+  - Example: A study specifically designed to develop strategies for improving rural livelihoods and lifting communities out of extreme poverty.
+
+### **Key Objectives Set by CGIAR:**
+- **Poverty Alleviation:** Lifting at least 500 million people living in rural areas above the extreme poverty line of US $1.90 per day (2011 PPP).
+- **Reducing Poverty:** Reducing by at least half the proportion of men, women, and children of all ages living in poverty in all its dimensions, according to national definitions.
+
+### **Instructions:**
+1. **Analyze the Title and Abstract:** Determine whether the research is related to CGIAR's objectives in poverty reduction, livelihoods, or job creation by looking for relevant keywords or phrases, such as “income generation,” “employment,” or “poverty alleviation.”
+2. **Review the Description and Parsed Text:** Assess whether the research directly contributes to CGIAR’s objectives in these areas, and how integral these objectives are to the overall study.
+3. **Assign the Tag:** Based on the criteria provided, assign the most appropriate tag (0, 1, or 2) that reflects whether the research is related to and impacts CGIAR’s objectives in poverty reduction, livelihoods, and job creation.
+4. **Provide a Brief Justification:** Explain why you assigned this tag, referencing specific aspects of the research that influenced your decision. Make sure to clarify how the research aligns (or does not align) with CGIAR’s objectives.
+
+### **Important Notes:**
+- If the research does not relate to CGIAR's objectives in poverty reduction, livelihoods, or job creation, assign a tag of **0** (Not Targeted).
+- If the research mentions these areas as important considerations but not the primary focus, assign a tag of **1** (Significant).
+- If poverty reduction, livelihoods, or job creation are the primary objectives of the research, assign a tag of **2** (Principal).
+- When assigning a tag of **2**, ensure that the evidence clearly demonstrates that these objectives were the main goals of the research and fundamental to its design.
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+{ ""score"": <0|1|2>, ""explanation"": ""<Your explanation here>"" }
+
+
+### **Now, analyze the following research result and assign a poverty reduction, livelihoods, and jobs tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in these areas.**
+
+**Text to Analyze:**
+[INPUT_TEXT]","gpt-4o-mini","Poverty","Large White breed of pig: Pig breed factsheet for Uganda  Large White breed of pig: Pig breed factsheet for Uganda Skip to main content Dear CGSpace users, we have performed some minor upgrades to the user interface. If it does not look right you should refresh the page while holding the Shift key. Communities & Collections Browse Navigate CGIAR Centers Statistics English Català Čeština Deutsch Español Français Gàidhlig Italiano Latviešu Magyar Nederlands Polski Português Português do Brasil Srpski (lat) Suomi Svenska Türkçe Tiếng Việt Қазақ বাংলা हिंदी Ελληνικά Српски Yкраї́нська Log In Note: CGIAR users should log in with their Active Directory username and password. For example, if your email is j.smith@cgiar.org, you would use jsmith here. Log in New user? Click here to register. Have you forgotten your password? Home CGIAR research centers International Livestock Research Institute (ILRI) ILRI Programs ILRI livestock genetics program ILRI livestock genetics program outputs Large White breed of pig: Pig breed factsheet for Uganda Large White breed of pig: Pig breed factsheet for Uganda Loading... Files English Version (295.19 KB, pdf) Luganda Version (300.49 KB, pdf) Lusoga Version (301.45 KB, pdf) Runyakitara Version (311.17 KB, pdf) Authors Marshall, Karen Date Issued 2022-06-08 Date Online Language en ; lg Type Extension Material Review Status Access Rights Open Access Usage Rights Metadata Full item page Share Citation Marshall, K. 2022. Large White breed of pig: Pig breed factsheet for Uganda. Nairobi, Kenya: ILRI. Permanent link to cite or share this item https://hdl.handle.net/10568/118245 External link to download this item DOI Abstract/Description Author ORCID identifiers Karen Marshall https://orcid.org/0000-0003-4197-1455 AGROVOC Keywords animal breeding ; breeds ; swine ; sows Subjects BREEDS ; PIGS Countries Uganda Regions Africa ; Eastern Africa Organizations Affiliated to the Authors International Livestock Research Institute Investors/sponsors CGIAR Trust Fund CGIAR Action Areas Resilient Agrifood Systems CGIAR Initiatives Sustainable Animal Productivity Collections ILRI livestock genetics program outputs CGIAR Initiative on Sustainable Animal Productivity DSpace software copyright © 2002-2024 LYRASIS About Cookie settings Privacy policy Send Feedback File: download
+Page 1:
+This document is licensed for use under 
+the Creative Commons Attribution 4.0 
+International Licence. June 2022
+Contact: Karen Marshall
+International Livestock Research Institute
+P.O Box 24384, Kampala, Uganda
+k.marshall@cgiar.org
+We would like to thank all funders who 
+support this research through their 
+contributions to the CGIAR Trust Fund: 
+https://www.cgiar.org/funders/Olulyo “Large White’’
+Ekikulaky’olulyo luno
+▪Ziba za langi njeru . 
+▪Omugongo muwanvu ngamugazi .
+▪Omutwe muwanvu nekyenyi kirimu
+ekinya , nomumwa mugazi .
+▪Amatu mamagalavu (kumutwe ).
+Ebirungieby’enkizo kumbizzi
+ez’olulyo luno
+▪Nzadde nnungi , zizaala abaana bangi ate nezivaamu
+n’amata mangi .
+▪Ziba namagulu , ebigere n’emitwe ebigumu , ate 
+mpangaazi .
+▪Obuto bukula mangu nnyo . 
+▪Bweziba ziwereddwa emmere etabuddwa obulungi , 
+zikozesa emmere ntono neziteekako ennyama
+nnyingi .
+▪Ennyama ebaamu amasavu gakigero .
+▪Bweba ekuze enkazi ezitowa wakati wakilo 250 ne 
+350 ate ennume wakati wakilo 300 ne 450.
+Emigaso
+▪Embizzi ez’olulyo luno naddala enkazi nnungi nyo okulunda bweziba zirabiriddwa
+bulungi mundiisa , obujanjabi , nokusuzibwa mu nyumba ezimbiddwa obulungi . 
+▪Kiba kirungi enkazi ezaLarge White bweziwakisibwa ennume eyaLandrace, yadde
+ngan’ennume ezendyo endala ziyinza okukozesebwa .
+▪Enkazi ezizaliddwa wakati waLarge White ne Landrace zitera okuwakisibwa
+ennume ezolulyo lwaDuroc.
+Pig breed factsheet for Uganda: Large White breed of pig, Luganda / June 2022
+(photo credits: Esau Galukande )(photo credit: MU/Donald Kugonza )
+File: download
+Page 1:
+This document is licensed for use under 
+the Creative Commons Attribution 4.0 
+International Licence. June 2022
+Contact: Karen Marshall
+International Livestock Research Institute
+P.O Box 24384, Kampala, Uganda
+k.marshall@cgiar.org
+We would like to thank all funders who 
+support this research through their 
+contributions to the CGIAR Trust Fund: 
+https://www.cgiar.org/funders/Ekika kyaRutaaba -rw’enjeru
+“Large White”
+Pig breed factsheet for Uganda: Large White breed of pig, Runyakitara /  June 2022
+Obumanyiso bwaayo
+▪Eina omubiri ogukwerera kimu (ni’njeru).
+▪Eina omugongo mukooto , muraira kandi
+gugaramire , gutaina eibango .
+▪Eina omutwe muraira gw’enkondo hamu
+n’enyindo etandami .
+▪Eina amatu gemereire busimba ahamutwe .
+Ebirungi byayo
+▪Ebuguma nizizaara abyaana bikooto , ziina amata
+maingi kandi nimanya kworora ebyaana byazo
+kurungi .
+▪Ziina oruteero rurungi , amaguru gagumire , ebigere
+birungi , kandi nizihangaara .
+▪Ebyana byaazo nibyanguha kukura (nibijunjumuka ).
+▪Nizetenga ebyokurya bikye kugomoka .
+▪Enyama yaazo nnungi muno kandi teina bishaju bingi .
+▪Ebuguma nkuru ziremeera ahagati yakiro bikumi
+bibiri nataanu [250] nabikumi bisatu nataanu [350] 
+kandi empaya yoeremeera kiro bikumi bisatu [300] 
+kuhika halikiro bina nataanu [450].
+Emigasho yékika eki
+▪Ekikika kirungi ky’okutunga waba nosobora kukiroleera kurungi
+omubikukwatagana n’oburaaro , enjanjaba hamu n’endya yaazo .
+▪Ebuguma nizikira kwemebwa empaya z’ekika nikyo kimu oba n’ekya “Landrace” 
+kandi nezindi empaya ez’ebika by’enduga -mahanga .
+▪Ebuguma ezina esagama entabule y’ebika bya“Large white” na“Landrace” 
+zisemereire kwemebwa aha mpaya z’ekika kya“Duroc”.
+(photo credits: Esau Galukande )(photo credit: MU/Donald Kugonza )
+File: download
+Page 1:
+This document is licensed for use under 
+the Creative Commons Attribution 4.0 
+International Licence. June 2022
+Contact: Karen Marshall
+International Livestock Research Institute
+P.O Box 24384, Kampala, Uganda
+k.marshall@cgiar.org
+We would like to thank all funders who 
+support this research through their 
+contributions to the CGIAR Trust Fund: 
+https://www.cgiar.org/funders/Large White breed of pig
+Characteristics
+▪Entirely white in colour .
+▪Long, level and wide back.
+▪Moderately long head, have a slightly 
+dished face and a broad snout.
+▪Ears stand upright on the head.
+Performance
+▪Sows are good mothers and have large litter 
+sizes and high milk production.
+▪The pigs usually have sound legs and feet and 
+live long lives.
+▪Piglets are fast growing.
+▪They are an efficient feed utilizer but must be 
+fed well.
+▪Carcass quality is good, with the carcasses 
+being lean.
+▪A mature sow weighs between 250 kg and 350 
+kg and a mature boar weighs between 300kg 
+and 450 kg.
+Use
+▪A good breed to keep as a sow if properly managed with good housing, health -
+care and feeding.
+▪Large White sows are usually crossed to Large White boars or Landrace boars 
+but can be crossed with any exotic breed boar.
+▪Sows that are already a cross of Large White and Landrace are often crossed to 
+Duroc boars.
+Pig breed factsheet for Uganda: Large White breed of pig, English / June 2022
+(photo credits: Esau Galukande )(photo credit: MU/Donald Kugonza )
+File: download
+Page 1:
+This document is licensed for use under 
+the Creative Commons Attribution 4.0 
+International Licence. June 2022
+Contact: Karen Marshall
+International Livestock Research Institute
+P.O Box 24384, Kampala, Uganda
+k.marshall@cgiar.org
+We would like to thank all funders who 
+support this research through their 
+contributions to the CGIAR Trust Fund: 
+https://www.cgiar.org/funders/Olulyo lwa“Large White’’
+Enfaanana yaayo
+▪Yonayona ndheru mu langi .
+▪Eba mpaavuyirivu , omugongo gwayo muterevu
+era ngamubambaatavu .
+▪Omutwe mughanvuyirivumuku katono , ekyenhi
+kirimu engeri y’ekiinha ate ngaenhindo ngazi .
+▪Amatu gayo , gaba mababangalavu ku mutwe .
+Enkola yaayo
+▪Embiidhi enkazi nungi mukuzaala ; dhizaala obwana
+bungi , dhibulabirira bulungi era dhiba n’amabeere
+agayinga amata amangi .
+▪Embiidhi dhino dhiba n’amagulu ngamagumu nebigere
+ngabigumu bulungi era dhighangaala .
+▪Obubiidhi obuto bukula mangu (dhiba dha
+muvudhumuko ).
+▪Omubiri gwadho gukozesa bulungi e’mere embiidhi
+gyerire aye dhitekwa okulisibwa obulungi .
+▪Emamba yaadho eba n’nungi inho kuba eba n’amasavu
+gaakigero .
+▪Embiidhi enkazi enkulu ezitowa ghagati ghakiro 250 ne 
+kiro 350, ate ensadha enkulu ezitowa ghagati gha kiro
+300 ne kiro 450.
+Enkozesa yaayo
+▪Enkazi dho lulyo luno nungi okwaya singa dhirabirirwa bulungi , ngaenhumba
+enhungi , obwidhandhabi obulungi era n’endiisa enhungi .
+▪Enkazi mu lulyo luno olwa “Large White” dhitera okughasibwa ensaadha edho lulyo
+lwa “Large White boars ” oba olulyo lwa“Landrace boars” aye ngakisoboka
+okughasibwa ensaadha yonayona ey’olulyo olulungi .
+▪Embiidhi enkazi edhava mukughasizibwa Large White ne Landrace, dhitera
+kughasizibwa ensaadha edh’olulyo lwa“Duroc boars”.
+Pig breed factsheet for Uganda: Large White breed of pig, Lusoga /  June 2022
+(photo credits: Esau Galukande )(photo credit: MU/Donald Kugonza )
+","3545"
+"12","POVERTY_REDUCTION_PROMPT","# **You are an AI assistant tasked with evaluating research results from CGIAR (Consultative Group on International Agricultural Research) to determine whether they align with and contribute to CGIAR's objectives in poverty reduction, livelihoods, and job creation. Your goal is to accurately assign an impact area tag that reflects the relevance and impact of the research on these specific objectives.**
+
+### **Context:**
+CGIAR is a global partnership that unites international organizations focused on research for food security. CGIAR has set specific objectives to address global challenges, including poverty reduction, improving livelihoods, and job creation in developing countries. The research results you will analyze originate from various CGIAR initiatives and projects, particularly in the fields of agriculture, forestry, fisheries, climate, and nutrition.
+
+### **Research Result Components:**
+Each research result includes the following details:
+- **Title:** A brief title summarizing the research result.
+- **Description:** A detailed description of the research result, including methods and findings.
+- **Research Abstract:** A summary of key findings and implications (optional).
+- **Research Parsed Text:** The parsed text of the research result (optional).
+
+### **Tagging Criteria:**
+Assign a poverty reduction, livelihoods, and jobs impact tag using the following criteria:
+
+- **0 = Not Targeted:** 
+  - The research does not address or contribute to CGIAR's objectives in poverty reduction, livelihoods, or job creation.
+  - The research is unrelated to these areas, focusing instead on different topics with no significant implications for poverty or livelihoods.
+  - Example: A study focused solely on agricultural productivity without considering its impact on poverty, livelihoods, or job creation.
+
+- **1 = Significant:** 
+  - The research makes a meaningful contribution to CGIAR’s objectives in poverty reduction, livelihoods, or job creation, but these are not the primary focus.
+  - The research is relevant and provides insights into these areas, but they are secondary to other goals.
+  - Example: A study that explores the impact of agricultural practices on income generation, indirectly supporting poverty reduction and improving livelihoods.
+
+- **2 = Principal:** 
+  - The primary objective of the research is to address and directly impact CGIAR's goals in poverty reduction, livelihoods, or job creation.
+  - The research would not have been conducted without the intention to contribute to these specific objectives.
+  - Example: A study specifically designed to develop strategies for improving rural livelihoods and lifting communities out of extreme poverty.
+
+### **Key Objectives Set by CGIAR:**
+- **Poverty Alleviation:** Lifting at least 500 million people living in rural areas above the extreme poverty line of US $1.90 per day (2011 PPP).
+- **Reducing Poverty:** Reducing by at least half the proportion of men, women, and children of all ages living in poverty in all its dimensions, according to national definitions.
+
+### **Instructions:**
+1. **Analyze the Title and Abstract:** Determine whether the research is related to CGIAR's objectives in poverty reduction, livelihoods, or job creation by looking for relevant keywords or phrases, such as “income generation,” “employment,” or “poverty alleviation.”
+2. **Review the Description and Parsed Text:** Assess whether the research directly contributes to CGIAR’s objectives in these areas, and how integral these objectives are to the overall study.
+3. **Assign the Tag:** Based on the criteria provided, assign the most appropriate tag (0, 1, or 2) that reflects whether the research is related to and impacts CGIAR’s objectives in poverty reduction, livelihoods, and job creation.
+4. **Provide a Brief Justification:** Explain why you assigned this tag, referencing specific aspects of the research that influenced your decision. Make sure to clarify how the research aligns (or does not align) with CGIAR’s objectives.
+
+### **Important Notes:**
+- If the research does not relate to CGIAR's objectives in poverty reduction, livelihoods, or job creation, assign a tag of **0** (Not Targeted).
+- If the research mentions these areas as important considerations but not the primary focus, assign a tag of **1** (Significant).
+- If poverty reduction, livelihoods, or job creation are the primary objectives of the research, assign a tag of **2** (Principal).
+- When assigning a tag of **2**, ensure that the evidence clearly demonstrates that these objectives were the main goals of the research and fundamental to its design.
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+{ ""score"": <0|1|2>, ""explanation"": ""<Your explanation here>"" }
+
+
+### **Now, analyze the following research result and assign a poverty reduction, livelihoods, and jobs tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in these areas.**
+
+**Text to Analyze:**
+[INPUT_TEXT]","gpt-4o-mini","Poverty","Duroc breed of pig: Pig breed factsheet for Uganda  Duroc breed of pig: Pig breed factsheet for Uganda Skip to main content Dear CGSpace users, we have performed some minor upgrades to the user interface. If it does not look right you should refresh the page while holding the Shift key. Communities & Collections Browse Navigate CGIAR Centers Statistics English Català Čeština Deutsch Español Français Gàidhlig Italiano Latviešu Magyar Nederlands Polski Português Português do Brasil Srpski (lat) Suomi Svenska Türkçe Tiếng Việt Қазақ বাংলা हिंदी Ελληνικά Српски Yкраї́нська Log In Note: CGIAR users should log in with their Active Directory username and password. For example, if your email is j.smith@cgiar.org, you would use jsmith here. Log in New user? Click here to register. Have you forgotten your password? Home CGIAR research centers International Livestock Research Institute (ILRI) ILRI Programs ILRI livestock genetics program ILRI livestock genetics program outputs Duroc breed of pig: Pig breed factsheet for Uganda Duroc breed of pig: Pig breed factsheet for Uganda Loading... Files English Version (331.61 KB, pdf) Luganda Version (335.41 KB, pdf) Lusoga Version (336.61 KB, pdf) Runyakitara Version (342.06 KB, pdf) Authors Marshall, Karen Date Issued 2022-06-08 Date Online Language en ; lg Type Extension Material Review Status Access Rights Open Access Usage Rights Metadata Full item page Share Citation Marshall, K. 2022. Duroc breed of pig: Pig breed factsheet for Uganda. Nairobi, Kenya: ILRI. Permanent link to cite or share this item https://hdl.handle.net/10568/118240 External link to download this item DOI Abstract/Description Author ORCID identifiers Karen Marshall https://orcid.org/0000-0003-4197-1455 AGROVOC Keywords swine ; animal breeding ; breeds ; sows Subjects BREEDS ; PIGS Countries Uganda Regions Africa ; Eastern Africa Organizations Affiliated to the Authors International Livestock Research Institute Investors/sponsors CGIAR Trust Fund CGIAR Action Areas Resilient Agrifood Systems CGIAR Initiatives Sustainable Animal Productivity Collections ILRI livestock genetics program outputs CGIAR Initiative on Sustainable Animal Productivity DSpace software copyright © 2002-2024 LYRASIS About Cookie settings Privacy policy Send Feedback File: download
+Page 1:
+This document is licensed for use under 
+the Creative Commons Attribution 4.0 
+International Licence. June 2022
+We would like to thank all funders who 
+support this research through their 
+contributions to the CGIAR Trust Fund: 
+https://www.cgiar.org/funders/Contact: Karen Marshall
+International Livestock Research Institute
+P.O Box 24384, Kampala, Uganda
+k.marshall@cgiar.org
+Duroc breed of pig
+Characteristics
+▪Reddish -brown to goldish -brown in 
+colour .
+▪Medium to large in size and length.
+▪Muscular. 
+▪Faces are slightly dished.
+▪Partially -drooping ears.
+Performance
+▪Sows are good mothers and have large litter 
+sizes and high milk production.
+▪The pigs usually have sound legs and feet and 
+live long lives.
+▪Piglets are fast growing.
+▪They are an efficient feed utilizer but must be 
+fed well.
+▪Carcass quality is good, with the carcasses 
+being lean.
+▪A mature sow weighs between 250 kg and 350 
+kg and a mature boar weighs between 300 kg 
+and 450 kg.
+Uses
+▪Durocs are usually used as boars mated to exotic (white) sows to produce 
+piglets for sale.
+▪Sows that are already a cross of Landrace and Large White can be crossed to 
+Duroc boars.
+▪Durocs can also be mated to other Durocs.
+Pig breed factsheet for Uganda: Duroc breed of pig, English / June 2022
+(photo credits: top -rockindave1, https://bit.ly/3o6B7EQ ; 
+bottom –Philip Borel)(photo credit: Philip Borel )
+File: download
+Page 1:
+This document is licensed for use under 
+the Creative Commons Attribution 4.0 
+International Licence. June 2022
+Contact: Karen Marshall
+International Livestock Research Institute
+P.O Box 24384, Kampala, Uganda
+k.marshall@cgiar.org
+We would like to thank all funders who 
+support this research through their 
+contributions to the CGIAR Trust Fund: 
+https://www.cgiar.org/funders/Olulyo lwa“Duroc’’
+Enfaanana yaayo
+▪Dhib anhilangi erighagati ghakisiitaka
+omumyukirivu nizaabbu owa kisiitaka .
+▪Dhiba dhakigero mu bunhene no’bughanvu . 
+▪Dhiba n’emiwula emidundeevu .
+▪Dhiba n’obwenhi obulimu ekiinha
+ekigerwagerwa .
+▪Amatu gatera okubunduka ekitonotono .
+Enkola yaayo
+▪Enkazzi n’nungi mukuzaala ; dhizaala obwana bungi , 
+dhiba n’amata mangi era dhiba ngonvu okwaya . 
+▪Embiidhi dhino dhiba n’amagulu amagumu n’ebigere
+ebigumu era dhighangaala .
+▪Obubiidhi obuto bukula mangu (dhiba
+dhamuvudhumuko ). 
+▪Emibiri gyayo gikozesa bulungi e’mere embiidhi
+gyedhiriire aye dhiteekwa okuliisibwa obulungi .
+▪Emamba eba nanamasavu gaakigero era eba n’nhungi
+inho (n’myukirivu , ntobekere bulungi era tekala mangu ). 
+▪Dhikulira bulungi mu bifo eby’omusana n’obwinhogovu .
+▪Embiidhi enkazi enkulu ezitowa ghagati ghakiro 200 ne 
+kiro 250 ate ensaadha enkulu ezitowa ghagati ghakiro
+225 ne kiro 350.
+Enkozesa yaayo
+▪Ensaadha dha “Durocs” dhitera okukozesebwa okughakisa enkazi edholulyo (endheru ) 
+okuzaala obubiidhi obwokutunda . 
+▪Embiidhi enkazi edhizaalibwa olwo kughakisibwa kwa “Landrace” ni“Large white” 
+dhisobola okughakisibwa “Duroc” ensaadha .
+▪“Durocs” dhisobola okughakisibwa “Durocs” dhiinhe ghwaadho .
+Pig breed factsheet for Uganda: Duroc breed of pig, Lusoga / June 2022
+(photo credit: Philip Borel )
+(photo credits: top -rockindave1, https://bit.ly/3o6B7EQ ; 
+bottom –Philip Borel)
+File: download
+Page 1:
+This document is licensed for use under 
+the Creative Commons Attribution 4.0 
+International Licence. June 2022
+Contact: Karen Marshall
+International Livestock Research Institute
+P.O Box 24384, Kampala, Uganda
+k.marshall@cgiar.org
+We would like to thank all funders who 
+support this research through their 
+contributions to the CGIAR Trust Fund: 
+https://www.cgiar.org/funders/
+Olulyo “Duroc”
+Ekikulaky’olulyo luno
+▪Ziba za langi yakikuusikuusi .
+▪Obunene bwa kigero . 
+▪Zamusitukwa bulungi .
+▪Ekyenyi kibaamu ekinnya .
+▪Amatu geweta negabikka amaaso .
+Ebirungieby’enkizo kumbizzi
+ez’olulyo luno
+▪Enkazi zibeera nzadde nnungi , zizaala abaana bangi ate 
+nezivaamu amata mangi .  Zitera okuba empombeefu .
+▪Embizzi zino mpangaazi , zirina amagulu nebigere
+bigumu . 
+▪Ento zikula mangu . 
+▪Zetaaga emmere ntono okutekako ennyama bweziba
+zirabiriddwa bulungi .
+▪Ennyama ebaamu amasavu ga kigero nennyama nga
+nnungi . 
+▪Zikola bulungi mu bitundu ebyebbugumu n’ebyo
+eby’obunyogovu .
+▪Nga zikuze , enkazi zizitowa wakati wakilo 200 ne  250 
+ate ennume wakati wakilo 225 ne 350.
+Emigaso
+▪Ennume eza“Duroc” zikozesebwa nnyo okuwakisa enkazi ezendyo endala
+okuzaala ento ez’ennyama . 
+▪Enkazi ez’omusaayi wakati wa“Landrace” ne “Large White” oyinza okuziwakisa
+ne nnume eya“Duroc”.
+▪“Duroc” nayo eyinza okukozesebwa okuzaala mu nkazi eza“Duroc”.
+Pig breed factsheet for Uganda: Duroc breed of pig, Luganda / June 2022
+(photo credit: Philip Borel )
+(photo credits: top -rockindave1, https://bit.ly/3o6B7EQ ; 
+bottom –Philip Borel)
+File: download
+Page 1:
+This document is licensed for use under 
+the Creative Commons Attribution 4.0 
+International Licence. June 2022
+Contact: Karen Marshall
+International Livestock Research Institute
+P.O Box 24384, Kampala, Uganda
+k.marshall@cgiar.org
+We would like to thank all funders who 
+support this research through their 
+contributions to the CGIAR Trust Fund: 
+https://www.cgiar.org/funders/Ekika kyaKigaati “Duroc”
+Obumanyiso bwaayo
+▪Eina omubiri gw’egaaju .
+▪Eringaniire omuburaira n’obukooto .
+▪Eina omubiri guritiriire .
+▪Enkono yaazo byejumikiriire nk’ekishare .
+▪Amatu gaayo gakondookire mu kukye .
+▪Ebuguma niimanya kwoorora ebyaana byaazo kurungi , 
+zizaara baingi kandi ziina amata maingi .
+▪Ziina oruteerero rurungi ahabw’amaguru gagumire n’ebigere
+birungi kandi nizihangaara . 
+▪Ebyaana byaazo nibirahuka kukura (nibijunjumuka ).
+▪Enyama yazo teina bishaju bingi kandi ezooka kurungi muno
+(enyama n’etukura , ebishaju bijwangire gyen’enyama kandi
+neguma ebobeire ).
+▪Nizigumira obwire bw’omusana mwingi hamu nobufuki
+bwingi . 
+▪Ebuguma enkuru niziremeera hagati yakiro bikumi bibiri
+[200] nabikumi bibiri nataano [250] kandi empaya zo 
+ziremeera kiro bikumi bibiri abiri ne’itaano [225] okuhikya
+haihi nabikumi bisatu nataanu [350].
+Emigaso yekika ekyo
+▪Empaya z’ekika kya“Duroc” nizikira kukozesibwa omu kwemesa ebuguma
+z’ebika ebindi eby’enduga -mahanga okwenda kuzaara ebyaana by’okuguza
+abandi abaliisa .
+▪Ebuguma ezina esagama y’entabule y’ebika bya“Large White” na“Landrace” 
+nizisobora kwemibwa empaya z’ekika kya“Duroc”.
+▪Ebuguma z’ekika kya“Duroc” nizisobora kwemibwa empaya z’ekika nikyo
+kimwe .
+Pig breed factsheet for Uganda: Duroc breed of pig, Runyakitara / June 2022
+Ebirungi byayo(photo credit: Philip Borel )
+(photo credits: top -rockindave1, https://bit.ly/3o6B7EQ ; 
+bottom –Philip Borel)
+","3627"

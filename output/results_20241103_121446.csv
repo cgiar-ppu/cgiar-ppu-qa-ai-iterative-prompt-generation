@@ -1,0 +1,27 @@
+result_code,prompt_id,model_name,impact_area,model_output,token_count,timestamp,score,explanation
+31,Test_V1,gpt-4o-mini,Gender,"**Answer:** The text discusses the ICARDA durum wheat breeding network's efforts to develop resilient wheat varieties for dryland regions in Africa, the Middle East, and Asia, addressing climatic challenges and increasing production efficiency.
+
+**Explanation:** It highlights the breeding strategies, partnerships, and recent variety releases aimed at meeting the growing demand for pasta and semolina while ensuring adaptability to environmental stresses.",266,2024-11-03 12:14:47.420918,,
+17,Test_V1,gpt-4o-mini,Gender,"**Summary:** The yam breeding network in Africa, particularly in Nigeria, aims to develop high-yield, pest-resistant White and Water Yam varieties through collaboration with several West African countries. In 2023, advancements were made in breeding efficiency, leading to the release of three new yam varieties.
+
+**Explanation:** The initiative focuses on addressing breeding challenges and improving yam quality and productivity to meet consumer demands in West Africa.",220,2024-11-03 12:14:47.592601,,
+32,Test_V1,gpt-4o-mini,Gender,"**Summary:** The West and Central African maize breeding network focuses on developing climate-resilient and nutrient-enriched maize varieties to meet food and feed demands. Collaborating with various partners, they work on four breeding pipelines targeting different maize types for various markets. The breeding cycle has been shortened to 2 years using advanced techniques, and women farmers participated in 29% of trials in 2023.
+
+**Explanation:** This initiative aims to enhance maize production through improved varieties, addressing both climate challenges and nutritional needs, while promoting gender inclusion in agricultural practices.",236,2024-11-03 12:14:47.678671,,
+30,Test_V1,gpt-4o-mini,Gender,"**Key Points:**
+1. ICARDA's breeding network focuses on high-yield, climate-resilient wheat varieties.
+2. Targets semi-arid/arid regions in Africa and Central/West Asia.
+3. Addresses challenges like climate change, pests, and diseases.
+4. Collaborates with public/private sectors and farmers.
+5. Breeding pipelines for rainfed and heat-tolerant varieties.
+6. Current breeding cycle is 4 years; Ethiopia has released a dryland variety.
+
+**Explanation:** The text outlines ICARDA's efforts in wheat breeding to enhance agricultural resilience and productivity in challenging climates, emphasizing collaboration and targeted breeding strategies.",224,2024-11-03 12:14:48.096230,,
+28,Test_V1,gpt-4o-mini,Gender,"**Key Points:**
+1. **Purpose:** Accelerate genetic gains for climate-resilient wheat varieties.
+2. **Program:** CIMMYT Global Wheat Program collaborates with ICARDA and over 200 institutions.
+3. **Impact:** Varieties cover over 60 million hectares globally.
+4. **Advancements:** Use of molecular breeding, bioinformatics, and speed breeding reduces cycle time to 3 years.
+5. **2023 Achievements:** 55 new varieties registered, focusing on climate resilience and Zinc biofortification.
+
+**Explanation:** The text highlights the efforts and achievements of international wheat breeding networks, particularly the CIMMYT program, in developing and distributing improved wheat varieties to support smallholder farmers in various regions.",241,2024-11-03 12:14:48.737605,,

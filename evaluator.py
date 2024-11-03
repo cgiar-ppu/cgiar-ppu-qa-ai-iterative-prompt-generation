@@ -15,6 +15,14 @@ def evaluate_results(output_csv, input_csv, metrics_csv):
     if 'score' not in results_df.columns:
         raise ValueError("The 'score' column is missing in the results CSV. Please run response_extractor.py first.")
 
+    # Check for necessary columns in input_df
+    required_columns = ['Result code', 'Impact Area checked', 'Expert score']
+    missing_columns = [col for col in required_columns if col not in input_df.columns]
+
+    if missing_columns:
+        print(f"Input data is missing required columns: {', '.join(missing_columns)}. Metrics cannot be calculated.")
+        return
+
     # Preprocess columns for matching
     results_df['result_code'] = results_df['result_code'].astype(str).str.strip()
     results_df['impact_area'] = results_df['impact_area'].astype(str).str.strip().str.lower()

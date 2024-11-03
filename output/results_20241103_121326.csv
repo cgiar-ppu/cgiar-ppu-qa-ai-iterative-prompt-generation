@@ -1,0 +1,13 @@
+result_code,prompt_id,model_name,impact_area,model_output,token_count,timestamp,score,explanation
+3416,Test_V1,gpt-4o-mini,Gender,"**Direct Answer:** The AgIncentives policy indicators assess trade-offs in scaling agricultural interventions and innovations.
+
+**Brief Explanation:** These indicators, developed with the AgIncentives Consortium, provide a framework for analyzing policy support in agriculture, helping decision-makers evaluate the impacts of various incentive schemes and investments along food value chains.",224,2024-11-03 12:13:27.397611,,
+1006,Test_V1,gpt-4o-mini,Gender,"**Direct Answer:** The Women's Empowerment in Livestock Index (WELI) measures women's empowerment in livestock-related livelihoods.
+
+**Brief Explanation:** Developed by ILRI and Emory University in 2015, WELI assesses the impact of livestock interventions on women's empowerment, focusing on areas like animal health and product marketing to enhance livelihoods and promote gender equity.",209,2024-11-03 12:13:27.439778,,
+1020,Test_V1,gpt-4o-mini,Gender,"**Direct Answer:** Aclimatar is a platform designed to support climate adaptation for smallholder cocoa producers in West Africa by providing tailored climate risk assessments and adaptation strategies.
+
+**Brief Explanation:** It enhances resilience against climate change impacts through an intuitive interface that offers essential climate data and prioritizes adaptation practices for cocoa management in Ghana and Côte d'Ivoire.",949,2024-11-03 12:13:27.440780,,
+37,Test_V1,gpt-4o-mini,Gender,"**Summary:** The text discusses the efforts of bean breeding networks in Africa to develop drought- and heat-resilient bean varieties, collaborating with farmers and organizations like PABRA. It highlights the importance of common beans as a staple food and the cyclical nature of breeding processes, which adapt based on feedback from stakeholders. 
+
+**Explanation:** The breeding programs aim to enhance genetic gains for beans, addressing market demands and environmental challenges, while also improving soil fertility and farmer income.",1122,2024-11-03 12:13:27.865577,,

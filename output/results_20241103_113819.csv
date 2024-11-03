@@ -1,0 +1,7 @@
+result_code,prompt_id,model_name,impact_area,model_output,token_count,timestamp,score,explanation
+1006,Test_V1,gpt-4o-mini,None,"The text is about the Women's Empowerment in Livestock Index (WELI), which measures women's empowerment in livestock-related livelihoods. 
+
+It explains how WELI assesses the impact of livestock interventions on women's empowerment, aiming to enhance their opportunities and promote gender equity while improving household livelihoods and nutrition.",215,2024-11-03 11:38:20.199867,,
+37,Test_V1,gpt-4o-mini,None,"The text discusses the efforts of bean breeding networks in Africa to develop drought- and heat-resilient, biofortified bean varieties that meet the needs of farmers and seed companies. It highlights the importance of common beans as a staple food and income source for millions in Africa, and describes the collaborative breeding process involving feedback from various stakeholders.
+
+**Explanation:** The focus is on improving bean varieties through collaborative research to enhance food security and agricultural resilience in Africa.",1128,2024-11-03 11:38:20.653277,,

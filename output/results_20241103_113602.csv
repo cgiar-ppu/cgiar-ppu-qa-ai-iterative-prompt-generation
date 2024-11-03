@@ -1,0 +1,10 @@
+result_code,prompt_id,model_name,impact_area,model_output,token_count,timestamp,score,explanation
+7,Test_V1,gpt-4o-mini,None,"The text discusses the importance of animal welfare in enhancing sustainability in farming. It highlights how improving animal welfare can address global challenges like climate change and food security through case studies that demonstrate mutual benefits for animals and farming practices. 
+
+In summary, it emphasizes that better animal welfare can lead to sustainable farming solutions, but requires understanding the systems involved to overcome barriers to change.",1235,2024-11-03 11:36:03.701382,,
+8,Test_V1,gpt-4o-mini,None,"The text is about the Local/Ugandese breed of pig, providing a factsheet that includes its characteristics, performance, and uses in Uganda.
+
+This document serves as a resource for understanding the breed's traits, such as its size, color, and mothering ability, as well as its suitability for local farming practices.",2754,2024-11-03 11:36:03.779466,,
+10,Test_V1,gpt-4o-mini,None,"The text is a factsheet about the Landrace breed of pig in Uganda, detailing its characteristics, performance, and usage.
+
+It provides information on the breed's physical traits, reproductive capabilities, growth efficiency, and management practices for optimal care.",2675,2024-11-03 11:36:03.793485,,
