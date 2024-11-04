@@ -17,6 +17,14 @@ import base64
 import re
 # app.py
 #Test Comment to refresh x2
+simplified_models = ['o1-preview', 'o1-mini']
+# Initialize session state variables
+if 'results_df' not in st.session_state:
+    st.session_state['results_df'] = pd.DataFrame()
+
+if 'tasks_df' not in st.session_state:
+    st.session_state['tasks_df'] = pd.DataFrame()
+
 
 # Sidebar
 st.sidebar.title("Configuration")
@@ -219,109 +227,270 @@ def update_progress(n):
     progress_bar.progress(n / total_tasks)
     status_text.text(f"Processing task {n} of {total_tasks}")
 
-if start_button:
-    # Check for empty selections
-    if selected_df.empty:
-        st.warning("No results selected. Please adjust your selection criteria.")
-    elif not selected_models:
-        st.warning("No models selected. Please select at least one model.")
-    elif not selected_prompts:
-        st.warning("No prompts selected. Please select at least one prompt.")
-    else:
-        # Filter prompts
-        selected_prompts_dict = {pid: prompts[pid] for pid in selected_prompts}
+# Create Tabs
+tab1, tab2 = st.tabs(["Main Processing", "Follow-up Prompts"])
 
-        # Deduplicate input data based on 'Result code' and relevant text fields
-        optional_columns = ['Title', 'Description', 'Evidence_Abstract_Text', 'Evidence_Parsed_Text']
-        existing_columns = [col for col in optional_columns if col in selected_df.columns]
-        df_unique_input = selected_df.drop_duplicates(subset=['Result code'] + existing_columns)
-
-        # Limit the number of results if using 'Number of Results' method
-        if result_selection_method == 'Number of Results':
-            df_unique_input = df_unique_input.head(int(result_limit))
-
-        # Check if df_unique_input is empty
-        if df_unique_input.empty:
-            st.warning("No unique input data to process after deduplication.")
+with tab1:
+    if start_button:
+        # Check for empty selections
+        if selected_df.empty:
+            st.warning("No results selected. Please adjust your selection criteria.")
+        elif not selected_models:
+            st.warning("No models selected. Please select at least one model.")
+        elif not selected_prompts:
+            st.warning("No prompts selected. Please select at least one prompt.")
         else:
-            # Generate tasks
-            tasks = generate_task_list(df_unique_input, selected_prompts_dict, selected_models)
+            # Filter prompts
+            selected_prompts_dict = {pid: prompts[pid] for pid in selected_prompts}
 
-            # Check if tasks list is empty
-            if not tasks:
-                st.warning("No tasks generated. Please check your inputs.")
+            # Deduplicate input data based on 'Result code' and relevant text fields
+            optional_columns = ['Title', 'Description', 'Evidence_Abstract_Text', 'Evidence_Parsed_Text']
+            existing_columns = [col for col in optional_columns if col in selected_df.columns]
+            df_unique_input = selected_df.drop_duplicates(subset=['Result code'] + existing_columns)
+
+            # Limit the number of results if using 'Number of Results' method
+            if result_selection_method == 'Number of Results':
+                df_unique_input = df_unique_input.head(int(result_limit))
+
+            # Check if df_unique_input is empty
+            if df_unique_input.empty:
+                st.warning("No unique input data to process after deduplication.")
             else:
-                # Save task list
-                timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-                task_list_csv = f'output//task_list_{timestamp}.csv'
-                task_list_excel = f'output//task_list_{timestamp}.xlsx'
-                save_task_list(tasks, task_list_excel, task_list_csv)
+                # Generate tasks
+                tasks = generate_task_list(df_unique_input, selected_prompts_dict, selected_models)
 
-                # Display number of tasks
-                st.write(f"Total tasks to process: {len(tasks)}")
-
-                # Initialize progress bar
-                progress_bar = st.progress(0)
-                status_text = st.empty()
-
-                # Execute tasks with progress update
-                logger = ResultLogger(f"output/results_{timestamp}.csv")
-
-                # Execute tasks concurrently with progress update
-                results = execute_tasks_concurrently(tasks, max_workers=8, progress_callback=update_progress)
-
-                progress_bar.empty()
-                status_text.text("Processing completed.")
-
-                # Extract responses
-                results_df = pd.DataFrame(results)
-
-                if results_df.empty:
-                    st.warning("No results were returned from processing.")
+                # Check if tasks list is empty
+                if not tasks:
+                    st.warning("No tasks generated. Please check your inputs.")
                 else:
-                    results_df = add_score_explanation_columns(results_df, 'model_output')
+                    # Save task list
+                    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+                    task_list_csv = f'output//task_list_{timestamp}.csv'
+                    task_list_excel = f'output//task_list_{timestamp}.xlsx'
+                    save_task_list(tasks, task_list_excel, task_list_csv)
 
-                    # Save results
-                    results_csv = f"output/results_{timestamp}.csv"
-                    results_df.to_csv(results_csv, index=False)
+                    # Display number of tasks
+                    st.write(f"Total tasks to process: {len(tasks)}")
 
-                    # Define input_csv for evaluate_results
-                    if dataset_option == 'Upload Your Own':
-                        input_csv = f"output/uploaded_input_{timestamp}.csv"
-                        input_df.to_csv(input_csv, index=False)
+                    # Initialize progress bar
+                    progress_bar = st.progress(0)
+                    status_text = st.empty()
+
+                    # Execute tasks with progress update
+                    logger = ResultLogger(f"output/results_{timestamp}.csv")
+
+                    # Execute tasks concurrently with progress update
+                    results = execute_tasks_concurrently(tasks, max_workers=8, progress_callback=update_progress)
+
+                    progress_bar.empty()
+                    status_text.text("Processing completed.")
+
+                    # Extract responses
+                    results_df = pd.DataFrame(results)
+                    st.session_state['results_df'] = results_df
+
+                    if results_df.empty:
+                        st.warning("No results were returned from processing.")
                     else:
-                        input_csv = input_file
-                        pass
+                        results_df = add_score_explanation_columns(results_df, 'model_output')
 
-                    # Evaluate results
-                    metrics_csv = f"output/metrics_{timestamp}.csv"
-                    evaluate_results(results_csv, input_csv, metrics_csv)
+                        # Save results
+                        results_csv = f"output/results_{timestamp}.csv"
+                        results_df.to_csv(results_csv, index=False)
 
-                    # Load metrics
+                        # Define input_csv for evaluate_results
+                        if dataset_option == 'Upload Your Own':
+                            input_csv = f"output/uploaded_input_{timestamp}.csv"
+                            input_df.to_csv(input_csv, index=False)
+                        else:
+                            input_csv = input_file
+                            pass
+
+                        # Evaluate results
+                        metrics_csv = f"output/metrics_{timestamp}.csv"
+                        evaluate_results(results_csv, input_csv, metrics_csv)
+
+                        # Load metrics
+                        try:
+                            metrics_df = pd.read_csv(metrics_csv)
+                        except (FileNotFoundError, pd.errors.EmptyDataError):
+                            st.write("No Metrics possible based on dataset provided")
+                            metrics_df = pd.DataFrame()
+
+                        
+                        tasks_df = pd.read_excel(task_list_excel)
+                        st.session_state['tasks_df'] = tasks_df
+
+                        # Provide download links
+                        st.subheader("Download Files")
+
+                        st.markdown(get_table_download_link(metrics_df, 'Download Metrics CSV'), unsafe_allow_html=True)
+                        st.markdown(get_table_download_link(results_df, 'Download Results CSV'), unsafe_allow_html=True)
+
+                        # Display metrics
+                        st.subheader("Metrics")
+                        st.dataframe(metrics_df)
+
+                        st.subheader("Outputs")
+                        st.dataframe(results_df)
+
+                        st.subheader("Full details sent to LLM")
+                        st.dataframe(tasks_df)
+
+                        st.subheader("Input used")
+                        st.dataframe(input_df)
+
+                        # Store critical data in session_state
+                        st.session_state['results_df'] = results_df
+                        st.session_state['tasks_df'] = tasks_df
+
+                        # =================== NEW CODE FOR FOLLOW-UP PROMPTS ===================
+
+                        # ... [Previous code remains unchanged] ...
+
+with tab2:
+    # =================== UPDATED CODE FOR FOLLOW-UP PROMPTS ===================
+    
+    # Ensure tasks_df and results_df are available
+    if 'results_df' not in st.session_state or 'tasks_df' not in st.session_state:
+        st.warning("No results or tasks available for follow-up prompts. Please run the main processing first.")
+    else:
+        results_df = st.session_state['results_df']
+        tasks_df = st.session_state['tasks_df']
+        if results_df.empty or tasks_df.empty:
+            st.warning("No results or tasks to proceed with follow-up prompts.")
+        else:
+            st.subheader("Follow-up Prompts")
+
+            # Select Model
+            selected_model = st.selectbox(
+                "Select Model for Follow-up",
+                options=results_df['model_name'].unique(),
+                key='followup_model'
+            )
+
+            # Select Prompt ID
+            selected_prompt_id = st.selectbox(
+                "Select Prompt ID for Follow-up",
+                options=results_df['prompt_id'].unique(),
+                key='followup_prompt_id'
+            )
+
+            # Select Result Code
+            selected_result_code = st.selectbox(
+                "Select Result Code for Follow-up",
+                options=results_df['result_code'].unique(),
+                key='followup_result_code'
+            )
+
+            # Input Follow-up Prompt
+            followup_prompt = st.text_area("Enter your follow-up prompt", key='followup_prompt')
+
+            # Button to Submit Follow-up Prompt
+            submit_followup = st.button("Submit Follow-up Prompt")
+
+            if submit_followup and followup_prompt:
+                # Build conversation history
+
+                # Key for session state
+                conv_key = f"conversation_{selected_model}_{selected_prompt_id}_{selected_result_code}"
+
+                # Initialize conversation if not exists
+                if conv_key not in st.session_state:
+                    st.session_state[conv_key] = []
+
+                    # Retrieve initial prompt and response
                     try:
-                        metrics_df = pd.read_csv(metrics_csv)
-                    except (FileNotFoundError, pd.errors.EmptyDataError):
-                        st.write("No Metrics possible based on dataset provided")
-                        metrics_df = pd.DataFrame()
+                        # Get the input text for the result code
+                        input_text_row = tasks_df.loc[
+                            (tasks_df['result_code'] == selected_result_code) &
+                            (tasks_df['prompt_id'] == selected_prompt_id) &
+                            (tasks_df['model_name'] == selected_model)
+                        ]
 
-                    
-                    tasks_df = pd.read_excel(task_list_excel)
+                        if input_text_row.empty:
+                            st.error("No matching task found for the selected combination.")
+                            # Optionally provide debug information
+                            # st.write(tasks_df[['result_code', 'prompt_id', 'model_name']])
+                            st.stop()
 
-                    # Provide download links
-                    st.subheader("Download Files")
+                        input_text = input_text_row['input_text'].iloc[0]
+                        # Retrieve the prompt text from the prompts dictionary
+                        prompt_text_template = prompts[selected_prompt_id]['text']
+                        initial_prompt_text = prompt_text_template.replace('[INPUT_TEXT]', input_text)
 
-                    st.markdown(get_table_download_link(metrics_df, 'Download Metrics CSV'), unsafe_allow_html=True)
-                    st.markdown(get_table_download_link(results_df, 'Download Results CSV'), unsafe_allow_html=True)
+                        # Get the initial model response
+                        initial_response_row = results_df.loc[
+                            (results_df['result_code'] == selected_result_code) &
+                            (results_df['prompt_id'] == selected_prompt_id) &
+                            (results_df['model_name'] == selected_model)
+                        ]
 
-                    # Display metrics
-                    st.subheader("Metrics")
-                    st.dataframe(metrics_df)
+                        if initial_response_row.empty:
+                            st.error("No initial response found for the selected combination.")
+                            # Optionally provide debug information
+                            # st.write(results_df[['result_code', 'prompt_id', 'model_name']])
+                            st.stop()
 
-                    st.subheader("Outputs")
-                    st.dataframe(results_df)
+                        initial_response = initial_response_row['model_output'].iloc[0]
 
-                    st.subheader("Full details sent to LLM")
-                    st.dataframe(tasks_df)
+                        # For non-simplified models, include system role
+                        initial_messages = []
+                        if selected_model not in simplified_models:
+                            role = "You are an assistant that will closely follow the instruction provided next and respond in a concise way by providing a direct answer and also a very brief explanation without too many details."
+                            initial_messages.append({"role": "system", "content": role})
 
-                    st.subheader("Input used")
-                    st.dataframe(input_df)
+                        initial_messages.append({"role": "user", "content": initial_prompt_text})
+                        initial_messages.append({"role": "assistant", "content": initial_response})
+
+                        # Save to session state
+                        st.session_state[conv_key] = initial_messages
+
+                    except Exception as e:
+                        st.error(f"Error retrieving initial conversation: {e}")
+                        st.stop()
+
+                # Append the follow-up prompt to the conversation
+                st.session_state[conv_key].append({"role": "user", "content": followup_prompt})
+
+                # Send the conversation to the model
+                messages = st.session_state[conv_key]
+                from executor import client
+                try:
+                    if selected_model in simplified_models:
+                        response = client.chat.completions.create(
+                            model=selected_model,
+                            messages=messages
+                        )
+                    else:
+                        response = client.chat.completions.create(
+                            model=selected_model,
+                            messages=messages,
+                            temperature=0,  # Adjust as needed
+                            max_tokens=500,
+                            top_p=0,
+                            frequency_penalty=0,
+                            presence_penalty=0
+                        )
+                    output = response.choices[0].message.content.strip()
+
+                    # Append the model's response to the conversation
+                    st.session_state[conv_key].append({"role": "assistant", "content": output})
+
+                    # Display the conversation
+                    st.subheader("Conversation")
+                    # Retrieve the conversation history
+                    conversation = st.session_state[conv_key]
+
+                    # Display the entire conversation
+                    for msg in conversation:
+                        if msg['role'] == 'user':
+                            st.markdown(f"**User:** {msg['content']}")
+                        elif msg['role'] == 'assistant':
+                            st.markdown(f"**Assistant:** {msg['content']}")
+                        elif msg['role'] == 'system':
+                            pass  # Optionally display system messages
+
+                except Exception as e:
+                    st.error(f"Error querying OpenAI: {e}")
+    # =================== END OF UPDATED CODE ===================
