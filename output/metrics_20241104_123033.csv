@@ -1,0 +1,7 @@
+model_name,Impact Area,prompt_id,total,correct,incorrect,accuracy,expert_score,score_total,score_correct,score_accuracy
+gpt-4o,nutrition,NUTRITION_PROMPT,17,8,9,0.47058823529411764,0,11,5,0.45454545454545453
+gpt-4o,nutrition,NUTRITION_PROMPT,17,8,9,0.47058823529411764,1,4,2,0.5
+gpt-4o,nutrition,NUTRITION_PROMPT,17,8,9,0.47058823529411764,2,2,1,0.5
+gpt-4o,nutrition,Nutrition_json_o1mini,17,7,10,0.4117647058823529,0,11,5,0.45454545454545453
+gpt-4o,nutrition,Nutrition_json_o1mini,17,7,10,0.4117647058823529,1,4,1,0.25
+gpt-4o,nutrition,Nutrition_json_o1mini,17,7,10,0.4117647058823529,2,2,1,0.5
