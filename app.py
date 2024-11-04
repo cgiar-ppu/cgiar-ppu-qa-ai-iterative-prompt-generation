@@ -62,10 +62,16 @@ with st.sidebar.expander("Add a New Prompt"):
     add_prompt_button = st.button("Add Prompt")
     if add_prompt_button:
         if new_prompt_id and new_prompt_text:
+            # Check if "[INPUT_TEXT]" is in new_prompt_text
+            if "[INPUT_TEXT]" in new_prompt_text:
+                prompt_text = new_prompt_text.replace("[INPUT_TEXT]", "[INPUT_TEXT]")
+            else:
+                prompt_text = new_prompt_text + " **Text to Analyze:** [INPUT_TEXT]"
+
             # Add the new prompt to the prompts dictionary
             prompts[new_prompt_id] = {
                 'id': new_prompt_id,
-                'text': new_prompt_text + " **Text to Analyze:** [INPUT_TEXT]",
+                'text': prompt_text,
                 'impact_area': new_prompt_impact_area,
                 'active': True
             }

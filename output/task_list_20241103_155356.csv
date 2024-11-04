@@ -1,0 +1,680 @@
+"result_code","prompt_id","prompt_text","model_name","impact_area","input_text","token_count"
+"1445","1210a","""Please read the text that belongs to a reported result in our system in CGIAR, and let me know if you think its content it is highly related to the following question we received from stakeholders about results achieved. Does the following text indicate clearly that this specific project supported directly in any capacity to what the stakeholder is asking so that I can inspect in detail?
+
+Question from the stakeholder: """"Trained individuals (m/f) with improved knowledge and increased capacities to develop and implement solutions in climate-smart agriculture and food systems""""
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+""""{ """"score"""": """"<Yes|No|Maybe>"""", """"explanation"""": """"<Your explanation here>"""" }"""""" **Text to Analyze:** [INPUT_TEXT]","gpt-4o","None","7th International Workshop for Farming Systems Design: Designing Climate Smart Agricultural Systems for a Sustainable Transformation in the Agri-Food Systems in the Dry Areas, held in Marrakech, Morocco. This workshop (FSD7-2022 Workshop) is part of the Farming Systems Design 7 program (FSD7) in which, for reasons linked to the Covid-19 pandemic, the FSD7 symposium initially planned in March 2021 in Tunisia has been replaced by a series of webinars in March 2021  (see the proceedings). The FSD7-2022 workshop is an important milestone in the road to the FSD8 Symposium in the fall of 2024 which will be in Christchurch New Zealand (chair : Paolo Gregorini, Lincoln University). The FSD7-2022 Workshop is organized by the FSD international network through the FSD7 Scientific Committee, in partnership with Moroccan institutions (IAV, UM6P, INRA, ENA Meknes, Ministry of agriculture…) and with international institutions based in Morocco (ICARDA) and in Montpellier (IAMM-CIHEAM and L’Institut Agro).  ","383"
+"1486","1210a","""Please read the text that belongs to a reported result in our system in CGIAR, and let me know if you think its content it is highly related to the following question we received from stakeholders about results achieved. Does the following text indicate clearly that this specific project supported directly in any capacity to what the stakeholder is asking so that I can inspect in detail?
+
+Question from the stakeholder: """"Trained individuals (m/f) with improved knowledge and increased capacities to develop and implement solutions in climate-smart agriculture and food systems""""
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+""""{ """"score"""": """"<Yes|No|Maybe>"""", """"explanation"""": """"<Your explanation here>"""" }"""""" **Text to Analyze:** [INPUT_TEXT]","gpt-4o","None","Climate Smart Livestock Feed and Forage Innovations Training Workshop The main objective of the field day training was to train and disseminate validated sustainable intensified crop-livestock technologies among agricultural extension agents (AEAs) and smallholder farmers using the sustainable intensification assessment framework as a guide. The capacity of AEAs was built through engagement for every field activity of the technology demonstration establishment and technology evaluation at crops' physiological maturity. That of the farmers was through field evaluation of the performance of crops at physiological maturity.  ","254"
+"2391","1210a","""Please read the text that belongs to a reported result in our system in CGIAR, and let me know if you think its content it is highly related to the following question we received from stakeholders about results achieved. Does the following text indicate clearly that this specific project supported directly in any capacity to what the stakeholder is asking so that I can inspect in detail?
+
+Question from the stakeholder: """"Trained individuals (m/f) with improved knowledge and increased capacities to develop and implement solutions in climate-smart agriculture and food systems""""
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+""""{ """"score"""": """"<Yes|No|Maybe>"""", """"explanation"""": """"<Your explanation here>"""" }"""""" **Text to Analyze:** [INPUT_TEXT]","gpt-4o","None","Training and co-design workshop for farmers and researchers on use of climate and water-smart decision support tools for orchard farms in Tunisia A training workshop was conducted in Tunisia in November 2022 on an orchard irrigation mobile application, CITRIG, and irrigation guidelines with farmers and other value chain actors. Participant feedback was collected to improve and adapt the tool to integrate intercropping guidance. Learnings from this workshop will guide cross-learning with Moroccan partners on climate and water-smart adaptation options.  ","249"
+"2761","1210a","""Please read the text that belongs to a reported result in our system in CGIAR, and let me know if you think its content it is highly related to the following question we received from stakeholders about results achieved. Does the following text indicate clearly that this specific project supported directly in any capacity to what the stakeholder is asking so that I can inspect in detail?
+
+Question from the stakeholder: """"Trained individuals (m/f) with improved knowledge and increased capacities to develop and implement solutions in climate-smart agriculture and food systems""""
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+""""{ """"score"""": """"<Yes|No|Maybe>"""", """"explanation"""": """"<Your explanation here>"""" }"""""" **Text to Analyze:** [INPUT_TEXT]","gpt-4o","None","Training materials developed and stakeholders trained on Climate-Smart Agriculture to improve their resilience to climate change. Vegetable farmers’ hubs in Kwara state were mapped. Key fresh vegetable production areas were visited in consultation with the Ministry of Agriculture and Agribusiness Support Service providers. Fresh vegetable farmers were organized into clusters within the state. 
+
+It was noted during field observations that vegetable production systems in the State are not climate-smart and farmers expressed limited awareness of climate-resilient approaches. The key crops grown by male and female farmers were noted and representative farmers from the clusters were invited to a training-of-trainer workshop on Climate Smart Agriculture. Training modules were developed on topics including the definition, causes, and impacts of climate change and the approaches to adaptation or mitigation. 
+
+A pilot training of 15 farmers, 2 staff of the Ministry of Agriculture, and 2 from Agribusiness Support Service Providers was organized.  Lead farmers organised a stepped-down training for farmers in their cluster (each with at least 15 members).  ","356"
+"4338","1210a","""Please read the text that belongs to a reported result in our system in CGIAR, and let me know if you think its content it is highly related to the following question we received from stakeholders about results achieved. Does the following text indicate clearly that this specific project supported directly in any capacity to what the stakeholder is asking so that I can inspect in detail?
+
+Question from the stakeholder: """"Trained individuals (m/f) with improved knowledge and increased capacities to develop and implement solutions in climate-smart agriculture and food systems""""
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+""""{ """"score"""": """"<Yes|No|Maybe>"""", """"explanation"""": """"<Your explanation here>"""" }"""""" **Text to Analyze:** [INPUT_TEXT]","gpt-4o","None","COP 27 event on Accelerating Digital Climate Services for resilient food systems in the Global South Tharayil Shereef Amjath Babu, agricultural economist in modeling and targeting, hosted an event on Accelerating Digital Climate Services for resilient food systems in the Global South, exploring the work of two CGIAR Initiatives: Securing the Food Systems of Asian Mega-Deltas (AMD) for Climate and Livelihood Resilience and Transforming Agrifood Systems in South Asia (TAFSSA) on November 17.  ","259"
+"4400","1210a","""Please read the text that belongs to a reported result in our system in CGIAR, and let me know if you think its content it is highly related to the following question we received from stakeholders about results achieved. Does the following text indicate clearly that this specific project supported directly in any capacity to what the stakeholder is asking so that I can inspect in detail?
+
+Question from the stakeholder: """"Trained individuals (m/f) with improved knowledge and increased capacities to develop and implement solutions in climate-smart agriculture and food systems""""
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+""""{ """"score"""": """"<Yes|No|Maybe>"""", """"explanation"""": """"<Your explanation here>"""" }"""""" **Text to Analyze:** [INPUT_TEXT]","gpt-4o","None","Launch of Food Systems Accelerator Programme at CGIAR week of science and practice of scaling agri-food system innovation workshop Science-based accelerator programme to support 10 agribusinesses in scaling their climate smart innovations. These innovations are aimed at smallholder farmers and other agrifood actors to solve pressing problems in the value chains and contribute to stronger and more sustainable food systems.  ","227"
+"4955","1210a","""Please read the text that belongs to a reported result in our system in CGIAR, and let me know if you think its content it is highly related to the following question we received from stakeholders about results achieved. Does the following text indicate clearly that this specific project supported directly in any capacity to what the stakeholder is asking so that I can inspect in detail?
+
+Question from the stakeholder: """"Trained individuals (m/f) with improved knowledge and increased capacities to develop and implement solutions in climate-smart agriculture and food systems""""
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+""""{ """"score"""": """"<Yes|No|Maybe>"""", """"explanation"""": """"<Your explanation here>"""" }"""""" **Text to Analyze:** [INPUT_TEXT]","gpt-4o","None","Consultation workshop on digital agriculture with value chain stakeholders in the crop sector in Vietnam The consultation workshop seeks to provide an overview of the current and past initiatives to move towards digital agriculture and explore opportunities and gaps to adopt technologies for the agriculture crop sector in Vietnman. Several digital tools and systems for rice production and farm management were presented including the tools for climate adaptation and monitoring in rice production, pest and disease risk identification and management, Smart mechanization and postharvest, and other decision support tools. 
+
+There were discussions on how these techonologies can be effectively used and provide complementary services with each other as well as how concerned stakeholders can work together.  ","283"
+"5257","1210a","""Please read the text that belongs to a reported result in our system in CGIAR, and let me know if you think its content it is highly related to the following question we received from stakeholders about results achieved. Does the following text indicate clearly that this specific project supported directly in any capacity to what the stakeholder is asking so that I can inspect in detail?
+
+Question from the stakeholder: """"Trained individuals (m/f) with improved knowledge and increased capacities to develop and implement solutions in climate-smart agriculture and food systems""""
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+""""{ """"score"""": """"<Yes|No|Maybe>"""", """"explanation"""": """"<Your explanation here>"""" }"""""" **Text to Analyze:** [INPUT_TEXT]","gpt-4o","None","Climate-smart agricultural practices for vegetable value chains in Ghana Smallholder farmers in Ashanti and Brong Regions in Ghana were introduced to the climate-smart agricultural practices using sac gardening technology to enable the production of nutritious vegetables for household consumption. This was followed by training on the Zero Energy Cooling Chamber, processing of tomatoes into puree, and vegetable drying to reduce post-harvest losses. The activity will improve the income of resource-poor farmers and then reducing the poverty incidence.  ","246"
+"5403","1210a","""Please read the text that belongs to a reported result in our system in CGIAR, and let me know if you think its content it is highly related to the following question we received from stakeholders about results achieved. Does the following text indicate clearly that this specific project supported directly in any capacity to what the stakeholder is asking so that I can inspect in detail?
+
+Question from the stakeholder: """"Trained individuals (m/f) with improved knowledge and increased capacities to develop and implement solutions in climate-smart agriculture and food systems""""
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+""""{ """"score"""": """"<Yes|No|Maybe>"""", """"explanation"""": """"<Your explanation here>"""" }"""""" **Text to Analyze:** [INPUT_TEXT]","gpt-4o","None","3 day-CGIAR Food Systems Accelerator Kick-Off Workshop in Rwanda for the first cohort of 10 selected agribusinesses This report provides an overview of the CGIAR Food Systems Accelerator (CFSA) program’s Kick-off workshop held at Norrsken House in Rwanda. The CFSA is an agribusiness capacity-strengthening support program developed by WP 3 in the UU Initiative. It is a science-driven accelerator program designed to support agribusinesses scale climate-smart innovations in agrifood systems to solve pressing problems and to contribute to stronger and more sustainable value chains in East and Southern African countries. The accelerator leverages the portfolio of CGIAR innovations as well as the expertise of a wide network of international researchers from various disciplines to provide climate-smart agriculture technical assistance. 
+
+The objective of the workshop was to The workshop aimed to familiarize participants with the program's features, foster collaboration between CGIAR researchers and the agribusiness cohort for technical assistance, identify areas for climate-smart agriculture support through needs assessment, and facilitate relationships and collaboration opportunities with ecosystem stakeholders, achieved through various networking opportunities. CGIAR Food Systems Accelerator Kick-Off Workshop Skip to main content Dear CGSpace users, we have performed some minor upgrades to the user interface. If it does not look right you should refresh the page while holding the Shift key. Communities & Collections Browse Navigate CGIAR Centers Statistics English Català Čeština Deutsch Español Français Gàidhlig Italiano Latviešu Magyar Nederlands Polski Português Português do Brasil Srpski (lat) Suomi Svenska Türkçe Tiếng Việt Қазақ বাংলা हिंदी Ελληνικά Српски Yкраї́нська Log In Note: CGIAR users should log in with their Active Directory username and password. For example, if your email is j.smith@cgiar.org, you would use jsmith here. Log in New user? Click here to register. Have you forgotten your password? Home CGIAR 2030 portfolio CGIAR 2030 research initiatives (2022–2024) CGIAR Initiative on Diversification in East and Southern Africa CGIAR Food Systems Accelerator Kick-Off Workshop CGIAR Food Systems Accelerator Kick-Off Workshop Loading... Files Report (2.3 MB, pdf) Authors Zulu-Hume, Mercy F. Dahl, Hauke Nkosi, Mahlatse Ng'anga, Salome Kirimi, Peter Bohjanen, Carey Njiru, AnnRita Date Issued 2023-02-25 Date Online Language en Type Report Review Status Access Rights Open Access Usage Rights Other Metadata Full item page Share Citation Zulu–Hume, M., Dahl, H., Nkosi, M., Ng’ang’a, S., Kirimi, P., Bohjanen, C., & Njiru, A. (2023). CGIAR Food Systems Accelerator Kick-Off Workshop, Kigali, 21–24 February 2023. CGIAR Initiative on Diversification in East and Southern Africa. Permanent link to cite or share this item https://hdl.handle.net/10568/130729 External link to download this item DOI Abstract/Description This report provides an overview of the CGIAR Food Systems Accelerator (CFSA) program’s Kick-off workshop held at Norrsken House in Rwanda. The Kick-off workshop serves as a key milestone for the program because it is the official commencement of the technical assistance of the first cohort of 10 selected agribusinesses. It highlights the program’s objectives, addresses the challenges faced by agribusinesses in securing private sector investment, presents an outline of the needs for the APs as input for the program curriculum co-creation, and sets clear intentions for achieving WP 3’s objectives through the CFSA program. Contributes to SDGs AGROVOC Keywords climate-smart agriculture ; sustainable agriculture ; food systems ; agro-industrial sector Subjects Countries Rwanda Regions Africa ; Eastern Africa Organizations Affiliated to the Authors Alliance of Bioversity International and CIAT ; International Water Management Institute ; International Fertilizer Development Center ; Rallying Cry Investors/sponsors CGIAR Trust Fund CGIAR Action Areas Resilient Agrifood Systems CGIAR Impact Areas Climate adaptation and mitigation ; Gender equality, youth and social inclusion ; Poverty reduction, livelihoods and jobs CGIAR Initiatives Diversification in East and Southern Africa Collections CGIAR Initiative on Diversification in East and Southern Africa Alliance Bioversity CIAT Reports Alliance Research Lever 3: Climate Action DSpace software copyright © 2002-2024 LYRASIS About Cookie settings Privacy policy Send Feedback File: download
+Page 1:
+ 
+ 
+ 
+CGIAR Food Systems Accelerator Kick -Off Workshop  
+Work Package 3  
+Report  
+Ukama Ustawi  
+CGIAR Initiative on Diversification in East and Southern Africa  
+21 – 24 February 2023  
+Norrsken House Kigali , Rwanda  
+Prepared by:  Mercy Zulu – Hume  (ABC) , Hauke Dahl  (IWMI) , Mahlatse Nkosi  (IWMI) , 
+Salome Ng’ang’a  (2SCALE) , Peter Kirimi  (2SCALE) , Carey Bohjanen (The Rallying Cry)  and 
+AnnRita Njiru  (The Rallying Cry)  
+Disclaimer: This publication has been prepared as an output of the CGIAR Research Initiative on Ukama Ustawi: Diversification for resilie nt agrifood systems in 
+East and Southern Africa and  has not been independently peer -reviewed. Responsibility for editing, proofreading, layout, opinions expressed, and any possible 
+errors lies with the authors and not the institutions involved.  
+Acknowledgement   
+This work was carried out with support from the CGIAR  initiative, Ukama - Ustawi (UU): Diversification for resilient agrifood systems in East and Southern Africa , 
+and we would like to thank all the funders who support this research through their contributions to  the CGIAR Trust Fund .  
+About CGIAR   
+CGIAR is a global research partnership for a food -secure future. To learn more about Ukama Ustawi and other initiatives in the CGIAR research portfolio, please 
+visit https://www.cgiar.org/research/cgi ar-portfolio/  
+Page 2:
+                                                               
+2 
+ 
+Table of Contents  
+Executive Summary  ................................ ................................ ................................ ..........  3 
+Introduction  ................................ ................................ ................................ .....................  3 
+The CGIAR Food Systems Accelerator Overview  ................................ ................................ ........  4 
+Objective  ................................ ................................ ................................ ................................ . 4 
+Partners  ................................ ................................ ................................ ................................ ... 4 
+Focus Countries  ................................ ................................ ................................ ........................  4 
+Kick-off Workshop  ................................ ................................ ................................ ............  5 
+Objective of the Workshop  ................................ ................................ ................................ .......  5 
+Discussions and Activities  ................................ ................................ ................................ . 6 
+Opening remarks  ................................ ................................ ................................ ......................  6 
+Panel Discussion  ................................ ................................ ................................ .......................  9 
+Cohort Reveal  ................................ ................................ ................................ ........................  11 
+Cohort Building Challenge  ................................ ................................ ................................ ...... 13 
+Accelerator Partners and Technical Assistance Specialists  ................................ ...............  14 
+Program Introduction and Overview  ................................ ................................ .......................  14 
+Co-creative “wish -list” Development  ................................ ................................ ......................  15 
+Design and Diagnostics Session  ................................ ................................ ...............................  17 
+Gender Equality and Social Inclusion (GESI)  ................................ ................................ .............  17 
+Impact Measurement and Management (IMM)  ................................ ................................ .......  18 
+Enabling Environment (EE ) ................................ ................................ ................................ ...... 18 
+Investment Readiness  ................................ ................................ ................................ ............  19 
+Internal Ukama -Ustawi Team Reflection  ................................ ................................ .........  19 
+Concluding Remarks  ................................ ................................ ................................ .......  21 
+Annex ure ................................ ................................ ................................ ........................  22 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+Page 3:
+                                                               
+3 
+ 
+Executive Summary  
+This report provides an overview of the CGIAR Food Systems Accelerator ( CFSA) program’s 
+Kick-off workshop held at Norrsken House in Rwanda. The Kick -off workshop serves as a key 
+milestone for the program  because it is the official commencement of the tech nical assistance 
+of the first cohort of 10 selected agribusinesses.  
+The CFSA is an agribusiness support of Work Package 3 (WP 3) within the Ukama Ustawi (UU) 
+East and Southern Africa Initiative.  
+The workshop brought together the CGIAR research and science community, government 
+officials, entrepreneur support organisations (ESOs), investors, and financial institutions, 
+along with the 10 selected agribusinesses (Accelerator Partners).  The Accelerator Partners  
+(APs) come from Kenya, Rwanda, Uganda,  and Zambia, with  50% being women  founded and 
+led enterprises . Collectively they work with over 39,000 smallholder farmers.  
+The objective of the workshop was to introduce the Accelerator Partners (APs) to the CGIAR 
+researc h community of technical assistance providers and the wider ecosystem, create an 
+inclusive co -creation agenda, build an innovation community, and identify further WP 
+linkages within the UU Initiative.   
+The report highlights the program’s objectives, addres ses the challenges faced by 
+agribusinesses in securing private sector investment, presents an outline of the needs for the 
+APs as input for the program curriculum co -creation, and sets clear intentions for achieving 
+WP 3’s objectives through the CFSA progr am.  
+Overall, the CFSA programs aims to accelerate the scaling up of climate -smart agricultural 
+solutions to smallholder farmers and other ecosystem stakeholders and build partnerships to 
+promote sustainable food systems in the region.  
+Introduction  
+The CFSA is an agribusiness capacity -strengthening support program developed by WP 3 in 
+the UU Initiative. It  is a science -driven accelerator program designed to support 
+agribusinesses scale climate -smart innovations in agrifood systems to solve pressing 
+problem s and to contribute to stronger and more sustainable value chains in East and 
+Southern African countries. The accelerator leverages the portfolio of CGIAR innovations as 
+well as the expertise of a wide network of international researchers from various disc iplines. 
+Agriculture and food systems knowledge is combined with social sciences to create systemic 
+change while considering commercial parameters to ensure business success.  
+The CFSA program  was launched in  Nairobi, Kenya on 23rd November 2022  with IFDC -
+2SCALE . This collaboration aims to showcase the synergistic relationship between a research -
+driven organization like CGIAR  and an Entrepreneur Support Organisation (ESO)  like IFDC -
+2SCALE , leveraging their respective strengths to bring climate -smart in novations to scale.  
+Page 4:
+                                                               
+4 
+ 
+ 
+The CFSA team launched the 6 -month technical assistance phase of the program with an 
+event at Norrsken Kigali House, Rwanda . During the event, the team introduced the first 
+cohort of 10 APs  from Kenya, Rwanda, Uganda,  and Zambia  to representatives from the 
+CGIAR research and science community, government officials, investors, ESOs and financial 
+institutions. The event aimed to facilitate connections between the cohort and technical 
+assistance providers, identify areas for innovat ive climate -smart agricultural solutions, share 
+market insights, and foster collaborations among ecosystem stakeholders.  
+The CGIAR  Food Systems Accelerator Overview   
+The selected A Ps will receive support and training over a period of 6 months with a 
+comb ination of technical assistance in climate -smart agriculture (CSA) , impact measurement 
+and management (IMM)  and investment readiness . Additionally, they will receive  access to 
+investors for follow -on private capital  and mentoring from industry experts. Finally, a de -
+risking grant of USD 20,000 will be provided to four APs  from each of the 4 countries  that 
+successfully complete the program.   The APs will continue to receive post -program support 
+for sustainable growth and fundraising  after grad uating from the accelerator  through the 
+program's Alumni network .  
+Objective  
+The objective of the accelerator program  is to support up to 30 agribusinesses (40% women -
+led and 40% youth -led) with technical assistance  and facilitat e at least USD 5 million of new 
+finance that has been unlocked, or in the process of being invested through debt, equity, or 
+grants.  
+Partners  
+UU WP 1  - 5 is collaborating with the accelera tor program  by providing CSA technical support 
+to the APs, whereas WP 6 is support ing on  technical support to  scale CGIAR innovations.  The 
+non-CGIAR partners  supporting implementation are  IFDC -2SCALE  and The Rallying Cry .    
+Focus Countries   
+The program will be implemented in three phases and across 8 countries , with the first cohort 
+being from Kenya, Rwanda, Uganda,  and Zambia.   
+ 
+ 
+ 
+Page 5:
+                                                               
+5 
+ 
+Kick -off Workshop  
+ 
+The CFSA's core team initiated an open call for applications on 23rd November 2022 , which 
+attracted 849 applications  and converted into  288 highly competitive submitted applications  
+from the priority target countries. Following two rounds of selection, the team co nducted 
+interviews with 15 shortlisted candidates to delve deeper into their innovations that relate to 
+the four priority innovation themes: mechanization and irrigation, conservation, nutrition, 
+and agricultural risk management.  
+After the final selection process, the CFSA successfully onboarded the top 10 agribusinesses, 
+which were then revealed to a broader audience  of ecosystem stakeholders , including the 
+CGIAR science and research community, government officials, investors, entrepreneur 
+support organizations, and financial institutions in Rwanda on  22nd February  2023 . 
+Objective of the Workshop  
+The purpose of the workshop was to provide support to the APs in several  ways : 
+Firstly,  the workshop aimed to familiarize them with the program so that they could fully 
+understand how it operates and how it can help them achieve their goals. This included 
+providing an overview of the program's key features and benefits.  
+Secondly,  the worksho p aimed to establish connections between the CGIAR researchers and 
+the agribusiness cohort. This was done to create a collaborative environment where both 
+parties could share their expertise and knowledge to identify opportunities to support the 
+APs with t echnical assistance . The researchers were able to share the latest research findings 
+and innovative practices in the field of climate -smart agriculture, while the agribusiness 
+cohort were able to provide valuable insights into the practicalities of impleme nting these 
+practices on the ground.  A list of CGIAR researchers providing technical assistance can be 
+found in the Annex.  
+Thirdly , the workshop aimed to identify areas and scope of work for climate -smart agriculture 
+technical assistance for the agribusiness cohort. This involved a high -level  needs assessment 
+to determine the areas where the APs needed support, such as in improving ir rigation 
+techniques, adopting more efficient farming practices, and developing a lending product for 
+smallholder farmers .  
+Page 6:
+                                                               
+6 
+ 
+Finally , the last objective of the workshop was to facilitate the development of strong 
+relationships and collaboration opportunities  between the APs and a range of important 
+ecosystem stakeholders. One of the keyways  in which this was achieved was by providing a 
+range of networking opportunities throughout the event. The APs  had the opportunity to 
+meet and connect with government offic ials, investors, financial institutions, agriculture 
+corporates, and other key ecosystem stakeholders who were present at the workshop. This 
+created a valuable platform for the APs to showcase their businesses and to learn from the 
+expertise and experiences of these influential individuals and organizations.  
+Discussions and Activities  
+ 
+Day One: 22nd February 2023  
+Opening remarks  
+The event commenced with opening remarks from Dr Evan Girvetz, Africa Lead for Climate 
+Action and Global Lead Finance and Investments for Climate Action at The Alliance of 
+Bioversity - CIAT, and Co-lead for the UU initiative.  
+Picture 1 – CGIAR Food Systems Accelerator APs and UU representatives  
+Page 7:
+                                                               
+7 
+ 
+He introduced the UU initiative and its 
+objectives as a regional initiative led by CGIAR 
+that aims to promote agriculture, food security, 
+and environmental sustainability in East and 
+Southern Africa. The initiative is inspired by the 
+concept of Ukama  Ustawi , which emphasizes 
+the importance of building strong relationships 
+and supporting one another to achieve 
+prosperity and well -being. Dr Girvetz stated 
+that UU brings together diverse stakeholders, 
+including agribusinesses, researchers,  private 
+sector funders, and policymakers to co -create solutions for sustainable development in 
+agriculture in the region. It focuses on a range of thematic areas, including crop and livestock 
+improvement, climate adaptation, natural resource management, a nd nutrition -sensitive 
+agriculture. The initiative also recognizes the importance of gender equity and social inclusion 
+in sustainable development and aims to generate evidence -based solutions that can be scaled 
+up and replicated in other contexts. The col laborative approach of U U promotes learning and 
+innovation.  
+Dr Girvetz further introduced the CFSA program as  an agribusiness support program within 
+the UU initiative. It aligns with the principles of Ukama Ustawi and emphasizes the importance 
+of building strong relationships and partnerships to co -create solutions for the agriculture 
+sector. The CFSA focuses on accelerating the impact of research and innovation on food 
+systems, bridging the gap between research and practice by engaging diverse stakeholders.  
+Finally, he presented the importance of the accelerator program to the private sector saying 
+that it offers  numerous benefits, including access to innovative solutions, market 
+opportunities, collaboration and partnerships, and risk management.  
+• Firstly, the program provides a platform for agribusinesses and the private sector to 
+access cutting -edge research and innovation in food systems. This can help 
+agribusinesses  develop new products, services, and business models that are good for 
+the environment  and are socially inclusive . 
+• Secondly, the program supports  agribusinesses in  tapping into new markets and 
+fosteri ng strong linkages, helping agribusinesses  differentiate themselves. The 
+collaboration and partnership approach of the program can help the private sector 
+build new relationships and networks and  co-create solutions that are more effective 
+and sustainable . 
+• Finally, the program can help the private sector manage risks related to food systems. 
+By promoting sustainable and resilient food systems, the program can reduce risks 
+related to climate change, and financial and social risks.  
+Picture 2 – Dr. Evan Girvetz, UU Co -lead 
+Page 8:
+                                                               
+8 
+ 
+The second pre senter was Mr Eric Gatera, Chief 
+Technical Officer of the Ministry of Agriculture and 
+Animal Resources of Rwanda, represent ing the 
+Ministry at the event . He highlighted the importance 
+of food systems to the region . Mr Gatera highlighted 
+the following:  
+• Agriculture is known to be the biggest 
+contributor to total employment  in Africa  
+with current statistics indicating that 43.8% 
+of emp loyment on the continent is attributed 
+to the agricultural sector , and  52% of Africa ’s 
+rural population is involved in agriculture.  
+• In 2021 the government of Rwanda hosted a food systems dialogue to bring together 
+governmental, non -governmental and private sector stakeholders to discuss the 
+transformative future of food systems.  
+• The CGIAR is a well -known agricultural research and innovation that encourages 
+capacity building at a national level for several African countries for more than 50 
+years . The government of Rwanda welcomes this partnership considering the new 
+climate change threats that continue to present themselves in thei r food systems and 
+agricultural priorities.  
+In his closing remarks, Mr Eric Gatera expressed his gratitude to all the attendees for their 
+active participation and interest in the future of our shared food systems. He emphasized the 
+importance of strengthen ed collaboration among stakeholders to achieve the 2030 SDG 
+goals, including the critical goal of ending hunger.  
+The CFSA  Program Lead, Mercy Zulu -Hume,  then  made a presentation to explain the  role and 
+purpose of the accelerator  program . She highlighted that one of the major challenges faced 
+in agriculture in East and Southern Africa is inefficient agriculture value chains and the lack of 
+resilience against climate shocks. The most affected by these inefficiencies and threats are 
+the smallhold er farmers. However, the potential impact of addressing these market gaps is 
+immense. Agribusinesses and agritechs across East and Southern Africa are working towards 
+transforming the sector by offering new innovations that increase yields and productivity  
+sustainably, de -risk and improve value chain linkages, increase farmer incomes, and 
+strengthen land, food, and water systems.  
+She further added that while agribusinesses and agritechs  are doing a great job in 
+strengthening food systems, they still face s everal challenges and need support. One of the 
+primary challenges is the need for access to the required technical skills and knowledge to 
+develop and scale products and services. R&D costs are also high, which makes it difficult to 
+develop stronger techni cal solutions. Additionally, regulatory issues in the agriculture sector 
+in the region can be difficult to navigate, which creates problems for operations and 
+Picture 3 – Mr. Eric Gatera, Chief Technical 
+Officer, Ministry of Agriculture and Animal 
+Resources of Rwanda  
+Page 9:
+                                                               
+9 
+ 
+expansion into exports. There are also financial, environmental, and social risks that are 
+diffic ult to assess and manage. At the centre  of the challenges that agribusinesses and 
+agritechs  face is access to financing to expand and scale, and in some cases, to just survive. 
+The agriculture sector is one of the most capital -intensive and “ capital -hungry ” investment 
+sectors in the region. It was highlighted that the agribusinesses present here today can explain 
+how enormous their financing needs are and just how fast money runs out. Despite this, it is 
+also one of the most underfunded sectors. Over the de cades, the public sector has been 
+funding agriculture, but to bridge the funding gap, we need the involvement of the private 
+sector.  
+Finally,  Mercy Zulu -Hume explained that to address these challenges, the CGIAR Food 
+Systems Accelerator Program  was developed.  The program operates in the same way as a 
+conventional accelerator program, providing investment readiness, but with one distinct 
+difference. It complements  this offering with the best available scientific technical assistance 
+to support ag ribusinesses and agritechs to address the challenges facing food systems.  
+The program takes an evidence -based approach that ensures that the technical assistance 
+offered is based on the best available scientific evidence to guarantee solutions offered are 
+effective and relevant to the needs of agribusinesses and farmers. In this way, agribusinesses 
+are empowered to make better decisions because they have the best available and up -to-
+date information, which can improve their outcomes. The program aims to mee t 
+agribusinesses at their point of need by strengthening their capacity , so they can scale CSA 
+innovations to the farmers they work with  and contribute to more sustainable food systems. 
+The program also aims to increase investor confidence by reducing the risk of investing in 
+agribusiness ventures and providing a strong pipeline of inclusive and sustainable 
+agribusiness and agritechs . 
+Panel Discussion  
+To discuss and provide relevant information on diversified finance options, the team 
+organized a panel discussion titled "" Access to Finance for Agribusinesses in East and 
+Southern Africa ,"" moderated by Mercy Zulu -Hume, the Program  Lead. The panel included 
+experts such as Sheila Alumo, the Founder of East Africa Development Company Limited , and 
+one of the agribusinesses selected for the program ; Judith Ngonyo, Investment Manager a t 
+Goodwell Investments ; Peter Kirimi, Senior Financial Inclusion Specialist at IFDC -2SCALE; and 
+Hauke Dahl, Program  Co-lead.  
+ 
+The panel discussed that t raditional banking systems often pose a challenge for 
+agribusinesses and agritechs to obtain funding, as banks require surety against the risk they 
+undertake in granting loans. The panel offered various financing options, including grants, 
+equity, debt financing, and venture capital, depending on the stage of the business. 
+Moreover, a social bias against women in the agricultural  sector was highlighted, where Sheila 
+Page 10:
+                                                               
+10 
+ 
+Alumo shared her experience of struggling to secure financing at the inception of her business 
+due to the lack of audited financials, proven business track record, and collateral.  
+To address these challenges, the CFSA has implemented robust vetting processes for 
+agribusinesses, agritechs, and investors, ensuring balanced matching, risk reduction, and the 
+creation of stronger pipelines with APs and investors. The panel discussion was an essential 
+step towards providing r elevant information and creating opportunities for funding for 
+agribusinesses and agritechs in East and Southern Africa.  
+ 
+Picture 4 – L to R: Sheila Alumo (EADC), Judith Ngonyo (Goodwell Investments), Peter Kirimi (2SCALE), Hauke Dahl 
+(IWMI - CGIAR) and Mercy Zulu -Hume (ABC – CGIAR)  
+Page 11:
+                                                               
+11 
+ 
+Cohort Reveal  
+ 
+The program then progressed to the cohort reveal . This marked a significant milestone in the 
+program's journey towards supporting agribusinesses in East and Southern Africa. The 
+unveiling ceremony was a moment of great excitement and anticipation as the program's 
+team presented the selected cohort to the stakeholders  present. The cohort comprises a 
+diverse group of entrepreneurs and innovators who are working on sustainable solutions to 
+the challenges facing the food systems in the region. They were selected based on their 
+potential to create  transformativ e impact in the agriculture sector. This first cohort includes 
+a range of agribusinesses and agritechs that work across the value chain, from production and 
+processing to marketing and distribution. The unveiling of this cohort is a clear demonstration 
+of the program's commitment to supporting inclusive and sustainable food systems in the 
+region . Collectively, these agribusinesses are working with over 40,000 smallholder farmers  
+across East and Southern Africa. A summary  of the cohort is provided below:  
+Table 1 - Summary of the cohort of agribusinesses  
+Country  Name of 
+Agribusiness  Description of business activities  Founder 
+(M/F) 
+Rwanda  Afri - Farmers 
+Market    Leveraging technology and the power of E -
+commerce, this social enterprise is on a mission 
+to help farmers across Africa practice sustainable 
+farming while accessing markets at fair prices.  Male  
+Picture 5 – The CGIAR  Food Systems Accelerator Program first cohort of 10 agribusinesses from Kenya, Rwanda, 
+Uganda, and Zambia  and The Rallying Cry Founder Carey Bohjanen  (far right)  
+Page 12:
+                                                               
+12 
+ 
+Aggregator Trust 
+Rwanda  Together with its partners the Aggregator Trust 
+is working to build the resilience of farmers 
+through  different seasons ensuring access to 
+relevant research and information for 
+sustainable farming.  Female  
+Kenya  Batian Nuts  Incorporated in 2017, this company sources 
+macadamia nuts from smallholder farmers for 
+world -class agro -processing, with growth plans 
+of venturing into the groundnuts and cashew 
+nuts markets shortly.  Male  
+Stable Foods  Stable Foods provides an end -to-end solution to 
+help smallholder farmers produce at scale. From 
+irrigation as a service to providing inputs and 
+training, farmers can select solutions suitable to 
+their needs.  Male  
+The Insectary  Applying circular principles, The Insectary Kenya 
+returns food waste to the food chain by using 
+black soldier flies to produce an  alternative 
+protein source for animal feeds. Their research -
+based solution  targets medium -scale farmers 
+seeking an affordable and consistent supply of 
+protein.  Female  
+Shamba Records  With over 20 years of combined experience in 
+agriculture and ICT, Shamba Records is an Agtech 
+company to digitize the sub -Saharan Agricultural 
+sector.  
+The company collects and aggregates farmers’ 
+production data on a re al-time basis, intending 
+to link it to markets.  Male  
+Zambia  Farm Depot  Recognizing that Zambian rural farmers lack 
+access to relevant information and inputs for 
+profitable farming, and with locations close to 
+the farmers, Farm Depot strives to provide high -
+quality inputs for both crops and livestock as well 
+as advice.  Female  
+Forest Africa 
+Zambia  Zambia is endowed with several indigenous wild 
+fruits which this company has monetized by 
+producing juice. It is already at a capacity of 
+15,000 litres per month and its products are 
+stocked across retail outlets in Lusa ka. Male  
+Page 13:
+                                                               
+13 
+ 
+Uganda  Eastern Africa 
+Development 
+Company Ltd  A social enterprise registered in 2016 and with a 
+network of 3000 farmers, this company’s major 
+focus is value addition resulting in the production 
+of highly fortified foods e.g., flour. Its objectives 
+include contributi ng to ending Uganda’s multi -
+nutritional deficiencies while at the same time 
+increasing farmers’ wealth.  Female  
+Yellow Star 
+Produce and 
+Processors (U) Ltd  A family business intent on poverty reduction 
+through employment creation, the company 
+produces nutritious food products for a range of 
+customers including flour, peanut butter, honey 
+and so on.   Female  
+ 
+Cohort Building Challenge  
+A team -building activity was organized as the final group activity of the day for the APs and 
+some of the CGIAR researchers. The activity was designed to be both physically and 
+intellectually challenging, with the objective of bu ilding emotional capital that could be 
+leveraged for the next 6 months of the accelerator and beyond. The activity was facilitated by 
+AnnRita Njiru from The Rallying Cry, and after its completion, a discussion was held on lessons 
+from the challenge that co uld be applied to entrepreneurship.  
+The participants highlighted several key takeaways, including the importance of an enabling 
+environment for achieving business goals, setting realistic goals,  and taking practical action to 
+achieve them, the need for in vestors to be more empathetic with entrepreneurs, and the 
+benefits of choosing the path of least resistance and focusing on low -hanging fruits first in 
+terms of strategy and goal setting. The team -building  event concluded with an informal 
+networking session among all participants . 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Page 14:
+                                                               
+14 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Accelerator Partners  and technical assistance specialists   
+Day Two : 23rd February 2023  
+Program Introduction and Overview  
+The main objective of the day was to have a formal introduction of the Technical Assistance 
+providers and the APs. The main focus was to establish an env ironment that will encourage 
+both parties to participate in co -creating the program curriculum. This will be done by 
+conducting a needs a ssessment  of the A Ps. The accelerator program will be executed in three 
+phases, namely:  
+1. Diagnostics phase (needs assessment) ( 1 month)  
+2. Design phase  (co-creation)  (1 month)  
+Picture 6 – Community building exercises between APs, CGIAR researchers and other ecosystem 
+stakeholders  
+Page 15:
+                                                               
+15 
+ 
+3. Delivery phase (4 months)  
+Co-creative “wish -list” Development  
+The second day of the workshop included the APs, CGIAR researchers and investment 
+readiness TA advisors . The first item on the agenda was a session led by Carey  Bohjanen , in 
+which the A Ps shared their feedback  on the workshop so far. The participants used words 
+such as ""exciting,"" ""eye -opening,"" ""inspiring,"" ""invigorating,"" ""valuable,"" ""informative, "" 
+""promising,"" and ""surprising"" to describe their experience. Based on this feedback, Carey  
+Bohjanen  guided the Accelerator Partners in identifying their priority technical assistance 
+needs. The resulting "" wish list "" is summarized below:  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Page 16:
+                                                               
+16 
+ 
+Table 2 - Summary of technical assistance wish -list 
+ 
+Page 17:
+                                                               
+17 
+ 
+ 
+Design and Diagnostics Session  
+During the workshop, IFDC -2SCALE, who are implementing partners in the CFSA program , 
+emphasized the importance of setting expectations from the agribusiness point of view to 
+avoid redundancy in the program's design. It was noted that the APs need to understand how 
+the program will benefit their businesses, avoid repetition that is common  in various 
+accelerator programs, and capture the interests of all stakeholders involved.  
+To achieve this, Salome Ng’ang’a and Peter Muthee from IFDC -2SCALE introduced the 
+Problem, Solution, and Impact (PSI) Framework, with a focus on creating shared busi ness 
+value. This framework will be integrated into the six -month technical assistance programming 
+starting on March 1st, 2023, as a d iagnostic  and d esign  process to develop a solution and 
+program specific to the partner's needs.  
+To wrap up the day, some CGIAR technical assistance specialists presented on climate -smart 
+topical focus areas. The main focus was on Gender Equality and Social Inclusion (GESI), I mpact 
+Measurement and Management (IMM), and the Enabling Environment (EE). These areas are 
+key themes  of the CFSA  in achieving its intended objectives : 
+Gender Equality and Social Inclusion (GESI) – Dr Karen Nortje, Senior Researcher  
+(IWMI)  
+One of the UU i nitiative's objectives is to include  women and youth in 
+empowering their engagement in the agribusiness ecosystems by 
+mapping challenges and opportunities to address gender and social 
+inequality and applying inclusive and coordinated interventions for 
+transformative change. WP 5  (Gender Equa lity and Social Inclusion 
+(GESI) ) represented by Dr Karen Nortje, seek to support the CFSA  by 
+Page 18:
+                                                               
+18 
+ 
+strengthening the capacity and agency of men and women within the agribusiness ecosystem. 
+During the presentation to the APs, Dr Karen Nortje emphasized that gend er should not be 
+viewed as solely pertaining to females. Additionally, she highlighted th","7464"
+"5837","1210a","""Please read the text that belongs to a reported result in our system in CGIAR, and let me know if you think its content it is highly related to the following question we received from stakeholders about results achieved. Does the following text indicate clearly that this specific project supported directly in any capacity to what the stakeholder is asking so that I can inspect in detail?
+
+Question from the stakeholder: """"Trained individuals (m/f) with improved knowledge and increased capacities to develop and implement solutions in climate-smart agriculture and food systems""""
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+""""{ """"score"""": """"<Yes|No|Maybe>"""", """"explanation"""": """"<Your explanation here>"""" }"""""" **Text to Analyze:** [INPUT_TEXT]","gpt-4o","None","Stakeholder engagement for exploring opportunities and challenges in rice-sweet potato cropping systems for climate adaptation in Vietnam The Asian Mega Deltas (AMD) Initiative is exploring various options for intensifying and diversifying farms in Vietnam for climate adaptation. To effectively do this and scale this initiative, the AMD has engaged various stakeholders including farmers to conduct trials, identify oppotunities and challenges in developing and scaling the rice-sweetpotato production systems. After several meetings and engagements, the AMD and stakeholders were able to produce a work plan and agree on key partnership arrangements.  ","265"
+"7202","1210a","""Please read the text that belongs to a reported result in our system in CGIAR, and let me know if you think its content it is highly related to the following question we received from stakeholders about results achieved. Does the following text indicate clearly that this specific project supported directly in any capacity to what the stakeholder is asking so that I can inspect in detail?
+
+Question from the stakeholder: """"Trained individuals (m/f) with improved knowledge and increased capacities to develop and implement solutions in climate-smart agriculture and food systems""""
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+""""{ """"score"""": """"<Yes|No|Maybe>"""", """"explanation"""": """"<Your explanation here>"""" }"""""" **Text to Analyze:** [INPUT_TEXT]","gpt-4o","None","MSc student: Co-designing cropping systems to adapt climate change in Zimbabwe's vulnerable district of Murehwa. MSc research as part of climate change adaptation R&D  ","186"
+"7300","1210a","""Please read the text that belongs to a reported result in our system in CGIAR, and let me know if you think its content it is highly related to the following question we received from stakeholders about results achieved. Does the following text indicate clearly that this specific project supported directly in any capacity to what the stakeholder is asking so that I can inspect in detail?
+
+Question from the stakeholder: """"Trained individuals (m/f) with improved knowledge and increased capacities to develop and implement solutions in climate-smart agriculture and food systems""""
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+""""{ """"score"""": """"<Yes|No|Maybe>"""", """"explanation"""": """"<Your explanation here>"""" }"""""" **Text to Analyze:** [INPUT_TEXT]","gpt-4o","None","MSc student: Co-designing cropping systems to adapt climate change in Zimbabwe's vulnerable district of Murehwa. MSc research as part of climate change adaptation R&D  ","186"
+"9927","1210a","""Please read the text that belongs to a reported result in our system in CGIAR, and let me know if you think its content it is highly related to the following question we received from stakeholders about results achieved. Does the following text indicate clearly that this specific project supported directly in any capacity to what the stakeholder is asking so that I can inspect in detail?
+
+Question from the stakeholder: """"Trained individuals (m/f) with improved knowledge and increased capacities to develop and implement solutions in climate-smart agriculture and food systems""""
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+""""{ """"score"""": """"<Yes|No|Maybe>"""", """"explanation"""": """"<Your explanation here>"""" }"""""" **Text to Analyze:** [INPUT_TEXT]","gpt-4o","None","Training among community producers on the importance of implementing practices for Climate-Smart Sustainable Agriculture (CSSA) in Zacapa, Zacapa, Guatemala The objective of this workshop was to increase the knowledge of Climate-Adapted Agriculture among community producers, promoting good agricultural practices. Given that it is considered one of the most viable approaches in soil reconstruction, the restoration of the soil is inherently linked to the mitigation of effects resulting from climate change. The imparted knowledge enables the improvement of farmers' livelihoods through the proper management of natural resources, thereby achieving sustainable development.  ","264"
+"9953","1210a","""Please read the text that belongs to a reported result in our system in CGIAR, and let me know if you think its content it is highly related to the following question we received from stakeholders about results achieved. Does the following text indicate clearly that this specific project supported directly in any capacity to what the stakeholder is asking so that I can inspect in detail?
+
+Question from the stakeholder: """"Trained individuals (m/f) with improved knowledge and increased capacities to develop and implement solutions in climate-smart agriculture and food systems""""
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+""""{ """"score"""": """"<Yes|No|Maybe>"""", """"explanation"""": """"<Your explanation here>"""" }"""""" **Text to Analyze:** [INPUT_TEXT]","gpt-4o","None","Training on the importance of implementing practices for Climate-Smart Sustainable Agriculture (CSSA) in the El Sompopero community, Zacapa, Guatemala The objective of this workshop was to enhance the knowledge of Climate-Adapted Agriculture among community producers, promoting good agricultural practices. It is considered one of the most viable approaches in soil reconstruction. The restoration of the soil is inherently linked to the mitigation of the effects resulting from climate change. The imparted knowledge allows for the improvement of farmers' livelihoods through the proper management of natural resources, thereby achieving sustainable development.  ","265"
+"11607","1210a","""Please read the text that belongs to a reported result in our system in CGIAR, and let me know if you think its content it is highly related to the following question we received from stakeholders about results achieved. Does the following text indicate clearly that this specific project supported directly in any capacity to what the stakeholder is asking so that I can inspect in detail?
+
+Question from the stakeholder: """"Trained individuals (m/f) with improved knowledge and increased capacities to develop and implement solutions in climate-smart agriculture and food systems""""
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+""""{ """"score"""": """"<Yes|No|Maybe>"""", """"explanation"""": """"<Your explanation here>"""" }"""""" **Text to Analyze:** [INPUT_TEXT]","gpt-4o","None","Webinar: Unveiling the Nexus between Agrifood Systems and Climate Change: Harvesting insights from latest Intergovernmental Panel on Climate Change reports This was a webinar organised by the CGIAR/CIMMYT where the Intergovernmental Panel on Climate Change (IPCC)  authors from the CGIAR, the WGIII Co-Chair of IPCC, and speakers from Food Agriculture Organisation and International Fund for Agricultural Development came together to discuss the importance of agrifood systems in IPCC assessments. CGIAR's Agriculture Breakthrough 2023 Launch Event Skip to main content Dear CGSpace users, we have performed some minor upgrades to the user interface. If it does not look right you should refresh the page while holding the Shift key. Communities & Collections Browse Navigate CGIAR Centers Statistics English Català Čeština Deutsch Español Français Gàidhlig Italiano Latviešu Magyar Nederlands Polski Português Português do Brasil Srpski (lat) Suomi Svenska Türkçe Tiếng Việt Қазақ বাংলা हिंदी Ελληνικά Српски Yкраї́нська Log In Note: CGIAR users should log in with their Active Directory username and password. For example, if your email is j.smith@cgiar.org, you would use jsmith here. Log in New user? Click here to register. Have you forgotten your password? Home CGIAR 2030 portfolio CGIAR Climate Change Impact Platform CGIAR Climate Change Platform Videos CGIAR's Agriculture Breakthrough 2023 Launch Event CGIAR's Agriculture Breakthrough 2023 Launch Event No Thumbnail Available Authors CGIAR Date Issued 2023-10-03 Date Online Language en Type Video Review Status Access Rights Open Access Usage Rights Other Metadata Full item page Share Citation CGIAR. 2023. CGIAR's Agriculture Breakthrough 2023 Launch Event.  Montpellier, France: CGIAR System Organization. Permanent link to cite or share this item https://hdl.handle.net/10568/139714 External link to download this item https://youtu.be/nehd7jnIGQc DOI Abstract/Description This was a webinar for the launch of CGIAR led Breakthrough Report, with high profile speakers including Ban ki Moon and Minister from New Zealand. AGROVOC Keywords climate change ; agriculture ; research Subjects Organizations Affiliated to the Authors CGIAR CGIAR Impact Platform Climate Change Collections CGIAR Climate Change Platform Videos DSpace software copyright © 2002-2024 LYRASIS About Cookie settings Privacy policy Send Feedback ","649"

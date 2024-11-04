@@ -1,0 +1,621 @@
+"result_code","prompt_id","prompt_text","model_name","impact_area","input_text","token_count"
+"3075","1200a_V3","Please read the text that belongs to a reported result in our system in CGIAR, and let me know if you think its content it is highly related to the following question we received from stakeholders about results achieved. Does the following text indicate clearly that this specific project supported directly in any capacity to what the stakeholder is asking so that I can inspect in detail?
+
+Question from the stakeholder: ""Area (hectares) of farmland, rangeland, and other managed agricultural landscapes under climate-smart agriculture management""
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+""{ ""score"": ""<Yes|No|Maybe>"", ""explanation"": ""<Your explanation here>"" }""
+
+**Text to Analyze:** **Text to Analyze:** [INPUT_TEXT]","gpt-4o","None","587,474 farmers in Bangladesh make use of climate information services to adapt agriculture to climate change risks The outcome is associated with Work Package 2, Outcome 2.1 under work package three of TAFSSA. In the Cereal Systems Initiative for South Asia. Agvisely is an agrometeorological services tool/application that offers timely, localized and reliable climate information and crop advisories for the entire country at 495 sub-district levels of Bangladesh. It was endorsed by the Government agricultural research and extension departments and linked to the Bangladesh Department of Agricultural Extension (DAE), Bangladesh AgroMeteorological Information System (BAMIS) portal and BWMRI websites. Currently, nine major crops including three rice crops and corresponding spring, summer, and winter seasons (aus, aman and boro), wheat, maize, potato, lentil, mung bean and mustard are available on the app. Agvisely reached a new milestone in Bangladesh during the reporting period, with a record number of 7,078
+registered and active extension agents within DAE using it. Research suggests that a total of 587,474 farmers were reached with climate information.  ","382"
+"8687","1200a_V3","Please read the text that belongs to a reported result in our system in CGIAR, and let me know if you think its content it is highly related to the following question we received from stakeholders about results achieved. Does the following text indicate clearly that this specific project supported directly in any capacity to what the stakeholder is asking so that I can inspect in detail?
+
+Question from the stakeholder: ""Area (hectares) of farmland, rangeland, and other managed agricultural landscapes under climate-smart agriculture management""
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+""{ ""score"": ""<Yes|No|Maybe>"", ""explanation"": ""<Your explanation here>"" }""
+
+**Text to Analyze:** **Text to Analyze:** [INPUT_TEXT]","gpt-4o","None","Climate-smart maps and adaptation plans (CS-MAPS) used by planners and decision makers at provincial level to identify climate change adaptation measures in rice production in Vietnam In the CGIAR Research Program ‘Climate Change, Agriculture and Food Security’ (CCAFS, 2016-2021), the development of Climate-Smart Maps and Adaptation Plans (CS-MAPs) was acollaboration with MARD Department of Crop Production (DCP). A participatory approach formapping climate risks and adaptive interventions was first tested in 2017 and then furtherdeveloped (Yen et al., 2019). In particular provinces, policymakers identified the major climate risks that farmers faced and proposed adaptation solutions. In addition to adaptation plans, this participatory approach has generated maps that integrate stakeholders’ local knowledge oftopography, infrastructure, hydrological management schemes, and land use plans.
+
+The recent study of the Standing Panel on Impact Assessment showed that 41 provinces were using this approach to provide climate adaptation options to rice production and have reach around 1.3 million households.  ","364"
+"9292","1200a_V3","Please read the text that belongs to a reported result in our system in CGIAR, and let me know if you think its content it is highly related to the following question we received from stakeholders about results achieved. Does the following text indicate clearly that this specific project supported directly in any capacity to what the stakeholder is asking so that I can inspect in detail?
+
+Question from the stakeholder: ""Area (hectares) of farmland, rangeland, and other managed agricultural landscapes under climate-smart agriculture management""
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+""{ ""score"": ""<Yes|No|Maybe>"", ""explanation"": ""<Your explanation here>"" }""
+
+**Text to Analyze:** **Text to Analyze:** [INPUT_TEXT]","gpt-4o","None","Climate-smart maps and adaptation plans (CS-MAPS) approach adopted by another CGIAR initiative through the Prioritizing Agronomy in Changing Environments (PAiCE) tool to inform planning for climate adaptation One tool that has been developed and validated in Cambodia is the Climate Smart Risk Maps (CS Maps). The CS Maps is a risk map and adaptation planning tool, designed through a participatory process where stakeholders at local level up to the districts co-develop the risk map. 
+
+The Excellence in Agronomy (EiA) Initiative started to develop a tool to quantify the economic outcomes and adoption potential of crop-related adaptations to climate so that it can guide decisions and priorities. This is through the Prioritizing Agronomy in Changing Environments (PAiCE) tool. To further the PAiCE tool in Cambodia, prior work was required to obtain data and clarify the climate impacts. PAiCE has three modules, the first two required prior data, and the third is the main participatory aspect.The CS Maps from AMD were shared and used to inform one module of PAiCE for use in Cambodia.  ","372"
+"9600","1200a_V3","Please read the text that belongs to a reported result in our system in CGIAR, and let me know if you think its content it is highly related to the following question we received from stakeholders about results achieved. Does the following text indicate clearly that this specific project supported directly in any capacity to what the stakeholder is asking so that I can inspect in detail?
+
+Question from the stakeholder: ""Area (hectares) of farmland, rangeland, and other managed agricultural landscapes under climate-smart agriculture management""
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+""{ ""score"": ""<Yes|No|Maybe>"", ""explanation"": ""<Your explanation here>"" }""
+
+**Text to Analyze:** **Text to Analyze:** [INPUT_TEXT]","gpt-4o","None","EU funds upscaling Livestock and Climate Initiative innovation joint village land use planning in Tanzania with grant  to TaTedo through to Tanzania Natural Resource Forum The CGIAR Research Initiative on Livestock and Climate is supporting pastoral communities in Tanzania to secure their land rights and strengthen governance and management of rangeland resources. This is achieved by supporting policy-serving innovations, engaging in joint village land use planning (JVLUP) and facilitating participatory rangeland management (PRM). These efforts have resulted in a notable enhancement of pastoralists’ land tenure security and encouraging investments that enhance land productivity. In 2023 US$450,000 EU funding was committed  to Livestock and Climate Initiative partner TNRF (though sub-grant from TaTedo) to implement Livestock and Climate Innovation JVLUP over the next three years. Participatory Land Use Planning in Pastoral Areas in Tanzania: IPSR Innovation Package and Scaling Readiness Report Skip to main content Dear CGSpace users, we have performed some minor upgrades to the user interface. If it does not look right you should refresh the page while holding the Shift key. Communities & Collections Browse Navigate CGIAR Centers Statistics English Català Čeština Deutsch Español Français Gàidhlig Italiano Latviešu Magyar Nederlands Polski Português Português do Brasil Srpski (lat) Suomi Svenska Türkçe Tiếng Việt Қазақ বাংলা हिंदी Ελληνικά Српски Yкраї́нська Log In Note: CGIAR users should log in with their Active Directory username and password. For example, if your email is j.smith@cgiar.org, you would use jsmith here. Log in New user? Click here to register. Have you forgotten your password? Home CGIAR 2030 portfolio CGIAR Innovation Packages and Scaling Readiness (IPSR) CGIAR IPSR outputs Participatory Land Use Planning in Pastoral Areas in Tanzania: IPSR Innovation Package and Scaling Readiness Report Participatory Land Use Planning in Pastoral Areas in Tanzania: IPSR Innovation Package and Scaling Readiness Report Files Report (925.74 KB, pdf) Authors Kang'ethe, Edwin Flintan, Fiona E. Date Issued 2022-12-30 Date Online Language en Type Report Review Status Internal Review Access Rights Open Access Usage Rights Metadata Full item page Share Citation Kangethe, E. and Flintan, F. 2022. Participatory Land Use Planning in Pastoral Areas in Tanzania: IPSR Innovation Package and Scaling Readiness Report. First edition, December 2022. Montpellier: CGIAR System Organization. Permanent link to cite or share this item https://hdl.handle.net/10568/128065 External link to download this item DOI Abstract/Description This is a report on a packaging exercise for the Tanzania land use planning innovation. It covers the evaluation process for Tanzania's readiness and use of innovative land use planning. The reports include identifying and selecting key solutions and activities necessary to scale the innovation and key actions needed to enhance the readiness and use of these key activities. Author ORCID identifiers Edwin Kang'ethe https://orcid.org/0000-0001-6640-4014 Fiona Flintan https://orcid.org/0000-0002-9732-097X Contributes to SDGs AGROVOC Keywords land use ; innovation ; scaling up Subjects CLIMATE CHANGE ; ENVIRONMENT ; INNOVATION SYSTEMS ; LIVELIHOODS ; LIVESTOCK ; LIVESTOCK SYSTEMS ; RANGELANDS ; RESILIENCE ; SCALING Countries Tanzania Regions Africa ; Eastern Africa ; Southern Africa Organizations Affiliated to the Authors International Livestock Research Institute Investors/sponsors International Fund for Agricultural Development ; CGIAR Trust Fund ; International Land Coalition ; Belgian Fund for Food Security ; Deutsche Gesellschaft für Internationale Zusammenarbeit ; Swiss Agency for Development and Cooperation CGIAR Action Areas Resilient Agrifood Systems CGIAR Impact Areas Climate adaptation and mitigation CGIAR Initiatives Livestock and Climate Related Material Related reference: https://hdl.handle.net/10568/116994 Related video: https://www.youtube.com/watch?v=TE37c8GP2kg Collections CGIAR IPSR outputs CGIAR Initiative on Livestock and Climate DSpace software copyright © 2002-2024 LYRASIS About Cookie settings Privacy policy Send Feedback Qualitative outcome study: The contribution of the CGIAR Research Program on Livestock to land use planning processes in Ethiopia, Kenya and Tanzania Skip to main content Dear CGSpace users, we have performed some minor upgrades to the user interface. If it does not look right you should refresh the page while holding the Shift key. Communities & Collections Browse Navigate CGIAR Centers Statistics English Català Čeština Deutsch Español Français Gàidhlig Italiano Latviešu Magyar Nederlands Polski Português Português do Brasil Srpski (lat) Suomi Svenska Türkçe Tiếng Việt Қазақ বাংলা हिंदी Ελληνικά Српски Yкраї́нська Log In Note: CGIAR users should log in with their Active Directory username and password. For example, if your email is j.smith@cgiar.org, you would use jsmith here. Log in New user? Click here to register. Have you forgotten your password? Home CGIAR research centers International Livestock Research Institute (ILRI) ILRI Programs ILRI sustainable livestock systems program ILRI sustainable livestock systems program outputs Qualitative outcome study: The contribution of the CGIAR Research Program on Livestock to land use planning processes in Ethiopia, Kenya and Tanzania Qualitative outcome study: The contribution of the CGIAR Research Program on Livestock to land use planning processes in Ethiopia, Kenya and Tanzania Loading... Files Report (531.04 KB, pdf) Authors Sulle, E. Date Issued 2021-11-30 Date Online Language en Type Report Review Status Access Rights Open Access Usage Rights Other Metadata Full item page Share Citation Sulle, E. 2021. Qualitative outcome study: The contribution of the CGIAR Research Program on Livestock to land use planning processes in Ethiopia, Kenya and Tanzania. Nairobi, Kenya: ILRI. Permanent link to cite or share this item https://hdl.handle.net/10568/117285 External link to download this item DOI Abstract/Description AGROVOC Keywords land use planning ; research ; qualitative analysis ; livestock Subjects LIVESTOCK ; NRM ; RESEARCH Countries Ethiopia ; Kenya ; Tanzania Regions Africa ; Eastern Africa ; Southern Africa Collections ILRI sustainable livestock systems program outputs DSpace software copyright © 2002-2024 LYRASIS About Cookie settings Privacy policy Send Feedback File: download
+Page 1:
+1
+CGIAR IPSR Report | Participatory land use planning in pastoral areas in Tanzania
+Participatory land use planning in 
+pastoral areas in Tanzania
+Participatory land use planning across administrative borders in pastoral 
+areas for protecting shared grazing lands and other resources.
+Scaling Ambition
+Participatory land use planning (PLUP) for pastoral areas overcomes 
+many of the challenges of conventional land use planning, including 
+creating hard boundaries around villages or other administrative 
+units and breaking up and limiting or preventing access to shared 
+grazing lands and water points. PLUP for pastoral areas aims to 
+keep rangelands and particularly grazing lands intact, working 
+across administrative boundaries through joint PLUP agreements 
+strengthening reciprocal relations, collective tenure, and good 
+governance, and resolving and preventing conflicts between 
+land users. Pastoral communities traditionally marginalized from 
+the village PLUP process benefit, particularly from the approach, 
+because it is more inclusive of all land users in the planning and 
+decision-making processes. The PLUP process includes collecting 
+data for assessing the land potential most relevant for pastoral 
+systems.CGIAR Innovation Packages and Scaling Readiness (IPSR)
+INNOVATION PACKAGE AND SCALING READINESS REPORT
+2023
+1st Edition
+IA2 | Poverty Reduction
+2.2
+SDG15  | Life on Land
+15.1
+Scaling Readiness graph
+1Participatory land use planning in pastoral areas
+2Appropriate technology for supporting planning process
+3Platforms for inclusion of multiple stakeholders and interests
+4Inclusive planning process (women and youth)
+5Harmonized and supporting policies and laws; regulations; and guidelines
+6Adequate understanding of JVLUP and its implications
+7Access to accurate information to inform decision-making processes during 
+the planning phase
+8Capacity building in JVLUP - for both planning and implementation
+9Evidence on impact of JVLUP (Economic, livestock, livelihoods, physical, 
+conflict) for example trials – living lab that informs donors and others to 
+invest in JVLUPInnovation PackageScaling Readiness Metrics
+vial
+Scaling 
+Readiness Score
+2
+
+Scalability 
+Potential Score
+-
+Sustainable Development Goalsexpected Impact contributions
+CGIAR Impact AreasExecutive Summary
+6, 7, 8
+1
+24 9
+35  
+Page 2:
+2
+CGIAR IPSR Report | Participatory land use planning in pastoral areas in TanzaniaINTRODUCTION
+Innovation package design and scaling readiness assessment is a structured approach to designing innovative packages 
+tailored to specific contexts. This process consists of four distinct steps: preparation, design and measurement, quality 
+assurance, and reporting, and it can be conducted either as a 1-day workshop or a series of online workshops. The 
+process enables the identification of CGIAR synergies and external partnerships tailored to the specific context while 
+tracking changes in innovation package readiness and use over time.
+In the first step of preparation, the innovation package design workshop is initiated by gathering the essential 
+information required for the workshop. This entails identifying the core innovation and team, ensuring the 
+participation of key internal decision-makers, obtaining necessary approvals and notifications, determining the context 
+of the package, developing a scaling ambition, and identifying a list of experts who will be involved in the innovation 
+package design and assessment.
+The design step of the process involves the development and curation of enablers. These enablers can be existing or 
+new but critical for scaling the core innovation in the selected context and are assessed for their readiness and use 
+using the IPSR framework (link). The assessment scores are then validated through quality assurance, conducted in the 
+following stage. All these activities are then documented in an Innovation Package and Scaling Readiness report, which 
+is the final step. 
+Under the LCSR initiative, ILRI spearheads this innovation package, which seeks to scale the core innovation of 
+participatory land use planning in pastoral areas in Tanzania. The project entails providing research and policy support 
+through collaboration with government partners and NGOs to address the challenges facing rangelands in Tanzania. 
+The overarching goal of the innovation package design and scaling readiness assessment is to create a land use 
+planning innovation package tailored specifically to the Tanzanian context.
+In addition to designing an innovation package for participatory land use planning in pastoralist areas in Tanzania, 
+the primary objective of the inaugural innovation package workshop was to evaluate the effectiveness of the IPSR 
+innovation package process in creating an innovation packaging approach suitable for accelerating the scaling of 
+innovations from the CGIAR. Our specific objectives were to:
+• Assess whether the training provided on the Scaling Readiness and Use Frameworks was sufficient to enable 
+participants to apply this knowledge on the same day.
+• Determine how effectively the selected delivery methods and exercises produced each session’s desired 
+outcomes.
+• To determine the number and experience level demand to facilitate an innovation package workshop, we sought 
+to determine the degree of demand for a facilitator for the different sessions. 
+• Assess the adequacy of the prerequisite activities in preparing for a productive workshop.
+IPSR aimed to make design adjustments from these lessons to improve the IPSR innovation packaging approach.circle-info
+Page 3:
+3
+CGIAR IPSR Report | Participatory land use planning in pastoral areas in TanzaniaSCALING AMBITION
+The scaling ambition is a dynamic statement of intent created by the core innovation team to steer scaling efforts. It 
+is a continually evolving target and is considered a crucial tool for framing the scope of the scaling vision. A scaling 
+ambition typically comprises the following critical components that have been deemed essential in shaping a scaling 
+scope:
+• Target year 2024)
+• Lead scaling driver (initiative)
+• Scaling partners
+• What (core innovation)
+• Users (farmers, NGOs organizations, policymakers)
+• How many (innovation user 1, user 2)
+• Where (geoscope)
+• Outcomes targets
+The scaling ambition for Participatory Land Use Planning in pastoral areas in Tanzania is outlined below:
+By 2024, the Livestock and Climate Initiative and partners will work together with the National Land Use Planning 
+Commission, District-level Participatory Land Use Management (PLUM) officers, and the Community level Village 
+Councils/VLUMs (Village Land Use Management committees) to accomplish the use of Participatory land use 
+planning in pastoral areas by 18,000 Farmers/ (agro-)pastoralists/ herders/ fishers of which 50% are women and 
+30% are youth, 50 policy actors (public or private) of which 50% are women and 10% are youth, 10 community-
+based organizations, 100 government officers in Tanzania pastoral areas to contribute achieving the following 
+end of initiative outcomes: (1) At least 320,000 livestock producers (50% women and youth) and 13 public or 
+private organizations access climate risk management strategies; (2) 80,000 households implement climate-smart 
+practices and technologies appropriate to their production systems and their gender; (3) International agencies 
+and policymakers use LCSR products to shape at least five policies or investments to strengthen socially inclusive 
+low-emissions livestock production system resilience, including at least three aimed at realizing climate change-
+related adaptation or mitigation progress by 2024.bullseye-pointer
+Participatory land use planning in pastoral areas
+Appropriate technology for supporting planning process
+Platforms for inclusion of multiple stakeholders and interests
+Inclusive planning process (women and youth)
+Harmonized and supporting policies and laws; regulations; and 
+guidelines
+Adequate understanding of JVLUP and its implications
+Access to accurate information to inform decision-making 
+processes during the planning phase
+Capacity building in JVLUP - for both planning and 
+implementation
+Evidence on impact of JVLUP (Economic, livestock, livelihoods, 
+physical, conflict) for example trials – living lab that informs 
+donors and others to invest in JVLUPInnovation Package
+Page 4:
+4
+CGIAR IPSR Report | Participatory land use planning in pastoral areas in Tanzania
+INNOVATION PACKAGE DETAILS
+To design the innovation package, the expert participants were divided into small groups and tasked with generating 
+a list of enablers that could facilitate the scaling of the core innovation. The process entailed generating through 
+ideation a short list of about three key enablers per group and ranking them according to their perceived importance. 
+Additionally, the groups mapped each enabler to the relevant innovation category (see list of categories), identified 
+any linkages to other existing enablers, and provided details on individuals or entities already working on these 
+enablers.
+The resulting list of enablers was curated to eliminate redundancies and exclude elements already integrated into 
+the core innovation (such as village assembly meetings), items that fell beyond the project scope, and ideas that 
+constituted mere enhancements rather than true enablers. This curation process resulted in the identification of eight 
+key enablers that are critical to scaling the innovation.
+The below table provides an overview of the core innovation and key enablers needed to achieve the scaling ambition.
+A well-defined enabler should describe what it is, what it does, and who it’s for. For example, a radio program that 
+informs farmers about drought-tolerant maize varieties or an online training for policymakers to promote evidence-
+based policy advisory tools. However, our review of the listed enablers showed that most did not follow this best 
+practice. This experience highlighted the need to improve the instructions given during the session to ensure all key 
+elements are included in defining the enabler. Additionally, we recognized the need for real-time quality assurance to 
+ensure that the group’s work produces the minimum required outputs.
+Core Innovation/
+Enabler Name and Description
+1 Core 
+InnovationParticipatory land use planning in pastoral areas
+2 Enabler Appropriate technology for supporting planning process
+3 Enabler Platforms for inclusion of multiple stakeholders and interests
+4 Enabler Inclusive planning process
+5 Enabler Harmonized and supporting policies and laws; regulations; and guidelines
+6 Enabler Adequate understanding of JVLUP and its implications
+7 Enabler Access to accurate information to inform decision-making processes during the planning phase
+8 Enabler Capacity building in JVLUP - for the planning process and then for the implementation of the plan
+9 Enabler Evidence on impact of JVLUP (Economic, livestock, livelihoods, physical, conflict) for example trials – living lab that informs donors 
+and others to invest in JVLUP
+CONTRIBUTING CGIAR INITIATIVES AND PARTNERS
+CGIAR Lead Initiative
+Livestock, Climate and System Resilience (LCSR)
+Contributing Bilateral Projects
+African Dairy Genetics GainsPartners Involved
+Global Membership Network (ILC), Regional Economic Community (IGAD), 
+Kinnapa development programme, the National Land Use Planning 
+Commission (NLUPC), the Tanzania Natural Resource Forum (TNRF), the 
+Tanzania Ministry of livestock, the community/farmers
+Type of Partners
+National Government, Local Government, National NGO, Multilateral, 
+Academic, Training and Research
+Page 5:
+Scaling Readiness graph
+Very Low
+0
+16.2
+48.6
+32.4
+64.8
+81 Low Medium High Very High
+5 CGIAR IPSR Report | Munda Makeover: using digital channels to deliver bundled agriculture, climate, and financial information services in Zambiavial
+Scaling 
+Readiness Score2
+2
+(very low)
+
+Scalability 
+Potential Score3
+26
+(high)
+2 Scaling Readiness score is based on the lowest scoring innovation
+3 Scalability potential score is based on the average readiness and use of all package elementsDETAILED SCALING READINESS GRAPH AND METRICS
+Each of the elements of the Innovation Package have been assessed for their innovation readiness and innovation use. 
+More information on Innovation Readiness and Innovation Use can be found at www.scalingreadiness.org .
+Scaling Readiness MetricsInnovation Readiness Innovation Use
+0 The innovation is at idea stage 0 The innovation is not used
+1The innovation’s basic principles are being researched for their ability to 
+achieve a specific impact1The innovation is used by the organization(s) leading the 
+innovation development
+2 The innovation’s key concepts are being formulated or designed 2The innovation is used by some partners involved in the initial 
+innovation development
+3The innovation’s key concepts have been validated for their ability to 
+achieve a specific impact3The innovation is commonly used by partners involved in the initial 
+innovation development
+4The innovation is being tested for its ability to achieve a specific impact 
+under fully controlled conditions4The innovation is used by some organizations connected to 
+partners involved in the initial innovation development
+5The innovation is validated for its ability to achieve a specific impact 
+under fully controlled conditions5The innovation is commonly used by organizations connected to 
+partners involved in the initial innovation development 
+6The innovation is being tested for its ability to achieve a specific impact 
+under semi-controlled conditions6The innovation is used by organizations not connected to partners 
+involved in the initial innovation development 
+7The innovation is validated for its ability to achieve a specific impact 
+under semi-controlled conditions7The innovation is commonly used by organizations not connected 
+to partners involved in the initial innovation development 
+8The innovation is being tested for its ability to achieve a specific impact 
+under uncontrolled conditions8The innovation is used by some end-users or beneficiaries who 
+were not involved in the initial innovation development 
+9The innovation is validated for its ability to achieve a specific impact 
+under uncontrolled conditions9The innovation is commonly used by end-users or beneficiaries 
+who were not involved in the initial innovation development 
+Current
+#Innovation/  
+Enabler NameInnovation 
+ReadinessInnovation 
+Use
+1Participatory land use planning in pastoral areas 7 4
+2Appropriate technology for supporting planning process 2 1
+3Platforms for inclusion of multiple stakeholders and 
+interests1 2
+4Inclusive planning process (women and youth) 5 2
+5Harmonized and supporting policies and laws; regulations; 
+and guidelines9 7
+6Adequate understanding of JVLUP and its implications 9 4
+7Access to accurate information to inform decision-making 
+processes during the planning phase9 4
+8Capacity building in JVLUP - for both planning and 
+implementation9 4
+9Evidence on impact of JVLUP (Economic, livestock, 
+livelihoods, physical, conflict) for example trials – living lab 
+that informs donors and others to invest in JVLUP5 1
+6, 7, 8
+1
+24 9
+35  
+Page 6:
+6
+CGIAR IPSR Report | Participatory land use planning in pastoral areas in Tanzania
+LESSONS
+• The two concepts of Scaling Readiness and Use Frameworks proved challenging for certain categories of 
+stakeholders to learn and apply effectively in a single day. Therefore, the IPSR team will consider this for upcoming 
+workshops when selecting the list of experts and stakeholders to involve in the packaging workshop. The team will 
+continue exploring additional methods to guarantee that all participants comprehend and put into practice these 
+frameworks within the limited time available.
+• On the effectiveness of the chosen delivery methods and exercises, this initial experience emphasized the 
+importance of simplifying the language used for clear and concise instructions and questions during the various 
+breakout group exercises. The team reviewed certain exercises based on the group debriefs and outcomes 
+to achieve the desired results, which would be implemented and tested in the upcoming innovation package 
+workshops.
+• The demand for facilitation was deemed average, requiring a facilitator with some facilitation training and average 
+facilitation experience. To facilitate subsequent innovation packaging workshops effectively, we implemented a 
+sequential orientation process that involves observing in one workshop, co-facilitating in the next, and leading in 
+the third. We also identified areas in some sessions that required adjustment to enhance facilitation delivery for 
+future innovation packaging workshops.
+• In assessing the prerequisite activities, developing a scaling ambition was identified as a crucial step in establishing 
+a scaling vision for reference in the workshop. However, the validation exercise of this scaling ambition was 
+deemed redundant as there was limited room for revision, given that the work is based on an approved proposal 
+and therefore constrained by its content. Therefore, the scaling ambition will be presented for future workshops, 
+followed by a brief Q&A but no validation exercise.
+• From the debrief with the core innovation team, the session that produced the enablers missed out on ideas 
+that tackled the most crucial challenges that hinder the adoption of Participatory land use planning in pastoral 
+areas in Tanzania. Important actions and enhancements to existing plans were suggested, but they were not 
+enablers, for example, the preparation of detailed land use management plans to facilitate the provision of CCROs 
+to landowners. Based on this insight, it was decided for subsequent workshops to modify the exercise by first 
+identifying the challenges to scaling the core innovation in the context and then listing the enablers to address 
+them. This approach would ensure that the group’s efforts are targeted and that enablers are not suggested 
+arbitrarily.
+• Language was an important factor in this workshop. Facilitation was majorly conducted in Swahili. However, 
+the materials were not translated into Swahili, which limited some participants’ participation, especially the 
+community group. Furthermore, since not all participants were Swahili speakers, results from group discussions 
+had to be presented in both Swahili and English, which took twice the planned time. These lessons will inform the 
+IPSR team’s development of guidance for future hybrid language workshops.book-open-reader
+Page 7:
+7
+CGIAR IPSR Report | Participatory land use planning in pastoral areas in TanzaniaACKNOWLEDGEMENTS
+We would like to thank all Funders who support this innovation through their contributions to the CGIAR Trust 
+Fund  (https://www.cgiar.org/funders/ ). Additional bilateral investment for this innovation has been provided by the 
+International Fund for Agricultural Development, the International Land Coalition, the Belgian Fund for Food Security, 
+the Deutsche Gesellschaft für Internationale Zusammenarbeit and the Swiss Agency for Development Cooperation.
+The information in this report was generated during the workshop that took place in Dodoma, Tanzania on 8 
+November 2022. This Report was prepared by Edwin Kangethe based on guidance from CGIAR’s Portfolio Performance 
+Unit (PPU). The author thanks all the workshop participants and the CGIAR Innovation Packages and Scaling Readiness 
+(IPSR) team for their valuable contributions.
+For enquiries on the Participatory Land Use Planning in Pastoral Areas in Tanzania, please contact Fiona Flintan  
+(f.flintan@cgiar.org ).
+For general queries related to the Innovation Package and Scaling Readiness (IPSR) reports and processes, please 
+contact performanceandresults@cgiar.org .
+Reference Material
+	yCGIAR MELCOP Glossary including key Innovation and scaling concepts and definitions: https://drive.google.com/ 
+file/d/1v0O5wt4z3bgs_wCYa7H2FifTVSAXAVjl/view
+	yFlintan F., Kalenzi D., Nindi S., Gebremeskel T., Terefe B., Robinson L., Otieno K., Luambano I., Faustin Z., Asimwe L., 
+Dioniz B., Akilimali A., Mkalawa C., 2022. Participatory land use planning in pastoral areas. Innovation Packages and 
+Scaling Readiness (IPSR) Innovation Profile. CGIAR, November 2022. https://hdl.handle.net/10568/125373
+	yScaling readiness website: https://www.scalingreadiness.org
+	yInnovation Readiness levels: IPSR Infographic Innovation Readiness
+	yInnovation Use levels: IPSR Infographic Innovation UseMORE INFORMATION
+Page 8:
+8
+CGIAR IPSR Report | Participatory land use planning in pastoral areas in TanzaniaPlease refer to the Innovation Package and Scaling Readiness report as
+Kangethe, E. and Flintan, F. 2022. Participatory Land Use Planning in Pastoral Areas in Tanzania: IPSR Innovation 
+Package and Scaling Readiness Report. First edition, December 2022. Montpellier: CGIAR System Organization.  
+https://hdl.handle.net/10568/128065
+ © 2022 CGIAR System Organization. Some rights reserved. 
+This work is licensed under a CC BY-NC 4.0 license .EXPERTS ANNEX
+The experts who participated in the innovation packaging workshop were drawn from a diverse range of organizations, 
+including the Kinnapa Development Programme (a local NGO), the National Land Use Planning Commission (NLUPC, 
+a government agency), the Tanzania Natural Resource Forum (TNRF, a local NGO), the Tanzania Ministry of Livestock 
+(a government agency), the community/farmers, regional and district secretariats (government), and ILRI (a research 
+organization).
+Disclaimer: This report forms one part of a three-part pilot series, each influenced by feedback and insights from its predecessor. 
+Consequently, due to these progressive refinements, there will be variations in structure and content across the reports as we move 
+toward a standardized report template.
+ File: download
+Page 1:
+Qualitative outcome study
+The contribution of the CGIAR Research 
+Program on Livestock to land‑use planning 
+processes in Ethiopia, Kenya and Tanzania
+Final Report
+Emmanuel Sulle
+(Evaluator)
+Submitted to International Livestock Research Institute (ILRI)
+8 November 2021
+Final Report
+November 2021Emmanuel Sulle
+EvaluatorSubmitted to  
+International Livestock 
+Research Institute  (ILRI)
+Page 2:
+Page 3:
+Contents
+List of abbreviations and acronyms 4
+Executive summary 5
+Abridged findings 7
+1 Introduction 9
+1.1 Background and context 10
+1.2 Objective of the evaluation 13
+1.3 Scope of the evaluation 13
+2 Methodology and approach 14
+2.1 Study design and methodology 14
+2.2 Conceptual framework 14
+2.3 Data collection methods 15
+2.4 Evaluation study ethics 16
+2.5 Limitations 16
+3 Evaluation results 17
+3.1 ILRI research and policy support outcomes 17
+4 Synthesis 25
+4.1 Factors supporting ILRI research and policy support achievements 26
+4.2 Factors constraining ILRI research and policy support achievements 29
+5 Lessons learned 33
+5.1 Positive lessons and best practice based on ILRI’s research... 33
+5.2 The negative lessons learned from ILRI’s research and policy support... 34
+6 Conclusions 35
+6.1 Outcomes and achievements 35
+6.2 Sustainability, replication and other effects 35
+6.3 Constraints 36
+7 Recommendations for further research and policy support 37
+7.1 ILRI research and policy support recommendations 37
+8 References 40
+Annex 1 Research instrument 41
+Annex 2 Complimentary secondary sources 42
+ANNEX  3 list of interviewees 46
+Page 4:
+List of abbreviations and acronyms
+CCRO Certificate of Customary Right of Occupancy
+CELEP Coalition for European Lobbies on Eastern African Pastoralism 
+CRP CGIAR Research Program
+DC District Commissioner 
+EU European Union
+FCDC Frontier Counties Development Council 
+GIZ German Development Agency 
+IFAD International Fund for Agricultural Development 
+ILRI International Livestock Research Institute
+JVLUP Joint Village Land Use Plan
+KII Key Informant Interviews 
+KINNAPA Short for the Pastoralist NGO founding villages namely Kimana, 
+Kibaya, Njoro, Ndaleta plus two others in Kiteto District
+LUP Land Use Planning 
+MLF Ministry of Livestock and Fisheries Development
+NGOs Non-Governmental Organizations 
+NLUPC National Land Use Planning Commission 
+OLENGAPA A name used to refer to the four adjacent villages Orkitikiti,  
+Lerug and Ngapapa and Engang’uengare, which together 
+developed a JVLUP
+OLKA OLENGAPA Livestock Keepers Association
+PLUP Participatory Land Use Planning 
+PRM Participatory Rangeland Management 
+RECONCILE Resource Conflict Institute 
+SRMP Sustainable Rangeland Management Project 
+TNRF Tanzania Natural Resource Forum 
+UNCCD United Nations Convention to Combat Desertification 
+VC Village Councils 
+VLA Village Land Act
+VLUP Village Land Use Plan
+WPLUP Woreda Participatory Land Use Planning 
+Page 5:
+5
+Executive summary
+ILRI’s research and policy engagement brief
+The international community invested more than US$1.8 billion in global livestock 
+research from 1975 to 2018 and most of this investment has been publicly 
+financed for International Livestock Research Institute (ILRI) Sub-Saharan Africa 
+programs (McIntire & Grace, 2020). In the mid-1970s, at the time of its creation, 
+ILRI’s predecessors included the International Livestock Centre for Africa and the 
+International Laboratory for Research on Animal Diseases before it became 
+a member of Consultative Group on International Agricultural Research (CGIAR), 
+a global research-for-development partnership of 15 centers working with hundreds 
+of partners around the world for a food-secure future. Since then, ILRI has engaged 
+in several research programs, including those related to animal genetics, production 
+and health, primary production and tropical livestock systems.
+In Ethiopia, Kenya and Tanzania, ILRI has leveraged its membership to ILC and as 
+the ILC’s coordinator for rangelands initiative to drive several research and policy 
+support programs to national governments in collaboration with national CSOs 
+through national multi-stakeholder platforms. In Tanzania, ILRI is an active member 
+of the National Engagement Strategy platform championed by ILC.
+In these three countries, rangelands face several challenges including environmental 
+degradation, urbanization, climate change and population growth. Specifically, 
+population growth and urbanization have resulted in fragmentation of previously 
+existing rangelands as competition for land is increasing due to the demand 
+for multiple uses, for example, industrialization and cultivation. In response to the 
+government’s requests to address challenges facing rangelands, ILRI has been 
+working with ILC, of which it is a member, government partners and in-country 
+NGOs to support research for developing land-use planning processes in pastoral 
+areas through various initiatives under the umbrella of the CGIAR research program 
+on Livestock and on Policies Institutions and Markets. Through these research 
+and policy support initiatives, ILRI and its collaborators have developed innovative 
+and sustainable approaches such as woreda (district) participatory land-use planning 
+(WPLUP), joint village land-use planning (JVLUP) and County Spatial Planning (CSP) 
+in Ethiopia, Tanzania and Kenya respectively. It has also supported research into 
+piloting group titles to land that are often more appropriate than individual land titles, 
+particularly in pastoral communities.
+Page 6:
+Qualitative outcome study  The contribution of the CGIAR Research Program on Livestock to land use planning processes in Ethiopia, Kenya and Tanzania6
+Through the WLPUP, CSP and JVLUP processes, ILRI, as a member of ILC, government 
+and non-government actors supported participatory land-use planning in these 
+countries. ILRI’s research intervention outputs included 
+(i) developing manuals and other guidance and training materials;
+(ii)  policy dialogues and other workshops; 
+(iii) developing blogs, policy briefs and other communications; 
+(iv) capacity building; and 
+(v) piloting the land-use planning processes. 
+While these processes are still in the early stages of being ready for widespread 
+upscaling, activities in Tanzania are further along compared to Kenya and Ethiopia. 
+However, sufficient progress has been made to assess and document outcomes 
+in all three countries. To ensure consistency, this report uses the term ‘participatory 
+land-use planning’ which is an inclusive land-use planning process that considers 
+participation of all parties, especially diverse groups of rural communities to refer 
+to all ILRI’s research and policy support in Ethiopia, Kenya and Tanzania.
+Page 7:
+7
+Abridged findings
+Innovation
+ILRI’s research and policy support have led to innovations and improvements 
+in participatory land-use planning processes in all three countries. The joint village 
+land-use planning in Tanzania is the most innovative tool which until ILRI’s support 
+and intervention was not mentioned in any of the country’s natural resources policies 
+and laws but it is now included in the National Land use Planning Guidelines of 2020. 
+In Ethiopia, the woreda participatory land-use planning was not practiced and Kenya’s 
+county spatial planning was not widely practiced in the country even though it is 
+provided for in the country’s constitution.
+Use of manuals, toolkits and data by local and national governments
+In these three countries, the manuals, toolkits and data that ILRI helped 
+develop are used by local, county and national governments for policy deciding 
+and implementating participatory land-use planning processes. These include 
+Ethiopia’s woreda participatory land-use planning manuals for different uses, 
+Tanzania’s Joint Village Land use Planning and all toolkits and annex to county 
+spatial planning processes in Kenya.
+Improved capacities of local, county and national government institutions
+Through its collaborative research and policy support on land-use planning processes, 
+ILRI contributed to strengthening grassroots, local, county-level coordination 
+and administrative structures. Currently, functioning structures on the ground 
+provide a foundation for rangeland management systems.
+Scalability, sustainability and improvement 
+on rangeland and land‑use planning processes
+ILRI’s research and policy support on participatory land-use planning are scalable, 
+sustainable and can be replicated, adopted and improved on to ensure rangeland 
+resources are best-used by pastoral communities. In all three countries, ongoing 
+initiatives by governments, development partners and CSOs are using ILRI supported 
+approaches and tool kits to secure rangelands.
+Gender mainstreaming in land‑use planning processes
+ILRI’s participatory land-use planning manuals included information on how to make 
+land-use planning inclusive of all members of the community, especially men and 
+women. These inclusive processes have minimized gender disparity by engaging 
+women in important decisions during participatory land-use planning processes, 
+which is significant progress given that pastoralist traditions have often marginalized 
+women’s participation in decision-making processes and property and resource 
+ownership, including land and livestock.
+Page 8:
+Qualitative outcome study  The contribution of the CGIAR Research Program on Livestock to land use planning processes in Ethiopia, Kenya and Tanzania8
+SELECTED KEY RECOMMENDATIONS 
+FOR ILRI’S FURTHER RESEARCH AND POLICY SUPPORT
+ ? Review existing national guidelines and tool kits  including those developed 
+through ILRI’s research and policy support to determine and update 
+approximate costs of doing participatory land-use planning, especially joint 
+village use planning, woreda participatory land-use planning and county 
+spatial planning. Approximate cost estimates are critical for upscaling the tools 
+and approaches developed and tested by ILRI and its partners in Ethiopia, 
+Kenya and Tanzania.
+ ? Scale up research that informs the uptake of problem-solving research 
+and policy support , such as land-use planning processes through inclusive 
+and sustained partnerships with government authorities and advocacy NGOs.
+ ? Sustain capacity-building efforts  because government officials including 
+county, district and national land-use commissions are political appointees 
+and they cannot deliver if they are not trained and because some leave 
+or are transferred or let-to over time after training.
+ ? Research and policy support is a continuous process.  ILRI could monitor 
+how the local (county, woreda and village) and national governments 
+are adopting the tool kits it has co-developed with partners to allow 
+for a better understan","8143"
+"10566","1200a_V3","Please read the text that belongs to a reported result in our system in CGIAR, and let me know if you think its content it is highly related to the following question we received from stakeholders about results achieved. Does the following text indicate clearly that this specific project supported directly in any capacity to what the stakeholder is asking so that I can inspect in detail?
+
+Question from the stakeholder: ""Area (hectares) of farmland, rangeland, and other managed agricultural landscapes under climate-smart agriculture management""
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+""{ ""score"": ""<Yes|No|Maybe>"", ""explanation"": ""<Your explanation here>"" }""
+
+**Text to Analyze:** **Text to Analyze:** [INPUT_TEXT]","gpt-4o","None","Use of climate services enhances adaptation in three states of Mexico, benefitting 100,000 farmers The Alliance and CIMMYT initiated the Local Technical Agroclimatic Committees (MTAs) in Mexico in 2018/2019. The MTAs bring together stakeholders in the agricultural sector to co-create agroclimatic bulletins, providing recommendations disseminated directly to farmers. This outcome across three states (Chiapas, Mexico, Morelos), catalyzed significant changes in policy, institutional governance, perceived usefulness, communication of agroclimatic information, data quality, and farmers' practices. This endeavor strengthens institutional capacities and empowers farmers to integrate climate information into their decision-making. Currently, the government has scaled MTAs to 12 states, with an estimated 100,000 farmers accessing essential climate information through this innovative initiative. Historia y escalamiento de las Mesas Técnicas Agroclimáticas en México Skip to main content Dear CGSpace users, we have performed some minor upgrades to the user interface. If it does not look right you should refresh the page while holding the Shift key. Communities & Collections Browse Navigate CGIAR Centers Statistics English Català Čeština Deutsch Español Français Gàidhlig Italiano Latviešu Magyar Nederlands Polski Português Português do Brasil Srpski (lat) Suomi Svenska Türkçe Tiếng Việt Қазақ বাংলা हिंदी Ελληνικά Српски Yкраї́нська Log In Note: CGIAR users should log in with their Active Directory username and password. For example, if your email is j.smith@cgiar.org, you would use jsmith here. Log in New user? Click here to register. Have you forgotten your password? Home CGIAR research centers Alliance of Bioversity International and CIAT Alliance Bioversity CIAT Reports Historia y escalamiento de las Mesas Técnicas Agroclimáticas en México Historia y escalamiento de las Mesas Técnicas Agroclimáticas en México Loading... Files AgriLAC MTAs MEX_Technical Report(2023).pdf (10.32 MB) Authors Ríos, David Giraldo, Diana Navarro, Carlos Gardeazabal, Andrea Ramírez Villegas, Julián Armando Date Issued 2023-12-30 Date Online Language es Type Report Review Status Access Rights Open Access Usage Rights Metadata Full item page Share Citation Rios, D.; Giraldo, D.; Navarro, C..; Gardeazabal, A.; Ramirez Villegas, J. (2023) Historia y escalamiento de las Mesas Técnicas Agroclimáticas en México.  26 p. Permanent link to cite or share this item https://hdl.handle.net/10568/137717 External link to download this item DOI Abstract/Description En México, se han establecido Mesas Técnicas Agroclimáticas (MTAs) en 12 estados, que incluyen Chiapas, Oaxaca, Estado de México, Yucatán, Campeche, Puebla, Veracruz, Michoacán, Morelos, San Luis Potosí y Baja California. El proceso de establecimiento de estos MTAs comenzó con el respaldo del Centro Internacional de Mejoramiento de Maíz y Trigo (CIMMYT), a través de los Hubs de Innovación del programa MasAgro y la Secretaría de Agricultura (SADER), con el apoyo de los gobiernos estatales y la contribución de instituciones como el Servicio Meteorológico Nacional (CONAGUA) y el Instituto Nacional de Investigaciones Forestales, Agrícolas y Pecuarias (INIFAP), entre otras.
+El estudio, realizado mediante la identificación de actores, la recolección de alcances y la realización de grupos focales en el campo, incluyó entrevistas a profundidad con un total de 35 actores que participan activamente en las MTAs con un rol definido. Además, se contó con la participación de 21 agricultores en grupos focales distribuidos en tres estados: Estado de México, Chiapas, así como en el Estado de Morelos. Este enfoque integral tuvo como objetivo recopilar percepciones y perspectivas de actores clave involucrados en el marco de los MTAs, fomentando una mejor comprensión de su alcance, escalamiento y efectos en las prácticas agrícolas y las colaboraciones en las regiones especificadas. La colaboración entre CIMMYT, SADER, gobiernos estatales y diversas instituciones destaca la naturaleza multifacética de la implementación de MTAs en México. Author ORCID identifiers David Rios https://orcid.org/0000-0002-2051-2818 Diana Carolina Giraldo Mendez https://orcid.org/0000-0002-9200-3916 Carlos Eduardo Navarro-Racines https://orcid.org/0000-0002-8692-6431 Andrea Gardeazabal https://orcid.org/0000-0003-1529-4200 Julian Ramirez-Villegas https://orcid.org/0000-0002-8044-583X Contributes to SDGs AGROVOC Keywords evaluation ; toma de decisiones ; decision making ; scaling up ; capacity development ; networks ; desarrollo de capacidad ; agroclimatology ; ampliación de escala ; redes ; agro climatología Subjects CAPACITY DEVELOPMENT Countries Mexico Regions Americas ; Central America ; Latin America and the Caribbean CGIAR Action Areas Systems Transformation CGIAR Initiatives AgriLAC Resiliente Collections Alliance Bioversity CIAT Reports Alliance Research Lever 3: Climate Action CGIAR Initiative on AgriLAC Resiliente DSpace software copyright © 2002-2024 LYRASIS About Cookie settings Privacy policy Send Feedback File: download
+Page 1:
+December 23 | HISTORIA Y ESCALAMIENTO DE LAS MESAS TÉCNICAS AGROCLIMÁTICAS EN MÉXICO 0  
+HISTORIA Y ESCALAMIENTO DE LAS MESAS TÉCNICAS AGROCLIMÁTICAS EN MÉXICO Diciembre 2023           AgriLAC Resiliente Reporte Técnico 
+Page 2:
+December 23 | HISTORIA Y ESCALAMIENTO DE LAS MESAS TÉCNICAS AGROCLIMÁTICAS EN MÉXICO 1  Contenido INTRODUCCIÓN ................................................................................... 3 METODOLOGÍA .................................................................................... 4 PASO 1: Identificación de actores .................................................................. 5 PASO 2: Cosecha de alcances ........................................................................ 6 PASO 3: Grupos focales ................................................................................... 7 RESULTADOS ........................................................................................ 8 1. MTA Estado Chiapas .............................................................................. 9 2. MTA Estado México ............................................................................ 14 3. MTA Estado Morelos ........................................................................... 19 CONCLUSIONES ................................................................................. 25  
+Page 3:
+December 23 | HISTORIA Y ESCALAMIENTO DE LAS MESAS TÉCNICAS AGROCLIMÁTICAS EN MÉXICO 2  HISTORIA Y ESCALAMIENTO DE LAS MESAS TÉCNICAS AGROCLIMÁTICAS EN MÉXICO David Ríos, Diana Giraldo, Carlos Navarro, Andrea Gardeazabal, Julián Ramírez-Villegas RESUMEN En México, se han establecido Mesas Técnicas Agroclimáticas (MTAs) en 12 estados, que incluyen Chiapas, Oaxaca, Estado de México, Yucatán, Campeche, Puebla, Veracruz, Michoacán, Morelos, San Luis Potosí y Baja California. El proceso de establecimiento de estos MTAs comenzó con el respaldo del Centro Internacional de Mejoramiento de Maíz y Trigo (CIMMYT), a través de los Hubs de Innovación del programa MasAgro y la Secretaría de Agricultura (SADER), con el apoyo de los gobiernos estatales y la contribución de instituciones como el Servicio Meteorológico Nacional (CONAGUA) y el Instituto Nacional de Investigaciones Forestales, Agrícolas y Pecuarias (INIFAP), entre otras. El estudio, realizado mediante la identificación de actores, la recolección de alcances y la realización de grupos focales en el campo, incluyó entrevistas a profundidad con un total de 35 actores que participan activamente en las MTAs con un rol definido. Además, se contó con la participación de 21 agricultores en grupos focales distribuidos en tres estados: Estado de México, Chiapas, así como en el Estado de Morelos. Este enfoque integral tuvo como objetivo recopilar percepciones y perspectivas de actores clave involucrados en el marco de los MTAs, fomentando una mejor comprensión de su alcance, escalamiento y efectos en las prácticas agrícolas y las colaboraciones en las regiones especificadas. La colaboración entre CIMMYT, SADER, gobiernos estatales y diversas instituciones destaca la naturaleza multifacética de la implementación de MTAs en México. La MTA de Chiapas, ha sido pionera en la implementación y escalamiento de las MTA en México, alrededor de 5 años de experiencia y consolidándose como la MTA más establecida del país, con un sólido enlace con el Hub que facilita la llegada efectiva a los agricultores. La MTA del Estado de México, establecida en 2021, ha sido clave en difundir información agroclimática y transformar institucionalmente la región. Aunque se centra más en proveer información que en espacios de participación y discusión. La MTA de Morelos, establecida en 2023 y analizada en este informe a pesar de su breve existencia, demuestra su relevancia en el panorama agroclimático de la región con iniciativas previas relacionadas con la producción y difusión de información agroclimática, su impacto se ha visto potenciado por estas iniciativas preexistentes.  Se mencionaron retos significativos y oportunidades clave en el ámbito de la traducción y difusión de información para personas con limitada alfabetización, que requieren una simplificación de la información. Las oportunidades se centran en la zonificación de pronósticos, la expansión de medios de difusión, el compromiso de los productores y la formulación de políticas sostenibles. Además, se destaca la necesidad de generar cambios en las prácticas agrícolas, aunque la confianza en los pronósticos agroclimáticos ha crecido, la implementación de cambios es un proceso gradual limitado a las condiciones del mercado.     AgriLAC Resiliente Reporte Técnico 
+Page 4:
+December 23 | HISTORIA Y ESCALAMIENTO DE LAS MESAS TÉCNICAS AGROCLIMÁTICAS EN MÉXICO 3  INTRODUCCIÓN Las herramientas de información climática más recientes, que abarcan análisis históricos, sistemas de monitoreo y predicciones climáticas, tienen el potencial de asistir a los agricultores en la adaptación a los efectos de la variabilidad y cambio climático. Al suministrar datos climáticos locales de manera comprensible, junto con servicios de extensión, los agricultores se encuentran mejor equipados para enfrentar eventos climáticos extremos y aprovechar condiciones climáticas favorables. Esto contribuye a cerrar la brecha entre la generación de información agroclimática y su aplicación práctica por parte de los agricultores (Giraldo-Mendez, D. et al, 2018). Para lograr cerrar la brecha entre la generación de información agroclimática y su aplicación, nace el enfoque de Mesas Técnicas Agroclimáticas (MTAs), las cuales representan una iniciativa innovadora cuyo propósito es reunir a diversos actores del sector agropecuario a nivel local, con el objetivo de proporcionar información a los pequeños productores sobre los cambios climáticos previstos en su región. Las MTA buscan informar acerca de cómo estos cambios pueden afectar sus cultivos y ofrecen orientación sobre acciones para mitigar los impactos negativos. Facilitan la creación de espacios de diálogo entre los participantes para la gestión de información agroclimática local, con la finalidad de identificar las mejores prácticas de adaptación a fenómenos climáticos. Posteriormente, esta información se transfiere a técnicos y productores locales mediante el Boletín Agroclimático Local, que resume las predicciones estacionales y los pronósticos climáticos discutidos en la mesa, junto con recomendaciones y medidas adaptativas específicas para cada tipo de cultivo. De esta manera, las MTAs han sido implementadas en 11 países—Guatemala, Honduras, Colombia, Ecuador, Nicaragua, Chile, Panamá, El Salvador, Perú, Paraguay y México—sumando una red de más de 70 MTAs en América Latina (Figura 1). Las MTAs involucran a más de 462 instituciones y han tenido un impacto positivo en la vida de más de 500 mil agricultores, proporcionándoles información agroclimática a nivel local para mejorar la toma de decisiones en sus sistemas productivos. Para México específicamente, se han establecido MTAs en 12 estados, incluidos Chiapas, Oaxaca, Estado de México, Yucatán, Campeche, Puebla, Veracruz, Michoacán, Morelos, San Luis Potosí y Baja California. Allí, el proceso de establecimiento de las MTA inicio con el soporte de Centro Internacional de Mejoramiento de Maíz y Trigo (CIMMYT)  a través de los Hubs de innovación del programa MasAgro y la Secretaría de Agricultura (SADER), con el respaldo de los gobiernos estatales y la contribución de instituciones como el Servicio Meteorológico Nacional (CONAGUA), INIFAP, entre otras. El programa MasAgro en México, tiene como objetivo aumentar la productividad, rentabilidad y sostenibilidad del maíz y trigo, para comprender cómo ocurren los procesos de innovación en contextos heterogéneos y cambiantes. MasAgro comenzó en 2010 como un esfuerzo conjunto entre y la Secretaría de Agricultura, Ganadería, Desarrollo Rural, Pesca y Alimentación (SAGARPA) del Gobierno Mexicano. MasAgro se implementa a través de una red de 'Hubs = centros' que abarcan gran parte de México. En MasAgro, un Hub se considera una red de actores de la cadena de valor de una región agroecológica específica que trabajan juntos en soluciones sostenibles en sistemas agrícolas basados en maíz y trigo. El Hub tiene como objetivo fomentar procesos de innovación a nivel regional, teniendo en cuenta los diferentes contextos (Hellin et al., 2014). La iniciativa de investigación AgriLAC Resiliente—Sistemas Resilientes de Innovación Agro-Alimentaria guiando la Seguridad Alimentaria, Crecimiento Inclusivo y Reducción de la Emigración en América Latina y el Caribe—tiene como objetivo, aumentar la resiliencia, sostenibilidad y competitividad de los sistemas y actores agroalimentarios en América Latina y el Caribe al aumentar su capacidad de respuesta a necesidades urgentes en materia de seguridad alimentaria, reducir los riesgos climáticos, estabilizar las comunidades vulnerables al conflicto y reducir la emigración. En el marco de la iniciativa AgriLAC, se ha realizado este estudio en México en cuatro MTAs— Chiapas, Estado de México, Yucatán y Morelos. El estudio apunta a entender la historia del establecimiento de las MTA, su escalamiento, particularidades en cada estado, ingredientes de éxito y lecciones aprendidas. Esto permitirá, en primer lugar, realizar una caracterización de las MTA y entender las historias de éxito. En un mediano plazo, permitirá entender cuáles son las instituciones clave, acciones y metodologías efectivas y necesidades específicas de los agricultores, para realizar recomendaciones que permitan a las MTA generar herramientas para aumentar la resiliencia, sostenibilidad y competitividad. Este documento presenta resultados preliminares de la primera fase 2023. 
+Page 5:
+December 23 | HISTORIA Y ESCALAMIENTO DE LAS MESAS TÉCNICAS AGROCLIMÁTICAS EN MÉXICO 4   
+Figura 1. Países en donde se han contextualizado y escalado las MTAs METODOLOGÍA Esta sección presenta la metodología utilizada para caracterizar y comprender la historia y el proceso de escalamiento de las Mesas Técnicas Agroclimáticas (MTA) en México. La Figura 2 presenta el proceso metodológico para entender la historia y los alcances de las MTA en México. En primer lugar, se realizó la identificación de actores e instituciones clave y participantes en las MTA. En segundo lugar, se realizaron entrevistas a profundidad para una cosecha de alcances. Finalmente, se realizó trabajo de campo en el que se efectuaron grupos focales con representantes de instituciones, técnicos y agricultores.  
+Page 6:
+December 23 | HISTORIA Y ESCALAMIENTO DE LAS MESAS TÉCNICAS AGROCLIMÁTICAS EN MÉXICO 5  Figura 2. Proceso metodológico       PASO 1: Identificación de actores El primer paso del proceso metodológico para la reconstrucción de la historia y escalamiento de las MTA en México, así como el análisis de los alcances y transformaciones en territorio, es la identificación de los actores clave que asisten a las MTAs. Cabe resaltar que si bien las MTAs a la fecha han estado impulsada y apoyada por la Secretaría de Agricultura (SADER) y los gobiernos estatales, la metodología y establecimiento de la primera MTA fue llevada al país en primera instancia por el Centro Internacional de Mejoramiento de Maíz y Trigo (CIMMYT), a través de sus Hub o centros de Innovación y el Centro Internacional de Agricultura Tropical (CIAT). A través de los Hub o nodos de innovación, el CIMMYT (mediante su oficina central y sus oficinas regionales) de la mano de la SADER y gobiernos estatales, han llevado el enfoque de las MTA a los territorios. Que incluye, la convocatoria de actores clave del territorio, facilitar la MTA, implementando la metodología, la creación y publicación del boletín agroclimático y llevando la información a los agricultores. Por esta razón, el primer punto de contacto fueron los gerentes regionales de cada Hub:   o Hub de Estado México (maneja operaciones de los estados de México, Puebla, Hidalgo y Ciudad de México) o Hub de Estado Chiapas o Hub de Yucatán (maneja operaciones de los estados de Yucatán, Quintana Roo y Campeche) o Hub de Oaxaca  Cada uno de los gerentes de Hub fue entrevistado, en el que se solicitó narrar el proceso de implementación y escalamiento de cada una de las MTA. Adicionalmente, los gerentes respondieron una encuesta estructurada en la que se buscó caracterizar la participación de las instituciones en la MTA con una matriz de identificación de actores. Los módulos, cantidad de preguntas y objetivo son presentados en la Tabla 1.   Tabla 1. Encuesta identificación de actores de MTA. Módulo Preguntas Objetivo A. Identificación del respondiente 4 preguntas Identificación del entrevistado, institución, cargo y rol en la MTA B. MTA historia 5 preguntas Narrar el proceso de implementación, retos y oportunidades de la MTA C. Identificación de actores 7 preguntas Identificación de todos los actores que participan en la MTA, nivel de acción, tipo de institución, rol y datos del punto focal  La matriz de identificación de actores fue llenada por cada uno de los entrevistados, con la información de todas las instituciones participantes en la MTA de su territorio, caracterizando el tipo, nivel de acción, el rol dentro de la MTA y los datos de contacto del punto focal. Con esta matriz de actores se construyó la base de datos para la cosecha de alcances.  
+Page 7:
+December 23 | HISTORIA Y ESCALAMIENTO DE LAS MESAS TÉCNICAS AGROCLIMÁTICAS EN MÉXICO 6  PASO 2: Cosecha de alcances El enfoque de cosecha de alcances permite, mediante la revisión de material secundario y entrevistas con actores involucrados en la implementación de acciones y espacios como la MTA, la identificación de alcances y transformaciones en un territorio determinado. Los componentes de la cosecha de alcances se definen así: i. Agente de cambio: Mesas Técnicas Agroclimáticas (MTA) ii. Actores sociales: instituciones y comunidad participantes.  iii. Cosechador: el entrevistador externo.   Para triangular las fuentes de información relacionadas con los alcances se utilizó información secundaria, principalmente los boletines de las MTA. Sin embargo, la mayoría de la información proviene de las entrevistas semiestructuradas realizadas a los actores identificados en el punto previo.  El proceso que se sigue en una cosecha de alcances es el siguiente: 1. Identificar la pregunta que guíe la cosecha de alcances, que cubra los posibles alcances derivados de la implementación de las MTA 2. Revisión de la base de datos generada en la identificación de actores. Cada punto focal fue contactado, mediante una invitación por correo electrónico. Adicionalmente, se realizó trabajo de campo en los estados priorizados, con entrevistas presenciales.  3. El Cosechador obtiene información de los participantes de las MTA a través de entrevistas semiestructuradas (cara a cara) para identificar cambios reales en percepciones o comportamientos de los Actores Sociales y cómo la MTA ha tenido influencia.  4. El análisis de la información obtenida mediante la revisión de documentación y las entrevistas se realiza compilando la información para responder las preguntas ¿Quién cambió qué? ¿Cuándo se cambió? ¿Cómo la MTA ha contribuido a estos cambios? 5. Los alcances potenciales son revisados y, aquellos que deban ser verificados son seleccionados para incrementar la precisión. Estos alcances luego son verificados y triangulados; esto significa que las afirmaciones identificadas deben estar confirmadas de diferentes maneras y por diferentes actores.  6. Finalmente, se identifican las grandes áreas de transformación que emergen, agrupando los alcances por grandes áreas de transformación.  La Tabla 2 presenta la estructura de la entrevista semiestructurada realizada a los puntos focales, representantes de instituciones y actores presentes en la MTA de cada territorio. Luego de la identificación del respondiente y la caracterización de la institución, se realizó una serie de 17 de preguntas, la mayoría abiertas, para identificar los cambios y transformaciones que se han percibido luego de la implementación de la MTA en el territorio.   Tabla 2. Entrevista de cosecha de alcances. Módulo Preguntas Objetivo A. Identificación del respondiente 8 preguntas Identificación del entrevistado, datos de contacto, institución y cargo  B. Caracterización de la institución 2 preguntas Identificación de las actividades y nivel de acción de la institución C. Participación en MTA 17 preguntas Identificación las MTA en que participa, análisis de transformaciones y cambios generados por la MTA, logros y desafíos. Fuente: elaboración propia La Tabla 3 presenta la cantidad de entrevistados por cada uno de los estados. Se realizaron entrevistas a profundidad a un total 35 actores involucrados transversalmente a las MTA o participantes de una MTA específica. De acuerdo con la cantidad de actores entrevistados, se realizó una posterior priorización para el trabajo de campo y grupos focales.  
+Page 8:
+December 23 | HISTORIA Y ESCALAMIENTO DE LAS MESAS TÉCNICAS AGROCLIMÁTICAS EN MÉXICO 7   Tabla 3. Cantidad de actores entrevistados por estado. MTA Cantidad de entrevistados Transversales a las MTA 3 entrevistados Estado México 15 entrevistados Estado Morelos 7 entrevistados Estado Chiapas 5 entrevistados Fuente: elaboración propia PASO 3: Grupos focales Finalmente, para validar los alcances y áreas de transformación identificados, se realizaron grupos focales con agricultores de los territorios de influencia de las MTA. Para este ejercicio, se realizó una priorización inicial de 3 estados para 2023 y un estado (Yucatán) para 2024 o Estado de México o Estado de Chiapas o Estado de Yucatán o Estado de Morelos  Esta priorización se realizó con base en la información obtenida en la identificación de actores y en la cosecha de alcances, determinando los estados en que la implementación de la MTA ha tenido el suficiente rango temporal para vincular actores relevantes, realizar sesiones periódicas, generar al menos un boletín agroclimático e implementar una estrategia de difusión de la información. El grupo focal es un método de encuesta cualitativa que puede utilizarse para evaluar un programa con el fin de conocer las perspectivas de los participantes sobre el tema de la intervención (Patton, 2015). En este caso, el objetivo es evaluar los efectos de la disponibilidad y el uso de los servicios de información climática por parte de los agricultores. Cada grupo focal con los agricultores tuvo una duración aproximada de 2 horas, en las que el facilitador realizó 3 actividades participativas diferentes. Las actividades se realizaron de manera grupal, de manera que todos los productores pudieran entregar sus opiniones y percepciones.    
+ 
+Figura 3. Grupo focal Estado Morelos. 
+Page 9:
+December 23 | HISTORIA Y ESCALAMIENTO DE LAS MESAS TÉCNICAS AGROCLIMÁTICAS EN MÉXICO 8  En total en los grupos focales participaron 21 agricultores, Chiapas (11); Estado de México (6) y Morelos (4).  La Tabla 4 presenta los 3 diferentes módulos abordados dentro de cada grupo focal. En primer lugar, se realizó una caracterización del clima histórico en la región, identificando mes a mes cuáles son las condiciones climáticas predominantes y las actividades agrícolas relacionadas con los cultivos principales. En segundo lugar, se realiza una identificación de eventos climáticos extremos sufridos en los últimos años, así como las afectaciones sufridas y las alertas e información previa sobre el evento. Finalmente, se efectuó una discusión sobre la información agroclimática recibida y utilizada por los agricultores; esta discusión permite comprender si reciben información de la MTA o de otra fuente, su uso y las necesidades de información.     Tabla 4. Módulos grupo focal con agricultores. Módulo Preguntas Objetivo 1. Caracterización del clima histórico 2 preguntas Descripción del clima histórico en la zona y calendario agrícola  2. Identificación de eventos climáticos 4 preguntas Identificación de eventos climáticos extremos, afectaciones y alertas 3. Utilización y efectos de la información climática 15 preguntas Identificación de recepción de información agroclimática, uso, utilidad y preferencias Fuente: elaboración propia RESULTADOS En esta sección, se presentan los resultados obtenidos después de llevar a cabo la implementación del proceso metodológico de investigación, estructurado en tres pasos, como se describe en la sección anterior. Aunque hay 12 MTAs implementadas en México (ver figura 4), de acuerdo con la información recopilada mediante el proceso de identificación de actores y la recolección de alcances, se han priorizado cuatro MTAs: i) Estado de México, ii) Chiapas, iii) Yucatán y iv) Morelos. Estas MTAs fueron priorizadas debido al estado de implementación de cada una, al contexto específico, al alcance y al involucramiento de los actores en el espacio. En el centro del país se encuentran las MTAs de Morelos y Estado de México; en el sur, Chiapas. Según los resultados obtenidos, cada una de las MTAs priorizadas se encuentra en estados diferentes de implementación, contando con contextos específicos particulares y áreas de transformación diferentes. 
+ 
+Figura 4. Mapa de estados con MTAs (Fuente: SADER, 2023)  
+Page 10:
+December 23 | HISTORIA Y ESCALAMIENTO DE LAS MESAS TÉCNICAS AGROCLIMÁTICAS EN MÉXICO 9  La MTA de Chiapas fue la primera en ser implementada en México, en el año 2019; ha estado en funcionamiento durante aproximadamente 5 años y se considera la MTA más consolidada del país. En 2021 se estableció la MTA del Estado de México, sesionando dos veces al año y con un destacado componente institucional y técnico, como se detalla más adelante. Finalmente, la MTA de Morelos se estableció en 2023 y ha celebrado sesiones solo una vez; a pesar de su corta existencia, el espacio no parte desde cero, por lo que se analiza en este informe. A continuación (Tabla 5), se presentan los resultados para cada una de las MTA. En primer lugar, se describe brevemente la historia y el escalonamiento de las MTA. Luego, se presenta la identificación de actores. En tercer lugar, se detallan las áreas de transformación identificadas, que han sido divididas en dos tipos.  Tabla 5. Tipos de área de transformación. Tipo de área de transformación Área de transformación Institucional Conocimiento agroclimático Programas institucionales Personal técnico en territorio En agricultores Difusión de información agroclimática Conocimiento agroclimático Cambio en prácticas Fuente: elaboración propia 1. MTA Estado Chiapas 
+ 
+Figura 5. Historia del Hub de innovación de Chiapas (Fuente: FUTOP, 2017) 1.1 Historia y escalamiento Chiapas fue el estado pionero en las MTA de México, con la implementación del primer espacio de este tipo en el año 2019. Antes de la instalación de la primera MTA en el estado, el INIFAP (Instituto Nacional de Investigación Forestal, Agrícola y Pecuaria de México) en el Hub de Chiapas (Figura 5), había realizado un trabajo previo durante aproximadamente tres años, enfocado en la promoción de los pronósticos agroclimáticos con un alcance limitado a ciertos grupos de agricultores en el Hub. En este sentido, el INIFAP se encargaba de generar pronósticos para el estado, realizaba y compartía la información. Sin embargo, según lo manifestado por los actores clave en la zona, existía variabilidad en la precisión y confiabilidad de los pronósticos generados; algunas zonas del estado contaban con alta precisión y otros con pronósticos poco confiables, debido a la falta de estaciones meteorológicas y al inadecuado mantenimiento de estas. Las recomendaciones estaban sujetas a la información de cada estación. Únicamente se presentaba el pronóstico y se entregaban algunas recomendaciones, las cuales eran complementadas con información técnica de expertos en agronomía, sin la generación de boletines o procesos participativos de discusión. 
+Page 11:
+December 23 | HISTORIA Y ESCALAMIENTO DE LAS MESAS TÉCNICAS AGROCLIMÁTICAS EN MÉXICO 10  En 2020, el CIAT y el CIMMYT, a través del Hub regional de Chiapas, iniciaron oficialmente la implementación de la primera MTA. Se convocó a otros colaboradores, incluyendo instituciones, socios y consultores, quienes comenzaron a trabajar de manera colaborativa para generar recomendaciones más localizadas, difundir información e incluso realizar un seguimiento a las actividades de los productores en diferentes regiones. Así, se pasó de proporcionar información agroclimática para dos grandes regiones del estado a generar pronósticos y recomendaciones para las 15 regiones que dividen Chiapas. La integración de la SADER (Secretaría de Agricultura y Desarrollo Rural), el Servicio Meteorológico de CONAGUA, INIFAP y CIMMYT permitió unir esfuerzos técnicos para fortalecer los pronósticos climáticos y la generación de recomendaciones localizadas. Asimismo, el CIMMYT incorporó el enfoque de las MTA y recomendaciones basadas en pronósticos climáticos en sus proyectos de extensión e implementación de prácticas para el aumento de productividad y sostenibilidad. Para lograrlo, aseguró que tanto los profesionales del Centro como los consultores y socios locales que conformaban nodos de productores en las diferentes regiones recibieran capacitaciones en información agroclimática y transmitieran las recomendaciones.  En la actualidad, además del espacio de la MTA que se lleva a cabo de manera presencial y al cual se conectan algunos nodos de productores de manera remota, existen otros canales de difusión. En concreto, hay tres grupos de WhatsApp —uno para participantes de la MTA, otro para técnicos de todo el estado y un tercero para agricultores— donde se comparte información de pronósticos y recomendaciones de manera frecuente. También se cuenta con un grupo de Facebook con más de 2 mil seguidores, se ha invitado a medios de comunicación de radio local y los participantes disponen de listas de difusión para enviar el boletín. La Figura 6 presenta algunas estadísticas relacionadas con la MTA y el boletín. Hasta la fecha actual, se han emitido un total de 7 boletines, los cuales han contado con la participación de entre 10 y 13 instituciones en su producción y edición. En cuanto a las descargas del boletín, el número máximo alcanzó las 350 descargas, oscilando en un promedio de entre 100 y 200 descargas para el resto de los boletines. Sin embargo, es importante destacar que la mayoría de los productores reciben las recomendaciones agroclimáticas a través de los grupos de WhatsApp, listas de difusión, Facebook y de manera presencial en escuelas de campo y actividades de extensión de INIFAP, CIMMYT y otros participantes de la MTA, como la Universidad Autónoma Agraria Antonio Narro (UAAAN), la cual difunde el boletín entre sus estudiantes y más de 5,000 seguidores en redes sociales.  
+Figura 6. Estadística boletines. MTA Chiapas. 0100200300400
+03691215
+Boletín 1Boletín 2Boletín 3Boletín 4Boletín 5Boletín 6Boletín 7Descargas# institucionesDescargas
+Page 12:
+December 23 | HISTORIA Y ESCALAMIENTO DE LAS MESAS TÉCNICAS AGROCLIMÁTICAS EN MÉXICO 11  Para los boletines consultar: Navarro-Racines C. 2020. Recopilación de los Boletines Agroclimáticos de la Mesa Técnica Agroclimática de Chiapas, 2020. CGIAR Research Program on Climate Change, Agriculture and Food Security (CCAFS). https://hdl.handle.net/10568/111388  1.2 Identificación de actores En la sección anterior se mencionaron algunos de los actores que participan activamente del espacio de MTA en Chiapas. La mayoría de actores (Figura 7) son del gobierno, con 4 de nivel nacional: Secretaría de Agricultura de Chiapas, Secretaría de Medio Ambiente de Chiapas, Secretaría General del Gobierno de Chiapas y SADER seccional Chiapas. Los otros 3 actores de gobierno son del orden nacional: SADER, FIRA (Fideicomisos Instituidos en Relación con la Agricultura) y FND (Financiera Nacional de Desarrollo Agropecuario). Le siguen 3 actores de educación de nivel local y 2 nacionales, entre las que se destacan: Universidad Autónoma de Chiapas (UNACH), Universidad Antonio Narro (UAAAN) y la Universidad de Ciencias y Artes de Chiapas (UNICACH)-. Asimismo, la MTA cuenta con la importante participación del Consejo Consultivo de Cambio Climático de Chiapas y otros participantes de la sociedad civil, del sector privado y organizaciones de productores que permiten la amplia difusión que tiene el boletín. Finalmente, el brazo técnico de la MTA está soportado por INIFAP y CIMMYT.   
+ 
+Figura 7. Actores por tipo y nivel. MTA Chiapas. 1.3 Alcances y transformaciones Como es expuso en la sección de metodología, a través de entrevistas a profundidad a los representantes y puntos focales de las instituciones participantes en la MTA y por medio de grupos focales con productores del estado, se identificaron afirmaciones sobre cambios y efectos producidos por la implementación de la MTA, la difusión de la información agroclimática y el uso de las recomendaciones. La Tabla 6 presenta las áreas de transformación identificadas para Chiapas, tanto a nivel institucional como a nivel de agricultores.  Tabla 6. Transformaciones MTA Chiapas.                             MTA CHIAPAS  Programas institucionales  Personal técnico apoyando en territorio    Difusión de información agroclimática  Conocimiento agroclimático  Cambio en prácticas                             TIPO DE TRANSFORMACIÓN INSTITUCIONAL     AGRICULTORES  012345678GobiernoInvestigaciónEducaciónClimaOrganización de productoresMedio de comunicaciónONG nacionalSector privadoSociedad Civil
+LocalNacionalInternacional
+Page 13:
+December 23 | HISTORIA Y ESCALAMIENTO DE LAS MESAS TÉCNICAS AGROCLIMÁTICAS EN MÉXICO 12  Transformaciones institucionales • Generación o fortalecimiento de programas institucionales La primera área de transformación identificada, que abarca alcances y efectos derivados de la implementación de la MTA en el estado de Chiapas, es la generación y fortalecimiento de programas institucionales relacionados con la variabilidad, cambio climático y uso de información agroclimática para la mitigación del riesgo. Como se mencionó en la sección de historia y escalamiento, el INIFAP había llevado a cabo un esfuerzo significativo y valioso previamente para generar información agroclimática y difundir recomendaciones. No obstante, dicho esfuerzo se ejecutaba de manera individual, sin el respaldo o colaboración de otras instituciones federales o estatales y sin la participación de otros actores de la sociedad. La implementación de la MTA, con la participación activa del CIMMYT a través del Hub de Chiapas y el posterior compromiso de la SADER, ha llevado a la creación de un espacio oficial, interinstitucional y normativo en el estado donde se genera y discute información agroclimática localizada. Además, la MTA ha logrado el compromiso del gobierno estatal, con la vinculación de tres de sus secretarías: gobierno, agricultura y medio ambiente. El éxito de la MTA de Chiapas en la implementación de esfuerzos interinstitucionales de las áreas de gobierno, academia, investigación y sociedad civil impulsó el escalamiento de las MTA a nivel federal por parte de la SADER. Tomando como ejemplo la experiencia de la MTA de Chiapas. • Personal técnico apoyando en territorio La segunda área de transformación, que engloba los logros de la MTA a nivel institucional, es el aumento de personal técnico dedicado a capacitar y difundir información agroclimática en el territorio. Es importante recordar el esfuerzo previo realizado por el INIFAP antes de la implementación de la MTA para generar información y llevarla al territorio. Con la introducción de la MTA en Chiapas, estos esfuerzos se multiplicaron. La gerencia del Hub regional de Chiapas del CIMMYT integró la capacitación y difusión de información agroclimática en todos los programas de investigación, extensión y fortalecimiento que se llevaron a cabo en la zona.  En este sentido, los profesionales del CIMMYT, consultores y técnicos pertenecientes a los socios y aliados locales recibieron instrucciones para realizar varias acciones. En primer lugar, se les encomendó capacitar a los productores agrupados en nodos regionales en temas agroclimáticos. En segundo lugar, se aprovechó la red de colaboración de los proyectos en ejecución para involucrar a los productores en las sesiones de la MTA, hacerles llegar el boletín y llevar a cabo actividades de extensión y seguimiento a las recomendaciones. De manera similar, aprovechando la información generada en la MTA, la SADER, a través de su brazo técnico INIFAP, fortaleció el proceso de extensión en el estado, llevando a cabo la capacitación de productores y la difusión de la información. Transformaci","8391"
