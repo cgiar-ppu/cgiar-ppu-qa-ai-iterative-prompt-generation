@@ -121,6 +121,82 @@ Please provide your answer in the following format:
 [INPUT_TEXT]''',
         'impact_area': 'Climate'
     },
+    'INNOVATION_READINESS_PROMPT': {
+    'id': 'INNOVATION_READINESS_PROMPT',
+    'text': '''# **You are a researcher at CGIAR. Your task is to provide a score from 0 to 9 for a metric called "Innovation Readiness". In order to do so, you need to review projects submitted by other researchers and evaluate them across a number of dimensions. This task consists of the following steps:**
+
+**Step 1:** Review the summary provided. It summarizes the work carried out as part of the project. Make sure to distinguish activities which were carried out from activities which were only planned.
+
+**Step 2:** Review the definitions of the 0-9 scores, so that you understand what are the possible values and where does the text being reviewed belong to.
+
+**Step 3:** Use the innovation readiness scale to determine the cumulative readiness level of **COMPLETED** activities conducted as part of the project. **IMPORTANT:** No "planned, but not-yet-completed" activities should be considered when determining the readiness level.
+
+**Step 4:** In a professional, academic 3rd person voice, concisely justify why you selected this readiness level in at most 300 words.
+
+**IMPORTANT:** Keep in mind that the audience consists of academic researchers. Never refer to yourself in the first person in this summary. Refer to all actions in the past tense. Be sure to read the entire set of instructions carefully before beginning. Do not go to the next step without making sure the previous step has been completed. Please read the text twice; I will give you a tip.
+
+---
+
+**Innovation Development** refers to a new, improved, or adapted output or groups of outputs such as technologies, products and services, policies, and other organizational and institutional arrangements with high potential to contribute to positive impacts when used at scale. Innovations may be at early stages of readiness (ideation or basic research) or at more mature stages of readiness (delivery and scaling).
+
+### **Innovation Readiness Scale and Definitions:**
+
+- **Innovation Readiness Level 0: Idea.**  
+  The innovation is in the idea stage. The innovation is not yet being implemented.
+
+- **Innovation Readiness Level 1: Basic Research.**  
+  The innovation's basic principles are being researched for their ability to achieve an impact.
+
+- **Innovation Readiness Level 2: Formulation.**  
+  The innovation's basic principles are being formulated or designed.
+
+- **Innovation Readiness Level 3: Proof of Concept.**  
+  The innovation's key concepts have been validated for their ability to achieve a specific impact.
+
+- **Innovation Readiness Level 4: Controlled Testing.**  
+  The innovation is being tested for its ability to achieve a specific impact under fully-controlled conditions.
+
+- **Innovation Readiness Level 5: Early Prototype.**  
+  The innovation is validated for its ability to achieve a specific impact under fully-controlled conditions.
+
+- **Innovation Readiness Level 6: Semi-controlled Testing.**  
+  The innovation is being tested for its ability to achieve a specific impact under semi-controlled conditions.
+
+- **Innovation Readiness Level 7: Prototype.**  
+  The innovation is validated for its ability to achieve a specific impact under semi-controlled conditions.
+
+- **Innovation Readiness Level 8: Uncontrolled Testing.**  
+  The innovation is being tested for its ability to achieve a specific impact under uncontrolled conditions.
+
+- **Innovation Readiness Level 9: Proven Innovation.**  
+  The innovation is validated for its ability to achieve a specific impact under uncontrolled conditions.
+
+### **Instructions:**
+
+1. **Analyze the Summary:**  
+   Determine the Innovation Readiness score by evaluating the completed activities based on the Innovation Readiness Scale.
+
+2. **Assign the Score:**  
+   Provide a score between 0 and 9 according to the scale definitions.
+
+3. **Provide Justification:**  
+   In a professional, academic 3rd person voice, concisely justify the selected readiness level in at most 300 words.
+
+**IMPORTANT:** 
+- Consider only completed activities.
+- Do not include planned but not-yet-completed activities in the assessment.
+- Use past tense and avoid first person references.
+
+### **Structured Output Format:**
+
+Please provide your answer in the following format:
+```json
+{ "score": <0-9>, "explanation": "<Your explanation here>" }
+**Text to Analyze:**
+[INPUT_TEXT]''',
+        'impact_area': 'IPSR'
+    },
+
     'NUTRITION_PROMPT': {
         'id': 'NUTRITION_PROMPT',
         'text': '''# **You are an AI assistant tasked with evaluating research results from CGIAR (Consultative Group on International Agricultural Research) to determine whether they align with and contribute to CGIAR's objectives in nutrition, health, and food security. Your goal is to accurately assign an impact area tag that reflects the relevance and impact of the research on these specific objectives.**
