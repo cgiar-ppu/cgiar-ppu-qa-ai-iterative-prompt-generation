@@ -1,5 +1,5 @@
 # app.py
-
+import io
 import streamlit as st
 import pandas as pd
 import os
@@ -15,6 +15,7 @@ import prompt_techniques
 from datetime import datetime
 import base64
 import re
+from output_conversion_unpivot_dashboard import transform_for_dashboard  # Import the transformation function
 # app.py
 #Test Comment to refresh x2
 simplified_models = ['o1-preview', 'o1-mini']
@@ -219,6 +220,14 @@ def get_table_download_link(df, link_text):
     href = f'<a href="data:file/csv;base64,{b64}" download="data.csv">{link_text}</a>'
     return href
 
+def get_excel_download_link(df, link_text):
+    towrite = io.BytesIO()
+    df.to_excel(towrite, index=False, header=True)
+    towrite.seek(0)  # reset pointer
+    b64 = base64.b64encode(towrite.read()).decode()  # some strings <-> bytes conversions necessary here
+    href = f'<a href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,{b64}" download="data.xlsx">{link_text}</a>'
+    return href
+
 # app.py
 
 # Function to update progress
@@ -326,6 +335,10 @@ with tab1:
 
                         st.markdown(get_table_download_link(metrics_df, 'Download Metrics CSV'), unsafe_allow_html=True)
                         st.markdown(get_table_download_link(results_df, 'Download Results CSV'), unsafe_allow_html=True)
+
+                        # New button for downloading results in the desired format for the dashboard
+                        transformed_results_df = transform_for_dashboard(results_df)
+                        st.markdown(get_excel_download_link(transformed_results_df, 'Download Results for dashboard in Excel'), unsafe_allow_html=True)
 
                         # Display metrics
                         st.subheader("Metrics")
