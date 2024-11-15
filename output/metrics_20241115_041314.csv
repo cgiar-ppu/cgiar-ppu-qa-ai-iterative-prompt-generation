@@ -1,0 +1,11 @@
+model_name,Impact Area,prompt_id,total,correct,incorrect,accuracy,expert_score,score_total,score_correct,score_accuracy
+ft:gpt-4o-mini-2024-07-18:personal:24072024:9oT26O2l,climate,CLIMATE_CHANGE_PROMPT,10,5,5,0.5,0,2,2,1.0
+ft:gpt-4o-mini-2024-07-18:personal:24072024:9oT26O2l,climate,CLIMATE_CHANGE_PROMPT,10,5,5,0.5,1,3,1,0.3333333333333333
+ft:gpt-4o-mini-2024-07-18:personal:24072024:9oT26O2l,climate,CLIMATE_CHANGE_PROMPT,10,5,5,0.5,2,5,2,0.4
+ft:gpt-4o-mini-2024-07-18:personal:24072024:9oT26O2l,gender,GENDER_EQUALITY_PROMPT,1,0,1,0.0,1,1,0,0.0
+ft:gpt-4o-mini-2024-07-18:personal:24072024:9oT26O2l,poverty,POVERTY_REDUCTION_PROMPT,2,1,1,0.5,0,2,1,0.5
+gpt-4o,climate,CLIMATE_CHANGE_PROMPT,10,5,5,0.5,0,2,1,0.5
+gpt-4o,climate,CLIMATE_CHANGE_PROMPT,10,5,5,0.5,1,3,2,0.6666666666666666
+gpt-4o,climate,CLIMATE_CHANGE_PROMPT,10,5,5,0.5,2,5,2,0.4
+gpt-4o,gender,GENDER_EQUALITY_PROMPT,1,0,1,0.0,1,1,0,0.0
+gpt-4o,poverty,POVERTY_REDUCTION_PROMPT,2,1,1,0.5,0,2,1,0.5

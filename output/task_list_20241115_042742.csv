@@ -1,0 +1,584 @@
+"result_code","prompt_id","prompt_text","model_name","impact_area","input_text","token_count"
+"1020","GENDER_EQUALITY_PROMPT","# **You are an AI assistant tasked with evaluating research results from CGIAR (Consultative Group on International Agricultural Research) to determine whether they align with and contribute to CGIAR's objectives in promoting gender equality. Your goal is to accurately assign an impact area tag that reflects the relevance and impact of the research on these specific gender equality objectives.**
+
+### **Context:**
+CGIAR is a global partnership that unites international organizations focused on research for food security. CGIAR has established specific objectives to promote gender equality, particularly in the fields of agriculture, forestry, fisheries, climate, and nutrition in developing countries. The research results you will analyze originate from various CGIAR initiatives and projects in these and related fields.
+
+### **Research Result Components:**
+Each research result includes the following details:
+- **Title:** A brief title summarizing the research result.
+- **Description:** A detailed description of the research result, including methods and findings.
+- **Research Abstract:** A summary of key findings and implications (optional).
+- **Research Parsed Text:** The parsed text of the research result (optional).
+
+### **Tagging Criteria:**
+Assign a gender equality impact tag using the following criteria:
+
+- **0 = Not Targeted:** 
+  - The research does not address or contribute to CGIAR's gender equality objectives.
+  - The research is unrelated to gender equality, focusing instead on different topics with no significant implications for gender-related issues.
+  - Example: A study focused solely on crop yield improvements without considering gender roles, implications, or disparities.
+
+- **1 = Significant:**
+  - The research makes a meaningful contribution to CGIAR’s gender equality objectives, but these are not the primary focus.
+  - The research is relevant and provides insights into gender dynamics, but these are secondary to other goals.
+  - Example: A study that examines the impact of agricultural interventions on women’s access to land but does not center its entire analysis on gender equality.
+
+- **2 = Principal:**
+  - The primary objective of the research is to address and directly impact CGIAR's goals in promoting gender equality.
+  - The research would not have been undertaken without the intention to contribute to these specific gender equality objectives.
+  - Example: A study specifically designed to develop agricultural policies aimed at improving women’s access to financial resources and closing gender gaps.
+
+### **Key Objectives Set by CGIAR:**
+- **Closing the Gender Gap:** Addressing disparities in rights to economic resources, ownership, and control over land and natural resources for women in food, land, and water systems.
+- **Providing Opportunities:** Creating opportunities for young people who are not in employment, education, or training, with a focus on gender inclusivity.
+
+### **Instructions:**
+1. **Analyze the Title and Abstract:** Determine whether the research is related to CGIAR's objectives in promoting gender equality by looking for relevant keywords or phrases, such as “gender,” “women,” “equality,” or “empowerment.”
+2. **Review the Description and Parsed Text:** Assess whether the research directly contributes to CGIAR’s gender equality objectives, and how integral these objectives are to the overall study.
+3. **Assign the Tag:** Based on the criteria provided, assign the most appropriate tag (0, 1, or 2) that reflects whether the research is related to and impacts CGIAR’s objectives in gender equality.
+4. **Provide a Brief Justification:** Explain why you assigned this tag, referencing specific aspects of the research that influenced your decision. Make sure to clarify how the research aligns (or does not align) with CGIAR’s gender equality objectives.
+
+### **Important Notes:**
+- If the research does not relate to CGIAR's objectives in gender equality, assign a tag of **0** (Not Targeted).
+- If the research mentions gender equality as an important consideration but not the primary focus, assign a tag of **1** (Significant).
+- If gender equality is the primary objective of the research, assign a tag of **2** (Principal).
+- When assigning a tag of **2**, ensure that the evidence clearly demonstrates that gender equality objectives were the main goals of the research and fundamental to its design.
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+{ ""score"": <0|1|2>, ""explanation"": ""<Your explanation here>"" }
+
+
+### **Now, analyze the following research result and assign a gender equality tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in promoting gender equality.**
+
+**Text to Analyze:**
+[INPUT_TEXT]","gpt-4o","Gender","Aclimatar - Understanding climate change impacts and adaptation practices for cocoa management in West Africa Aclimatar: Empowering Smallholder Producers for Perennials in West Africa for Climate Resilience. The innovation highlights the platform's core purpose of supporting climate adaptation for smallholder cocoa producers in Ghana and Côte d'Ivoire. By offering site-specific climate change risk assessments and tailored adaptation practices, Aclimatar serves as a vital tool in combating the effects of climate change. Its intuitive map interface allows users to select locations, providing them with essential climate data, impacts on specific crops, and prioritized adaptation strategies. This innovation is designed to enhance local projects, technicians, and organizations' understanding and response to climate variability, ensuring sustainable agricultural practices and resilience among smallholder communities.","1104"
+"1020","CLIMATE_CHANGE_PROMPT","# **You are an AI assistant tasked with evaluating research results from CGIAR (Consultative Group on International Agricultural Research) to determine whether they align with and contribute to CGIAR's objectives in addressing climate change. Your goal is to accurately assign an impact area tag that reflects the relevance and impact of the research on these specific climate change objectives.**
+
+### **Context:**
+CGIAR is a global partnership that unites international organizations focused on research for food security. CGIAR has established specific objectives to combat climate change by promoting climate mitigation, adaptation, and policy initiatives, particularly within the agriculture, forestry, and food systems sectors. The research results you will analyze originate from various CGIAR initiatives and projects in these and related fields.
+
+### **Research Result Components:**
+Each research result includes the following details:
+- **Title:** A brief title summarizing the research result.
+- **Description:** A detailed description of the research result, including methods and findings.
+- **Research Abstract:** A summary of key findings and implications (optional).
+- **Research Parsed Text:** The parsed text of the research result (optional).
+
+### **Tagging Criteria:**
+Assign a climate change impact tag using the following criteria:
+
+- **0 = Not Targeted:** 
+  - The research does not address or contribute to CGIAR's climate change objectives, such as mitigation, adaptation, or policy.
+  - The research is unrelated to climate change, focusing instead on different topics with no significant implications for climate-related outcomes.
+  - Example: A study focused solely on agricultural yield improvement without considering its impact on climate change.
+
+- **1 = Significant:** 
+  - The research makes a meaningful contribution to CGIAR’s climate change objectives, but these are not the primary focus.
+  - The research is relevant and provides insights into climate change, but these are secondary to other goals.
+  - Example: A study that explores the impact of agricultural practices on crop resilience, indirectly supporting climate adaptation.
+
+- **2 = Principal:** 
+  - The primary objective of the research is to address and directly impact CGIAR's goals in climate change mitigation, adaptation, or policy.
+  - The research would not have been undertaken without the intention to contribute to these specific climate change objectives.
+  - Example: A study specifically designed to develop sustainable farming practices aimed explicitly at reducing greenhouse gas emissions.
+
+### **Key Objectives Set by CGIAR:**
+- **Climate Mitigation:** Transforming agriculture and forest systems into a net carbon sink by 2050.
+- **Climate Adaptation:** Equipping small-scale producers to be more resilient to climate impacts by 2030.
+- **Climate Policy:** Supporting countries in implementing National Adaptation Plans (NAPs) and Nationally Determined Contributions (NDCs), and increasing ambition in climate actions by 2030.
+
+### **Instructions:**
+1. **Analyze the Title and Abstract:** Determine whether the research is related to CGIAR's objectives in climate change by looking for relevant keywords or phrases, such as “mitigation,” “adaptation,” “resilience,” or “climate policy.”
+2. **Review the Description and Parsed Text:** Assess whether the research directly contributes to CGIAR’s climate change objectives, and how integral these objectives are to the overall study.
+3. **Assign the Tag:** Based on the criteria provided, assign the most appropriate tag (0, 1, or 2) that reflects whether the research is related to and impacts CGIAR’s objectives in climate change.
+4. **Provide a Brief Justification:** Explain why you assigned this tag, referencing specific aspects of the research that influenced your decision. Make sure to clarify how the research aligns (or does not align) with CGIAR’s climate change objectives.
+
+### **Important Notes:**
+- If the research does not relate to CGIAR's objectives in climate change, assign a tag of **0** (Not Targeted).
+- If the research mentions climate change as an important consideration but not the primary focus, assign a tag of **1** (Significant).
+- If climate change mitigation, adaptation, or policy is the primary objective of the research, assign a tag of **2** (Principal).
+- When assigning a tag of **2**, ensure that the evidence clearly demonstrates that climate change objectives were the main goals of the research and fundamental to its design.
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+{ ""score"": <0|1|2>, ""explanation"": ""<Your explanation here>"" }
+
+
+### **Now, analyze the following research result and assign a climate change tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in addressing climate change.**
+
+**Text to Analyze:**
+[INPUT_TEXT]","gpt-4o","Climate","Aclimatar - Understanding climate change impacts and adaptation practices for cocoa management in West Africa Aclimatar: Empowering Smallholder Producers for Perennials in West Africa for Climate Resilience. The innovation highlights the platform's core purpose of supporting climate adaptation for smallholder cocoa producers in Ghana and Côte d'Ivoire. By offering site-specific climate change risk assessments and tailored adaptation practices, Aclimatar serves as a vital tool in combating the effects of climate change. Its intuitive map interface allows users to select locations, providing them with essential climate data, impacts on specific crops, and prioritized adaptation strategies. This innovation is designed to enhance local projects, technicians, and organizations' understanding and response to climate variability, ensuring sustainable agricultural practices and resilience among smallholder communities.","1132"
+"5569","GENDER_EQUALITY_PROMPT","# **You are an AI assistant tasked with evaluating research results from CGIAR (Consultative Group on International Agricultural Research) to determine whether they align with and contribute to CGIAR's objectives in promoting gender equality. Your goal is to accurately assign an impact area tag that reflects the relevance and impact of the research on these specific gender equality objectives.**
+
+### **Context:**
+CGIAR is a global partnership that unites international organizations focused on research for food security. CGIAR has established specific objectives to promote gender equality, particularly in the fields of agriculture, forestry, fisheries, climate, and nutrition in developing countries. The research results you will analyze originate from various CGIAR initiatives and projects in these and related fields.
+
+### **Research Result Components:**
+Each research result includes the following details:
+- **Title:** A brief title summarizing the research result.
+- **Description:** A detailed description of the research result, including methods and findings.
+- **Research Abstract:** A summary of key findings and implications (optional).
+- **Research Parsed Text:** The parsed text of the research result (optional).
+
+### **Tagging Criteria:**
+Assign a gender equality impact tag using the following criteria:
+
+- **0 = Not Targeted:** 
+  - The research does not address or contribute to CGIAR's gender equality objectives.
+  - The research is unrelated to gender equality, focusing instead on different topics with no significant implications for gender-related issues.
+  - Example: A study focused solely on crop yield improvements without considering gender roles, implications, or disparities.
+
+- **1 = Significant:**
+  - The research makes a meaningful contribution to CGIAR’s gender equality objectives, but these are not the primary focus.
+  - The research is relevant and provides insights into gender dynamics, but these are secondary to other goals.
+  - Example: A study that examines the impact of agricultural interventions on women’s access to land but does not center its entire analysis on gender equality.
+
+- **2 = Principal:**
+  - The primary objective of the research is to address and directly impact CGIAR's goals in promoting gender equality.
+  - The research would not have been undertaken without the intention to contribute to these specific gender equality objectives.
+  - Example: A study specifically designed to develop agricultural policies aimed at improving women’s access to financial resources and closing gender gaps.
+
+### **Key Objectives Set by CGIAR:**
+- **Closing the Gender Gap:** Addressing disparities in rights to economic resources, ownership, and control over land and natural resources for women in food, land, and water systems.
+- **Providing Opportunities:** Creating opportunities for young people who are not in employment, education, or training, with a focus on gender inclusivity.
+
+### **Instructions:**
+1. **Analyze the Title and Abstract:** Determine whether the research is related to CGIAR's objectives in promoting gender equality by looking for relevant keywords or phrases, such as “gender,” “women,” “equality,” or “empowerment.”
+2. **Review the Description and Parsed Text:** Assess whether the research directly contributes to CGIAR’s gender equality objectives, and how integral these objectives are to the overall study.
+3. **Assign the Tag:** Based on the criteria provided, assign the most appropriate tag (0, 1, or 2) that reflects whether the research is related to and impacts CGIAR’s objectives in gender equality.
+4. **Provide a Brief Justification:** Explain why you assigned this tag, referencing specific aspects of the research that influenced your decision. Make sure to clarify how the research aligns (or does not align) with CGIAR’s gender equality objectives.
+
+### **Important Notes:**
+- If the research does not relate to CGIAR's objectives in gender equality, assign a tag of **0** (Not Targeted).
+- If the research mentions gender equality as an important consideration but not the primary focus, assign a tag of **1** (Significant).
+- If gender equality is the primary objective of the research, assign a tag of **2** (Principal).
+- When assigning a tag of **2**, ensure that the evidence clearly demonstrates that gender equality objectives were the main goals of the research and fundamental to its design.
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+{ ""score"": <0|1|2>, ""explanation"": ""<Your explanation here>"" }
+
+
+### **Now, analyze the following research result and assign a gender equality tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in promoting gender equality.**
+
+**Text to Analyze:**
+[INPUT_TEXT]","gpt-4o","Gender","Maize Target Product Profiles workshop in Zambia organized for the Agriculture Research Institute breeding program The Maize Product Design team of the Zambia breeding program engaged in reviewing the maize market segments identified by OneCGIAR Market Intelligence and CIMMYT. The workshop focused on refining market segments for Zambia national needs and defining target product profiles for each market segment in support of collaborative efforts to shape the future of Maize breeding in the East and Southern Africa region.","1040"
+"5569","CLIMATE_CHANGE_PROMPT","# **You are an AI assistant tasked with evaluating research results from CGIAR (Consultative Group on International Agricultural Research) to determine whether they align with and contribute to CGIAR's objectives in addressing climate change. Your goal is to accurately assign an impact area tag that reflects the relevance and impact of the research on these specific climate change objectives.**
+
+### **Context:**
+CGIAR is a global partnership that unites international organizations focused on research for food security. CGIAR has established specific objectives to combat climate change by promoting climate mitigation, adaptation, and policy initiatives, particularly within the agriculture, forestry, and food systems sectors. The research results you will analyze originate from various CGIAR initiatives and projects in these and related fields.
+
+### **Research Result Components:**
+Each research result includes the following details:
+- **Title:** A brief title summarizing the research result.
+- **Description:** A detailed description of the research result, including methods and findings.
+- **Research Abstract:** A summary of key findings and implications (optional).
+- **Research Parsed Text:** The parsed text of the research result (optional).
+
+### **Tagging Criteria:**
+Assign a climate change impact tag using the following criteria:
+
+- **0 = Not Targeted:** 
+  - The research does not address or contribute to CGIAR's climate change objectives, such as mitigation, adaptation, or policy.
+  - The research is unrelated to climate change, focusing instead on different topics with no significant implications for climate-related outcomes.
+  - Example: A study focused solely on agricultural yield improvement without considering its impact on climate change.
+
+- **1 = Significant:** 
+  - The research makes a meaningful contribution to CGIAR’s climate change objectives, but these are not the primary focus.
+  - The research is relevant and provides insights into climate change, but these are secondary to other goals.
+  - Example: A study that explores the impact of agricultural practices on crop resilience, indirectly supporting climate adaptation.
+
+- **2 = Principal:** 
+  - The primary objective of the research is to address and directly impact CGIAR's goals in climate change mitigation, adaptation, or policy.
+  - The research would not have been undertaken without the intention to contribute to these specific climate change objectives.
+  - Example: A study specifically designed to develop sustainable farming practices aimed explicitly at reducing greenhouse gas emissions.
+
+### **Key Objectives Set by CGIAR:**
+- **Climate Mitigation:** Transforming agriculture and forest systems into a net carbon sink by 2050.
+- **Climate Adaptation:** Equipping small-scale producers to be more resilient to climate impacts by 2030.
+- **Climate Policy:** Supporting countries in implementing National Adaptation Plans (NAPs) and Nationally Determined Contributions (NDCs), and increasing ambition in climate actions by 2030.
+
+### **Instructions:**
+1. **Analyze the Title and Abstract:** Determine whether the research is related to CGIAR's objectives in climate change by looking for relevant keywords or phrases, such as “mitigation,” “adaptation,” “resilience,” or “climate policy.”
+2. **Review the Description and Parsed Text:** Assess whether the research directly contributes to CGIAR’s climate change objectives, and how integral these objectives are to the overall study.
+3. **Assign the Tag:** Based on the criteria provided, assign the most appropriate tag (0, 1, or 2) that reflects whether the research is related to and impacts CGIAR’s objectives in climate change.
+4. **Provide a Brief Justification:** Explain why you assigned this tag, referencing specific aspects of the research that influenced your decision. Make sure to clarify how the research aligns (or does not align) with CGIAR’s climate change objectives.
+
+### **Important Notes:**
+- If the research does not relate to CGIAR's objectives in climate change, assign a tag of **0** (Not Targeted).
+- If the research mentions climate change as an important consideration but not the primary focus, assign a tag of **1** (Significant).
+- If climate change mitigation, adaptation, or policy is the primary objective of the research, assign a tag of **2** (Principal).
+- When assigning a tag of **2**, ensure that the evidence clearly demonstrates that climate change objectives were the main goals of the research and fundamental to its design.
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+{ ""score"": <0|1|2>, ""explanation"": ""<Your explanation here>"" }
+
+
+### **Now, analyze the following research result and assign a climate change tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in addressing climate change.**
+
+**Text to Analyze:**
+[INPUT_TEXT]","gpt-4o","Climate","Maize Target Product Profiles workshop in Zambia organized for the Agriculture Research Institute breeding program The Maize Product Design team of the Zambia breeding program engaged in reviewing the maize market segments identified by OneCGIAR Market Intelligence and CIMMYT. The workshop focused on refining market segments for Zambia national needs and defining target product profiles for each market segment in support of collaborative efforts to shape the future of Maize breeding in the East and Southern Africa region.","1068"
+"5840","GENDER_EQUALITY_PROMPT","# **You are an AI assistant tasked with evaluating research results from CGIAR (Consultative Group on International Agricultural Research) to determine whether they align with and contribute to CGIAR's objectives in promoting gender equality. Your goal is to accurately assign an impact area tag that reflects the relevance and impact of the research on these specific gender equality objectives.**
+
+### **Context:**
+CGIAR is a global partnership that unites international organizations focused on research for food security. CGIAR has established specific objectives to promote gender equality, particularly in the fields of agriculture, forestry, fisheries, climate, and nutrition in developing countries. The research results you will analyze originate from various CGIAR initiatives and projects in these and related fields.
+
+### **Research Result Components:**
+Each research result includes the following details:
+- **Title:** A brief title summarizing the research result.
+- **Description:** A detailed description of the research result, including methods and findings.
+- **Research Abstract:** A summary of key findings and implications (optional).
+- **Research Parsed Text:** The parsed text of the research result (optional).
+
+### **Tagging Criteria:**
+Assign a gender equality impact tag using the following criteria:
+
+- **0 = Not Targeted:** 
+  - The research does not address or contribute to CGIAR's gender equality objectives.
+  - The research is unrelated to gender equality, focusing instead on different topics with no significant implications for gender-related issues.
+  - Example: A study focused solely on crop yield improvements without considering gender roles, implications, or disparities.
+
+- **1 = Significant:**
+  - The research makes a meaningful contribution to CGIAR’s gender equality objectives, but these are not the primary focus.
+  - The research is relevant and provides insights into gender dynamics, but these are secondary to other goals.
+  - Example: A study that examines the impact of agricultural interventions on women’s access to land but does not center its entire analysis on gender equality.
+
+- **2 = Principal:**
+  - The primary objective of the research is to address and directly impact CGIAR's goals in promoting gender equality.
+  - The research would not have been undertaken without the intention to contribute to these specific gender equality objectives.
+  - Example: A study specifically designed to develop agricultural policies aimed at improving women’s access to financial resources and closing gender gaps.
+
+### **Key Objectives Set by CGIAR:**
+- **Closing the Gender Gap:** Addressing disparities in rights to economic resources, ownership, and control over land and natural resources for women in food, land, and water systems.
+- **Providing Opportunities:** Creating opportunities for young people who are not in employment, education, or training, with a focus on gender inclusivity.
+
+### **Instructions:**
+1. **Analyze the Title and Abstract:** Determine whether the research is related to CGIAR's objectives in promoting gender equality by looking for relevant keywords or phrases, such as “gender,” “women,” “equality,” or “empowerment.”
+2. **Review the Description and Parsed Text:** Assess whether the research directly contributes to CGIAR’s gender equality objectives, and how integral these objectives are to the overall study.
+3. **Assign the Tag:** Based on the criteria provided, assign the most appropriate tag (0, 1, or 2) that reflects whether the research is related to and impacts CGIAR’s objectives in gender equality.
+4. **Provide a Brief Justification:** Explain why you assigned this tag, referencing specific aspects of the research that influenced your decision. Make sure to clarify how the research aligns (or does not align) with CGIAR’s gender equality objectives.
+
+### **Important Notes:**
+- If the research does not relate to CGIAR's objectives in gender equality, assign a tag of **0** (Not Targeted).
+- If the research mentions gender equality as an important consideration but not the primary focus, assign a tag of **1** (Significant).
+- If gender equality is the primary objective of the research, assign a tag of **2** (Principal).
+- When assigning a tag of **2**, ensure that the evidence clearly demonstrates that gender equality objectives were the main goals of the research and fundamental to its design.
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+{ ""score"": <0|1|2>, ""explanation"": ""<Your explanation here>"" }
+
+
+### **Now, analyze the following research result and assign a gender equality tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in promoting gender equality.**
+
+**Text to Analyze:**
+[INPUT_TEXT]","gpt-4o","Gender","Digital data collection for groundwater monitoring: enumerator manual This manual aims to help data collectors transition from paper-based to digital data
+collection. It provides a detailed guide on how to use the KoboCollect app on the
+KoboToolbox platform for monitoring groundwater wells.
+The manual offers comprehensive guidance on the following key aspects:
+1. Establishing a KoboToolbox account.
+2. Installing the KoboCollect app on your device.
+3. A step-by-step process for accessing and collecting groundwater monitoring well
+data using forms.
+4. Detailed instructions for submitting and editing completed forms.
+5. An explanation of the monitoring methodology.
+6. Guidance on uploading newly created forms.
+This manual is essential for field data collectors, as it reduces ambiguity and addresses
+outliers to enhance data quality and the overall collection process.","1113"
+"5840","CLIMATE_CHANGE_PROMPT","# **You are an AI assistant tasked with evaluating research results from CGIAR (Consultative Group on International Agricultural Research) to determine whether they align with and contribute to CGIAR's objectives in addressing climate change. Your goal is to accurately assign an impact area tag that reflects the relevance and impact of the research on these specific climate change objectives.**
+
+### **Context:**
+CGIAR is a global partnership that unites international organizations focused on research for food security. CGIAR has established specific objectives to combat climate change by promoting climate mitigation, adaptation, and policy initiatives, particularly within the agriculture, forestry, and food systems sectors. The research results you will analyze originate from various CGIAR initiatives and projects in these and related fields.
+
+### **Research Result Components:**
+Each research result includes the following details:
+- **Title:** A brief title summarizing the research result.
+- **Description:** A detailed description of the research result, including methods and findings.
+- **Research Abstract:** A summary of key findings and implications (optional).
+- **Research Parsed Text:** The parsed text of the research result (optional).
+
+### **Tagging Criteria:**
+Assign a climate change impact tag using the following criteria:
+
+- **0 = Not Targeted:** 
+  - The research does not address or contribute to CGIAR's climate change objectives, such as mitigation, adaptation, or policy.
+  - The research is unrelated to climate change, focusing instead on different topics with no significant implications for climate-related outcomes.
+  - Example: A study focused solely on agricultural yield improvement without considering its impact on climate change.
+
+- **1 = Significant:** 
+  - The research makes a meaningful contribution to CGIAR’s climate change objectives, but these are not the primary focus.
+  - The research is relevant and provides insights into climate change, but these are secondary to other goals.
+  - Example: A study that explores the impact of agricultural practices on crop resilience, indirectly supporting climate adaptation.
+
+- **2 = Principal:** 
+  - The primary objective of the research is to address and directly impact CGIAR's goals in climate change mitigation, adaptation, or policy.
+  - The research would not have been undertaken without the intention to contribute to these specific climate change objectives.
+  - Example: A study specifically designed to develop sustainable farming practices aimed explicitly at reducing greenhouse gas emissions.
+
+### **Key Objectives Set by CGIAR:**
+- **Climate Mitigation:** Transforming agriculture and forest systems into a net carbon sink by 2050.
+- **Climate Adaptation:** Equipping small-scale producers to be more resilient to climate impacts by 2030.
+- **Climate Policy:** Supporting countries in implementing National Adaptation Plans (NAPs) and Nationally Determined Contributions (NDCs), and increasing ambition in climate actions by 2030.
+
+### **Instructions:**
+1. **Analyze the Title and Abstract:** Determine whether the research is related to CGIAR's objectives in climate change by looking for relevant keywords or phrases, such as “mitigation,” “adaptation,” “resilience,” or “climate policy.”
+2. **Review the Description and Parsed Text:** Assess whether the research directly contributes to CGIAR’s climate change objectives, and how integral these objectives are to the overall study.
+3. **Assign the Tag:** Based on the criteria provided, assign the most appropriate tag (0, 1, or 2) that reflects whether the research is related to and impacts CGIAR’s objectives in climate change.
+4. **Provide a Brief Justification:** Explain why you assigned this tag, referencing specific aspects of the research that influenced your decision. Make sure to clarify how the research aligns (or does not align) with CGIAR’s climate change objectives.
+
+### **Important Notes:**
+- If the research does not relate to CGIAR's objectives in climate change, assign a tag of **0** (Not Targeted).
+- If the research mentions climate change as an important consideration but not the primary focus, assign a tag of **1** (Significant).
+- If climate change mitigation, adaptation, or policy is the primary objective of the research, assign a tag of **2** (Principal).
+- When assigning a tag of **2**, ensure that the evidence clearly demonstrates that climate change objectives were the main goals of the research and fundamental to its design.
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+{ ""score"": <0|1|2>, ""explanation"": ""<Your explanation here>"" }
+
+
+### **Now, analyze the following research result and assign a climate change tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in addressing climate change.**
+
+**Text to Analyze:**
+[INPUT_TEXT]","gpt-4o","Climate","Digital data collection for groundwater monitoring: enumerator manual This manual aims to help data collectors transition from paper-based to digital data
+collection. It provides a detailed guide on how to use the KoboCollect app on the
+KoboToolbox platform for monitoring groundwater wells.
+The manual offers comprehensive guidance on the following key aspects:
+1. Establishing a KoboToolbox account.
+2. Installing the KoboCollect app on your device.
+3. A step-by-step process for accessing and collecting groundwater monitoring well
+data using forms.
+4. Detailed instructions for submitting and editing completed forms.
+5. An explanation of the monitoring methodology.
+6. Guidance on uploading newly created forms.
+This manual is essential for field data collectors, as it reduces ambiguity and addresses
+outliers to enhance data quality and the overall collection process.","1141"
+"6461","GENDER_EQUALITY_PROMPT","# **You are an AI assistant tasked with evaluating research results from CGIAR (Consultative Group on International Agricultural Research) to determine whether they align with and contribute to CGIAR's objectives in promoting gender equality. Your goal is to accurately assign an impact area tag that reflects the relevance and impact of the research on these specific gender equality objectives.**
+
+### **Context:**
+CGIAR is a global partnership that unites international organizations focused on research for food security. CGIAR has established specific objectives to promote gender equality, particularly in the fields of agriculture, forestry, fisheries, climate, and nutrition in developing countries. The research results you will analyze originate from various CGIAR initiatives and projects in these and related fields.
+
+### **Research Result Components:**
+Each research result includes the following details:
+- **Title:** A brief title summarizing the research result.
+- **Description:** A detailed description of the research result, including methods and findings.
+- **Research Abstract:** A summary of key findings and implications (optional).
+- **Research Parsed Text:** The parsed text of the research result (optional).
+
+### **Tagging Criteria:**
+Assign a gender equality impact tag using the following criteria:
+
+- **0 = Not Targeted:** 
+  - The research does not address or contribute to CGIAR's gender equality objectives.
+  - The research is unrelated to gender equality, focusing instead on different topics with no significant implications for gender-related issues.
+  - Example: A study focused solely on crop yield improvements without considering gender roles, implications, or disparities.
+
+- **1 = Significant:**
+  - The research makes a meaningful contribution to CGIAR’s gender equality objectives, but these are not the primary focus.
+  - The research is relevant and provides insights into gender dynamics, but these are secondary to other goals.
+  - Example: A study that examines the impact of agricultural interventions on women’s access to land but does not center its entire analysis on gender equality.
+
+- **2 = Principal:**
+  - The primary objective of the research is to address and directly impact CGIAR's goals in promoting gender equality.
+  - The research would not have been undertaken without the intention to contribute to these specific gender equality objectives.
+  - Example: A study specifically designed to develop agricultural policies aimed at improving women’s access to financial resources and closing gender gaps.
+
+### **Key Objectives Set by CGIAR:**
+- **Closing the Gender Gap:** Addressing disparities in rights to economic resources, ownership, and control over land and natural resources for women in food, land, and water systems.
+- **Providing Opportunities:** Creating opportunities for young people who are not in employment, education, or training, with a focus on gender inclusivity.
+
+### **Instructions:**
+1. **Analyze the Title and Abstract:** Determine whether the research is related to CGIAR's objectives in promoting gender equality by looking for relevant keywords or phrases, such as “gender,” “women,” “equality,” or “empowerment.”
+2. **Review the Description and Parsed Text:** Assess whether the research directly contributes to CGIAR’s gender equality objectives, and how integral these objectives are to the overall study.
+3. **Assign the Tag:** Based on the criteria provided, assign the most appropriate tag (0, 1, or 2) that reflects whether the research is related to and impacts CGIAR’s objectives in gender equality.
+4. **Provide a Brief Justification:** Explain why you assigned this tag, referencing specific aspects of the research that influenced your decision. Make sure to clarify how the research aligns (or does not align) with CGIAR’s gender equality objectives.
+
+### **Important Notes:**
+- If the research does not relate to CGIAR's objectives in gender equality, assign a tag of **0** (Not Targeted).
+- If the research mentions gender equality as an important consideration but not the primary focus, assign a tag of **1** (Significant).
+- If gender equality is the primary objective of the research, assign a tag of **2** (Principal).
+- When assigning a tag of **2**, ensure that the evidence clearly demonstrates that gender equality objectives were the main goals of the research and fundamental to its design.
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+{ ""score"": <0|1|2>, ""explanation"": ""<Your explanation here>"" }
+
+
+### **Now, analyze the following research result and assign a gender equality tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in promoting gender equality.**
+
+**Text to Analyze:**
+[INPUT_TEXT]","gpt-4o","Gender","Aquaculture governance: five engagement arenas for sustainability transformation A greater focus on governance is needed to facilitate effective and substantive progress toward sustainability transformations in the aquaculture sector. Concerted governance efforts can help move the sector beyond fragmented technical questions associated with intensification and expansion, social and environmental impacts, and toward system-based approaches that address interconnected sustainability issues. Through a review and expert-elicitation process, we identify five engagement arenas to advance a governance agenda for aquaculture sustainability transformation: (1) setting sustainability transformation goals, (2) cross-sectoral linkages, (3) land–water–sea connectivity, (4) knowledge and innovation, and (5) value chains. We then outline the roles different actors and modes of governance can play in fostering sustainability transformations, and discuss action items for researchers, practitioners, and policymakers to operationalize activities within their engagement arenas.","1125"
+"6461","CLIMATE_CHANGE_PROMPT","# **You are an AI assistant tasked with evaluating research results from CGIAR (Consultative Group on International Agricultural Research) to determine whether they align with and contribute to CGIAR's objectives in addressing climate change. Your goal is to accurately assign an impact area tag that reflects the relevance and impact of the research on these specific climate change objectives.**
+
+### **Context:**
+CGIAR is a global partnership that unites international organizations focused on research for food security. CGIAR has established specific objectives to combat climate change by promoting climate mitigation, adaptation, and policy initiatives, particularly within the agriculture, forestry, and food systems sectors. The research results you will analyze originate from various CGIAR initiatives and projects in these and related fields.
+
+### **Research Result Components:**
+Each research result includes the following details:
+- **Title:** A brief title summarizing the research result.
+- **Description:** A detailed description of the research result, including methods and findings.
+- **Research Abstract:** A summary of key findings and implications (optional).
+- **Research Parsed Text:** The parsed text of the research result (optional).
+
+### **Tagging Criteria:**
+Assign a climate change impact tag using the following criteria:
+
+- **0 = Not Targeted:** 
+  - The research does not address or contribute to CGIAR's climate change objectives, such as mitigation, adaptation, or policy.
+  - The research is unrelated to climate change, focusing instead on different topics with no significant implications for climate-related outcomes.
+  - Example: A study focused solely on agricultural yield improvement without considering its impact on climate change.
+
+- **1 = Significant:** 
+  - The research makes a meaningful contribution to CGIAR’s climate change objectives, but these are not the primary focus.
+  - The research is relevant and provides insights into climate change, but these are secondary to other goals.
+  - Example: A study that explores the impact of agricultural practices on crop resilience, indirectly supporting climate adaptation.
+
+- **2 = Principal:** 
+  - The primary objective of the research is to address and directly impact CGIAR's goals in climate change mitigation, adaptation, or policy.
+  - The research would not have been undertaken without the intention to contribute to these specific climate change objectives.
+  - Example: A study specifically designed to develop sustainable farming practices aimed explicitly at reducing greenhouse gas emissions.
+
+### **Key Objectives Set by CGIAR:**
+- **Climate Mitigation:** Transforming agriculture and forest systems into a net carbon sink by 2050.
+- **Climate Adaptation:** Equipping small-scale producers to be more resilient to climate impacts by 2030.
+- **Climate Policy:** Supporting countries in implementing National Adaptation Plans (NAPs) and Nationally Determined Contributions (NDCs), and increasing ambition in climate actions by 2030.
+
+### **Instructions:**
+1. **Analyze the Title and Abstract:** Determine whether the research is related to CGIAR's objectives in climate change by looking for relevant keywords or phrases, such as “mitigation,” “adaptation,” “resilience,” or “climate policy.”
+2. **Review the Description and Parsed Text:** Assess whether the research directly contributes to CGIAR’s climate change objectives, and how integral these objectives are to the overall study.
+3. **Assign the Tag:** Based on the criteria provided, assign the most appropriate tag (0, 1, or 2) that reflects whether the research is related to and impacts CGIAR’s objectives in climate change.
+4. **Provide a Brief Justification:** Explain why you assigned this tag, referencing specific aspects of the research that influenced your decision. Make sure to clarify how the research aligns (or does not align) with CGIAR’s climate change objectives.
+
+### **Important Notes:**
+- If the research does not relate to CGIAR's objectives in climate change, assign a tag of **0** (Not Targeted).
+- If the research mentions climate change as an important consideration but not the primary focus, assign a tag of **1** (Significant).
+- If climate change mitigation, adaptation, or policy is the primary objective of the research, assign a tag of **2** (Principal).
+- When assigning a tag of **2**, ensure that the evidence clearly demonstrates that climate change objectives were the main goals of the research and fundamental to its design.
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+{ ""score"": <0|1|2>, ""explanation"": ""<Your explanation here>"" }
+
+
+### **Now, analyze the following research result and assign a climate change tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in addressing climate change.**
+
+**Text to Analyze:**
+[INPUT_TEXT]","gpt-4o","Climate","Aquaculture governance: five engagement arenas for sustainability transformation A greater focus on governance is needed to facilitate effective and substantive progress toward sustainability transformations in the aquaculture sector. Concerted governance efforts can help move the sector beyond fragmented technical questions associated with intensification and expansion, social and environmental impacts, and toward system-based approaches that address interconnected sustainability issues. Through a review and expert-elicitation process, we identify five engagement arenas to advance a governance agenda for aquaculture sustainability transformation: (1) setting sustainability transformation goals, (2) cross-sectoral linkages, (3) land–water–sea connectivity, (4) knowledge and innovation, and (5) value chains. We then outline the roles different actors and modes of governance can play in fostering sustainability transformations, and discuss action items for researchers, practitioners, and policymakers to operationalize activities within their engagement arenas.","1153"
+"6588","GENDER_EQUALITY_PROMPT","# **You are an AI assistant tasked with evaluating research results from CGIAR (Consultative Group on International Agricultural Research) to determine whether they align with and contribute to CGIAR's objectives in promoting gender equality. Your goal is to accurately assign an impact area tag that reflects the relevance and impact of the research on these specific gender equality objectives.**
+
+### **Context:**
+CGIAR is a global partnership that unites international organizations focused on research for food security. CGIAR has established specific objectives to promote gender equality, particularly in the fields of agriculture, forestry, fisheries, climate, and nutrition in developing countries. The research results you will analyze originate from various CGIAR initiatives and projects in these and related fields.
+
+### **Research Result Components:**
+Each research result includes the following details:
+- **Title:** A brief title summarizing the research result.
+- **Description:** A detailed description of the research result, including methods and findings.
+- **Research Abstract:** A summary of key findings and implications (optional).
+- **Research Parsed Text:** The parsed text of the research result (optional).
+
+### **Tagging Criteria:**
+Assign a gender equality impact tag using the following criteria:
+
+- **0 = Not Targeted:** 
+  - The research does not address or contribute to CGIAR's gender equality objectives.
+  - The research is unrelated to gender equality, focusing instead on different topics with no significant implications for gender-related issues.
+  - Example: A study focused solely on crop yield improvements without considering gender roles, implications, or disparities.
+
+- **1 = Significant:**
+  - The research makes a meaningful contribution to CGIAR’s gender equality objectives, but these are not the primary focus.
+  - The research is relevant and provides insights into gender dynamics, but these are secondary to other goals.
+  - Example: A study that examines the impact of agricultural interventions on women’s access to land but does not center its entire analysis on gender equality.
+
+- **2 = Principal:**
+  - The primary objective of the research is to address and directly impact CGIAR's goals in promoting gender equality.
+  - The research would not have been undertaken without the intention to contribute to these specific gender equality objectives.
+  - Example: A study specifically designed to develop agricultural policies aimed at improving women’s access to financial resources and closing gender gaps.
+
+### **Key Objectives Set by CGIAR:**
+- **Closing the Gender Gap:** Addressing disparities in rights to economic resources, ownership, and control over land and natural resources for women in food, land, and water systems.
+- **Providing Opportunities:** Creating opportunities for young people who are not in employment, education, or training, with a focus on gender inclusivity.
+
+### **Instructions:**
+1. **Analyze the Title and Abstract:** Determine whether the research is related to CGIAR's objectives in promoting gender equality by looking for relevant keywords or phrases, such as “gender,” “women,” “equality,” or “empowerment.”
+2. **Review the Description and Parsed Text:** Assess whether the research directly contributes to CGIAR’s gender equality objectives, and how integral these objectives are to the overall study.
+3. **Assign the Tag:** Based on the criteria provided, assign the most appropriate tag (0, 1, or 2) that reflects whether the research is related to and impacts CGIAR’s objectives in gender equality.
+4. **Provide a Brief Justification:** Explain why you assigned this tag, referencing specific aspects of the research that influenced your decision. Make sure to clarify how the research aligns (or does not align) with CGIAR’s gender equality objectives.
+
+### **Important Notes:**
+- If the research does not relate to CGIAR's objectives in gender equality, assign a tag of **0** (Not Targeted).
+- If the research mentions gender equality as an important consideration but not the primary focus, assign a tag of **1** (Significant).
+- If gender equality is the primary objective of the research, assign a tag of **2** (Principal).
+- When assigning a tag of **2**, ensure that the evidence clearly demonstrates that gender equality objectives were the main goals of the research and fundamental to its design.
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+{ ""score"": <0|1|2>, ""explanation"": ""<Your explanation here>"" }
+
+
+### **Now, analyze the following research result and assign a gender equality tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in promoting gender equality.**
+
+**Text to Analyze:**
+[INPUT_TEXT]","gpt-4o","Gender","Influence of altitude as a proxy for temperature on key Musa pests and diseases in watershed areas of Burundi and Rwanda Pests and diseases are key biotic constraints limiting banana production among smallholder farmers in Eastern and Central Africa. Climate changemay favour pest and disease development and further exacerbate the vulnerability of smallholder farming systems to biotic constraints. Information on effects of climate change on pests and pathogens of banana is required by policy
+makers and researchers in designing control strategies and adaptation plans. Since altitude is inversely related to temperature, this study used the occurrence of key banana pests and diseases along an altitude gradient as a proxy for the potential impact of changes in temperature associated with global warming on pests and diseases. We assessed the occurrence of banana pests and diseases in 93 banana fields across three altitude ranges in Burundi and 99 fields distributed in two altitude ranges in Rwanda watersheds. Incidence and prevalence of Banana Bunchy Top Disease (BBTD) and Fusarium wilt (FW) was significantly associated with temperature and altitude in Burundi, revealing that increasing temperatures may lead to upward movement of banana diseases. No significant associations with temperature and altitude were observed for weevils,
+nematodes and Xanthomonas wilt of banana (BXW). Data collected in this study provides a baseline to verify and guide modelling work to predict future pest and disease distribution according to climate change scenarios. Such information is useful in informing policy makers and designing appropriate management strategies.","1242"
+"6588","CLIMATE_CHANGE_PROMPT","# **You are an AI assistant tasked with evaluating research results from CGIAR (Consultative Group on International Agricultural Research) to determine whether they align with and contribute to CGIAR's objectives in addressing climate change. Your goal is to accurately assign an impact area tag that reflects the relevance and impact of the research on these specific climate change objectives.**
+
+### **Context:**
+CGIAR is a global partnership that unites international organizations focused on research for food security. CGIAR has established specific objectives to combat climate change by promoting climate mitigation, adaptation, and policy initiatives, particularly within the agriculture, forestry, and food systems sectors. The research results you will analyze originate from various CGIAR initiatives and projects in these and related fields.
+
+### **Research Result Components:**
+Each research result includes the following details:
+- **Title:** A brief title summarizing the research result.
+- **Description:** A detailed description of the research result, including methods and findings.
+- **Research Abstract:** A summary of key findings and implications (optional).
+- **Research Parsed Text:** The parsed text of the research result (optional).
+
+### **Tagging Criteria:**
+Assign a climate change impact tag using the following criteria:
+
+- **0 = Not Targeted:** 
+  - The research does not address or contribute to CGIAR's climate change objectives, such as mitigation, adaptation, or policy.
+  - The research is unrelated to climate change, focusing instead on different topics with no significant implications for climate-related outcomes.
+  - Example: A study focused solely on agricultural yield improvement without considering its impact on climate change.
+
+- **1 = Significant:** 
+  - The research makes a meaningful contribution to CGIAR’s climate change objectives, but these are not the primary focus.
+  - The research is relevant and provides insights into climate change, but these are secondary to other goals.
+  - Example: A study that explores the impact of agricultural practices on crop resilience, indirectly supporting climate adaptation.
+
+- **2 = Principal:** 
+  - The primary objective of the research is to address and directly impact CGIAR's goals in climate change mitigation, adaptation, or policy.
+  - The research would not have been undertaken without the intention to contribute to these specific climate change objectives.
+  - Example: A study specifically designed to develop sustainable farming practices aimed explicitly at reducing greenhouse gas emissions.
+
+### **Key Objectives Set by CGIAR:**
+- **Climate Mitigation:** Transforming agriculture and forest systems into a net carbon sink by 2050.
+- **Climate Adaptation:** Equipping small-scale producers to be more resilient to climate impacts by 2030.
+- **Climate Policy:** Supporting countries in implementing National Adaptation Plans (NAPs) and Nationally Determined Contributions (NDCs), and increasing ambition in climate actions by 2030.
+
+### **Instructions:**
+1. **Analyze the Title and Abstract:** Determine whether the research is related to CGIAR's objectives in climate change by looking for relevant keywords or phrases, such as “mitigation,” “adaptation,” “resilience,” or “climate policy.”
+2. **Review the Description and Parsed Text:** Assess whether the research directly contributes to CGIAR’s climate change objectives, and how integral these objectives are to the overall study.
+3. **Assign the Tag:** Based on the criteria provided, assign the most appropriate tag (0, 1, or 2) that reflects whether the research is related to and impacts CGIAR’s objectives in climate change.
+4. **Provide a Brief Justification:** Explain why you assigned this tag, referencing specific aspects of the research that influenced your decision. Make sure to clarify how the research aligns (or does not align) with CGIAR’s climate change objectives.
+
+### **Important Notes:**
+- If the research does not relate to CGIAR's objectives in climate change, assign a tag of **0** (Not Targeted).
+- If the research mentions climate change as an important consideration but not the primary focus, assign a tag of **1** (Significant).
+- If climate change mitigation, adaptation, or policy is the primary objective of the research, assign a tag of **2** (Principal).
+- When assigning a tag of **2**, ensure that the evidence clearly demonstrates that climate change objectives were the main goals of the research and fundamental to its design.
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+{ ""score"": <0|1|2>, ""explanation"": ""<Your explanation here>"" }
+
+
+### **Now, analyze the following research result and assign a climate change tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in addressing climate change.**
+
+**Text to Analyze:**
+[INPUT_TEXT]","gpt-4o","Climate","Influence of altitude as a proxy for temperature on key Musa pests and diseases in watershed areas of Burundi and Rwanda Pests and diseases are key biotic constraints limiting banana production among smallholder farmers in Eastern and Central Africa. Climate changemay favour pest and disease development and further exacerbate the vulnerability of smallholder farming systems to biotic constraints. Information on effects of climate change on pests and pathogens of banana is required by policy
+makers and researchers in designing control strategies and adaptation plans. Since altitude is inversely related to temperature, this study used the occurrence of key banana pests and diseases along an altitude gradient as a proxy for the potential impact of changes in temperature associated with global warming on pests and diseases. We assessed the occurrence of banana pests and diseases in 93 banana fields across three altitude ranges in Burundi and 99 fields distributed in two altitude ranges in Rwanda watersheds. Incidence and prevalence of Banana Bunchy Top Disease (BBTD) and Fusarium wilt (FW) was significantly associated with temperature and altitude in Burundi, revealing that increasing temperatures may lead to upward movement of banana diseases. No significant associations with temperature and altitude were observed for weevils,
+nematodes and Xanthomonas wilt of banana (BXW). Data collected in this study provides a baseline to verify and guide modelling work to predict future pest and disease distribution according to climate change scenarios. Such information is useful in informing policy makers and designing appropriate management strategies.","1270"

@@ -19,6 +19,7 @@ from output_conversion_unpivot_dashboard import transform_for_dashboard  # Impor
 # app.py
 #Test Comment to refresh x2
 simplified_models = ['o1-preview', 'o1-mini']
+
 # Initialize session state variables
 if 'results_df' not in st.session_state:
     st.session_state['results_df'] = pd.DataFrame()
@@ -26,6 +27,11 @@ if 'results_df' not in st.session_state:
 if 'tasks_df' not in st.session_state:
     st.session_state['tasks_df'] = pd.DataFrame()
 
+if 'custom_df' not in st.session_state:
+    st.session_state['custom_df'] = None
+
+if 'transformed_custom_df' not in st.session_state:
+    st.session_state['transformed_custom_df'] = None
 
 # Sidebar
 st.sidebar.title("Configuration")
@@ -150,7 +156,9 @@ else:
         st.write("Columns in DataFrame after processing:", input_df.columns.tolist())
         st.write("Sample data:")
         st.write(input_df.head())
+
 # Result Selection Method
+st.sidebar.subheader("Select Results")
 result_selection_method = st.sidebar.radio(
     "Select Results by",
     ('Number of Results', 'Result Codes')
@@ -186,23 +194,11 @@ if input_df is not None:
             input_df['Result code'] = input_df['Result code'].str.upper()
             result_code_list = [code.upper() for code in result_code_list]
 
-            #with st.expander("Show Debug Logs"):
-                #st.write("Available Result Codes in DataFrame after processing:")
-                #st.write(input_df['Result code'].unique())
-
             # Perform the filtering
             selected_df = input_df[input_df['Result code'].isin(result_code_list)]
 
-            #with st.expander("Show Debug Logs"):
-                #st.write("Number of rows in selected_df after filtering:", len(selected_df))
             if selected_df.empty:
                 st.warning("No matching result codes found. Please check your input.")
-
-                # Identify unmatched codes
-                unmatched_codes = set(result_code_list) - set(input_df['Result code'].unique())
-                #if unmatched_codes:
-                    #st.write("The following result codes were not found in the DataFrame:")
-                    #st.write(unmatched_codes)
         else:
             selected_df = pd.DataFrame()  # Empty DataFrame if no codes are provided
 else:
@@ -228,7 +224,35 @@ def get_excel_download_link(df, link_text):
     href = f'<a href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,{b64}" download="data.xlsx">{link_text}</a>'
     return href
 
-# app.py
+# Custom Dashboard Transformation
+st.sidebar.subheader("Custom Dashboard Transformation")
+
+uploaded_custom_csv = st.sidebar.file_uploader("Upload Modified Results CSV for Dashboard Transformation", type=['csv'], key='custom_dashboard_upload')
+
+if uploaded_custom_csv is not None:
+    try:
+        custom_df = pd.read_csv(uploaded_custom_csv)
+        st.session_state['custom_df'] = custom_df
+        st.sidebar.success("File uploaded successfully.")
+    except Exception as e:
+        st.sidebar.error(f"Error processing the uploaded custom CSV file: {e}")
+else:
+    if 'custom_df' in st.session_state and st.session_state['custom_df'] is not None:
+        custom_df = st.session_state['custom_df']
+
+# Button to Transform Custom Results
+transform_custom_button = st.sidebar.button("Transform Custom Results for Dashboard", key='transform_custom_button')
+
+if transform_custom_button:
+    if 'custom_df' in st.session_state and st.session_state['custom_df'] is not None:
+        try:
+            transformed_custom_df = transform_for_dashboard(st.session_state['custom_df'])
+            st.session_state['transformed_custom_df'] = transformed_custom_df
+            st.sidebar.success("Transformation completed. Please check the main page for the download link.")
+        except Exception as e:
+            st.sidebar.error(f"Error during transformation: {e}")
+    else:
+        st.sidebar.warning("Please upload a custom CSV file first.")
 
 # Function to update progress
 def update_progress(n):
@@ -326,7 +350,6 @@ with tab1:
                             st.write("No Metrics possible based on dataset provided")
                             metrics_df = pd.DataFrame()
 
-                        
                         tasks_df = pd.read_excel(task_list_excel)
                         st.session_state['tasks_df'] = tasks_df
 
@@ -357,9 +380,15 @@ with tab1:
                         st.session_state['results_df'] = results_df
                         st.session_state['tasks_df'] = tasks_df
 
-                        # =================== NEW CODE FOR FOLLOW-UP PROMPTS ===================
+    # If the transformed data is available, display the download link
+    if 'transformed_custom_df' in st.session_state and st.session_state['transformed_custom_df'] is not None:
+        transformed_custom_df = st.session_state['transformed_custom_df']
+        st.subheader("Transformed Dashboard Data")
+        st.markdown(get_excel_download_link(transformed_custom_df, 'Download Transformed Dashboard Excel'), unsafe_allow_html=True)
 
-                        # ... [Previous code remains unchanged] ...
+    # =================== NEW CODE FOR FOLLOW-UP PROMPTS ===================
+
+    # ... [Previous code remains unchanged] ...
 
 with tab2:
     # =================== UPDATED CODE FOR FOLLOW-UP PROMPTS ===================
