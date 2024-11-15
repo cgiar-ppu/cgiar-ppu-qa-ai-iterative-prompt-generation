@@ -1,0 +1,731 @@
+"result_code","prompt_id","prompt_text","model_name","impact_area","input_text","token_count"
+"1020","INNOVATION_READINESS_PROMPT","# **You are a researcher at CGIAR. Your task is to provide a score from 0 to 9 for a metric called ""Innovation Readiness"". In order to do so, you need to review projects submitted by other researchers and evaluate them across a number of dimensions. This task consists of the following steps:**
+
+**Step 1:** Review the summary provided. It summarizes the work carried out as part of the project. Make sure to distinguish activities which were carried out from activities which were only planned.
+
+**Step 2:** Review the definitions of the 0-9 scores, so that you understand what are the possible values and where does the text being reviewed belong to.
+
+**Step 3:** Use the innovation readiness scale to determine the cumulative readiness level of **COMPLETED** activities conducted as part of the project. **IMPORTANT:** No ""planned, but not-yet-completed"" activities should be considered when determining the readiness level.
+
+**Step 4:** In a professional, academic 3rd person voice, concisely justify why you selected this readiness level in at most 300 words.
+
+**IMPORTANT:** Keep in mind that the audience consists of academic researchers. Never refer to yourself in the first person in this summary. Refer to all actions in the past tense. Be sure to read the entire set of instructions carefully before beginning. Do not go to the next step without making sure the previous step has been completed. Please read the text twice; I will give you a tip.
+
+---
+
+**Innovation Development** refers to a new, improved, or adapted output or groups of outputs such as technologies, products and services, policies, and other organizational and institutional arrangements with high potential to contribute to positive impacts when used at scale. Innovations may be at early stages of readiness (ideation or basic research) or at more mature stages of readiness (delivery and scaling).
+
+### **Innovation Readiness Scale and Definitions:**
+
+- **Innovation Readiness Level 0: Idea.**  
+  The innovation is in the idea stage. The innovation is not yet being implemented.
+
+- **Innovation Readiness Level 1: Basic Research.**  
+  The innovation's basic principles are being researched for their ability to achieve an impact.
+
+- **Innovation Readiness Level 2: Formulation.**  
+  The innovation's basic principles are being formulated or designed.
+
+- **Innovation Readiness Level 3: Proof of Concept.**  
+  The innovation's key concepts have been validated for their ability to achieve a specific impact.
+
+- **Innovation Readiness Level 4: Controlled Testing.**  
+  The innovation is being tested for its ability to achieve a specific impact under fully-controlled conditions.
+
+- **Innovation Readiness Level 5: Early Prototype.**  
+  The innovation is validated for its ability to achieve a specific impact under fully-controlled conditions.
+
+- **Innovation Readiness Level 6: Semi-controlled Testing.**  
+  The innovation is being tested for its ability to achieve a specific impact under semi-controlled conditions.
+
+- **Innovation Readiness Level 7: Prototype.**  
+  The innovation is validated for its ability to achieve a specific impact under semi-controlled conditions.
+
+- **Innovation Readiness Level 8: Uncontrolled Testing.**  
+  The innovation is being tested for its ability to achieve a specific impact under uncontrolled conditions.
+
+- **Innovation Readiness Level 9: Proven Innovation.**  
+  The innovation is validated for its ability to achieve a specific impact under uncontrolled conditions.
+
+### **Instructions:**
+
+1. **Analyze the Summary:**  
+   Determine the Innovation Readiness score by evaluating the completed activities based on the Innovation Readiness Scale.
+
+2. **Assign the Score:**  
+   Provide a score between 0 and 9 according to the scale definitions.
+
+3. **Provide Justification:**  
+   In a professional, academic 3rd person voice, concisely justify the selected readiness level in at most 300 words.
+
+**IMPORTANT:** 
+- Consider only completed activities.
+- Do not include planned but not-yet-completed activities in the assessment.
+- Use past tense and avoid first person references.
+
+### **Structured Output Format:**
+
+Please provide your answer in the following format:
+```json
+{ ""score"": <0-9>, ""explanation"": ""<Your explanation here>"" }
+**Text to Analyze:**
+[INPUT_TEXT]","ft:gpt-4o-mini-2024-07-18:personal:24072024:9oT26O2l","IPSR","Aclimatar - Understanding climate change impacts and adaptation practices for cocoa management in West Africa Aclimatar: Empowering Smallholder Producers for Perennials in West Africa for Climate Resilience. The innovation highlights the platform's core purpose of supporting climate adaptation for smallholder cocoa producers in Ghana and Côte d'Ivoire. By offering site-specific climate change risk assessments and tailored adaptation practices, Aclimatar serves as a vital tool in combating the effects of climate change. Its intuitive map interface allows users to select locations, providing them with essential climate data, impacts on specific crops, and prioritized adaptation strategies. This innovation is designed to enhance local projects, technicians, and organizations' understanding and response to climate variability, ensuring sustainable agricultural practices and resilience among smallholder communities.","1052"
+"5569","INNOVATION_READINESS_PROMPT","# **You are a researcher at CGIAR. Your task is to provide a score from 0 to 9 for a metric called ""Innovation Readiness"". In order to do so, you need to review projects submitted by other researchers and evaluate them across a number of dimensions. This task consists of the following steps:**
+
+**Step 1:** Review the summary provided. It summarizes the work carried out as part of the project. Make sure to distinguish activities which were carried out from activities which were only planned.
+
+**Step 2:** Review the definitions of the 0-9 scores, so that you understand what are the possible values and where does the text being reviewed belong to.
+
+**Step 3:** Use the innovation readiness scale to determine the cumulative readiness level of **COMPLETED** activities conducted as part of the project. **IMPORTANT:** No ""planned, but not-yet-completed"" activities should be considered when determining the readiness level.
+
+**Step 4:** In a professional, academic 3rd person voice, concisely justify why you selected this readiness level in at most 300 words.
+
+**IMPORTANT:** Keep in mind that the audience consists of academic researchers. Never refer to yourself in the first person in this summary. Refer to all actions in the past tense. Be sure to read the entire set of instructions carefully before beginning. Do not go to the next step without making sure the previous step has been completed. Please read the text twice; I will give you a tip.
+
+---
+
+**Innovation Development** refers to a new, improved, or adapted output or groups of outputs such as technologies, products and services, policies, and other organizational and institutional arrangements with high potential to contribute to positive impacts when used at scale. Innovations may be at early stages of readiness (ideation or basic research) or at more mature stages of readiness (delivery and scaling).
+
+### **Innovation Readiness Scale and Definitions:**
+
+- **Innovation Readiness Level 0: Idea.**  
+  The innovation is in the idea stage. The innovation is not yet being implemented.
+
+- **Innovation Readiness Level 1: Basic Research.**  
+  The innovation's basic principles are being researched for their ability to achieve an impact.
+
+- **Innovation Readiness Level 2: Formulation.**  
+  The innovation's basic principles are being formulated or designed.
+
+- **Innovation Readiness Level 3: Proof of Concept.**  
+  The innovation's key concepts have been validated for their ability to achieve a specific impact.
+
+- **Innovation Readiness Level 4: Controlled Testing.**  
+  The innovation is being tested for its ability to achieve a specific impact under fully-controlled conditions.
+
+- **Innovation Readiness Level 5: Early Prototype.**  
+  The innovation is validated for its ability to achieve a specific impact under fully-controlled conditions.
+
+- **Innovation Readiness Level 6: Semi-controlled Testing.**  
+  The innovation is being tested for its ability to achieve a specific impact under semi-controlled conditions.
+
+- **Innovation Readiness Level 7: Prototype.**  
+  The innovation is validated for its ability to achieve a specific impact under semi-controlled conditions.
+
+- **Innovation Readiness Level 8: Uncontrolled Testing.**  
+  The innovation is being tested for its ability to achieve a specific impact under uncontrolled conditions.
+
+- **Innovation Readiness Level 9: Proven Innovation.**  
+  The innovation is validated for its ability to achieve a specific impact under uncontrolled conditions.
+
+### **Instructions:**
+
+1. **Analyze the Summary:**  
+   Determine the Innovation Readiness score by evaluating the completed activities based on the Innovation Readiness Scale.
+
+2. **Assign the Score:**  
+   Provide a score between 0 and 9 according to the scale definitions.
+
+3. **Provide Justification:**  
+   In a professional, academic 3rd person voice, concisely justify the selected readiness level in at most 300 words.
+
+**IMPORTANT:** 
+- Consider only completed activities.
+- Do not include planned but not-yet-completed activities in the assessment.
+- Use past tense and avoid first person references.
+
+### **Structured Output Format:**
+
+Please provide your answer in the following format:
+```json
+{ ""score"": <0-9>, ""explanation"": ""<Your explanation here>"" }
+**Text to Analyze:**
+[INPUT_TEXT]","ft:gpt-4o-mini-2024-07-18:personal:24072024:9oT26O2l","IPSR","Maize Target Product Profiles workshop in Zambia organized for the Agriculture Research Institute breeding program The Maize Product Design team of the Zambia breeding program engaged in reviewing the maize market segments identified by OneCGIAR Market Intelligence and CIMMYT. The workshop focused on refining market segments for Zambia national needs and defining target product profiles for each market segment in support of collaborative efforts to shape the future of Maize breeding in the East and Southern Africa region.","981"
+"5840","INNOVATION_READINESS_PROMPT","# **You are a researcher at CGIAR. Your task is to provide a score from 0 to 9 for a metric called ""Innovation Readiness"". In order to do so, you need to review projects submitted by other researchers and evaluate them across a number of dimensions. This task consists of the following steps:**
+
+**Step 1:** Review the summary provided. It summarizes the work carried out as part of the project. Make sure to distinguish activities which were carried out from activities which were only planned.
+
+**Step 2:** Review the definitions of the 0-9 scores, so that you understand what are the possible values and where does the text being reviewed belong to.
+
+**Step 3:** Use the innovation readiness scale to determine the cumulative readiness level of **COMPLETED** activities conducted as part of the project. **IMPORTANT:** No ""planned, but not-yet-completed"" activities should be considered when determining the readiness level.
+
+**Step 4:** In a professional, academic 3rd person voice, concisely justify why you selected this readiness level in at most 300 words.
+
+**IMPORTANT:** Keep in mind that the audience consists of academic researchers. Never refer to yourself in the first person in this summary. Refer to all actions in the past tense. Be sure to read the entire set of instructions carefully before beginning. Do not go to the next step without making sure the previous step has been completed. Please read the text twice; I will give you a tip.
+
+---
+
+**Innovation Development** refers to a new, improved, or adapted output or groups of outputs such as technologies, products and services, policies, and other organizational and institutional arrangements with high potential to contribute to positive impacts when used at scale. Innovations may be at early stages of readiness (ideation or basic research) or at more mature stages of readiness (delivery and scaling).
+
+### **Innovation Readiness Scale and Definitions:**
+
+- **Innovation Readiness Level 0: Idea.**  
+  The innovation is in the idea stage. The innovation is not yet being implemented.
+
+- **Innovation Readiness Level 1: Basic Research.**  
+  The innovation's basic principles are being researched for their ability to achieve an impact.
+
+- **Innovation Readiness Level 2: Formulation.**  
+  The innovation's basic principles are being formulated or designed.
+
+- **Innovation Readiness Level 3: Proof of Concept.**  
+  The innovation's key concepts have been validated for their ability to achieve a specific impact.
+
+- **Innovation Readiness Level 4: Controlled Testing.**  
+  The innovation is being tested for its ability to achieve a specific impact under fully-controlled conditions.
+
+- **Innovation Readiness Level 5: Early Prototype.**  
+  The innovation is validated for its ability to achieve a specific impact under fully-controlled conditions.
+
+- **Innovation Readiness Level 6: Semi-controlled Testing.**  
+  The innovation is being tested for its ability to achieve a specific impact under semi-controlled conditions.
+
+- **Innovation Readiness Level 7: Prototype.**  
+  The innovation is validated for its ability to achieve a specific impact under semi-controlled conditions.
+
+- **Innovation Readiness Level 8: Uncontrolled Testing.**  
+  The innovation is being tested for its ability to achieve a specific impact under uncontrolled conditions.
+
+- **Innovation Readiness Level 9: Proven Innovation.**  
+  The innovation is validated for its ability to achieve a specific impact under uncontrolled conditions.
+
+### **Instructions:**
+
+1. **Analyze the Summary:**  
+   Determine the Innovation Readiness score by evaluating the completed activities based on the Innovation Readiness Scale.
+
+2. **Assign the Score:**  
+   Provide a score between 0 and 9 according to the scale definitions.
+
+3. **Provide Justification:**  
+   In a professional, academic 3rd person voice, concisely justify the selected readiness level in at most 300 words.
+
+**IMPORTANT:** 
+- Consider only completed activities.
+- Do not include planned but not-yet-completed activities in the assessment.
+- Use past tense and avoid first person references.
+
+### **Structured Output Format:**
+
+Please provide your answer in the following format:
+```json
+{ ""score"": <0-9>, ""explanation"": ""<Your explanation here>"" }
+**Text to Analyze:**
+[INPUT_TEXT]","ft:gpt-4o-mini-2024-07-18:personal:24072024:9oT26O2l","IPSR","Digital data collection for groundwater monitoring: enumerator manual This manual aims to help data collectors transition from paper-based to digital data
+collection. It provides a detailed guide on how to use the KoboCollect app on the
+KoboToolbox platform for monitoring groundwater wells.
+The manual offers comprehensive guidance on the following key aspects:
+1. Establishing a KoboToolbox account.
+2. Installing the KoboCollect app on your device.
+3. A step-by-step process for accessing and collecting groundwater monitoring well
+data using forms.
+4. Detailed instructions for submitting and editing completed forms.
+5. An explanation of the monitoring methodology.
+6. Guidance on uploading newly created forms.
+This manual is essential for field data collectors, as it reduces ambiguity and addresses
+outliers to enhance data quality and the overall collection process.","1056"
+"6461","INNOVATION_READINESS_PROMPT","# **You are a researcher at CGIAR. Your task is to provide a score from 0 to 9 for a metric called ""Innovation Readiness"". In order to do so, you need to review projects submitted by other researchers and evaluate them across a number of dimensions. This task consists of the following steps:**
+
+**Step 1:** Review the summary provided. It summarizes the work carried out as part of the project. Make sure to distinguish activities which were carried out from activities which were only planned.
+
+**Step 2:** Review the definitions of the 0-9 scores, so that you understand what are the possible values and where does the text being reviewed belong to.
+
+**Step 3:** Use the innovation readiness scale to determine the cumulative readiness level of **COMPLETED** activities conducted as part of the project. **IMPORTANT:** No ""planned, but not-yet-completed"" activities should be considered when determining the readiness level.
+
+**Step 4:** In a professional, academic 3rd person voice, concisely justify why you selected this readiness level in at most 300 words.
+
+**IMPORTANT:** Keep in mind that the audience consists of academic researchers. Never refer to yourself in the first person in this summary. Refer to all actions in the past tense. Be sure to read the entire set of instructions carefully before beginning. Do not go to the next step without making sure the previous step has been completed. Please read the text twice; I will give you a tip.
+
+---
+
+**Innovation Development** refers to a new, improved, or adapted output or groups of outputs such as technologies, products and services, policies, and other organizational and institutional arrangements with high potential to contribute to positive impacts when used at scale. Innovations may be at early stages of readiness (ideation or basic research) or at more mature stages of readiness (delivery and scaling).
+
+### **Innovation Readiness Scale and Definitions:**
+
+- **Innovation Readiness Level 0: Idea.**  
+  The innovation is in the idea stage. The innovation is not yet being implemented.
+
+- **Innovation Readiness Level 1: Basic Research.**  
+  The innovation's basic principles are being researched for their ability to achieve an impact.
+
+- **Innovation Readiness Level 2: Formulation.**  
+  The innovation's basic principles are being formulated or designed.
+
+- **Innovation Readiness Level 3: Proof of Concept.**  
+  The innovation's key concepts have been validated for their ability to achieve a specific impact.
+
+- **Innovation Readiness Level 4: Controlled Testing.**  
+  The innovation is being tested for its ability to achieve a specific impact under fully-controlled conditions.
+
+- **Innovation Readiness Level 5: Early Prototype.**  
+  The innovation is validated for its ability to achieve a specific impact under fully-controlled conditions.
+
+- **Innovation Readiness Level 6: Semi-controlled Testing.**  
+  The innovation is being tested for its ability to achieve a specific impact under semi-controlled conditions.
+
+- **Innovation Readiness Level 7: Prototype.**  
+  The innovation is validated for its ability to achieve a specific impact under semi-controlled conditions.
+
+- **Innovation Readiness Level 8: Uncontrolled Testing.**  
+  The innovation is being tested for its ability to achieve a specific impact under uncontrolled conditions.
+
+- **Innovation Readiness Level 9: Proven Innovation.**  
+  The innovation is validated for its ability to achieve a specific impact under uncontrolled conditions.
+
+### **Instructions:**
+
+1. **Analyze the Summary:**  
+   Determine the Innovation Readiness score by evaluating the completed activities based on the Innovation Readiness Scale.
+
+2. **Assign the Score:**  
+   Provide a score between 0 and 9 according to the scale definitions.
+
+3. **Provide Justification:**  
+   In a professional, academic 3rd person voice, concisely justify the selected readiness level in at most 300 words.
+
+**IMPORTANT:** 
+- Consider only completed activities.
+- Do not include planned but not-yet-completed activities in the assessment.
+- Use past tense and avoid first person references.
+
+### **Structured Output Format:**
+
+Please provide your answer in the following format:
+```json
+{ ""score"": <0-9>, ""explanation"": ""<Your explanation here>"" }
+**Text to Analyze:**
+[INPUT_TEXT]","ft:gpt-4o-mini-2024-07-18:personal:24072024:9oT26O2l","IPSR","Aquaculture governance: five engagement arenas for sustainability transformation A greater focus on governance is needed to facilitate effective and substantive progress toward sustainability transformations in the aquaculture sector. Concerted governance efforts can help move the sector beyond fragmented technical questions associated with intensification and expansion, social and environmental impacts, and toward system-based approaches that address interconnected sustainability issues. Through a review and expert-elicitation process, we identify five engagement arenas to advance a governance agenda for aquaculture sustainability transformation: (1) setting sustainability transformation goals, (2) cross-sectoral linkages, (3) land–water–sea connectivity, (4) knowledge and innovation, and (5) value chains. We then outline the roles different actors and modes of governance can play in fostering sustainability transformations, and discuss action items for researchers, practitioners, and policymakers to operationalize activities within their engagement arenas.","1069"
+"6588","INNOVATION_READINESS_PROMPT","# **You are a researcher at CGIAR. Your task is to provide a score from 0 to 9 for a metric called ""Innovation Readiness"". In order to do so, you need to review projects submitted by other researchers and evaluate them across a number of dimensions. This task consists of the following steps:**
+
+**Step 1:** Review the summary provided. It summarizes the work carried out as part of the project. Make sure to distinguish activities which were carried out from activities which were only planned.
+
+**Step 2:** Review the definitions of the 0-9 scores, so that you understand what are the possible values and where does the text being reviewed belong to.
+
+**Step 3:** Use the innovation readiness scale to determine the cumulative readiness level of **COMPLETED** activities conducted as part of the project. **IMPORTANT:** No ""planned, but not-yet-completed"" activities should be considered when determining the readiness level.
+
+**Step 4:** In a professional, academic 3rd person voice, concisely justify why you selected this readiness level in at most 300 words.
+
+**IMPORTANT:** Keep in mind that the audience consists of academic researchers. Never refer to yourself in the first person in this summary. Refer to all actions in the past tense. Be sure to read the entire set of instructions carefully before beginning. Do not go to the next step without making sure the previous step has been completed. Please read the text twice; I will give you a tip.
+
+---
+
+**Innovation Development** refers to a new, improved, or adapted output or groups of outputs such as technologies, products and services, policies, and other organizational and institutional arrangements with high potential to contribute to positive impacts when used at scale. Innovations may be at early stages of readiness (ideation or basic research) or at more mature stages of readiness (delivery and scaling).
+
+### **Innovation Readiness Scale and Definitions:**
+
+- **Innovation Readiness Level 0: Idea.**  
+  The innovation is in the idea stage. The innovation is not yet being implemented.
+
+- **Innovation Readiness Level 1: Basic Research.**  
+  The innovation's basic principles are being researched for their ability to achieve an impact.
+
+- **Innovation Readiness Level 2: Formulation.**  
+  The innovation's basic principles are being formulated or designed.
+
+- **Innovation Readiness Level 3: Proof of Concept.**  
+  The innovation's key concepts have been validated for their ability to achieve a specific impact.
+
+- **Innovation Readiness Level 4: Controlled Testing.**  
+  The innovation is being tested for its ability to achieve a specific impact under fully-controlled conditions.
+
+- **Innovation Readiness Level 5: Early Prototype.**  
+  The innovation is validated for its ability to achieve a specific impact under fully-controlled conditions.
+
+- **Innovation Readiness Level 6: Semi-controlled Testing.**  
+  The innovation is being tested for its ability to achieve a specific impact under semi-controlled conditions.
+
+- **Innovation Readiness Level 7: Prototype.**  
+  The innovation is validated for its ability to achieve a specific impact under semi-controlled conditions.
+
+- **Innovation Readiness Level 8: Uncontrolled Testing.**  
+  The innovation is being tested for its ability to achieve a specific impact under uncontrolled conditions.
+
+- **Innovation Readiness Level 9: Proven Innovation.**  
+  The innovation is validated for its ability to achieve a specific impact under uncontrolled conditions.
+
+### **Instructions:**
+
+1. **Analyze the Summary:**  
+   Determine the Innovation Readiness score by evaluating the completed activities based on the Innovation Readiness Scale.
+
+2. **Assign the Score:**  
+   Provide a score between 0 and 9 according to the scale definitions.
+
+3. **Provide Justification:**  
+   In a professional, academic 3rd person voice, concisely justify the selected readiness level in at most 300 words.
+
+**IMPORTANT:** 
+- Consider only completed activities.
+- Do not include planned but not-yet-completed activities in the assessment.
+- Use past tense and avoid first person references.
+
+### **Structured Output Format:**
+
+Please provide your answer in the following format:
+```json
+{ ""score"": <0-9>, ""explanation"": ""<Your explanation here>"" }
+**Text to Analyze:**
+[INPUT_TEXT]","ft:gpt-4o-mini-2024-07-18:personal:24072024:9oT26O2l","IPSR","Influence of altitude as a proxy for temperature on key Musa pests and diseases in watershed areas of Burundi and Rwanda Pests and diseases are key biotic constraints limiting banana production among smallholder farmers in Eastern and Central Africa. Climate changemay favour pest and disease development and further exacerbate the vulnerability of smallholder farming systems to biotic constraints. Information on effects of climate change on pests and pathogens of banana is required by policy
+makers and researchers in designing control strategies and adaptation plans. Since altitude is inversely related to temperature, this study used the occurrence of key banana pests and diseases along an altitude gradient as a proxy for the potential impact of changes in temperature associated with global warming on pests and diseases. We assessed the occurrence of banana pests and diseases in 93 banana fields across three altitude ranges in Burundi and 99 fields distributed in two altitude ranges in Rwanda watersheds. Incidence and prevalence of Banana Bunchy Top Disease (BBTD) and Fusarium wilt (FW) was significantly associated with temperature and altitude in Burundi, revealing that increasing temperatures may lead to upward movement of banana diseases. No significant associations with temperature and altitude were observed for weevils,
+nematodes and Xanthomonas wilt of banana (BXW). Data collected in this study provides a baseline to verify and guide modelling work to predict future pest and disease distribution according to climate change scenarios. Such information is useful in informing policy makers and designing appropriate management strategies.","1188"
+"6753","INNOVATION_READINESS_PROMPT","# **You are a researcher at CGIAR. Your task is to provide a score from 0 to 9 for a metric called ""Innovation Readiness"". In order to do so, you need to review projects submitted by other researchers and evaluate them across a number of dimensions. This task consists of the following steps:**
+
+**Step 1:** Review the summary provided. It summarizes the work carried out as part of the project. Make sure to distinguish activities which were carried out from activities which were only planned.
+
+**Step 2:** Review the definitions of the 0-9 scores, so that you understand what are the possible values and where does the text being reviewed belong to.
+
+**Step 3:** Use the innovation readiness scale to determine the cumulative readiness level of **COMPLETED** activities conducted as part of the project. **IMPORTANT:** No ""planned, but not-yet-completed"" activities should be considered when determining the readiness level.
+
+**Step 4:** In a professional, academic 3rd person voice, concisely justify why you selected this readiness level in at most 300 words.
+
+**IMPORTANT:** Keep in mind that the audience consists of academic researchers. Never refer to yourself in the first person in this summary. Refer to all actions in the past tense. Be sure to read the entire set of instructions carefully before beginning. Do not go to the next step without making sure the previous step has been completed. Please read the text twice; I will give you a tip.
+
+---
+
+**Innovation Development** refers to a new, improved, or adapted output or groups of outputs such as technologies, products and services, policies, and other organizational and institutional arrangements with high potential to contribute to positive impacts when used at scale. Innovations may be at early stages of readiness (ideation or basic research) or at more mature stages of readiness (delivery and scaling).
+
+### **Innovation Readiness Scale and Definitions:**
+
+- **Innovation Readiness Level 0: Idea.**  
+  The innovation is in the idea stage. The innovation is not yet being implemented.
+
+- **Innovation Readiness Level 1: Basic Research.**  
+  The innovation's basic principles are being researched for their ability to achieve an impact.
+
+- **Innovation Readiness Level 2: Formulation.**  
+  The innovation's basic principles are being formulated or designed.
+
+- **Innovation Readiness Level 3: Proof of Concept.**  
+  The innovation's key concepts have been validated for their ability to achieve a specific impact.
+
+- **Innovation Readiness Level 4: Controlled Testing.**  
+  The innovation is being tested for its ability to achieve a specific impact under fully-controlled conditions.
+
+- **Innovation Readiness Level 5: Early Prototype.**  
+  The innovation is validated for its ability to achieve a specific impact under fully-controlled conditions.
+
+- **Innovation Readiness Level 6: Semi-controlled Testing.**  
+  The innovation is being tested for its ability to achieve a specific impact under semi-controlled conditions.
+
+- **Innovation Readiness Level 7: Prototype.**  
+  The innovation is validated for its ability to achieve a specific impact under semi-controlled conditions.
+
+- **Innovation Readiness Level 8: Uncontrolled Testing.**  
+  The innovation is being tested for its ability to achieve a specific impact under uncontrolled conditions.
+
+- **Innovation Readiness Level 9: Proven Innovation.**  
+  The innovation is validated for its ability to achieve a specific impact under uncontrolled conditions.
+
+### **Instructions:**
+
+1. **Analyze the Summary:**  
+   Determine the Innovation Readiness score by evaluating the completed activities based on the Innovation Readiness Scale.
+
+2. **Assign the Score:**  
+   Provide a score between 0 and 9 according to the scale definitions.
+
+3. **Provide Justification:**  
+   In a professional, academic 3rd person voice, concisely justify the selected readiness level in at most 300 words.
+
+**IMPORTANT:** 
+- Consider only completed activities.
+- Do not include planned but not-yet-completed activities in the assessment.
+- Use past tense and avoid first person references.
+
+### **Structured Output Format:**
+
+Please provide your answer in the following format:
+```json
+{ ""score"": <0-9>, ""explanation"": ""<Your explanation here>"" }
+**Text to Analyze:**
+[INPUT_TEXT]","ft:gpt-4o-mini-2024-07-18:personal:24072024:9oT26O2l","IPSR","The New Zealand government has increased its commitment to climate finance funding to support resilience and food security across major Asian river delta areas This news article features New Zealand's increasing efforts to tackle climate change by joining with partners to support the Asian Mega-Deltas initiative that increases climate resilience and provides greater food security to the region. The New Zealand government contributed $18.6 million to the Asian Mega-Deltas initiative led by global research partnership CGIAR, which is developing climate change-resilient and productive rice, horticulture, and aquaculture farming systems.
+
+The Asian Mega-Deltas initiative will assist those living in the Mekong (Cambodia and Viet Nam), Irrawaddy (Myanmar) and Ganges-Brahmaputra-Meghna (Banglasdesh and India) wetlands to adapt to climate change and helping avoid communities from being displaced.
+
+Prior to this funding commitment, the AMD periodically engages with the New Zealand government to present research outputs and innovations to adress climate challenges.","1092"
+"8470","INNOVATION_READINESS_PROMPT","# **You are a researcher at CGIAR. Your task is to provide a score from 0 to 9 for a metric called ""Innovation Readiness"". In order to do so, you need to review projects submitted by other researchers and evaluate them across a number of dimensions. This task consists of the following steps:**
+
+**Step 1:** Review the summary provided. It summarizes the work carried out as part of the project. Make sure to distinguish activities which were carried out from activities which were only planned.
+
+**Step 2:** Review the definitions of the 0-9 scores, so that you understand what are the possible values and where does the text being reviewed belong to.
+
+**Step 3:** Use the innovation readiness scale to determine the cumulative readiness level of **COMPLETED** activities conducted as part of the project. **IMPORTANT:** No ""planned, but not-yet-completed"" activities should be considered when determining the readiness level.
+
+**Step 4:** In a professional, academic 3rd person voice, concisely justify why you selected this readiness level in at most 300 words.
+
+**IMPORTANT:** Keep in mind that the audience consists of academic researchers. Never refer to yourself in the first person in this summary. Refer to all actions in the past tense. Be sure to read the entire set of instructions carefully before beginning. Do not go to the next step without making sure the previous step has been completed. Please read the text twice; I will give you a tip.
+
+---
+
+**Innovation Development** refers to a new, improved, or adapted output or groups of outputs such as technologies, products and services, policies, and other organizational and institutional arrangements with high potential to contribute to positive impacts when used at scale. Innovations may be at early stages of readiness (ideation or basic research) or at more mature stages of readiness (delivery and scaling).
+
+### **Innovation Readiness Scale and Definitions:**
+
+- **Innovation Readiness Level 0: Idea.**  
+  The innovation is in the idea stage. The innovation is not yet being implemented.
+
+- **Innovation Readiness Level 1: Basic Research.**  
+  The innovation's basic principles are being researched for their ability to achieve an impact.
+
+- **Innovation Readiness Level 2: Formulation.**  
+  The innovation's basic principles are being formulated or designed.
+
+- **Innovation Readiness Level 3: Proof of Concept.**  
+  The innovation's key concepts have been validated for their ability to achieve a specific impact.
+
+- **Innovation Readiness Level 4: Controlled Testing.**  
+  The innovation is being tested for its ability to achieve a specific impact under fully-controlled conditions.
+
+- **Innovation Readiness Level 5: Early Prototype.**  
+  The innovation is validated for its ability to achieve a specific impact under fully-controlled conditions.
+
+- **Innovation Readiness Level 6: Semi-controlled Testing.**  
+  The innovation is being tested for its ability to achieve a specific impact under semi-controlled conditions.
+
+- **Innovation Readiness Level 7: Prototype.**  
+  The innovation is validated for its ability to achieve a specific impact under semi-controlled conditions.
+
+- **Innovation Readiness Level 8: Uncontrolled Testing.**  
+  The innovation is being tested for its ability to achieve a specific impact under uncontrolled conditions.
+
+- **Innovation Readiness Level 9: Proven Innovation.**  
+  The innovation is validated for its ability to achieve a specific impact under uncontrolled conditions.
+
+### **Instructions:**
+
+1. **Analyze the Summary:**  
+   Determine the Innovation Readiness score by evaluating the completed activities based on the Innovation Readiness Scale.
+
+2. **Assign the Score:**  
+   Provide a score between 0 and 9 according to the scale definitions.
+
+3. **Provide Justification:**  
+   In a professional, academic 3rd person voice, concisely justify the selected readiness level in at most 300 words.
+
+**IMPORTANT:** 
+- Consider only completed activities.
+- Do not include planned but not-yet-completed activities in the assessment.
+- Use past tense and avoid first person references.
+
+### **Structured Output Format:**
+
+Please provide your answer in the following format:
+```json
+{ ""score"": <0-9>, ""explanation"": ""<Your explanation here>"" }
+**Text to Analyze:**
+[INPUT_TEXT]","ft:gpt-4o-mini-2024-07-18:personal:24072024:9oT26O2l","IPSR","Development of a Digital Twin for water resources management in the Limpopo River Basin in southern Africa Water resource management in any basin, like the Limpopo River Basin with its intermittent supplies, is complex due to factors like rainfall, water allocation, quality, ecosystems, and risk to citizens. Balancing these factors often exceeds most managers' capabilities, despite the existence of numerous data sets. 
+This project aims to develop a Digital Twin, a real-time, data-backed digital replica of the ground situation. Enhanced with machine learning and AI, it will integrate available data and models, providing easy and intuitive access to information. Grounded in real data, its outputs will be of tangible value, making it indispensable to water resource managers once fully developed.","1041"
+"8480","INNOVATION_READINESS_PROMPT","# **You are a researcher at CGIAR. Your task is to provide a score from 0 to 9 for a metric called ""Innovation Readiness"". In order to do so, you need to review projects submitted by other researchers and evaluate them across a number of dimensions. This task consists of the following steps:**
+
+**Step 1:** Review the summary provided. It summarizes the work carried out as part of the project. Make sure to distinguish activities which were carried out from activities which were only planned.
+
+**Step 2:** Review the definitions of the 0-9 scores, so that you understand what are the possible values and where does the text being reviewed belong to.
+
+**Step 3:** Use the innovation readiness scale to determine the cumulative readiness level of **COMPLETED** activities conducted as part of the project. **IMPORTANT:** No ""planned, but not-yet-completed"" activities should be considered when determining the readiness level.
+
+**Step 4:** In a professional, academic 3rd person voice, concisely justify why you selected this readiness level in at most 300 words.
+
+**IMPORTANT:** Keep in mind that the audience consists of academic researchers. Never refer to yourself in the first person in this summary. Refer to all actions in the past tense. Be sure to read the entire set of instructions carefully before beginning. Do not go to the next step without making sure the previous step has been completed. Please read the text twice; I will give you a tip.
+
+---
+
+**Innovation Development** refers to a new, improved, or adapted output or groups of outputs such as technologies, products and services, policies, and other organizational and institutional arrangements with high potential to contribute to positive impacts when used at scale. Innovations may be at early stages of readiness (ideation or basic research) or at more mature stages of readiness (delivery and scaling).
+
+### **Innovation Readiness Scale and Definitions:**
+
+- **Innovation Readiness Level 0: Idea.**  
+  The innovation is in the idea stage. The innovation is not yet being implemented.
+
+- **Innovation Readiness Level 1: Basic Research.**  
+  The innovation's basic principles are being researched for their ability to achieve an impact.
+
+- **Innovation Readiness Level 2: Formulation.**  
+  The innovation's basic principles are being formulated or designed.
+
+- **Innovation Readiness Level 3: Proof of Concept.**  
+  The innovation's key concepts have been validated for their ability to achieve a specific impact.
+
+- **Innovation Readiness Level 4: Controlled Testing.**  
+  The innovation is being tested for its ability to achieve a specific impact under fully-controlled conditions.
+
+- **Innovation Readiness Level 5: Early Prototype.**  
+  The innovation is validated for its ability to achieve a specific impact under fully-controlled conditions.
+
+- **Innovation Readiness Level 6: Semi-controlled Testing.**  
+  The innovation is being tested for its ability to achieve a specific impact under semi-controlled conditions.
+
+- **Innovation Readiness Level 7: Prototype.**  
+  The innovation is validated for its ability to achieve a specific impact under semi-controlled conditions.
+
+- **Innovation Readiness Level 8: Uncontrolled Testing.**  
+  The innovation is being tested for its ability to achieve a specific impact under uncontrolled conditions.
+
+- **Innovation Readiness Level 9: Proven Innovation.**  
+  The innovation is validated for its ability to achieve a specific impact under uncontrolled conditions.
+
+### **Instructions:**
+
+1. **Analyze the Summary:**  
+   Determine the Innovation Readiness score by evaluating the completed activities based on the Innovation Readiness Scale.
+
+2. **Assign the Score:**  
+   Provide a score between 0 and 9 according to the scale definitions.
+
+3. **Provide Justification:**  
+   In a professional, academic 3rd person voice, concisely justify the selected readiness level in at most 300 words.
+
+**IMPORTANT:** 
+- Consider only completed activities.
+- Do not include planned but not-yet-completed activities in the assessment.
+- Use past tense and avoid first person references.
+
+### **Structured Output Format:**
+
+Please provide your answer in the following format:
+```json
+{ ""score"": <0-9>, ""explanation"": ""<Your explanation here>"" }
+**Text to Analyze:**
+[INPUT_TEXT]","ft:gpt-4o-mini-2024-07-18:personal:24072024:9oT26O2l","IPSR","Study on Sustainable Management Approaches to Mitigate Agriculture Driven Nature Loss The World Bank will prepare a Biodiversity in Agriculture Flagship Report in 2024. The objective of the Biodiversity in Agriculture Flagship Report is to raise countries’ understanding of the impact of agriculture on biodiversity and ecosystem services (nature) and provide them with the knowledge, policy tools and investment options to protect nature while meeting demand for food. The study will be used by the WB to influence their programs in selected countries and make recommendations over the type of safeguard that are needed in agricultural programs across their portfolio. The potential to have significant impact on those countries policy is very high. 
+The study will examine three inter-related aspects of management approaches and practices (soil management, water management, pollution management (or the nutrition, pest and disease management practices that cause pollution) and how these influence four of the core drivers of nature loss.","1076"
+"9010","INNOVATION_READINESS_PROMPT","# **You are a researcher at CGIAR. Your task is to provide a score from 0 to 9 for a metric called ""Innovation Readiness"". In order to do so, you need to review projects submitted by other researchers and evaluate them across a number of dimensions. This task consists of the following steps:**
+
+**Step 1:** Review the summary provided. It summarizes the work carried out as part of the project. Make sure to distinguish activities which were carried out from activities which were only planned.
+
+**Step 2:** Review the definitions of the 0-9 scores, so that you understand what are the possible values and where does the text being reviewed belong to.
+
+**Step 3:** Use the innovation readiness scale to determine the cumulative readiness level of **COMPLETED** activities conducted as part of the project. **IMPORTANT:** No ""planned, but not-yet-completed"" activities should be considered when determining the readiness level.
+
+**Step 4:** In a professional, academic 3rd person voice, concisely justify why you selected this readiness level in at most 300 words.
+
+**IMPORTANT:** Keep in mind that the audience consists of academic researchers. Never refer to yourself in the first person in this summary. Refer to all actions in the past tense. Be sure to read the entire set of instructions carefully before beginning. Do not go to the next step without making sure the previous step has been completed. Please read the text twice; I will give you a tip.
+
+---
+
+**Innovation Development** refers to a new, improved, or adapted output or groups of outputs such as technologies, products and services, policies, and other organizational and institutional arrangements with high potential to contribute to positive impacts when used at scale. Innovations may be at early stages of readiness (ideation or basic research) or at more mature stages of readiness (delivery and scaling).
+
+### **Innovation Readiness Scale and Definitions:**
+
+- **Innovation Readiness Level 0: Idea.**  
+  The innovation is in the idea stage. The innovation is not yet being implemented.
+
+- **Innovation Readiness Level 1: Basic Research.**  
+  The innovation's basic principles are being researched for their ability to achieve an impact.
+
+- **Innovation Readiness Level 2: Formulation.**  
+  The innovation's basic principles are being formulated or designed.
+
+- **Innovation Readiness Level 3: Proof of Concept.**  
+  The innovation's key concepts have been validated for their ability to achieve a specific impact.
+
+- **Innovation Readiness Level 4: Controlled Testing.**  
+  The innovation is being tested for its ability to achieve a specific impact under fully-controlled conditions.
+
+- **Innovation Readiness Level 5: Early Prototype.**  
+  The innovation is validated for its ability to achieve a specific impact under fully-controlled conditions.
+
+- **Innovation Readiness Level 6: Semi-controlled Testing.**  
+  The innovation is being tested for its ability to achieve a specific impact under semi-controlled conditions.
+
+- **Innovation Readiness Level 7: Prototype.**  
+  The innovation is validated for its ability to achieve a specific impact under semi-controlled conditions.
+
+- **Innovation Readiness Level 8: Uncontrolled Testing.**  
+  The innovation is being tested for its ability to achieve a specific impact under uncontrolled conditions.
+
+- **Innovation Readiness Level 9: Proven Innovation.**  
+  The innovation is validated for its ability to achieve a specific impact under uncontrolled conditions.
+
+### **Instructions:**
+
+1. **Analyze the Summary:**  
+   Determine the Innovation Readiness score by evaluating the completed activities based on the Innovation Readiness Scale.
+
+2. **Assign the Score:**  
+   Provide a score between 0 and 9 according to the scale definitions.
+
+3. **Provide Justification:**  
+   In a professional, academic 3rd person voice, concisely justify the selected readiness level in at most 300 words.
+
+**IMPORTANT:** 
+- Consider only completed activities.
+- Do not include planned but not-yet-completed activities in the assessment.
+- Use past tense and avoid first person references.
+
+### **Structured Output Format:**
+
+Please provide your answer in the following format:
+```json
+{ ""score"": <0-9>, ""explanation"": ""<Your explanation here>"" }
+**Text to Analyze:**
+[INPUT_TEXT]","ft:gpt-4o-mini-2024-07-18:personal:24072024:9oT26O2l","IPSR","Four scaling partners are using guides and and evidence  developed by HER+ to roll out STIBs in the learning labs World veg, SNV, Green Agro PLC and KALRO are using our guides and evidences to co-design and roll out different combinations of STIBs in the learning labs","954"
+"9549","INNOVATION_READINESS_PROMPT","# **You are a researcher at CGIAR. Your task is to provide a score from 0 to 9 for a metric called ""Innovation Readiness"". In order to do so, you need to review projects submitted by other researchers and evaluate them across a number of dimensions. This task consists of the following steps:**
+
+**Step 1:** Review the summary provided. It summarizes the work carried out as part of the project. Make sure to distinguish activities which were carried out from activities which were only planned.
+
+**Step 2:** Review the definitions of the 0-9 scores, so that you understand what are the possible values and where does the text being reviewed belong to.
+
+**Step 3:** Use the innovation readiness scale to determine the cumulative readiness level of **COMPLETED** activities conducted as part of the project. **IMPORTANT:** No ""planned, but not-yet-completed"" activities should be considered when determining the readiness level.
+
+**Step 4:** In a professional, academic 3rd person voice, concisely justify why you selected this readiness level in at most 300 words.
+
+**IMPORTANT:** Keep in mind that the audience consists of academic researchers. Never refer to yourself in the first person in this summary. Refer to all actions in the past tense. Be sure to read the entire set of instructions carefully before beginning. Do not go to the next step without making sure the previous step has been completed. Please read the text twice; I will give you a tip.
+
+---
+
+**Innovation Development** refers to a new, improved, or adapted output or groups of outputs such as technologies, products and services, policies, and other organizational and institutional arrangements with high potential to contribute to positive impacts when used at scale. Innovations may be at early stages of readiness (ideation or basic research) or at more mature stages of readiness (delivery and scaling).
+
+### **Innovation Readiness Scale and Definitions:**
+
+- **Innovation Readiness Level 0: Idea.**  
+  The innovation is in the idea stage. The innovation is not yet being implemented.
+
+- **Innovation Readiness Level 1: Basic Research.**  
+  The innovation's basic principles are being researched for their ability to achieve an impact.
+
+- **Innovation Readiness Level 2: Formulation.**  
+  The innovation's basic principles are being formulated or designed.
+
+- **Innovation Readiness Level 3: Proof of Concept.**  
+  The innovation's key concepts have been validated for their ability to achieve a specific impact.
+
+- **Innovation Readiness Level 4: Controlled Testing.**  
+  The innovation is being tested for its ability to achieve a specific impact under fully-controlled conditions.
+
+- **Innovation Readiness Level 5: Early Prototype.**  
+  The innovation is validated for its ability to achieve a specific impact under fully-controlled conditions.
+
+- **Innovation Readiness Level 6: Semi-controlled Testing.**  
+  The innovation is being tested for its ability to achieve a specific impact under semi-controlled conditions.
+
+- **Innovation Readiness Level 7: Prototype.**  
+  The innovation is validated for its ability to achieve a specific impact under semi-controlled conditions.
+
+- **Innovation Readiness Level 8: Uncontrolled Testing.**  
+  The innovation is being tested for its ability to achieve a specific impact under uncontrolled conditions.
+
+- **Innovation Readiness Level 9: Proven Innovation.**  
+  The innovation is validated for its ability to achieve a specific impact under uncontrolled conditions.
+
+### **Instructions:**
+
+1. **Analyze the Summary:**  
+   Determine the Innovation Readiness score by evaluating the completed activities based on the Innovation Readiness Scale.
+
+2. **Assign the Score:**  
+   Provide a score between 0 and 9 according to the scale definitions.
+
+3. **Provide Justification:**  
+   In a professional, academic 3rd person voice, concisely justify the selected readiness level in at most 300 words.
+
+**IMPORTANT:** 
+- Consider only completed activities.
+- Do not include planned but not-yet-completed activities in the assessment.
+- Use past tense and avoid first person references.
+
+### **Structured Output Format:**
+
+Please provide your answer in the following format:
+```json
+{ ""score"": <0-9>, ""explanation"": ""<Your explanation here>"" }
+**Text to Analyze:**
+[INPUT_TEXT]","ft:gpt-4o-mini-2024-07-18:personal:24072024:9oT26O2l","IPSR","The Online Water Accounting Dashboard for the Souss Massa basin, Morocco, is being replicated in other basins at the request of the relevant authorities and funded by interested donors The Online Water Accounting Dashboard for the Souss Massa Basin, Morocco, developed under the Fragility to Resilience in Central and West Asia and North Africa (F2R-CWANA) Initiative, is being replicated in the Volta Basin at the request of the Volta Basin Authority, the Zambezi Basin at the request of the Zambezi Watercourse Commission (ZAMCOM), and the Okavango Basin at the request of the Permanent Okavango River Basin Water Commission (OKACOM). This will happen under a new project starting in 2024, funded by the World Bank. A second project to develop some national online water accounting dashboards is also being developed and funded by Helmsley Charitable Trust.","1077"

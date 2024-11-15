@@ -386,6 +386,7 @@ MODELS = [
     'gpt-4o-mini',
 #    'o1-preview',
     'o1-mini',
+    'ft:gpt-4o-mini-2024-07-18:personal:24072024:9oT26O2l',
 ]
 
 # OpenAI API Configuration
