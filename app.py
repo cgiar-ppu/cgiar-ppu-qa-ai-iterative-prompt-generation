@@ -18,6 +18,154 @@ import re
 from output_conversion_unpivot_dashboard import transform_for_dashboard  # Import the transformation function
 # app.py
 #Test Comment to refresh x2
+
+HELP_TEXT = """
+## Overview
+
+This application helps you to:
+- **Manage and run multiple ChatGPT prompts** against a dataset of research results.
+- **Generate bulk evaluations** using different prompts and models.
+- **Upload your own data** and apply prompts to produce aggregated, downloadable outputs.
+- **Transform outputs** for custom dashboards or further analysis.
+- **Perform follow-up interactions** with previously generated model responses.
+
+The intended workflow is:
+1. **Configure Models & Prompts**
+2. **Select or Upload a Dataset**
+3. **Choose Results to Process**
+4. **Run the Main Processing to Generate Outputs**
+5. **Evaluate Metrics and Download Results**
+6. **If Needed, Perform Follow-up Prompts**
+
+Below you will find detailed instructions for each step.
+
+---
+
+## Step-by-Step Guide
+
+### 1. Configuration
+
+- **Select Models:**  
+  In the sidebar, choose one or multiple available models to run your prompts.  
+  The list of models appears under "Configuration" in the left sidebar.  
+  You can select multiple models to run tasks in parallel.
+
+- **Select Prompts:**  
+  Under "Configuration" → "Existing Prompts," choose which prompts you want the model(s) to process.  
+  You may also **Add New Prompts** manually or by uploading an Excel file with prompt definitions.  
+  Prompts must include the placeholder `[INPUT_TEXT]`, which the app will replace with your dataset content.
+
+**Tip:** Ensure each prompt is relevant and well-defined since it will guide the model’s response and scoring.
+
+### 2. Dataset Selection
+
+- **Default Dataset vs. Upload Your Own:**  
+  In the sidebar, select **"Default Dataset"** to use the pre-loaded sample data or **"Upload Your Own"** to provide a CSV/Excel file.  
+  If uploading, ensure your file has relevant text fields (e.g., Title, Description, Evidence_Abstract_Text, or Evidence_Parsed_Text).  
+  Once uploaded, the system automatically concatenates these fields into `input_text`.
+
+**Tip:** Expand the “Show sample of input data” section in the main page to confirm correct columns and data formatting.
+
+### 3. Selecting Results to Process
+
+- **By Number of Results:**  
+  Choose how many top rows of your dataset you want to process.  
+  This is useful for a quick test or smaller subsets.
+
+- **By Specific Result Codes:**  
+  Paste a list of result codes to filter. This approach allows targeted evaluation of specific entries from your dataset.  
+  The app confirms the entered codes and shows how many matches were found.
+
+**Tip:** Make sure that the "Result code" column in your dataset matches what you enter.
+
+### 4. Running the Main Processing
+
+- Once configurations, prompts, and results are set, click **"Start Processing"** in the sidebar.  
+- The app will generate a list of tasks (each task = a combination of a result code, a prompt, and a model).  
+- It runs these tasks concurrently and displays progress as they complete.  
+- After completion, you’ll see:
+  - Download links for metrics and results.
+  - A transformed dataset for dashboard analysis.
+  - Detailed tables showing metrics, outputs, and the full tasks executed.
+
+**Tip:** If no tasks are generated or the results are empty, re-check your prompt IDs, dataset, or filters.
+
+### 5. Interpreting and Downloading Results
+
+- **Metrics CSV:**  
+  Provides aggregated evaluations comparing model scores to expert benchmarks (if provided in the dataset).
+  
+- **Results CSV:**  
+  Contains raw model outputs for each task, including assigned scores and explanations.
+  
+- **Transformed Results for Dashboard (Excel):**  
+  A pivoted format designed for easy integration into visualization tools.
+
+**Tip:** Use the "Download" links to store results locally for offline analysis.
+
+### 6. Custom Dashboard Transformation
+
+- Under "Custom Dashboard Transformation" in the sidebar, you can upload a previously modified results CSV.
+- Click "Transform Custom Results for Dashboard" to pivot and reshape it for dashboard-ready format.
+- After transformation, a new download link will appear in the main page.
+
+**Tip:** This step allows you to reuse existing results with a different layout.
+
+### 7. Follow-up Prompts
+
+- After completing the main processing, switch to the "Follow-up Prompts" tab.  
+- Select a model, a prompt ID, and a specific result code to view the initial conversation context (input text and initial model response).  
+- Enter a new follow-up prompt to delve deeper into that specific result.  
+- The app displays the entire conversation, allowing iterative refinement and exploration.
+
+**Tip:** The follow-up prompts are for deeper analysis or clarifications on already processed items.
+
+---
+
+## Managing Prompts
+
+- **Adding Prompts Manually:**  
+  Enter a "Prompt ID," the "Prompt Text," and select an "Impact Area."  
+  The prompt text must contain `[INPUT_TEXT]` to indicate where the dataset's text should be inserted, or the app will append the placeholder automatically.
+  
+- **Uploading Prompts from Excel:**  
+  Provide an Excel file with columns: "Prompt ID", "Prompt Text", "Impact Area".  
+  All imported prompts become available for selection.  
+  Use this feature to load multiple prompts quickly.
+
+---
+
+## Troubleshooting
+
+- **No Data or Missing Columns:**  
+  Check that your uploaded file contains at least one of the recognized text fields.
+  
+- **No Matching Result Codes:**  
+  Ensure correct formatting of codes. Try uppercase and verify that they exist in the dataset.
+
+- **Empty Results or Missing Metrics:**  
+  If no tasks are generated or results are empty, verify that prompts are properly selected and that `[INPUT_TEXT]` was found in the prompt.  
+  If metrics are not generated, it may be because the dataset lacks the columns required for benchmark comparisons.
+
+---
+
+## Additional Tips
+
+- **Experiment with a Small Subset First:**  
+  Start with a small number of results to ensure your prompts and dataset are working as intended.
+  
+- **Refine Prompts:**  
+  Prompts can significantly affect the model’s output. Adjust them for clarity and specificity, then re-run.
+
+- **Keep a Record:**  
+  Save downloaded results and metrics for reference and comparison across different runs.
+
+---
+
+We hope this guide helps you navigate the tool effectively. If you encounter issues, review the steps or refine your data and prompts for better results.
+"""
+
+
 simplified_models = ['o1-preview', 'o1-mini']
 
 # Initialize session state variables
@@ -261,7 +409,12 @@ def update_progress(n):
     status_text.text(f"Processing task {n} of {total_tasks}")
 
 # Create Tabs
-tab1, tab2 = st.tabs(["Main Processing", "Follow-up Prompts"])
+help_tab, tab1, tab2 = st.tabs(["Help", "Main Processing", "Follow-up Prompts"])
+
+with help_tab:
+    st.title("How to Use This Application")
+    st.markdown(HELP_TEXT)  # This HELP_TEXT can be a variable you define containing the instructions below
+
 
 with tab1:
     if start_button:
