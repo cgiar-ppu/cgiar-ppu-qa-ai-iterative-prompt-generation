@@ -52,7 +52,7 @@ Assign a gender equality impact tag using the following criteria:
 
 ### **Structured Output Format:**
 Please provide your answer in the following format:
-{ "score": <0|1|2>, "explanation": "<Your explanation here>" }
+{"score": <0|1|2>, "explanation": "<Your explanation here>"}
 
 
 ### **Now, analyze the following research result and assign a gender equality tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in promoting gender equality.**
@@ -112,7 +112,7 @@ Assign a climate change impact tag using the following criteria:
 
 ### **Structured Output Format:**
 Please provide your answer in the following format:
-{ "score": <0|1|2>, "explanation": "<Your explanation here>" }
+{"score": <0|1|2>, "explanation": "<Your explanation here>"}
 
 
 ### **Now, analyze the following research result and assign a climate change tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in addressing climate change.**
@@ -190,8 +190,7 @@ Please provide your answer in the following format:
 ### **Structured Output Format:**
 
 Please provide your answer in the following format:
-```json
-{ "score": <0-9>, "explanation": "<Your explanation here>" }
+{"score": <0-9>, "explanation": "<Your explanation here>"}
 **Text to Analyze:**
 [INPUT_TEXT]''',
         'impact_area': 'IPSR'
@@ -247,7 +246,7 @@ Assign a nutrition, health, and food security impact tag using the following cri
 
 ### **Structured Output Format:**
 Please provide your answer in the following format:
-{ "score": <0|1|2>, "explanation": "<Your explanation here>" }
+{"score": <0|1|2>, "explanation": "<Your explanation here>"}
 
 
 ### **Now, analyze the following research result and assign a nutrition, health, and food security tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in these areas.**
@@ -310,7 +309,7 @@ Assign an environmental health and biodiversity impact tag using the following c
 
 ### **Structured Output Format:**
 Please provide your answer in the following format:
-{ "score": <0|1|2>, "explanation": "<Your explanation here>" }
+{"score": <0|1|2>, "explanation": "<Your explanation here>"}
 
 
 ### **Now, analyze the following research result and assign an environmental health and biodiversity tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in these areas.**
@@ -369,7 +368,7 @@ Assign a poverty reduction, livelihoods, and jobs impact tag using the following
 
 ### **Structured Output Format:**
 Please provide your answer in the following format:
-{ "score": <0|1|2>, "explanation": "<Your explanation here>" }
+{"score": <0|1|2>, "explanation": "<Your explanation here>"}
 
 
 ### **Now, analyze the following research result and assign a poverty reduction, livelihoods, and jobs tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in these areas.**
@@ -377,6 +376,303 @@ Please provide your answer in the following format:
 **Text to Analyze:**
 [INPUT_TEXT]''',
         'impact_area': 'Poverty'
+    },
+        'POVERTY_MVE1': {
+        'id': 'POVERTY_MVE1',
+        'text': '''# **You are an AI assistant tasked with evaluating research results from CGIAR to determine whether they contribute to CGIAR's objectives for its Impact Area on Poverty reduction, Livelihoods and Jobs. Your goal is to accurately assign an impact area score that reflects the relevance of the research result to the Impact Area as CGIAR defines it.**
+
+### **Context:**
+CGIAR is a global partnership that unites international organizations focused on research on food systems.
+
+### **Research Result Components:**
+Each research result includes the following details:
+- **Title:** A brief title summarizing the research result.
+- **Description:** A detailed description of the research result.
+- **Research Abstract:** A summary of key findings and implications (optional).
+- **Research Parsed Text:** The parsed text of the research result (optional).
+
+### **Scoring Criteria:**
+Assign a score for the CGIAR Impact Area of Poverty reduction, Livelihoods and Jobs using the following criteria:
+
+- **0 = Not Targeted:** 
+- The result does not directly contribute to any aspect of CGIAR’s Impact Area on Poverty reduction, Livelihoods and Jobs as it is outlined in the CGIAR 2030 Strategy.
+
+- **1 = Significant:**
+  - The result directly contributes to one or more aspects of CGIAR’s Impact Area on Poverty reduction, Livelihoods and Jobs. However, contributing to the impact area is not one of the principal objectives of the result.
+
+- **2 = Principal:**
+- The result directly contributes to one or more aspects of CGIAR’s Impact Area on Poverty reduction, Livelihoods and Jobs. In addition, contributing to the impact area is one of the principal objectives of the result.
+- One or more aspects of the impact area is fundamental to the design of the activity leading to the result; the activity would not have been undertaken without this objective.
+
+### **Definition of CGIAR’s Impact Area on Poverty reduction, Livelihoods and Jobs:**
+- This Impact Area includes the following topics: Improving social protection and employment opportunities by supporting access to resources and markets; developing solutions for resilient, income-generating agriculture for small farmers; reducing poverty through adoption of new varieties and breeds with better yields.
+- In addition, there are two global targets that CGIAR aims to contribute to through research activities in this Impact Area:
+1. Lift at least 500 million people living in rural areas above the extreme poverty line. 
+2. Reduce the proportion of men, women and children of all ages living in poverty in all its dimensions, according to national definitions.
+
+### **Instructions:**
+1. **Analyze the title, description, abstract and parsed text:** Assess whether any aspect of CGIAR’s Impact Area on Poverty reduction, Livelihoods and Jobs, as it is defined above in the list of topics and the global targets, is a direct objective or outcome of the result. 
+2. **Analyze the title, description, abstract and parsed text again:** Assess whether or not the objectives and/or outcomes related to CGIAR’s Impact Area on Poverty reduction, Livelihoods and Jobs, if there are any, were the principle reason, or one of the principle reasons, for undertaking the research or activity.
+3. **Assign the score:** Based on the scoring criteria provided, assign the most appropriate score (0, 1, or 2).
+4. **Provide a brief justification:** Explain why you assigned this score, referencing specific aspects of the result that influenced your decision and how they align (or do not align) with the scoring criteria and definition of the impact area.
+
+### **Important Notes:**
+- If the result does not directly contribute to any aspect of CGIAR's Impact Area on Poverty reduction, Livelihoods and Jobs, assign a tag of **0** (Not targeted).
+- If the result directly contributes to any aspect CGIAR’s Impact Area on Poverty reduction, Livelihoods and Jobs, but no aspect of the impact area was the principle reason or one of the principle reasons for undertaking the research or activity, assign a tag of **1** (Significant).
+- If the result directly contributes to one or more aspects of CGIAR’s Impact Area on Poverty reduction, Livelihoods and Jobs, and that was the principle reason or one of the principle reasons for undertaking the research or activity, assign a tag of **2** (Principal).
+- When assigning a tag of **2**, ensure that the evidence (the research parsed text) clearly demonstrates that at least one aspect of the CGIAR Impact Area on Poverty reduction, Livelihoods and Jobs was the primary outcome of the research or activity, and was fundamental to its design.
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+{ "score": <0|1|2>, "explanation": "<Your explanation here>" }
+
+### **Now, analyze the following research result and assign a score (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria mentioned above. Be careful to determine whether the result truly contributes to CGIAR's Impact Area on Poverty reduction, Livelihoods and Jobs as it is defined above.**
+
+**Text to analyze:**
+[INPUT_TEXT]''',
+        'impact_area': 'Poverty'
+    },
+        'GENDER_MVE1_EXT': {
+        'id': 'GENDER_MVE1_EXT',
+        'text': '''# **You are an AI assistant tasked with evaluating research results from CGIAR to determine whether they contribute to CGIAR's objectives for its Impact Area on Gender Equality. Your goal is to accurately assign an impact area score that reflects the relevance of the research result to the Impact Area as CGIAR defines it.**
+
+### **Context:**
+CGIAR is a global partnership that unites international organizations focused on research on food systems.
+
+### **Research Result Components:**
+Each research result includes the following details:
+- **Title:** A brief title summarizing the research result.
+- **Description:** A detailed description of the research result.
+- **Research Abstract:** A summary of key findings and implications (optional).
+- **Research Parsed Text:** The parsed text of the research result (optional).
+
+### **Scoring Criteria:**
+Assign a score for the CGIAR Impact Area of Gender Equality using the following criteria:
+
+- **0 = Not Targeted:** 
+- The result does not directly contribute to any aspect of CGIAR’s Impact Area on Gender Equality as it is outlined in the CGIAR 2030 Strategy.
+- The result does not reveal any insights into gender-related implications or impacts and does not provide information for understanding gender dynamics in a social (not physiological) context. 
+
+- **1 = Significant:**
+  - The result directly contributes to one or more aspects of CGIAR’s Impact Area on Gender Equality. However, contributing to the impact area is not one of the principal objectives of the result.
+- The result reveals insights into gender-related implications or impacts and provides valuable information for understanding gender dynamics in agriculture (e.g., social roles, power dynamics, access to resources, and decision-making) or has potential implications for gender-inclusive policies and practices.
+
+- **2 = Principal:**
+- The result directly contributes to one or more aspects of CGIAR’s Impact Area on Gender Equality. In addition, contributing to the impact area is one of the principal objectives of the result.
+- One or more aspects of the impact area is fundamental to the design of the activity leading to the result; the activity would not have been undertaken without this objective.
+- The research or activity has a clear goal/focus on contributing to understanding gender-related issues in agriculture, such as gender-based access to resources, decision-making, labor division, and women’s empowerment.
+
+### **Definition of CGIAR’s Impact Area on Gender Equality:**
+- This Impact Area includes the following topics: Empowering women and youth; encouraging women and youth entrepreneurship; addressing socio-political barriers to social inclusion in food systems; ensuring equal access to resources; and meeting the specific crop and breed requirements and preferences of women, youth, and disadvantaged groups.
+- In addition, there are two global targets that CGIAR aims to contribute to through research activities in this Impact Area:
+1. To close the gender gap in rights to economic resources, access to ownership and control over land and natural resources for women who work in food, land and water systems. 
+2. To offer rewardable opportunities to young people who are not in employment, education or training.
+
+### **Instructions:**
+1. **Analyze the title, description, abstract and parsed text:** Assess whether any aspect of CGIAR’s Impact Area on Gender Equality, as it is defined above in the list of topics and the global targets, is a direct objective or outcome of the result. 
+2. **Analyze the title, description, abstract and parsed text again:** Assess whether or not the objectives and/or outcomes related to CGIAR’s Impact Area on Gender Equality, if there are any, were the principle reason, or one of the principle reasons, for undertaking the research or activity.
+3. **Assign the score:** Based on the scoring criteria provided, assign the most appropriate score (0, 1, or 2).
+4. **Provide a brief justification:** Explain why you assigned this score, referencing specific aspects of the result that influenced your decision and how they align (or do not align) with the scoring criteria and definition of the impact area.
+
+### **Important Notes:**
+- If the result does not directly contribute to any aspect of CGIAR's Impact Area on Gender Equality, assign a tag of **0** (Not targeted).
+- If the result directly contributes to any aspect CGIAR’s Impact Area on Gender Equality, but no aspect of the impact area was the principle reason or one of the principle reasons for undertaking the research or activity, assign a tag of **1** (Significant).
+- If the result directly contributes to one or more aspects of CGIAR’s Impact Area on Gender Equality, and that was the principle reason or one of the principle reasons for undertaking the research or activity, assign a tag of **2** (Principal).
+- When assigning a tag of **2**, ensure that the evidence (the research parsed text) clearly demonstrates that at least one aspect of the CGIAR Impact Area on Gender Equality was the primary outcome of the research or activity, and was fundamental to its design, noting the two caveats below.
+- Caveat 1: Gender in the context of social sciences is not defined by biological differences between male and female crops or animals. Thus discussion of male and female crops or animals in a result is not sufficient by itself for a score of 1 or 2.
+- Caveat 2: For a score of 1 or 2, gender-disaggregated data or mention of the number of male and female participants in the research is not by itself sufficient. Qualitative aspects like roles, responsibilities, decision-making influence, and resource distribution need to be considered in the result.
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+{ "score": <0|1|2>, "explanation": "<Your explanation here>" }
+
+### **Now, analyze the following research result and assign a score (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria mentioned above. Be careful to determine whether the result truly contributes to CGIAR's Impact Area on Gender Equality as it is defined above.**
+
+**Text to analyze:**
+[INPUT_TEXT]''',
+        'impact_area': 'Gender'
+    },
+        'CLIMATE_MVE2': {
+        'id': 'CLIMATE_MVE2',
+        'text': '''# **You are an AI assistant tasked with evaluating research results from CGIAR to determine whether they contribute to CGIAR's objectives for its Impact Area on Climate Adaptation and Mitigation. Your goal is to accurately assign an impact area score that reflects the relevance of the research result to the Impact Area as CGIAR defines it.** 
+ 
+### **Context:** 
+CGIAR is a global partnership that unites international organizations focused on research on food systems. 
+ 
+### **Research Result Components:** 
+Each research result includes the following details: 
+- **Title:** A brief title summarizing the research result. 
+- **Description:** A detailed description of the research result. 
+- **Research Abstract:** A summary of key findings and implications (optional). 
+- **Research Parsed Text:** The parsed text of the research result (optional). 
+ 
+### **Scoring Criteria:** 
+Assign a score for the CGIAR Impact Area of Climate Adaptation and Mitigation using the following criteria: 
+ 
+- **0 = Not Targeted:**  
+
+- The result does not directly contribute to any aspect of CGIAR’s Impact Area on Climate Adaptation and Mitigation as it is outlined in the CGIAR 2030 Strategy. 
+ 
+- **1 = Significant:** 
+  - The result directly contributes to one or more aspects of CGIAR’s Impact Area on Climate Adaptation and Mitigation. However, contributing to the impact area is not one of the principal objectives of the result. 
+ 
+- **2 = Principal:** 
+
+- The result directly contributes to one or more aspects of CGIAR’s Impact Area on Climate Adaptation and Mitigation. In addition, contributing to the impact area is one of the principal objectives of the result. 
+- One or more aspects of the impact area is fundamental to the design of the activity leading to the result; the activity would not have been undertaken without this objective. 
+ 
+### **Definition of CGIAR’s Impact Area on Climate Adaptation and Mitigation:** 
+- This Impact Area includes, but is not limited to, the following topics: Generating scientific evidence on the impact of climate change on food, land and water systems, and vice-versa; developing evidence-based solutions that support climate action, including via policies, institutions and finance; enhancing adaptive capacity of small-scale producers while reducing GHG emissions/carbon footprints; providing affordable, accessible climate-informed services; developing climate-resilient crop varieties and breeds; securing genetic resources for future climate needs; and improving methods (e.g. for modeling, forecasts). 
+
+- In addition, there are three global targets that CGIAR aims to contribute to through research activities in this Impact Area: 
+
+1. Turn agriculture and forest systems into a net sink for carbon by 2050.  
+
+2. Equip 500 million small-scale producers to be more resilient by 2030.  
+
+3. Support countries in implementing National Adaptation Plans and Nationally Determined Contributions, and increased ambition in climate actions by 2030. education or training. 
+
+### **Instructions:** 
+1. **Analyze the title, description, abstract and parsed text:** Assess whether any aspect of CGIAR’s Impact Area on Climate Adaptation and Mitigation, as it is defined above in the list of topics and the global targets, is a direct objective or outcome of the result.  
+
+2. **Analyze the title, description, abstract and parsed text again:** Assess whether or not the objectives and/or outcomes related to CGIAR’s Impact Area on Climate Adaptation and Mitigation, if there are any, were the principle reason, or one of the principle reasons, for undertaking the research or activity. 
+
+3. **Assign the score:** Based on the scoring criteria provided, assign the most appropriate score (0, 1, or 2). 
+4. **Provide a brief justification:** Explain why you assigned this score, referencing specific aspects of the result that influenced your decision and how they align (or do not align) with the scoring criteria and definition of the impact area. 
+ 
+### **Important Notes:** 
+- If the result does not directly contribute to any aspect of CGIAR's Impact Area on Climate Adaptation and Mitigation, assign a tag of **0** (Not targeted). 
+- If the result directly contributes to any aspect CGIAR’s Impact Area on Climate Adaptation and Mitigation, but no aspect of the impact area was the principal reason or one of the principal reasons for undertaking the research or activity, assign a tag of **1** (Significant). 
+- If the result directly contributes to one or more aspects of CGIAR’s Impact Area on Climate Adaptation and Mitigation, and that was the principal reason or one of the principal reasons for undertaking the research or activity, assign a tag of **2** (Principal). 
+- When assigning a tag of **2**, ensure that the evidence (the research parsed text) clearly demonstrates that at least one aspect of the CGIAR Impact Area on Climate Adaptation and Mitigation was the primary outcome of the research or activity, and was fundamental to its design. 
+ 
+### **Structured Output Format:** 
+Please provide your answer in the following format: 
+{ "score": <0|1|2>, "explanation": "<Your explanation here>" } 
+ 
+### **Now, analyze the following research result and assign a score (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria mentioned above. Be careful to determine whether the result truly contributes to CGIAR's Impact Area on Climate Adaptation and Mitigation as it is defined above.** 
+
+**Text to analyze:** 
+[INPUT_TEXT]''',
+        'impact_area': 'Climate'
+    },
+        'NUTRITION_MVE2_SIMPLE_2': {
+        'id': 'NUTRITION_MVE2_SIMPLE_2',
+        'text': '''You are an AI assistant tasked with evaluating research results from CGIAR to determine whether they contribute to CGIAR's objectives for its Impact Area on Nutrition, Health and Food Security. Your goal is to accurately assign an impact area score that reflects the relevance of the research result to the Impact Area as CGIAR defines it. 
+
+Context: 
+CGIAR is a global partnership that unites international organizations focused on research on food systems. 
+ 
+Research Result Components: 
+Each research result includes the following details: 
+- Title: A brief title summarizing the research result. 
+- Description: A detailed description of the research result. 
+- Research Abstract: A summary of key findings and implications (optional). 
+- Research Parsed Text: The parsed text of the research result (optional). 
+ 
+Scoring Criteria: 
+Assign a score for the CGIAR Impact Area of Nutrition, Health and Food Security using the following criteria: 
+ 
+- 0 = Not Targeted:  
+
+- The result does not directly contribute to any aspect of CGIAR’s Impact Area on Nutrition, Health and Food Security as it is outlined in the CGIAR 2030 Strategy. 
+ 
+- 1 = Significant: 
+  - The result directly contributes to one or more aspects of CGIAR’s Impact Area on Nutrition, Health and Food Security. However, contributing to the impact area is not one of the principal objectives of the result. 
+ 
+- 2 = Principal: 
+
+- The result directly contributes to one or more aspects of CGIAR’s Impact Area on Nutrition, Health and Food Security. In addition, contributing to the impact area is one of the principal objectives of the result. 
+- One or more aspects of the impact area is fundamental to the design of the activity leading to the result; the activity would not have been undertaken without this objective. 
+ 
+Definition of CGIAR’s Impact Area on Nutrition, Health and Food Security: 
+- This Impact Area includes, but is not limited to, the following topics: Improving diets (affordability, nutrition, cultural relevance) and human health; increasing and diversifying the food supply; and managing zoonotic diseases, food safety, and anti-microbial resistance. 
+
+- In addition, there are two global targets that CGIAR aims to contribute to through research activities in this Impact Area: 
+
+1. To end hunger for all and enable affordable, healthy diets for the people who do not currently have access to safe and nutritious food.  
+
+2. To reduce cases of foodborne illness and zoonotic disease. 
+ 
+Instructions: 
+1. Analyze the title, description, abstract and parsed text: Assess whether any aspect of CGIAR’s Impact Area on Nutrition, Health and Food Security, as it is defined above in the list of topics and the global targets, is a direct objective or outcome of the result.  
+
+2. Analyze the title, description, abstract and parsed text again: Assess whether or not the objectives and/or outcomes related to CGIAR’s Impact Area on Nutrition, Health and Food Security, if there are any, were the principle reason, or one of the principle reasons, for undertaking the research or activity. 
+
+3. Assign the score: Based on the scoring criteria provided, assign the most appropriate score (0, 1, or 2). 
+4. Provide a brief justification: Explain why you assigned this score, referencing specific aspects of the result that influenced your decision and how they align (or do not align) with the scoring criteria and definition of the impact area. 
+ 
+Now, analyze the following research result and assign a score (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria mentioned above.  
+
+Structured Output Format: 
+Please provide your answer in the following format: 
+{ "score": <0|1|2>, "explanation": "<Your explanation here>" } 
+
+Text to analyze: 
+[INPUT_TEXT]''',
+        'impact_area': 'Nutrition'
+    },
+        'ENVIRONMENT_MVE2': {
+        'id': 'ENVIRONMENT_MVE2',
+        'text': '''# **You are an AI assistant tasked with evaluating research results from CGIAR to determine whether they contribute to CGIAR's objectives for its Impact Area on Environmental Health and Biodiversity. Your goal is to accurately assign an impact area score that reflects the relevance of the research result to the Impact Area as CGIAR defines it.** 
+ 
+### **Context:** 
+CGIAR is a global partnership that unites international organizations focused on research on food systems. 
+ 
+### **Research Result Components:** 
+Each research result includes the following details: 
+- **Title:** A brief title summarizing the research result. 
+- **Description:** A detailed description of the research result. 
+- **Research Abstract:** A summary of key findings and implications (optional). 
+- **Research Parsed Text:** The parsed text of the research result (optional). 
+ 
+### **Scoring Criteria:** 
+Assign a score for the CGIAR Impact Area of Environmental Health and Biodiversity using the following criteria: 
+ 
+- **0 = Not Targeted:**  
+
+- The result does not directly contribute to any aspect of CGIAR’s Impact Area on Environmental Health and Biodiversity as it is outlined in the CGIAR 2030 Strategy. 
+ 
+- **1 = Significant:** 
+  - The result directly contributes to one or more aspects of CGIAR’s Impact Area on Environmental Health and Biodiversity. However, contributing to the impact area is not one of the principal objectives of the result. 
+ 
+- **2 = Principal:** 
+
+- The result directly contributes to one or more aspects of CGIAR’s Impact Area on Environmental Health and Biodiversity. In addition, contributing to the impact area is one of the principal objectives of the result. 
+- One or more aspects of the impact area is fundamental to the design of the activity leading to the result; the activity would not have been undertaken without this objective. 
+ 
+### **Definition of CGIAR’s Impact Area on Environmental Health and Biodiversity:** 
+- This Impact Area includes, but is not limited to, the following topics: Supporting actions to stay within planetary boundaries for natural resource use and biodiversity through digital tools; improving management of water, land, soil, nutrients, waste, and pollution, including through landscape and agroecological approaches; conserving biodiversity through genebanks; and breeding to reduce environmental footprint. 
+
+- In addition, there are two global targets that CGIAR aims to contribute to through research activities in this Impact Area: 
+
+1. Stay within planetary and regional environmental boundaries for: consumptive water use in food production (with a focus on the most stressed basins); deforestation; nitrogen application (with a redistribution towards low-input farming systems) and increased use efficiency; and phosphorus application.  
+
+2. Maintain the genetic diversity of seed varieties, cultivated plants and farmed and domesticated animals and their related wild species, including through soundly managed genebanks at the national, regional, and international levels. 
+ 
+### **Instructions:** 
+1. **Analyze the title, description, abstract and parsed text:** Assess whether any aspect of CGIAR’s Impact Area on Environmental Health and Biodiversity, as it is defined above in the list of topics and the global targets, is a direct objective or outcome of the result.  
+
+2. **Analyze the title, description, abstract and parsed text again:** Assess whether or not the objectives and/or outcomes related to CGIAR’s Impact Area on Environmental Health and Biodiversity, if there are any, were the principle reason, or one of the principle reasons, for undertaking the research or activity. 
+
+3. **Assign the score:** Based on the scoring criteria provided, assign the most appropriate score (0, 1, or 2). 
+4. **Provide a brief justification:** Explain why you assigned this score, referencing specific aspects of the result that influenced your decision and how they align (or do not align) with the scoring criteria and definition of the impact area. 
+ 
+### **Important Notes:** 
+- If the result does not directly contribute to any aspect of CGIAR's Impact Area on Environmental Health and Biodiversity, assign a tag of **0** (Not targeted). 
+- If the result directly contributes to any aspect CGIAR’s Impact Area on Environmental Health and Biodiversity, but no aspect of the impact area was the principal reason or one of the principal reasons for undertaking the research or activity, assign a tag of **1** (Significant). 
+- If the result directly contributes to one or more aspects of CGIAR’s Impact Area on Environmental Health and Biodiversity, and that was the principal reason or one of the principal reasons for undertaking the research or activity, assign a tag of **2** (Principal). 
+- When assigning a tag of **2**, ensure that the evidence (the research parsed text) clearly demonstrates that at least one aspect of the CGIAR Impact Area on Environmental Health and Biodiversity was the primary outcome of the research or activity, and was fundamental to its design. 
+ 
+### **Structured Output Format:** 
+Please provide your answer in the following format: 
+{ "score": <0|1|2>, "explanation": "<Your explanation here>" } 
+ 
+### **Now, analyze the following research result and assign a score (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria mentioned above. Be careful to determine whether the result truly contributes to CGIAR's Impact Area on Environmental Health and Biodiversity as it is defined above.** 
+
+**Text to analyze:** 
+[INPUT_TEXT]''',
+        'impact_area': 'Environment'
     }
 }
 
@@ -386,6 +682,7 @@ MODELS = [
     'gpt-4o-mini',
 #    'o1-preview',
     'o1-mini',
+    'o1',
     'ft:gpt-4o-mini-2024-07-18:personal:24072024:9oT26O2l',
 ]
 
