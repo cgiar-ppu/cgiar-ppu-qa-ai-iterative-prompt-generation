@@ -166,7 +166,7 @@ We hope this guide helps you navigate the tool effectively. If you encounter iss
 """
 
 
-simplified_models = ['o1-preview', 'o1-mini']
+simplified_models = ['o1-preview', 'o1-mini', 'o3-mini']
 
 # Initialize session state variables
 if 'results_df' not in st.session_state:
