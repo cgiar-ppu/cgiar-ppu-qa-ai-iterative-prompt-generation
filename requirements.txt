@@ -3,3 +3,4 @@ openai==1.55.3
 pandas==2.2.3
 tiktoken==0.8.0
 openpyxl
+streamlit

@@ -1,0 +1,57 @@
+"result_code","prompt_id","prompt_text","model_name","impact_area","input_text","token_count"
+"1020","CLIMATE_CHANGE_PROMPT","# **You are an AI assistant tasked with evaluating research results from CGIAR (Consultative Group on International Agricultural Research) to determine whether they align with and contribute to CGIAR's objectives in addressing climate change. Your goal is to accurately assign an impact area tag that reflects the relevance and impact of the research on these specific climate change objectives.**
+
+### **Context:**
+CGIAR is a global partnership that unites international organizations focused on research for food security. CGIAR has established specific objectives to combat climate change by promoting climate mitigation, adaptation, and policy initiatives, particularly within the agriculture, forestry, and food systems sectors. The research results you will analyze originate from various CGIAR initiatives and projects in these and related fields.
+
+### **Research Result Components:**
+Each research result includes the following details:
+- **Title:** A brief title summarizing the research result.
+- **Description:** A detailed description of the research result, including methods and findings.
+- **Research Abstract:** A summary of key findings and implications (optional).
+- **Research Parsed Text:** The parsed text of the research result (optional).
+
+### **Tagging Criteria:**
+Assign a climate change impact tag using the following criteria:
+
+- **0 = Not Targeted:** 
+  - The research does not address or contribute to CGIAR's climate change objectives, such as mitigation, adaptation, or policy.
+  - The research is unrelated to climate change, focusing instead on different topics with no significant implications for climate-related outcomes.
+  - Example: A study focused solely on agricultural yield improvement without considering its impact on climate change.
+
+- **1 = Significant:** 
+  - The research makes a meaningful contribution to CGIAR’s climate change objectives, but these are not the primary focus.
+  - The research is relevant and provides insights into climate change, but these are secondary to other goals.
+  - Example: A study that explores the impact of agricultural practices on crop resilience, indirectly supporting climate adaptation.
+
+- **2 = Principal:** 
+  - The primary objective of the research is to address and directly impact CGIAR's goals in climate change mitigation, adaptation, or policy.
+  - The research would not have been undertaken without the intention to contribute to these specific climate change objectives.
+  - Example: A study specifically designed to develop sustainable farming practices aimed explicitly at reducing greenhouse gas emissions.
+
+### **Key Objectives Set by CGIAR:**
+- **Climate Mitigation:** Transforming agriculture and forest systems into a net carbon sink by 2050.
+- **Climate Adaptation:** Equipping small-scale producers to be more resilient to climate impacts by 2030.
+- **Climate Policy:** Supporting countries in implementing National Adaptation Plans (NAPs) and Nationally Determined Contributions (NDCs), and increasing ambition in climate actions by 2030.
+
+### **Instructions:**
+1. **Analyze the Title and Abstract:** Determine whether the research is related to CGIAR's objectives in climate change by looking for relevant keywords or phrases, such as “mitigation,” “adaptation,” “resilience,” or “climate policy.”
+2. **Review the Description and Parsed Text:** Assess whether the research directly contributes to CGIAR’s climate change objectives, and how integral these objectives are to the overall study.
+3. **Assign the Tag:** Based on the criteria provided, assign the most appropriate tag (0, 1, or 2) that reflects whether the research is related to and impacts CGIAR’s objectives in climate change.
+4. **Provide a Brief Justification:** Explain why you assigned this tag, referencing specific aspects of the research that influenced your decision. Make sure to clarify how the research aligns (or does not align) with CGIAR’s climate change objectives.
+
+### **Important Notes:**
+- If the research does not relate to CGIAR's objectives in climate change, assign a tag of **0** (Not Targeted).
+- If the research mentions climate change as an important consideration but not the primary focus, assign a tag of **1** (Significant).
+- If climate change mitigation, adaptation, or policy is the primary objective of the research, assign a tag of **2** (Principal).
+- When assigning a tag of **2**, ensure that the evidence clearly demonstrates that climate change objectives were the main goals of the research and fundamental to its design.
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+{ ""score"": <0|1|2>, ""explanation"": ""<Your explanation here>"" }
+
+
+### **Now, analyze the following research result and assign a climate change tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in addressing climate change.**
+
+**Text to Analyze:**
+[INPUT_TEXT]","o3-mini","Climate","Aclimatar - Understanding climate change impacts and adaptation practices for cocoa management in West Africa Aclimatar: Empowering Smallholder Producers for Perennials in West Africa for Climate Resilience. The innovation highlights the platform's core purpose of supporting climate adaptation for smallholder cocoa producers in Ghana and Côte d'Ivoire. By offering site-specific climate change risk assessments and tailored adaptation practices, Aclimatar serves as a vital tool in combating the effects of climate change. Its intuitive map interface allows users to select locations, providing them with essential climate data, impacts on specific crops, and prioritized adaptation strategies. This innovation is designed to enhance local projects, technicians, and organizations' understanding and response to climate variability, ensuring sustainable agricultural practices and resilience among smallholder communities.","1150"

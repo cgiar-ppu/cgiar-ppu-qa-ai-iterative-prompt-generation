@@ -1,0 +1,61 @@
+model_name,Impact Area,prompt_id,total,correct,incorrect,accuracy,expert_score,score_total,score_correct,score_accuracy
+gpt-4o,climate,Climate_ MVE2,30,18,12,0.6,0,17,9,0.5294117647058824
+gpt-4o,climate,Climate_ MVE2,30,18,12,0.6,1,5,4,0.8
+gpt-4o,climate,Climate_ MVE2,30,18,12,0.6,2,8,5,0.625
+gpt-4o,environment,Environment_ MVE2,25,16,9,0.64,0,7,6,0.8571428571428571
+gpt-4o,environment,Environment_ MVE2,25,16,9,0.64,1,8,7,0.875
+gpt-4o,environment,Environment_ MVE2,25,16,9,0.64,2,10,3,0.3
+gpt-4o,gender,Gender_MVE2_ext_full2,26,16,10,0.6153846153846154,0,12,11,0.9166666666666666
+gpt-4o,gender,Gender_MVE2_ext_full2,26,16,10,0.6153846153846154,1,7,2,0.2857142857142857
+gpt-4o,gender,Gender_MVE2_ext_full2,26,16,10,0.6153846153846154,2,7,3,0.42857142857142855
+gpt-4o,nutrition,Nutrition_ MVE2,32,18,14,0.5625,0,19,12,0.631578947368421
+gpt-4o,nutrition,Nutrition_ MVE2,32,18,14,0.5625,1,9,5,0.5555555555555556
+gpt-4o,nutrition,Nutrition_ MVE2,32,18,14,0.5625,2,4,1,0.25
+gpt-4o,poverty,POVERTY_REDUCTION_PROMPT,34,12,22,0.35294117647058826,0,24,9,0.375
+gpt-4o,poverty,POVERTY_REDUCTION_PROMPT,34,12,22,0.35294117647058826,1,5,2,0.4
+gpt-4o,poverty,POVERTY_REDUCTION_PROMPT,34,12,22,0.35294117647058826,2,5,1,0.2
+gpt-4o-mini,climate,Climate_ MVE2,30,13,17,0.43333333333333335,0,17,5,0.29411764705882354
+gpt-4o-mini,climate,Climate_ MVE2,30,13,17,0.43333333333333335,1,5,4,0.8
+gpt-4o-mini,climate,Climate_ MVE2,30,13,17,0.43333333333333335,2,8,4,0.5
+gpt-4o-mini,environment,Environment_ MVE2,25,16,9,0.64,0,7,5,0.7142857142857143
+gpt-4o-mini,environment,Environment_ MVE2,25,16,9,0.64,1,8,7,0.875
+gpt-4o-mini,environment,Environment_ MVE2,25,16,9,0.64,2,10,4,0.4
+gpt-4o-mini,gender,Gender_MVE2_ext_full2,26,16,10,0.6153846153846154,0,12,10,0.8333333333333334
+gpt-4o-mini,gender,Gender_MVE2_ext_full2,26,16,10,0.6153846153846154,1,7,2,0.2857142857142857
+gpt-4o-mini,gender,Gender_MVE2_ext_full2,26,16,10,0.6153846153846154,2,7,4,0.5714285714285714
+gpt-4o-mini,nutrition,Nutrition_ MVE2,32,13,19,0.40625,0,19,7,0.3684210526315789
+gpt-4o-mini,nutrition,Nutrition_ MVE2,32,13,19,0.40625,1,9,4,0.4444444444444444
+gpt-4o-mini,nutrition,Nutrition_ MVE2,32,13,19,0.40625,2,4,2,0.5
+gpt-4o-mini,poverty,POVERTY_REDUCTION_PROMPT,34,9,25,0.2647058823529412,0,24,5,0.20833333333333334
+gpt-4o-mini,poverty,POVERTY_REDUCTION_PROMPT,34,9,25,0.2647058823529412,1,5,2,0.4
+gpt-4o-mini,poverty,POVERTY_REDUCTION_PROMPT,34,9,25,0.2647058823529412,2,5,2,0.4
+o1-mini,climate,Climate_ MVE2,30,12,18,0.4,0,17,3,0.17647058823529413
+o1-mini,climate,Climate_ MVE2,30,12,18,0.4,1,5,3,0.6
+o1-mini,climate,Climate_ MVE2,30,12,18,0.4,2,8,6,0.75
+o1-mini,environment,Environment_ MVE2,25,16,9,0.64,0,7,4,0.5714285714285714
+o1-mini,environment,Environment_ MVE2,25,16,9,0.64,1,8,4,0.5
+o1-mini,environment,Environment_ MVE2,25,16,9,0.64,2,10,8,0.8
+o1-mini,gender,Gender_MVE2_ext_full2,26,14,12,0.5384615384615384,0,12,10,0.8333333333333334
+o1-mini,gender,Gender_MVE2_ext_full2,26,14,12,0.5384615384615384,1,7,1,0.14285714285714285
+o1-mini,gender,Gender_MVE2_ext_full2,26,14,12,0.5384615384615384,2,7,3,0.42857142857142855
+o1-mini,nutrition,Nutrition_ MVE2,32,10,22,0.3125,0,19,2,0.10526315789473684
+o1-mini,nutrition,Nutrition_ MVE2,32,10,22,0.3125,1,9,5,0.5555555555555556
+o1-mini,nutrition,Nutrition_ MVE2,32,10,22,0.3125,2,4,3,0.75
+o1-mini,poverty,POVERTY_REDUCTION_PROMPT,34,8,26,0.23529411764705882,0,24,1,0.041666666666666664
+o1-mini,poverty,POVERTY_REDUCTION_PROMPT,34,8,26,0.23529411764705882,1,5,4,0.8
+o1-mini,poverty,POVERTY_REDUCTION_PROMPT,34,8,26,0.23529411764705882,2,5,3,0.6
+o3-mini,climate,Climate_ MVE2,30,19,11,0.6333333333333333,0,17,11,0.6470588235294118
+o3-mini,climate,Climate_ MVE2,30,19,11,0.6333333333333333,1,5,3,0.6
+o3-mini,climate,Climate_ MVE2,30,19,11,0.6333333333333333,2,8,5,0.625
+o3-mini,environment,Environment_ MVE2,25,18,7,0.72,0,7,6,0.8571428571428571
+o3-mini,environment,Environment_ MVE2,25,18,7,0.72,1,8,8,1.0
+o3-mini,environment,Environment_ MVE2,25,18,7,0.72,2,10,4,0.4
+o3-mini,gender,Gender_MVE2_ext_full2,26,15,11,0.5769230769230769,0,12,11,0.9166666666666666
+o3-mini,gender,Gender_MVE2_ext_full2,26,15,11,0.5769230769230769,1,7,2,0.2857142857142857
+o3-mini,gender,Gender_MVE2_ext_full2,26,15,11,0.5769230769230769,2,7,2,0.2857142857142857
+o3-mini,nutrition,Nutrition_ MVE2,32,15,17,0.46875,0,19,7,0.3684210526315789
+o3-mini,nutrition,Nutrition_ MVE2,32,15,17,0.46875,1,9,5,0.5555555555555556
+o3-mini,nutrition,Nutrition_ MVE2,32,15,17,0.46875,2,4,3,0.75
+o3-mini,poverty,POVERTY_REDUCTION_PROMPT,34,11,23,0.3235294117647059,0,24,6,0.25
+o3-mini,poverty,POVERTY_REDUCTION_PROMPT,34,11,23,0.3235294117647059,1,5,4,0.8
+o3-mini,poverty,POVERTY_REDUCTION_PROMPT,34,11,23,0.3235294117647059,2,5,1,0.2

@@ -1,0 +1,2 @@
+model_name,Impact Area,prompt_id,total,correct,incorrect,accuracy,expert_score,score_total,score_correct,score_accuracy
+o3-mini,climate,CLIMATE_CHANGE_PROMPT,1,1,0,1.0,2,1,1,1.0

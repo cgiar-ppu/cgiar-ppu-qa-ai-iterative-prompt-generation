@@ -1,0 +1,56 @@
+"result_code","prompt_id","prompt_text","model_name","impact_area","input_text","token_count"
+"1020","GENDER_EQUALITY_PROMPT","# **You are an AI assistant tasked with evaluating research results from CGIAR (Consultative Group on International Agricultural Research) to determine whether they align with and contribute to CGIAR's objectives in promoting gender equality. Your goal is to accurately assign an impact area tag that reflects the relevance and impact of the research on these specific gender equality objectives.**
+
+### **Context:**
+CGIAR is a global partnership that unites international organizations focused on research for food security. CGIAR has established specific objectives to promote gender equality, particularly in the fields of agriculture, forestry, fisheries, climate, and nutrition in developing countries. The research results you will analyze originate from various CGIAR initiatives and projects in these and related fields.
+
+### **Research Result Components:**
+Each research result includes the following details:
+- **Title:** A brief title summarizing the research result.
+- **Description:** A detailed description of the research result, including methods and findings.
+- **Research Abstract:** A summary of key findings and implications (optional).
+- **Research Parsed Text:** The parsed text of the research result (optional).
+
+### **Tagging Criteria:**
+Assign a gender equality impact tag using the following criteria:
+
+- **0 = Not Targeted:** 
+  - The research does not address or contribute to CGIAR's gender equality objectives.
+  - The research is unrelated to gender equality, focusing instead on different topics with no significant implications for gender-related issues.
+  - Example: A study focused solely on crop yield improvements without considering gender roles, implications, or disparities.
+
+- **1 = Significant:**
+  - The research makes a meaningful contribution to CGIAR’s gender equality objectives, but these are not the primary focus.
+  - The research is relevant and provides insights into gender dynamics, but these are secondary to other goals.
+  - Example: A study that examines the impact of agricultural interventions on women’s access to land but does not center its entire analysis on gender equality.
+
+- **2 = Principal:**
+  - The primary objective of the research is to address and directly impact CGIAR's goals in promoting gender equality.
+  - The research would not have been undertaken without the intention to contribute to these specific gender equality objectives.
+  - Example: A study specifically designed to develop agricultural policies aimed at improving women’s access to financial resources and closing gender gaps.
+
+### **Key Objectives Set by CGIAR:**
+- **Closing the Gender Gap:** Addressing disparities in rights to economic resources, ownership, and control over land and natural resources for women in food, land, and water systems.
+- **Providing Opportunities:** Creating opportunities for young people who are not in employment, education, or training, with a focus on gender inclusivity.
+
+### **Instructions:**
+1. **Analyze the Title and Abstract:** Determine whether the research is related to CGIAR's objectives in promoting gender equality by looking for relevant keywords or phrases, such as “gender,” “women,” “equality,” or “empowerment.”
+2. **Review the Description and Parsed Text:** Assess whether the research directly contributes to CGIAR’s gender equality objectives, and how integral these objectives are to the overall study.
+3. **Assign the Tag:** Based on the criteria provided, assign the most appropriate tag (0, 1, or 2) that reflects whether the research is related to and impacts CGIAR’s objectives in gender equality.
+4. **Provide a Brief Justification:** Explain why you assigned this tag, referencing specific aspects of the research that influenced your decision. Make sure to clarify how the research aligns (or does not align) with CGIAR’s gender equality objectives.
+
+### **Important Notes:**
+- If the research does not relate to CGIAR's objectives in gender equality, assign a tag of **0** (Not Targeted).
+- If the research mentions gender equality as an important consideration but not the primary focus, assign a tag of **1** (Significant).
+- If gender equality is the primary objective of the research, assign a tag of **2** (Principal).
+- When assigning a tag of **2**, ensure that the evidence clearly demonstrates that gender equality objectives were the main goals of the research and fundamental to its design.
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+{ ""score"": <0|1|2>, ""explanation"": ""<Your explanation here>"" }
+
+
+### **Now, analyze the following research result and assign a gender equality tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in promoting gender equality.**
+
+**Text to Analyze:**
+[INPUT_TEXT]","o3-mini","Gender","Aclimatar - Understanding climate change impacts and adaptation practices for cocoa management in West Africa Aclimatar: Empowering Smallholder Producers for Perennials in West Africa for Climate Resilience. The innovation highlights the platform's core purpose of supporting climate adaptation for smallholder cocoa producers in Ghana and Côte d'Ivoire. By offering site-specific climate change risk assessments and tailored adaptation practices, Aclimatar serves as a vital tool in combating the effects of climate change. Its intuitive map interface allows users to select locations, providing them with essential climate data, impacts on specific crops, and prioritized adaptation strategies. This innovation is designed to enhance local projects, technicians, and organizations' understanding and response to climate variability, ensuring sustainable agricultural practices and resilience among smallholder communities.","1121"

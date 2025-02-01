@@ -1,0 +1,169 @@
+"result_code","prompt_id","prompt_text","model_name","impact_area","input_text","token_count"
+"37","CLIMATE_CHANGE_PROMPT","# **You are an AI assistant tasked with evaluating research results from CGIAR (Consultative Group on International Agricultural Research) to determine whether they align with and contribute to CGIAR's objectives in addressing climate change. Your goal is to accurately assign an impact area tag that reflects the relevance and impact of the research on these specific climate change objectives.**
+
+### **Context:**
+CGIAR is a global partnership that unites international organizations focused on research for food security. CGIAR has established specific objectives to combat climate change by promoting climate mitigation, adaptation, and policy initiatives, particularly within the agriculture, forestry, and food systems sectors. The research results you will analyze originate from various CGIAR initiatives and projects in these and related fields.
+
+### **Research Result Components:**
+Each research result includes the following details:
+- **Title:** A brief title summarizing the research result.
+- **Description:** A detailed description of the research result, including methods and findings.
+- **Research Abstract:** A summary of key findings and implications (optional).
+- **Research Parsed Text:** The parsed text of the research result (optional).
+
+### **Tagging Criteria:**
+Assign a climate change impact tag using the following criteria:
+
+- **0 = Not Targeted:** 
+  - The research does not address or contribute to CGIAR's climate change objectives, such as mitigation, adaptation, or policy.
+  - The research is unrelated to climate change, focusing instead on different topics with no significant implications for climate-related outcomes.
+  - Example: A study focused solely on agricultural yield improvement without considering its impact on climate change.
+
+- **1 = Significant:** 
+  - The research makes a meaningful contribution to CGIAR’s climate change objectives, but these are not the primary focus.
+  - The research is relevant and provides insights into climate change, but these are secondary to other goals.
+  - Example: A study that explores the impact of agricultural practices on crop resilience, indirectly supporting climate adaptation.
+
+- **2 = Principal:** 
+  - The primary objective of the research is to address and directly impact CGIAR's goals in climate change mitigation, adaptation, or policy.
+  - The research would not have been undertaken without the intention to contribute to these specific climate change objectives.
+  - Example: A study specifically designed to develop sustainable farming practices aimed explicitly at reducing greenhouse gas emissions.
+
+### **Key Objectives Set by CGIAR:**
+- **Climate Mitigation:** Transforming agriculture and forest systems into a net carbon sink by 2050.
+- **Climate Adaptation:** Equipping small-scale producers to be more resilient to climate impacts by 2030.
+- **Climate Policy:** Supporting countries in implementing National Adaptation Plans (NAPs) and Nationally Determined Contributions (NDCs), and increasing ambition in climate actions by 2030.
+
+### **Instructions:**
+1. **Analyze the Title and Abstract:** Determine whether the research is related to CGIAR's objectives in climate change by looking for relevant keywords or phrases, such as “mitigation,” “adaptation,” “resilience,” or “climate policy.”
+2. **Review the Description and Parsed Text:** Assess whether the research directly contributes to CGIAR’s climate change objectives, and how integral these objectives are to the overall study.
+3. **Assign the Tag:** Based on the criteria provided, assign the most appropriate tag (0, 1, or 2) that reflects whether the research is related to and impacts CGIAR’s objectives in climate change.
+4. **Provide a Brief Justification:** Explain why you assigned this tag, referencing specific aspects of the research that influenced your decision. Make sure to clarify how the research aligns (or does not align) with CGIAR’s climate change objectives.
+
+### **Important Notes:**
+- If the research does not relate to CGIAR's objectives in climate change, assign a tag of **0** (Not Targeted).
+- If the research mentions climate change as an important consideration but not the primary focus, assign a tag of **1** (Significant).
+- If climate change mitigation, adaptation, or policy is the primary objective of the research, assign a tag of **2** (Principal).
+- When assigning a tag of **2**, ensure that the evidence clearly demonstrates that climate change objectives were the main goals of the research and fundamental to its design.
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+{ ""score"": <0|1|2>, ""explanation"": ""<Your explanation here>"" }
+
+
+### **Now, analyze the following research result and assign a climate change tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in addressing climate change.**
+
+**Text to Analyze:**
+[INPUT_TEXT]","o3-mini","Climate","Bean breeding networks in Africa accelerate genetic gains for drought- and heat-resilient, biofortified varieties including bush and climbing beans, meeting farmer and seed company demands in diverse markets Common beans are an important staple food for more than 200 million Africans, providing an affordable source of proteins, complex carbohydrates and valuable micronutrients. They improve soil fertility and are a significant source of income. In collaboration with the Pan Africa Bean Research Alliance (PABRA) and farmers, CIAT and national bean breeding efforts seek to develop improved and marketable bush and climbing bean varieties, including biofortified varieties and niche market varieties. Past progress in resistance to bean diseases and tolerance to drought is being extended to edaphic constraints and adaptation to high temperatures.  Breeding is a cyclical process that adjusts to feedback from farmers, seed companies and end-users. Breeding cycle time at CIAT is between 12 and 24 months. During 2023, partners in 16 African countries tested 272 lines from local breeding programs and CIAT. Seventeen Tanzanian varieties were tested with 1682 farmers.","1214"
+"37","CLIMATE_CHANGE_PROMPT","# **You are an AI assistant tasked with evaluating research results from CGIAR (Consultative Group on International Agricultural Research) to determine whether they align with and contribute to CGIAR's objectives in addressing climate change. Your goal is to accurately assign an impact area tag that reflects the relevance and impact of the research on these specific climate change objectives.**
+
+### **Context:**
+CGIAR is a global partnership that unites international organizations focused on research for food security. CGIAR has established specific objectives to combat climate change by promoting climate mitigation, adaptation, and policy initiatives, particularly within the agriculture, forestry, and food systems sectors. The research results you will analyze originate from various CGIAR initiatives and projects in these and related fields.
+
+### **Research Result Components:**
+Each research result includes the following details:
+- **Title:** A brief title summarizing the research result.
+- **Description:** A detailed description of the research result, including methods and findings.
+- **Research Abstract:** A summary of key findings and implications (optional).
+- **Research Parsed Text:** The parsed text of the research result (optional).
+
+### **Tagging Criteria:**
+Assign a climate change impact tag using the following criteria:
+
+- **0 = Not Targeted:** 
+  - The research does not address or contribute to CGIAR's climate change objectives, such as mitigation, adaptation, or policy.
+  - The research is unrelated to climate change, focusing instead on different topics with no significant implications for climate-related outcomes.
+  - Example: A study focused solely on agricultural yield improvement without considering its impact on climate change.
+
+- **1 = Significant:** 
+  - The research makes a meaningful contribution to CGIAR’s climate change objectives, but these are not the primary focus.
+  - The research is relevant and provides insights into climate change, but these are secondary to other goals.
+  - Example: A study that explores the impact of agricultural practices on crop resilience, indirectly supporting climate adaptation.
+
+- **2 = Principal:** 
+  - The primary objective of the research is to address and directly impact CGIAR's goals in climate change mitigation, adaptation, or policy.
+  - The research would not have been undertaken without the intention to contribute to these specific climate change objectives.
+  - Example: A study specifically designed to develop sustainable farming practices aimed explicitly at reducing greenhouse gas emissions.
+
+### **Key Objectives Set by CGIAR:**
+- **Climate Mitigation:** Transforming agriculture and forest systems into a net carbon sink by 2050.
+- **Climate Adaptation:** Equipping small-scale producers to be more resilient to climate impacts by 2030.
+- **Climate Policy:** Supporting countries in implementing National Adaptation Plans (NAPs) and Nationally Determined Contributions (NDCs), and increasing ambition in climate actions by 2030.
+
+### **Instructions:**
+1. **Analyze the Title and Abstract:** Determine whether the research is related to CGIAR's objectives in climate change by looking for relevant keywords or phrases, such as “mitigation,” “adaptation,” “resilience,” or “climate policy.”
+2. **Review the Description and Parsed Text:** Assess whether the research directly contributes to CGIAR’s climate change objectives, and how integral these objectives are to the overall study.
+3. **Assign the Tag:** Based on the criteria provided, assign the most appropriate tag (0, 1, or 2) that reflects whether the research is related to and impacts CGIAR’s objectives in climate change.
+4. **Provide a Brief Justification:** Explain why you assigned this tag, referencing specific aspects of the research that influenced your decision. Make sure to clarify how the research aligns (or does not align) with CGIAR’s climate change objectives.
+
+### **Important Notes:**
+- If the research does not relate to CGIAR's objectives in climate change, assign a tag of **0** (Not Targeted).
+- If the research mentions climate change as an important consideration but not the primary focus, assign a tag of **1** (Significant).
+- If climate change mitigation, adaptation, or policy is the primary objective of the research, assign a tag of **2** (Principal).
+- When assigning a tag of **2**, ensure that the evidence clearly demonstrates that climate change objectives were the main goals of the research and fundamental to its design.
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+{ ""score"": <0|1|2>, ""explanation"": ""<Your explanation here>"" }
+
+
+### **Now, analyze the following research result and assign a climate change tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in addressing climate change.**
+
+**Text to Analyze:**
+[INPUT_TEXT]","gpt-4o","Climate","Bean breeding networks in Africa accelerate genetic gains for drought- and heat-resilient, biofortified varieties including bush and climbing beans, meeting farmer and seed company demands in diverse markets Common beans are an important staple food for more than 200 million Africans, providing an affordable source of proteins, complex carbohydrates and valuable micronutrients. They improve soil fertility and are a significant source of income. In collaboration with the Pan Africa Bean Research Alliance (PABRA) and farmers, CIAT and national bean breeding efforts seek to develop improved and marketable bush and climbing bean varieties, including biofortified varieties and niche market varieties. Past progress in resistance to bean diseases and tolerance to drought is being extended to edaphic constraints and adaptation to high temperatures.  Breeding is a cyclical process that adjusts to feedback from farmers, seed companies and end-users. Breeding cycle time at CIAT is between 12 and 24 months. During 2023, partners in 16 African countries tested 272 lines from local breeding programs and CIAT. Seventeen Tanzanian varieties were tested with 1682 farmers.","1206"
+"37","CLIMATE_CHANGE_PROMPT","# **You are an AI assistant tasked with evaluating research results from CGIAR (Consultative Group on International Agricultural Research) to determine whether they align with and contribute to CGIAR's objectives in addressing climate change. Your goal is to accurately assign an impact area tag that reflects the relevance and impact of the research on these specific climate change objectives.**
+
+### **Context:**
+CGIAR is a global partnership that unites international organizations focused on research for food security. CGIAR has established specific objectives to combat climate change by promoting climate mitigation, adaptation, and policy initiatives, particularly within the agriculture, forestry, and food systems sectors. The research results you will analyze originate from various CGIAR initiatives and projects in these and related fields.
+
+### **Research Result Components:**
+Each research result includes the following details:
+- **Title:** A brief title summarizing the research result.
+- **Description:** A detailed description of the research result, including methods and findings.
+- **Research Abstract:** A summary of key findings and implications (optional).
+- **Research Parsed Text:** The parsed text of the research result (optional).
+
+### **Tagging Criteria:**
+Assign a climate change impact tag using the following criteria:
+
+- **0 = Not Targeted:** 
+  - The research does not address or contribute to CGIAR's climate change objectives, such as mitigation, adaptation, or policy.
+  - The research is unrelated to climate change, focusing instead on different topics with no significant implications for climate-related outcomes.
+  - Example: A study focused solely on agricultural yield improvement without considering its impact on climate change.
+
+- **1 = Significant:** 
+  - The research makes a meaningful contribution to CGIAR’s climate change objectives, but these are not the primary focus.
+  - The research is relevant and provides insights into climate change, but these are secondary to other goals.
+  - Example: A study that explores the impact of agricultural practices on crop resilience, indirectly supporting climate adaptation.
+
+- **2 = Principal:** 
+  - The primary objective of the research is to address and directly impact CGIAR's goals in climate change mitigation, adaptation, or policy.
+  - The research would not have been undertaken without the intention to contribute to these specific climate change objectives.
+  - Example: A study specifically designed to develop sustainable farming practices aimed explicitly at reducing greenhouse gas emissions.
+
+### **Key Objectives Set by CGIAR:**
+- **Climate Mitigation:** Transforming agriculture and forest systems into a net carbon sink by 2050.
+- **Climate Adaptation:** Equipping small-scale producers to be more resilient to climate impacts by 2030.
+- **Climate Policy:** Supporting countries in implementing National Adaptation Plans (NAPs) and Nationally Determined Contributions (NDCs), and increasing ambition in climate actions by 2030.
+
+### **Instructions:**
+1. **Analyze the Title and Abstract:** Determine whether the research is related to CGIAR's objectives in climate change by looking for relevant keywords or phrases, such as “mitigation,” “adaptation,” “resilience,” or “climate policy.”
+2. **Review the Description and Parsed Text:** Assess whether the research directly contributes to CGIAR’s climate change objectives, and how integral these objectives are to the overall study.
+3. **Assign the Tag:** Based on the criteria provided, assign the most appropriate tag (0, 1, or 2) that reflects whether the research is related to and impacts CGIAR’s objectives in climate change.
+4. **Provide a Brief Justification:** Explain why you assigned this tag, referencing specific aspects of the research that influenced your decision. Make sure to clarify how the research aligns (or does not align) with CGIAR’s climate change objectives.
+
+### **Important Notes:**
+- If the research does not relate to CGIAR's objectives in climate change, assign a tag of **0** (Not Targeted).
+- If the research mentions climate change as an important consideration but not the primary focus, assign a tag of **1** (Significant).
+- If climate change mitigation, adaptation, or policy is the primary objective of the research, assign a tag of **2** (Principal).
+- When assigning a tag of **2**, ensure that the evidence clearly demonstrates that climate change objectives were the main goals of the research and fundamental to its design.
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+{ ""score"": <0|1|2>, ""explanation"": ""<Your explanation here>"" }
+
+
+### **Now, analyze the following research result and assign a climate change tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in addressing climate change.**
+
+**Text to Analyze:**
+[INPUT_TEXT]","o1-mini","Climate","Bean breeding networks in Africa accelerate genetic gains for drought- and heat-resilient, biofortified varieties including bush and climbing beans, meeting farmer and seed company demands in diverse markets Common beans are an important staple food for more than 200 million Africans, providing an affordable source of proteins, complex carbohydrates and valuable micronutrients. They improve soil fertility and are a significant source of income. In collaboration with the Pan Africa Bean Research Alliance (PABRA) and farmers, CIAT and national bean breeding efforts seek to develop improved and marketable bush and climbing bean varieties, including biofortified varieties and niche market varieties. Past progress in resistance to bean diseases and tolerance to drought is being extended to edaphic constraints and adaptation to high temperatures.  Breeding is a cyclical process that adjusts to feedback from farmers, seed companies and end-users. Breeding cycle time at CIAT is between 12 and 24 months. During 2023, partners in 16 African countries tested 272 lines from local breeding programs and CIAT. Seventeen Tanzanian varieties were tested with 1682 farmers.","1206"
