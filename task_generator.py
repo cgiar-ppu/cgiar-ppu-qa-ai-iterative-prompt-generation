@@ -1,15 +1,25 @@
 # task_generator.py
 
 import itertools
-from tiktoken import encoding_for_model
 import pandas as pd
 import csv
+import tiktoken
+
+def get_tokenizer(model_name):
+    try:
+        # Try to get the specific model's tokenizer
+        return tiktoken.encoding_for_model(model_name)
+    except KeyError:
+        # Fallback to cl100k_base tokenizer (used by GPT-4/3.5) if model-specific one isn't available
+        return tiktoken.get_encoding("cl100k_base")
 
 def estimate_token_count(prompt_text, input_text, model_name):
-    encoding = encoding_for_model(model_name)
-    total_text = prompt_text.replace('[INPUT_TEXT]', input_text)
-    tokens = encoding.encode(total_text)
-    return len(tokens)
+    """
+    Estimate token count for a given prompt and input text combination
+    """
+    encoding = get_tokenizer(model_name)
+    combined_text = f"{prompt_text}{input_text}"
+    return len(encoding.encode(combined_text))
 
 # task_generator.py
 

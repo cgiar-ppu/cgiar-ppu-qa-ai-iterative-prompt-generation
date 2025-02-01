@@ -1,0 +1,7 @@
+model_name,Impact Area,prompt_id,total,correct,incorrect,accuracy,expert_score,score_total,score_correct,score_accuracy
+gpt-4o,climate,CLIMATE_CHANGE_PROMPT,2,1,1,0.5,2,2,1,0.5
+gpt-4o,gender,GENDER_EQUALITY_PROMPT,1,0,1,0.0,1,1,0,0.0
+gpt-4o,poverty,POVERTY_REDUCTION_PROMPT,1,0,1,0.0,0,1,0,0.0
+o3-mini,climate,CLIMATE_CHANGE_PROMPT,2,1,1,0.5,2,2,1,0.5
+o3-mini,gender,GENDER_EQUALITY_PROMPT,1,0,1,0.0,1,1,0,0.0
+o3-mini,poverty,POVERTY_REDUCTION_PROMPT,1,0,1,0.0,0,1,0,0.0

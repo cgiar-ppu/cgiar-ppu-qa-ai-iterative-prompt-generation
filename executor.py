@@ -13,7 +13,7 @@ import os
 client = OpenAI()
 
 # List of models that require the simplified API call
-simplified_models = ['o1-preview', 'o1-mini']
+simplified_models = ['o1-preview', 'o1-mini', 'o3-mini']
 
 def execute_task(task):
     """

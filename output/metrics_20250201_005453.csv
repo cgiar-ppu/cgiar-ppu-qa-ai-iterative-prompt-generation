@@ -1,0 +1,61 @@
+model_name,Impact Area,prompt_id,total,correct,incorrect,accuracy,expert_score,score_total,score_correct,score_accuracy
+gpt-4o,climate,Climate_ MVE2,16,9,7,0.5625,0,4,2,0.5
+gpt-4o,climate,Climate_ MVE2,16,9,7,0.5625,1,4,3,0.75
+gpt-4o,climate,Climate_ MVE2,16,9,7,0.5625,2,8,4,0.5
+gpt-4o,environment,Environment_ MVE2,6,4,2,0.6666666666666666,0,1,1,1.0
+gpt-4o,environment,Environment_ MVE2,6,4,2,0.6666666666666666,1,2,2,1.0
+gpt-4o,environment,Environment_ MVE2,6,4,2,0.6666666666666666,2,3,1,0.3333333333333333
+gpt-4o,gender,Gender_MVE2_ext_full2,13,6,7,0.46153846153846156,0,4,4,1.0
+gpt-4o,gender,Gender_MVE2_ext_full2,13,6,7,0.46153846153846156,1,5,1,0.2
+gpt-4o,gender,Gender_MVE2_ext_full2,13,6,7,0.46153846153846156,2,4,1,0.25
+gpt-4o,nutrition,Nutrition_ MVE2,13,7,6,0.5384615384615384,0,8,5,0.625
+gpt-4o,nutrition,Nutrition_ MVE2,13,7,6,0.5384615384615384,1,3,1,0.3333333333333333
+gpt-4o,nutrition,Nutrition_ MVE2,13,7,6,0.5384615384615384,2,2,1,0.5
+gpt-4o-mini,climate,Climate_ MVE2,16,9,7,0.5625,0,4,1,0.25
+gpt-4o-mini,climate,Climate_ MVE2,16,9,7,0.5625,1,4,3,0.75
+gpt-4o-mini,climate,Climate_ MVE2,16,9,7,0.5625,2,8,5,0.625
+gpt-4o-mini,environment,Environment_ MVE2,6,4,2,0.6666666666666666,0,1,1,1.0
+gpt-4o-mini,environment,Environment_ MVE2,6,4,2,0.6666666666666666,1,2,2,1.0
+gpt-4o-mini,environment,Environment_ MVE2,6,4,2,0.6666666666666666,2,3,1,0.3333333333333333
+gpt-4o-mini,gender,Gender_MVE2_ext_full2,13,6,7,0.46153846153846156,0,4,3,0.75
+gpt-4o-mini,gender,Gender_MVE2_ext_full2,13,6,7,0.46153846153846156,1,5,1,0.2
+gpt-4o-mini,gender,Gender_MVE2_ext_full2,13,6,7,0.46153846153846156,2,4,2,0.5
+gpt-4o-mini,nutrition,Nutrition_ MVE2,13,7,6,0.5384615384615384,0,8,5,0.625
+gpt-4o-mini,nutrition,Nutrition_ MVE2,13,7,6,0.5384615384615384,1,3,1,0.3333333333333333
+gpt-4o-mini,nutrition,Nutrition_ MVE2,13,7,6,0.5384615384615384,2,2,1,0.5
+o1,climate,Climate_ MVE2,16,11,5,0.6875,0,4,3,0.75
+o1,climate,Climate_ MVE2,16,11,5,0.6875,1,4,2,0.5
+o1,climate,Climate_ MVE2,16,11,5,0.6875,2,8,6,0.75
+o1,environment,Environment_ MVE2,6,5,1,0.8333333333333334,0,1,1,1.0
+o1,environment,Environment_ MVE2,6,5,1,0.8333333333333334,1,2,1,0.5
+o1,environment,Environment_ MVE2,6,5,1,0.8333333333333334,2,3,3,1.0
+o1,gender,Gender_MVE2_ext_full2,13,7,6,0.5384615384615384,0,4,4,1.0
+o1,gender,Gender_MVE2_ext_full2,13,7,6,0.5384615384615384,1,5,1,0.2
+o1,gender,Gender_MVE2_ext_full2,13,7,6,0.5384615384615384,2,4,2,0.5
+o1,nutrition,Nutrition_ MVE2,13,6,7,0.46153846153846156,0,8,4,0.5
+o1,nutrition,Nutrition_ MVE2,13,6,7,0.46153846153846156,1,3,0,0.0
+o1,nutrition,Nutrition_ MVE2,13,6,7,0.46153846153846156,2,2,2,1.0
+o1-mini,climate,Climate_ MVE2,16,9,7,0.5625,0,4,0,0.0
+o1-mini,climate,Climate_ MVE2,16,9,7,0.5625,1,4,3,0.75
+o1-mini,climate,Climate_ MVE2,16,9,7,0.5625,2,8,6,0.75
+o1-mini,environment,Environment_ MVE2,6,2,4,0.3333333333333333,0,1,1,1.0
+o1-mini,environment,Environment_ MVE2,6,2,4,0.3333333333333333,1,2,1,0.5
+o1-mini,environment,Environment_ MVE2,6,2,4,0.3333333333333333,2,3,0,0.0
+o1-mini,gender,Gender_MVE2_ext_full2,13,5,8,0.38461538461538464,0,4,3,0.75
+o1-mini,gender,Gender_MVE2_ext_full2,13,5,8,0.38461538461538464,1,5,1,0.2
+o1-mini,gender,Gender_MVE2_ext_full2,13,5,8,0.38461538461538464,2,4,1,0.25
+o1-mini,nutrition,Nutrition_ MVE2,13,4,9,0.3076923076923077,0,8,2,0.25
+o1-mini,nutrition,Nutrition_ MVE2,13,4,9,0.3076923076923077,1,3,0,0.0
+o1-mini,nutrition,Nutrition_ MVE2,13,4,9,0.3076923076923077,2,2,2,1.0
+o3-mini,climate,Climate_ MVE2,16,10,6,0.625,0,4,2,0.5
+o3-mini,climate,Climate_ MVE2,16,10,6,0.625,1,4,3,0.75
+o3-mini,climate,Climate_ MVE2,16,10,6,0.625,2,8,5,0.625
+o3-mini,environment,Environment_ MVE2,6,4,2,0.6666666666666666,0,1,1,1.0
+o3-mini,environment,Environment_ MVE2,6,4,2,0.6666666666666666,1,2,2,1.0
+o3-mini,environment,Environment_ MVE2,6,4,2,0.6666666666666666,2,3,1,0.3333333333333333
+o3-mini,gender,Gender_MVE2_ext_full2,13,5,8,0.38461538461538464,0,4,4,1.0
+o3-mini,gender,Gender_MVE2_ext_full2,13,5,8,0.38461538461538464,1,5,1,0.2
+o3-mini,gender,Gender_MVE2_ext_full2,13,5,8,0.38461538461538464,2,4,0,0.0
+o3-mini,nutrition,Nutrition_ MVE2,13,5,8,0.38461538461538464,0,8,3,0.375
+o3-mini,nutrition,Nutrition_ MVE2,13,5,8,0.38461538461538464,1,3,1,0.3333333333333333
+o3-mini,nutrition,Nutrition_ MVE2,13,5,8,0.38461538461538464,2,2,1,0.5
