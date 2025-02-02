@@ -69,7 +69,7 @@ def main():
     # Create a mapping from 'Result code' to 'Impact Area checked'
     result_code_to_impact_areas = df_input.groupby('Result code')['Impact Area checked'].apply(list).to_dict()
     # Deduplicate input data based on 'Result code' and relevant text fields
-    df_unique_input = df_input.drop_duplicates(subset=['Result code', 'Title', 'Description', 'Evidence_Abstract_Text', 'Evidence_Parsed_Text'])
+    df_unique_input = df_input.drop_duplicates(subset=['Result code', 'Title', 'Description', 'Evidence Abstract Text', 'Evidence Parsed Text'])
 
     existing_results = load_existing_results(output_csv)
     tasks = generate_task_list(df_unique_input, prompts, models)

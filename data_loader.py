@@ -34,11 +34,11 @@ def load_data(input_file):
         st.stop()
 
     # Check for required columns in the DataFrame
-    possible_columns = ['Title', 'Description', 'Evidence_Abstract_Text', 'Evidence_Parsed_Text']
+    possible_columns = ['Title', 'Description', 'Evidence Abstract Text', 'Evidence Parsed Text']
     available_columns = [col for col in possible_columns if col in df.columns]
 
     if not available_columns:
-        st.error("None of the expected text columns ('Title', 'Description', 'Evidence_Abstract_Text', 'Evidence_Parsed_Text') are present in the uploaded data. At least one is required to create 'input_text'.")
+        st.error("None of the expected text columns ('Title', 'Description', 'Evidence Abstract Text', 'Evidence Parsed Text') are present in the uploaded data. At least one is required to create 'input_text'.")
         st.stop()
 
     # Concatenate available text fields

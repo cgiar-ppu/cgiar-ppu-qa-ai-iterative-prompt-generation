@@ -1,0 +1,635 @@
+"result_code","prompt_id","prompt_text","model_name","impact_area","input_text","token_count"
+"1020","CLIMATE_CHANGE_PROMPT","# **You are an AI assistant tasked with evaluating research results from CGIAR (Consultative Group on International Agricultural Research) to determine whether they align with and contribute to CGIAR's objectives in addressing climate change. Your goal is to accurately assign an impact area tag that reflects the relevance and impact of the research on these specific climate change objectives.**
+
+### **Context:**
+CGIAR is a global partnership that unites international organizations focused on research for food security. CGIAR has established specific objectives to combat climate change by promoting climate mitigation, adaptation, and policy initiatives, particularly within the agriculture, forestry, and food systems sectors. The research results you will analyze originate from various CGIAR initiatives and projects in these and related fields.
+
+### **Research Result Components:**
+Each research result includes the following details:
+- **Title:** A brief title summarizing the research result.
+- **Description:** A detailed description of the research result, including methods and findings.
+- **Research Abstract:** A summary of key findings and implications (optional).
+- **Research Parsed Text:** The parsed text of the research result (optional).
+
+### **Tagging Criteria:**
+Assign a climate change impact tag using the following criteria:
+
+- **0 = Not Targeted:** 
+  - The research does not address or contribute to CGIAR's climate change objectives, such as mitigation, adaptation, or policy.
+  - The research is unrelated to climate change, focusing instead on different topics with no significant implications for climate-related outcomes.
+  - Example: A study focused solely on agricultural yield improvement without considering its impact on climate change.
+
+- **1 = Significant:** 
+  - The research makes a meaningful contribution to CGIAR’s climate change objectives, but these are not the primary focus.
+  - The research is relevant and provides insights into climate change, but these are secondary to other goals.
+  - Example: A study that explores the impact of agricultural practices on crop resilience, indirectly supporting climate adaptation.
+
+- **2 = Principal:** 
+  - The primary objective of the research is to address and directly impact CGIAR's goals in climate change mitigation, adaptation, or policy.
+  - The research would not have been undertaken without the intention to contribute to these specific climate change objectives.
+  - Example: A study specifically designed to develop sustainable farming practices aimed explicitly at reducing greenhouse gas emissions.
+
+### **Key Objectives Set by CGIAR:**
+- **Climate Mitigation:** Transforming agriculture and forest systems into a net carbon sink by 2050.
+- **Climate Adaptation:** Equipping small-scale producers to be more resilient to climate impacts by 2030.
+- **Climate Policy:** Supporting countries in implementing National Adaptation Plans (NAPs) and Nationally Determined Contributions (NDCs), and increasing ambition in climate actions by 2030.
+
+### **Instructions:**
+1. **Analyze the Title and Abstract:** Determine whether the research is related to CGIAR's objectives in climate change by looking for relevant keywords or phrases, such as “mitigation,” “adaptation,” “resilience,” or “climate policy.”
+2. **Review the Description and Parsed Text:** Assess whether the research directly contributes to CGIAR’s climate change objectives, and how integral these objectives are to the overall study.
+3. **Assign the Tag:** Based on the criteria provided, assign the most appropriate tag (0, 1, or 2) that reflects whether the research is related to and impacts CGIAR’s objectives in climate change.
+4. **Provide a Brief Justification:** Explain why you assigned this tag, referencing specific aspects of the research that influenced your decision. Make sure to clarify how the research aligns (or does not align) with CGIAR’s climate change objectives.
+
+### **Important Notes:**
+- If the research does not relate to CGIAR's objectives in climate change, assign a tag of **0** (Not Targeted).
+- If the research mentions climate change as an important consideration but not the primary focus, assign a tag of **1** (Significant).
+- If climate change mitigation, adaptation, or policy is the primary objective of the research, assign a tag of **2** (Principal).
+- When assigning a tag of **2**, ensure that the evidence clearly demonstrates that climate change objectives were the main goals of the research and fundamental to its design.
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+{ ""score"": <0|1|2>, ""explanation"": ""<Your explanation here>"" }
+
+
+### **Now, analyze the following research result and assign a climate change tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in addressing climate change.**
+
+**Text to Analyze:**
+[INPUT_TEXT]","gpt-4o-mini","Climate","Aclimatar - Understanding climate change impacts and adaptation practices for cocoa management in West Africa Aclimatar: Empowering Smallholder Producers for Perennials in West Africa for Climate Resilience. The innovation highlights the platform's core purpose of supporting climate adaptation for smallholder cocoa producers in Ghana and Côte d'Ivoire. By offering site-specific climate change risk assessments and tailored adaptation practices, Aclimatar serves as a vital tool in combating the effects of climate change. Its intuitive map interface allows users to select locations, providing them with essential climate data, impacts on specific crops, and prioritized adaptation strategies. This innovation is designed to enhance local projects, technicians, and organizations' understanding and response to climate variability, ensuring sustainable agricultural practices and resilience among smallholder communities. Opportunities for digital agro-climatic services in the cocoa sector Skip to main content Dear CGSpace users, we have performed some minor upgrades to the user interface. If it does not look right you should refresh the page while holding the Shift key. Communities & Collections Browse Navigate CGIAR Centers Statistics English Català Čeština Deutsch Español Français Gàidhlig Italiano Latviešu Magyar Nederlands Polski Português Português do Brasil Srpski (lat) Suomi Svenska Türkçe Tiếng Việt Қазақ বাংলা हिंदी Ελληνικά Српски Yкраї́нська Log In Note: CGIAR users should log in with their Active Directory username and password. For example, if your email is j.smith@cgiar.org, you would use jsmith here. Log in New user? Click here to register. Have you forgotten your password? Home CGIAR research centers Alliance of Bioversity International and CIAT Alliance Bioversity CIAT Reports Opportunities for digital agro-climatic services in the cocoa sector Opportunities for digital agro-climatic services in the cocoa sector Loading... Files Report_Ghana.pdf (6.33 MB) Authors Giraldo, Diana Zapata Caldas, Emmanuel Llanos, Lizeth Rahn, Eric Date Issued 2023-12-29 Date Online Language en Type Report Review Status Access Rights Open Access Usage Rights Metadata Full item page Share Citation Giraldo, D.; Zapata Caldas, E.; Llanos, L.; Rahn, E. (2023) Opportunities for digital agro-climatic services in the cocoa sector. Excellence in Agronomy Initiative. 13 p. Permanent link to cite or share this item https://hdl.handle.net/10568/138653 External link to download this item DOI Abstract/Description The Alliance Bioversity-CIAT and the Rainforest Alliance (RA) collaborating to explore the value of seasonal climate forecasts for decision-making in cocoa farming. The Alliance Bioversity International-CIAT has extensive experience in using seasonal climate forecasts to improve the management of annual crops (e.g., variety selection, planting time, etc.), but there is limited experience with perennial cropping systems such as cocoa. To this end, we aim to understand which management decisions can benefit from seasonal climate forecasts, which climate variables would require good forecasting skills, and how forecasts need to be translated and communicated to end- users. To achieve this goal, the Alliance Bioversity-CIAT is applying human-centered design (HCD), a creative and participatory approach to problem-solving that allows for a deep understanding of the people for whom we design and the environments in which they live. Stakeholders are considered co-designers in the process of creating solutions or tools, whether digital or non-digital. Author ORCID identifiers Diana Carolina Giraldo Mendez https://orcid.org/0000-0002-9200-3916 Emmanuel Zapata-Caldas https://orcid.org/0000-0002-7795-9426 Lizeth Llanos-Herrera https://orcid.org/0000-0003-3540-7348 Eric Rahn https://orcid.org/0000-0001-6280-7430 Contributes to SDGs AGROVOC Keywords information services ; theobroma cacao-cocoa (plant) ; climate services ; extension systems Subjects CACAO ; PARTICIPATORY RESEARCH ; RESILIENCE Countries Ghana Regions Africa ; Western Africa ; Sub-Saharan Africa Organizations Affiliated to the Authors International Center for Tropical Agriculture CGIAR Action Areas Resilient Agrifood Systems CGIAR Impact Areas Climate adaptation and mitigation CGIAR Initiatives Climate Resilience ; Excellence in Agronomy Collections Alliance Bioversity CIAT Reports Alliance Research Lever 3: Climate Action CGIAR Initiative on Climate Resilience CGIAR Initiative on Excellence in Agronomy DSpace software copyright © 2002-2024 LYRASIS About Cookie settings Privacy policy Send Feedback ","1926"
+"1020","CLIMATE_CHANGE_PROMPT","# **You are an AI assistant tasked with evaluating research results from CGIAR (Consultative Group on International Agricultural Research) to determine whether they align with and contribute to CGIAR's objectives in addressing climate change. Your goal is to accurately assign an impact area tag that reflects the relevance and impact of the research on these specific climate change objectives.**
+
+### **Context:**
+CGIAR is a global partnership that unites international organizations focused on research for food security. CGIAR has established specific objectives to combat climate change by promoting climate mitigation, adaptation, and policy initiatives, particularly within the agriculture, forestry, and food systems sectors. The research results you will analyze originate from various CGIAR initiatives and projects in these and related fields.
+
+### **Research Result Components:**
+Each research result includes the following details:
+- **Title:** A brief title summarizing the research result.
+- **Description:** A detailed description of the research result, including methods and findings.
+- **Research Abstract:** A summary of key findings and implications (optional).
+- **Research Parsed Text:** The parsed text of the research result (optional).
+
+### **Tagging Criteria:**
+Assign a climate change impact tag using the following criteria:
+
+- **0 = Not Targeted:** 
+  - The research does not address or contribute to CGIAR's climate change objectives, such as mitigation, adaptation, or policy.
+  - The research is unrelated to climate change, focusing instead on different topics with no significant implications for climate-related outcomes.
+  - Example: A study focused solely on agricultural yield improvement without considering its impact on climate change.
+
+- **1 = Significant:** 
+  - The research makes a meaningful contribution to CGIAR’s climate change objectives, but these are not the primary focus.
+  - The research is relevant and provides insights into climate change, but these are secondary to other goals.
+  - Example: A study that explores the impact of agricultural practices on crop resilience, indirectly supporting climate adaptation.
+
+- **2 = Principal:** 
+  - The primary objective of the research is to address and directly impact CGIAR's goals in climate change mitigation, adaptation, or policy.
+  - The research would not have been undertaken without the intention to contribute to these specific climate change objectives.
+  - Example: A study specifically designed to develop sustainable farming practices aimed explicitly at reducing greenhouse gas emissions.
+
+### **Key Objectives Set by CGIAR:**
+- **Climate Mitigation:** Transforming agriculture and forest systems into a net carbon sink by 2050.
+- **Climate Adaptation:** Equipping small-scale producers to be more resilient to climate impacts by 2030.
+- **Climate Policy:** Supporting countries in implementing National Adaptation Plans (NAPs) and Nationally Determined Contributions (NDCs), and increasing ambition in climate actions by 2030.
+
+### **Instructions:**
+1. **Analyze the Title and Abstract:** Determine whether the research is related to CGIAR's objectives in climate change by looking for relevant keywords or phrases, such as “mitigation,” “adaptation,” “resilience,” or “climate policy.”
+2. **Review the Description and Parsed Text:** Assess whether the research directly contributes to CGIAR’s climate change objectives, and how integral these objectives are to the overall study.
+3. **Assign the Tag:** Based on the criteria provided, assign the most appropriate tag (0, 1, or 2) that reflects whether the research is related to and impacts CGIAR’s objectives in climate change.
+4. **Provide a Brief Justification:** Explain why you assigned this tag, referencing specific aspects of the research that influenced your decision. Make sure to clarify how the research aligns (or does not align) with CGIAR’s climate change objectives.
+
+### **Important Notes:**
+- If the research does not relate to CGIAR's objectives in climate change, assign a tag of **0** (Not Targeted).
+- If the research mentions climate change as an important consideration but not the primary focus, assign a tag of **1** (Significant).
+- If climate change mitigation, adaptation, or policy is the primary objective of the research, assign a tag of **2** (Principal).
+- When assigning a tag of **2**, ensure that the evidence clearly demonstrates that climate change objectives were the main goals of the research and fundamental to its design.
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+{ ""score"": <0|1|2>, ""explanation"": ""<Your explanation here>"" }
+
+
+### **Now, analyze the following research result and assign a climate change tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in addressing climate change.**
+
+**Text to Analyze:**
+[INPUT_TEXT]","o3-mini","Climate","Aclimatar - Understanding climate change impacts and adaptation practices for cocoa management in West Africa Aclimatar: Empowering Smallholder Producers for Perennials in West Africa for Climate Resilience. The innovation highlights the platform's core purpose of supporting climate adaptation for smallholder cocoa producers in Ghana and Côte d'Ivoire. By offering site-specific climate change risk assessments and tailored adaptation practices, Aclimatar serves as a vital tool in combating the effects of climate change. Its intuitive map interface allows users to select locations, providing them with essential climate data, impacts on specific crops, and prioritized adaptation strategies. This innovation is designed to enhance local projects, technicians, and organizations' understanding and response to climate variability, ensuring sustainable agricultural practices and resilience among smallholder communities. Opportunities for digital agro-climatic services in the cocoa sector Skip to main content Dear CGSpace users, we have performed some minor upgrades to the user interface. If it does not look right you should refresh the page while holding the Shift key. Communities & Collections Browse Navigate CGIAR Centers Statistics English Català Čeština Deutsch Español Français Gàidhlig Italiano Latviešu Magyar Nederlands Polski Português Português do Brasil Srpski (lat) Suomi Svenska Türkçe Tiếng Việt Қазақ বাংলা हिंदी Ελληνικά Српски Yкраї́нська Log In Note: CGIAR users should log in with their Active Directory username and password. For example, if your email is j.smith@cgiar.org, you would use jsmith here. Log in New user? Click here to register. Have you forgotten your password? Home CGIAR research centers Alliance of Bioversity International and CIAT Alliance Bioversity CIAT Reports Opportunities for digital agro-climatic services in the cocoa sector Opportunities for digital agro-climatic services in the cocoa sector Loading... Files Report_Ghana.pdf (6.33 MB) Authors Giraldo, Diana Zapata Caldas, Emmanuel Llanos, Lizeth Rahn, Eric Date Issued 2023-12-29 Date Online Language en Type Report Review Status Access Rights Open Access Usage Rights Metadata Full item page Share Citation Giraldo, D.; Zapata Caldas, E.; Llanos, L.; Rahn, E. (2023) Opportunities for digital agro-climatic services in the cocoa sector. Excellence in Agronomy Initiative. 13 p. Permanent link to cite or share this item https://hdl.handle.net/10568/138653 External link to download this item DOI Abstract/Description The Alliance Bioversity-CIAT and the Rainforest Alliance (RA) collaborating to explore the value of seasonal climate forecasts for decision-making in cocoa farming. The Alliance Bioversity International-CIAT has extensive experience in using seasonal climate forecasts to improve the management of annual crops (e.g., variety selection, planting time, etc.), but there is limited experience with perennial cropping systems such as cocoa. To this end, we aim to understand which management decisions can benefit from seasonal climate forecasts, which climate variables would require good forecasting skills, and how forecasts need to be translated and communicated to end- users. To achieve this goal, the Alliance Bioversity-CIAT is applying human-centered design (HCD), a creative and participatory approach to problem-solving that allows for a deep understanding of the people for whom we design and the environments in which they live. Stakeholders are considered co-designers in the process of creating solutions or tools, whether digital or non-digital. Author ORCID identifiers Diana Carolina Giraldo Mendez https://orcid.org/0000-0002-9200-3916 Emmanuel Zapata-Caldas https://orcid.org/0000-0002-7795-9426 Lizeth Llanos-Herrera https://orcid.org/0000-0003-3540-7348 Eric Rahn https://orcid.org/0000-0001-6280-7430 Contributes to SDGs AGROVOC Keywords information services ; theobroma cacao-cocoa (plant) ; climate services ; extension systems Subjects CACAO ; PARTICIPATORY RESEARCH ; RESILIENCE Countries Ghana Regions Africa ; Western Africa ; Sub-Saharan Africa Organizations Affiliated to the Authors International Center for Tropical Agriculture CGIAR Action Areas Resilient Agrifood Systems CGIAR Impact Areas Climate adaptation and mitigation CGIAR Initiatives Climate Resilience ; Excellence in Agronomy Collections Alliance Bioversity CIAT Reports Alliance Research Lever 3: Climate Action CGIAR Initiative on Climate Resilience CGIAR Initiative on Excellence in Agronomy DSpace software copyright © 2002-2024 LYRASIS About Cookie settings Privacy policy Send Feedback ","2005"
+"5569","CLIMATE_CHANGE_PROMPT","# **You are an AI assistant tasked with evaluating research results from CGIAR (Consultative Group on International Agricultural Research) to determine whether they align with and contribute to CGIAR's objectives in addressing climate change. Your goal is to accurately assign an impact area tag that reflects the relevance and impact of the research on these specific climate change objectives.**
+
+### **Context:**
+CGIAR is a global partnership that unites international organizations focused on research for food security. CGIAR has established specific objectives to combat climate change by promoting climate mitigation, adaptation, and policy initiatives, particularly within the agriculture, forestry, and food systems sectors. The research results you will analyze originate from various CGIAR initiatives and projects in these and related fields.
+
+### **Research Result Components:**
+Each research result includes the following details:
+- **Title:** A brief title summarizing the research result.
+- **Description:** A detailed description of the research result, including methods and findings.
+- **Research Abstract:** A summary of key findings and implications (optional).
+- **Research Parsed Text:** The parsed text of the research result (optional).
+
+### **Tagging Criteria:**
+Assign a climate change impact tag using the following criteria:
+
+- **0 = Not Targeted:** 
+  - The research does not address or contribute to CGIAR's climate change objectives, such as mitigation, adaptation, or policy.
+  - The research is unrelated to climate change, focusing instead on different topics with no significant implications for climate-related outcomes.
+  - Example: A study focused solely on agricultural yield improvement without considering its impact on climate change.
+
+- **1 = Significant:** 
+  - The research makes a meaningful contribution to CGIAR’s climate change objectives, but these are not the primary focus.
+  - The research is relevant and provides insights into climate change, but these are secondary to other goals.
+  - Example: A study that explores the impact of agricultural practices on crop resilience, indirectly supporting climate adaptation.
+
+- **2 = Principal:** 
+  - The primary objective of the research is to address and directly impact CGIAR's goals in climate change mitigation, adaptation, or policy.
+  - The research would not have been undertaken without the intention to contribute to these specific climate change objectives.
+  - Example: A study specifically designed to develop sustainable farming practices aimed explicitly at reducing greenhouse gas emissions.
+
+### **Key Objectives Set by CGIAR:**
+- **Climate Mitigation:** Transforming agriculture and forest systems into a net carbon sink by 2050.
+- **Climate Adaptation:** Equipping small-scale producers to be more resilient to climate impacts by 2030.
+- **Climate Policy:** Supporting countries in implementing National Adaptation Plans (NAPs) and Nationally Determined Contributions (NDCs), and increasing ambition in climate actions by 2030.
+
+### **Instructions:**
+1. **Analyze the Title and Abstract:** Determine whether the research is related to CGIAR's objectives in climate change by looking for relevant keywords or phrases, such as “mitigation,” “adaptation,” “resilience,” or “climate policy.”
+2. **Review the Description and Parsed Text:** Assess whether the research directly contributes to CGIAR’s climate change objectives, and how integral these objectives are to the overall study.
+3. **Assign the Tag:** Based on the criteria provided, assign the most appropriate tag (0, 1, or 2) that reflects whether the research is related to and impacts CGIAR’s objectives in climate change.
+4. **Provide a Brief Justification:** Explain why you assigned this tag, referencing specific aspects of the research that influenced your decision. Make sure to clarify how the research aligns (or does not align) with CGIAR’s climate change objectives.
+
+### **Important Notes:**
+- If the research does not relate to CGIAR's objectives in climate change, assign a tag of **0** (Not Targeted).
+- If the research mentions climate change as an important consideration but not the primary focus, assign a tag of **1** (Significant).
+- If climate change mitigation, adaptation, or policy is the primary objective of the research, assign a tag of **2** (Principal).
+- When assigning a tag of **2**, ensure that the evidence clearly demonstrates that climate change objectives were the main goals of the research and fundamental to its design.
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+{ ""score"": <0|1|2>, ""explanation"": ""<Your explanation here>"" }
+
+
+### **Now, analyze the following research result and assign a climate change tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in addressing climate change.**
+
+**Text to Analyze:**
+[INPUT_TEXT]","gpt-4o-mini","Climate","Maize Target Product Profiles workshop in Zambia organized for the Agriculture Research Institute breeding program The Maize Product Design team of the Zambia breeding program engaged in reviewing the maize market segments identified by OneCGIAR Market Intelligence and CIMMYT. The workshop focused on refining market segments for Zambia national needs and defining target product profiles for each market segment in support of collaborative efforts to shape the future of Maize breeding in the East and Southern Africa region.                                                                                                                                                                                                                                                                                                    Worksheet Descriptions  Unnamed: 1               Unnamed: 2                                                                                                                                                                    Unnamed: 3                                                                                                                                                                                Unnamed: 4
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                             PRMS Results and IA  coding         NaN   Evidence for IA coding                                                                                                                                                    Starting Rows 1, describes Method used to systematically link Breeding Pipelines employed, Target Product Profiles pursued, and Variety Releases achieved by ALL Genetic Innovation Breeding Efforts to Impact Areas
+                                                                                                                                                                                                                                                                                                                     NaN         NaN   Evidence for IA coding                                                                                                                                                   Starting Rows 11, describes                                                                                          Standardized matrix of traits, value propositions and Impact Area tagging for genetic innovation
+                                                                                                                                                                                                                                                                                                                     NaN         NaN   Evidence for IA coding                                                                                                                                                   Starting Rows 45, describes                                                            Standardized Impact Area tagging for Genetic Innovation Breeding Pipelines and Variety Releases and their link to PRMS results
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                           IRL Standardization Germplasm         NaN  Evidence for IRL coding                                  Links Germplasm Stages, used in CGIAR Genetic Innovation, to Levels of CGIAR Innovation Readiness and Use, across all CGIAR Breeding Efforts                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                    Breeding Cycle times         NaN Evidence for cycle times                                                   Lists cycle times of breeding pipelines, based on a breeders' survey. This information is used in PRMS Results descriptions                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                     BPs >> PRMS Results         NaN    Part of the analytics                                                                                                                       Lists Breeding Pipelines and their link to PRMS Results                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                Value Propositions in BP         NaN    Part of the analytics                                                                                                         Lists Value propositions  and Trait requirement per Breeding Pipeline                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                           BP - TPP - MS         NaN    Part of the analytics  Links between Breeding Pipelines (BP), Target Product Profiles (TPP) and Market Segments (MS), across all of CGAIR breeding, downloaded from Breeding Portal 14 January 2024                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                         TPPs and Traits         NaN    Part of the analytics Links between Trait, Value Proposition, Breeding Pipelines (BP), Target Product Profiles (TPP) , across all of CGAIR breeding, downloaded from Breeding Portal 8 January 2024                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                              Variety 2023 releases > BP         NaN    Part of the analytics                                                                  Known variety releases in 2023, linked to Breeding Pipeline, downloaded from Breeding Portal 14 January 2023                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+    In collaboration with Market Intelligence, Impact Area and IRL coding are standardized across ALL CGIAR breeding efforts, with  improvements from year to year. The file provides methods and analysis. IA Worksheet ""PRMS Results and IA coding"", Rows 93-96 lists Impact Area codes, resulting from the analysis.          NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+Worksheet ""PRMS Results & IA Coding"" explains the method, developed with Market Intelligence, for standardized Impact Area tagging of CGIAR Breeding Pipelines. The proportion of Breeding Pipelines with Impact Area Tag 2 are shown in Row 33.  The analysis allows to conclude on the overall portfolio orientation.          NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN","1966"
+"5569","CLIMATE_CHANGE_PROMPT","# **You are an AI assistant tasked with evaluating research results from CGIAR (Consultative Group on International Agricultural Research) to determine whether they align with and contribute to CGIAR's objectives in addressing climate change. Your goal is to accurately assign an impact area tag that reflects the relevance and impact of the research on these specific climate change objectives.**
+
+### **Context:**
+CGIAR is a global partnership that unites international organizations focused on research for food security. CGIAR has established specific objectives to combat climate change by promoting climate mitigation, adaptation, and policy initiatives, particularly within the agriculture, forestry, and food systems sectors. The research results you will analyze originate from various CGIAR initiatives and projects in these and related fields.
+
+### **Research Result Components:**
+Each research result includes the following details:
+- **Title:** A brief title summarizing the research result.
+- **Description:** A detailed description of the research result, including methods and findings.
+- **Research Abstract:** A summary of key findings and implications (optional).
+- **Research Parsed Text:** The parsed text of the research result (optional).
+
+### **Tagging Criteria:**
+Assign a climate change impact tag using the following criteria:
+
+- **0 = Not Targeted:** 
+  - The research does not address or contribute to CGIAR's climate change objectives, such as mitigation, adaptation, or policy.
+  - The research is unrelated to climate change, focusing instead on different topics with no significant implications for climate-related outcomes.
+  - Example: A study focused solely on agricultural yield improvement without considering its impact on climate change.
+
+- **1 = Significant:** 
+  - The research makes a meaningful contribution to CGIAR’s climate change objectives, but these are not the primary focus.
+  - The research is relevant and provides insights into climate change, but these are secondary to other goals.
+  - Example: A study that explores the impact of agricultural practices on crop resilience, indirectly supporting climate adaptation.
+
+- **2 = Principal:** 
+  - The primary objective of the research is to address and directly impact CGIAR's goals in climate change mitigation, adaptation, or policy.
+  - The research would not have been undertaken without the intention to contribute to these specific climate change objectives.
+  - Example: A study specifically designed to develop sustainable farming practices aimed explicitly at reducing greenhouse gas emissions.
+
+### **Key Objectives Set by CGIAR:**
+- **Climate Mitigation:** Transforming agriculture and forest systems into a net carbon sink by 2050.
+- **Climate Adaptation:** Equipping small-scale producers to be more resilient to climate impacts by 2030.
+- **Climate Policy:** Supporting countries in implementing National Adaptation Plans (NAPs) and Nationally Determined Contributions (NDCs), and increasing ambition in climate actions by 2030.
+
+### **Instructions:**
+1. **Analyze the Title and Abstract:** Determine whether the research is related to CGIAR's objectives in climate change by looking for relevant keywords or phrases, such as “mitigation,” “adaptation,” “resilience,” or “climate policy.”
+2. **Review the Description and Parsed Text:** Assess whether the research directly contributes to CGIAR’s climate change objectives, and how integral these objectives are to the overall study.
+3. **Assign the Tag:** Based on the criteria provided, assign the most appropriate tag (0, 1, or 2) that reflects whether the research is related to and impacts CGIAR’s objectives in climate change.
+4. **Provide a Brief Justification:** Explain why you assigned this tag, referencing specific aspects of the research that influenced your decision. Make sure to clarify how the research aligns (or does not align) with CGIAR’s climate change objectives.
+
+### **Important Notes:**
+- If the research does not relate to CGIAR's objectives in climate change, assign a tag of **0** (Not Targeted).
+- If the research mentions climate change as an important consideration but not the primary focus, assign a tag of **1** (Significant).
+- If climate change mitigation, adaptation, or policy is the primary objective of the research, assign a tag of **2** (Principal).
+- When assigning a tag of **2**, ensure that the evidence clearly demonstrates that climate change objectives were the main goals of the research and fundamental to its design.
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+{ ""score"": <0|1|2>, ""explanation"": ""<Your explanation here>"" }
+
+
+### **Now, analyze the following research result and assign a climate change tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in addressing climate change.**
+
+**Text to Analyze:**
+[INPUT_TEXT]","o3-mini","Climate","Maize Target Product Profiles workshop in Zambia organized for the Agriculture Research Institute breeding program The Maize Product Design team of the Zambia breeding program engaged in reviewing the maize market segments identified by OneCGIAR Market Intelligence and CIMMYT. The workshop focused on refining market segments for Zambia national needs and defining target product profiles for each market segment in support of collaborative efforts to shape the future of Maize breeding in the East and Southern Africa region.                                                                                                                                                                                                                                                                                                    Worksheet Descriptions  Unnamed: 1               Unnamed: 2                                                                                                                                                                    Unnamed: 3                                                                                                                                                                                Unnamed: 4
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                             PRMS Results and IA  coding         NaN   Evidence for IA coding                                                                                                                                                    Starting Rows 1, describes Method used to systematically link Breeding Pipelines employed, Target Product Profiles pursued, and Variety Releases achieved by ALL Genetic Innovation Breeding Efforts to Impact Areas
+                                                                                                                                                                                                                                                                                                                     NaN         NaN   Evidence for IA coding                                                                                                                                                   Starting Rows 11, describes                                                                                          Standardized matrix of traits, value propositions and Impact Area tagging for genetic innovation
+                                                                                                                                                                                                                                                                                                                     NaN         NaN   Evidence for IA coding                                                                                                                                                   Starting Rows 45, describes                                                            Standardized Impact Area tagging for Genetic Innovation Breeding Pipelines and Variety Releases and their link to PRMS results
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                           IRL Standardization Germplasm         NaN  Evidence for IRL coding                                  Links Germplasm Stages, used in CGIAR Genetic Innovation, to Levels of CGIAR Innovation Readiness and Use, across all CGIAR Breeding Efforts                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                    Breeding Cycle times         NaN Evidence for cycle times                                                   Lists cycle times of breeding pipelines, based on a breeders' survey. This information is used in PRMS Results descriptions                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                     BPs >> PRMS Results         NaN    Part of the analytics                                                                                                                       Lists Breeding Pipelines and their link to PRMS Results                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                Value Propositions in BP         NaN    Part of the analytics                                                                                                         Lists Value propositions  and Trait requirement per Breeding Pipeline                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                           BP - TPP - MS         NaN    Part of the analytics  Links between Breeding Pipelines (BP), Target Product Profiles (TPP) and Market Segments (MS), across all of CGAIR breeding, downloaded from Breeding Portal 14 January 2024                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                         TPPs and Traits         NaN    Part of the analytics Links between Trait, Value Proposition, Breeding Pipelines (BP), Target Product Profiles (TPP) , across all of CGAIR breeding, downloaded from Breeding Portal 8 January 2024                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                              Variety 2023 releases > BP         NaN    Part of the analytics                                                                  Known variety releases in 2023, linked to Breeding Pipeline, downloaded from Breeding Portal 14 January 2023                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+    In collaboration with Market Intelligence, Impact Area and IRL coding are standardized across ALL CGIAR breeding efforts, with  improvements from year to year. The file provides methods and analysis. IA Worksheet ""PRMS Results and IA coding"", Rows 93-96 lists Impact Area codes, resulting from the analysis.          NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+Worksheet ""PRMS Results & IA Coding"" explains the method, developed with Market Intelligence, for standardized Impact Area tagging of CGIAR Breeding Pipelines. The proportion of Breeding Pipelines with Impact Area Tag 2 are shown in Row 33.  The analysis allows to conclude on the overall portfolio orientation.          NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN","1890"
+"5840","CLIMATE_CHANGE_PROMPT","# **You are an AI assistant tasked with evaluating research results from CGIAR (Consultative Group on International Agricultural Research) to determine whether they align with and contribute to CGIAR's objectives in addressing climate change. Your goal is to accurately assign an impact area tag that reflects the relevance and impact of the research on these specific climate change objectives.**
+
+### **Context:**
+CGIAR is a global partnership that unites international organizations focused on research for food security. CGIAR has established specific objectives to combat climate change by promoting climate mitigation, adaptation, and policy initiatives, particularly within the agriculture, forestry, and food systems sectors. The research results you will analyze originate from various CGIAR initiatives and projects in these and related fields.
+
+### **Research Result Components:**
+Each research result includes the following details:
+- **Title:** A brief title summarizing the research result.
+- **Description:** A detailed description of the research result, including methods and findings.
+- **Research Abstract:** A summary of key findings and implications (optional).
+- **Research Parsed Text:** The parsed text of the research result (optional).
+
+### **Tagging Criteria:**
+Assign a climate change impact tag using the following criteria:
+
+- **0 = Not Targeted:** 
+  - The research does not address or contribute to CGIAR's climate change objectives, such as mitigation, adaptation, or policy.
+  - The research is unrelated to climate change, focusing instead on different topics with no significant implications for climate-related outcomes.
+  - Example: A study focused solely on agricultural yield improvement without considering its impact on climate change.
+
+- **1 = Significant:** 
+  - The research makes a meaningful contribution to CGIAR’s climate change objectives, but these are not the primary focus.
+  - The research is relevant and provides insights into climate change, but these are secondary to other goals.
+  - Example: A study that explores the impact of agricultural practices on crop resilience, indirectly supporting climate adaptation.
+
+- **2 = Principal:** 
+  - The primary objective of the research is to address and directly impact CGIAR's goals in climate change mitigation, adaptation, or policy.
+  - The research would not have been undertaken without the intention to contribute to these specific climate change objectives.
+  - Example: A study specifically designed to develop sustainable farming practices aimed explicitly at reducing greenhouse gas emissions.
+
+### **Key Objectives Set by CGIAR:**
+- **Climate Mitigation:** Transforming agriculture and forest systems into a net carbon sink by 2050.
+- **Climate Adaptation:** Equipping small-scale producers to be more resilient to climate impacts by 2030.
+- **Climate Policy:** Supporting countries in implementing National Adaptation Plans (NAPs) and Nationally Determined Contributions (NDCs), and increasing ambition in climate actions by 2030.
+
+### **Instructions:**
+1. **Analyze the Title and Abstract:** Determine whether the research is related to CGIAR's objectives in climate change by looking for relevant keywords or phrases, such as “mitigation,” “adaptation,” “resilience,” or “climate policy.”
+2. **Review the Description and Parsed Text:** Assess whether the research directly contributes to CGIAR’s climate change objectives, and how integral these objectives are to the overall study.
+3. **Assign the Tag:** Based on the criteria provided, assign the most appropriate tag (0, 1, or 2) that reflects whether the research is related to and impacts CGIAR’s objectives in climate change.
+4. **Provide a Brief Justification:** Explain why you assigned this tag, referencing specific aspects of the research that influenced your decision. Make sure to clarify how the research aligns (or does not align) with CGIAR’s climate change objectives.
+
+### **Important Notes:**
+- If the research does not relate to CGIAR's objectives in climate change, assign a tag of **0** (Not Targeted).
+- If the research mentions climate change as an important consideration but not the primary focus, assign a tag of **1** (Significant).
+- If climate change mitigation, adaptation, or policy is the primary objective of the research, assign a tag of **2** (Principal).
+- When assigning a tag of **2**, ensure that the evidence clearly demonstrates that climate change objectives were the main goals of the research and fundamental to its design.
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+{ ""score"": <0|1|2>, ""explanation"": ""<Your explanation here>"" }
+
+
+### **Now, analyze the following research result and assign a climate change tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in addressing climate change.**
+
+**Text to Analyze:**
+[INPUT_TEXT]","gpt-4o-mini","Climate","Digital data collection for groundwater monitoring: enumerator manual This manual aims to help data collectors transition from paper-based to digital data
+collection. It provides a detailed guide on how to use the KoboCollect app on the
+KoboToolbox platform for monitoring groundwater wells.
+The manual offers comprehensive guidance on the following key aspects:
+1. Establishing a KoboToolbox account.
+2. Installing the KoboCollect app on your device.
+3. A step-by-step process for accessing and collecting groundwater monitoring well
+data using forms.
+4. Detailed instructions for submitting and editing completed forms.
+5. An explanation of the monitoring methodology.
+6. Guidance on uploading newly created forms.
+This manual is essential for field data collectors, as it reduces ambiguity and addresses
+outliers to enhance data quality and the overall collection process.  ","1146"
+"5840","CLIMATE_CHANGE_PROMPT","# **You are an AI assistant tasked with evaluating research results from CGIAR (Consultative Group on International Agricultural Research) to determine whether they align with and contribute to CGIAR's objectives in addressing climate change. Your goal is to accurately assign an impact area tag that reflects the relevance and impact of the research on these specific climate change objectives.**
+
+### **Context:**
+CGIAR is a global partnership that unites international organizations focused on research for food security. CGIAR has established specific objectives to combat climate change by promoting climate mitigation, adaptation, and policy initiatives, particularly within the agriculture, forestry, and food systems sectors. The research results you will analyze originate from various CGIAR initiatives and projects in these and related fields.
+
+### **Research Result Components:**
+Each research result includes the following details:
+- **Title:** A brief title summarizing the research result.
+- **Description:** A detailed description of the research result, including methods and findings.
+- **Research Abstract:** A summary of key findings and implications (optional).
+- **Research Parsed Text:** The parsed text of the research result (optional).
+
+### **Tagging Criteria:**
+Assign a climate change impact tag using the following criteria:
+
+- **0 = Not Targeted:** 
+  - The research does not address or contribute to CGIAR's climate change objectives, such as mitigation, adaptation, or policy.
+  - The research is unrelated to climate change, focusing instead on different topics with no significant implications for climate-related outcomes.
+  - Example: A study focused solely on agricultural yield improvement without considering its impact on climate change.
+
+- **1 = Significant:** 
+  - The research makes a meaningful contribution to CGIAR’s climate change objectives, but these are not the primary focus.
+  - The research is relevant and provides insights into climate change, but these are secondary to other goals.
+  - Example: A study that explores the impact of agricultural practices on crop resilience, indirectly supporting climate adaptation.
+
+- **2 = Principal:** 
+  - The primary objective of the research is to address and directly impact CGIAR's goals in climate change mitigation, adaptation, or policy.
+  - The research would not have been undertaken without the intention to contribute to these specific climate change objectives.
+  - Example: A study specifically designed to develop sustainable farming practices aimed explicitly at reducing greenhouse gas emissions.
+
+### **Key Objectives Set by CGIAR:**
+- **Climate Mitigation:** Transforming agriculture and forest systems into a net carbon sink by 2050.
+- **Climate Adaptation:** Equipping small-scale producers to be more resilient to climate impacts by 2030.
+- **Climate Policy:** Supporting countries in implementing National Adaptation Plans (NAPs) and Nationally Determined Contributions (NDCs), and increasing ambition in climate actions by 2030.
+
+### **Instructions:**
+1. **Analyze the Title and Abstract:** Determine whether the research is related to CGIAR's objectives in climate change by looking for relevant keywords or phrases, such as “mitigation,” “adaptation,” “resilience,” or “climate policy.”
+2. **Review the Description and Parsed Text:** Assess whether the research directly contributes to CGIAR’s climate change objectives, and how integral these objectives are to the overall study.
+3. **Assign the Tag:** Based on the criteria provided, assign the most appropriate tag (0, 1, or 2) that reflects whether the research is related to and impacts CGIAR’s objectives in climate change.
+4. **Provide a Brief Justification:** Explain why you assigned this tag, referencing specific aspects of the research that influenced your decision. Make sure to clarify how the research aligns (or does not align) with CGIAR’s climate change objectives.
+
+### **Important Notes:**
+- If the research does not relate to CGIAR's objectives in climate change, assign a tag of **0** (Not Targeted).
+- If the research mentions climate change as an important consideration but not the primary focus, assign a tag of **1** (Significant).
+- If climate change mitigation, adaptation, or policy is the primary objective of the research, assign a tag of **2** (Principal).
+- When assigning a tag of **2**, ensure that the evidence clearly demonstrates that climate change objectives were the main goals of the research and fundamental to its design.
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+{ ""score"": <0|1|2>, ""explanation"": ""<Your explanation here>"" }
+
+
+### **Now, analyze the following research result and assign a climate change tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in addressing climate change.**
+
+**Text to Analyze:**
+[INPUT_TEXT]","o3-mini","Climate","Digital data collection for groundwater monitoring: enumerator manual This manual aims to help data collectors transition from paper-based to digital data
+collection. It provides a detailed guide on how to use the KoboCollect app on the
+KoboToolbox platform for monitoring groundwater wells.
+The manual offers comprehensive guidance on the following key aspects:
+1. Establishing a KoboToolbox account.
+2. Installing the KoboCollect app on your device.
+3. A step-by-step process for accessing and collecting groundwater monitoring well
+data using forms.
+4. Detailed instructions for submitting and editing completed forms.
+5. An explanation of the monitoring methodology.
+6. Guidance on uploading newly created forms.
+This manual is essential for field data collectors, as it reduces ambiguity and addresses
+outliers to enhance data quality and the overall collection process.  ","1155"
+"6461","CLIMATE_CHANGE_PROMPT","# **You are an AI assistant tasked with evaluating research results from CGIAR (Consultative Group on International Agricultural Research) to determine whether they align with and contribute to CGIAR's objectives in addressing climate change. Your goal is to accurately assign an impact area tag that reflects the relevance and impact of the research on these specific climate change objectives.**
+
+### **Context:**
+CGIAR is a global partnership that unites international organizations focused on research for food security. CGIAR has established specific objectives to combat climate change by promoting climate mitigation, adaptation, and policy initiatives, particularly within the agriculture, forestry, and food systems sectors. The research results you will analyze originate from various CGIAR initiatives and projects in these and related fields.
+
+### **Research Result Components:**
+Each research result includes the following details:
+- **Title:** A brief title summarizing the research result.
+- **Description:** A detailed description of the research result, including methods and findings.
+- **Research Abstract:** A summary of key findings and implications (optional).
+- **Research Parsed Text:** The parsed text of the research result (optional).
+
+### **Tagging Criteria:**
+Assign a climate change impact tag using the following criteria:
+
+- **0 = Not Targeted:** 
+  - The research does not address or contribute to CGIAR's climate change objectives, such as mitigation, adaptation, or policy.
+  - The research is unrelated to climate change, focusing instead on different topics with no significant implications for climate-related outcomes.
+  - Example: A study focused solely on agricultural yield improvement without considering its impact on climate change.
+
+- **1 = Significant:** 
+  - The research makes a meaningful contribution to CGIAR’s climate change objectives, but these are not the primary focus.
+  - The research is relevant and provides insights into climate change, but these are secondary to other goals.
+  - Example: A study that explores the impact of agricultural practices on crop resilience, indirectly supporting climate adaptation.
+
+- **2 = Principal:** 
+  - The primary objective of the research is to address and directly impact CGIAR's goals in climate change mitigation, adaptation, or policy.
+  - The research would not have been undertaken without the intention to contribute to these specific climate change objectives.
+  - Example: A study specifically designed to develop sustainable farming practices aimed explicitly at reducing greenhouse gas emissions.
+
+### **Key Objectives Set by CGIAR:**
+- **Climate Mitigation:** Transforming agriculture and forest systems into a net carbon sink by 2050.
+- **Climate Adaptation:** Equipping small-scale producers to be more resilient to climate impacts by 2030.
+- **Climate Policy:** Supporting countries in implementing National Adaptation Plans (NAPs) and Nationally Determined Contributions (NDCs), and increasing ambition in climate actions by 2030.
+
+### **Instructions:**
+1. **Analyze the Title and Abstract:** Determine whether the research is related to CGIAR's objectives in climate change by looking for relevant keywords or phrases, such as “mitigation,” “adaptation,” “resilience,” or “climate policy.”
+2. **Review the Description and Parsed Text:** Assess whether the research directly contributes to CGIAR’s climate change objectives, and how integral these objectives are to the overall study.
+3. **Assign the Tag:** Based on the criteria provided, assign the most appropriate tag (0, 1, or 2) that reflects whether the research is related to and impacts CGIAR’s objectives in climate change.
+4. **Provide a Brief Justification:** Explain why you assigned this tag, referencing specific aspects of the research that influenced your decision. Make sure to clarify how the research aligns (or does not align) with CGIAR’s climate change objectives.
+
+### **Important Notes:**
+- If the research does not relate to CGIAR's objectives in climate change, assign a tag of **0** (Not Targeted).
+- If the research mentions climate change as an important consideration but not the primary focus, assign a tag of **1** (Significant).
+- If climate change mitigation, adaptation, or policy is the primary objective of the research, assign a tag of **2** (Principal).
+- When assigning a tag of **2**, ensure that the evidence clearly demonstrates that climate change objectives were the main goals of the research and fundamental to its design.
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+{ ""score"": <0|1|2>, ""explanation"": ""<Your explanation here>"" }
+
+
+### **Now, analyze the following research result and assign a climate change tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in addressing climate change.**
+
+**Text to Analyze:**
+[INPUT_TEXT]","gpt-4o-mini","Climate","Aquaculture governance: five engagement arenas for sustainability transformation A greater focus on governance is needed to facilitate effective and substantive progress toward sustainability transformations in the aquaculture sector. Concerted governance efforts can help move the sector beyond fragmented technical questions associated with intensification and expansion, social and environmental impacts, and toward system-based approaches that address interconnected sustainability issues. Through a review and expert-elicitation process, we identify five engagement arenas to advance a governance agenda for aquaculture sustainability transformation: (1) setting sustainability transformation goals, (2) cross-sectoral linkages, (3) land–water–sea connectivity, (4) knowledge and innovation, and (5) value chains. We then outline the roles different actors and modes of governance can play in fostering sustainability transformations, and discuss action items for researchers, practitioners, and policymakers to operationalize activities within their engagement arenas. Aquaculture governance: five engagement arenas for sustainability transformation Skip to main content Dear CGSpace users, we have performed some minor upgrades to the user interface. If it does not look right you should refresh the page while holding the Shift key. Communities & Collections Browse Navigate CGIAR Centers Statistics English Català Čeština Deutsch Español Français Gàidhlig Italiano Latviešu Magyar Nederlands Polski Português Português do Brasil Srpski (lat) Suomi Svenska Türkçe Tiếng Việt Қазақ বাংলা हिंदी Ελληνικά Српски Yкраї́нська Log In Note: CGIAR users should log in with their Active Directory username and password. For example, if your email is j.smith@cgiar.org, you would use jsmith here. Log in New user? Click here to register. Have you forgotten your password? Home CGIAR research centers Alliance of Bioversity International and CIAT Alliance Bioversity CIAT Journal Articles Aquaculture governance: five engagement arenas for sustainability transformation Aquaculture governance: five engagement arenas for sustainability transformation Loading... Files journal article.pdf (2.76 MB) Authors Partelow, Stefan Asif, Furqan Troell, Max Stoll, Joshua Stentiford, Grant D. Salayo, Nerissa D. Pin, Nie Paramita, Adiska O. Mizuta, Darien D. Marschke, Melissa J. Show 10 more Date Issued 2023-12-01 Date Online 2023-12-01 Language en Type Journal Article Review Status Peer Review Access Rights Open Access Usage Rights Metadata Full item page Share Citation Partelow, S.; Asif, F.; Troell, M.; Stoll, J.; Stentiford, G.D.; Salayo, N.D.; Pin, N.; Paramita, A.O.; Mizuta, D.D.; Marschke, M.J.; Little, D.C.; Kühnhold, H.; Kunzmann, A.; Krause, G.; Jonell, M.; Johnson, T.R.; Glaser, M.; Gephart, J.A.; Gentry, R.; Gelcich, S.; Cottrell, R.S.; Cole, S.M.; Choudhury, A.; Chadag, V.M.; Schlüter, A.; Nagel, B.; Manlosa, A.O.; Bush, S.; Bene, C.; Turchini, G.M. (2023) Aquaculture governance: five engagement arenas for sustainability transformation. Current Opinion in Environmental Sustainability 65: 101379. ISSN: 1877-3435 Permanent link to cite or share this item https://hdl.handle.net/10568/132397 External link to download this item DOI https://doi.org/10.1016/j.cosust.2023.101379 Abstract/Description A greater focus on governance is needed to facilitate effective and substantive progress toward sustainability transformations in the aquaculture sector. Concerted governance efforts can help move the sector beyond fragmented technical questions associated with intensification and expansion, social and environmental impacts, and toward system-based approaches that address interconnected sustainability issues. Through a review and expert-elicitation process, we identify five engagement arenas to advance a governance agenda for aquaculture sustainability transformation: (1) setting sustainability transformation goals, (2) cross-sectoral linkages, (3) land–water–sea connectivity, (4) knowledge and innovation, and (5) value chains. We then outline the roles different actors and modes of governance can play in fostering sustainability transformations, and discuss action items for researchers, practitioners, and policymakers to operationalize activities within their engagement arenas. Author ORCID identifiers Stefan Partelow https://orcid.org/0000-0002-7751-4005 Christophe Béné https://orcid.org/0000-0002-7078-9241 Simon Bush https://orcid.org/0000-0002-6689-2246 Aisa Manlosa https://orcid.org/0000-0001-8058-412X Ben Nagel https://orcid.org/0000-0002-8227-2733 Jessica Gephart https://orcid.org/0000-0001-6836-9291 Furqan Asif https://orcid.org/0000-0002-6555-9791 Steven Cole https://orcid.org/0000-0002-8947-0871 Richard S. Cottrell https://orcid.org/0000-0002-6499-7503 stefan Gelcich https://orcid.org/0000-0002-5976-9311 Rebecca Gentry https://orcid.org/0000-0002-1739-6203 Malin Jonell https://orcid.org/0000-0002-1813-7684 Andreas Kunzmann https://orcid.org/0000-0002-9500-4332 Melissa Marschke https://orcid.org/0000-0003-1202-6681 Adiska Octa Paramita https://orcid.org/0000-0001-7164-5373 Joshua Stoll https://orcid.org/0000-0003-3967-6895 Afrina Choudhury https://orcid.org/0000-0003-1734-6238 Contributes to SDGs AGROVOC Keywords transformation ; governance ; sustainability ; innovation ; aquaculture ; systemic approaches ; environmental impact-environmental effects Subjects FARMING SYSTEMS ; GOVERNANCE ; SUSTAINABILITY ; VALUE CHAINS Organizations Affiliated to the Authors Center for Life Ethics ; Leibniz Centre for Tropical Marine Research (ZMT) ; Constructor University ; Leiden University ; Wageningen University & Research ; American University ; Aalborg University ; International Center for Tropical Agriculture ; Florida State University ; The Nature Conservancy Aotearoa New Zealand ; University of Ottawa ; University of Maine ; Stockholm University ; Royal Swedish Academy of Sciences ; International Centre of Excellence for Aquatic Animal Health, Centre for Environment Fisheries and Aquaculture Science (CEFAS) ; Alfred-Wegener-Institute Helmholtz Center for Polar and Marine, Research (AWI) ; Qingdao Agricultural University ; The University of Melbourne ; University of Stirling ; Southeast Asian Fisheries Development Center ; International Institute of Tropical Agriculture ; Virginia Institute of Marine Sciences (VIMS) ; University of Tasmania ; Pontificia Universidad Católica de Chile ; Instituto Milenio en Socio-Ecología Costera Investors/sponsors Federal Ministry of Education and Research CGIAR Action Areas Systems Transformation CGIAR Impact Areas Nutrition, health and food security Collections Alliance Bioversity CIAT Journal Articles Alliance Research Lever 1: Food Environment and Consumer Behavior IITA Journal Articles DSpace software copyright © 2002-2024 LYRASIS About Cookie settings Privacy policy Send Feedback ","2556"
+"6461","CLIMATE_CHANGE_PROMPT","# **You are an AI assistant tasked with evaluating research results from CGIAR (Consultative Group on International Agricultural Research) to determine whether they align with and contribute to CGIAR's objectives in addressing climate change. Your goal is to accurately assign an impact area tag that reflects the relevance and impact of the research on these specific climate change objectives.**
+
+### **Context:**
+CGIAR is a global partnership that unites international organizations focused on research for food security. CGIAR has established specific objectives to combat climate change by promoting climate mitigation, adaptation, and policy initiatives, particularly within the agriculture, forestry, and food systems sectors. The research results you will analyze originate from various CGIAR initiatives and projects in these and related fields.
+
+### **Research Result Components:**
+Each research result includes the following details:
+- **Title:** A brief title summarizing the research result.
+- **Description:** A detailed description of the research result, including methods and findings.
+- **Research Abstract:** A summary of key findings and implications (optional).
+- **Research Parsed Text:** The parsed text of the research result (optional).
+
+### **Tagging Criteria:**
+Assign a climate change impact tag using the following criteria:
+
+- **0 = Not Targeted:** 
+  - The research does not address or contribute to CGIAR's climate change objectives, such as mitigation, adaptation, or policy.
+  - The research is unrelated to climate change, focusing instead on different topics with no significant implications for climate-related outcomes.
+  - Example: A study focused solely on agricultural yield improvement without considering its impact on climate change.
+
+- **1 = Significant:** 
+  - The research makes a meaningful contribution to CGIAR’s climate change objectives, but these are not the primary focus.
+  - The research is relevant and provides insights into climate change, but these are secondary to other goals.
+  - Example: A study that explores the impact of agricultural practices on crop resilience, indirectly supporting climate adaptation.
+
+- **2 = Principal:** 
+  - The primary objective of the research is to address and directly impact CGIAR's goals in climate change mitigation, adaptation, or policy.
+  - The research would not have been undertaken without the intention to contribute to these specific climate change objectives.
+  - Example: A study specifically designed to develop sustainable farming practices aimed explicitly at reducing greenhouse gas emissions.
+
+### **Key Objectives Set by CGIAR:**
+- **Climate Mitigation:** Transforming agriculture and forest systems into a net carbon sink by 2050.
+- **Climate Adaptation:** Equipping small-scale producers to be more resilient to climate impacts by 2030.
+- **Climate Policy:** Supporting countries in implementing National Adaptation Plans (NAPs) and Nationally Determined Contributions (NDCs), and increasing ambition in climate actions by 2030.
+
+### **Instructions:**
+1. **Analyze the Title and Abstract:** Determine whether the research is related to CGIAR's objectives in climate change by looking for relevant keywords or phrases, such as “mitigation,” “adaptation,” “resilience,” or “climate policy.”
+2. **Review the Description and Parsed Text:** Assess whether the research directly contributes to CGIAR’s climate change objectives, and how integral these objectives are to the overall study.
+3. **Assign the Tag:** Based on the criteria provided, assign the most appropriate tag (0, 1, or 2) that reflects whether the research is related to and impacts CGIAR’s objectives in climate change.
+4. **Provide a Brief Justification:** Explain why you assigned this tag, referencing specific aspects of the research that influenced your decision. Make sure to clarify how the research aligns (or does not align) with CGIAR’s climate change objectives.
+
+### **Important Notes:**
+- If the research does not relate to CGIAR's objectives in climate change, assign a tag of **0** (Not Targeted).
+- If the research mentions climate change as an important consideration but not the primary focus, assign a tag of **1** (Significant).
+- If climate change mitigation, adaptation, or policy is the primary objective of the research, assign a tag of **2** (Principal).
+- When assigning a tag of **2**, ensure that the evidence clearly demonstrates that climate change objectives were the main goals of the research and fundamental to its design.
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+{ ""score"": <0|1|2>, ""explanation"": ""<Your explanation here>"" }
+
+
+### **Now, analyze the following research result and assign a climate change tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in addressing climate change.**
+
+**Text to Analyze:**
+[INPUT_TEXT]","o3-mini","Climate","Aquaculture governance: five engagement arenas for sustainability transformation A greater focus on governance is needed to facilitate effective and substantive progress toward sustainability transformations in the aquaculture sector. Concerted governance efforts can help move the sector beyond fragmented technical questions associated with intensification and expansion, social and environmental impacts, and toward system-based approaches that address interconnected sustainability issues. Through a review and expert-elicitation process, we identify five engagement arenas to advance a governance agenda for aquaculture sustainability transformation: (1) setting sustainability transformation goals, (2) cross-sectoral linkages, (3) land–water–sea connectivity, (4) knowledge and innovation, and (5) value chains. We then outline the roles different actors and modes of governance can play in fostering sustainability transformations, and discuss action items for researchers, practitioners, and policymakers to operationalize activities within their engagement arenas. Aquaculture governance: five engagement arenas for sustainability transformation Skip to main content Dear CGSpace users, we have performed some minor upgrades to the user interface. If it does not look right you should refresh the page while holding the Shift key. Communities & Collections Browse Navigate CGIAR Centers Statistics English Català Čeština Deutsch Español Français Gàidhlig Italiano Latviešu Magyar Nederlands Polski Português Português do Brasil Srpski (lat) Suomi Svenska Türkçe Tiếng Việt Қазақ বাংলা हिंदी Ελληνικά Српски Yкраї́нська Log In Note: CGIAR users should log in with their Active Directory username and password. For example, if your email is j.smith@cgiar.org, you would use jsmith here. Log in New user? Click here to register. Have you forgotten your password? Home CGIAR research centers Alliance of Bioversity International and CIAT Alliance Bioversity CIAT Journal Articles Aquaculture governance: five engagement arenas for sustainability transformation Aquaculture governance: five engagement arenas for sustainability transformation Loading... Files journal article.pdf (2.76 MB) Authors Partelow, Stefan Asif, Furqan Troell, Max Stoll, Joshua Stentiford, Grant D. Salayo, Nerissa D. Pin, Nie Paramita, Adiska O. Mizuta, Darien D. Marschke, Melissa J. Show 10 more Date Issued 2023-12-01 Date Online 2023-12-01 Language en Type Journal Article Review Status Peer Review Access Rights Open Access Usage Rights Metadata Full item page Share Citation Partelow, S.; Asif, F.; Troell, M.; Stoll, J.; Stentiford, G.D.; Salayo, N.D.; Pin, N.; Paramita, A.O.; Mizuta, D.D.; Marschke, M.J.; Little, D.C.; Kühnhold, H.; Kunzmann, A.; Krause, G.; Jonell, M.; Johnson, T.R.; Glaser, M.; Gephart, J.A.; Gentry, R.; Gelcich, S.; Cottrell, R.S.; Cole, S.M.; Choudhury, A.; Chadag, V.M.; Schlüter, A.; Nagel, B.; Manlosa, A.O.; Bush, S.; Bene, C.; Turchini, G.M. (2023) Aquaculture governance: five engagement arenas for sustainability transformation. Current Opinion in Environmental Sustainability 65: 101379. ISSN: 1877-3435 Permanent link to cite or share this item https://hdl.handle.net/10568/132397 External link to download this item DOI https://doi.org/10.1016/j.cosust.2023.101379 Abstract/Description A greater focus on governance is needed to facilitate effective and substantive progress toward sustainability transformations in the aquaculture sector. Concerted governance efforts can help move the sector beyond fragmented technical questions associated with intensification and expansion, social and environmental impacts, and toward system-based approaches that address interconnected sustainability issues. Through a review and expert-elicitation process, we identify five engagement arenas to advance a governance agenda for aquaculture sustainability transformation: (1) setting sustainability transformation goals, (2) cross-sectoral linkages, (3) land–water–sea connectivity, (4) knowledge and innovation, and (5) value chains. We then outline the roles different actors and modes of governance can play in fostering sustainability transformations, and discuss action items for researchers, practitioners, and policymakers to operationalize activities within their engagement arenas. Author ORCID identifiers Stefan Partelow https://orcid.org/0000-0002-7751-4005 Christophe Béné https://orcid.org/0000-0002-7078-9241 Simon Bush https://orcid.org/0000-0002-6689-2246 Aisa Manlosa https://orcid.org/0000-0001-8058-412X Ben Nagel https://orcid.org/0000-0002-8227-2733 Jessica Gephart https://orcid.org/0000-0001-6836-9291 Furqan Asif https://orcid.org/0000-0002-6555-9791 Steven Cole https://orcid.org/0000-0002-8947-0871 Richard S. Cottrell https://orcid.org/0000-0002-6499-7503 stefan Gelcich https://orcid.org/0000-0002-5976-9311 Rebecca Gentry https://orcid.org/0000-0002-1739-6203 Malin Jonell https://orcid.org/0000-0002-1813-7684 Andreas Kunzmann https://orcid.org/0000-0002-9500-4332 Melissa Marschke https://orcid.org/0000-0003-1202-6681 Adiska Octa Paramita https://orcid.org/0000-0001-7164-5373 Joshua Stoll https://orcid.org/0000-0003-3967-6895 Afrina Choudhury https://orcid.org/0000-0003-1734-6238 Contributes to SDGs AGROVOC Keywords transformation ; governance ; sustainability ; innovation ; aquaculture ; systemic approaches ; environmental impact-environmental effects Subjects FARMING SYSTEMS ; GOVERNANCE ; SUSTAINABILITY ; VALUE CHAINS Organizations Affiliated to the Authors Center for Life Ethics ; Leibniz Centre for Tropical Marine Research (ZMT) ; Constructor University ; Leiden University ; Wageningen University & Research ; American University ; Aalborg University ; International Center for Tropical Agriculture ; Florida State University ; The Nature Conservancy Aotearoa New Zealand ; University of Ottawa ; University of Maine ; Stockholm University ; Royal Swedish Academy of Sciences ; International Centre of Excellence for Aquatic Animal Health, Centre for Environment Fisheries and Aquaculture Science (CEFAS) ; Alfred-Wegener-Institute Helmholtz Center for Polar and Marine, Research (AWI) ; Qingdao Agricultural University ; The University of Melbourne ; University of Stirling ; Southeast Asian Fisheries Development Center ; International Institute of Tropical Agriculture ; Virginia Institute of Marine Sciences (VIMS) ; University of Tasmania ; Pontificia Universidad Católica de Chile ; Instituto Milenio en Socio-Ecología Costera Investors/sponsors Federal Ministry of Education and Research CGIAR Action Areas Systems Transformation CGIAR Impact Areas Nutrition, health and food security Collections Alliance Bioversity CIAT Journal Articles Alliance Research Lever 1: Food Environment and Consumer Behavior IITA Journal Articles DSpace software copyright © 2002-2024 LYRASIS About Cookie settings Privacy policy Send Feedback ","2638"
+"6588","CLIMATE_CHANGE_PROMPT","# **You are an AI assistant tasked with evaluating research results from CGIAR (Consultative Group on International Agricultural Research) to determine whether they align with and contribute to CGIAR's objectives in addressing climate change. Your goal is to accurately assign an impact area tag that reflects the relevance and impact of the research on these specific climate change objectives.**
+
+### **Context:**
+CGIAR is a global partnership that unites international organizations focused on research for food security. CGIAR has established specific objectives to combat climate change by promoting climate mitigation, adaptation, and policy initiatives, particularly within the agriculture, forestry, and food systems sectors. The research results you will analyze originate from various CGIAR initiatives and projects in these and related fields.
+
+### **Research Result Components:**
+Each research result includes the following details:
+- **Title:** A brief title summarizing the research result.
+- **Description:** A detailed description of the research result, including methods and findings.
+- **Research Abstract:** A summary of key findings and implications (optional).
+- **Research Parsed Text:** The parsed text of the research result (optional).
+
+### **Tagging Criteria:**
+Assign a climate change impact tag using the following criteria:
+
+- **0 = Not Targeted:** 
+  - The research does not address or contribute to CGIAR's climate change objectives, such as mitigation, adaptation, or policy.
+  - The research is unrelated to climate change, focusing instead on different topics with no significant implications for climate-related outcomes.
+  - Example: A study focused solely on agricultural yield improvement without considering its impact on climate change.
+
+- **1 = Significant:** 
+  - The research makes a meaningful contribution to CGIAR’s climate change objectives, but these are not the primary focus.
+  - The research is relevant and provides insights into climate change, but these are secondary to other goals.
+  - Example: A study that explores the impact of agricultural practices on crop resilience, indirectly supporting climate adaptation.
+
+- **2 = Principal:** 
+  - The primary objective of the research is to address and directly impact CGIAR's goals in climate change mitigation, adaptation, or policy.
+  - The research would not have been undertaken without the intention to contribute to these specific climate change objectives.
+  - Example: A study specifically designed to develop sustainable farming practices aimed explicitly at reducing greenhouse gas emissions.
+
+### **Key Objectives Set by CGIAR:**
+- **Climate Mitigation:** Transforming agriculture and forest systems into a net carbon sink by 2050.
+- **Climate Adaptation:** Equipping small-scale producers to be more resilient to climate impacts by 2030.
+- **Climate Policy:** Supporting countries in implementing National Adaptation Plans (NAPs) and Nationally Determined Contributions (NDCs), and increasing ambition in climate actions by 2030.
+
+### **Instructions:**
+1. **Analyze the Title and Abstract:** Determine whether the research is related to CGIAR's objectives in climate change by looking for relevant keywords or phrases, such as “mitigation,” “adaptation,” “resilience,” or “climate policy.”
+2. **Review the Description and Parsed Text:** Assess whether the research directly contributes to CGIAR’s climate change objectives, and how integral these objectives are to the overall study.
+3. **Assign the Tag:** Based on the criteria provided, assign the most appropriate tag (0, 1, or 2) that reflects whether the research is related to and impacts CGIAR’s objectives in climate change.
+4. **Provide a Brief Justification:** Explain why you assigned this tag, referencing specific aspects of the research that influenced your decision. Make sure to clarify how the research aligns (or does not align) with CGIAR’s climate change objectives.
+
+### **Important Notes:**
+- If the research does not relate to CGIAR's objectives in climate change, assign a tag of **0** (Not Targeted).
+- If the research mentions climate change as an important consideration but not the primary focus, assign a tag of **1** (Significant).
+- If climate change mitigation, adaptation, or policy is the primary objective of the research, assign a tag of **2** (Principal).
+- When assigning a tag of **2**, ensure that the evidence clearly demonstrates that climate change objectives were the main goals of the research and fundamental to its design.
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+{ ""score"": <0|1|2>, ""explanation"": ""<Your explanation here>"" }
+
+
+### **Now, analyze the following research result and assign a climate change tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in addressing climate change.**
+
+**Text to Analyze:**
+[INPUT_TEXT]","gpt-4o-mini","Climate","Influence of altitude as a proxy for temperature on key Musa pests and diseases in watershed areas of Burundi and Rwanda Pests and diseases are key biotic constraints limiting banana production among smallholder farmers in Eastern and Central Africa. Climate changemay favour pest and disease development and further exacerbate the vulnerability of smallholder farming systems to biotic constraints. Information on effects of climate change on pests and pathogens of banana is required by policy
+makers and researchers in designing control strategies and adaptation plans. Since altitude is inversely related to temperature, this study used the occurrence of key banana pests and diseases along an altitude gradient as a proxy for the potential impact of changes in temperature associated with global warming on pests and diseases. We assessed the occurrence of banana pests and diseases in 93 banana fields across three altitude ranges in Burundi and 99 fields distributed in two altitude ranges in Rwanda watersheds. Incidence and prevalence of Banana Bunchy Top Disease (BBTD) and Fusarium wilt (FW) was significantly associated with temperature and altitude in Burundi, revealing that increasing temperatures may lead to upward movement of banana diseases. No significant associations with temperature and altitude were observed for weevils,
+nematodes and Xanthomonas wilt of banana (BXW). Data collected in this study provides a baseline to verify and guide modelling work to predict future pest and disease distribution according to climate change scenarios. Such information is useful in informing policy makers and designing appropriate management strategies. Influence of altitude as a proxy for temperature on key Musa pests and diseases in watershed areas of Burundi and Rwanda Skip to main content Dear CGSpace users, we have performed some minor upgrades to the user interface. If it does not look right you should refresh the page while holding the Shift key. Communities & Collections Browse Navigate CGIAR Centers Statistics English Català Čeština Deutsch Español Français Gàidhlig Italiano Latviešu Magyar Nederlands Polski Português Português do Brasil Srpski (lat) Suomi Svenska Türkçe Tiếng Việt Қазақ বাংলা हिंदी Ελληνικά Српски Yкраї́нська Log In Note: CGIAR users should log in with their Active Directory username and password. For example, if your email is j.smith@cgiar.org, you would use jsmith here. Log in New user? Click here to register. Have you forgotten your password? Home CGIAR research centers Alliance of Bioversity International and CIAT Alliance Bioversity CIAT Journal Articles Influence of altitude as a proxy for temperature on key Musa pests and diseases in watershed areas of Burundi and Rwanda Influence of altitude as a proxy for temperature on key Musa pests and diseases in watershed areas of Burundi and Rwanda Loading... Files journal article.pdf (7.3 MB) Authors Nakato, Gloria Valentine Okonya, Joshua Sikhu Kantungeko, Deo Ocimati, Walter Mahuku, George Legg, James P. Blomme, Guy Date Issued 2023-03 Date Online 2023-02-18 Language en Type Journal Article Review Status Peer Review Access Rights Open Access Usage Rights Metadata Full item page Share Citation Nakato, G. V., Okonya, J. S., Kantungeko, D., Ocimati, W., Mahuku, G., Legg, J. P., Blomme, G. (2023). Influence of altitude as a proxy for temperature on key Musa pests and diseases in watershed areas of Burundi and Rwanda. Heliyon 9(3): e13854. ISSN: 2405-8440 Permanent link to cite or share this item https://hdl.handle.net/10568/129114 External link to download this item DOI https://doi.org/10.1016/j.heliyon.2023.e13854 Abstract/Description Pests and diseases are key biotic constraints limiting banana production among smallholder farmers in Eastern and Central Africa. Climate changemay favour pest and disease development and further exacerbate the vulnerability of smallholder farming systems to biotic constraints. Information on effects of climate change on pests and pathogens of banana is required by policy makers and researchers in designing control strategies and adaptation plans. Since altitude is inversely related to temperature, this study used the occurrence of key banana pests and diseases along an altitude gradient as a proxy for the potential impact of changes in temperature associated with global warming on pests and diseases. We assessed the occurrence of banana pests and diseases in 93 banana fields across three altitude ranges in Burundi and 99 fields distributed in two altitude ranges in Rwanda watersheds. Incidence and prevalence of Banana Bunchy Top Disease (BBTD) and Fusarium wilt (FW) was significantly associated with temperature and altitude in Burundi, revealing that increasing temperatures may lead to upward movement of banana diseases. No significant associations with temperature and altitude were observed for weevils, nematodes and Xanthomonas wilt of banana (BXW). Data collected in this study provides a baseline to verify and guide modelling work to predict future pest and disease distribution according to climate change scenarios. Such information is useful in informing policy makers and designing appropriate management strategies. Author ORCID identifiers Walter Ocimati https://orcid.org/0000-0001-6177-7073 James Legg https://orcid.org/0000-0003-4140-3757 Guy Blomme https://orcid.org/0000-0002-3857-964X George Mahuku https://orcid.org/0000-0001-8444-8651 Gloria Valentine Nakato https://orcid.org/0000-0001-6139-1330 Joshua Okonya https://orcid.org/0000-0002-9874-5021 Contributes to SDGs AGROVOC Keywords banana bunchy top virus ; nematoda ; bananas ; curculionidae ; fusarium wilt ; global warming ; risk analysis ; nematodes ; weevils ; fusarium ; pests ; xanthomonas Subjects BANANA ; PESTS AND DISEASES ; AGRONOMY ; BANANA ; DISEASE CONTROL ; FOOD SECURITY ; PLANT BREEDING ; PLANT DISEASES ; PLANT HEALTH ; PLANT PRODUCTION Countries Burundi ; Rwanda Regions Africa ; Eastern Africa ; Sub-Saharan Africa Organizations Affiliated to the Authors International Institute of Tropical Agriculture ; International Potato Center ; Association for Strengthening Agricultural Research in Eastern and Central Africa ; Bioversity International Investors/sponsors CGIAR Trust Fund CGIAR Action Areas Resilient Agrifood Systems CGIAR Impact Areas Climate adaptation and mitigation ; Nutrition, health and food security CGIAR Initiatives Plant Health Collections Alliance Bioversity CIAT Journal Articles Alliance Research Lever 4: Biodiversity for Food and Agriculture CGIAR Initiative on Plant Health CIP Journal Articles IITA Journal Articles DSpace software copyright © 2002-2024 LYRASIS About Cookie settings Privacy policy Send Feedback ","2374"
+"6588","CLIMATE_CHANGE_PROMPT","# **You are an AI assistant tasked with evaluating research results from CGIAR (Consultative Group on International Agricultural Research) to determine whether they align with and contribute to CGIAR's objectives in addressing climate change. Your goal is to accurately assign an impact area tag that reflects the relevance and impact of the research on these specific climate change objectives.**
+
+### **Context:**
+CGIAR is a global partnership that unites international organizations focused on research for food security. CGIAR has established specific objectives to combat climate change by promoting climate mitigation, adaptation, and policy initiatives, particularly within the agriculture, forestry, and food systems sectors. The research results you will analyze originate from various CGIAR initiatives and projects in these and related fields.
+
+### **Research Result Components:**
+Each research result includes the following details:
+- **Title:** A brief title summarizing the research result.
+- **Description:** A detailed description of the research result, including methods and findings.
+- **Research Abstract:** A summary of key findings and implications (optional).
+- **Research Parsed Text:** The parsed text of the research result (optional).
+
+### **Tagging Criteria:**
+Assign a climate change impact tag using the following criteria:
+
+- **0 = Not Targeted:** 
+  - The research does not address or contribute to CGIAR's climate change objectives, such as mitigation, adaptation, or policy.
+  - The research is unrelated to climate change, focusing instead on different topics with no significant implications for climate-related outcomes.
+  - Example: A study focused solely on agricultural yield improvement without considering its impact on climate change.
+
+- **1 = Significant:** 
+  - The research makes a meaningful contribution to CGIAR’s climate change objectives, but these are not the primary focus.
+  - The research is relevant and provides insights into climate change, but these are secondary to other goals.
+  - Example: A study that explores the impact of agricultural practices on crop resilience, indirectly supporting climate adaptation.
+
+- **2 = Principal:** 
+  - The primary objective of the research is to address and directly impact CGIAR's goals in climate change mitigation, adaptation, or policy.
+  - The research would not have been undertaken without the intention to contribute to these specific climate change objectives.
+  - Example: A study specifically designed to develop sustainable farming practices aimed explicitly at reducing greenhouse gas emissions.
+
+### **Key Objectives Set by CGIAR:**
+- **Climate Mitigation:** Transforming agriculture and forest systems into a net carbon sink by 2050.
+- **Climate Adaptation:** Equipping small-scale producers to be more resilient to climate impacts by 2030.
+- **Climate Policy:** Supporting countries in implementing National Adaptation Plans (NAPs) and Nationally Determined Contributions (NDCs), and increasing ambition in climate actions by 2030.
+
+### **Instructions:**
+1. **Analyze the Title and Abstract:** Determine whether the research is related to CGIAR's objectives in climate change by looking for relevant keywords or phrases, such as “mitigation,” “adaptation,” “resilience,” or “climate policy.”
+2. **Review the Description and Parsed Text:** Assess whether the research directly contributes to CGIAR’s climate change objectives, and how integral these objectives are to the overall study.
+3. **Assign the Tag:** Based on the criteria provided, assign the most appropriate tag (0, 1, or 2) that reflects whether the research is related to and impacts CGIAR’s objectives in climate change.
+4. **Provide a Brief Justification:** Explain why you assigned this tag, referencing specific aspects of the research that influenced your decision. Make sure to clarify how the research aligns (or does not align) with CGIAR’s climate change objectives.
+
+### **Important Notes:**
+- If the research does not relate to CGIAR's objectives in climate change, assign a tag of **0** (Not Targeted).
+- If the research mentions climate change as an important consideration but not the primary focus, assign a tag of **1** (Significant).
+- If climate change mitigation, adaptation, or policy is the primary objective of the research, assign a tag of **2** (Principal).
+- When assigning a tag of **2**, ensure that the evidence clearly demonstrates that climate change objectives were the main goals of the research and fundamental to its design.
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+{ ""score"": <0|1|2>, ""explanation"": ""<Your explanation here>"" }
+
+
+### **Now, analyze the following research result and assign a climate change tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in addressing climate change.**
+
+**Text to Analyze:**
+[INPUT_TEXT]","o3-mini","Climate","Influence of altitude as a proxy for temperature on key Musa pests and diseases in watershed areas of Burundi and Rwanda Pests and diseases are key biotic constraints limiting banana production among smallholder farmers in Eastern and Central Africa. Climate changemay favour pest and disease development and further exacerbate the vulnerability of smallholder farming systems to biotic constraints. Information on effects of climate change on pests and pathogens of banana is required by policy
+makers and researchers in designing control strategies and adaptation plans. Since altitude is inversely related to temperature, this study used the occurrence of key banana pests and diseases along an altitude gradient as a proxy for the potential impact of changes in temperature associated with global warming on pests and diseases. We assessed the occurrence of banana pests and diseases in 93 banana fields across three altitude ranges in Burundi and 99 fields distributed in two altitude ranges in Rwanda watersheds. Incidence and prevalence of Banana Bunchy Top Disease (BBTD) and Fusarium wilt (FW) was significantly associated with temperature and altitude in Burundi, revealing that increasing temperatures may lead to upward movement of banana diseases. No significant associations with temperature and altitude were observed for weevils,
+nematodes and Xanthomonas wilt of banana (BXW). Data collected in this study provides a baseline to verify and guide modelling work to predict future pest and disease distribution according to climate change scenarios. Such information is useful in informing policy makers and designing appropriate management strategies. Influence of altitude as a proxy for temperature on key Musa pests and diseases in watershed areas of Burundi and Rwanda Skip to main content Dear CGSpace users, we have performed some minor upgrades to the user interface. If it does not look right you should refresh the page while holding the Shift key. Communities & Collections Browse Navigate CGIAR Centers Statistics English Català Čeština Deutsch Español Français Gàidhlig Italiano Latviešu Magyar Nederlands Polski Português Português do Brasil Srpski (lat) Suomi Svenska Türkçe Tiếng Việt Қазақ বাংলা हिंदी Ελληνικά Српски Yкраї́нська Log In Note: CGIAR users should log in with their Active Directory username and password. For example, if your email is j.smith@cgiar.org, you would use jsmith here. Log in New user? Click here to register. Have you forgotten your password? Home CGIAR research centers Alliance of Bioversity International and CIAT Alliance Bioversity CIAT Journal Articles Influence of altitude as a proxy for temperature on key Musa pests and diseases in watershed areas of Burundi and Rwanda Influence of altitude as a proxy for temperature on key Musa pests and diseases in watershed areas of Burundi and Rwanda Loading... Files journal article.pdf (7.3 MB) Authors Nakato, Gloria Valentine Okonya, Joshua Sikhu Kantungeko, Deo Ocimati, Walter Mahuku, George Legg, James P. Blomme, Guy Date Issued 2023-03 Date Online 2023-02-18 Language en Type Journal Article Review Status Peer Review Access Rights Open Access Usage Rights Metadata Full item page Share Citation Nakato, G. V., Okonya, J. S., Kantungeko, D., Ocimati, W., Mahuku, G., Legg, J. P., Blomme, G. (2023). Influence of altitude as a proxy for temperature on key Musa pests and diseases in watershed areas of Burundi and Rwanda. Heliyon 9(3): e13854. ISSN: 2405-8440 Permanent link to cite or share this item https://hdl.handle.net/10568/129114 External link to download this item DOI https://doi.org/10.1016/j.heliyon.2023.e13854 Abstract/Description Pests and diseases are key biotic constraints limiting banana production among smallholder farmers in Eastern and Central Africa. Climate changemay favour pest and disease development and further exacerbate the vulnerability of smallholder farming systems to biotic constraints. Information on effects of climate change on pests and pathogens of banana is required by policy makers and researchers in designing control strategies and adaptation plans. Since altitude is inversely related to temperature, this study used the occurrence of key banana pests and diseases along an altitude gradient as a proxy for the potential impact of changes in temperature associated with global warming on pests and diseases. We assessed the occurrence of banana pests and diseases in 93 banana fields across three altitude ranges in Burundi and 99 fields distributed in two altitude ranges in Rwanda watersheds. Incidence and prevalence of Banana Bunchy Top Disease (BBTD) and Fusarium wilt (FW) was significantly associated with temperature and altitude in Burundi, revealing that increasing temperatures may lead to upward movement of banana diseases. No significant associations with temperature and altitude were observed for weevils, nematodes and Xanthomonas wilt of banana (BXW). Data collected in this study provides a baseline to verify and guide modelling work to predict future pest and disease distribution according to climate change scenarios. Such information is useful in informing policy makers and designing appropriate management strategies. Author ORCID identifiers Walter Ocimati https://orcid.org/0000-0001-6177-7073 James Legg https://orcid.org/0000-0003-4140-3757 Guy Blomme https://orcid.org/0000-0002-3857-964X George Mahuku https://orcid.org/0000-0001-8444-8651 Gloria Valentine Nakato https://orcid.org/0000-0001-6139-1330 Joshua Okonya https://orcid.org/0000-0002-9874-5021 Contributes to SDGs AGROVOC Keywords banana bunchy top virus ; nematoda ; bananas ; curculionidae ; fusarium wilt ; global warming ; risk analysis ; nematodes ; weevils ; fusarium ; pests ; xanthomonas Subjects BANANA ; PESTS AND DISEASES ; AGRONOMY ; BANANA ; DISEASE CONTROL ; FOOD SECURITY ; PLANT BREEDING ; PLANT DISEASES ; PLANT HEALTH ; PLANT PRODUCTION Countries Burundi ; Rwanda Regions Africa ; Eastern Africa ; Sub-Saharan Africa Organizations Affiliated to the Authors International Institute of Tropical Agriculture ; International Potato Center ; Association for Strengthening Agricultural Research in Eastern and Central Africa ; Bioversity International Investors/sponsors CGIAR Trust Fund CGIAR Action Areas Resilient Agrifood Systems CGIAR Impact Areas Climate adaptation and mitigation ; Nutrition, health and food security CGIAR Initiatives Plant Health Collections Alliance Bioversity CIAT Journal Articles Alliance Research Lever 4: Biodiversity for Food and Agriculture CGIAR Initiative on Plant Health CIP Journal Articles IITA Journal Articles DSpace software copyright © 2002-2024 LYRASIS About Cookie settings Privacy policy Send Feedback ","2462"
