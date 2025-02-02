@@ -1,0 +1,1336 @@
+"result_code","prompt_id","prompt_text","model_name","impact_area","input_text","token_count"
+"37","GENDER_EQUALITY_PROMPT","# **You are an AI assistant tasked with evaluating research results from CGIAR (Consultative Group on International Agricultural Research) to determine whether they align with and contribute to CGIAR's objectives in promoting gender equality. Your goal is to accurately assign an impact area tag that reflects the relevance and impact of the research on these specific gender equality objectives.**
+
+### **Context:**
+CGIAR is a global partnership that unites international organizations focused on research for food security. CGIAR has established specific objectives to promote gender equality, particularly in the fields of agriculture, forestry, fisheries, climate, and nutrition in developing countries. The research results you will analyze originate from various CGIAR initiatives and projects in these and related fields.
+
+### **Research Result Components:**
+Each research result includes the following details:
+- **Title:** A brief title summarizing the research result.
+- **Description:** A detailed description of the research result, including methods and findings.
+- **Research Abstract:** A summary of key findings and implications (optional).
+- **Research Parsed Text:** The parsed text of the research result (optional).
+
+### **Tagging Criteria:**
+Assign a gender equality impact tag using the following criteria:
+
+- **0 = Not Targeted:** 
+  - The research does not address or contribute to CGIAR's gender equality objectives.
+  - The research is unrelated to gender equality, focusing instead on different topics with no significant implications for gender-related issues.
+  - Example: A study focused solely on crop yield improvements without considering gender roles, implications, or disparities.
+
+- **1 = Significant:**
+  - The research makes a meaningful contribution to CGIAR’s gender equality objectives, but these are not the primary focus.
+  - The research is relevant and provides insights into gender dynamics, but these are secondary to other goals.
+  - Example: A study that examines the impact of agricultural interventions on women’s access to land but does not center its entire analysis on gender equality.
+
+- **2 = Principal:**
+  - The primary objective of the research is to address and directly impact CGIAR's goals in promoting gender equality.
+  - The research would not have been undertaken without the intention to contribute to these specific gender equality objectives.
+  - Example: A study specifically designed to develop agricultural policies aimed at improving women’s access to financial resources and closing gender gaps.
+
+### **Key Objectives Set by CGIAR:**
+- **Closing the Gender Gap:** Addressing disparities in rights to economic resources, ownership, and control over land and natural resources for women in food, land, and water systems.
+- **Providing Opportunities:** Creating opportunities for young people who are not in employment, education, or training, with a focus on gender inclusivity.
+
+### **Instructions:**
+1. **Analyze the Title and Abstract:** Determine whether the research is related to CGIAR's objectives in promoting gender equality by looking for relevant keywords or phrases, such as “gender,” “women,” “equality,” or “empowerment.”
+2. **Review the Description and Parsed Text:** Assess whether the research directly contributes to CGIAR’s gender equality objectives, and how integral these objectives are to the overall study.
+3. **Assign the Tag:** Based on the criteria provided, assign the most appropriate tag (0, 1, or 2) that reflects whether the research is related to and impacts CGIAR’s objectives in gender equality.
+4. **Provide a Brief Justification:** Explain why you assigned this tag, referencing specific aspects of the research that influenced your decision. Make sure to clarify how the research aligns (or does not align) with CGIAR’s gender equality objectives.
+
+### **Important Notes:**
+- If the research does not relate to CGIAR's objectives in gender equality, assign a tag of **0** (Not Targeted).
+- If the research mentions gender equality as an important consideration but not the primary focus, assign a tag of **1** (Significant).
+- If gender equality is the primary objective of the research, assign a tag of **2** (Principal).
+- When assigning a tag of **2**, ensure that the evidence clearly demonstrates that gender equality objectives were the main goals of the research and fundamental to its design.
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+{ ""score"": <0|1|2>, ""explanation"": ""<Your explanation here>"" }
+
+
+### **Now, analyze the following research result and assign a gender equality tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in promoting gender equality.**
+
+**Text to Analyze:**
+[INPUT_TEXT]","gpt-4o-mini","Gender","Bean breeding networks in Africa accelerate genetic gains for drought- and heat-resilient, biofortified varieties including bush and climbing beans, meeting farmer and seed company demands in diverse markets Common beans are an important staple food for more than 200 million Africans, providing an affordable source of proteins, complex carbohydrates and valuable micronutrients. They improve soil fertility and are a significant source of income. In collaboration with the Pan Africa Bean Research Alliance (PABRA) and farmers, CIAT and national bean breeding efforts seek to develop improved and marketable bush and climbing bean varieties, including biofortified varieties and niche market varieties. Past progress in resistance to bean diseases and tolerance to drought is being extended to edaphic constraints and adaptation to high temperatures.  Breeding is a cyclical process that adjusts to feedback from farmers, seed companies and end-users. Breeding cycle time at CIAT is between 12 and 24 months. During 2023, partners in 16 African countries tested 272 lines from local breeding programs and CIAT. Seventeen Tanzanian varieties were tested with 1682 farmers.                                                                                                                                                                                                                                                                                                    Worksheet Descriptions  Unnamed: 1               Unnamed: 2                                                                                                                                                                    Unnamed: 3                                                                                                                                                                                Unnamed: 4
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                             PRMS Results and IA  coding         NaN   Evidence for IA coding                                                                                                                                                    Starting Rows 1, describes Method used to systematically link Breeding Pipelines employed, Target Product Profiles pursued, and Variety Releases achieved by ALL Genetic Innovation Breeding Efforts to Impact Areas
+                                                                                                                                                                                                                                                                                                                     NaN         NaN   Evidence for IA coding                                                                                                                                                   Starting Rows 11, describes                                                                                          Standardized matrix of traits, value propositions and Impact Area tagging for genetic innovation
+                                                                                                                                                                                                                                                                                                                     NaN         NaN   Evidence for IA coding                                                                                                                                                   Starting Rows 45, describes                                                            Standardized Impact Area tagging for Genetic Innovation Breeding Pipelines and Variety Releases and their link to PRMS results
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                           IRL Standardization Germplasm         NaN  Evidence for IRL coding                                  Links Germplasm Stages, used in CGIAR Genetic Innovation, to Levels of CGIAR Innovation Readiness and Use, across all CGIAR Breeding Efforts                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                    Breeding Cycle times         NaN Evidence for cycle times                                                   Lists cycle times of breeding pipelines, based on a breeders' survey. This information is used in PRMS Results descriptions                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                     BPs >> PRMS Results         NaN    Part of the analytics                                                                                                                       Lists Breeding Pipelines and their link to PRMS Results                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                Value Propositions in BP         NaN    Part of the analytics                                                                                                         Lists Value propositions  and Trait requirement per Breeding Pipeline                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                           BP - TPP - MS         NaN    Part of the analytics  Links between Breeding Pipelines (BP), Target Product Profiles (TPP) and Market Segments (MS), across all of CGAIR breeding, downloaded from Breeding Portal 14 January 2024                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                         TPPs and Traits         NaN    Part of the analytics Links between Trait, Value Proposition, Breeding Pipelines (BP), Target Product Profiles (TPP) , across all of CGAIR breeding, downloaded from Breeding Portal 8 January 2024                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                              Variety 2023 releases > BP         NaN    Part of the analytics                                                                  Known variety releases in 2023, linked to Breeding Pipeline, downloaded from Breeding Portal 14 January 2023                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+    In collaboration with Market Intelligence, Impact Area and IRL coding are standardized across ALL CGIAR breeding efforts, with  improvements from year to year. The file provides methods and analysis. IA Worksheet ""PRMS Results and IA coding"", Rows 93-96 lists Impact Area codes, resulting from the analysis.          NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+Worksheet ""PRMS Results & IA Coding"" explains the method, developed with Market Intelligence, for standardized Impact Area tagging of CGIAR Breeding Pipelines. The proportion of Breeding Pipelines with Impact Area Tag 2 are shown in Row 33.  The analysis allows to conclude on the overall portfolio orientation.          NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN","2072"
+"869","GENDER_EQUALITY_PROMPT","# **You are an AI assistant tasked with evaluating research results from CGIAR (Consultative Group on International Agricultural Research) to determine whether they align with and contribute to CGIAR's objectives in promoting gender equality. Your goal is to accurately assign an impact area tag that reflects the relevance and impact of the research on these specific gender equality objectives.**
+
+### **Context:**
+CGIAR is a global partnership that unites international organizations focused on research for food security. CGIAR has established specific objectives to promote gender equality, particularly in the fields of agriculture, forestry, fisheries, climate, and nutrition in developing countries. The research results you will analyze originate from various CGIAR initiatives and projects in these and related fields.
+
+### **Research Result Components:**
+Each research result includes the following details:
+- **Title:** A brief title summarizing the research result.
+- **Description:** A detailed description of the research result, including methods and findings.
+- **Research Abstract:** A summary of key findings and implications (optional).
+- **Research Parsed Text:** The parsed text of the research result (optional).
+
+### **Tagging Criteria:**
+Assign a gender equality impact tag using the following criteria:
+
+- **0 = Not Targeted:** 
+  - The research does not address or contribute to CGIAR's gender equality objectives.
+  - The research is unrelated to gender equality, focusing instead on different topics with no significant implications for gender-related issues.
+  - Example: A study focused solely on crop yield improvements without considering gender roles, implications, or disparities.
+
+- **1 = Significant:**
+  - The research makes a meaningful contribution to CGIAR’s gender equality objectives, but these are not the primary focus.
+  - The research is relevant and provides insights into gender dynamics, but these are secondary to other goals.
+  - Example: A study that examines the impact of agricultural interventions on women’s access to land but does not center its entire analysis on gender equality.
+
+- **2 = Principal:**
+  - The primary objective of the research is to address and directly impact CGIAR's goals in promoting gender equality.
+  - The research would not have been undertaken without the intention to contribute to these specific gender equality objectives.
+  - Example: A study specifically designed to develop agricultural policies aimed at improving women’s access to financial resources and closing gender gaps.
+
+### **Key Objectives Set by CGIAR:**
+- **Closing the Gender Gap:** Addressing disparities in rights to economic resources, ownership, and control over land and natural resources for women in food, land, and water systems.
+- **Providing Opportunities:** Creating opportunities for young people who are not in employment, education, or training, with a focus on gender inclusivity.
+
+### **Instructions:**
+1. **Analyze the Title and Abstract:** Determine whether the research is related to CGIAR's objectives in promoting gender equality by looking for relevant keywords or phrases, such as “gender,” “women,” “equality,” or “empowerment.”
+2. **Review the Description and Parsed Text:** Assess whether the research directly contributes to CGIAR’s gender equality objectives, and how integral these objectives are to the overall study.
+3. **Assign the Tag:** Based on the criteria provided, assign the most appropriate tag (0, 1, or 2) that reflects whether the research is related to and impacts CGIAR’s objectives in gender equality.
+4. **Provide a Brief Justification:** Explain why you assigned this tag, referencing specific aspects of the research that influenced your decision. Make sure to clarify how the research aligns (or does not align) with CGIAR’s gender equality objectives.
+
+### **Important Notes:**
+- If the research does not relate to CGIAR's objectives in gender equality, assign a tag of **0** (Not Targeted).
+- If the research mentions gender equality as an important consideration but not the primary focus, assign a tag of **1** (Significant).
+- If gender equality is the primary objective of the research, assign a tag of **2** (Principal).
+- When assigning a tag of **2**, ensure that the evidence clearly demonstrates that gender equality objectives were the main goals of the research and fundamental to its design.
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+{ ""score"": <0|1|2>, ""explanation"": ""<Your explanation here>"" }
+
+
+### **Now, analyze the following research result and assign a gender equality tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in promoting gender equality.**
+
+**Text to Analyze:**
+[INPUT_TEXT]","gpt-4o-mini","Gender","GenderUp for scaling: A method that supports innovation teams in gender responsible scaling GenderUp is a conversation-based method that supports projects and research teams in scaling agricultural innovations responsibly and socially inclusive. By making users think through the scaling process, the actual impacts for different social groups (positive and negative) and anticipate unintended consequences, GenderUp strengthens users’ capacity to scale agricultural innovations and achieve desired impacts. Anticipating gender impacts in scaling innovations for agriculture: Insights from the literature Skip to main content Dear CGSpace users, we have performed some minor upgrades to the user interface. If it does not look right you should refresh the page while holding the Shift key. Communities & Collections Browse Navigate CGIAR Centers Statistics English Català Čeština Deutsch Español Français Gàidhlig Italiano Latviešu Magyar Nederlands Polski Português Português do Brasil Srpski (lat) Suomi Svenska Türkçe Tiếng Việt Қазақ বাংলা हिंदी Ελληνικά Српски Yкраї́нська Log In Note: CGIAR users should log in with their Active Directory username and password. For example, if your email is j.smith@cgiar.org, you would use jsmith here. Log in New user? Click here to register. Have you forgotten your password? Home CGIAR research centers Alliance of Bioversity International and CIAT Alliance Bioversity CIAT Journal Articles Anticipating gender impacts in scaling innovations for agriculture: Insights from the literature Anticipating gender impacts in scaling innovations for agriculture: Insights from the literature Loading... Files Anticipating_McGuire_2022.pdf (677.62 KB) Authors McGuire, Erin Rietveld, Anne M. Crump, Amanda Leeuwis, Cees Date Issued 2022-03 Date Online Language en Type Journal Article Review Status Peer Review Access Rights Open Access Usage Rights Metadata Full item page Share Citation McGuire, E.; Rietveld, A.M.; Crump, A.; Leeuwis, C. (2022) Anticipating gender impacts in scaling innovations for agriculture: Insights from the literature. World Development Perspectives 25: 100386. 10 p. ISSN: 2452-2929 Permanent link to cite or share this item https://hdl.handle.net/10568/118207 External link to download this item DOI https://doi.org/10.1016/j.wdp.2021.100386 Abstract/Description Of the world’s 570 million farmers, 72% work on two hectares or less, and women’s labor comprises at least 50% (FAO, 2014). Small farms are responsible for 80% of world food production, making them key to addressing looming global food shortages (Lowder et al., 2016). Small farms in developing countries navigate a myriad of challenges, including access to information, quality inputs, capital, markets, and among others, land (FAO, 2014). These challenges can be exacerbated for women and other marginalized groups of people due to social normatives within their communities (Petesch, Badstue, & Prain, 2018; Polar et al., 2017; Rola‐Rubzen et al., 2020). Inclusive innovation to address agriculture productivity and loss gaps is tantamount to equitable global food security (FAO, 2014; FAO, 2011). However, many innovations still fail to help stimulate disruption in gender or social inequities, and some even do additional harm. Increasing use of an innovation, referred to as ‘scaling,' is critical to impact at a community or regional level, and is often seen as necessary to support Agriculture Research for Development (AR4D) outcomes (Sartas et al., 2020). Several scaling support tools and methodologies have been developed to assist researchers and practitioners in scaling processes. However, little practical attention has been given to the specific cross-section of gender and relevant diversity within scaling tools and methodologies. This narrative literature review begins to address this by answering: 1) What are unique gender considerations when scaling agricultural innovations?; and 2) What are appropriate methods and approaches for collecting data on these unique gender considerations? Our review finds six points of attention to reflect upon unique gender considerations when innovating and scaling innovation: i) Comprising research and project teams, ii) Designing agricultural innovations, iii) Communicating and extension of innovation, iv) Choosing scale models: entrepreneurship and business development, v) Reinventing and changing technology, and vi) Engaging with the political economy of innovation. Methods to collect necessary data to accurately reflect on these considerations and avoid unintended negative consequences for more gender responsible scaling are also presented. Finally, the literature review is situated in a perspective that more attention should be given to agricultural innovation and scaling support tools and methodologies to address gender or socially marginalized groups. Author ORCID identifiers Anne Rietveld https://orcid.org/0000-0002-9400-9473 Contributes to SDGs AGROVOC Keywords gender equality ; appropriate technology ; innovation systems ; data collection ; literature reviews ; igualdad de género ; tecnología apropiada ; sistemas de innovación Subjects AGRICULTURE ; EXTENSION ; GENDER AND EQUITY Organizations Affiliated to the Authors Bioversity International ; University of California ; Wageningen University & Research Investors/sponsors CGIAR Trust Fund CGIAR Impact Areas Gender equality, youth and social inclusion ; Poverty reduction, livelihoods and jobs CGIAR Initiatives Low-Emission Food Systems Collections Alliance Bioversity CIAT Journal Articles Alliance Research Lever 4: Biodiversity for Food and Agriculture Alliance Research Lever 7: Gender and Inclusion CGIAR Initiative on Low-Emission Food Systems DSpace software copyright © 2002-2024 LYRASIS About Cookie settings Privacy policy Send Feedback ","2125"
+"1020","GENDER_EQUALITY_PROMPT","# **You are an AI assistant tasked with evaluating research results from CGIAR (Consultative Group on International Agricultural Research) to determine whether they align with and contribute to CGIAR's objectives in promoting gender equality. Your goal is to accurately assign an impact area tag that reflects the relevance and impact of the research on these specific gender equality objectives.**
+
+### **Context:**
+CGIAR is a global partnership that unites international organizations focused on research for food security. CGIAR has established specific objectives to promote gender equality, particularly in the fields of agriculture, forestry, fisheries, climate, and nutrition in developing countries. The research results you will analyze originate from various CGIAR initiatives and projects in these and related fields.
+
+### **Research Result Components:**
+Each research result includes the following details:
+- **Title:** A brief title summarizing the research result.
+- **Description:** A detailed description of the research result, including methods and findings.
+- **Research Abstract:** A summary of key findings and implications (optional).
+- **Research Parsed Text:** The parsed text of the research result (optional).
+
+### **Tagging Criteria:**
+Assign a gender equality impact tag using the following criteria:
+
+- **0 = Not Targeted:** 
+  - The research does not address or contribute to CGIAR's gender equality objectives.
+  - The research is unrelated to gender equality, focusing instead on different topics with no significant implications for gender-related issues.
+  - Example: A study focused solely on crop yield improvements without considering gender roles, implications, or disparities.
+
+- **1 = Significant:**
+  - The research makes a meaningful contribution to CGIAR’s gender equality objectives, but these are not the primary focus.
+  - The research is relevant and provides insights into gender dynamics, but these are secondary to other goals.
+  - Example: A study that examines the impact of agricultural interventions on women’s access to land but does not center its entire analysis on gender equality.
+
+- **2 = Principal:**
+  - The primary objective of the research is to address and directly impact CGIAR's goals in promoting gender equality.
+  - The research would not have been undertaken without the intention to contribute to these specific gender equality objectives.
+  - Example: A study specifically designed to develop agricultural policies aimed at improving women’s access to financial resources and closing gender gaps.
+
+### **Key Objectives Set by CGIAR:**
+- **Closing the Gender Gap:** Addressing disparities in rights to economic resources, ownership, and control over land and natural resources for women in food, land, and water systems.
+- **Providing Opportunities:** Creating opportunities for young people who are not in employment, education, or training, with a focus on gender inclusivity.
+
+### **Instructions:**
+1. **Analyze the Title and Abstract:** Determine whether the research is related to CGIAR's objectives in promoting gender equality by looking for relevant keywords or phrases, such as “gender,” “women,” “equality,” or “empowerment.”
+2. **Review the Description and Parsed Text:** Assess whether the research directly contributes to CGIAR’s gender equality objectives, and how integral these objectives are to the overall study.
+3. **Assign the Tag:** Based on the criteria provided, assign the most appropriate tag (0, 1, or 2) that reflects whether the research is related to and impacts CGIAR’s objectives in gender equality.
+4. **Provide a Brief Justification:** Explain why you assigned this tag, referencing specific aspects of the research that influenced your decision. Make sure to clarify how the research aligns (or does not align) with CGIAR’s gender equality objectives.
+
+### **Important Notes:**
+- If the research does not relate to CGIAR's objectives in gender equality, assign a tag of **0** (Not Targeted).
+- If the research mentions gender equality as an important consideration but not the primary focus, assign a tag of **1** (Significant).
+- If gender equality is the primary objective of the research, assign a tag of **2** (Principal).
+- When assigning a tag of **2**, ensure that the evidence clearly demonstrates that gender equality objectives were the main goals of the research and fundamental to its design.
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+{ ""score"": <0|1|2>, ""explanation"": ""<Your explanation here>"" }
+
+
+### **Now, analyze the following research result and assign a gender equality tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in promoting gender equality.**
+
+**Text to Analyze:**
+[INPUT_TEXT]","gpt-4o-mini","Gender","Aclimatar - Understanding climate change impacts and adaptation practices for cocoa management in West Africa Aclimatar: Empowering Smallholder Producers for Perennials in West Africa for Climate Resilience. The innovation highlights the platform's core purpose of supporting climate adaptation for smallholder cocoa producers in Ghana and Côte d'Ivoire. By offering site-specific climate change risk assessments and tailored adaptation practices, Aclimatar serves as a vital tool in combating the effects of climate change. Its intuitive map interface allows users to select locations, providing them with essential climate data, impacts on specific crops, and prioritized adaptation strategies. This innovation is designed to enhance local projects, technicians, and organizations' understanding and response to climate variability, ensuring sustainable agricultural practices and resilience among smallholder communities. Opportunities for digital agro-climatic services in the cocoa sector Skip to main content Dear CGSpace users, we have performed some minor upgrades to the user interface. If it does not look right you should refresh the page while holding the Shift key. Communities & Collections Browse Navigate CGIAR Centers Statistics English Català Čeština Deutsch Español Français Gàidhlig Italiano Latviešu Magyar Nederlands Polski Português Português do Brasil Srpski (lat) Suomi Svenska Türkçe Tiếng Việt Қазақ বাংলা हिंदी Ελληνικά Српски Yкраї́нська Log In Note: CGIAR users should log in with their Active Directory username and password. For example, if your email is j.smith@cgiar.org, you would use jsmith here. Log in New user? Click here to register. Have you forgotten your password? Home CGIAR research centers Alliance of Bioversity International and CIAT Alliance Bioversity CIAT Reports Opportunities for digital agro-climatic services in the cocoa sector Opportunities for digital agro-climatic services in the cocoa sector Loading... Files Report_Ghana.pdf (6.33 MB) Authors Giraldo, Diana Zapata Caldas, Emmanuel Llanos, Lizeth Rahn, Eric Date Issued 2023-12-29 Date Online Language en Type Report Review Status Access Rights Open Access Usage Rights Metadata Full item page Share Citation Giraldo, D.; Zapata Caldas, E.; Llanos, L.; Rahn, E. (2023) Opportunities for digital agro-climatic services in the cocoa sector. Excellence in Agronomy Initiative. 13 p. Permanent link to cite or share this item https://hdl.handle.net/10568/138653 External link to download this item DOI Abstract/Description The Alliance Bioversity-CIAT and the Rainforest Alliance (RA) collaborating to explore the value of seasonal climate forecasts for decision-making in cocoa farming. The Alliance Bioversity International-CIAT has extensive experience in using seasonal climate forecasts to improve the management of annual crops (e.g., variety selection, planting time, etc.), but there is limited experience with perennial cropping systems such as cocoa. To this end, we aim to understand which management decisions can benefit from seasonal climate forecasts, which climate variables would require good forecasting skills, and how forecasts need to be translated and communicated to end- users. To achieve this goal, the Alliance Bioversity-CIAT is applying human-centered design (HCD), a creative and participatory approach to problem-solving that allows for a deep understanding of the people for whom we design and the environments in which they live. Stakeholders are considered co-designers in the process of creating solutions or tools, whether digital or non-digital. Author ORCID identifiers Diana Carolina Giraldo Mendez https://orcid.org/0000-0002-9200-3916 Emmanuel Zapata-Caldas https://orcid.org/0000-0002-7795-9426 Lizeth Llanos-Herrera https://orcid.org/0000-0003-3540-7348 Eric Rahn https://orcid.org/0000-0001-6280-7430 Contributes to SDGs AGROVOC Keywords information services ; theobroma cacao-cocoa (plant) ; climate services ; extension systems Subjects CACAO ; PARTICIPATORY RESEARCH ; RESILIENCE Countries Ghana Regions Africa ; Western Africa ; Sub-Saharan Africa Organizations Affiliated to the Authors International Center for Tropical Agriculture CGIAR Action Areas Resilient Agrifood Systems CGIAR Impact Areas Climate adaptation and mitigation CGIAR Initiatives Climate Resilience ; Excellence in Agronomy Collections Alliance Bioversity CIAT Reports Alliance Research Lever 3: Climate Action CGIAR Initiative on Climate Resilience CGIAR Initiative on Excellence in Agronomy DSpace software copyright © 2002-2024 LYRASIS About Cookie settings Privacy policy Send Feedback ","1898"
+"3183","GENDER_EQUALITY_PROMPT","# **You are an AI assistant tasked with evaluating research results from CGIAR (Consultative Group on International Agricultural Research) to determine whether they align with and contribute to CGIAR's objectives in promoting gender equality. Your goal is to accurately assign an impact area tag that reflects the relevance and impact of the research on these specific gender equality objectives.**
+
+### **Context:**
+CGIAR is a global partnership that unites international organizations focused on research for food security. CGIAR has established specific objectives to promote gender equality, particularly in the fields of agriculture, forestry, fisheries, climate, and nutrition in developing countries. The research results you will analyze originate from various CGIAR initiatives and projects in these and related fields.
+
+### **Research Result Components:**
+Each research result includes the following details:
+- **Title:** A brief title summarizing the research result.
+- **Description:** A detailed description of the research result, including methods and findings.
+- **Research Abstract:** A summary of key findings and implications (optional).
+- **Research Parsed Text:** The parsed text of the research result (optional).
+
+### **Tagging Criteria:**
+Assign a gender equality impact tag using the following criteria:
+
+- **0 = Not Targeted:** 
+  - The research does not address or contribute to CGIAR's gender equality objectives.
+  - The research is unrelated to gender equality, focusing instead on different topics with no significant implications for gender-related issues.
+  - Example: A study focused solely on crop yield improvements without considering gender roles, implications, or disparities.
+
+- **1 = Significant:**
+  - The research makes a meaningful contribution to CGIAR’s gender equality objectives, but these are not the primary focus.
+  - The research is relevant and provides insights into gender dynamics, but these are secondary to other goals.
+  - Example: A study that examines the impact of agricultural interventions on women’s access to land but does not center its entire analysis on gender equality.
+
+- **2 = Principal:**
+  - The primary objective of the research is to address and directly impact CGIAR's goals in promoting gender equality.
+  - The research would not have been undertaken without the intention to contribute to these specific gender equality objectives.
+  - Example: A study specifically designed to develop agricultural policies aimed at improving women’s access to financial resources and closing gender gaps.
+
+### **Key Objectives Set by CGIAR:**
+- **Closing the Gender Gap:** Addressing disparities in rights to economic resources, ownership, and control over land and natural resources for women in food, land, and water systems.
+- **Providing Opportunities:** Creating opportunities for young people who are not in employment, education, or training, with a focus on gender inclusivity.
+
+### **Instructions:**
+1. **Analyze the Title and Abstract:** Determine whether the research is related to CGIAR's objectives in promoting gender equality by looking for relevant keywords or phrases, such as “gender,” “women,” “equality,” or “empowerment.”
+2. **Review the Description and Parsed Text:** Assess whether the research directly contributes to CGIAR’s gender equality objectives, and how integral these objectives are to the overall study.
+3. **Assign the Tag:** Based on the criteria provided, assign the most appropriate tag (0, 1, or 2) that reflects whether the research is related to and impacts CGIAR’s objectives in gender equality.
+4. **Provide a Brief Justification:** Explain why you assigned this tag, referencing specific aspects of the research that influenced your decision. Make sure to clarify how the research aligns (or does not align) with CGIAR’s gender equality objectives.
+
+### **Important Notes:**
+- If the research does not relate to CGIAR's objectives in gender equality, assign a tag of **0** (Not Targeted).
+- If the research mentions gender equality as an important consideration but not the primary focus, assign a tag of **1** (Significant).
+- If gender equality is the primary objective of the research, assign a tag of **2** (Principal).
+- When assigning a tag of **2**, ensure that the evidence clearly demonstrates that gender equality objectives were the main goals of the research and fundamental to its design.
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+{ ""score"": <0|1|2>, ""explanation"": ""<Your explanation here>"" }
+
+
+### **Now, analyze the following research result and assign a gender equality tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in promoting gender equality.**
+
+**Text to Analyze:**
+[INPUT_TEXT]","gpt-4o-mini","Gender","Innovation Portfolio Management to intentionally manage science, innovation and scaling investments along an impact pathway Most projects, programs or organizations do not just manage one, but multiple innovations. Innovation portfolio management refers to managing a portfolio of innovations, innovation projects or interventions aimed at delivering (positive) societal impact. The main objective is to ensure that the innovation portfolio of a project, program, country or entire organization is healthy and delivers against outcomes and impact. It can support portfolio managers in strategic decision-making, prioritization (e.g. as part of stage-gating), risk management and resource mobilization around gaps in the portfolio. It can also support strategic communication about the innovation portfolio with external audiences such as funders. CGIAR Research Initiative on Diversification in East and Southern Africa: IPSR Innovation Portfolio Management Report Skip to main content Dear CGSpace users, we have performed some minor upgrades to the user interface. If it does not look right you should refresh the page while holding the Shift key. Communities & Collections Browse Navigate CGIAR Centers Statistics English Català Čeština Deutsch Español Français Gàidhlig Italiano Latviešu Magyar Nederlands Polski Português Português do Brasil Srpski (lat) Suomi Svenska Türkçe Tiếng Việt Қазақ বাংলা हिंदी Ελληνικά Српски Yкраї́нська Log In Note: CGIAR users should log in with their Active Directory username and password. For example, if your email is j.smith@cgiar.org, you would use jsmith here. Log in New user? Click here to register. Have you forgotten your password? Home CGIAR 2030 portfolio CGIAR Innovation Packages and Scaling Readiness (IPSR) CGIAR IPSR outputs CGIAR Research Initiative on Diversification in East and Southern Africa: IPSR Innovation Portfolio Management Report CGIAR Research Initiative on Diversification in East and Southern Africa: IPSR Innovation Portfolio Management Report Files Report (1.04 MB, pdf) Authors Jacobs-Mata, Inga Girvetz, Evan Hartunian Thierfelder, Christian L. Zulu-Hume, Mercy F. Joshi, Deepa Dror, Iddo Date Issued 2022-12-31 Date Online Language en Type Report Review Status Internal Review Access Rights Open Access Usage Rights Metadata Full item page Share Citation Jacobs-Mata, I., Girvetz, E., Thierfelder, C., Zulu, M., Joshi, D. and Dror, I. 2022. CGIAR Research Initiative on Diversification in East and Southern Africa: IPSR Innovation Portfolio Management Report. First edition, December 2022. Montpellier: CGIAR System Organization. Permanent link to cite or share this item https://hdl.handle.net/10568/127690 External link to download this item DOI Abstract/Description The CGIAR Research Initiative on Diversification in East and Southern Africa (Ukama Ustawi) aims to support climate-resilient agriculture and livelihoods in 12 east and southern African countries by helping millions of smallholders intensify, diversify and reduce the risks in maize-based farming through improved extension services, small- and medium-enterprise development, supporting governance frameworks and increased investment with a gender and social inclusion lens. This report provides an overview of the portfolio of innovations developed by the Initiative and its partners. Author ORCID identifiers Evan Girvetz https://orcid.org/0000-0002-1062-9764 Christian Thierfelder https://orcid.org/0000-0002-6306-7670 Deepa Joshi https://orcid.org/000-0003-1986-3431 Iddo Dror https://orcid.org/0000-0002-0800-7456 Inga Jacobs-Mata https://orcid.org/0000-0002-8317-3059 Contributes to SDGs AGROVOC Keywords innovation ; scaling up ; development programmes ; sciences ; research programmes ; innovation systems ; diversification ; intensification ; climate-smart agriculture ; livelihoods ; agriculture ; southern africa ; east africa ; smallholders ; maize ; farming systems ; extension ; governance ; gender ; social inclusion Subjects AGRICULTURE ; CAPACITY STRENGTHENING ; COMMUNICATIONS ; DATA ; GENDER ; INNOVATION SYSTEMS ; KNOWLEDGE AND INFORMATION ; RESEARCH ; SCALING Countries Burundi ; Congo, Democratic Republic of ; Ethiopia ; Kenya ; Malawi ; Mozambique ; Rwanda ; South Africa ; Tanzania ; Uganda ; Zambia ; Zimbabwe Regions Africa ; Eastern Africa ; Southern Africa ; Sub-Saharan Africa ; Middle Africa Organizations Affiliated to the Authors International Water Management Institute ; Alliance of Bioversity International and CIAT Investors/sponsors CGIAR Trust Fund CGIAR Action Areas Resilient Agrifood Systems CGIAR Impact Areas Climate adaptation and mitigation CGIAR Initiatives Diversification in East and Southern Africa Related Material Related reference: https://hdl.handle.net/10568/121975 ; https://hdl.handle.net/10568/125429 ; https://hdl.handle.net/10568/121974 ; https://hdl.handle.net/10568/121976 ; https://hdl.handle.net/10568/121978 ; https://hdl.handle.net/10568/125145 ; https://hdl.handle.net/10568/121977 ; https://hdl.handle.net/10568/125516 ; https://hdl.handle.net/10568/125183 ; https://hdl.handle.net/10568/125518 ; https://www.scalingreadiness.org/ ; https://cgspace.cgiar.org/handle/10568/125402 ; https://cgspace.cgiar.org/handle/10568/125519 ; https://cgspace.cgiar.org/handle/10568/125401 ; https://cgspace.cgiar.org/handle/10568/126422 ; https://cgspace.cgiar.org/handle/10568/126364 ; https://cgspace.cgiar.org/handle/10568/126421 ; https://cgspace.cgiar.org/handle/10568/126423 ; https://cgspace.cgiar.org/handle/10568/125517 Collections CGIAR IPSR outputs CGIAR Initiative on Diversification in East and Southern Africa DSpace software copyright © 2002-2024 LYRASIS About Cookie settings Privacy policy Send Feedback CGIAR Initiative on Sustainable Animal Productivity for Livelihoods, Nutrition and Gender Inclusion (SAPLING): IPSR Innovation Portfolio Management Report Skip to main content Dear CGSpace users, we have performed some minor upgrades to the user interface. If it does not look right you should refresh the page while holding the Shift key. Communities & Collections Browse Navigate CGIAR Centers Statistics English Català Čeština Deutsch Español Français Gàidhlig Italiano Latviešu Magyar Nederlands Polski Português Português do Brasil Srpski (lat) Suomi Svenska Türkçe Tiếng Việt Қазақ বাংলা हिंदी Ελληνικά Српски Yкраї́нська Log In Note: CGIAR users should log in with their Active Directory username and password. For example, if your email is j.smith@cgiar.org, you would use jsmith here. Log in New user? Click here to register. Have you forgotten your password? Home CGIAR 2030 portfolio CGIAR Innovation Packages and Scaling Readiness (IPSR) CGIAR IPSR outputs CGIAR Initiative on Sustainable Animal Productivity for Livelihoods, Nutrition and Gender Inclusion (SAPLING): IPSR Innovation Portfolio Management Report CGIAR Initiative on Sustainable Animal Productivity for Livelihoods, Nutrition and Gender Inclusion (SAPLING): IPSR Innovation Portfolio Management Report Loading... Files Report (1.88 MB, pdf) Authors Baltenweck, Isabelle Rekik, Mourad Ouma, Emily A. Galiè, Alessandra Kassie, Girma T. Notenbaert, An Maria Omer Okeyo Mwai, Ally Haile, Aynalem Dione, Michel M. Wamatu, Jane Show 9 more Date Issued 2023-03-31 Date Online Language en Type Report Review Status Internal Review Access Rights Open Access Usage Rights Metadata Full item page Share Citation Baltenweck, I., Rekik, M., Ouma, E., Galie, A., Kassie, G.T., Notenbaert, A., Mwai, O.A., Haile, A., Dione, M., Wamatu, J., Thierfelder, C.L., Padmakumar, V., Rao, J., Esatu, W., Sanchez-Garcia, M., Hammond, J., Konlambigue, M., Lacasta, A. and Marshall, K. 2023. CGIAR Initiative on Sustainable Animal Productivity for Livelihoods, Nutrition and Gender Inclusion (SAPLING): IPSR Innovation Portfolio Management Report. First edition, March 2023. Montpellier: CGIAR System Organization. Permanent link to cite or share this item https://hdl.handle.net/10568/130462 External link to download this item DOI Abstract/Description CGIAR Research Initiative on Sustainable Animal Productivity for Livelihoods, Nutrition and Gender Inclusion aims to transform the livestock sector in Ethiopia, Kenya, Mali, Nepal, Uganda, Tanzania, and Vietnam, with the objective of enhancing productivity, resilience, equity, and sustainability. This goal will be accomplished by developing new technologies and practices and adapting existing ones to bolster sustainable livestock production. Additionally, the initiative will encourage innovative practices for the safe consumption of livestock-derived foods as part of diverse diets. Gender equity and social inclusion will be prioritised, and efforts will be made to promote competitive and inclusive livestock value chains. The initiative will also generate and consolidate evidence, as well as scalable models and tools. This report offers an overview of the portfolio of innovations of the initiative and its partners. Author ORCID identifiers Isabelle Baltenweck https://orcid.org/0000-0002-4147-5921 Mourad Rekik https://orcid.org/0000-0001-7455-2017 Emily Ouma https://orcid.org/0000-0002-3123-1376 Alessandra Galiè https://orcid.org/0000-0001-9868-7733 Girma T. Kassie https://orcid.org/0000-0001-7430-4291 An Maria Omer Notenbaert https://orcid.org/0000-0002-6266-2240 Ally Okeyo Mwai https://orcid.org/0000-0003-2379-7801 Aynalem https://orcid.org/0000-0001-5914-0487 Michel Dione https://orcid.org/0000-0001-7812-5776 Jane Wamatu https://orcid.org/0000-0003-3544-6718 Christian Thierfelder https://orcid.org/0000-0002-6306-7670 Padmakumar Varijakshapanicker https://orcid.org/0000-0003-2916-3746 Elizaphan Rao https://orcid.org/0000-0002-4530-4062 Miguel Sanchez-Garcia https://orcid.org/0000-0002-9257-4583 Anna Lacasta https://orcid.org/0000-0001-8381-9844 Karen Marshall https://orcid.org/0000-0003-4197-1455 Contributes to SDGs AGROVOC Keywords sustainable agriculture ; livestock ; scaling ; gender ; nutrition ; animal health ; animal feeding ; genetics Subjects CLIMATE CHANGE ; FARMING SYSTEMS ; GENDER AND EQUITY ; LIVELIHOODS ; LIVESTOCK ; NUTRITION ; VALUE CHAINS ; AFLATOXIN ; CLIMATE CHANGE ; FARM MANAGEMENT ; FARMING SYSTEMS ; GENDER ; LIVELIHOODS ; NUTRITION ; VALUE CHAINS ; AFLATOXINS ; ANIMAL BREEDING ; ANIMAL DISEASES ; ANIMAL FEEDING ; ANIMAL HEALTH ; ANIMAL PRODUCTION ; BREEDS ; CATTLE ; CHICKENS ; CLIMATE CHANGE ; DAIRYING ; FARM MANAGEMENT ; FARMING SYSTEMS ; FEEDS ; FODDER ; FORAGES ; GENDER ; GOATS ; LIVELIHOODS ; LIVESTOCK SYSTEMS ; MEAT ; NUTRITION ; PIGS ; POULTRY ; PRO-POOR LIVESTOCK ; SCALING ; SMALL RUMINANTS ; VACCINES ; VALUE CHAINS ; WOMEN Countries Bangladesh ; Burkina Faso ; Ethiopia ; Ghana ; India ; Kenya ; Malawi ; Mali ; Nepal ; Nicaragua ; Pakistan ; Rwanda ; Senegal ; Sudan ; Tanzania ; Uganda ; Vietnam ; Zambia ; Zimbabwe Regions Central America ; Eastern Africa ; Southern Africa ; Southern Asia ; Western Africa ; Northern Africa ; South-eastern Asia Organizations Affiliated to the Authors International Livestock Research Institute ; International Center for Agricultural Research in the Dry Areas ; Alliance of Bioversity International and CIAT ; International Maize and Wheat Improvement Center ; International Institute of Tropical Agriculture Investors/sponsors CGIAR Trust Fund CGIAR Action Areas Resilient Agrifood Systems CGIAR Impact Areas Poverty reduction, livelihoods and jobs CGIAR Initiatives Sustainable Animal Productivity Related Material Related reference: https://www.cgiar.org/initiative/sustainable-animal-productivity/ Collections CGIAR IPSR outputs CGIAR Initiative on Sustainable Animal Productivity CIMMYT Reports ICARDA Project Reports, Papers, and Documents ILRI animal and human health program outputs ILRI livestock genetics program outputs Load more DSpace software copyright © 2002-2024 LYRASIS About Cookie settings Privacy policy Send Feedback Asian Mega Delta Innovation Portfolio Overview Skip to main content Dear CGSpace users, we have performed some minor upgrades to the user interface. If it does not look right you should refresh the page while holding the Shift key. Communities & Collections Browse Navigate CGIAR Centers Statistics English Català Čeština Deutsch Español Français Gàidhlig Italiano Latviešu Magyar Nederlands Polski Português Português do Brasil Srpski (lat) Suomi Svenska Türkçe Tiếng Việt Қазақ বাংলা हिंदी Ελληνικά Српски Yкраї́нська Log In Note: CGIAR users should log in with their Active Directory username and password. For example, if your email is j.smith@cgiar.org, you would use jsmith here. Log in New user? Click here to register. Have you forgotten your password? Home CGIAR 2030 portfolio CGIAR Innovation Packages and Scaling Readiness (IPSR) CGIAR IPSR outputs Asian Mega Delta Innovation Portfolio Overview Asian Mega Delta Innovation Portfolio Overview Files Presentation (3.52 MB, pdf) Authors Schut, Marc Date Issued 2023-03-16 Date Online Language en Type Presentation Review Status Internal Review Access Rights Open Access Usage Rights Metadata Full item page Share Citation Schut, M. 2023. Asian Mega Delta Innovation Portfolio Review. Presented at the Asian Mega Delta annual meeting, Nairobi, Kenya, 16 March 2023. IPSR Knowledge Product. Montpellier: CGIAR System Organization. Permanent link to cite or share this item https://hdl.handle.net/10568/129881 External link to download this item DOI Abstract/Description Author ORCID identifiers Marc Schut https://orcid.org/0000-0002-3361-4581 Contributes to SDGs AGROVOC Keywords climate-smart agriculture ; livestock ; climate services ; business models ; gender ; collaboration ; plant health ; rice straw ; water management ; community management ; innovation ; scaling up ; deltas ; resilience Subjects CLIMATE CHANGE ; ENVIRONMENT ; GENDER ; RESILIENCE ; WATER Countries Bangladesh ; Cambodia ; India ; Myanmar ; Vietnam Regions Asia ; Southern Asia ; South-eastern Asia Organizations Affiliated to the Authors CGIAR System Organization Investors/sponsors CGIAR Trust Fund CGIAR Action Areas Resilient Agrifood Systems CGIAR Impact Areas Climate adaptation and mitigation CGIAR Initiatives Asian Mega-Deltas ; Excellence in Agronomy ; Gender Equality ; Low-Emission Food Systems ; Mixed Farming Systems ; Plant Health ; Transforming Agrifood Systems in South Asia Collections CGIAR IPSR outputs CGIAR Initiative on Asian Mega-Deltas CGIAR Initiative on Excellence in Agronomy CGIAR Initiative on Gender Equality CGIAR Initiative on Low-Emission Food Systems CGIAR Initiative on Mixed Farming Systems Load more DSpace software copyright © 2002-2024 LYRASIS About Cookie settings Privacy policy Send Feedback File: download
+Page 1:
+1
+CGIAR IPSR Innovation Portfolio Management | CGIAR Research Initiative for Diversification in East and Southern Africa (Ukama Ustawi)Average Innovation 
+Readiness Level
+7.8
+handshake 
+Other CGIAR 
+Initiatives
+12
+SDGs 
+targeted
+14Partnerships 
+engaged
+102
+CGIAR Research Initiative for Diversification 
+in East and Southern Africa (Ukama Ustawi)
+Introduction
+Diversification in East and Southern Africa (Ukama Ustawi) is a CGIAR 
+Regional Integrated Initiative which aims to support climate-resilient 
+agriculture and livelihoods in 12 east and southern African countries by 
+helping millions of smallholders intensify, diversify and reduce the risks 
+in maize-based farming through improved extension services, small and 
+medium enterprise development, supporting governance frameworks and 
+increased investment with a gender and social inclusion lens.
+This report provides an overview of the portfolio of innovations developed 
+by the Initiative and its partners.CGIAR Innovation Packages and Scaling Readiness (IPSR)
+INNOVATION PORTFOLIO MANAGEMENT 
+REPORT
+2022
+1st Edition
+Learn more: www.scalingreadiness.org 0-3-615%
+1-4-720%
+2-55%820%940%PROVEN INNOVATION
+The innovation is validated for its 
+ability to achieve a specific impact 
+under uncontrolled conditions
+UNCONTROLLED TESTING
+The innovation is being tested for its 
+ability to achieve a specific impact 
+under uncontrolled conditions
+PROTOTYPE
+The innovation is validated for its 
+ability to achieve a specific impact 
+under semi-controlled conditions
+PROOF OF CONCEPT
+The innovation’s key concepts have 
+been validated for their ability 
+to achieve a specific impactSEMI-CONTROLLED TESTING
+The innovation is being tested for its 
+ability to achieve a specific impact 
+under semi-controlled conditions
+FORMULATION
+The innovation’s key concepts are 
+being formulated or designedMODEL/EARLY PROTOTYPE
+The innovation is validated for its 
+ability to achieve a specific impact 
+under fully-controlled conditions
+BASIC RESEARCH
+The innovation’s basic principles 
+are being researched for their 
+ability to achieve a specific impactCONTROLLED TESTING
+The innovation is being tested for its 
+ability to achieve a specific impact 
+under fully-controlled conditions
+IDEA
+The innovation is at idea stage
+Entire dataset is available on-demand.% of innovations
+angle-downPipeline overviewlist-timeline
+lightbulb 
+# of innovations 
+reported
+20Countries 
+targeted
+12Key Portfolio Data
+Page 2:
+2
+CGIAR IPSR Innovation Portfolio Management | CGIAR Research Initiative for Diversification in East and Southern Africa (Ukama Ustawi)# Innovation TitleCountries  
+TargetedInnovation 
+ReadinessHandle to 
+CGSpace
+1 Science-driven accelerator program for climate-smart agribusinesses Zambia   8 
+2 Mbili mbili and doubled-up cropping systems for crop diversification and climate resilience Kenya   8 
+3 Bean business platformsBurundi  
+Kenya  
+Malawi  
+Rwanda  
+Uganda  
+Tanzania  
+Zambia  9 
+4 Promoting composite bean flours to improve nutritionD. R. Congo  
+Ethiopia  
+Kenya  
+Malawi  
+Mozambique  
+Rwanda  
+Uganda  
+Tanzania  
+Zambia  
+Zimbabwe  8 
+5 Conservation agricultureKenya  
+Malawi  
+Zambia  
+Zimbabwe  9 
+6 Legume cereals products in livestock fattening rationsZambia  
+Zimbabwe  8 
+7 Mechanization starter pack for smallholder farmersZambia  
+Zimbabwe  6 
+8 Strip inter cropping: double row and four-row systemMalawi  
+Zambia  
+Zimbabwe  7 
+9 Maize/legume rotation in a conservation agriculture systemMalawi  
+Zambia  
+Zimbabwe  9 
+10 Traditional maize/legume intercropMalawi  
+Zambia  
+Zimbabwe  9 
+11 Gliricidia intercropping in maize farmingMalawi  
+Zambia  
+Zimbabwe  7 
+12 Doubled-up legume systemsMalawi  
+Zambia  
+Zimbabwe  9 
+13 Green manure/cover crops for improved livestock feedingMalawi  
+Zambia  
+Zimbabwe  7 
+14 Sustainable financing for off-grid solar irrigation Zambia   6 
+15 Addressing drought through climate smart seed varietiesMalawi  
+Zambia  
+Zimbabwe  9 
+16 Solar irrigation/drip irrigation coupled with low-cost soil moisture technologyGhana  
+South Africa  7 
+17 Shamba shape upKenya  
+Zambia  9 
+18 Policy and institutional support to governments for climate-resilient agricultural transformationsKenya  
+Tanzania  
+Zambia  6 
+19 Digital climate smart agriculture (DCSA) sandbox TBD   5 -
+20 Diversifying and intensifying maize-based systems with new fodder varietiesZambia  
+Zimbabwe  9 -INNOVATION OVERVIEW
+Page 3:
+Ethiopia
+1 innovation
+Kenya
+6 innovationsRwanda
+2 innovations
+Burundi
+1 innovation
+Tanzania
+3 innovations
+Malawi
+10 innovations
+Mozambique
+1 innovation
+South Africa
+1 innovationZimbabwe
+12 innovationsZambia
+17 innovationsCongo
+1 innovationUganda
+2 innovations
+Zambia# of innovations per country
+Zambabwe
+Malawi
+Kenya
+Tanzania
+Uganda
+Rwanda
+Ethiopia
+MozambiqueBurundiDR Congo
+South Africa17
+12
+10
+6
+3
+2
+2
+1
+111
+1INNOVATION GEOFOCUSInnovation 
+TypeInnovation 
+Nature9
+92
+173
+Technological innovation
+Capacity development innovation
+Policy, organizational or institutional innovation
+Other innovation
+Incremental innovation
+Radical innovation
+Disruptive innovation
+Other innovation
+3 CGIAR IPSR Innovation Portfolio Management | CGIAR Regional Integrated Initiative for Diversification in East and Southern Africa (Ukama Ustawi)INNOVATION TYPOLOGIES
+CGIAR and partners work on a broad variety of innovations to achieve outcomes and impact. These include (1) 
+technologies (e.g. germplasm; management practices; machines; data systems), (2) capacity development innovations 
+(e.g. training programs; guidelines, e-learning courses), and (3) policy, organizational or institutional innovations 
+(governance frameworks, business models, finance mechanisms).
+The nature of the innovations and innovation processes may be different. Incremental innovations follow a steady 
+process of gradual improvement. Radical innovations replace existing technologies, practices and institutions. 
+Disruptive innovations trigger major system reconfiguration or transformation.
+The below graphs provide an overview of the innovation type and nature in this portfolio.seal-question
+Page 4:
+4
+CGIAR IPSR Innovation Portfolio Management | CGIAR Research Initiative for Diversification in East and Southern Africa (Ukama Ustawi)80%
+70%
+50%ASPIRED OUTCOMES AND IMPACTS
+Nutrition, Health, and Food Security
+1.1 ( 80% )  |  1.2 ( 0%)
+Gender Equality, Youth, and Social Inclusion
+3.1 ( 55% )  |  3.2 ( 35% )
+Environmental Health and Biodiversity
+5.1 ( 40% )  |  5.2 ( 15% )This initiative aims to help millions of smallholder farmers at risk in the 12 ESA countries transition from maize-based 
+systems to more resilient, diversified, and risk-reduced agrifood systems. As a result, agribusiness ecosystems and 
+agricultural livelihoods will become more climate resilient.
+The below graphs reflect how the Initiative innovation portfolio is currently mapped to the CGIAR Impact Areas and 
+United Nations Sustainable Development Goals (SDGs).
+CGIAR Impact Areas
+Percentage of innovation portfolio targeting the CGIAR Impact Areas. More information on the CGIAR Impact areas can 
+be found at https://www.cgiar.org/how-we-work/strategy .
+Sustainable Development Goals (SDGs)
+Percentage of innovation portfolio targeting SDGs.  
+More information on the Sustainable Development Goals can be 
+found at https://sdgs.un.org/goals .
+Initiative Theory of Change
+This section provides an overview of how the innovation portfolio relates to the priority SDGs as reflected in the 
+Initiative Theory of Change, showing the percentage of innovations targetting each SDG.
+22%
+SDG15 87%
+SDG2 52%
+SDG5
+ 4%
+SDG6
+ 35%
+SDG8
+ 61%
+SDG13
+SDG1 70%70%87%
+35%
+22%
+52%
+22%
+35%4%4% 4%35%61%22%17%
+1
+2
+3
+4
+5
+8
+7
+10
+6
+9
+12
+13
+15
+1790%
+Poverty Reduction, Livelihoods, and Jobs
+2.1 ( 85% )  |  2.2 ( 35% )
+90%
+Climate Adaptation and Greenhouse Gas Reduction
+4.1 ( 35% )  |  4.2 ( 80% )  |  4.3 ( 30% )
+Responsible Consumption & Production
+SDG12 35%
+Industry, Innovation & Infrastructure 22%
+SDG9
+Gender Equality 52%
+SDG5
+Affordable & Clean Energy 4%
+SDG7
+Good Health & Well-Being 35%
+SDG3
+Decent Work & Economic Growth 35%
+SDG8
+Quality Education 22%
+SDG4
+Clean Water & Sanitation 4%
+SDG6
+No Poverty 70%
+SDG1
+Climate Action 61%
+SDG13
+Reduced Inequalities 4%
+SDG10
+Partnership for the Goals 17%
+SDG17
+Zero Hunger 87%
+SDG2
+Life on Land 22%
+SDG15
+Page 5:
+5
+CGIAR IPSR Innovation Portfolio Management | CGIAR Research Initiative for Diversification in East and Southern Africa (Ukama Ustawi)Genetic Innovation Action Area Initiative
+  Accelerated Breeding
+  Market Intelligence
+  Seed Equal
+Resilient Agri-Food Systems Action Area Innitiative
+  Excellence in Agronomy
+  Mixed Farming Systems
+  Plant Health
+  Sustainable Animal Productivity
+System Transformation Action Area Initiative
+  Climate Resilience
+  Digital Innovation and Transformation
+  Fruits and Vegetables
+  Rethinking Food Markets
+Regional Integrated Initiative
+  West and Central African Food Systems TransformationCONTRIBUTING CGIAR INITIATIVES AND BILATERAL PROJECTS
+Internal CGIAR Initiative Collaboration
+CGIAR Initiatives and projects do not work in isolation, but collaborate on innovation to achieve outcomes and impact. 
+The below overview shows these collaborations across the different CGIAR Action Areas.
+3
+2
+1
+1247102
+1
+1
+1
+
+26
+9 91729
+12
+Government Other public Non-Governmental 
+Organizations 
+(NGOs)Public-Private 
+Partnerships 
+(PPP)Private sector Academic
+EXTERNAL PARTNERSHIPS
+Partnerships are central to the CGIAR mission and for innovation development and scaling, partnerships with 
+academia, governments, development organizations and private sector are key. The below provides an aggregate 
+overview of the current partnerships in the portfolio.
+Page 6:
+6
+CGIAR IPSR Innovation Portfolio Management | CGIAR Research Initiative for Diversification in East and Southern Africa (Ukama Ustawi)
+0 - -3 - -6 3 15%
+1 - -4 - -7 4 20%
+2 - -5 1 5%8 4 20%9 8 40%PROVEN INNOVATION
+The innovation is validated for its ability to achieve 
+a specific impact under uncontrolled conditions
+UNCONTROLLED TESTING
+The innovation is being tested for its ability to achieve 
+a specific impact under uncontrolled conditions
+PROTOTYPE
+The innovation is validated for its ability to achieve 
+a specific impact under semi-controlled conditions
+PROOF OF CONCEPT
+The innovation’s key concepts have been validated 
+for their ability to achieve a specific impactSEMI-CONTROLLED TESTING
+The innovation is being tested for its ability to achieve 
+a specific impact under semi-controlled conditions
+FORMULATION
+The innovation’s key concepts are 
+being formulated or designedMODEL/EARLY PROTOTYPE
+The innovation is validated for its ability to achieve 
+a specific impact under fully-controlled conditions
+BASIC RESEARCH
+The innovation’s basic principles are being researched 
+for their ability to achieve a specific impactCONTROLLED TESTING
+The innovation is being tested for its ability to achieve 
+a specific impact under fully-controlled conditions
+IDEA
+The innovation is at idea stage
+# of innovations
+angle-downPipeline overview
+in percentage
+angle-down
+More information on Innovation Readiness can be found here.INNOVATION READINESS
+list-timelineInnovations can be at different levels of maturity and go through 
+processes of ideation, design, testing and validation. This infographic 
+shows the readiness levels of the innovations included in this portfolio.
+20
+total # of 
+innovations7.8
+average 
+readiness
+Page 7:
+7
+CGIAR IPSR Innovation Portfolio Management | CGIAR Research Initiative for Diversification in East and Southern Africa (Ukama Ustawi)INPUT FOR INNOVATION PORTFOLIO MANAGEMENT DECISIONS
+Limited investment in policy, organizational and institutional innovation
+Relative bias towards Innovations with high readiness levelsNo investment in disruptive innovation
+20 Innovations targeting total 12 countries
+Heavy focus on 4 countries (Zambia, Zimbabwe, Malawi and Kenya)
+Southern African countries targeted more often than eastern African countries
+Limited investment in innovations targeting Ethiopia (1) and Tanzania (3) which are 
+traditionally important countries for CGIAR in eastern Africa
+17 Innovation Teams collaborate with other Initiatives (3 do not)
+Collaboration with 12 other Initiatives
+Collaboration with Genetic Innovation Initiatives (3), Resilient Agri-food Systems Initiatives 
+(4) and System Transformation Initiatives (4) and Regional Integrated Initiatives (1)
+All innovations developed/ scaled through partnerships
+Mostly public sector partnerships (government and NGO)
+Less Public-Private-Partnerships and private partnershipsAdditional investment in innovations that target Impact Area 5 could be considered
+Additional investment in innovations that target SDG6 (primarily) and SDGs 8 and 15 
+(secondary) should be considered.
+SDG3 is currently not an Initiative priority according to the Theory of Change. This could 
+be considered, as 35% of the innovations actually target SDG3.Innovation Type
+Innovation ReadinessNature of Innovation
+Geoscope
+Initiative collaboration
+PartnershipsCGIAR Impact Areas
+% of innovations  
+ targeting the CGIAR 
+Impact Areas
+SDGs
+% of innovations 
+targeting the Initiative’s 
+priority SDGslist-tree
+Gender Equality 52%
+SDG5
+Decent Work & Economic Growth 35%
+SDG8
+Clean Water & Sanitation 4%
+SDG6
+No Poverty 70%
+SDG1
+Climate Action 61%
+SDG13
+Zero Hunger 87%
+SDG2
+Life on Land 22%
+SDG15
+Environmental Health and Biodiversity 50%
+IA5
+Gender Equality, Youth, and Social Inclusion 70%
+IA3
+Nutrition, Health, and Food Security 80%
+IA1
+Poverty Reduction, Livelihoods, and Jobs 90%
+IA2
+Climate Adaptation and Greenhouse Gas Reduction 90%
+IA4
+Page 8:
+8
+CGIAR IPSR Innovation Portfolio Management | CGIAR Research Initiative for Diversification in East and Southern Africa (Ukama Ustawi)Please refer to the Innovation Portfolio Management report as
+Jacobs-Mata, I., Girvetz, E., Thierfelder, C., Zulu, M., Joshi, D. and Dror, I. 2022. CGIAR Research Initiative on 
+Diversification in East and Southern Africa: IPSR Innovation Portfolio Management Report. First edition, December 
+2022. Montpellier: CGIAR System Organization.  
+https://cgspace.cgiar.org/handle/10568/127690
+ © 2022 CGIAR System Organization. Some rights reserved. 
+This work is licensed under a CC BY-NC 4.0 license .ACKNOWLEDGEMENTS
+We would like to thank all Funders who support this innovation through their contributions to the CGIAR Trust Fund  
+(https://www.cgiar.org/funders/ ).
+This Innovation Portfolio Management Report was curated by CGIAR’s Portfolio Performance Unit (PPU) from reported 
+Initiatives data, and the authors wish to thank Marc Schut, Edwin Kangethe, Lorena Esquivias and Iddo Dror for their 
+valuable contributions.
+ File: download
+Page 1:
+1
+CGIAR IPSR Innovation Portfolio Management | CGIAR Initiative on Sustainable Animal Productivity for Livelihoods, Nutrition and Gender Inclusion (SAPLING)Average Innovation 
+Readiness Level
+5.4
+handshake 
+Other CGIAR 
+Initiatives
+12
+SDGs 
+targeted
+4Partnerships 
+engaged
+35
+CGIAR Initiative on Sustainable Animal Productivity 
+for Livelihoods, Nutrition and Gender Inclusion 
+(SAPLING)
+Introduction
+CGIAR Initiative on Sustainable Animal Productivity aims to contribute to 
+transforming livestock sectors in Ethiopia, Kenya, Mali, Nepal, Uganda, 
+Tanzania and Vietnam to make them more productive, resilient, equitable and 
+sustainable. This will be achieved by developing new and adapting existing 
+technologies and practices to increase sustainable livestock production; 
+Encouraging innovative practices for safe consumption of livestock-derived 
+foods as part of diverse diets; Focusing on gender equity and social inclusion; 
+Promoting competitive and inclusive livestock value chains; Generating and 
+consolidating evidence and scalable models and tools. 
+This report provides an overview of the portfolio of innovations of the 
+Initiative and its partners.CGIAR Innovation Packages and Scaling Readiness (IPSR)
+INNOVATION PORTFOLIO MANAGEMENT 
+REPORT
+2022
+1st Edition
+Learn more: www.scalingreadiness.org 013264
+124173
+21518492PROVEN INNOVATION
+The innovation is validated for its 
+ability to achieve a specific impact 
+under uncontrolled conditions
+UNCONTROLLED TESTING
+The innovation is being tested for its 
+ability to achieve a specific impact 
+under uncontrolled conditions
+PROTOTYPE
+The innovation is validated for its 
+ability to achieve a specific impact 
+under semi-controlled conditions
+PROOF OF CONCEPT
+The innovation’s key concepts have 
+been validated for their ability 
+to achieve a specific impactSEMI-CONTROLLED TESTING
+The innovation is being tested for its 
+ability to achieve a specific impact 
+under semi-controlled conditions
+FORMULATION
+The innovation’s key concepts are 
+being formulated or designedMODEL/EARLY PROTOTYPE
+The innovation is validated for its 
+ability to achieve a specific impact 
+under fully-controlled conditions
+BASIC RESEARCH
+The innovation’s basic principles 
+are being researched for their 
+ability to achieve a specific impactCONTROLLED TESTING
+The innovation is being tested for its 
+ability to achieve a specific impact 
+under fully-controlled conditions
+IDEA
+The innovation is at idea stage
+Entire dataset is available on-demand.# of innovations
+angle-downPipeline overviewlist-timeline
+lightbulb 
+# of innovations 
+reported
+21Countries 
+targeted
+19Key Portfolio Data
+Page 2:
+2
+CGIAR IPSR Innovation Portfolio Management | CGIAR Initiative on Sustainable Animal Productivity for Livelihoods, Nutrition and Gender Inclusion (SAPLING)# Innovation TitleCountries  
+TargetedInnovation 
+ReadinessHandle to 
+CGSpace
+1 Cactus Pear for Sustainable Livelihoods in the Drylands -   9 
+2Information and Communication Technology and genomic technology solutions for smallholder dairy 
+farmersEthiopia  
+Nepal  
+Rwanda  
+Tanzania  
+Uganda  9 
+3 Legume (Mucuna pruriens)-cereal products in livestock fattening rationsZambia  
+Zimbabwe  8 
+4 Community-based sheep and goat breeding programs for low input systemsEthiopia  
+Tanzania  8 
+5 Tools for control and eradication of peste des petits ruminantsBurkina Faso  
+Ethiopia  
+Kenya  
+Mali  
+Senegal  
+Tanzania  8 
+6 Women and youth entrepreneurship in sheep fattening Ethiopia   8 
+7 Green manure/cover crops for improved livestock feedingMalawi  
+Zambia  
+Zimbabwe  7 
+8 The Women’s Empowerment in Livestock Index or WELIEthiopia  
+Ghana  
+Tanzania  
+Vietnam  
+Uganda  7 TBD
+9 Reproductive platform to deliver genetic gain in sheep and goatsEthiopia  
+Mali  
+Tanzania  
+Sudan  7 
+10 Public Private Partnerships and commnunity-based engagement for livestock vaccine delivery Mali   6 
+11 On-farm Digitised Feed AdvisorBangladesh  
+India  
+Nepal  
+Pakistan  6 TBD
+12Dairy profitability simulator is a mobile application that creates personal farm profitability projections 
+based on several small holder dairy production practices and parametersEthiopia  
+Kenya  
+Tanzania  
+Uganda  6 
+13 Social and behaviour change communications strategy for improving livestock derived food consumptionKenya  
+Rwanda  
+Vietnam  
+Uganda  6 
+14 Developing dual-purpose chicken strains Ethiopia   5 
+15 CGIAR Barley Breeding Toolbox -   4 TBD
+16 Integrated decision-support system assessing investment trade-offsEthiopia  
+Kenya  
+Nepal  
+Nicaragua  
+Tanzania  
+Vietnam  
+Uganda  3 
+17 FoodSENSE FrameworkVietnam  
+Uganda  3 
+18CGIAR Research Initiative on Diversification in East and Southern Africa (Ukama Ustawi) Scaling Hub - 
+Eastern and Southern Africa Scaling HubKenya  
+Zambia  
+Zimbabwe  2 
+19 Improved vaccines for the control of East Coast Fever Kenya   1 
+20 Gendered business models for improved cattle artificial insemination service delivery in Vietnam Vietnam   1 
+21 CLEANED-eXtRa -   0 TBDINNOVATION OVERVIEW
+Page 3:
+3
+CGIAR IPSR Innovation Portfolio Management | CGIAR Initiative on Sustainable Animal Productivity for Livelihoods, Nutrition and Gender Inclusion (SAPLING)Ethiopia
+9 innovationsSudan
+1 innovationNepal
+3 innovations
+Mali
+3 innovations
+Uganda
+6 innovations
+Kenya
+6 innovationsBangladesh
+1 innovationNicaragua
+1 innovationPakistan
+1 innovation
+Malawi
+1 innovationTanzania
+7 innovationsBurkina Faso
+1 innovationVietnam
+5 innovations
+India
+1 innovation
+Zambia
+3 innovationsRwanda
+2 innovationsGhana
+1 innovationSenegal
+1 innovation
+Zimbabwe
+3 innovations
+Ethiopia
+Tanzania# of innovations per country
+Kenya
+Uganda
+Vietnam
+Nepal
+Mali
+Zimbabwe
+Zambia
+Rwanda
+Bangladesh
+Sudan
+Pakistan
+Nicaragua
+India
+Ghana
+Burkina FasoMalawi
+Senegal9
+7
+6
+6
+5
+3
+3
+3
+1
+1
+12
+1
+1
+13
+1
+1
+1INNOVATION GEOFOCUSINNOVATION TYPOLOGIES
+CGIAR and partners work on a broad variety of innovations to achieve outcomes and impact. These include (1) 
+technologies (e.g. germplasm; management practices; machines; data systems), (2) capacity development innovations 
+(e.g. training programs; guidelines, e-learning courses), and (3) policy, organizational or institutional innovations 
+(governance frameworks, business models, finance mechanisms).
+The nature of the innovations and innovation processes may be different. Incremental innovations follow a steady 
+process of gradual improvement. Radical innovations replace existing technologies, practices and institutions. 
+Disruptive innovations trigger major system reconfiguration or transformation.
+The below graphs provide an overview of the innovation type and nature in this portfolio.seal-question
+Innovation nature Innovation types
+6% (29 innovations) were labeled as “ Other innovation ”
+9% were labeled as “ Other innovation ”Policy, Organizational and 
+Institutional Innovation
+14%
+Enabling conditions that incentivize 
+broad behavioral change and 
+appropriate use of innovation  
+(orgware)Disruptive Innovation
+5%
+Triggers major system  
+reconfiguration and transformationTechnological  
+Innovation
+53%
+New and improved tools, products, 
+services and practices  
+(hardware)Incremental Innovation
+67%
+Improving on what you’re  
+already doingCapacity Development 
+Innovation
+33%
+Capacity to use and benefit  
+from innovation  
+(software)Radical Innovation
+19%
+A new product, process, service, that 
+completely replaces an existing one
+Return / transformation 
+potential
+RiskLow potential
+Low risk
+Builds on existingMedium risk
+Explores alternativesHigh risk
+Aims at system changeMedium potential High potential
+67%19%5%
+53%33%
+14%
+Page 4:
+4
+CGIAR IPSR Innovation Portfolio Management | CGIAR Initiative on Sustainable Animal Productivity for Livelihoods, Nutrition and Gender Inclusion (SAPLING)ASPIRED OUTCOMES AND IMPACTS
+This initiative aims to contribute to transforming livestock sectors in Ethiopia, Kenya, Mali, Nepal, Uganda, 
+Tanzania and Vietnam to make them more productive, resilient, equitable and sustainable.
+The below graphs reflect how the Initiative innovation portfolio is currently mapped to the CGIAR Impact Areas and 
+United Nations Sustainable Development Goals (SDGs).
+Sustainable Development Goals (SDGs)
+Percentage of innovation portfolio targeting SDGs.  
+More information on the Sustainable Development Goals  
+can be found at https://sdgs.un.org/goals .
+Gender Equality 25%
+SDG5
+No Poverty 25%
+SDG1
+Climate Action 25%
+SDG13
+Zero Hunger 25%
+SDG2
+25%
+25%
+25%25%
+1
+2
+5
+13
+Genetic Innovation Action Area Initiative
+ Breeding Resources
+Resilient Agri-Food Systems Action Area Innitiative
+ Mixed Farming System
+ Livestock and Climate
+ Excellence in Agronomy
+System Transformation Action Area Initiative
+ Nexus Gain
+ National Policies and Strategies
+ Digtal Innovations
+ Climate Resilience
+Regional Integrated Initiative
+ Diversification in East and Southern Africa
+ Fragility to Resilience in Central and West Asia and North Africa
+ Transforming Agrifood Systems in South Asia
+ West and Central African Food Systems TransformationCONTRIBUTING CGIAR INITIATIVES AND BILATERAL PROJECTS
+Internal CGIAR Initiative Collaboration
+CGIAR Initiatives and projects do not work in isolation, but collaborate on innovation to achieve outcomes and impact. 
+The below overview shows these collaborations across the different CGIAR Action Areas.
+5
+1
+11
+1
+3
+11
+1131
+Page 5:
+5
+CGIAR IPSR Innovation Portfolio Management | CGIAR Initiative on Sustainable Animal Productivity for Livelihoods, Nutrition and Gender Inclusion (SAPLING)
+8
+1 1322
+Government Other public Non-Governmental 
+Organizations 
+(NGOs)Private sector Academic
+EXTERNAL PARTNERSHIPS
+Partnerships are central to the CGIAR mission and for innovation development and scaling, partnerships with 
+academia, governments, development organizations and private sector are key. The below provides an aggregate 
+overview of the current partnerships in the portfolio of innovations.
+Page 6:
+6
+CGIAR IPSR Innovation Portfolio Management | CGIAR Initiative on Sustainable Animal Productivity for Livelihoods, Nutrition and Gender Inclusion (SAPLING)
+0 1 4.75%3 2 9.5%6 4 19%
+1 2 9.5%4 1 4.75%7 3 14.5%
+2 1 4.75%5 1 4.75%8 4 19%9 2 9.5%PROVEN INNOVATION
+The innovation is validated for its ability to achieve 
+a specific impact under uncontrolled conditions
+UNCONTROLLED TESTING
+The innovation is being tested for its ability to achieve 
+a specific impact under uncontrolled conditions
+PROTOTYPE
+The innovation is validated for its ability to achieve 
+a specific impact under semi-controlled conditions
+PROOF OF CONCEPT
+The innovation’s key concepts have been validated 
+for their ability to achieve a specific impactSEMI-CONTROLLED TESTING
+The innovation is being tested for its ability to achieve 
+a specific impact under semi-controlled conditions
+FORMULATION
+The innovation’s key concepts are 
+being formulated or designedMODEL/EARLY PROTOTYPE
+The innovation is validated for its ability to achieve 
+a specific impact under fully-controlled conditions
+BASIC RESEARCH
+The innovation’s basic principles are being researched 
+for their ability to achieve a specific impactCONTROLLED TESTING
+The innovation is being tested for its ability to achieve 
+a specific impact under fully-controlled conditions
+IDEA
+The innovation is at idea stage
+# of innovations
+angle-downPipeline overview
+in percentage
+angle-down
+More information on Innovation Readiness can be found here.INNOVATION READINESS
+list-timelineInnovations can be at different levels of maturity and go through 
+processes of ideation, design, testing and validation. This infographic 
+shows the readiness levels of the innovations included in this portfolio.
+21
+total # of 
+innovations5.43
+average 
+readiness
+Page 7:
+7
+CGIAR IPSR Innovation Portfolio Management | CGIAR Initiative on Sustainable Animal Productivity for Livelihoods, Nutrition and Gender Inclusion (SAPLING)Citation
+Baltenweck, I., Rekik, M., Ouma, E., Galie, A., Kassie, G.T., Notenbaert, A., Mwai, O.A., Haile, A., Dione, M., Wamatu, 
+J., Thierfelder, C.L., Padmakumar, V., Rao, J., Esatu, W., Sanchez-Garcia, M., Hammond, J., Konlambigue, M., Lacasta, 
+A. and Marshall, K.2023. CGIAR Research Initiative on Sustainable Animal Productivity: IPSR Innovation Portfolio 
+Management Report. First edition, March 2023. Montpellier: CGIAR System Organization.  
+https://hdl.handle.net/10568/130462
+ © 2022 CGIAR System Organization. Some rights reserved. 
+This work is licensed under a CC BY-NC 4.0 license .ACKNOWLEDGEMENTS
+We would like to thank all Funders who support this innovation through their contributions to the CGIAR Trust Fund  
+(https://www.cgiar.org/funders/ ). Additional bilateral investment in this innovation portfolio has been provided by 
+the World Bank, the Bill and Melinda Gates Foundation, the United States Agency for International Development, the 
+Scotland Rural College and the Dutch Research Council.
+This Innovation Portfolio Management Report was curated by CGIAR’s Portfolio Performance Unit (PPU) from reported 
+Initiatives data, and the authors wish to thank Nicoletta Buono and Ijudai Jasada for their valuable contributions for 
+their valuable contributions.
+ File: download
+Page 1:
+Asian Mega Delta 
+innovation 
+portfolio overview
+Marc Schut
+CGIAR PPU 
+March 2023
+Page 2:
+www.cgiar.orgBefore we start…
+•Innovation data was self-reported bytheInitiatives in theCGIAR PRMS
+•Innovation readiness data, gender -andclimate -tagging is evidence -based
+•Innovation data was quality -assured by2 independent assessors
+•The data used has been validated byInitiative Leadership
+•In thisoverview , both innovations thatInitiatives lead (as primary submitting Initiative ) and
+contribute to(as contributing Initiative ) are included
+•The objective of thisoverview is nottogivea verdict of right/wrong. Rather , theobjective
+is tocreat a starting point forunderstanding , reflection anddiscussion
+•AllCGIAR results canbeaccessed here: https://www.cgiar.org/food -security -impact/new -
+results -dashboard/
+Page 3:
+www.cgiar.orgBig picture: 476 CGIAR innovations
+•Lowest reported #of innovations per Initiative = 2
+•Highest reported # of innovations per Initiative = 99 (of which 59 
+breeding pipelines )
+•58% technological innovations of which28% 
+new/ improved varieties / breeds
+•28 disruptive innovations in thepipeline (close to50% of which
+are policy/ organizational / institutional innovations ) 
+•Top 3 countries : Ehtiopia (54), Kenya (48), Bangladesh (42)
+•844 unique partnerships on innovation development
+•4.90 →average Innovation Readiness of theportfolio
+Page 4:
+www.cgiar.org
+AMD results reported in 2022
+Page 5:
+www.cgiar.orgFocus in 2022 reporting
+1
+2
+43
+Innovation Portfolio ManagementProfile all CGIAR innovations
+Develop innovation packages for 
+scaling ready innovations
+Develop scaling 
+strategiesoutcomes
+impact2022  IPSR focus 2023 IPSR focus
+outputs2024 onwards IPSR focus
+Page 6:
+www.cgiar.orgAMD: 8 Innovations in 5 countries 
+Page 7:
+www.cgiar.orgThe 8 innovations developed under AMD
+#Innovation short title Legacy 
+innovationLead/ collaborator Co-funded 
+through 
+bilateralsInnovation 
+Readiness
+1Climate smart maps and adaptation plans Yes Lead 9
+2Livestock decision trees for climate service Lead 4
+3Business model assessment template for climate 
+servicesLead 4
+4Radical collaborations for gender -just climate 
+solutionsLead 4
+5Regional Gender and Plant Health Network in 
+Southeast AsiaCollaborator 1
+6Rice straw composting business models Yes Lead PINstraw 8
+7Improved water management at watershed -scale 
+through community engagementYes Lead SIIL 6
+8Modern high -yielding rice cultivation with improved 
+water managementYes LeadSIIL5
+Page 8:
+www.cgiar.orgAMD Innovation Types
+Page 9:
+www.cgiar.orgAMD Innovation Nature
+Page 10:
+www.cgiar.orgAMD Innovation Gender focus
+# Innovations with principal focus 
+on GenderInnovation 
+Readiness
+1Radical collaborations for gender -
+just climate solutions4
+2Regional Gender and Plant Health 
+Network in Southeast Asia1
+Page 11:
+www.cgiar.orgAMD Innovation Climate focus
+# Innovations with principal focus 
+on ClimateInnovation 
+Readiness
+1Climate Smart maps and 
+adaptation plans9
+2Improved water management at 
+watershed -scale through community 
+engagement6
+3Livestock decision trees for climate 
+service4
+4Radical collaborations for gender -
+just climate solutions4
+5Rice straw composting business 
+models8
+Page 12:
+www.cgiar.orgAMD Innovation Pipeline
+https://drive.google.com/file/d/1muDLtqpeaSCIX60g6qQG_GGOPR61Rq7E/view
+Page 13:
+www.cgiar.org
+AMD Innovation contribution to the SDGs
+Page 14:
+www.cgiar.orgAMD collaboration with external partners
+Page 15:
+www.cgiar.orgAMD collaboration with Initiatives/ Platforms
+Page 16:
+www.cgiar.orgAMD Innovation development by CG -centres
+Page 17:
+www.cgiar.orgAMD Innovation Use Cases
+Reported innovation use data of all RIIs can be accessed here
+#Innovation short title
+1Deployment of voice messaging based on 
+weather forecasts to avoid rainfall -induced 
+crop damage to mungbean in coastal 
+Bangladesh
+2Development and use of crop decision trees 
+for climate risk management
+3Improved access of farmers to climate 
+advisories through agro-climatic bulletins (ACB)
+4Scaling Readiness mainstreamed by CGIAR to 
+operationalize its 2030 Research and 
+Innovation Strategy
+Page 18:
+www.cgiar.orgAMD capacity sharing for development
+Page 19:
+www.cgiar.orgAMD policy change (9 policies enacted)
+# Innovation short title
+1International development partners formulate and execute new projects to maximize climate adaptation and mitigation 
+results from delta development research interventions, namely spatial analysis and cost -benefit assessment
+2Support from the Can Tho Province government to scaling of ""Mechanized rice straw composting business model"" to other 
+provinces of Vietnam
+3The IRRI technology “Alternate Wetting and Drying (AWD)” to mitigate greenhouse gas emissions in rice was included in 
+Bagladesh's National Adaptation Plan 2023 -2050
+4 Government of Vietnam adopts Climate Smart (","12040"
+"5365","GENDER_EQUALITY_PROMPT","# **You are an AI assistant tasked with evaluating research results from CGIAR (Consultative Group on International Agricultural Research) to determine whether they align with and contribute to CGIAR's objectives in promoting gender equality. Your goal is to accurately assign an impact area tag that reflects the relevance and impact of the research on these specific gender equality objectives.**
+
+### **Context:**
+CGIAR is a global partnership that unites international organizations focused on research for food security. CGIAR has established specific objectives to promote gender equality, particularly in the fields of agriculture, forestry, fisheries, climate, and nutrition in developing countries. The research results you will analyze originate from various CGIAR initiatives and projects in these and related fields.
+
+### **Research Result Components:**
+Each research result includes the following details:
+- **Title:** A brief title summarizing the research result.
+- **Description:** A detailed description of the research result, including methods and findings.
+- **Research Abstract:** A summary of key findings and implications (optional).
+- **Research Parsed Text:** The parsed text of the research result (optional).
+
+### **Tagging Criteria:**
+Assign a gender equality impact tag using the following criteria:
+
+- **0 = Not Targeted:** 
+  - The research does not address or contribute to CGIAR's gender equality objectives.
+  - The research is unrelated to gender equality, focusing instead on different topics with no significant implications for gender-related issues.
+  - Example: A study focused solely on crop yield improvements without considering gender roles, implications, or disparities.
+
+- **1 = Significant:**
+  - The research makes a meaningful contribution to CGIAR’s gender equality objectives, but these are not the primary focus.
+  - The research is relevant and provides insights into gender dynamics, but these are secondary to other goals.
+  - Example: A study that examines the impact of agricultural interventions on women’s access to land but does not center its entire analysis on gender equality.
+
+- **2 = Principal:**
+  - The primary objective of the research is to address and directly impact CGIAR's goals in promoting gender equality.
+  - The research would not have been undertaken without the intention to contribute to these specific gender equality objectives.
+  - Example: A study specifically designed to develop agricultural policies aimed at improving women’s access to financial resources and closing gender gaps.
+
+### **Key Objectives Set by CGIAR:**
+- **Closing the Gender Gap:** Addressing disparities in rights to economic resources, ownership, and control over land and natural resources for women in food, land, and water systems.
+- **Providing Opportunities:** Creating opportunities for young people who are not in employment, education, or training, with a focus on gender inclusivity.
+
+### **Instructions:**
+1. **Analyze the Title and Abstract:** Determine whether the research is related to CGIAR's objectives in promoting gender equality by looking for relevant keywords or phrases, such as “gender,” “women,” “equality,” or “empowerment.”
+2. **Review the Description and Parsed Text:** Assess whether the research directly contributes to CGIAR’s gender equality objectives, and how integral these objectives are to the overall study.
+3. **Assign the Tag:** Based on the criteria provided, assign the most appropriate tag (0, 1, or 2) that reflects whether the research is related to and impacts CGIAR’s objectives in gender equality.
+4. **Provide a Brief Justification:** Explain why you assigned this tag, referencing specific aspects of the research that influenced your decision. Make sure to clarify how the research aligns (or does not align) with CGIAR’s gender equality objectives.
+
+### **Important Notes:**
+- If the research does not relate to CGIAR's objectives in gender equality, assign a tag of **0** (Not Targeted).
+- If the research mentions gender equality as an important consideration but not the primary focus, assign a tag of **1** (Significant).
+- If gender equality is the primary objective of the research, assign a tag of **2** (Principal).
+- When assigning a tag of **2**, ensure that the evidence clearly demonstrates that gender equality objectives were the main goals of the research and fundamental to its design.
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+{ ""score"": <0|1|2>, ""explanation"": ""<Your explanation here>"" }
+
+
+### **Now, analyze the following research result and assign a gender equality tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in promoting gender equality.**
+
+**Text to Analyze:**
+[INPUT_TEXT]","gpt-4o-mini","Gender","Webinar insights: Pathways to more jobs and better incomes in agrifood systems Building inclusive and sustainable agrifood systems can play a key role in achieving sustainable development goals. Agrifood systems account for more than 70% of employment in low-income countries and employs more than 1 billion people worldwide. Yet achieving equitable and inclusive livelihoods and employment is at risk. Webinar insights: Pathways to more jobs and better incomes in agrifood systems Skip to main content Dear CGSpace users, we have performed some minor upgrades to the user interface. If it does not look right you should refresh the page while holding the Shift key. Communities & Collections Browse Navigate CGIAR Centers Statistics English Català Čeština Deutsch Español Français Gàidhlig Italiano Latviešu Magyar Nederlands Polski Português Português do Brasil Srpski (lat) Suomi Svenska Türkçe Tiếng Việt Қазақ বাংলা हिंदी Ελληνικά Српски Yкраї́нська Log In Note: CGIAR users should log in with their Active Directory username and password. For example, if your email is j.smith@cgiar.org, you would use jsmith here. Log in New user? Click here to register. Have you forgotten your password? Home CGIAR 2030 portfolio CGIAR 2030 research initiatives (2022–2024) CGIAR Initiative on Rethinking Food Markets Webinar insights: Pathways to more jobs and better incomes in agrifood systems Webinar insights: Pathways to more jobs and better incomes in agrifood systems No Thumbnail Available Authors Nguyen, Vi Date Issued 2023-08-14 Date Online 2023-08-14 Language en Type Blog Post Review Status Internal Review Access Rights Open Access Usage Rights Other Metadata Full item page Share Citation Nguyen, Vi. 2023. Webinar insights: Pathways to more jobs and better incomes in agrifood systems. https://www.kismfoodmarkets.org/node/2496 Permanent link to cite or share this item https://hdl.handle.net/10568/132771 External link to download this item https://www.kismfoodmarkets.org/node/2496 DOI Abstract/Description Building inclusive and sustainable agrifood systems can play a key role in achieving sustainable development goals. Agrifood systems account for more than 70% of employment in low-income countries and employs more than 1 billion people worldwide. Yet achieving equitable and inclusive livelihoods and employment is at risk. AGROVOC Keywords employment ; income ; agrifood systems ; inclusion ; sustainability ; supply chains ; innovation ; women ; gender ; youth Subjects Organizations Affiliated to the Authors ISEAN Alliance CGIAR Action Areas Systems Transformation CGIAR Impact Areas Poverty reduction, livelihoods and jobs CGIAR Initiatives Rethinking Food Markets Collections CGIAR Initiative on Rethinking Food Markets DSpace software copyright © 2002-2024 LYRASIS About Cookie settings Privacy policy Send Feedback ","1543"
+"5569","GENDER_EQUALITY_PROMPT","# **You are an AI assistant tasked with evaluating research results from CGIAR (Consultative Group on International Agricultural Research) to determine whether they align with and contribute to CGIAR's objectives in promoting gender equality. Your goal is to accurately assign an impact area tag that reflects the relevance and impact of the research on these specific gender equality objectives.**
+
+### **Context:**
+CGIAR is a global partnership that unites international organizations focused on research for food security. CGIAR has established specific objectives to promote gender equality, particularly in the fields of agriculture, forestry, fisheries, climate, and nutrition in developing countries. The research results you will analyze originate from various CGIAR initiatives and projects in these and related fields.
+
+### **Research Result Components:**
+Each research result includes the following details:
+- **Title:** A brief title summarizing the research result.
+- **Description:** A detailed description of the research result, including methods and findings.
+- **Research Abstract:** A summary of key findings and implications (optional).
+- **Research Parsed Text:** The parsed text of the research result (optional).
+
+### **Tagging Criteria:**
+Assign a gender equality impact tag using the following criteria:
+
+- **0 = Not Targeted:** 
+  - The research does not address or contribute to CGIAR's gender equality objectives.
+  - The research is unrelated to gender equality, focusing instead on different topics with no significant implications for gender-related issues.
+  - Example: A study focused solely on crop yield improvements without considering gender roles, implications, or disparities.
+
+- **1 = Significant:**
+  - The research makes a meaningful contribution to CGIAR’s gender equality objectives, but these are not the primary focus.
+  - The research is relevant and provides insights into gender dynamics, but these are secondary to other goals.
+  - Example: A study that examines the impact of agricultural interventions on women’s access to land but does not center its entire analysis on gender equality.
+
+- **2 = Principal:**
+  - The primary objective of the research is to address and directly impact CGIAR's goals in promoting gender equality.
+  - The research would not have been undertaken without the intention to contribute to these specific gender equality objectives.
+  - Example: A study specifically designed to develop agricultural policies aimed at improving women’s access to financial resources and closing gender gaps.
+
+### **Key Objectives Set by CGIAR:**
+- **Closing the Gender Gap:** Addressing disparities in rights to economic resources, ownership, and control over land and natural resources for women in food, land, and water systems.
+- **Providing Opportunities:** Creating opportunities for young people who are not in employment, education, or training, with a focus on gender inclusivity.
+
+### **Instructions:**
+1. **Analyze the Title and Abstract:** Determine whether the research is related to CGIAR's objectives in promoting gender equality by looking for relevant keywords or phrases, such as “gender,” “women,” “equality,” or “empowerment.”
+2. **Review the Description and Parsed Text:** Assess whether the research directly contributes to CGIAR’s gender equality objectives, and how integral these objectives are to the overall study.
+3. **Assign the Tag:** Based on the criteria provided, assign the most appropriate tag (0, 1, or 2) that reflects whether the research is related to and impacts CGIAR’s objectives in gender equality.
+4. **Provide a Brief Justification:** Explain why you assigned this tag, referencing specific aspects of the research that influenced your decision. Make sure to clarify how the research aligns (or does not align) with CGIAR’s gender equality objectives.
+
+### **Important Notes:**
+- If the research does not relate to CGIAR's objectives in gender equality, assign a tag of **0** (Not Targeted).
+- If the research mentions gender equality as an important consideration but not the primary focus, assign a tag of **1** (Significant).
+- If gender equality is the primary objective of the research, assign a tag of **2** (Principal).
+- When assigning a tag of **2**, ensure that the evidence clearly demonstrates that gender equality objectives were the main goals of the research and fundamental to its design.
+
+### **Structured Output Format:**
+Please provide your answer in the following format:
+{ ""score"": <0|1|2>, ""explanation"": ""<Your explanation here>"" }
+
+
+### **Now, analyze the following research result and assign a gender equality tag (0, 1, or 2). Provide a brief explanation for your choice, ensuring it references the criteria and objectives mentioned above. Be careful to determine whether the research is truly aligned with CGIAR's specific goals in promoting gender equality.**
+
+**Text to Analyze:**
+[INPUT_TEXT]","gpt-4o-mini","Gender","Maize Target Product Profiles workshop in Zambia organized for the Agriculture Research Institute breeding program The Maize Product Design team of the Zambia breeding program engaged in reviewing the maize market segments identified by OneCGIAR Market Intelligence and CIMMYT. The workshop focused on refining market segments for Zambia national needs and defining target product profiles for each market segment in support of collaborative efforts to shape the future of Maize breeding in the East and Southern Africa region.                                                                                                                                                                                                                                                                                                    Worksheet Descriptions  Unnamed: 1               Unnamed: 2                                                                                                                                                                    Unnamed: 3                                                                                                                                                                                Unnamed: 4
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                             PRMS Results and IA  coding         NaN   Evidence for IA coding                                                                                                                                                    Starting Rows 1, describes Method used to systematically link Breeding Pipelines employed, Target Product Profiles pursued, and Variety Releases achieved by ALL Genetic Innovation Breeding Efforts to Impact Areas
+                                                                                                                                                                                                                                                                                                                     NaN         NaN   Evidence for IA coding                                                                                                                                                   Starting Rows 11, describes                                                                                          Standardized matrix of traits, value propositions and Impact Area tagging for genetic innovation
+                                                                                                                                                                                                                                                                                                                     NaN         NaN   Evidence for IA coding                                                                                                                                                   Starting Rows 45, describes                                                            Standardized Impact Area tagging for Genetic Innovation Breeding Pipelines and Variety Releases and their link to PRMS results
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                           IRL Standardization Germplasm         NaN  Evidence for IRL coding                                  Links Germplasm Stages, used in CGIAR Genetic Innovation, to Levels of CGIAR Innovation Readiness and Use, across all CGIAR Breeding Efforts                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                    Breeding Cycle times         NaN Evidence for cycle times                                                   Lists cycle times of breeding pipelines, based on a breeders' survey. This information is used in PRMS Results descriptions                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                     BPs >> PRMS Results         NaN    Part of the analytics                                                                                                                       Lists Breeding Pipelines and their link to PRMS Results                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                Value Propositions in BP         NaN    Part of the analytics                                                                                                         Lists Value propositions  and Trait requirement per Breeding Pipeline                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                           BP - TPP - MS         NaN    Part of the analytics  Links between Breeding Pipelines (BP), Target Product Profiles (TPP) and Market Segments (MS), across all of CGAIR breeding, downloaded from Breeding Portal 14 January 2024                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                         TPPs and Traits         NaN    Part of the analytics Links between Trait, Value Proposition, Breeding Pipelines (BP), Target Product Profiles (TPP) , across all of CGAIR breeding, downloaded from Breeding Portal 8 January 2024                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                              Variety 2023 releases > BP         NaN    Part of the analytics                                                                  Known variety releases in 2023, linked to Breeding Pipeline, downloaded from Breeding Portal 14 January 2023                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+    In collaboration with Market Intelligence, Impact Area and IRL coding are standardized across ALL CGIAR breeding efforts, with  improvements from year to year. The file provides methods and analysis. IA Worksheet ""PRMS Results and IA coding"", Rows 93-96 lists Impact Area codes, resulting from the analysis.          NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                     NaN         NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN
+Worksheet ""PRMS Results & IA Coding"" explains the method, developed with Market Intelligence, for standardized Impact Area tagging of CGIAR Breeding Pipelines. The proportion of Breeding Pipelines with Impact Area Tag 2 are shown in Row 33.  The analysis allows to conclude on the overall portfolio orientation.          NaN                      NaN                                                                                                                                                                           NaN                                                                                                                                                                                       NaN","1938"
