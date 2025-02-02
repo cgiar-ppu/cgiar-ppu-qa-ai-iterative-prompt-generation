@@ -1,0 +1,16 @@
+model_name,Impact Area,prompt_id,total,correct,incorrect,accuracy,expert_score,score_total,score_correct,score_accuracy
+o3-mini,climate,Climate_ MVE2,18,9,9,0.5,0,7,2,0.2857142857142857
+o3-mini,climate,Climate_ MVE2,18,9,9,0.5,1,4,2,0.5
+o3-mini,climate,Climate_ MVE2,18,9,9,0.5,2,7,5,0.7142857142857143
+o3-mini,environment,Environment_ MVE2,16,14,2,0.875,0,4,3,0.75
+o3-mini,environment,Environment_ MVE2,16,14,2,0.875,1,4,4,1.0
+o3-mini,environment,Environment_ MVE2,16,14,2,0.875,2,8,7,0.875
+o3-mini,gender,Gender_MVE2_ext_full2,21,12,9,0.5714285714285714,0,9,6,0.6666666666666666
+o3-mini,gender,Gender_MVE2_ext_full2,21,12,9,0.5714285714285714,1,5,2,0.4
+o3-mini,gender,Gender_MVE2_ext_full2,21,12,9,0.5714285714285714,2,7,4,0.5714285714285714
+o3-mini,nutrition,Nutrition_ MVE2,15,8,7,0.5333333333333333,0,9,4,0.4444444444444444
+o3-mini,nutrition,Nutrition_ MVE2,15,8,7,0.5333333333333333,1,4,2,0.5
+o3-mini,nutrition,Nutrition_ MVE2,15,8,7,0.5333333333333333,2,2,2,1.0
+o3-mini,poverty,POVERTY_REDUCTION_PROMPT,22,5,17,0.22727272727272727,0,15,1,0.06666666666666667
+o3-mini,poverty,POVERTY_REDUCTION_PROMPT,22,5,17,0.22727272727272727,1,5,2,0.4
+o3-mini,poverty,POVERTY_REDUCTION_PROMPT,22,5,17,0.22727272727272727,2,2,2,1.0

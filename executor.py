@@ -39,10 +39,16 @@ def execute_task(task):
     try:
         if task['model_name'] in simplified_models:
             # Use simplified API call for specific models
-            response = client.chat.completions.create(
-                model=task['model_name'],
-                messages=messages
-            )
+            api_params = {
+                "model": task['model_name'],
+                "messages": messages
+            }
+            
+            # Add reasoning_effort parameter only for o3-mini model
+            if task['model_name'] == 'o3-mini':
+                api_params["reasoning_effort"] = "high"
+                
+            response = client.chat.completions.create(**api_params)
         else:
             # Use the standard API call with additional parameters
             response = client.chat.completions.create(
