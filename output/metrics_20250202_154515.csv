@@ -1,0 +1,4 @@
+model_name,Impact Area,prompt_id,total,correct,incorrect,accuracy,expert_score,score_total,score_correct,score_accuracy
+gpt-4o-mini,climate,CLIMATE_CHANGE_PROMPT,16,6,10,0.375,0,4,2,0.5
+gpt-4o-mini,climate,CLIMATE_CHANGE_PROMPT,16,6,10,0.375,1,4,1,0.25
+gpt-4o-mini,climate,CLIMATE_CHANGE_PROMPT,16,6,10,0.375,2,8,3,0.375

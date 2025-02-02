@@ -61,7 +61,7 @@ Below you will find detailed instructions for each step.
 
 - **Default Dataset vs. Upload Your Own:**  
   In the sidebar, select **"Default Dataset"** to use the pre-loaded sample data or **"Upload Your Own"** to provide a CSV/Excel file.  
-  If uploading, ensure your file has relevant text fields (e.g., Title, Description, Evidence_Abstract_Text, or Evidence_Parsed_Text).  
+  If uploading, ensure your file has relevant text fields (e.g., Title, Description, Evidence Abstract Text, or Evidence Parsed Text).  
   Once uploaded, the system automatically concatenates these fields into `input_text`.
 
 **Tip:** Expand the “Show sample of input data” section in the main page to confirm correct columns and data formatting.
@@ -430,7 +430,7 @@ with tab1:
             selected_prompts_dict = {pid: prompts[pid] for pid in selected_prompts}
 
             # Deduplicate input data based on 'Result code' and relevant text fields
-            optional_columns = ['Title', 'Description', 'Evidence_Abstract_Text', 'Evidence_Parsed_Text']
+            optional_columns = ['Title', 'Description', 'Evidence Abstract Text', 'Evidence Parsed Text']
             existing_columns = [col for col in optional_columns if col in selected_df.columns]
             df_unique_input = selected_df.drop_duplicates(subset=['Result code'] + existing_columns)
 
