@@ -59,7 +59,7 @@ def main():
         return
     
     # Stage 1: Task List Creation
-    input_csv = 'input//Joined_Processed_Evidence_PRMS_ExpertsScore.csv'
+    input_csv = 'input//Joined_Processed_Evidence_PRMS_ExpertsScore v2 to run 28 Jan both 23-24 - only with evidence.csv'
     task_list_csv = f'output//task_list_{timestamp}.csv'
     task_list_excel = f'output//task_list_{timestamp}.xlsx'
     output_csv = f'output//results_{timestamp}.csv'

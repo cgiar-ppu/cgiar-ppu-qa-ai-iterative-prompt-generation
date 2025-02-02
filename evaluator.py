@@ -9,7 +9,11 @@ def evaluate_results(output_csv, input_csv, metrics_csv):
 
     # Load the results and input data
     results_df = pd.read_csv(output_csv)
-    input_df = pd.read_csv(input_csv)
+    file_ext = input_csv.split('.')[-1].lower()
+    if file_ext in ['xls', 'xlsx']:
+        input_df = pd.read_excel(input_csv)
+    else:
+        input_df = pd.read_csv(input_csv)
 
     # Ensure the 'score' column exists in results_df
     if 'score' not in results_df.columns:
