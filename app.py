@@ -283,15 +283,21 @@ dataset_option = st.sidebar.radio(
     ('Default Dataset', 'Upload Your Own')
 )
 
+# Add a new checkbox:
+combine_evidence_checkbox = st.sidebar.checkbox(
+    "Combine multiple rows by Result code (concatenate 'Evidence Extracted Text')",
+    value=False
+)
+
 if dataset_option == 'Upload Your Own':
     uploaded_file = st.sidebar.file_uploader("Upload CSV or Excel", type=["csv", "xls", "xlsx"])
     input_df = None
     if uploaded_file:
         # Use load_data function to process the uploaded file
-        input_df = load_data(uploaded_file)
+        input_df = load_data(uploaded_file, combine_evidence=combine_evidence_checkbox)
 else:
     input_file = 'input/Joined_Processed_Evidence_PRMS_ExpertsScore v2 to run 28 Jan both 23-24 - only with evidence.xlsx'
-    input_df = load_data(input_file)
+    input_df = load_data(input_file, combine_evidence=combine_evidence_checkbox)
     #with st.expander("Show Debug Logs"):    
        # st.write("Columns in DataFrame:", input_df.columns.tolist())
        # st.write("Available Result Codes in DataFrame:")

@@ -4,7 +4,7 @@ import pandas as pd
 import streamlit as st
 import os
 
-def load_data(input_file):
+def load_data(input_file, combine_evidence=False):
     """
     Load data from a CSV file path or a file-like object and preprocess it.
     """
@@ -33,6 +33,13 @@ def load_data(input_file):
         st.error(f"Error reading the uploaded file: {e}")
         st.stop()
 
+    if combine_evidence:
+        try:
+            df = combine_rows_by_result_code(df)  # call the new function
+        except ValueError as e:
+            st.error(str(e))
+            st.stop()
+
     # Check for required columns in the DataFrame
     possible_columns = ['Title', 'Description', 'Evidence Abstract Text', 'Evidence Parsed Text']
     available_columns = [col for col in possible_columns if col in df.columns]
@@ -56,3 +63,46 @@ def load_existing_results(output_csv):
         return completed_tasks
     except FileNotFoundError:
         return set()
+
+def combine_rows_by_result_code(df):
+    """
+    Group rows by 'Result code' and concatenate all 'Evidence Extracted Text'
+    for each code into one row. Keeps one row per unique 'Result code'.
+
+    If your spreadsheet also needs other columns aggregated,
+    you can modify the .agg(...) dictionary accordingly.
+    """
+    # Safety check
+    required_cols = ['Result code', 'Evidence Parsed Text']
+    for col in required_cols:
+        if col not in df.columns:
+            raise ValueError(
+                f"To combine rows by result code, the dataframe must have '{col}' column."
+            )
+
+    # Example aggregator:
+    # 1) Keep only the first non-null of certain columns (like Title, Description, etc.).
+    # 2) Concatenate the text in 'Evidence Extracted Text' separated by a period and new paragraphs.
+    agg_dict = {
+        'Title': 'first',  # or you can choose to combine them differently if you want
+        'Description': 'first',
+        'Evidence Abstract Text': 'first',
+        'Evidence Parsed Text': lambda series: ".\n\n".join(
+            str(x) for x in series.dropna()
+        )
+    }
+
+    # Before grouping, ensure these columns exist. If not, remove them from aggregator:
+    actual_agg_dict = {}
+    for col, how in agg_dict.items():
+        if col in df.columns:
+            actual_agg_dict[col] = how
+
+    # Do the grouping and aggregation
+    df_combined = (
+        df
+        .groupby('Result code', as_index=False)
+        .agg(actual_agg_dict)
+    )
+
+    return df_combined

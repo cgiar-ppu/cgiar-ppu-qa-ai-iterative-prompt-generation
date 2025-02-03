@@ -1,0 +1,4 @@
+model_name,Impact Area,prompt_id,total,correct,incorrect,accuracy,expert_score,score_total,score_correct,score_accuracy
+gpt-4o-mini,gender,GENDER_EQUALITY_PROMPT,21,15,6,0.7142857142857143,0,9,7,0.7777777777777778
+gpt-4o-mini,gender,GENDER_EQUALITY_PROMPT,21,15,6,0.7142857142857143,1,5,2,0.4
+gpt-4o-mini,gender,GENDER_EQUALITY_PROMPT,21,15,6,0.7142857142857143,2,7,6,0.8571428571428571
