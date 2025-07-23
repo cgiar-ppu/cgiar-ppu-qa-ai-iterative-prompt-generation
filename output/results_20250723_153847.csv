@@ -1,0 +1,23 @@
+result_code,prompt_id,model_name,impact_area,model_output,token_count,timestamp,score,explanation
+869,Test 5,gpt-4o-mini,,The text does not explicitly mention any countries. It focuses on a method called GenderUp for scaling agricultural innovations.,92,2025-07-23 15:38:49.188014,,
+1020,Test 5,gpt-4o-mini,,"**Countries:**
+1. Ghana
+2. Côte d'Ivoire
+
+**Explanation:** The text specifically mentions these two countries as the focus for climate adaptation practices for cocoa management.",166,2025-07-23 15:38:49.648660,,
+869,Summary Test,gpt-4o-mini,,"**Answer:** The text describes ""GenderUp,"" a method designed to help innovation teams scale agricultural projects in a socially inclusive and responsible manner. 
+
+**Explanation:** It emphasizes the importance of considering the impacts on various social groups during the scaling process to enhance the effectiveness and inclusivity of agricultural innovations.",92,2025-07-23 15:38:49.742914,,
+3183,Summary Test,gpt-4o-mini,,"The text discusses **Innovation Portfolio Management**, which involves managing multiple innovation projects to achieve positive societal impact. It emphasizes the importance of maintaining a healthy portfolio to ensure effective outcomes, aiding in decision-making, prioritization, risk management, and communication with stakeholders.",152,2025-07-23 15:38:49.743913,,
+37,Summary Test,gpt-4o-mini,,"The text discusses bean breeding networks in Africa aimed at developing drought- and heat-resistant, biofortified bean varieties to meet the needs of farmers and seed companies. 
+
+It highlights the importance of common beans as a staple food, their role in improving soil fertility, and the collaborative efforts of organizations like CIAT and PABRA in enhancing bean varieties through feedback from stakeholders.",236,2025-07-23 15:38:50.124147,,
+3183,Test 5,gpt-4o-mini,,"The text does not explicitly mention any countries. It discusses the concept of innovation portfolio management in a general context, applicable to various projects and organizations globally.",152,2025-07-23 15:38:50.172238,,
+1020,Summary Test,gpt-4o-mini,,"The text is about Aclimatar, a platform aimed at helping smallholder cocoa producers in West Africa adapt to climate change. 
+
+Aclimatar provides climate risk assessments and tailored adaptation strategies to enhance resilience and sustainable practices among cocoa farmers in Ghana and Côte d'Ivoire.",166,2025-07-23 15:38:50.624537,,
+37,Test 5,gpt-4o-mini,,"**List of Countries:**
+1. Tanzania
+2. (Additional countries are not explicitly mentioned in the text, but the total is 16 African countries involved in the breeding efforts.)
+
+**Explanation:** The text specifies Tanzania and indicates that there are 16 African countries participating in the bean breeding networks, but does not list them all.",236,2025-07-23 15:38:50.737728,,

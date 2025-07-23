@@ -27,7 +27,7 @@ def generate_task_list(df_input, prompts, models, max_token_limit=80000):
     tasks = []
     for _, row in df_input.iterrows():
         input_text = row['input_text']
-        result_code = row['Result code']
+        result_code = row['result_code']
         for prompt_id, prompt in prompts.items():
             prompt_text = prompt['text']
             impact_area = prompt.get('impact_area', '')

@@ -4,7 +4,7 @@ import streamlit as st
 import pandas as pd
 import os
 import time
-from data_loader import load_data, load_existing_results
+from data_loader import load_data, load_existing_results, process_dataframe_with_selected_columns
 from task_generator import generate_task_list, save_task_list
 from executor import execute_tasks_concurrently
 from evaluator import evaluate_results
@@ -61,10 +61,18 @@ Below you will find detailed instructions for each step.
 
 - **Default Dataset vs. Upload Your Own:**  
   In the sidebar, select **"Default Dataset"** to use the pre-loaded sample data or **"Upload Your Own"** to provide a CSV/Excel file.  
-  If uploading, ensure your file has relevant text fields (e.g., Title, Description, Evidence Abstract Text, or Evidence Parsed Text).  
-  Once uploaded, the system automatically concatenates these fields into `input_text`.
+  
+- **Text Columns Selection:**  
+  Once a dataset is loaded, you can select which columns to use for creating the input text that will be sent to the models.  
+  The app will automatically suggest common text columns (like Title, Description, Evidence Abstract Text, etc.) but you can customize this selection based on your specific dataset.  
+  Multiple selected columns will be concatenated together to form the input text for analysis.
 
-**Tip:** Expand the “Show sample of input data” section in the main page to confirm correct columns and data formatting.
+- **Unique Identifier Column Selection:**  
+  You can also select which column serves as the unique identifier for each row in your dataset.  
+  The app will automatically suggest common identifier columns (like Result code, ID, Code, etc.) but you can choose any column that uniquely identifies your records.  
+  This identifier is used throughout the application for tracking and organizing results.
+
+**Tip:** Expand the "Show sample of input data" section in the main page to confirm correct columns and data formatting.
 
 ### 3. Selecting Results to Process
 
@@ -138,7 +146,7 @@ Below you will find detailed instructions for each step.
 ## Troubleshooting
 
 - **No Data or Missing Columns:**  
-  Check that your uploaded file contains at least one of the recognized text fields.
+  Check that your uploaded file contains text columns that can be selected for analysis. Use the "Text Columns Selection" section to choose appropriate columns from your dataset.
   
 - **No Matching Result Codes:**  
   Ensure correct formatting of codes. Try uppercase and verify that they exist in the dataset.
@@ -146,6 +154,12 @@ Below you will find detailed instructions for each step.
 - **Empty Results or Missing Metrics:**  
   If no tasks are generated or results are empty, verify that prompts are properly selected and that `[INPUT_TEXT]` was found in the prompt.  
   If metrics are not generated, it may be because the dataset lacks the columns required for benchmark comparisons.
+
+- **No Text Columns Available:**  
+  If no text columns appear in the selection, ensure your dataset contains string/text columns that aren't obviously numeric or identifier fields.
+
+- **No Unique Identifier Column:**  
+  If you can't find a suitable unique identifier column, check that your dataset has a column that uniquely identifies each row (such as ID, Code, Index, etc.).
 
 ---
 
@@ -180,6 +194,15 @@ if 'custom_df' not in st.session_state:
 
 if 'transformed_custom_df' not in st.session_state:
     st.session_state['transformed_custom_df'] = None
+
+if 'raw_input_df' not in st.session_state:
+    st.session_state['raw_input_df'] = None
+
+if 'selected_text_columns' not in st.session_state:
+    st.session_state['selected_text_columns'] = []
+
+if 'selected_id_column' not in st.session_state:
+    st.session_state['selected_id_column'] = None
 
 # Sidebar
 st.sidebar.title("Configuration")
@@ -289,25 +312,135 @@ combine_evidence_checkbox = st.sidebar.checkbox(
     value=False
 )
 
+# Load raw data first to get available columns
+raw_input_df = None
 if dataset_option == 'Upload Your Own':
     uploaded_file = st.sidebar.file_uploader("Upload CSV or Excel", type=["csv", "xls", "xlsx"])
-    input_df = None
     if uploaded_file:
-        # Use load_data function to process the uploaded file
-        input_df = load_data(uploaded_file, combine_evidence=combine_evidence_checkbox)
+        # Load raw data without processing to get column names
+        try:
+            file_extension = uploaded_file.name.split('.')[-1].lower()
+            if file_extension == 'csv':
+                raw_input_df = pd.read_csv(uploaded_file)
+            elif file_extension in ['xls', 'xlsx']:
+                raw_input_df = pd.read_excel(uploaded_file)
+            st.session_state['raw_input_df'] = raw_input_df
+        except Exception as e:
+            st.sidebar.error(f"Error reading the uploaded file: {e}")
 else:
     input_file = 'input/Joined_Processed_Evidence_PRMS_ExpertsScore v2 to run 28 Jan both 23-24 - only with evidence.xlsx'
-    input_df = load_data(input_file, combine_evidence=combine_evidence_checkbox)
-    #with st.expander("Show Debug Logs"):    
-       # st.write("Columns in DataFrame:", input_df.columns.tolist())
-       # st.write("Available Result Codes in DataFrame:")
-       # st.write(input_df['Result code'].unique())
+    try:
+        raw_input_df = pd.read_excel(input_file)
+        st.session_state['raw_input_df'] = raw_input_df
+    except Exception as e:
+        st.sidebar.error(f"Error reading the default file: {e}")
+
+# Column Selection - only show if we have data
+if 'raw_input_df' in st.session_state and st.session_state['raw_input_df'] is not None:
+    raw_input_df = st.session_state['raw_input_df']
+    
+    # Unique Identifier Column Selection (do this first)
+    st.sidebar.subheader("Unique Identifier Column")
+    
+    # Get all columns that could serve as unique identifiers
+    # These are typically string columns that might contain codes, IDs, etc.
+    id_columns = [col for col in raw_input_df.columns 
+                 if raw_input_df[col].dtype in ['object', 'string'] or 
+                 raw_input_df[col].dtype.name.startswith('int') or 
+                 raw_input_df[col].dtype.name.startswith('float')]
+    
+    # Default selection based on common identifier column names
+    default_id_column = None
+    common_id_columns = ['Result code', 'ID', 'Code', 'Identifier', 'Key', 'Index', 'Number']
+    for col in id_columns:
+        if any(common_col.lower() in col.lower() for common_col in common_id_columns):
+            default_id_column = col
+            break
+    
+    # If no common column found, suggest the first column
+    if not default_id_column and id_columns:
+        default_id_column = id_columns[0]
+    
+    selected_id_column = st.sidebar.selectbox(
+        "Select unique identifier column",
+        options=id_columns,
+        index=id_columns.index(default_id_column) if default_id_column in id_columns else 0,
+        help="This column will be used as the unique identifier for each row in your dataset.",
+        key='id_column_selector'
+    )
+    
+    st.session_state['selected_id_column'] = selected_id_column
+    
+    # Text Columns Selection (do this after ID column selection)
+    st.sidebar.subheader("Text Columns Selection")
+    
+    # Get all text-like columns (excluding obvious non-text columns and the selected ID column)
+    exclude_columns = ['Result code', 'ID', 'Index', 'Score', 'Rating', 'Number', 'Count', 'Year', 'Date']
+    text_columns = [col for col in raw_input_df.columns 
+                   if not any(exclude_word.lower() in col.lower() for exclude_word in exclude_columns)
+                   and raw_input_df[col].dtype == 'object'  # Only string/object columns
+                   and col != selected_id_column]  # Exclude the selected ID column
+    
+    # Default selection based on common text columns
+    default_text_columns = []
+    common_text_columns = ['Title', 'Description', 'Evidence Abstract Text', 'Evidence Parsed Text', 'Abstract', 'Summary', 'Content', 'Text']
+    for col in text_columns:
+        if any(common_col.lower() in col.lower() for common_col in common_text_columns):
+            default_text_columns.append(col)
+    
+    # If no common columns found, suggest the first few text columns
+    if not default_text_columns and text_columns:
+        default_text_columns = text_columns[:min(3, len(text_columns))]
+    
+    selected_text_columns = st.sidebar.multiselect(
+        "Select columns to combine for input text",
+        options=text_columns,
+        default=default_text_columns,
+        help="These columns will be concatenated to create the input text for the prompts.",
+        key='text_columns_selector'
+    )
+    
+    st.session_state['selected_text_columns'] = selected_text_columns
+    
+    # Process the data with selected columns
+    if selected_text_columns and selected_id_column:
+        # Use load_data function but pass the selected columns
+        if dataset_option == 'Upload Your Own':
+            # For uploaded files, we need to reset the file pointer or re-upload
+            # Since we already loaded raw data, we can pass the raw dataframe directly
+            input_df = process_dataframe_with_selected_columns(
+                st.session_state['raw_input_df'], 
+                combine_evidence=combine_evidence_checkbox,
+                selected_columns=selected_text_columns,
+                id_column=selected_id_column
+            )
+        else:
+            # For default dataset, pass the file path
+            input_df = load_data(
+                input_file, 
+                combine_evidence=combine_evidence_checkbox,
+                selected_columns=selected_text_columns,
+                id_column=selected_id_column
+            )
+    else:
+        if not selected_text_columns:
+            st.sidebar.warning("Please select at least one text column to create input text.")
+        if not selected_id_column:
+            st.sidebar.warning("Please select a unique identifier column.")
+        input_df = None
+else:
+    input_df = None
 
 if input_df is None:
-    st.warning("Please upload a CSV file to proceed.")
+    if dataset_option == 'Upload Your Own':
+        st.warning("Please upload a CSV/Excel file to proceed.")
+    else:
+        st.warning("Please check the default dataset file.")
 else:
     with st.expander("Show sample of input data for confirmation:"):
         st.write("Columns in DataFrame after processing:", input_df.columns.tolist())
+        st.write("Selected text columns:", st.session_state.get('selected_text_columns', []))
+        st.write("Selected unique identifier column:", st.session_state.get('selected_id_column', 'None'))
         st.write("Sample data:")
         st.write(input_df.head())
 
@@ -341,15 +474,15 @@ if input_df is not None:
                 st.write("Result codes entered by user:")
                 st.write(result_code_list)
 
-            # Ensure 'Result code' column is of type string and strip whitespace
-            input_df['Result code'] = input_df['Result code'].astype(str).str.strip()
+            # Ensure 'result_code' column is of type string and strip whitespace
+            input_df['result_code'] = input_df['result_code'].astype(str).str.strip()
 
             # Convert both to uppercase for case-insensitive matching
-            input_df['Result code'] = input_df['Result code'].str.upper()
+            input_df['result_code'] = input_df['result_code'].str.upper()
             result_code_list = [code.upper() for code in result_code_list]
 
             # Perform the filtering
-            selected_df = input_df[input_df['Result code'].isin(result_code_list)]
+            selected_df = input_df[input_df['result_code'].isin(result_code_list)]
 
             if selected_df.empty:
                 st.warning("No matching result codes found. Please check your input.")
@@ -435,10 +568,10 @@ with tab1:
             # Filter prompts
             selected_prompts_dict = {pid: prompts[pid] for pid in selected_prompts}
 
-            # Deduplicate input data based on 'Result code' and relevant text fields
+            # Deduplicate input data based on 'result_code' and relevant text fields
             optional_columns = ['Title', 'Description', 'Evidence Abstract Text', 'Evidence Parsed Text']
             existing_columns = [col for col in optional_columns if col in selected_df.columns]
-            df_unique_input = selected_df.drop_duplicates(subset=['Result code'] + existing_columns)
+            df_unique_input = selected_df.drop_duplicates(subset=['result_code'] + existing_columns)
 
             # Limit the number of results if using 'Number of Results' method
             if result_selection_method == 'Number of Results':

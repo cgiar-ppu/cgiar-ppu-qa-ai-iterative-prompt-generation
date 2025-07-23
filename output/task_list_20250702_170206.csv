@@ -1,0 +1,1011 @@
+"result_code","prompt_id","prompt_text","model_name","impact_area","input_text","token_count"
+"6752","Top 10 innovations classification","# **You are an AI assistant tasked with classifying CGIAR (Consultative Group on International Agricultural Research) research results into one of the predefined research categories shown below. Your goal is to choose the single most appropriate category that best describes the research.**
+
+### **Context:**
+CGIAR research spans genetics, management practices, policies, markets, social innovation, and more. Correctly tagging each result helps decision-makers locate and synthesize evidence.
+
+### **Research Result Components:**
+Each research result provides:
+- **Title:** A concise summary of the work.
+- **Description:** Detailed objectives, methods, and findings.
+- **Research Abstract:** Key findings (optional).
+- **Research Parsed Text:** Full text (optional).
+
+### **Classification Categories (choose exactly one):**
+
+| Level 1                       | Level 2                   | Unique category (`Level 1:Level 2`)                    |
+| ----------------------------- | ------------------------- | ------------------------------------------------------ |
+| Genetic improvement           | Crop breeding             | Genetic improvement:Crop breeding                      |
+| Genetic improvement           | Animal breeding           | Genetic improvement:Animal breeding                    |
+| Management practices          | Crop management           | Management practices:Crop management                   |
+| Management practices          | Land and water management | Management practices:Land and water management         |
+| Management practices          | Animal management         | Management practices:Animal management                 |
+| Crop and animal health        | Crop health               | Crop and animal health:Crop health                     |
+| Crop and animal health        | Animal health             | Crop and animal health:Animal health                   |
+| Policies and Markets          | Policy solutions          | Policies and Markets:Policy solutions                  |
+| Policies and Markets          | Market solutions          | Policies and Markets:Market solutions                  |
+| Social and process innovation | Gender and social norms   | Social and process innovation:Gender and social norms  |
+| Social and process innovation | Knowledge management      | Social and process innovation:Knowledge management     |
+| Social and process innovation | Scaling                   | Social and process innovation:Scaling                  |
+
+### **Instructions:**
+1. **Scan the Title and Abstract:** Identify key topics, sectors, or disciplines.
+2. **Consult the Description & Parsed Text:** Look for explicit focus areas (e.g., breeding, policy, scaling).
+3. **Match to a Category:**  
+   - **Genetic improvement** → work on breeding or genetic gains.  
+   - **Management practices** → on-farm or natural-resource management.  
+   - **Crop and animal health** → disease, pests, One Health.  
+   - **Policies and Markets** → governance, economics, trade, incentives.  
+   - **Social and process innovation** → gender norms, knowledge flows, scaling strategies.
+4. **Output the Single Best-Fit Category** using its exact `Level 1:Level 2` label.
+5. **Provide a Brief Justification** citing concrete evidence (phrases, objectives, methods) that drove your choice.
+
+### **Structured Output Format:**
+{ ""category"": ""<Level1:Level2>"", ""explanation"": ""<Your explanation here>"" }
+
+### **Now, analyze the following research result and assign its category.**  
+Be precise and concise.
+
+**Text to Analyze:**  
+[INPUT_TEXT]","gpt-4o","None","Protocol for Crop Cut Surveys The protocol for crop cut surveys provides a guide to researchers and users a step-by-step process to conduct a crop cut survey in the field and calculation of the crop cut harvest.","698"
+"6752","Top 10 innovations classification","# **You are an AI assistant tasked with classifying CGIAR (Consultative Group on International Agricultural Research) research results into one of the predefined research categories shown below. Your goal is to choose the single most appropriate category that best describes the research.**
+
+### **Context:**
+CGIAR research spans genetics, management practices, policies, markets, social innovation, and more. Correctly tagging each result helps decision-makers locate and synthesize evidence.
+
+### **Research Result Components:**
+Each research result provides:
+- **Title:** A concise summary of the work.
+- **Description:** Detailed objectives, methods, and findings.
+- **Research Abstract:** Key findings (optional).
+- **Research Parsed Text:** Full text (optional).
+
+### **Classification Categories (choose exactly one):**
+
+| Level 1                       | Level 2                   | Unique category (`Level 1:Level 2`)                    |
+| ----------------------------- | ------------------------- | ------------------------------------------------------ |
+| Genetic improvement           | Crop breeding             | Genetic improvement:Crop breeding                      |
+| Genetic improvement           | Animal breeding           | Genetic improvement:Animal breeding                    |
+| Management practices          | Crop management           | Management practices:Crop management                   |
+| Management practices          | Land and water management | Management practices:Land and water management         |
+| Management practices          | Animal management         | Management practices:Animal management                 |
+| Crop and animal health        | Crop health               | Crop and animal health:Crop health                     |
+| Crop and animal health        | Animal health             | Crop and animal health:Animal health                   |
+| Policies and Markets          | Policy solutions          | Policies and Markets:Policy solutions                  |
+| Policies and Markets          | Market solutions          | Policies and Markets:Market solutions                  |
+| Social and process innovation | Gender and social norms   | Social and process innovation:Gender and social norms  |
+| Social and process innovation | Knowledge management      | Social and process innovation:Knowledge management     |
+| Social and process innovation | Scaling                   | Social and process innovation:Scaling                  |
+
+### **Instructions:**
+1. **Scan the Title and Abstract:** Identify key topics, sectors, or disciplines.
+2. **Consult the Description & Parsed Text:** Look for explicit focus areas (e.g., breeding, policy, scaling).
+3. **Match to a Category:**  
+   - **Genetic improvement** → work on breeding or genetic gains.  
+   - **Management practices** → on-farm or natural-resource management.  
+   - **Crop and animal health** → disease, pests, One Health.  
+   - **Policies and Markets** → governance, economics, trade, incentives.  
+   - **Social and process innovation** → gender norms, knowledge flows, scaling strategies.
+4. **Output the Single Best-Fit Category** using its exact `Level 1:Level 2` label.
+5. **Provide a Brief Justification** citing concrete evidence (phrases, objectives, methods) that drove your choice.
+
+### **Structured Output Format:**
+{ ""category"": ""<Level1:Level2>"", ""explanation"": ""<Your explanation here>"" }
+
+### **Now, analyze the following research result and assign its category.**  
+Be precise and concise.
+
+**Text to Analyze:**  
+[INPUT_TEXT]","o3-mini","None","Protocol for Crop Cut Surveys The protocol for crop cut surveys provides a guide to researchers and users a step-by-step process to conduct a crop cut survey in the field and calculation of the crop cut harvest.","703"
+"6587","Top 10 innovations classification","# **You are an AI assistant tasked with classifying CGIAR (Consultative Group on International Agricultural Research) research results into one of the predefined research categories shown below. Your goal is to choose the single most appropriate category that best describes the research.**
+
+### **Context:**
+CGIAR research spans genetics, management practices, policies, markets, social innovation, and more. Correctly tagging each result helps decision-makers locate and synthesize evidence.
+
+### **Research Result Components:**
+Each research result provides:
+- **Title:** A concise summary of the work.
+- **Description:** Detailed objectives, methods, and findings.
+- **Research Abstract:** Key findings (optional).
+- **Research Parsed Text:** Full text (optional).
+
+### **Classification Categories (choose exactly one):**
+
+| Level 1                       | Level 2                   | Unique category (`Level 1:Level 2`)                    |
+| ----------------------------- | ------------------------- | ------------------------------------------------------ |
+| Genetic improvement           | Crop breeding             | Genetic improvement:Crop breeding                      |
+| Genetic improvement           | Animal breeding           | Genetic improvement:Animal breeding                    |
+| Management practices          | Crop management           | Management practices:Crop management                   |
+| Management practices          | Land and water management | Management practices:Land and water management         |
+| Management practices          | Animal management         | Management practices:Animal management                 |
+| Crop and animal health        | Crop health               | Crop and animal health:Crop health                     |
+| Crop and animal health        | Animal health             | Crop and animal health:Animal health                   |
+| Policies and Markets          | Policy solutions          | Policies and Markets:Policy solutions                  |
+| Policies and Markets          | Market solutions          | Policies and Markets:Market solutions                  |
+| Social and process innovation | Gender and social norms   | Social and process innovation:Gender and social norms  |
+| Social and process innovation | Knowledge management      | Social and process innovation:Knowledge management     |
+| Social and process innovation | Scaling                   | Social and process innovation:Scaling                  |
+
+### **Instructions:**
+1. **Scan the Title and Abstract:** Identify key topics, sectors, or disciplines.
+2. **Consult the Description & Parsed Text:** Look for explicit focus areas (e.g., breeding, policy, scaling).
+3. **Match to a Category:**  
+   - **Genetic improvement** → work on breeding or genetic gains.  
+   - **Management practices** → on-farm or natural-resource management.  
+   - **Crop and animal health** → disease, pests, One Health.  
+   - **Policies and Markets** → governance, economics, trade, incentives.  
+   - **Social and process innovation** → gender norms, knowledge flows, scaling strategies.
+4. **Output the Single Best-Fit Category** using its exact `Level 1:Level 2` label.
+5. **Provide a Brief Justification** citing concrete evidence (phrases, objectives, methods) that drove your choice.
+
+### **Structured Output Format:**
+{ ""category"": ""<Level1:Level2>"", ""explanation"": ""<Your explanation here>"" }
+
+### **Now, analyze the following research result and assign its category.**  
+Be precise and concise.
+
+**Text to Analyze:**  
+[INPUT_TEXT]","gpt-4o","None","No-till seeder adapted in public-private partnership to Moroccan crops and soil types for Moroccan smallholder farmers to practice zero tillage Conservation Agriculture The no-till seeder machinery has been developed to support Morocco's national plan of having one million hectares of farming land under Conservation Agriculture practices by 2030 (Generation Green 2020-2030). Developed from a local prototype by an ICARDA, INRA and local manufacturer team, using technology imported from dryland farming machinery in Australia, the no-till (zero tillage) seeder allows smallholder farmers in Morocco to sow seeds directly into the soil (direct seed) without causing any mechanical modification of the soil structure. No-till practices are expected to improve the resilience of dryland smallholder farmers by reducing soil erosion and increasing the amount of carbon dioxide, water, and organic matter retained in the soil.","833"
+"6587","Top 10 innovations classification","# **You are an AI assistant tasked with classifying CGIAR (Consultative Group on International Agricultural Research) research results into one of the predefined research categories shown below. Your goal is to choose the single most appropriate category that best describes the research.**
+
+### **Context:**
+CGIAR research spans genetics, management practices, policies, markets, social innovation, and more. Correctly tagging each result helps decision-makers locate and synthesize evidence.
+
+### **Research Result Components:**
+Each research result provides:
+- **Title:** A concise summary of the work.
+- **Description:** Detailed objectives, methods, and findings.
+- **Research Abstract:** Key findings (optional).
+- **Research Parsed Text:** Full text (optional).
+
+### **Classification Categories (choose exactly one):**
+
+| Level 1                       | Level 2                   | Unique category (`Level 1:Level 2`)                    |
+| ----------------------------- | ------------------------- | ------------------------------------------------------ |
+| Genetic improvement           | Crop breeding             | Genetic improvement:Crop breeding                      |
+| Genetic improvement           | Animal breeding           | Genetic improvement:Animal breeding                    |
+| Management practices          | Crop management           | Management practices:Crop management                   |
+| Management practices          | Land and water management | Management practices:Land and water management         |
+| Management practices          | Animal management         | Management practices:Animal management                 |
+| Crop and animal health        | Crop health               | Crop and animal health:Crop health                     |
+| Crop and animal health        | Animal health             | Crop and animal health:Animal health                   |
+| Policies and Markets          | Policy solutions          | Policies and Markets:Policy solutions                  |
+| Policies and Markets          | Market solutions          | Policies and Markets:Market solutions                  |
+| Social and process innovation | Gender and social norms   | Social and process innovation:Gender and social norms  |
+| Social and process innovation | Knowledge management      | Social and process innovation:Knowledge management     |
+| Social and process innovation | Scaling                   | Social and process innovation:Scaling                  |
+
+### **Instructions:**
+1. **Scan the Title and Abstract:** Identify key topics, sectors, or disciplines.
+2. **Consult the Description & Parsed Text:** Look for explicit focus areas (e.g., breeding, policy, scaling).
+3. **Match to a Category:**  
+   - **Genetic improvement** → work on breeding or genetic gains.  
+   - **Management practices** → on-farm or natural-resource management.  
+   - **Crop and animal health** → disease, pests, One Health.  
+   - **Policies and Markets** → governance, economics, trade, incentives.  
+   - **Social and process innovation** → gender norms, knowledge flows, scaling strategies.
+4. **Output the Single Best-Fit Category** using its exact `Level 1:Level 2` label.
+5. **Provide a Brief Justification** citing concrete evidence (phrases, objectives, methods) that drove your choice.
+
+### **Structured Output Format:**
+{ ""category"": ""<Level1:Level2>"", ""explanation"": ""<Your explanation here>"" }
+
+### **Now, analyze the following research result and assign its category.**  
+Be precise and concise.
+
+**Text to Analyze:**  
+[INPUT_TEXT]","o3-mini","None","No-till seeder adapted in public-private partnership to Moroccan crops and soil types for Moroccan smallholder farmers to practice zero tillage Conservation Agriculture The no-till seeder machinery has been developed to support Morocco's national plan of having one million hectares of farming land under Conservation Agriculture practices by 2030 (Generation Green 2020-2030). Developed from a local prototype by an ICARDA, INRA and local manufacturer team, using technology imported from dryland farming machinery in Australia, the no-till (zero tillage) seeder allows smallholder farmers in Morocco to sow seeds directly into the soil (direct seed) without causing any mechanical modification of the soil structure. No-till practices are expected to improve the resilience of dryland smallholder farmers by reducing soil erosion and increasing the amount of carbon dioxide, water, and organic matter retained in the soil.","837"
+"6579","Top 10 innovations classification","# **You are an AI assistant tasked with classifying CGIAR (Consultative Group on International Agricultural Research) research results into one of the predefined research categories shown below. Your goal is to choose the single most appropriate category that best describes the research.**
+
+### **Context:**
+CGIAR research spans genetics, management practices, policies, markets, social innovation, and more. Correctly tagging each result helps decision-makers locate and synthesize evidence.
+
+### **Research Result Components:**
+Each research result provides:
+- **Title:** A concise summary of the work.
+- **Description:** Detailed objectives, methods, and findings.
+- **Research Abstract:** Key findings (optional).
+- **Research Parsed Text:** Full text (optional).
+
+### **Classification Categories (choose exactly one):**
+
+| Level 1                       | Level 2                   | Unique category (`Level 1:Level 2`)                    |
+| ----------------------------- | ------------------------- | ------------------------------------------------------ |
+| Genetic improvement           | Crop breeding             | Genetic improvement:Crop breeding                      |
+| Genetic improvement           | Animal breeding           | Genetic improvement:Animal breeding                    |
+| Management practices          | Crop management           | Management practices:Crop management                   |
+| Management practices          | Land and water management | Management practices:Land and water management         |
+| Management practices          | Animal management         | Management practices:Animal management                 |
+| Crop and animal health        | Crop health               | Crop and animal health:Crop health                     |
+| Crop and animal health        | Animal health             | Crop and animal health:Animal health                   |
+| Policies and Markets          | Policy solutions          | Policies and Markets:Policy solutions                  |
+| Policies and Markets          | Market solutions          | Policies and Markets:Market solutions                  |
+| Social and process innovation | Gender and social norms   | Social and process innovation:Gender and social norms  |
+| Social and process innovation | Knowledge management      | Social and process innovation:Knowledge management     |
+| Social and process innovation | Scaling                   | Social and process innovation:Scaling                  |
+
+### **Instructions:**
+1. **Scan the Title and Abstract:** Identify key topics, sectors, or disciplines.
+2. **Consult the Description & Parsed Text:** Look for explicit focus areas (e.g., breeding, policy, scaling).
+3. **Match to a Category:**  
+   - **Genetic improvement** → work on breeding or genetic gains.  
+   - **Management practices** → on-farm or natural-resource management.  
+   - **Crop and animal health** → disease, pests, One Health.  
+   - **Policies and Markets** → governance, economics, trade, incentives.  
+   - **Social and process innovation** → gender norms, knowledge flows, scaling strategies.
+4. **Output the Single Best-Fit Category** using its exact `Level 1:Level 2` label.
+5. **Provide a Brief Justification** citing concrete evidence (phrases, objectives, methods) that drove your choice.
+
+### **Structured Output Format:**
+{ ""category"": ""<Level1:Level2>"", ""explanation"": ""<Your explanation here>"" }
+
+### **Now, analyze the following research result and assign its category.**  
+Be precise and concise.
+
+**Text to Analyze:**  
+[INPUT_TEXT]","gpt-4o","None","Determination of the minimum number of plants and the area to be harvested for correct crop yield The Standard Operating procedures provides the step-by-step guide for the determination of the minimum number of plants and the minimum area to be harvested for correct crop yield determinations and calculation procedures for these parameters.","715"
+"6579","Top 10 innovations classification","# **You are an AI assistant tasked with classifying CGIAR (Consultative Group on International Agricultural Research) research results into one of the predefined research categories shown below. Your goal is to choose the single most appropriate category that best describes the research.**
+
+### **Context:**
+CGIAR research spans genetics, management practices, policies, markets, social innovation, and more. Correctly tagging each result helps decision-makers locate and synthesize evidence.
+
+### **Research Result Components:**
+Each research result provides:
+- **Title:** A concise summary of the work.
+- **Description:** Detailed objectives, methods, and findings.
+- **Research Abstract:** Key findings (optional).
+- **Research Parsed Text:** Full text (optional).
+
+### **Classification Categories (choose exactly one):**
+
+| Level 1                       | Level 2                   | Unique category (`Level 1:Level 2`)                    |
+| ----------------------------- | ------------------------- | ------------------------------------------------------ |
+| Genetic improvement           | Crop breeding             | Genetic improvement:Crop breeding                      |
+| Genetic improvement           | Animal breeding           | Genetic improvement:Animal breeding                    |
+| Management practices          | Crop management           | Management practices:Crop management                   |
+| Management practices          | Land and water management | Management practices:Land and water management         |
+| Management practices          | Animal management         | Management practices:Animal management                 |
+| Crop and animal health        | Crop health               | Crop and animal health:Crop health                     |
+| Crop and animal health        | Animal health             | Crop and animal health:Animal health                   |
+| Policies and Markets          | Policy solutions          | Policies and Markets:Policy solutions                  |
+| Policies and Markets          | Market solutions          | Policies and Markets:Market solutions                  |
+| Social and process innovation | Gender and social norms   | Social and process innovation:Gender and social norms  |
+| Social and process innovation | Knowledge management      | Social and process innovation:Knowledge management     |
+| Social and process innovation | Scaling                   | Social and process innovation:Scaling                  |
+
+### **Instructions:**
+1. **Scan the Title and Abstract:** Identify key topics, sectors, or disciplines.
+2. **Consult the Description & Parsed Text:** Look for explicit focus areas (e.g., breeding, policy, scaling).
+3. **Match to a Category:**  
+   - **Genetic improvement** → work on breeding or genetic gains.  
+   - **Management practices** → on-farm or natural-resource management.  
+   - **Crop and animal health** → disease, pests, One Health.  
+   - **Policies and Markets** → governance, economics, trade, incentives.  
+   - **Social and process innovation** → gender norms, knowledge flows, scaling strategies.
+4. **Output the Single Best-Fit Category** using its exact `Level 1:Level 2` label.
+5. **Provide a Brief Justification** citing concrete evidence (phrases, objectives, methods) that drove your choice.
+
+### **Structured Output Format:**
+{ ""category"": ""<Level1:Level2>"", ""explanation"": ""<Your explanation here>"" }
+
+### **Now, analyze the following research result and assign its category.**  
+Be precise and concise.
+
+**Text to Analyze:**  
+[INPUT_TEXT]","o3-mini","None","Determination of the minimum number of plants and the area to be harvested for correct crop yield The Standard Operating procedures provides the step-by-step guide for the determination of the minimum number of plants and the minimum area to be harvested for correct crop yield determinations and calculation procedures for these parameters.","719"
+"6571","Top 10 innovations classification","# **You are an AI assistant tasked with classifying CGIAR (Consultative Group on International Agricultural Research) research results into one of the predefined research categories shown below. Your goal is to choose the single most appropriate category that best describes the research.**
+
+### **Context:**
+CGIAR research spans genetics, management practices, policies, markets, social innovation, and more. Correctly tagging each result helps decision-makers locate and synthesize evidence.
+
+### **Research Result Components:**
+Each research result provides:
+- **Title:** A concise summary of the work.
+- **Description:** Detailed objectives, methods, and findings.
+- **Research Abstract:** Key findings (optional).
+- **Research Parsed Text:** Full text (optional).
+
+### **Classification Categories (choose exactly one):**
+
+| Level 1                       | Level 2                   | Unique category (`Level 1:Level 2`)                    |
+| ----------------------------- | ------------------------- | ------------------------------------------------------ |
+| Genetic improvement           | Crop breeding             | Genetic improvement:Crop breeding                      |
+| Genetic improvement           | Animal breeding           | Genetic improvement:Animal breeding                    |
+| Management practices          | Crop management           | Management practices:Crop management                   |
+| Management practices          | Land and water management | Management practices:Land and water management         |
+| Management practices          | Animal management         | Management practices:Animal management                 |
+| Crop and animal health        | Crop health               | Crop and animal health:Crop health                     |
+| Crop and animal health        | Animal health             | Crop and animal health:Animal health                   |
+| Policies and Markets          | Policy solutions          | Policies and Markets:Policy solutions                  |
+| Policies and Markets          | Market solutions          | Policies and Markets:Market solutions                  |
+| Social and process innovation | Gender and social norms   | Social and process innovation:Gender and social norms  |
+| Social and process innovation | Knowledge management      | Social and process innovation:Knowledge management     |
+| Social and process innovation | Scaling                   | Social and process innovation:Scaling                  |
+
+### **Instructions:**
+1. **Scan the Title and Abstract:** Identify key topics, sectors, or disciplines.
+2. **Consult the Description & Parsed Text:** Look for explicit focus areas (e.g., breeding, policy, scaling).
+3. **Match to a Category:**  
+   - **Genetic improvement** → work on breeding or genetic gains.  
+   - **Management practices** → on-farm or natural-resource management.  
+   - **Crop and animal health** → disease, pests, One Health.  
+   - **Policies and Markets** → governance, economics, trade, incentives.  
+   - **Social and process innovation** → gender norms, knowledge flows, scaling strategies.
+4. **Output the Single Best-Fit Category** using its exact `Level 1:Level 2` label.
+5. **Provide a Brief Justification** citing concrete evidence (phrases, objectives, methods) that drove your choice.
+
+### **Structured Output Format:**
+{ ""category"": ""<Level1:Level2>"", ""explanation"": ""<Your explanation here>"" }
+
+### **Now, analyze the following research result and assign its category.**  
+Be precise and concise.
+
+**Text to Analyze:**  
+[INPUT_TEXT]","gpt-4o","None","Field boundary delineation and cropped area measurement: Standard operating procedures for agronomic gain assessments in field trials developed for researchers and extensionistss Accurate measurement of crop cultivated area and corresponding field boundary is essential for assessing various _x000D_
+agronomic key performance indicators (KPIs), including yield, profitability and resource use efficiency. In the past, _x000D_
+household surveys have relied heavily on farmer-reported plot areas. However, it has been frequently noted that _x000D_
+farmer-reported plot area is often inaccurate for various reasons. In addition, field boundary information — which is _x000D_
+crucial for various agronomic analytics purposes — is rarely available. Here, we describe the procedure for a global _x000D_
+positioning system (GPS)–based field area measurement using a smartphone/tablet application._x000D_
+_x000D_
+The Standard Operating procedures provides the step-by-step guide to researchers and extensionists  for field boundary delineation and cropped area measurement and calculation procedures for these parameters using an app.","875"
+"6571","Top 10 innovations classification","# **You are an AI assistant tasked with classifying CGIAR (Consultative Group on International Agricultural Research) research results into one of the predefined research categories shown below. Your goal is to choose the single most appropriate category that best describes the research.**
+
+### **Context:**
+CGIAR research spans genetics, management practices, policies, markets, social innovation, and more. Correctly tagging each result helps decision-makers locate and synthesize evidence.
+
+### **Research Result Components:**
+Each research result provides:
+- **Title:** A concise summary of the work.
+- **Description:** Detailed objectives, methods, and findings.
+- **Research Abstract:** Key findings (optional).
+- **Research Parsed Text:** Full text (optional).
+
+### **Classification Categories (choose exactly one):**
+
+| Level 1                       | Level 2                   | Unique category (`Level 1:Level 2`)                    |
+| ----------------------------- | ------------------------- | ------------------------------------------------------ |
+| Genetic improvement           | Crop breeding             | Genetic improvement:Crop breeding                      |
+| Genetic improvement           | Animal breeding           | Genetic improvement:Animal breeding                    |
+| Management practices          | Crop management           | Management practices:Crop management                   |
+| Management practices          | Land and water management | Management practices:Land and water management         |
+| Management practices          | Animal management         | Management practices:Animal management                 |
+| Crop and animal health        | Crop health               | Crop and animal health:Crop health                     |
+| Crop and animal health        | Animal health             | Crop and animal health:Animal health                   |
+| Policies and Markets          | Policy solutions          | Policies and Markets:Policy solutions                  |
+| Policies and Markets          | Market solutions          | Policies and Markets:Market solutions                  |
+| Social and process innovation | Gender and social norms   | Social and process innovation:Gender and social norms  |
+| Social and process innovation | Knowledge management      | Social and process innovation:Knowledge management     |
+| Social and process innovation | Scaling                   | Social and process innovation:Scaling                  |
+
+### **Instructions:**
+1. **Scan the Title and Abstract:** Identify key topics, sectors, or disciplines.
+2. **Consult the Description & Parsed Text:** Look for explicit focus areas (e.g., breeding, policy, scaling).
+3. **Match to a Category:**  
+   - **Genetic improvement** → work on breeding or genetic gains.  
+   - **Management practices** → on-farm or natural-resource management.  
+   - **Crop and animal health** → disease, pests, One Health.  
+   - **Policies and Markets** → governance, economics, trade, incentives.  
+   - **Social and process innovation** → gender norms, knowledge flows, scaling strategies.
+4. **Output the Single Best-Fit Category** using its exact `Level 1:Level 2` label.
+5. **Provide a Brief Justification** citing concrete evidence (phrases, objectives, methods) that drove your choice.
+
+### **Structured Output Format:**
+{ ""category"": ""<Level1:Level2>"", ""explanation"": ""<Your explanation here>"" }
+
+### **Now, analyze the following research result and assign its category.**  
+Be precise and concise.
+
+**Text to Analyze:**  
+[INPUT_TEXT]","o3-mini","None","Field boundary delineation and cropped area measurement: Standard operating procedures for agronomic gain assessments in field trials developed for researchers and extensionistss Accurate measurement of crop cultivated area and corresponding field boundary is essential for assessing various _x000D_
+agronomic key performance indicators (KPIs), including yield, profitability and resource use efficiency. In the past, _x000D_
+household surveys have relied heavily on farmer-reported plot areas. However, it has been frequently noted that _x000D_
+farmer-reported plot area is often inaccurate for various reasons. In addition, field boundary information — which is _x000D_
+crucial for various agronomic analytics purposes — is rarely available. Here, we describe the procedure for a global _x000D_
+positioning system (GPS)–based field area measurement using a smartphone/tablet application._x000D_
+_x000D_
+The Standard Operating procedures provides the step-by-step guide to researchers and extensionists  for field boundary delineation and cropped area measurement and calculation procedures for these parameters using an app.","879"
+"6569","Top 10 innovations classification","# **You are an AI assistant tasked with classifying CGIAR (Consultative Group on International Agricultural Research) research results into one of the predefined research categories shown below. Your goal is to choose the single most appropriate category that best describes the research.**
+
+### **Context:**
+CGIAR research spans genetics, management practices, policies, markets, social innovation, and more. Correctly tagging each result helps decision-makers locate and synthesize evidence.
+
+### **Research Result Components:**
+Each research result provides:
+- **Title:** A concise summary of the work.
+- **Description:** Detailed objectives, methods, and findings.
+- **Research Abstract:** Key findings (optional).
+- **Research Parsed Text:** Full text (optional).
+
+### **Classification Categories (choose exactly one):**
+
+| Level 1                       | Level 2                   | Unique category (`Level 1:Level 2`)                    |
+| ----------------------------- | ------------------------- | ------------------------------------------------------ |
+| Genetic improvement           | Crop breeding             | Genetic improvement:Crop breeding                      |
+| Genetic improvement           | Animal breeding           | Genetic improvement:Animal breeding                    |
+| Management practices          | Crop management           | Management practices:Crop management                   |
+| Management practices          | Land and water management | Management practices:Land and water management         |
+| Management practices          | Animal management         | Management practices:Animal management                 |
+| Crop and animal health        | Crop health               | Crop and animal health:Crop health                     |
+| Crop and animal health        | Animal health             | Crop and animal health:Animal health                   |
+| Policies and Markets          | Policy solutions          | Policies and Markets:Policy solutions                  |
+| Policies and Markets          | Market solutions          | Policies and Markets:Market solutions                  |
+| Social and process innovation | Gender and social norms   | Social and process innovation:Gender and social norms  |
+| Social and process innovation | Knowledge management      | Social and process innovation:Knowledge management     |
+| Social and process innovation | Scaling                   | Social and process innovation:Scaling                  |
+
+### **Instructions:**
+1. **Scan the Title and Abstract:** Identify key topics, sectors, or disciplines.
+2. **Consult the Description & Parsed Text:** Look for explicit focus areas (e.g., breeding, policy, scaling).
+3. **Match to a Category:**  
+   - **Genetic improvement** → work on breeding or genetic gains.  
+   - **Management practices** → on-farm or natural-resource management.  
+   - **Crop and animal health** → disease, pests, One Health.  
+   - **Policies and Markets** → governance, economics, trade, incentives.  
+   - **Social and process innovation** → gender norms, knowledge flows, scaling strategies.
+4. **Output the Single Best-Fit Category** using its exact `Level 1:Level 2` label.
+5. **Provide a Brief Justification** citing concrete evidence (phrases, objectives, methods) that drove your choice.
+
+### **Structured Output Format:**
+{ ""category"": ""<Level1:Level2>"", ""explanation"": ""<Your explanation here>"" }
+
+### **Now, analyze the following research result and assign its category.**  
+Be precise and concise.
+
+**Text to Analyze:**  
+[INPUT_TEXT]","gpt-4o","None","Soil sampling (disturbed and undisturbed), handling and storage for soil chemical, biological and physical properties The Standard Operating procedures provides the step-by-step guide for soil sampling, handling and storage for soil, biological and physical properties and calculation procedures for these parameters.","711"
+"6569","Top 10 innovations classification","# **You are an AI assistant tasked with classifying CGIAR (Consultative Group on International Agricultural Research) research results into one of the predefined research categories shown below. Your goal is to choose the single most appropriate category that best describes the research.**
+
+### **Context:**
+CGIAR research spans genetics, management practices, policies, markets, social innovation, and more. Correctly tagging each result helps decision-makers locate and synthesize evidence.
+
+### **Research Result Components:**
+Each research result provides:
+- **Title:** A concise summary of the work.
+- **Description:** Detailed objectives, methods, and findings.
+- **Research Abstract:** Key findings (optional).
+- **Research Parsed Text:** Full text (optional).
+
+### **Classification Categories (choose exactly one):**
+
+| Level 1                       | Level 2                   | Unique category (`Level 1:Level 2`)                    |
+| ----------------------------- | ------------------------- | ------------------------------------------------------ |
+| Genetic improvement           | Crop breeding             | Genetic improvement:Crop breeding                      |
+| Genetic improvement           | Animal breeding           | Genetic improvement:Animal breeding                    |
+| Management practices          | Crop management           | Management practices:Crop management                   |
+| Management practices          | Land and water management | Management practices:Land and water management         |
+| Management practices          | Animal management         | Management practices:Animal management                 |
+| Crop and animal health        | Crop health               | Crop and animal health:Crop health                     |
+| Crop and animal health        | Animal health             | Crop and animal health:Animal health                   |
+| Policies and Markets          | Policy solutions          | Policies and Markets:Policy solutions                  |
+| Policies and Markets          | Market solutions          | Policies and Markets:Market solutions                  |
+| Social and process innovation | Gender and social norms   | Social and process innovation:Gender and social norms  |
+| Social and process innovation | Knowledge management      | Social and process innovation:Knowledge management     |
+| Social and process innovation | Scaling                   | Social and process innovation:Scaling                  |
+
+### **Instructions:**
+1. **Scan the Title and Abstract:** Identify key topics, sectors, or disciplines.
+2. **Consult the Description & Parsed Text:** Look for explicit focus areas (e.g., breeding, policy, scaling).
+3. **Match to a Category:**  
+   - **Genetic improvement** → work on breeding or genetic gains.  
+   - **Management practices** → on-farm or natural-resource management.  
+   - **Crop and animal health** → disease, pests, One Health.  
+   - **Policies and Markets** → governance, economics, trade, incentives.  
+   - **Social and process innovation** → gender norms, knowledge flows, scaling strategies.
+4. **Output the Single Best-Fit Category** using its exact `Level 1:Level 2` label.
+5. **Provide a Brief Justification** citing concrete evidence (phrases, objectives, methods) that drove your choice.
+
+### **Structured Output Format:**
+{ ""category"": ""<Level1:Level2>"", ""explanation"": ""<Your explanation here>"" }
+
+### **Now, analyze the following research result and assign its category.**  
+Be precise and concise.
+
+**Text to Analyze:**  
+[INPUT_TEXT]","o3-mini","None","Soil sampling (disturbed and undisturbed), handling and storage for soil chemical, biological and physical properties The Standard Operating procedures provides the step-by-step guide for soil sampling, handling and storage for soil, biological and physical properties and calculation procedures for these parameters.","715"
+"6567","Top 10 innovations classification","# **You are an AI assistant tasked with classifying CGIAR (Consultative Group on International Agricultural Research) research results into one of the predefined research categories shown below. Your goal is to choose the single most appropriate category that best describes the research.**
+
+### **Context:**
+CGIAR research spans genetics, management practices, policies, markets, social innovation, and more. Correctly tagging each result helps decision-makers locate and synthesize evidence.
+
+### **Research Result Components:**
+Each research result provides:
+- **Title:** A concise summary of the work.
+- **Description:** Detailed objectives, methods, and findings.
+- **Research Abstract:** Key findings (optional).
+- **Research Parsed Text:** Full text (optional).
+
+### **Classification Categories (choose exactly one):**
+
+| Level 1                       | Level 2                   | Unique category (`Level 1:Level 2`)                    |
+| ----------------------------- | ------------------------- | ------------------------------------------------------ |
+| Genetic improvement           | Crop breeding             | Genetic improvement:Crop breeding                      |
+| Genetic improvement           | Animal breeding           | Genetic improvement:Animal breeding                    |
+| Management practices          | Crop management           | Management practices:Crop management                   |
+| Management practices          | Land and water management | Management practices:Land and water management         |
+| Management practices          | Animal management         | Management practices:Animal management                 |
+| Crop and animal health        | Crop health               | Crop and animal health:Crop health                     |
+| Crop and animal health        | Animal health             | Crop and animal health:Animal health                   |
+| Policies and Markets          | Policy solutions          | Policies and Markets:Policy solutions                  |
+| Policies and Markets          | Market solutions          | Policies and Markets:Market solutions                  |
+| Social and process innovation | Gender and social norms   | Social and process innovation:Gender and social norms  |
+| Social and process innovation | Knowledge management      | Social and process innovation:Knowledge management     |
+| Social and process innovation | Scaling                   | Social and process innovation:Scaling                  |
+
+### **Instructions:**
+1. **Scan the Title and Abstract:** Identify key topics, sectors, or disciplines.
+2. **Consult the Description & Parsed Text:** Look for explicit focus areas (e.g., breeding, policy, scaling).
+3. **Match to a Category:**  
+   - **Genetic improvement** → work on breeding or genetic gains.  
+   - **Management practices** → on-farm or natural-resource management.  
+   - **Crop and animal health** → disease, pests, One Health.  
+   - **Policies and Markets** → governance, economics, trade, incentives.  
+   - **Social and process innovation** → gender norms, knowledge flows, scaling strategies.
+4. **Output the Single Best-Fit Category** using its exact `Level 1:Level 2` label.
+5. **Provide a Brief Justification** citing concrete evidence (phrases, objectives, methods) that drove your choice.
+
+### **Structured Output Format:**
+{ ""category"": ""<Level1:Level2>"", ""explanation"": ""<Your explanation here>"" }
+
+### **Now, analyze the following research result and assign its category.**  
+Be precise and concise.
+
+**Text to Analyze:**  
+[INPUT_TEXT]","gpt-4o","None","Irrigation water measurement: Standard operating procedures for quantifying the irrigation water used and for assessing water use efficiency and  water productivity  in agriculture systems With declining water availability due to climate change, making the most use of it is crucial in adapting agricultural _x000D_
+systems to a changing climate. Furthermore, optimal use of water through irrigation scheduling (when and how _x000D_
+much) can increase the quantity and quality of produce. Aside from the positive effects on reducing water application _x000D_
+in agricultural systems, positive effects have been found of improved water management on grain filling, size, color _x000D_
+and shelf-life of produce, and marketable yield — resulting in higher market prices and income of farmers. In rice-based systems, in particular, co-benefits of improved water management on greenhouse gas emission mitigation have been reported._x000D_
+_x000D_
+The Standard Operating Procedures, developed for the use of water scientists, agronomists and other researchers, provides the step-by-step procedure to determine the irrigation water use and the total amount of water applied in the field to evaluate water use efficiency and productivity.","890"
+"6567","Top 10 innovations classification","# **You are an AI assistant tasked with classifying CGIAR (Consultative Group on International Agricultural Research) research results into one of the predefined research categories shown below. Your goal is to choose the single most appropriate category that best describes the research.**
+
+### **Context:**
+CGIAR research spans genetics, management practices, policies, markets, social innovation, and more. Correctly tagging each result helps decision-makers locate and synthesize evidence.
+
+### **Research Result Components:**
+Each research result provides:
+- **Title:** A concise summary of the work.
+- **Description:** Detailed objectives, methods, and findings.
+- **Research Abstract:** Key findings (optional).
+- **Research Parsed Text:** Full text (optional).
+
+### **Classification Categories (choose exactly one):**
+
+| Level 1                       | Level 2                   | Unique category (`Level 1:Level 2`)                    |
+| ----------------------------- | ------------------------- | ------------------------------------------------------ |
+| Genetic improvement           | Crop breeding             | Genetic improvement:Crop breeding                      |
+| Genetic improvement           | Animal breeding           | Genetic improvement:Animal breeding                    |
+| Management practices          | Crop management           | Management practices:Crop management                   |
+| Management practices          | Land and water management | Management practices:Land and water management         |
+| Management practices          | Animal management         | Management practices:Animal management                 |
+| Crop and animal health        | Crop health               | Crop and animal health:Crop health                     |
+| Crop and animal health        | Animal health             | Crop and animal health:Animal health                   |
+| Policies and Markets          | Policy solutions          | Policies and Markets:Policy solutions                  |
+| Policies and Markets          | Market solutions          | Policies and Markets:Market solutions                  |
+| Social and process innovation | Gender and social norms   | Social and process innovation:Gender and social norms  |
+| Social and process innovation | Knowledge management      | Social and process innovation:Knowledge management     |
+| Social and process innovation | Scaling                   | Social and process innovation:Scaling                  |
+
+### **Instructions:**
+1. **Scan the Title and Abstract:** Identify key topics, sectors, or disciplines.
+2. **Consult the Description & Parsed Text:** Look for explicit focus areas (e.g., breeding, policy, scaling).
+3. **Match to a Category:**  
+   - **Genetic improvement** → work on breeding or genetic gains.  
+   - **Management practices** → on-farm or natural-resource management.  
+   - **Crop and animal health** → disease, pests, One Health.  
+   - **Policies and Markets** → governance, economics, trade, incentives.  
+   - **Social and process innovation** → gender norms, knowledge flows, scaling strategies.
+4. **Output the Single Best-Fit Category** using its exact `Level 1:Level 2` label.
+5. **Provide a Brief Justification** citing concrete evidence (phrases, objectives, methods) that drove your choice.
+
+### **Structured Output Format:**
+{ ""category"": ""<Level1:Level2>"", ""explanation"": ""<Your explanation here>"" }
+
+### **Now, analyze the following research result and assign its category.**  
+Be precise and concise.
+
+**Text to Analyze:**  
+[INPUT_TEXT]","o3-mini","None","Irrigation water measurement: Standard operating procedures for quantifying the irrigation water used and for assessing water use efficiency and  water productivity  in agriculture systems With declining water availability due to climate change, making the most use of it is crucial in adapting agricultural _x000D_
+systems to a changing climate. Furthermore, optimal use of water through irrigation scheduling (when and how _x000D_
+much) can increase the quantity and quality of produce. Aside from the positive effects on reducing water application _x000D_
+in agricultural systems, positive effects have been found of improved water management on grain filling, size, color _x000D_
+and shelf-life of produce, and marketable yield — resulting in higher market prices and income of farmers. In rice-based systems, in particular, co-benefits of improved water management on greenhouse gas emission mitigation have been reported._x000D_
+_x000D_
+The Standard Operating Procedures, developed for the use of water scientists, agronomists and other researchers, provides the step-by-step procedure to determine the irrigation water use and the total amount of water applied in the field to evaluate water use efficiency and productivity.","895"
+"6564","Top 10 innovations classification","# **You are an AI assistant tasked with classifying CGIAR (Consultative Group on International Agricultural Research) research results into one of the predefined research categories shown below. Your goal is to choose the single most appropriate category that best describes the research.**
+
+### **Context:**
+CGIAR research spans genetics, management practices, policies, markets, social innovation, and more. Correctly tagging each result helps decision-makers locate and synthesize evidence.
+
+### **Research Result Components:**
+Each research result provides:
+- **Title:** A concise summary of the work.
+- **Description:** Detailed objectives, methods, and findings.
+- **Research Abstract:** Key findings (optional).
+- **Research Parsed Text:** Full text (optional).
+
+### **Classification Categories (choose exactly one):**
+
+| Level 1                       | Level 2                   | Unique category (`Level 1:Level 2`)                    |
+| ----------------------------- | ------------------------- | ------------------------------------------------------ |
+| Genetic improvement           | Crop breeding             | Genetic improvement:Crop breeding                      |
+| Genetic improvement           | Animal breeding           | Genetic improvement:Animal breeding                    |
+| Management practices          | Crop management           | Management practices:Crop management                   |
+| Management practices          | Land and water management | Management practices:Land and water management         |
+| Management practices          | Animal management         | Management practices:Animal management                 |
+| Crop and animal health        | Crop health               | Crop and animal health:Crop health                     |
+| Crop and animal health        | Animal health             | Crop and animal health:Animal health                   |
+| Policies and Markets          | Policy solutions          | Policies and Markets:Policy solutions                  |
+| Policies and Markets          | Market solutions          | Policies and Markets:Market solutions                  |
+| Social and process innovation | Gender and social norms   | Social and process innovation:Gender and social norms  |
+| Social and process innovation | Knowledge management      | Social and process innovation:Knowledge management     |
+| Social and process innovation | Scaling                   | Social and process innovation:Scaling                  |
+
+### **Instructions:**
+1. **Scan the Title and Abstract:** Identify key topics, sectors, or disciplines.
+2. **Consult the Description & Parsed Text:** Look for explicit focus areas (e.g., breeding, policy, scaling).
+3. **Match to a Category:**  
+   - **Genetic improvement** → work on breeding or genetic gains.  
+   - **Management practices** → on-farm or natural-resource management.  
+   - **Crop and animal health** → disease, pests, One Health.  
+   - **Policies and Markets** → governance, economics, trade, incentives.  
+   - **Social and process innovation** → gender norms, knowledge flows, scaling strategies.
+4. **Output the Single Best-Fit Category** using its exact `Level 1:Level 2` label.
+5. **Provide a Brief Justification** citing concrete evidence (phrases, objectives, methods) that drove your choice.
+
+### **Structured Output Format:**
+{ ""category"": ""<Level1:Level2>"", ""explanation"": ""<Your explanation here>"" }
+
+### **Now, analyze the following research result and assign its category.**  
+Be precise and concise.
+
+**Text to Analyze:**  
+[INPUT_TEXT]","gpt-4o","None","Measurement of cowpea grain yield and aboveground biomass by crop cut at plot level: Standard operating procedures for agronomic gain assessments  in field trials developed for researchers and extensionists The Standard Operating Procedures  (SOP) for measuring cowpea grain yield and aboveground mass at maturity by crop cut at plot level provides the step-by-step procedure to determine the cowpea grain yield and above ground biomass in on-farm trials. The SOP, reviewed by key agronomists from various One CG centers involved in the Excellence in Agronomy Initiative, provides the standard methods for agronomic gain assessments in field trials developed for researchers and extensionists.","785"
+"6564","Top 10 innovations classification","# **You are an AI assistant tasked with classifying CGIAR (Consultative Group on International Agricultural Research) research results into one of the predefined research categories shown below. Your goal is to choose the single most appropriate category that best describes the research.**
+
+### **Context:**
+CGIAR research spans genetics, management practices, policies, markets, social innovation, and more. Correctly tagging each result helps decision-makers locate and synthesize evidence.
+
+### **Research Result Components:**
+Each research result provides:
+- **Title:** A concise summary of the work.
+- **Description:** Detailed objectives, methods, and findings.
+- **Research Abstract:** Key findings (optional).
+- **Research Parsed Text:** Full text (optional).
+
+### **Classification Categories (choose exactly one):**
+
+| Level 1                       | Level 2                   | Unique category (`Level 1:Level 2`)                    |
+| ----------------------------- | ------------------------- | ------------------------------------------------------ |
+| Genetic improvement           | Crop breeding             | Genetic improvement:Crop breeding                      |
+| Genetic improvement           | Animal breeding           | Genetic improvement:Animal breeding                    |
+| Management practices          | Crop management           | Management practices:Crop management                   |
+| Management practices          | Land and water management | Management practices:Land and water management         |
+| Management practices          | Animal management         | Management practices:Animal management                 |
+| Crop and animal health        | Crop health               | Crop and animal health:Crop health                     |
+| Crop and animal health        | Animal health             | Crop and animal health:Animal health                   |
+| Policies and Markets          | Policy solutions          | Policies and Markets:Policy solutions                  |
+| Policies and Markets          | Market solutions          | Policies and Markets:Market solutions                  |
+| Social and process innovation | Gender and social norms   | Social and process innovation:Gender and social norms  |
+| Social and process innovation | Knowledge management      | Social and process innovation:Knowledge management     |
+| Social and process innovation | Scaling                   | Social and process innovation:Scaling                  |
+
+### **Instructions:**
+1. **Scan the Title and Abstract:** Identify key topics, sectors, or disciplines.
+2. **Consult the Description & Parsed Text:** Look for explicit focus areas (e.g., breeding, policy, scaling).
+3. **Match to a Category:**  
+   - **Genetic improvement** → work on breeding or genetic gains.  
+   - **Management practices** → on-farm or natural-resource management.  
+   - **Crop and animal health** → disease, pests, One Health.  
+   - **Policies and Markets** → governance, economics, trade, incentives.  
+   - **Social and process innovation** → gender norms, knowledge flows, scaling strategies.
+4. **Output the Single Best-Fit Category** using its exact `Level 1:Level 2` label.
+5. **Provide a Brief Justification** citing concrete evidence (phrases, objectives, methods) that drove your choice.
+
+### **Structured Output Format:**
+{ ""category"": ""<Level1:Level2>"", ""explanation"": ""<Your explanation here>"" }
+
+### **Now, analyze the following research result and assign its category.**  
+Be precise and concise.
+
+**Text to Analyze:**  
+[INPUT_TEXT]","o3-mini","None","Measurement of cowpea grain yield and aboveground biomass by crop cut at plot level: Standard operating procedures for agronomic gain assessments  in field trials developed for researchers and extensionists The Standard Operating Procedures  (SOP) for measuring cowpea grain yield and aboveground mass at maturity by crop cut at plot level provides the step-by-step procedure to determine the cowpea grain yield and above ground biomass in on-farm trials. The SOP, reviewed by key agronomists from various One CG centers involved in the Excellence in Agronomy Initiative, provides the standard methods for agronomic gain assessments in field trials developed for researchers and extensionists.","792"
+"6249","Top 10 innovations classification","# **You are an AI assistant tasked with classifying CGIAR (Consultative Group on International Agricultural Research) research results into one of the predefined research categories shown below. Your goal is to choose the single most appropriate category that best describes the research.**
+
+### **Context:**
+CGIAR research spans genetics, management practices, policies, markets, social innovation, and more. Correctly tagging each result helps decision-makers locate and synthesize evidence.
+
+### **Research Result Components:**
+Each research result provides:
+- **Title:** A concise summary of the work.
+- **Description:** Detailed objectives, methods, and findings.
+- **Research Abstract:** Key findings (optional).
+- **Research Parsed Text:** Full text (optional).
+
+### **Classification Categories (choose exactly one):**
+
+| Level 1                       | Level 2                   | Unique category (`Level 1:Level 2`)                    |
+| ----------------------------- | ------------------------- | ------------------------------------------------------ |
+| Genetic improvement           | Crop breeding             | Genetic improvement:Crop breeding                      |
+| Genetic improvement           | Animal breeding           | Genetic improvement:Animal breeding                    |
+| Management practices          | Crop management           | Management practices:Crop management                   |
+| Management practices          | Land and water management | Management practices:Land and water management         |
+| Management practices          | Animal management         | Management practices:Animal management                 |
+| Crop and animal health        | Crop health               | Crop and animal health:Crop health                     |
+| Crop and animal health        | Animal health             | Crop and animal health:Animal health                   |
+| Policies and Markets          | Policy solutions          | Policies and Markets:Policy solutions                  |
+| Policies and Markets          | Market solutions          | Policies and Markets:Market solutions                  |
+| Social and process innovation | Gender and social norms   | Social and process innovation:Gender and social norms  |
+| Social and process innovation | Knowledge management      | Social and process innovation:Knowledge management     |
+| Social and process innovation | Scaling                   | Social and process innovation:Scaling                  |
+
+### **Instructions:**
+1. **Scan the Title and Abstract:** Identify key topics, sectors, or disciplines.
+2. **Consult the Description & Parsed Text:** Look for explicit focus areas (e.g., breeding, policy, scaling).
+3. **Match to a Category:**  
+   - **Genetic improvement** → work on breeding or genetic gains.  
+   - **Management practices** → on-farm or natural-resource management.  
+   - **Crop and animal health** → disease, pests, One Health.  
+   - **Policies and Markets** → governance, economics, trade, incentives.  
+   - **Social and process innovation** → gender norms, knowledge flows, scaling strategies.
+4. **Output the Single Best-Fit Category** using its exact `Level 1:Level 2` label.
+5. **Provide a Brief Justification** citing concrete evidence (phrases, objectives, methods) that drove your choice.
+
+### **Structured Output Format:**
+{ ""category"": ""<Level1:Level2>"", ""explanation"": ""<Your explanation here>"" }
+
+### **Now, analyze the following research result and assign its category.**  
+Be precise and concise.
+
+**Text to Analyze:**  
+[INPUT_TEXT]","gpt-4o","None","Development of a smart phone application (RiceMore) compatible with monitoring, reporting, and verification (MRV) requirements for carbon credits in rice production RiceMore was built in cooperation between the Department of Crop Production, the Center for Digital Transformation and Statistics - Ministry of Agriculture and Rural Development and the International Rice Research Institute (IRRI) to support monitoring and management of rice production systems. RiceMo allows systematizing and storing data on rice production which are updated weekly through a network of local officials from the commune level. Data linked with geographic information systems and other information layers to make production planning and natural disaster and pest response more convenient to policymakers, planners, extension agents, and researchers._x000D_
+_x000D_
+The RiceMore application is also compatible with monitoring, reporting, and verification (MRV) requirements for carbon credits in rice production.","828"
+"6249","Top 10 innovations classification","# **You are an AI assistant tasked with classifying CGIAR (Consultative Group on International Agricultural Research) research results into one of the predefined research categories shown below. Your goal is to choose the single most appropriate category that best describes the research.**
+
+### **Context:**
+CGIAR research spans genetics, management practices, policies, markets, social innovation, and more. Correctly tagging each result helps decision-makers locate and synthesize evidence.
+
+### **Research Result Components:**
+Each research result provides:
+- **Title:** A concise summary of the work.
+- **Description:** Detailed objectives, methods, and findings.
+- **Research Abstract:** Key findings (optional).
+- **Research Parsed Text:** Full text (optional).
+
+### **Classification Categories (choose exactly one):**
+
+| Level 1                       | Level 2                   | Unique category (`Level 1:Level 2`)                    |
+| ----------------------------- | ------------------------- | ------------------------------------------------------ |
+| Genetic improvement           | Crop breeding             | Genetic improvement:Crop breeding                      |
+| Genetic improvement           | Animal breeding           | Genetic improvement:Animal breeding                    |
+| Management practices          | Crop management           | Management practices:Crop management                   |
+| Management practices          | Land and water management | Management practices:Land and water management         |
+| Management practices          | Animal management         | Management practices:Animal management                 |
+| Crop and animal health        | Crop health               | Crop and animal health:Crop health                     |
+| Crop and animal health        | Animal health             | Crop and animal health:Animal health                   |
+| Policies and Markets          | Policy solutions          | Policies and Markets:Policy solutions                  |
+| Policies and Markets          | Market solutions          | Policies and Markets:Market solutions                  |
+| Social and process innovation | Gender and social norms   | Social and process innovation:Gender and social norms  |
+| Social and process innovation | Knowledge management      | Social and process innovation:Knowledge management     |
+| Social and process innovation | Scaling                   | Social and process innovation:Scaling                  |
+
+### **Instructions:**
+1. **Scan the Title and Abstract:** Identify key topics, sectors, or disciplines.
+2. **Consult the Description & Parsed Text:** Look for explicit focus areas (e.g., breeding, policy, scaling).
+3. **Match to a Category:**  
+   - **Genetic improvement** → work on breeding or genetic gains.  
+   - **Management practices** → on-farm or natural-resource management.  
+   - **Crop and animal health** → disease, pests, One Health.  
+   - **Policies and Markets** → governance, economics, trade, incentives.  
+   - **Social and process innovation** → gender norms, knowledge flows, scaling strategies.
+4. **Output the Single Best-Fit Category** using its exact `Level 1:Level 2` label.
+5. **Provide a Brief Justification** citing concrete evidence (phrases, objectives, methods) that drove your choice.
+
+### **Structured Output Format:**
+{ ""category"": ""<Level1:Level2>"", ""explanation"": ""<Your explanation here>"" }
+
+### **Now, analyze the following research result and assign its category.**  
+Be precise and concise.
+
+**Text to Analyze:**  
+[INPUT_TEXT]","o3-mini","None","Development of a smart phone application (RiceMore) compatible with monitoring, reporting, and verification (MRV) requirements for carbon credits in rice production RiceMore was built in cooperation between the Department of Crop Production, the Center for Digital Transformation and Statistics - Ministry of Agriculture and Rural Development and the International Rice Research Institute (IRRI) to support monitoring and management of rice production systems. RiceMo allows systematizing and storing data on rice production which are updated weekly through a network of local officials from the commune level. Data linked with geographic information systems and other information layers to make production planning and natural disaster and pest response more convenient to policymakers, planners, extension agents, and researchers._x000D_
+_x000D_
+The RiceMore application is also compatible with monitoring, reporting, and verification (MRV) requirements for carbon credits in rice production.","833"
+"6197","Top 10 innovations classification","# **You are an AI assistant tasked with classifying CGIAR (Consultative Group on International Agricultural Research) research results into one of the predefined research categories shown below. Your goal is to choose the single most appropriate category that best describes the research.**
+
+### **Context:**
+CGIAR research spans genetics, management practices, policies, markets, social innovation, and more. Correctly tagging each result helps decision-makers locate and synthesize evidence.
+
+### **Research Result Components:**
+Each research result provides:
+- **Title:** A concise summary of the work.
+- **Description:** Detailed objectives, methods, and findings.
+- **Research Abstract:** Key findings (optional).
+- **Research Parsed Text:** Full text (optional).
+
+### **Classification Categories (choose exactly one):**
+
+| Level 1                       | Level 2                   | Unique category (`Level 1:Level 2`)                    |
+| ----------------------------- | ------------------------- | ------------------------------------------------------ |
+| Genetic improvement           | Crop breeding             | Genetic improvement:Crop breeding                      |
+| Genetic improvement           | Animal breeding           | Genetic improvement:Animal breeding                    |
+| Management practices          | Crop management           | Management practices:Crop management                   |
+| Management practices          | Land and water management | Management practices:Land and water management         |
+| Management practices          | Animal management         | Management practices:Animal management                 |
+| Crop and animal health        | Crop health               | Crop and animal health:Crop health                     |
+| Crop and animal health        | Animal health             | Crop and animal health:Animal health                   |
+| Policies and Markets          | Policy solutions          | Policies and Markets:Policy solutions                  |
+| Policies and Markets          | Market solutions          | Policies and Markets:Market solutions                  |
+| Social and process innovation | Gender and social norms   | Social and process innovation:Gender and social norms  |
+| Social and process innovation | Knowledge management      | Social and process innovation:Knowledge management     |
+| Social and process innovation | Scaling                   | Social and process innovation:Scaling                  |
+
+### **Instructions:**
+1. **Scan the Title and Abstract:** Identify key topics, sectors, or disciplines.
+2. **Consult the Description & Parsed Text:** Look for explicit focus areas (e.g., breeding, policy, scaling).
+3. **Match to a Category:**  
+   - **Genetic improvement** → work on breeding or genetic gains.  
+   - **Management practices** → on-farm or natural-resource management.  
+   - **Crop and animal health** → disease, pests, One Health.  
+   - **Policies and Markets** → governance, economics, trade, incentives.  
+   - **Social and process innovation** → gender norms, knowledge flows, scaling strategies.
+4. **Output the Single Best-Fit Category** using its exact `Level 1:Level 2` label.
+5. **Provide a Brief Justification** citing concrete evidence (phrases, objectives, methods) that drove your choice.
+
+### **Structured Output Format:**
+{ ""category"": ""<Level1:Level2>"", ""explanation"": ""<Your explanation here>"" }
+
+### **Now, analyze the following research result and assign its category.**  
+Be precise and concise.
+
+**Text to Analyze:**  
+[INPUT_TEXT]","gpt-4o","None","On-farm Water, Energy, Food, and Carbon footprint (WEFC) nexus index for the quantitative assessment of on-farm integrated resources management The on-farm Water, Energy, Food, and Carbon footprint (WEFC) nexus index has been developed to enable the quantitative assessment of on-farm integrated resources management in wheat and faba bean farming systems in Egypt. The WEFC index is computed as the weighted arithmetic average of the four pillars of (1) water: on-farm saved water consumption/national maximum water consumption; (2) energy: on-farm saved energy consumption/national maximum energy consumption; (3) food: on-farm agricultural yield/national maximum yield; and (4) carbon dioxide (CO2): on-farm saved CO2 emissions/national maximum CO2 emissions. The WEFC nexus index values are, therefore, indicative of resource consumption (inputs) and agricultural production and CO2 emissions (outputs). The index can be used to quantitatively assess the nexus performance of site-specific packages of practices under certain conditions and quantify the impact of new interventions on the nexus status to drive transformative actions at the farm level.","889"
+"6197","Top 10 innovations classification","# **You are an AI assistant tasked with classifying CGIAR (Consultative Group on International Agricultural Research) research results into one of the predefined research categories shown below. Your goal is to choose the single most appropriate category that best describes the research.**
+
+### **Context:**
+CGIAR research spans genetics, management practices, policies, markets, social innovation, and more. Correctly tagging each result helps decision-makers locate and synthesize evidence.
+
+### **Research Result Components:**
+Each research result provides:
+- **Title:** A concise summary of the work.
+- **Description:** Detailed objectives, methods, and findings.
+- **Research Abstract:** Key findings (optional).
+- **Research Parsed Text:** Full text (optional).
+
+### **Classification Categories (choose exactly one):**
+
+| Level 1                       | Level 2                   | Unique category (`Level 1:Level 2`)                    |
+| ----------------------------- | ------------------------- | ------------------------------------------------------ |
+| Genetic improvement           | Crop breeding             | Genetic improvement:Crop breeding                      |
+| Genetic improvement           | Animal breeding           | Genetic improvement:Animal breeding                    |
+| Management practices          | Crop management           | Management practices:Crop management                   |
+| Management practices          | Land and water management | Management practices:Land and water management         |
+| Management practices          | Animal management         | Management practices:Animal management                 |
+| Crop and animal health        | Crop health               | Crop and animal health:Crop health                     |
+| Crop and animal health        | Animal health             | Crop and animal health:Animal health                   |
+| Policies and Markets          | Policy solutions          | Policies and Markets:Policy solutions                  |
+| Policies and Markets          | Market solutions          | Policies and Markets:Market solutions                  |
+| Social and process innovation | Gender and social norms   | Social and process innovation:Gender and social norms  |
+| Social and process innovation | Knowledge management      | Social and process innovation:Knowledge management     |
+| Social and process innovation | Scaling                   | Social and process innovation:Scaling                  |
+
+### **Instructions:**
+1. **Scan the Title and Abstract:** Identify key topics, sectors, or disciplines.
+2. **Consult the Description & Parsed Text:** Look for explicit focus areas (e.g., breeding, policy, scaling).
+3. **Match to a Category:**  
+   - **Genetic improvement** → work on breeding or genetic gains.  
+   - **Management practices** → on-farm or natural-resource management.  
+   - **Crop and animal health** → disease, pests, One Health.  
+   - **Policies and Markets** → governance, economics, trade, incentives.  
+   - **Social and process innovation** → gender norms, knowledge flows, scaling strategies.
+4. **Output the Single Best-Fit Category** using its exact `Level 1:Level 2` label.
+5. **Provide a Brief Justification** citing concrete evidence (phrases, objectives, methods) that drove your choice.
+
+### **Structured Output Format:**
+{ ""category"": ""<Level1:Level2>"", ""explanation"": ""<Your explanation here>"" }
+
+### **Now, analyze the following research result and assign its category.**  
+Be precise and concise.
+
+**Text to Analyze:**  
+[INPUT_TEXT]","o3-mini","None","On-farm Water, Energy, Food, and Carbon footprint (WEFC) nexus index for the quantitative assessment of on-farm integrated resources management The on-farm Water, Energy, Food, and Carbon footprint (WEFC) nexus index has been developed to enable the quantitative assessment of on-farm integrated resources management in wheat and faba bean farming systems in Egypt. The WEFC index is computed as the weighted arithmetic average of the four pillars of (1) water: on-farm saved water consumption/national maximum water consumption; (2) energy: on-farm saved energy consumption/national maximum energy consumption; (3) food: on-farm agricultural yield/national maximum yield; and (4) carbon dioxide (CO2): on-farm saved CO2 emissions/national maximum CO2 emissions. The WEFC nexus index values are, therefore, indicative of resource consumption (inputs) and agricultural production and CO2 emissions (outputs). The index can be used to quantitatively assess the nexus performance of site-specific packages of practices under certain conditions and quantify the impact of new interventions on the nexus status to drive transformative actions at the farm level.","894"
+"6139","Top 10 innovations classification","# **You are an AI assistant tasked with classifying CGIAR (Consultative Group on International Agricultural Research) research results into one of the predefined research categories shown below. Your goal is to choose the single most appropriate category that best describes the research.**
+
+### **Context:**
+CGIAR research spans genetics, management practices, policies, markets, social innovation, and more. Correctly tagging each result helps decision-makers locate and synthesize evidence.
+
+### **Research Result Components:**
+Each research result provides:
+- **Title:** A concise summary of the work.
+- **Description:** Detailed objectives, methods, and findings.
+- **Research Abstract:** Key findings (optional).
+- **Research Parsed Text:** Full text (optional).
+
+### **Classification Categories (choose exactly one):**
+
+| Level 1                       | Level 2                   | Unique category (`Level 1:Level 2`)                    |
+| ----------------------------- | ------------------------- | ------------------------------------------------------ |
+| Genetic improvement           | Crop breeding             | Genetic improvement:Crop breeding                      |
+| Genetic improvement           | Animal breeding           | Genetic improvement:Animal breeding                    |
+| Management practices          | Crop management           | Management practices:Crop management                   |
+| Management practices          | Land and water management | Management practices:Land and water management         |
+| Management practices          | Animal management         | Management practices:Animal management                 |
+| Crop and animal health        | Crop health               | Crop and animal health:Crop health                     |
+| Crop and animal health        | Animal health             | Crop and animal health:Animal health                   |
+| Policies and Markets          | Policy solutions          | Policies and Markets:Policy solutions                  |
+| Policies and Markets          | Market solutions          | Policies and Markets:Market solutions                  |
+| Social and process innovation | Gender and social norms   | Social and process innovation:Gender and social norms  |
+| Social and process innovation | Knowledge management      | Social and process innovation:Knowledge management     |
+| Social and process innovation | Scaling                   | Social and process innovation:Scaling                  |
+
+### **Instructions:**
+1. **Scan the Title and Abstract:** Identify key topics, sectors, or disciplines.
+2. **Consult the Description & Parsed Text:** Look for explicit focus areas (e.g., breeding, policy, scaling).
+3. **Match to a Category:**  
+   - **Genetic improvement** → work on breeding or genetic gains.  
+   - **Management practices** → on-farm or natural-resource management.  
+   - **Crop and animal health** → disease, pests, One Health.  
+   - **Policies and Markets** → governance, economics, trade, incentives.  
+   - **Social and process innovation** → gender norms, knowledge flows, scaling strategies.
+4. **Output the Single Best-Fit Category** using its exact `Level 1:Level 2` label.
+5. **Provide a Brief Justification** citing concrete evidence (phrases, objectives, methods) that drove your choice.
+
+### **Structured Output Format:**
+{ ""category"": ""<Level1:Level2>"", ""explanation"": ""<Your explanation here>"" }
+
+### **Now, analyze the following research result and assign its category.**  
+Be precise and concise.
+
+**Text to Analyze:**  
+[INPUT_TEXT]","gpt-4o","None","Integration of research and innovation processes that facilitate the co-design and testing of context-specific agroecological innovations:  A process for stakeholder engagement in Agroecological Living Landscapes ​ The Agroecology initiative aims to contribute to achieving agroecological transition through developing and scaling a range of innovations in 8 countries across three continents. It proposes to do so by using a participatory action-research approach involving the key stakeholders of the Agroecological Living Landscapes (ALLs), multi-stakeholder territorial spaces in each country on which the Initiative targets its transformation and innovation efforts. A major pillar of such an approach consists in codesigning the required innovations and corresponding processes as well as effecting the required changes in behavior/practices by the concerned actors. At the heart of the initiative’s ambition and approach lies the ability to mobilize and support ALL stakeholders in co-designing and implementing the diverse activities required to develop the innovations needed in each context. Hence, the initiative has designed a tool to support this process.","860"
+"6139","Top 10 innovations classification","# **You are an AI assistant tasked with classifying CGIAR (Consultative Group on International Agricultural Research) research results into one of the predefined research categories shown below. Your goal is to choose the single most appropriate category that best describes the research.**
+
+### **Context:**
+CGIAR research spans genetics, management practices, policies, markets, social innovation, and more. Correctly tagging each result helps decision-makers locate and synthesize evidence.
+
+### **Research Result Components:**
+Each research result provides:
+- **Title:** A concise summary of the work.
+- **Description:** Detailed objectives, methods, and findings.
+- **Research Abstract:** Key findings (optional).
+- **Research Parsed Text:** Full text (optional).
+
+### **Classification Categories (choose exactly one):**
+
+| Level 1                       | Level 2                   | Unique category (`Level 1:Level 2`)                    |
+| ----------------------------- | ------------------------- | ------------------------------------------------------ |
+| Genetic improvement           | Crop breeding             | Genetic improvement:Crop breeding                      |
+| Genetic improvement           | Animal breeding           | Genetic improvement:Animal breeding                    |
+| Management practices          | Crop management           | Management practices:Crop management                   |
+| Management practices          | Land and water management | Management practices:Land and water management         |
+| Management practices          | Animal management         | Management practices:Animal management                 |
+| Crop and animal health        | Crop health               | Crop and animal health:Crop health                     |
+| Crop and animal health        | Animal health             | Crop and animal health:Animal health                   |
+| Policies and Markets          | Policy solutions          | Policies and Markets:Policy solutions                  |
+| Policies and Markets          | Market solutions          | Policies and Markets:Market solutions                  |
+| Social and process innovation | Gender and social norms   | Social and process innovation:Gender and social norms  |
+| Social and process innovation | Knowledge management      | Social and process innovation:Knowledge management     |
+| Social and process innovation | Scaling                   | Social and process innovation:Scaling                  |
+
+### **Instructions:**
+1. **Scan the Title and Abstract:** Identify key topics, sectors, or disciplines.
+2. **Consult the Description & Parsed Text:** Look for explicit focus areas (e.g., breeding, policy, scaling).
+3. **Match to a Category:**  
+   - **Genetic improvement** → work on breeding or genetic gains.  
+   - **Management practices** → on-farm or natural-resource management.  
+   - **Crop and animal health** → disease, pests, One Health.  
+   - **Policies and Markets** → governance, economics, trade, incentives.  
+   - **Social and process innovation** → gender norms, knowledge flows, scaling strategies.
+4. **Output the Single Best-Fit Category** using its exact `Level 1:Level 2` label.
+5. **Provide a Brief Justification** citing concrete evidence (phrases, objectives, methods) that drove your choice.
+
+### **Structured Output Format:**
+{ ""category"": ""<Level1:Level2>"", ""explanation"": ""<Your explanation here>"" }
+
+### **Now, analyze the following research result and assign its category.**  
+Be precise and concise.
+
+**Text to Analyze:**  
+[INPUT_TEXT]","o3-mini","None","Integration of research and innovation processes that facilitate the co-design and testing of context-specific agroecological innovations:  A process for stakeholder engagement in Agroecological Living Landscapes ​ The Agroecology initiative aims to contribute to achieving agroecological transition through developing and scaling a range of innovations in 8 countries across three continents. It proposes to do so by using a participatory action-research approach involving the key stakeholders of the Agroecological Living Landscapes (ALLs), multi-stakeholder territorial spaces in each country on which the Initiative targets its transformation and innovation efforts. A major pillar of such an approach consists in codesigning the required innovations and corresponding processes as well as effecting the required changes in behavior/practices by the concerned actors. At the heart of the initiative’s ambition and approach lies the ability to mobilize and support ALL stakeholders in co-designing and implementing the diverse activities required to develop the innovations needed in each context. Hence, the initiative has designed a tool to support this process.","872"

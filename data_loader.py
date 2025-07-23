@@ -4,9 +4,15 @@ import pandas as pd
 import streamlit as st
 import os
 
-def load_data(input_file, combine_evidence=False):
+def load_data(input_file, combine_evidence=False, selected_columns=None, id_column=None):
     """
     Load data from a CSV file path or a file-like object and preprocess it.
+    
+    Args:
+        input_file: File path (string) or file-like object
+        combine_evidence: Boolean to combine rows by result code
+        selected_columns: List of column names to use for creating input_text
+        id_column: Column name to use as unique identifier (will be renamed to 'result_code')
     """
     # Check if input_file is a file-like object or a string path
     if isinstance(input_file, str):
@@ -33,6 +39,29 @@ def load_data(input_file, combine_evidence=False):
         st.error(f"Error reading the uploaded file: {e}")
         st.stop()
 
+    # Handle ID column selection and standardization
+    if id_column:
+        if id_column not in df.columns:
+            st.error(f"Selected ID column '{id_column}' not found in the data.")
+            st.stop()
+        # Rename the selected ID column to 'result_code' for consistency
+        df = df.rename(columns={id_column: 'result_code'})
+    else:
+        # Fall back to looking for common ID column names
+        common_id_columns = ['Result code', 'result_code', 'ID', 'id', 'Code', 'code']
+        found_id_column = None
+        for col in common_id_columns:
+            if col in df.columns:
+                found_id_column = col
+                break
+        
+        if found_id_column:
+            if found_id_column != 'result_code':
+                df = df.rename(columns={found_id_column: 'result_code'})
+        else:
+            st.error("No ID column specified and no common ID columns found. Please select an ID column.")
+            st.stop()
+
     if combine_evidence:
         try:
             df = combine_rows_by_result_code(df)  # call the new function
@@ -40,13 +69,21 @@ def load_data(input_file, combine_evidence=False):
             st.error(str(e))
             st.stop()
 
-    # Check for required columns in the DataFrame
-    possible_columns = ['Title', 'Description', 'Evidence Abstract Text', 'Evidence Parsed Text']
-    available_columns = [col for col in possible_columns if col in df.columns]
-
-    if not available_columns:
-        st.error("None of the expected text columns ('Title', 'Description', 'Evidence Abstract Text', 'Evidence Parsed Text') are present in the uploaded data. At least one is required to create 'input_text'.")
-        st.stop()
+    # Handle column selection for creating input_text
+    if selected_columns:
+        # Use the provided selected columns
+        available_columns = [col for col in selected_columns if col in df.columns]
+        if not available_columns:
+            st.error(f"None of the selected columns {selected_columns} are present in the data.")
+            st.stop()
+    else:
+        # Fall back to the original hardcoded columns for backward compatibility
+        possible_columns = ['Title', 'Description', 'Evidence Abstract Text', 'Evidence Parsed Text']
+        available_columns = [col for col in possible_columns if col in df.columns]
+        
+        if not available_columns:
+            st.error("None of the expected text columns ('Title', 'Description', 'Evidence Abstract Text', 'Evidence Parsed Text') are present in the uploaded data. At least one is required to create 'input_text'.")
+            st.stop()
 
     # Concatenate available text fields
     df['input_text'] = df[available_columns].fillna('').agg(' '.join, axis=1)
@@ -66,14 +103,14 @@ def load_existing_results(output_csv):
 
 def combine_rows_by_result_code(df):
     """
-    Group rows by 'Result code' and concatenate all 'Evidence Extracted Text'
-    for each code into one row. Keeps one row per unique 'Result code'.
+    Group rows by 'result_code' and concatenate all 'Evidence Extracted Text'
+    for each code into one row. Keeps one row per unique 'result_code'.
 
     If your spreadsheet also needs other columns aggregated,
     you can modify the .agg(...) dictionary accordingly.
     """
     # Safety check
-    required_cols = ['Result code', 'Evidence Parsed Text']
+    required_cols = ['result_code', 'Evidence Parsed Text']
     for col in required_cols:
         if col not in df.columns:
             raise ValueError(
@@ -101,8 +138,71 @@ def combine_rows_by_result_code(df):
     # Do the grouping and aggregation
     df_combined = (
         df
-        .groupby('Result code', as_index=False)
+        .groupby('result_code', as_index=False)
         .agg(actual_agg_dict)
     )
 
     return df_combined
+
+def process_dataframe_with_selected_columns(df, combine_evidence=False, selected_columns=None, id_column=None):
+    """
+    Process an already loaded dataframe with selected columns.
+    
+    Args:
+        df: Already loaded pandas DataFrame
+        combine_evidence: Boolean to combine rows by result code
+        selected_columns: List of column names to use for creating input_text
+        id_column: Column name to use as unique identifier (will be renamed to 'result_code')
+    """
+    # Make a copy to avoid modifying the original
+    df_processed = df.copy()
+    
+    # Handle ID column selection and standardization
+    if id_column:
+        if id_column not in df_processed.columns:
+            st.error(f"Selected ID column '{id_column}' not found in the data.")
+            st.stop()
+        # Rename the selected ID column to 'result_code' for consistency
+        df_processed = df_processed.rename(columns={id_column: 'result_code'})
+    else:
+        # Fall back to looking for common ID column names
+        common_id_columns = ['Result code', 'result_code', 'ID', 'id', 'Code', 'code']
+        found_id_column = None
+        for col in common_id_columns:
+            if col in df_processed.columns:
+                found_id_column = col
+                break
+        
+        if found_id_column:
+            if found_id_column != 'result_code':
+                df_processed = df_processed.rename(columns={found_id_column: 'result_code'})
+        else:
+            st.error("No ID column specified and no common ID columns found. Please select an ID column.")
+            st.stop()
+    
+    if combine_evidence:
+        try:
+            df_processed = combine_rows_by_result_code(df_processed)
+        except ValueError as e:
+            st.error(str(e))
+            st.stop()
+
+    # Handle column selection for creating input_text
+    if selected_columns:
+        # Use the provided selected columns
+        available_columns = [col for col in selected_columns if col in df_processed.columns]
+        if not available_columns:
+            st.error(f"None of the selected columns {selected_columns} are present in the data.")
+            st.stop()
+    else:
+        # Fall back to the original hardcoded columns for backward compatibility
+        possible_columns = ['Title', 'Description', 'Evidence Abstract Text', 'Evidence Parsed Text']
+        available_columns = [col for col in possible_columns if col in df_processed.columns]
+        
+        if not available_columns:
+            st.error("None of the expected text columns ('Title', 'Description', 'Evidence Abstract Text', 'Evidence Parsed Text') are present in the data. At least one is required to create 'input_text'.")
+            st.stop()
+
+    # Concatenate available text fields
+    df_processed['input_text'] = df_processed[available_columns].fillna('').agg(' '.join, axis=1)
+    return df_processed

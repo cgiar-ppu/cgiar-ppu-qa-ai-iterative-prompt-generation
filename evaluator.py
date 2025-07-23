@@ -20,29 +20,41 @@ def evaluate_results(output_csv, input_csv, metrics_csv):
         raise ValueError("The 'score' column is missing in the results CSV. Please run response_extractor.py first.")
 
     # Check for necessary columns in input_df
-    required_columns = ['Result code', 'Impact Area checked', 'Expert score']
-    missing_columns = [col for col in required_columns if col not in input_df.columns]
-
-    if missing_columns:
-        print(f"Input data is missing required columns: {', '.join(missing_columns)}. Metrics cannot be calculated.")
-        return
+    # Handle both original and standardized column names
+    required_columns_mapping = {
+        'result_code': ['Result code', 'result_code'],
+        'impact_area': ['Impact Area checked', 'impact_area'],
+        'expert_score': ['Expert score', 'expert_score']
+    }
+    
+    # Find the actual column names in the input data
+    actual_columns = {}
+    for standard_name, possible_names in required_columns_mapping.items():
+        found_column = None
+        for possible_name in possible_names:
+            if possible_name in input_df.columns:
+                found_column = possible_name
+                break
+        if found_column:
+            actual_columns[standard_name] = found_column
+        else:
+            print(f"Input data is missing required column for {standard_name}. Tried: {', '.join(possible_names)}. Metrics cannot be calculated.")
+            return
 
     # Preprocess columns for matching
     results_df['result_code'] = results_df['result_code'].astype(str).str.strip()
     results_df['impact_area'] = results_df['impact_area'].astype(str).str.strip().str.lower()
     results_df['prompt_id'] = results_df['prompt_id'].astype(str).str.strip()
 
-    input_df['Result code'] = input_df['Result code'].astype(str).str.strip()
-    input_df['Impact Area checked'] = input_df['Impact Area checked'].astype(str).str.strip().str.lower()
+    input_df[actual_columns['result_code']] = input_df[actual_columns['result_code']].astype(str).str.strip()
+    input_df[actual_columns['impact_area']] = input_df[actual_columns['impact_area']].astype(str).str.strip().str.lower()
 
-
-
-    # Merge on 'result_code' and 'impact_area' matching 'Impact Area checked'
+    # Merge on 'result_code' and 'impact_area' matching the actual column names
     merged_df = pd.merge(
         results_df,
         input_df,
         left_on=['result_code', 'impact_area'],
-        right_on=['Result code', 'Impact Area checked'],
+        right_on=[actual_columns['result_code'], actual_columns['impact_area']],
         how='inner'
     )
 
@@ -53,14 +65,14 @@ def evaluate_results(output_csv, input_csv, metrics_csv):
         return  # Exit the function early
 
     # Ensure 'Expert score' and 'score' are numeric
-    merged_df['Expert score'] = pd.to_numeric(merged_df['Expert score'], errors='coerce')
+    merged_df[actual_columns['expert_score']] = pd.to_numeric(merged_df[actual_columns['expert_score']], errors='coerce')
     merged_df['score'] = pd.to_numeric(merged_df['score'], errors='coerce')
 
     # Drop rows with NaN scores
-    merged_df = merged_df.dropna(subset=['score', 'Expert score'])
+    merged_df = merged_df.dropna(subset=['score', actual_columns['expert_score']])
 
     # Create a column to indicate if the model's score matches the expert score
-    merged_df['correct'] = merged_df['score'] == merged_df['Expert score']
+    merged_df['correct'] = merged_df['score'] == merged_df[actual_columns['expert_score']]
 
     # Calculate metrics
     metrics = []
@@ -75,7 +87,7 @@ def evaluate_results(output_csv, input_csv, metrics_csv):
         accuracy = correct / total if total > 0 else 0
 
         # Breakdown by score value
-        score_breakdown = group.groupby('Expert score')['correct'].agg(['sum', 'count'])
+        score_breakdown = group.groupby(actual_columns['expert_score'])['correct'].agg(['sum', 'count'])
         score_metrics = []
         for expert_score, row in score_breakdown.iterrows():
             score_total = row['count']
