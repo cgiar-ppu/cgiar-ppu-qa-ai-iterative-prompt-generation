@@ -1,4 +1,0 @@
-"result_code","prompt_id","prompt_text","model_name","impact_area","input_text","token_count"
-"100","Identification of food related content","Is the piece of text related to food? **Text to Analyze:** [INPUT_TEXT]","gpt-4o-mini","None","Poverty","20"
-"101","Identification of food related content","Is the piece of text related to food? **Text to Analyze:** [INPUT_TEXT]","gpt-4o-mini","None","Food","19"
-"103","Identification of food related content","Is the piece of text related to food? **Text to Analyze:** [INPUT_TEXT]","gpt-4o-mini","None","Nutrition","19"

@@ -1,7 +1,0 @@
-model_name,Impact Area,prompt_id,total,correct,incorrect,accuracy,expert_score,score_total,score_correct,score_accuracy
-ft:gpt-4o-mini-2024-07-18:personal:24072024:9oT26O2l,ipsr,INNOVATION_READINESS_PROMPT,2,1,1,0.5,4,1,0,0.0
-ft:gpt-4o-mini-2024-07-18:personal:24072024:9oT26O2l,ipsr,INNOVATION_READINESS_PROMPT,2,1,1,0.5,6,1,1,1.0
-ft:gpt-4o-mini-2024-07-18:personal:24072024:9oT26O2l,poverty,POVERTY_REDUCTION_PROMPT,1,0,1,0.0,0,1,0,0.0
-gpt-4o-mini,ipsr,INNOVATION_READINESS_PROMPT,2,0,2,0.0,4,1,0,0.0
-gpt-4o-mini,ipsr,INNOVATION_READINESS_PROMPT,2,0,2,0.0,6,1,0,0.0
-gpt-4o-mini,poverty,POVERTY_REDUCTION_PROMPT,1,0,1,0.0,0,1,0,0.0
