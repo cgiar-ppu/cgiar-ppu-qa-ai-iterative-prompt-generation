@@ -1,4 +1,4 @@
 .venv/
-output/*.csv
-output/*.xlsx
+output2/*.csv
+output2/*.xlsx
 __pycache__/
