@@ -209,7 +209,7 @@ st.sidebar.title("Configuration")
 
 # Model Selection
 models = config.MODELS
-selected_models = st.sidebar.multiselect("Select Models", models, default=models)
+selected_models = st.sidebar.multiselect("Select Models", models, default=['gpt-4.1'])
 
 # Prompt Selection
 prompts = config.PROMPTS
@@ -222,8 +222,8 @@ if 'selected_prompts' in st.session_state:
     # Remove any prompts that are no longer available
     st.session_state.selected_prompts = [p for p in st.session_state.selected_prompts if p in available_prompts]
 else:
-    # Initialize selected_prompts with all available prompts
-    st.session_state.selected_prompts = available_prompts.copy()
+    # Initialize selected_prompts with empty list
+    st.session_state.selected_prompts = []
 
 # Display existing prompts with a fixed key to manage state
 st.sidebar.subheader("Existing Prompts")
