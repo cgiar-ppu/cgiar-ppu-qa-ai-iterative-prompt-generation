@@ -10,8 +10,6 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import os
 #api_key = os.getenv('OPENAI_API_KEY')
 
-client = OpenAI()
-
 # List of models that require the simplified API call
 simplified_models = ['o1-preview', 'o1-mini', 'o3-mini']
 
@@ -19,6 +17,16 @@ def execute_task(task):
     """
     Execute a single task by sending a request to the OpenAI API.
     """
+    # Dynamically create the client based on the model
+    if task['model_name'].startswith('grok-'):
+        api_key = os.getenv('XAI_API_KEY')
+        base_url = "https://api.x.ai/v1"
+    else:
+        api_key = os.getenv('OPENAI_API_KEY')
+        base_url = None  # Use default OpenAI base URL
+    
+    client = OpenAI(api_key=api_key, base_url=base_url)
+
     # Replace placeholders in the prompt text
     prompt_text = task['prompt_text'].replace('[INPUT_TEXT]', task['input_text'])
     
@@ -51,18 +59,20 @@ def execute_task(task):
             response = client.chat.completions.create(**api_params)
         else:
             # Use the standard API call with additional parameters
-            response = client.chat.completions.create(
-                model=task['model_name'],
-                messages=messages,
-                temperature=0,  # Adjust as needed
-                max_tokens=500,
-                top_p=0,
-                frequency_penalty=0,
-                presence_penalty=0,
-                response_format={
-                    "type": "text"
-                }
-            )
+            api_params = {
+                "model": task['model_name'],
+                "messages": messages,
+                "temperature": 0,
+                "max_tokens": 500,
+                "frequency_penalty": 0,
+                "presence_penalty": 0,
+                "response_format": {"type": "text"}
+            }
+            if task['model_name'].startswith('grok-'):
+                api_params["top_p"] = 0.1  # Positive value required for xAI API
+            else:
+                api_params["top_p"] = 0
+            response = client.chat.completions.create(**api_params)
         output = response.choices[0].message.content.strip()
         result = {
             'result_code': task['result_code'],
@@ -75,7 +85,7 @@ def execute_task(task):
         }
         return result
     except Exception as e:
-        print(f"Error querying OpenAI for task {task['result_code']}, {task['prompt_id']}, {task['model_name']}: {e}")
+        print(f"Error querying API for task {task['result_code']}, {task['prompt_id']}, {task['model_name']}: {e}")
         return None
 
 def execute_tasks_concurrently(tasks, max_workers=8, progress_callback=None):
