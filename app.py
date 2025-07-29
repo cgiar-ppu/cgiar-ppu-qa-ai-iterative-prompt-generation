@@ -308,7 +308,7 @@ dataset_option = st.sidebar.radio(
 
 # Add a new checkbox:
 combine_evidence_checkbox = st.sidebar.checkbox(
-    "Combine multiple rows by Result code (concatenate 'Evidence Extracted Text')",
+    "Combine multiple rows by Result code (concatenate selected text columns)",
     value=False
 )
 
