@@ -243,7 +243,8 @@ with st.sidebar.expander("Add a New Prompt"):
     new_prompt_id = st.text_input("Prompt ID")
     new_prompt_text = st.text_area("Prompt Text")
     new_prompt_impact_area = st.selectbox(
-        "Impact Area", ["Gender", "Nutrition", "Climate", "Environment", "Poverty", "IPSR", "None"]
+        "Impact Area", ["Gender", "Nutrition", "Climate", "Environment", "Poverty", "IPSR", "None"],
+        index=6  # Default to 'None'
     )
     add_prompt_button = st.button("Add Prompt")
     if add_prompt_button:
