@@ -64,7 +64,7 @@ def load_data(input_file, combine_evidence=False, selected_columns=None, id_colu
 
     if combine_evidence:
         try:
-            df = combine_rows_by_result_code(df)  # call the new function
+            df = combine_rows_by_result_code(df, selected_columns)  # Pass selected_columns
         except ValueError as e:
             st.error(str(e))
             st.stop()
@@ -101,47 +101,38 @@ def load_existing_results(output_csv):
     except FileNotFoundError:
         return set()
 
-def combine_rows_by_result_code(df):
+def combine_rows_by_result_code(df, selected_columns=None):
     """
-    Group rows by 'result_code' and concatenate all 'Evidence Extracted Text'
-    for each code into one row. Keeps one row per unique 'result_code'.
-
-    If your spreadsheet also needs other columns aggregated,
-    you can modify the .agg(...) dictionary accordingly.
+    Group rows by 'result_code' and concatenate selected columns for each code into one row. Keeps one row per unique 'result_code'.
     """
     # Safety check
-    required_cols = ['result_code', 'Evidence Parsed Text']
-    for col in required_cols:
-        if col not in df.columns:
-            raise ValueError(
-                f"To combine rows by result code, the dataframe must have '{col}' column."
-            )
-
-    # Example aggregator:
-    # 1) Keep only the first non-null of certain columns (like Title, Description, etc.).
-    # 2) Concatenate the text in 'Evidence Extracted Text' separated by a period and new paragraphs.
-    agg_dict = {
-        'Title': 'first',  # or you can choose to combine them differently if you want
-        'Description': 'first',
-        'Evidence Abstract Text': 'first',
-        'Evidence Parsed Text': lambda series: ".\n\n".join(
-            str(x) for x in series.dropna()
-        )
-    }
-
-    # Before grouping, ensure these columns exist. If not, remove them from aggregator:
-    actual_agg_dict = {}
-    for col, how in agg_dict.items():
-        if col in df.columns:
-            actual_agg_dict[col] = how
-
+    if 'result_code' not in df.columns:
+        raise ValueError("To combine rows by result code, the dataframe must have 'result_code' column.")
+    if not selected_columns:
+        raise ValueError("Selected columns must be provided for concatenation when combining rows.")
+    
+    # Ensure selected_columns exist in df
+    available_selected_columns = [col for col in selected_columns if col in df.columns]
+    if not available_selected_columns:
+        raise ValueError(f"None of the selected columns {selected_columns} are present in the data for concatenation.")
+    
+    # Dynamically build aggregator: concatenate for selected columns, 'first' for others
+    agg_dict = {}
+    all_columns = df.columns.tolist()
+    for col in all_columns:
+        if col == 'result_code':
+            continue  # Skip grouping column
+        if col in available_selected_columns:
+            agg_dict[col] = lambda series: ".\n\n".join(str(x) for x in series.dropna())
+        else:
+            agg_dict[col] = 'first'
+    
     # Do the grouping and aggregation
     df_combined = (
         df
         .groupby('result_code', as_index=False)
-        .agg(actual_agg_dict)
+        .agg(agg_dict)
     )
-
     return df_combined
 
 def process_dataframe_with_selected_columns(df, combine_evidence=False, selected_columns=None, id_column=None):
@@ -182,7 +173,7 @@ def process_dataframe_with_selected_columns(df, combine_evidence=False, selected
     
     if combine_evidence:
         try:
-            df_processed = combine_rows_by_result_code(df_processed)
+            df_processed = combine_rows_by_result_code(df_processed, selected_columns)  # Pass selected_columns
         except ValueError as e:
             st.error(str(e))
             st.stop()
