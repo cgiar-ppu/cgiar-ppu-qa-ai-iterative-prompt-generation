@@ -269,6 +269,7 @@ with st.sidebar.expander("Add a New Prompt"):
 
             # Add new prompt to the session state's selected_prompts
             st.session_state.selected_prompts.append(new_prompt_id)
+            st.rerun()  # Force rerun to update the multiselect
         else:
             st.error("Please provide both Prompt ID and Prompt Text.")
 
@@ -295,6 +296,7 @@ if uploaded_prompt_file:
                     if prompt_id not in st.session_state.selected_prompts:
                         st.session_state.selected_prompts.append(prompt_id)
             st.success("Prompts from Excel file added successfully.")
+            st.rerun()  # Force rerun to update the multiselect
         else:
             st.error("Excel file must contain 'Prompt ID', 'Prompt Text', and 'Impact Area' columns.")
     except Exception as e:
