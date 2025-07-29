@@ -801,7 +801,7 @@ with tab2:
                             model=selected_model,
                             messages=messages,
                             temperature=0,  # Adjust as needed
-                            max_tokens=500,
+                            max_tokens=1000,  # Increased from 500 to 1000
                             top_p=0,
                             frequency_penalty=0,
                             presence_penalty=0

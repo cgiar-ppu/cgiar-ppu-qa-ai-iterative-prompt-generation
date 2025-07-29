@@ -385,13 +385,12 @@ MODELS = [
     'gpt-4o',
     'gpt-4o-mini',
 #    'o1-preview',
-    'o3-mini',
 #    'o1',
-    'o1-mini',
     'ft:gpt-4o-mini-2024-07-18:personal:24072024:9oT26O2l',
     'grok-3',  # Added: Placeholder for Grok 3 (update if actual model name differs)
     'grok-4',  # Added: Placeholder for Grok 4 (update if actual model name differs)
     'gpt-4.1',  # Added: New OpenAI model option as requested
+    'o3'  # Added: New simplified model
 ]
 
 # OpenAI API Configuration

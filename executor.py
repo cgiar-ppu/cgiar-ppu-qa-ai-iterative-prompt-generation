@@ -11,7 +11,7 @@ import os
 #api_key = os.getenv('OPENAI_API_KEY')
 
 # List of models that require the simplified API call
-simplified_models = ['o1-preview', 'o1-mini', 'o3-mini']
+simplified_models = ['o1-preview', 'o3']
 
 def execute_task(task):
     """
@@ -63,7 +63,7 @@ def execute_task(task):
                 "model": task['model_name'],
                 "messages": messages,
                 "temperature": 0,
-                "max_tokens": 500,
+                "max_tokens": 1000,  # Increased from 500 to 1000
                 "frequency_penalty": 0,
                 "presence_penalty": 0,
                 "response_format": {"type": "text"}
