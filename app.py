@@ -210,6 +210,7 @@ st.sidebar.title("Configuration")
 # Model Selection
 models = config.MODELS
 selected_models = st.sidebar.multiselect("Select Models", models, default=['gpt-4.1'])
+st.sidebar.markdown("---")
 
 # Prompt Selection
 prompts = config.PROMPTS
@@ -233,6 +234,7 @@ selected_prompts = st.sidebar.multiselect(
     default=None,  # Default is None because we're using session_state
     key='selected_prompts'  # Use a fixed key to manage state
 )
+st.sidebar.markdown("---")
 
 # Update session state with the current selection
 # This happens automatically because of the key parameter
@@ -302,43 +304,38 @@ if uploaded_prompt_file:
     except Exception as e:
         st.error(f"Error processing the uploaded file: {e}")
 
-# Dataset Selection
-st.sidebar.subheader("Dataset")
-dataset_option = st.sidebar.radio(
-    "Select Dataset",
-    ('Default Dataset', 'Upload Your Own')
-)
+st.sidebar.markdown("---")
 
-# Add a new checkbox:
-combine_evidence_checkbox = st.sidebar.checkbox(
-    "Combine multiple rows by Result code (concatenate selected text columns)",
-    value=False
-)
+st.sidebar.subheader("Dataset")
+
+with st.sidebar.expander("Upload Your Own Dataset", expanded=True):
+    uploaded_file = st.sidebar.file_uploader("Upload CSV or Excel", type=["csv", "xls", "xlsx"])
+    combine_evidence_checkbox = st.sidebar.checkbox(
+        "Combine multiple rows by Result code (concatenate selected text columns)",
+        value=False
+    )
 
 # Load raw data first to get available columns
 raw_input_df = None
-if dataset_option == 'Upload Your Own':
-    uploaded_file = st.sidebar.file_uploader("Upload CSV or Excel", type=["csv", "xls", "xlsx"])
-    if uploaded_file:
-        # Load raw data without processing to get column names
-        try:
-            file_extension = uploaded_file.name.split('.')[-1].lower()
-            if file_extension == 'csv':
-                raw_input_df = pd.read_csv(uploaded_file)
-            elif file_extension in ['xls', 'xlsx']:
-                raw_input_df = pd.read_excel(uploaded_file)
-            st.session_state['raw_input_df'] = raw_input_df
-            # Reset column selections on new upload
-            if 'selected_text_columns' in st.session_state:
-                del st.session_state['selected_text_columns']
-            if 'selected_id_column' in st.session_state:
-                del st.session_state['selected_id_column']
-            if 'text_columns_selector' in st.session_state:
-                del st.session_state['text_columns_selector']
-            if 'id_column_selector' in st.session_state:
-                del st.session_state['id_column_selector']
-        except Exception as e:
-            st.sidebar.error(f"Error reading the uploaded file: {e}")
+if uploaded_file:
+    try:
+        file_extension = uploaded_file.name.split('.')[-1].lower()
+        if file_extension == 'csv':
+            raw_input_df = pd.read_csv(uploaded_file)
+        elif file_extension in ['xls', 'xlsx']:
+            raw_input_df = pd.read_excel(uploaded_file)
+        st.session_state['raw_input_df'] = raw_input_df
+        # Reset column selections on new upload
+        if 'selected_text_columns' in st.session_state:
+            del st.session_state['selected_text_columns']
+        if 'selected_id_column' in st.session_state:
+            del st.session_state['selected_id_column']
+        if 'text_columns_selector' in st.session_state:
+            del st.session_state['text_columns_selector']
+        if 'id_column_selector' in st.session_state:
+            del st.session_state['id_column_selector']
+    except Exception as e:
+        st.sidebar.error(f"Error reading the uploaded file: {e}")
 else:
     input_file = 'input/Joined_Processed_Evidence_PRMS_ExpertsScore v2 to run 28 Jan both 23-24 - only with evidence.xlsx'
     try:
@@ -348,26 +345,16 @@ else:
         st.sidebar.error(f"Error reading the default file: {e}")
 
 # Column Selection - only show if we have data
-if 'raw_input_df' in st.session_state and st.session_state['raw_input_df'] is not None:
-    raw_input_df = st.session_state['raw_input_df']
-    
+if raw_input_df is not None:
     # Unique Identifier Column Selection (do this first)
     st.sidebar.subheader("Unique Identifier Column")
     
-    # Get all columns that could serve as unique identifiers
-    # These are typically string columns that might contain codes, IDs, etc.
+    # Get possible ID columns (columns that might be unique identifiers)
     id_columns = [col for col in raw_input_df.columns 
-                 if raw_input_df[col].dtype in ['object', 'string'] or 
-                 raw_input_df[col].dtype.name.startswith('int') or 
-                 raw_input_df[col].dtype.name.startswith('float')]
+                  if raw_input_df[col].nunique() == len(raw_input_df) or 'code' in col.lower() or 'id' in col.lower()]
     
-    # Default selection based on common identifier column names
-    default_id_column = None
-    common_id_columns = ['Result code', 'ID', 'Code', 'Identifier', 'Key', 'Index', 'Number']
-    for col in id_columns:
-        if any(common_col.lower() in col.lower() for common_col in common_id_columns):
-            default_id_column = col
-            break
+    # Default to 'Result code' if available, else first possible
+    default_id_column = next((col for col in id_columns if 'result code' in col.lower()), None)
     
     # If no common column found, suggest the first column
     if not default_id_column and id_columns:
@@ -414,40 +401,36 @@ if 'raw_input_df' in st.session_state and st.session_state['raw_input_df'] is no
     
     st.session_state['selected_text_columns'] = selected_text_columns
     
-    # Process the data with selected columns
-    if selected_text_columns and selected_id_column:
-        # Use load_data function but pass the selected columns
-        if dataset_option == 'Upload Your Own':
-            # For uploaded files, we need to reset the file pointer or re-upload
-            # Since we already loaded raw data, we can pass the raw dataframe directly
-            input_df = process_dataframe_with_selected_columns(
-                st.session_state['raw_input_df'], 
-                combine_evidence=combine_evidence_checkbox,
-                selected_columns=selected_text_columns,
-                id_column=selected_id_column
-            )
-        else:
-            # For default dataset, pass the file path
-            input_df = load_data(
-                input_file, 
-                combine_evidence=combine_evidence_checkbox,
-                selected_columns=selected_text_columns,
-                id_column=selected_id_column
-            )
+    st.sidebar.markdown("---")
+
+# Process the data with selected columns
+input_df = None
+if 'selected_text_columns' in st.session_state and st.session_state['selected_text_columns'] and 'selected_id_column' in st.session_state:
+    selected_text_columns = st.session_state['selected_text_columns']
+    selected_id_column = st.session_state['selected_id_column']
+    if uploaded_file:
+        input_df = process_dataframe_with_selected_columns(
+            st.session_state['raw_input_df'], 
+            combine_evidence=combine_evidence_checkbox,
+            selected_columns=selected_text_columns,
+            id_column=selected_id_column
+        )
     else:
-        if not selected_text_columns:
-            st.sidebar.warning("Please select at least one text column to create input text.")
-        if not selected_id_column:
-            st.sidebar.warning("Please select a unique identifier column.")
-        input_df = None
+        input_df = load_data(
+            input_file, 
+            combine_evidence=combine_evidence_checkbox,
+            selected_columns=selected_text_columns,
+            id_column=selected_id_column
+        )
 else:
-    input_df = None
+    if 'raw_input_df' in st.session_state:
+        if not st.session_state.get('selected_text_columns'):
+            st.sidebar.warning("Please select at least one text column to create input text.")
+        if not st.session_state.get('selected_id_column'):
+            st.sidebar.warning("Please select a unique identifier column.")
 
 if input_df is None:
-    if dataset_option == 'Upload Your Own':
-        st.warning("Please upload a CSV/Excel file to proceed.")
-    else:
-        st.warning("Please check the default dataset file.")
+    st.warning("Please ensure data is loaded and columns are selected to proceed.")
 else:
     with st.expander("Show sample of input data for confirmation:"):
         st.write("Columns in DataFrame after processing:", input_df.columns.tolist())
@@ -506,6 +489,8 @@ else:
 if selected_df.empty:
     st.warning("No results selected. Please adjust your selection criteria.")
 
+st.sidebar.markdown("---")
+
 # Start Processing Button
 start_button = st.sidebar.button("Start Processing")
 
@@ -523,35 +508,35 @@ def get_excel_download_link(df, link_text):
     href = f'<a href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,{b64}" download="data.xlsx">{link_text}</a>'
     return href
 
-# Custom Dashboard Transformation
-st.sidebar.subheader("Custom Dashboard Transformation")
+# # Custom Dashboard Transformation
+# st.sidebar.subheader("Custom Dashboard Transformation")
 
-uploaded_custom_csv = st.sidebar.file_uploader("Upload Modified Results CSV for Dashboard Transformation", type=['csv'], key='custom_dashboard_upload')
+# uploaded_custom_csv = st.sidebar.file_uploader("Upload Modified Results CSV for Dashboard Transformation", type=['csv'], key='custom_dashboard_upload')
 
-if uploaded_custom_csv is not None:
-    try:
-        custom_df = pd.read_csv(uploaded_custom_csv)
-        st.session_state['custom_df'] = custom_df
-        st.sidebar.success("File uploaded successfully.")
-    except Exception as e:
-        st.sidebar.error(f"Error processing the uploaded custom CSV file: {e}")
-else:
-    if 'custom_df' in st.session_state and st.session_state['custom_df'] is not None:
-        custom_df = st.session_state['custom_df']
+# if uploaded_custom_csv is not None:
+#     try:
+#         custom_df = pd.read_csv(uploaded_custom_csv)
+#         st.session_state['custom_df'] = custom_df
+#         st.sidebar.success("File uploaded successfully.")
+#     except Exception as e:
+#         st.sidebar.error(f"Error processing the uploaded custom CSV file: {e}")
+# else:
+#     if 'custom_df' in st.session_state and st.session_state['custom_df'] is not None:
+#         custom_df = st.session_state['custom_df']
 
 # Button to Transform Custom Results
-transform_custom_button = st.sidebar.button("Transform Custom Results for Dashboard", key='transform_custom_button')
+# transform_custom_button = st.sidebar.button("Transform Custom Results for Dashboard", key='transform_custom_button')
 
-if transform_custom_button:
-    if 'custom_df' in st.session_state and st.session_state['custom_df'] is not None:
-        try:
-            transformed_custom_df = transform_for_dashboard(st.session_state['custom_df'])
-            st.session_state['transformed_custom_df'] = transformed_custom_df
-            st.sidebar.success("Transformation completed. Please check the main page for the download link.")
-        except Exception as e:
-            st.sidebar.error(f"Error during transformation: {e}")
-    else:
-        st.sidebar.warning("Please upload a custom CSV file first.")
+# if transform_custom_button:
+#     if 'custom_df' in st.session_state and st.session_state['custom_df'] is not None:
+#         try:
+#             transformed_custom_df = transform_for_dashboard(st.session_state['custom_df'])
+#             st.session_state['transformed_custom_df'] = transformed_custom_df
+#             st.sidebar.success("Transformation completed. Please check the main page for the download link.")
+#         except Exception as e:
+#             st.sidebar.error(f"Error during transformation: {e}")
+#     else:
+#         st.sidebar.warning("Please upload a custom CSV file first.")
 
 # Function to update progress
 def update_progress(n):
@@ -636,7 +621,7 @@ with tab1:
                         results_df.to_csv(results_csv, index=False)
 
                         # Define input_csv for evaluate_results
-                        if dataset_option == 'Upload Your Own':
+                        if uploaded_file: # Check if uploaded_file was used
                             input_csv = f"output/uploaded_input_{timestamp}.csv"
                             input_df.to_csv(input_csv, index=False)
                         else:
@@ -685,10 +670,10 @@ with tab1:
                         st.session_state['tasks_df'] = tasks_df
 
     # If the transformed data is available, display the download link
-    if 'transformed_custom_df' in st.session_state and st.session_state['transformed_custom_df'] is not None:
-        transformed_custom_df = st.session_state['transformed_custom_df']
-        st.subheader("Transformed Dashboard Data")
-        st.markdown(get_excel_download_link(transformed_custom_df, 'Download Transformed Dashboard Excel'), unsafe_allow_html=True)
+    # if 'transformed_custom_df' in st.session_state and st.session_state['transformed_custom_df'] is not None:
+    #     transformed_custom_df = st.session_state['transformed_custom_df']
+    #     st.subheader("Transformed Dashboard Data")
+    #     st.markdown(get_excel_download_link(transformed_custom_df, 'Download Transformed Dashboard Excel'), unsafe_allow_html=True)
 
     # =================== NEW CODE FOR FOLLOW-UP PROMPTS ===================
 
