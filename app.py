@@ -328,6 +328,15 @@ if dataset_option == 'Upload Your Own':
             elif file_extension in ['xls', 'xlsx']:
                 raw_input_df = pd.read_excel(uploaded_file)
             st.session_state['raw_input_df'] = raw_input_df
+            # Reset column selections on new upload
+            if 'selected_text_columns' in st.session_state:
+                del st.session_state['selected_text_columns']
+            if 'selected_id_column' in st.session_state:
+                del st.session_state['selected_id_column']
+            if 'text_columns_selector' in st.session_state:
+                del st.session_state['text_columns_selector']
+            if 'id_column_selector' in st.session_state:
+                del st.session_state['id_column_selector']
         except Exception as e:
             st.sidebar.error(f"Error reading the uploaded file: {e}")
 else:
