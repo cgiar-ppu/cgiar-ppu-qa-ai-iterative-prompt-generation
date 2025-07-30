@@ -786,7 +786,7 @@ elif st.session_state.active_tab == "Follow-up Prompts":
                         # For non-simplified models, include system role
                         initial_messages = []
                         if selected_model not in simplified_models:
-                            role = "You are an assistant that will closely follow the instruction provided next and respond in a concise way by providing a direct answer and also a very brief explanation without too many details."
+                            role = "You are an assistant that will closely follow the instruction provided next and respond in a concise way by providing a direct answer without too many details."
                             initial_messages.append({"role": "system", "content": role})
 
                         initial_messages.append({"role": "user", "content": initial_prompt_text})

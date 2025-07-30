@@ -44,7 +44,7 @@ def execute_task(task):
         ]
     else:
         # For other models, include the system role and other parameters
-        role = "You are an assistant that will closely follow the instruction provided next and respond in a concise way by providing a direct answer and also a very brief explanation without too many details."
+        role = "You are an assistant that will closely follow the instruction provided next and respond in a concise way by providing a direct answer without too many details."
         messages = [
             {"role": "system", "content": role},
             {"role": "user", "content": prompt_text}
