@@ -321,11 +321,6 @@ st.sidebar.markdown("---")
 st.sidebar.subheader("Dataset")
 
 uploaded_file = st.sidebar.file_uploader("Upload CSV or Excel", type=["csv", "xls", "xlsx"])
-combine_evidence_checkbox = st.sidebar.checkbox(
-    "Combine multiple rows by Result code (concatenate selected text columns)",
-    value=False
-)
-
 # Load raw data first to get available columns
 raw_input_df = None
 if uploaded_file:
@@ -360,12 +355,18 @@ if raw_input_df is not None:
     # Unique Identifier Column Selection (do this first)
     st.sidebar.subheader("Unique Identifier Column")
     
-    # Get possible ID columns (columns that might be unique identifiers)
-    id_columns = [col for col in raw_input_df.columns 
-                  if raw_input_df[col].nunique() == len(raw_input_df) or 'code' in col.lower() or 'id' in col.lower()]
+    # Offer all columns as possible ID columns
+    id_columns = list(raw_input_df.columns)
     
-    # Default to 'Result code' if available, else first possible
-    default_id_column = next((col for col in id_columns if 'result code' in col.lower()), None)
+    # Calculate uniqueness for all columns
+    uniqueness = {col: raw_input_df[col].nunique() / len(raw_input_df) for col in id_columns}
+    
+    # Prefer columns with 'id', 'code', 'file' in name
+    preferred_cols = [col for col in id_columns if any(term in col.lower() for term in ['id', 'code', 'file'])]
+    if preferred_cols:
+        default_id_column = max(preferred_cols, key=lambda col: uniqueness[col])
+    else:
+        default_id_column = max(uniqueness, key=uniqueness.get) if uniqueness else None
     
     # If no common column found, suggest the first column
     if not default_id_column and id_columns:
@@ -381,13 +382,19 @@ if raw_input_df is not None:
     
     st.session_state['selected_id_column'] = selected_id_column
     
+    # After selection, check if it's unique
+    has_duplicates = raw_input_df[selected_id_column].nunique() != len(raw_input_df)
+    
+    combine_evidence_checkbox = st.sidebar.checkbox(
+        "Combine multiple rows by Unique identifier column selected (concatenate selected text columns)",
+        value=has_duplicates
+    )
+    
     # Text Columns Selection (do this after ID column selection)
     st.sidebar.subheader("Text Columns Selection")
     
-    # Get all text-like columns (excluding obvious non-text columns and the selected ID column)
-    text_columns = [col for col in raw_input_df.columns 
-                   if raw_input_df[col].dtype == 'object'  # Only string/object columns
-                   and col != selected_id_column]  # Exclude the selected ID column
+    # Allow all columns except selected ID for text
+    text_columns = [col for col in raw_input_df.columns if col != selected_id_column]
     
     # Default selection based on common text columns
     default_text_columns = []

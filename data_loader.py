@@ -86,7 +86,7 @@ def load_data(input_file, combine_evidence=False, selected_columns=None, id_colu
             st.stop()
 
     # Concatenate available text fields
-    df['input_text'] = df[available_columns].fillna('').agg(' '.join, axis=1)
+    df['input_text'] = df[available_columns].astype(str).fillna('').agg(' '.join, axis=1)
     return df
 
 
@@ -195,5 +195,5 @@ def process_dataframe_with_selected_columns(df, combine_evidence=False, selected
             st.stop()
 
     # Concatenate available text fields
-    df_processed['input_text'] = df_processed[available_columns].fillna('').agg(' '.join, axis=1)
+    df_processed['input_text'] = df_processed[available_columns].astype(str).fillna('').agg(' '.join, axis=1)
     return df_processed
