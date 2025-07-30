@@ -289,12 +289,14 @@ if uploaded_prompt_file:
             st.session_state.last_prompt_upload_hash = None
         if upload_hash != st.session_state.last_prompt_upload_hash:
             prompt_df = pd.read_excel(uploaded_prompt_file)
-            if all(col in prompt_df.columns for col in ["Prompt ID", "Prompt Text", "Impact Area"]):
+            if all(col in prompt_df.columns for col in ["Prompt ID", "Prompt Text"]):
                 for _, row in prompt_df.iterrows():
-                    prompt_id = row["Prompt ID"]
-                    prompt_text = row["Prompt Text"]
-                    impact_area = row["Impact Area"]
-                    if prompt_id and prompt_text and impact_area:
+                    prompt_id = row.get("Prompt ID")
+                    prompt_text = row.get("Prompt Text")
+                    impact_area = row.get("Impact Area", "None")
+                    if pd.isna(impact_area) or not str(impact_area).strip():
+                        impact_area = "None"
+                    if prompt_id and prompt_text:
                         if prompt_id not in prompts:
                             prompts[prompt_id] = {
                                 'id': prompt_id,
@@ -308,7 +310,7 @@ if uploaded_prompt_file:
                 st.success("Prompts from Excel file added successfully.")
                 st.rerun()  # Force rerun to update the multiselect
             else:
-                st.error("Excel file must contain 'Prompt ID', 'Prompt Text', and 'Impact Area' columns.")
+                st.error("Excel file must contain 'Prompt ID' and 'Prompt Text' columns. 'Impact Area' is optional.")
         else:
             pass
     except Exception as e:
