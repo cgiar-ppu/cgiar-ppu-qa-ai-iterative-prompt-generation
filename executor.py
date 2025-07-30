@@ -13,19 +13,25 @@ import os
 # List of models that require the simplified API call
 simplified_models = ['o1-preview', 'o3']
 
-def execute_task(task):
+def get_client(model_name):
     """
-    Execute a single task by sending a request to the OpenAI API.
+    Create and return an OpenAI client based on the model name.
+    Handles different API keys and base URLs.
     """
-    # Dynamically create the client based on the model
-    if task['model_name'].startswith('grok-'):
+    if model_name.startswith('grok-'):
         api_key = os.getenv('XAI_API_KEY')
         base_url = "https://api.x.ai/v1"
     else:
         api_key = os.getenv('OPENAI_API_KEY')
         base_url = None  # Use default OpenAI base URL
     
-    client = OpenAI(api_key=api_key, base_url=base_url)
+    return OpenAI(api_key=api_key, base_url=base_url)
+
+def execute_task(task):
+    """
+    Execute a single task by sending a request to the OpenAI API.
+    """
+    client = get_client(task['model_name'])
 
     # Replace placeholders in the prompt text
     prompt_text = task['prompt_text'].replace('[INPUT_TEXT]', task['input_text'])
