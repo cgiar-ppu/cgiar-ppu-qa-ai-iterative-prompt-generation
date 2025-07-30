@@ -441,12 +441,7 @@ else:
 if input_df is None:
     st.warning("Please ensure data is loaded and columns are selected to proceed.")
 else:
-    with st.expander("Show sample of input data for confirmation:"):
-        st.write("Columns in DataFrame after processing:", input_df.columns.tolist())
-        st.write("Selected text columns:", st.session_state.get('selected_text_columns', []))
-        st.write("Selected unique identifier column:", st.session_state.get('selected_id_column', 'None'))
-        st.write("Sample data:")
-        st.write(input_df.head())
+    pass
 
 # Result Selection Method
 st.sidebar.subheader("Select Results")
