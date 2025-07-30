@@ -16,6 +16,7 @@ from datetime import datetime
 import base64
 import re
 from output_conversion_unpivot_dashboard import transform_for_dashboard  # Import the transformation function
+from pivoted_outputs import create_pivoted_outputs
 import hashlib
 from executor import get_client
 # app.py
@@ -476,14 +477,14 @@ if input_df is not None:
                 st.write(result_code_list)
 
             # Ensure 'result_code' column is of type string and strip whitespace
-            input_df['result_code'] = input_df['result_code'].astype(str).str.strip()
+            input_df[selected_id_column] = input_df[selected_id_column].astype(str).str.strip()
 
             # Convert both to uppercase for case-insensitive matching
-            input_df['result_code'] = input_df['result_code'].str.upper()
+            input_df[selected_id_column] = input_df[selected_id_column].str.upper()
             result_code_list = [code.upper() for code in result_code_list]
 
             # Perform the filtering
-            selected_df = input_df[input_df['result_code'].isin(result_code_list)]
+            selected_df = input_df[input_df[selected_id_column].isin(result_code_list)]
 
             if selected_df.empty:
                 st.warning("No matching result codes found. Please check your input.")
@@ -655,6 +656,7 @@ if start_button:
                     st.session_state['metrics_df'] = metrics_df
                     st.session_state['results_csv'] = results_csv
                     st.session_state['transformed_results_df'] = transform_for_dashboard(results_df)
+                    st.session_state['pivoted_outputs_df'] = create_pivoted_outputs(input_df, results_df)
 
                     # Switch to Main Processing tab after processing
                     st.session_state.active_tab = "Main Processing"
@@ -673,12 +675,15 @@ elif st.session_state.active_tab == "Main Processing":
         st.markdown(get_table_download_link(st.session_state['results_df'], 'Download Results CSV'), unsafe_allow_html=True)
 
         st.markdown(get_excel_download_link(st.session_state['transformed_results_df'], 'Download Results for dashboard in Excel'), unsafe_allow_html=True)
+        st.markdown(get_excel_download_link(st.session_state['pivoted_outputs_df'], 'Download Pivoted Outputs Excel'), unsafe_allow_html=True)
 
         st.subheader("Metrics")
         st.dataframe(st.session_state['metrics_df'])
 
         st.subheader("Outputs")
         st.dataframe(st.session_state['results_df'])
+        st.subheader("Pivoted Outputs")
+        st.dataframe(st.session_state['pivoted_outputs_df'])
 
         st.subheader("Full details sent to LLM")
         st.dataframe(st.session_state['tasks_df'])
