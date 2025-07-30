@@ -16,6 +16,7 @@ from datetime import datetime
 import base64
 import re
 from output_conversion_unpivot_dashboard import transform_for_dashboard  # Import the transformation function
+import hashlib
 # app.py
 #Test Comment to refresh x2
 
@@ -280,27 +281,34 @@ st.sidebar.subheader("Upload Prompts from Excel")
 uploaded_prompt_file = st.sidebar.file_uploader("Upload Excel", type=["xlsx"])
 if uploaded_prompt_file:
     try:
-        prompt_df = pd.read_excel(uploaded_prompt_file)
-        if all(col in prompt_df.columns for col in ["Prompt ID", "Prompt Text", "Impact Area"]):
-            for _, row in prompt_df.iterrows():
-                prompt_id = row["Prompt ID"]
-                prompt_text = row["Prompt Text"]
-                impact_area = row["Impact Area"]
-                if prompt_id and prompt_text and impact_area:
-                    prompts[prompt_id] = {
-                        'id': prompt_id,
-                        'text': prompt_text + " **Text to Analyze:** [INPUT_TEXT]",
-                        'impact_area': impact_area,
-                        'active': True
-                    }
-                    if prompt_id not in available_prompts:
-                        available_prompts.append(prompt_id)
-                    if prompt_id not in st.session_state.selected_prompts:
-                        st.session_state.selected_prompts.append(prompt_id)
-            st.success("Prompts from Excel file added successfully.")
-            st.rerun()  # Force rerun to update the multiselect
+        file_contents = uploaded_prompt_file.getvalue()
+        upload_hash = hashlib.md5(file_contents).hexdigest()
+        if 'last_prompt_upload_hash' not in st.session_state:
+            st.session_state.last_prompt_upload_hash = None
+        if upload_hash != st.session_state.last_prompt_upload_hash:
+            prompt_df = pd.read_excel(uploaded_prompt_file)
+            if all(col in prompt_df.columns for col in ["Prompt ID", "Prompt Text", "Impact Area"]):
+                for _, row in prompt_df.iterrows():
+                    prompt_id = row["Prompt ID"]
+                    prompt_text = row["Prompt Text"]
+                    impact_area = row["Impact Area"]
+                    if prompt_id and prompt_text and impact_area:
+                        if prompt_id not in prompts:
+                            prompts[prompt_id] = {
+                                'id': prompt_id,
+                                'text': prompt_text + " **Text to Analyze:** [INPUT_TEXT]",
+                                'impact_area': impact_area,
+                                'active': True
+                            }
+                            available_prompts.append(prompt_id)
+                            st.session_state.selected_prompts.append(prompt_id)
+                st.session_state.last_prompt_upload_hash = upload_hash
+                st.success("Prompts from Excel file added successfully.")
+                st.rerun()  # Force rerun to update the multiselect
+            else:
+                st.error("Excel file must contain 'Prompt ID', 'Prompt Text', and 'Impact Area' columns.")
         else:
-            st.error("Excel file must contain 'Prompt ID', 'Prompt Text', and 'Impact Area' columns.")
+            pass
     except Exception as e:
         st.error(f"Error processing the uploaded file: {e}")
 
@@ -374,10 +382,8 @@ if raw_input_df is not None:
     st.sidebar.subheader("Text Columns Selection")
     
     # Get all text-like columns (excluding obvious non-text columns and the selected ID column)
-    exclude_columns = ['Result code', 'ID', 'Index', 'Score', 'Rating', 'Number', 'Count', 'Year', 'Date']
     text_columns = [col for col in raw_input_df.columns 
-                   if not any(exclude_word.lower() in col.lower() for exclude_word in exclude_columns)
-                   and raw_input_df[col].dtype == 'object'  # Only string/object columns
+                   if raw_input_df[col].dtype == 'object'  # Only string/object columns
                    and col != selected_id_column]  # Exclude the selected ID column
     
     # Default selection based on common text columns
