@@ -316,12 +316,11 @@ st.sidebar.markdown("---")
 
 st.sidebar.subheader("Dataset")
 
-with st.sidebar.expander("Upload Your Own Dataset", expanded=True):
-    uploaded_file = st.sidebar.file_uploader("Upload CSV or Excel", type=["csv", "xls", "xlsx"])
-    combine_evidence_checkbox = st.sidebar.checkbox(
-        "Combine multiple rows by Result code (concatenate selected text columns)",
-        value=False
-    )
+uploaded_file = st.sidebar.file_uploader("Upload CSV or Excel", type=["csv", "xls", "xlsx"])
+combine_evidence_checkbox = st.sidebar.checkbox(
+    "Combine multiple rows by Result code (concatenate selected text columns)",
+    value=False
+)
 
 # Load raw data first to get available columns
 raw_input_df = None
