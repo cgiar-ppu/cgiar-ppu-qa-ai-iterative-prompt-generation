@@ -4,6 +4,7 @@ import itertools
 import pandas as pd
 import csv
 import tiktoken
+import config  # Ensure config is imported at the top if not already
 
 def get_tokenizer(model_name):
     try:
@@ -23,7 +24,7 @@ def estimate_token_count(prompt_text, input_text, model_name):
 
 # task_generator.py
 
-def generate_task_list(df_input, prompts, models, max_token_limit=80000):
+def generate_task_list(df_input, prompts, models):
     tasks = []
     for _, row in df_input.iterrows():
         input_text = row['input_text']
@@ -32,7 +33,8 @@ def generate_task_list(df_input, prompts, models, max_token_limit=80000):
             prompt_text = prompt['text']
             impact_area = prompt.get('impact_area', '')
             for model_name in models:
-                # Estimate token count
+                # Get model-specific token limit
+                max_token_limit = config.MODEL_TOKEN_LIMITS.get(model_name, config.DEFAULT_TOKEN_LIMIT)
                 token_count = estimate_token_count(prompt['text'], row['input_text'], model_name)
                 if token_count > max_token_limit:
                     print(f"Skipping task due to token limit: {prompt_id} on {model_name} for result code {result_code}")

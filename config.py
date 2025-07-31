@@ -396,3 +396,12 @@ MODELS = [
 # OpenAI API Configuration
 import os
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
+
+MODEL_TOKEN_LIMITS = {
+    'grok-4': 255000,
+    'gpt-4.1': 1000000,
+    # Add other models if needed, e.g.:
+    # 'gpt-4o': 127000,
+    # Default will be applied if not specified
+}
+DEFAULT_TOKEN_LIMIT = 127000
