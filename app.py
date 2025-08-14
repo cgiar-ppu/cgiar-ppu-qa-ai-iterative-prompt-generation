@@ -361,8 +361,11 @@ if raw_input_df is not None:
     # Calculate uniqueness for all columns
     uniqueness = {col: raw_input_df[col].nunique() / len(raw_input_df) for col in id_columns}
     
-    # Prefer columns with 'id', 'code', 'file' in name
-    preferred_cols = [col for col in id_columns if any(term in col.lower() for term in ['id', 'code', 'file'])]
+    # Prefer columns with common ID-like names
+    preferred_cols = [
+        col for col in id_columns
+        if any(term in col.lower() for term in ['id', 'code', 'file', 'filename', 'url', 'link'])
+    ]
     if preferred_cols:
         default_id_column = max(preferred_cols, key=lambda col: uniqueness[col])
     else:
@@ -474,21 +477,27 @@ if input_df is not None:
             placeholder="e.g., RC001, RC002, RC003 or RC001 RC002 RC003"
         )
         if result_codes:
-            # Split by any whitespace or comma
-            result_code_list = [code.strip() for code in re.split(r'[,\s]+', result_codes) if code.strip()]
+            # Split by any whitespace or comma (keep original user-entered casing)
+            raw_codes = [code.strip() for code in re.split(r'[,\s]+', result_codes) if code.strip()]
             with st.expander("Show confirmation of result codes entered by user:"):
                 st.write("Result codes entered by user:")
-                st.write(result_code_list)
+                st.write(raw_codes)
 
-            # Ensure 'result_code' column is of type string and strip whitespace
-            input_df[selected_id_column] = input_df[selected_id_column].astype(str).str.strip()
+            # Build a normalized temporary column for case-insensitive matching without
+            # mutating the original identifier values (important for URLs)
+            temp_norm_col = '_normalized_id'
+            input_df[temp_norm_col] = input_df[selected_id_column].astype(str).str.strip().str.upper()
+            normalized_codes = [code.upper() for code in raw_codes]
 
-            # Convert both to uppercase for case-insensitive matching
-            input_df[selected_id_column] = input_df[selected_id_column].str.upper()
-            result_code_list = [code.upper() for code in result_code_list]
+            # Perform the filtering using the normalized values
+            selected_df = input_df[input_df[temp_norm_col].isin(normalized_codes)].copy()
 
-            # Perform the filtering
-            selected_df = input_df[input_df[selected_id_column].isin(result_code_list)]
+            # Keep alias 'result_code' equal to the original (unmodified) identifier
+            selected_df['result_code'] = selected_df[selected_id_column].astype(str).str.strip()
+
+            # Clean up temp column
+            if temp_norm_col in selected_df.columns:
+                selected_df = selected_df.drop(columns=[temp_norm_col])
 
             if selected_df.empty:
                 st.warning("No matching result codes found. Please check your input.")
@@ -580,10 +589,48 @@ if start_button:
         # Filter prompts
         selected_prompts_dict = {pid: prompts[pid] for pid in selected_prompts}
 
-        # Deduplicate input data based on 'result_code' and relevant text fields
+        # Build the final deduplicated/combined input for task generation
         optional_columns = ['Title', 'Description', 'Evidence Abstract Text', 'Evidence Parsed Text']
         existing_columns = [col for col in optional_columns if col in selected_df.columns]
-        df_unique_input = selected_df.drop_duplicates(subset=['result_code'] + existing_columns)
+
+        if combine_evidence_checkbox:
+            # Safety: normalize alias to make sure grouping is consistent
+            selected_df = selected_df.copy()
+            current_id_column = st.session_state.get('selected_id_column', 'result_code')
+            selected_df['result_code'] = selected_df[current_id_column].astype(str).str.strip()
+
+            # Combine rows by selected ID for the chosen text columns
+            selected_text_columns = st.session_state.get('selected_text_columns', [])
+            if not selected_text_columns:
+                selected_text_columns = existing_columns
+
+            agg_dict = {}
+            for col in selected_df.columns:
+                if col == 'result_code':
+                    continue
+                if col in selected_text_columns:
+                    agg_dict[col] = lambda s: ".\n\n".join(str(x) for x in s.dropna())
+                else:
+                    agg_dict[col] = 'first'
+
+            df_unique_input = (
+                selected_df
+                .groupby('result_code', as_index=False)
+                .agg(agg_dict)
+            )
+
+            # Rebuild input_text from the combined selected text columns
+            available_text_columns = [c for c in selected_text_columns if c in df_unique_input.columns]
+            if available_text_columns:
+                df_unique_input['input_text'] = (
+                    df_unique_input[available_text_columns]
+                    .astype(str)
+                    .fillna('')
+                    .agg(' '.join, axis=1)
+                )
+        else:
+            # No combine: just dedupe by id + existing text columns to avoid redundant tasks
+            df_unique_input = selected_df.drop_duplicates(subset=['result_code'] + existing_columns)
 
         # Limit the number of results if using 'Number of Results' method
         if result_selection_method == 'Number of Results':
@@ -660,7 +707,12 @@ if start_button:
                     st.session_state['metrics_df'] = metrics_df
                     st.session_state['results_csv'] = results_csv
                     st.session_state['transformed_results_df'] = transform_for_dashboard(results_df)
-                    st.session_state['pivoted_outputs_df'] = create_pivoted_outputs(input_df, results_df)
+                    # Use the deduplicated input actually used to generate tasks for pivot merge
+                    st.session_state['pivoted_outputs_df'] = create_pivoted_outputs(
+                        df_unique_input,
+                        results_df,
+                        id_column=st.session_state.get('selected_id_column', 'result_code')
+                    )
 
                     # Switch to Main Processing tab after processing
                     st.session_state.active_tab = "Main Processing"

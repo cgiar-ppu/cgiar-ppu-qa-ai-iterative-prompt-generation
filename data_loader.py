@@ -44,8 +44,8 @@ def load_data(input_file, combine_evidence=False, selected_columns=None, id_colu
         if id_column not in df.columns:
             st.error(f"Selected ID column '{id_column}' not found in the data.")
             st.stop()
-        # Rename the selected ID column to 'result_code' for consistency
-        df = df.rename(columns={id_column: 'result_code'})
+        # Keep the original ID column and add an alias 'result_code' for internal use
+        df['result_code'] = df[id_column]
     else:
         # Fall back to looking for common ID column names
         common_id_columns = ['Result code', 'result_code', 'ID', 'id', 'Code', 'code']
@@ -56,8 +56,11 @@ def load_data(input_file, combine_evidence=False, selected_columns=None, id_colu
                 break
         
         if found_id_column:
-            if found_id_column != 'result_code':
-                df = df.rename(columns={found_id_column: 'result_code'})
+            # Add an alias 'result_code' pointing to the discovered ID column, keep original column
+            if found_id_column == 'result_code':
+                pass
+            else:
+                df['result_code'] = df[found_id_column]
         else:
             st.error("No ID column specified and no common ID columns found. Please select an ID column.")
             st.stop()
@@ -153,8 +156,8 @@ def process_dataframe_with_selected_columns(df, combine_evidence=False, selected
         if id_column not in df_processed.columns:
             st.error(f"Selected ID column '{id_column}' not found in the data.")
             st.stop()
-        # Rename the selected ID column to 'result_code' for consistency
-        df_processed = df_processed.rename(columns={id_column: 'result_code'})
+        # Keep the original ID column and add an alias 'result_code' for internal use
+        df_processed['result_code'] = df_processed[id_column]
     else:
         # Fall back to looking for common ID column names
         common_id_columns = ['Result code', 'result_code', 'ID', 'id', 'Code', 'code']
@@ -165,8 +168,11 @@ def process_dataframe_with_selected_columns(df, combine_evidence=False, selected
                 break
         
         if found_id_column:
-            if found_id_column != 'result_code':
-                df_processed = df_processed.rename(columns={found_id_column: 'result_code'})
+            # Add an alias 'result_code' pointing to the discovered ID column, keep original column
+            if found_id_column == 'result_code':
+                pass
+            else:
+                df_processed['result_code'] = df_processed[found_id_column]
         else:
             st.error("No ID column specified and no common ID columns found. Please select an ID column.")
             st.stop()
