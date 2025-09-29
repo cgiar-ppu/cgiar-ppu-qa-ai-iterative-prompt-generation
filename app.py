@@ -869,7 +869,7 @@ elif st.session_state.active_tab == "Follow-up Prompts":
                     else:
                         api_params.update({
                             "temperature": 0,
-                            "max_tokens": 1000,
+                            "max_tokens": 10000,
                             "response_format": {"type": "text"}
                         })
                         if selected_model != 'grok-4':

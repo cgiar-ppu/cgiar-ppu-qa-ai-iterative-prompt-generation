@@ -69,7 +69,7 @@ def execute_task(task):
                 "model": task['model_name'],
                 "messages": messages,
                 "temperature": 0,
-                "max_tokens": 1000,  # Increased from 500 to 1000
+                "max_tokens": 10000,  # Increased to 10000
                 "response_format": {"type": "text"}
             }
             if task['model_name'] != 'grok-4':
