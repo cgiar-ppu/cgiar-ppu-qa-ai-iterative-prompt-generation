@@ -70,10 +70,11 @@ def execute_task(task):
                 "messages": messages,
                 "temperature": 0,
                 "max_tokens": 1000,  # Increased from 500 to 1000
-                "frequency_penalty": 0,
-                "presence_penalty": 0,
                 "response_format": {"type": "text"}
             }
+            if task['model_name'] != 'grok-4':
+                api_params["presence_penalty"] = 0
+                api_params["frequency_penalty"] = 0
             if task['model_name'].startswith('grok-'):
                 api_params["top_p"] = 0.1  # Positive value required for xAI API
             else:

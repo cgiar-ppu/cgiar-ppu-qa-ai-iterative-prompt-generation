@@ -870,10 +870,11 @@ elif st.session_state.active_tab == "Follow-up Prompts":
                         api_params.update({
                             "temperature": 0,
                             "max_tokens": 1000,
-                            "frequency_penalty": 0,
-                            "presence_penalty": 0,
                             "response_format": {"type": "text"}
                         })
+                        if selected_model != 'grok-4':
+                            api_params["presence_penalty"] = 0
+                            api_params["frequency_penalty"] = 0
                         if selected_model.startswith('grok-'):
                             api_params["top_p"] = 0.1
                         else:
