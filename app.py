@@ -298,9 +298,15 @@ if uploaded_prompt_file:
                         impact_area = "None"
                     if prompt_id and prompt_text:
                         if prompt_id not in prompts:
+                            # Check if [INPUT_TEXT] is already in the prompt
+                            if "[INPUT_TEXT]" in prompt_text:
+                                final_prompt_text = prompt_text
+                            else:
+                                final_prompt_text = prompt_text + " **Text to Analyze:** [INPUT_TEXT]"
+                            
                             prompts[prompt_id] = {
                                 'id': prompt_id,
-                                'text': prompt_text + " **Text to Analyze:** [INPUT_TEXT]",
+                                'text': final_prompt_text,
                                 'impact_area': impact_area,
                                 'active': True
                             }
