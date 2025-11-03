@@ -15,6 +15,9 @@ def create_pivoted_outputs(input_df, results_df, id_column='result_code'):
         values='model_output',
         aggfunc='first'
     ).reset_index()
+    
+    # Changing the dtype of the id column back to match input_df
+    pivoted[id_column] = pivoted[id_column].astype(input_df_dedup[id_column].dtype)
 
     merged = pd.merge(input_df_dedup, pivoted, on=id_column, how='left')
 
